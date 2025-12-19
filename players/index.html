@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Players – PlayersB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PlayersB player pages: entity hub for comparisons, normalized stats, and tools." />
+</head>
+<body>
+  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+    <header style="margin-bottom:16px;">
+      <h1 style="margin:0;">Players</h1>
+      <p style="margin:10px 0 0 0;color:#444;">
+        Player entity pages are designed to link directly into tools (comparison, per-90, efficiency). Data is shown with clear inputs.
+      </p>
+      <nav style="margin-top:12px;font-size:14px;">
+        <a href="/">Home</a> ·
+        <a href="/compare.html">Compare</a> ·
+        <a href="/tools.html">Tools</a> ·
+        <a href="/learn.html">Learn</a>
+      </nav>
+    </header>
+
+    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
+      <label style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Search</label>
+      <input id="q" placeholder="Type a name (e.g., Haaland)" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;" />
+    </section>
+
+    <section id="list" style="margin-top:16px;"></section>
+
+    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+      <p><strong>Note:</strong> Player pages link to tools and show normalized metrics. No tips, no predictions.</p>
+      <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const DATA_URL = "/data/players-soccer-v1.json";
+    const $q = document.getElementById("q");
+    const $list = document.getElementById("list");
+
+    function render(players, query="") {
+      const q = query.trim().toLowerCase();
+      const filtered = players.filter(p =>
+        !q ||
+        p.name.toLowerCase().includes(q) ||
+        (p.team || "").toLowerCase().includes(q) ||
+        (p.position || "").toLowerCase().includes(q)
+      );
+
+      filtered.sort((a,b) => a.name.localeCompare(b.name));
+
+      $list.innerHTML = `
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;">
+          ${filtered.map(p => `
+            <div style="border:1px solid #eee;border-radius:12px;padding:12px;">
+              <div style="font-weight:700;">${p.name}</div>
+              <div style="color:#666;margin-top:6px;">${p.position} · ${p.team}</div>
+              <div style="margin-top:10px;font-size:14px;">
+                <a href="/players/${p.id}.html">Open player page</a>
+              </div>
+              <div style="margin-top:8px;font-size:13px;color:#555;">
+                <a href="/compare.html?a=${p.id}&b=mbappe">Compare vs Mbappé</a>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+        <p style="color:#666;font-size:13px;margin-top:14px;">
+          Showing ${filtered.length} of ${players.length}.
+        </p>
+      `;
+    }
+
+    async function main() {
+      const res = await fetch(DATA_URL, { cache: "no-store" });
+      const players = await res.json();
+      render(players);
+
+      $q.addEventListener("input", () => render(players, $q.value));
+    }
+
+    main().catch(() => {
+      $list.innerHTML = `<p style="color:#b00;">Error loading players list.</p>`;
+    });
+  </script>
+</body>
+</html>
