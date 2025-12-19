@@ -16,5 +16,8 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Generate player pages
+        run: node scripts/generate-players.mjs
+
       - name: Run quality gate
         run: node scripts/quality-gate.mjs
