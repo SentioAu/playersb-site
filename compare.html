@@ -53,7 +53,7 @@
   </main>
 
   <script>
-    const DATA_URL = "/data/players-soccer-v1.json";
+    const DATA_URL = "/data/players.json";
 
     const $A = document.getElementById("playerA");
     const $B = document.getElementById("playerB");
@@ -63,6 +63,8 @@
 
     const round = (n, d=2) => Number.isFinite(n) ? (Math.round(n * (10**d)) / (10**d)) : 0;
     const per90 = (value, minutes) => minutes > 0 ? (value / (minutes / 90)) : 0;
+
+    const num = (v) => (typeof v === "number" && Number.isFinite(v)) ? v : 0;
 
     function getQuery() {
       const p = new URLSearchParams(location.search);
@@ -79,7 +81,7 @@
     }
 
     function optionLabel(p) {
-      return `${p.name} — ${p.position} — ${p.team}`;
+      return `${p.name} — ${p.position || ""} — ${p.team || ""}`.replace(/\s+—\s+—\s+/, " — ");
     }
 
     function buildSelect($el, players) {
@@ -97,19 +99,22 @@
     }
 
     function calc(p) {
-      const g90 = per90(p.goals, p.minutes);
-      const a90 = per90(p.assists, p.minutes);
-      const s90 = per90(p.shots, p.minutes);
-      const sot90 = per90(p.shotsOnTarget, p.minutes);
+      const minutes = num(p.minutes);
 
-      const shotAccuracy = p.shots > 0 ? (p.shotsOnTarget / p.shots) : 0;
-      const goalPerShot = p.shots > 0 ? (p.goals / p.shots) : 0;
+      const goals = num(p.goals);
+      const assists = num(p.assists);
+      const shots = num(p.shots);
+      const shotsOnTarget = num(p.shotsOnTarget);
 
-      return {
-        g90, a90, s90, sot90,
-        shotAccuracy,
-        goalPerShot
-      };
+      const g90 = per90(goals, minutes);
+      const a90 = per90(assists, minutes);
+      const s90 = per90(shots, minutes);
+      const sot90 = per90(shotsOnTarget, minutes);
+
+      const shotAccuracy = shots > 0 ? (shotsOnTarget / shots) : 0;
+      const goalPerShot = shots > 0 ? (goals / shots) : 0;
+
+      return { g90, a90, s90, sot90, shotAccuracy, goalPerShot };
     }
 
     function barRow(label, aVal, bVal, fmt, note="") {
@@ -154,16 +159,16 @@
           <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
             <div style="flex:1;min-width:260px;">
               <h2 style="margin:0;">${a.name}</h2>
-              <div style="color:#666;margin-top:6px;">${a.position} · ${a.team}</div>
+              <div style="color:#666;margin-top:6px;">${a.position || ""} · ${a.team || ""}</div>
               <div style="margin-top:10px;font-size:13px;color:#444;">
-                Minutes: <strong>${a.minutes}</strong> · Goals: <strong>${a.goals}</strong> · Assists: <strong>${a.assists}</strong>
+                Minutes: <strong>${num(a.minutes)}</strong> · Goals: <strong>${num(a.goals)}</strong> · Assists: <strong>${num(a.assists)}</strong>
               </div>
             </div>
             <div style="flex:1;min-width:260px;">
               <h2 style="margin:0;">${b.name}</h2>
-              <div style="color:#666;margin-top:6px;">${b.position} · ${b.team}</div>
+              <div style="color:#666;margin-top:6px;">${b.position || ""} · ${b.team || ""}</div>
               <div style="margin-top:10px;font-size:13px;color:#444;">
-                Minutes: <strong>${b.minutes}</strong> · Goals: <strong>${b.goals}</strong> · Assists: <strong>${b.assists}</strong>
+                Minutes: <strong>${num(b.minutes)}</strong> · Goals: <strong>${num(b.goals)}</strong> · Assists: <strong>${num(b.assists)}</strong>
               </div>
             </div>
           </div>
@@ -194,7 +199,13 @@
 
     async function main() {
       const res = await fetch(DATA_URL, { cache: "no-store" });
-      const players = await res.json();
+      const payload = await res.json();
+      const players = payload.players || [];
+
+      if (!players.length) {
+        $result.innerHTML = `<p style="color:#b00;">No player data found. Please run the data builder workflow.</p>`;
+        return;
+      }
 
       buildSelect($A, players);
       buildSelect($B, players);
