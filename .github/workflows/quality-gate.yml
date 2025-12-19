@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Verify data exists
+        run: test -f data/players.json
+
       - name: Generate player pages
         run: node scripts/generate-players.mjs
 
