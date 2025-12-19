@@ -1,77 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{NAME}} – PlayersB</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{DESCRIPTION}}" />
+{{LAYOUT_START}}
+{{HEADER_START}}
+<h1 id="name">{{PLAYER_NAME}}</h1>
+<p id="meta">Loading…</p>
+{{HEADER_END}}
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://playersb.com/players/{{ID}}.html" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-D5798TYENM');
-  </script>
-</head>
-
-<body>
-<main style="max-width:900px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
-
-<header>
-  <h1 id="name">{{NAME}}</h1>
-  <p id="meta">{{META_LINE}}</p>
-
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/index.html">Players</a> ·
-    <a href="/compare.html">Compare</a> ·
-    <a href="/tools.html">Tools</a> ·
-    <a href="/learn.html">Learn</a>
-  </nav>
-</header>
-
+{{CONTENT_START}}
 <section>
   <h2>Snapshot</h2>
-  <div id="snapshot">
-    Minutes: <strong>{{MINUTES}}</strong> ·
-    Goals: <strong>{{GOALS}}</strong> ·
-    Assists: <strong>{{ASSISTS}}</strong> ·
-    Shots: <strong>{{SHOTS}}</strong>
-  </div>
+  <div id="snapshot">Loading…</div>
 </section>
 
 <section style="margin-top:16px;">
   <h2>Normalized output (per 90)</h2>
-  <div id="norm">
-    Goals/90: <strong>{{G90}}</strong><br>
-    Assists/90: <strong>{{A90}}</strong><br>
-    Shots/90: <strong>{{S90}}</strong>
-  </div>
+  <div id="norm"></div>
 </section>
 
 <section style="margin-top:16px;">
   <h2>Compare</h2>
-  <p style="margin:8px 0 0 0;">
-    <a href="/compare.html?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
-    <a href="/compare.html?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
-    <a href="/compare.html?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
+  <p>
+    <a id="c1"></a> ·
+    <a id="c2"></a> ·
+    <a id="c3"></a>
   </p>
 </section>
+{{CONTENT_END}}
 
-<footer style="margin-top:32px;font-size:14px;color:#555;">
-  <p>Educational content only. No tips. No predictions.</p>
-  <p>
-    <a href="/privacy.html">Privacy</a> ·
-    <a href="/terms.html">Terms</a> ·
-    <a href="/contact.html">Contact</a>
-  </p>
-</footer>
+{{SCRIPTS_START}}
+<script>
+const PLAYER_ID = "{{PLAYER_ID}}";
+const DATA_URL = "/data/players.json";
 
-</main>
-</body>
-</html>
+const R1_ID = "{{R1_ID}}", R1_NAME = "{{R1_NAME}}";
+const R2_ID = "{{R2_ID}}", R2_NAME = "{{R2_NAME}}";
+const R3_ID = "{{R3_ID}}", R3_NAME = "{{R3_NAME}}";
+
+const num = (v) => (typeof v === "number" && Number.isFinite(v)) ? v : 0;
+const per90 = (v,m) => m > 0 ? (v / (m / 90)) : 0;
+
+fetch(DATA_URL, { cache: "no-store" })
+  .then(r => r.json())
+  .then(payload => {
+    const players = payload.players || [];
+    const p = players.find(x => x.id === PLAYER_ID);
+
+    if (!p) {
+      document.getElementById("meta").textContent = "Player not found in dataset.";
+      document.getElementById("snapshot").textContent = "—";
+      document.getElementById("norm").textContent = "—";
+
+      const c1 = document.getElementById("c1");
+      c1.textContent = `Compare vs ${R1_NAME}`;
+      c1.href = `/compare.html`;
+
+      const c2 = document.getElementById("c2");
+      c2.textContent = `Compare vs ${R2_NAME}`;
+      c2.href = `/compare.html`;
+
+      const c3 = document.getElementById("c3");
+      c3.textContent = `Compare vs ${R3_NAME}`;
+      c3.href = `/compare.html`;
+
+      return;
+    }
+
+    const minutes = num(p.minutes);
+    const goals = num(p.goals);
+    const assists = num(p.assists);
+    const shots = num(p.shots);
+
+    document.getElementById("name").textContent = p.name || "Player";
+    document.getElementById("meta").textContent =
+      `${p.position || ""} · ${p.team || ""}`.trim().replace(/^·\s*|\s*·$/g, "");
+
+    document.getElementById("snapshot").innerHTML =
+      `Minutes: <strong>${minutes}</strong> · Goals: <strong>${goals}</strong> · Assists: <strong>${assists}</strong> · Shots: <strong>${shots}</strong>`;
+
+    document.getElementById("norm").innerHTML =
+      `Goals/90: <strong>${per90(goals,minutes).toFixed(2)}</strong><br>` +
+      `Assists/90: <strong>${per90(assists,minutes).toFixed(2)}</strong><br>` +
+      `Shots/90: <strong>${per90(shots,minutes).toFixed(2)}</strong>`;
+
+    const c1 = document.getElementById("c1");
+    c1.href = `/compare.html?a=${p.id}&b=${R1_ID}`;
+    c1.textContent = `Compare vs ${R1_NAME}`;
+
+    const c2 = document.getElementById("c2");
+    c2.href = `/compare.html?a=${p.id}&b=${R2_ID}`;
+    c2.textContent = `Compare vs ${R2_NAME}`;
+
+    const c3 = document.getElementById("c3");
+    c3.href = `/compare.html?a=${p.id}&b=${R3_ID}`;
+    c3.textContent = `Compare vs ${R3_NAME}`;
+  })
+  .catch(err => {
+    document.getElementById("meta").textContent = "Error loading data.";
+    document.getElementById("snapshot").textContent = "—";
+    document.getElementById("norm").textContent = "—";
+    console.error(err);
+  });
+</script>
+{{SCRIPTS_END}}
+{{LAYOUT_END}}
