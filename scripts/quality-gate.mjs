@@ -2,8 +2,8 @@
 // PlayersB Quality Gate: fails CI if any LIVE HTML page violates SEO/consistency rules.
 // Run: node scripts/quality-gate.mjs
 
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 const ROOT = process.cwd();
 const SITE_ORIGIN = "https://playersb.com";
@@ -56,6 +56,7 @@ const EXCLUDED_DIR_PREFIXES = [
 function listFilesRecursively(dir) {
   const out = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    // skip hidden/system folders by default
     if (entry.name.startsWith(".")) continue;
     if (entry.name === "node_modules") continue;
 
@@ -79,7 +80,7 @@ function isLiveHtml(relPath) {
   // - root HTML files: index.html, compare.html, etc.
   // - players/*.html + players/index.html
   // (Everything else is ignored.)
-  if (!relPath.endsWith(".html")) return false;
+  if (!relPath.endsWith(HTML_FILE_EXT)) return false;
 
   // root-level: "index.html" (no slashes)
   if (!relPath.includes("/")) return true;
@@ -103,7 +104,10 @@ function hasGA(html) {
   // Accept either gtag.js include or config line containing GA_ID
   // Also tolerate whitespace variations.
   if (html.includes(`gtag/js?id=${GA_ID}`)) return true;
-  const re = new RegExp(`gtag\\(\\s*['"]config['"]\\s*,\\s*['"]${GA_ID}['"]\\s*\\)`, "m");
+  const re = new RegExp(
+    `gtag\\(\\s*['"]config['"]\\s*,\\s*['"]${GA_ID}['"]\\s*\\)`,
+    "m"
+  );
   return re.test(html);
 }
 
@@ -125,7 +129,11 @@ function findDisallowed(html) {
 }
 
 function isPlayerPage(relPath) {
-  return relPath.startsWith("players/") && relPath.endsWith(".html") && relPath !== "players/index.html";
+  return (
+    relPath.startsWith("players/") &&
+    relPath.endsWith(".html") &&
+    relPath !== "players/index.html"
+  );
 }
 
 function expectedCanonical(relPath) {
@@ -169,7 +177,9 @@ function run() {
       } else {
         const gotN = normalizeUrl(gotCanon);
         const expN = normalizeUrl(expCanon);
-        if (gotN !== expN) failures.push(`${rp}: wrong canonical href. got "${gotCanon}", expected "${expCanon}"`);
+        if (gotN !== expN) {
+          failures.push(`${rp}: wrong canonical href. got "${gotCanon}", expected "${expCanon}"`);
+        }
       }
     } else {
       if (!gotCanon) warnings.push(`${rp}: warning: missing canonical (not enforced for this file)`);
@@ -182,7 +192,9 @@ function run() {
     // Optional nav consistency warning (non-fatal)
     const keyNav = ["/compare.html", "/tools.html", "/learn.html", "/players/index.html"];
     const missingNav = keyNav.filter((k) => !html.includes(k));
-    if (missingNav.length >= 3) warnings.push(`${rp}: warning: nav links look inconsistent/missing (${missingNav.join(", ")})`);
+    if (missingNav.length >= 3) {
+      warnings.push(`${rp}: warning: nav links look inconsistent/missing (${missingNav.join(", ")})`);
+    }
   }
 
   if (warnings.length) {
