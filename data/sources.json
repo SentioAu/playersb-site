@@ -1,0 +1,14 @@
+{
+  "footballData": {
+    "enabled": true,
+    "competitions": [
+      { "code": "CL", "label": "UEFA Champions League" },
+      { "code": "PL", "label": "Premier League" },
+      { "code": "PD", "label": "La Liga" }
+    ],
+    "limitMatches": 120
+  },
+  "playersSeed": {
+    "path": "data/players-soccer-v1.json"
+  }
+}
