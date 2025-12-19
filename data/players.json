@@ -1,0 +1,14 @@
+{
+  "players": [
+    {
+      "id": "haaland",
+      "name": "Erling Haaland",
+      "team": "Manchester City",
+      "position": "ST",
+      "minutes": 0,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0
+    }
+  ]
+}
