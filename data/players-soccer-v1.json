@@ -1,0 +1,112 @@
+[
+  {
+    "id": "haaland",
+    "name": "Erling Haaland",
+    "position": "ST",
+    "team": "Manchester City",
+    "minutes": 1400,
+    "goals": 18,
+    "assists": 4,
+    "shots": 62,
+    "shotsOnTarget": 34
+  },
+  {
+    "id": "mbappe",
+    "name": "Kylian Mbappé",
+    "position": "LW/ST",
+    "team": "Paris Saint-Germain",
+    "minutes": 1500,
+    "goals": 16,
+    "assists": 6,
+    "shots": 74,
+    "shotsOnTarget": 31
+  },
+  {
+    "id": "salah",
+    "name": "Mohamed Salah",
+    "position": "RW",
+    "team": "Liverpool",
+    "minutes": 1480,
+    "goals": 14,
+    "assists": 7,
+    "shots": 68,
+    "shotsOnTarget": 28
+  },
+  {
+    "id": "kane",
+    "name": "Harry Kane",
+    "position": "ST",
+    "team": "Bayern Munich",
+    "minutes": 1520,
+    "goals": 15,
+    "assists": 5,
+    "shots": 59,
+    "shotsOnTarget": 26
+  },
+  {
+    "id": "bellingham",
+    "name": "Jude Bellingham",
+    "position": "AM/CM",
+    "team": "Real Madrid",
+    "minutes": 1420,
+    "goals": 9,
+    "assists": 6,
+    "shots": 41,
+    "shotsOnTarget": 18
+  },
+  {
+    "id": "debruyne",
+    "name": "Kevin De Bruyne",
+    "position": "AM/CM",
+    "team": "Manchester City",
+    "minutes": 980,
+    "goals": 4,
+    "assists": 10,
+    "shots": 22,
+    "shotsOnTarget": 8
+  },
+  {
+    "id": "vinicius",
+    "name": "Vinícius Júnior",
+    "position": "LW",
+    "team": "Real Madrid",
+    "minutes": 1360,
+    "goals": 10,
+    "assists": 7,
+    "shots": 58,
+    "shotsOnTarget": 21
+  },
+  {
+    "id": "osimhen",
+    "name": "Victor Osimhen",
+    "position": "ST",
+    "team": "Napoli",
+    "minutes": 1180,
+    "goals": 11,
+    "assists": 3,
+    "shots": 49,
+    "shotsOnTarget": 23
+  },
+  {
+    "id": "son",
+    "name": "Son Heung-min",
+    "position": "LW",
+    "team": "Tottenham",
+    "minutes": 1450,
+    "goals": 12,
+    "assists": 6,
+    "shots": 55,
+    "shotsOnTarget": 24
+  },
+  {
+    "id": "griezmann",
+    "name": "Antoine Griezmann",
+    "position": "SS/AM",
+    "team": "Atlético Madrid",
+    "minutes": 1490,
+    "goals": 9,
+    "assists": 8,
+    "shots": 45,
+    "shotsOnTarget": 17
+  }
+]
