@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Player Comparison (A vs B) – PlayersB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Compare Player A vs Player B using normalized rates and clear tradeoffs: per-90, efficiency, and stability indicators." />
+</head>
+<body>
+  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.55;">
+    <header style="margin-bottom:18px;">
+      <h1 style="margin:0;">Player Comparison</h1>
+      <p style="margin:10px 0 0 0;color:#444;">
+        Compare two players with normalized rates (per-90) and simple efficiency context. No tips, no predictions.
+      </p>
+      <nav style="margin-top:12px;font-size:14px;">
+        <a href="/">Home</a> ·
+        <a href="/tools.html">Tools</a> ·
+        <a href="/learn.html">Learn</a> ·
+        <a href="/about.html">About</a> ·
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
+        <div style="flex:1;min-width:240px;">
+          <label for="playerA" style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Player A</label>
+          <select id="playerA" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;"></select>
+        </div>
+        <div style="flex:1;min-width:240px;">
+          <label for="playerB" style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Player B</label>
+          <select id="playerB" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;"></select>
+        </div>
+        <div>
+          <button id="swap" style="padding:10px 14px;border:1px solid #ddd;border-radius:10px;background:#fff;cursor:pointer;">
+            Swap
+          </button>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;font-size:13px;color:#666;">
+        Shareable link: <span id="shareUrl" style="word-break:break-all;"></span>
+      </div>
+    </section>
+
+    <section id="result" style="margin-top:18px;"></section>
+
+    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+      <p><strong>Disclaimer:</strong> Educational tool. No sportsbook. No bets. No guarantees.</p>
+      <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const DATA_URL = "/data/players-soccer-v1.json";
+
+    const $A = document.getElementById("playerA");
+    const $B = document.getElementById("playerB");
+    const $swap = document.getElementById("swap");
+    const $result = document.getElementById("result");
+    const $share = document.getElementById("shareUrl");
+
+    const round = (n, d=2) => Number.isFinite(n) ? (Math.round(n * (10**d)) / (10**d)) : 0;
+    const per90 = (value, minutes) => minutes > 0 ? (value / (minutes / 90)) : 0;
+
+    function getQuery() {
+      const p = new URLSearchParams(location.search);
+      return { a: p.get("a"), b: p.get("b") };
+    }
+
+    function setQuery(a, b) {
+      const p = new URLSearchParams();
+      if (a) p.set("a", a);
+      if (b) p.set("b", b);
+      const url = `${location.origin}${location.pathname}?${p.toString()}`;
+      history.replaceState({}, "", url);
+      $share.textContent = url;
+    }
+
+    function optionLabel(p) {
+      return `${p.name} — ${p.position} — ${p.team}`;
+    }
+
+    function buildSelect($el, players) {
+      $el.innerHTML = "";
+      for (const p of players) {
+        const opt = document.createElement("option");
+        opt.value = p.id;
+        opt.textContent = optionLabel(p);
+        $el.appendChild(opt);
+      }
+    }
+
+    function getById(players, id) {
+      return players.find(p => p.id === id) || players[0];
+    }
+
+    function calc(p) {
+      const g90 = per90(p.goals, p.minutes);
+      const a90 = per90(p.assists, p.minutes);
+      const s90 = per90(p.shots, p.minutes);
+      const sot90 = per90(p.shotsOnTarget, p.minutes);
+
+      const shotAccuracy = p.shots > 0 ? (p.shotsOnTarget / p.shots) : 0;
+      const goalPerShot = p.shots > 0 ? (p.goals / p.shots) : 0;
+
+      return {
+        g90, a90, s90, sot90,
+        shotAccuracy,
+        goalPerShot
+      };
+    }
+
+    function barRow(label, aVal, bVal, fmt, note="") {
+      const max = Math.max(aVal, bVal, 0.00001);
+      const aPct = (aVal / max) * 100;
+      const bPct = (bVal / max) * 100;
+
+      return `
+        <div style="margin:10px 0;">
+          <div style="display:flex;justify-content:space-between;gap:10px;">
+            <div style="font-weight:600;">${label}</div>
+            <div style="color:#666;font-size:13px;">${note}</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 120px 1fr;gap:10px;align-items:center;margin-top:6px;">
+            <div style="background:#f4f4f4;border-radius:10px;overflow:hidden;height:12px;">
+              <div style="height:12px;width:${aPct}%;background:#111;"></div>
+            </div>
+            <div style="text-align:center;font-size:13px;color:#333;">
+              ${fmt(aVal)} vs ${fmt(bVal)}
+            </div>
+            <div style="background:#f4f4f4;border-radius:10px;overflow:hidden;height:12px;">
+              <div style="height:12px;width:${bPct}%;background:#111;"></div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function render(players) {
+      const a = getById(players, $A.value);
+      const b = getById(players, $B.value);
+      const A = calc(a);
+      const B = calc(b);
+
+      setQuery(a.id, b.id);
+
+      const fmt2 = (x) => round(x, 2).toFixed(2);
+      const fmtPct = (x) => `${Math.round(x * 100)}%`;
+
+      $result.innerHTML = `
+        <section style="border:1px solid #eee;border-radius:12px;padding:16px;">
+          <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
+            <div style="flex:1;min-width:260px;">
+              <h2 style="margin:0;">${a.name}</h2>
+              <div style="color:#666;margin-top:6px;">${a.position} · ${a.team}</div>
+              <div style="margin-top:10px;font-size:13px;color:#444;">
+                Minutes: <strong>${a.minutes}</strong> · Goals: <strong>${a.goals}</strong> · Assists: <strong>${a.assists}</strong>
+              </div>
+            </div>
+            <div style="flex:1;min-width:260px;">
+              <h2 style="margin:0;">${b.name}</h2>
+              <div style="color:#666;margin-top:6px;">${b.position} · ${b.team}</div>
+              <div style="margin-top:10px;font-size:13px;color:#444;">
+                Minutes: <strong>${b.minutes}</strong> · Goals: <strong>${b.goals}</strong> · Assists: <strong>${b.assists}</strong>
+              </div>
+            </div>
+          </div>
+
+          <hr style="margin:14px 0;" />
+
+          <h3 style="margin:0 0 8px 0;">Normalized output (per 90)</h3>
+          ${barRow("Goals / 90", A.g90, B.g90, fmt2, "Rate-adjusted finishing")}
+          ${barRow("Assists / 90", A.a90, B.a90, fmt2, "Playmaking rate")}
+          ${barRow("Shots / 90", A.s90, B.s90, fmt2, "Volume proxy")}
+          ${barRow("Shots on target / 90", A.sot90, B.sot90, fmt2, "On-frame volume")}
+
+          <h3 style="margin:18px 0 8px 0;">Efficiency context</h3>
+          ${barRow("Shot accuracy", A.shotAccuracy, B.shotAccuracy, fmtPct, "SOT / shots")}
+          ${barRow("Goals per shot", A.goalPerShot, B.goalPerShot, fmt2, "Goals / shots")}
+
+          <div style="margin-top:18px;background:#fafafa;border:1px solid #eee;border-radius:12px;padding:12px;">
+            <strong>How to read this:</strong>
+            <ul style="margin:8px 0 0 18px;">
+              <li><strong>Per-90</strong> helps compare players with different minutes.</li>
+              <li><strong>Shots/90</strong> is a rough volume signal; <strong>goals per shot</strong> is a rough efficiency signal.</li>
+              <li>These are educational indicators, not guarantees.</li>
+            </ul>
+          </div>
+        </section>
+      `;
+    }
+
+    async function main() {
+      const res = await fetch(DATA_URL, { cache: "no-store" });
+      const players = await res.json();
+
+      buildSelect($A, players);
+      buildSelect($B, players);
+
+      const q = getQuery();
+      if (q.a && players.some(p => p.id === q.a)) $A.value = q.a;
+      if (q.b && players.some(p => p.id === q.b)) $B.value = q.b;
+
+      if (!$B.value) $B.value = players[1]?.id || players[0].id;
+
+      $share.textContent = `${location.origin}${location.pathname}?a=${$A.value}&b=${$B.value}`;
+
+      $A.addEventListener("change", () => render(players));
+      $B.addEventListener("change", () => render(players));
+
+      $swap.addEventListener("click", () => {
+        const tmp = $A.value;
+        $A.value = $B.value;
+        $B.value = tmp;
+        render(players);
+      });
+
+      render(players);
+    }
+
+    main().catch(err => {
+      $result.innerHTML = `<p style="color:#b00;">Error loading data. Please try again later.</p>`;
+      console.error(err);
+    });
+  </script>
+</body>
+</html>
