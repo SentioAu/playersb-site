@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Son Heung-min – PlayersB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Son Heung-min player page on PlayersB with normalized stats and comparison links." />
+</head>
+
+<body>
+<main style="max-width:900px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+
+<header>
+  <h1 id="name">Son Heung-min</h1>
+  <p id="meta">Loading…</p>
+  <nav style="font-size:14px;margin-bottom:14px;">
+    <a href="/">Home</a> ·
+    <a href="/players/index.html">Players</a> ·
+    <a href="/compare.html">Compare</a> ·
+    <a href="/tools.html">Tools</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Snapshot</h2>
+  <div id="snapshot">Loading…</div>
+</section>
+
+<section style="margin-top:16px;">
+  <h2>Normalized output (per 90)</h2>
+  <div id="norm"></div>
+</section>
+
+<section style="margin-top:16px;">
+  <h2>Compare</h2>
+  <p>
+    <a id="c1"></a> ·
+    <a id="c2"></a> ·
+    <a id="c3"></a>
+  </p>
+</section>
+
+<footer style="margin-top:32px;font-size:14px;color:#555;">
+  <p>Educational content only. No tips. No predictions.</p>
+  <p>
+    <a href="/privacy.html">Privacy</a> ·
+    <a href="/terms.html">Terms</a> ·
+    <a href="/contact.html">Contact</a>
+  </p>
+</footer>
+
+</main>
+
+<script>
+const PLAYER_ID = "son";
+const DATA_URL = "/data/players-soccer-v1.json";
+
+const R1_ID = "salah",    R1_NAME = "Mohamed Salah";
+const R2_ID = "vinicius", R2_NAME = "Vinícius Júnior";
+const R3_ID = "mbappe",   R3_NAME = "Kylian Mbappé";
+
+const per90 = (v,m) => m > 0 ? (v / (m / 90)) : 0;
+
+fetch(DATA_URL)
+  .then(r => r.json())
+  .then(players => {
+    const p = players.find(x => x.id === PLAYER_ID);
+    if (!p) return;
+
+    document.getElementById("name").textContent = p.name;
+    document.getElementById("meta").textContent = `${p.position} · ${p.team}`;
+
+    document.getElementById("snapshot").innerHTML =
+      `Minutes: <strong>${p.minutes}</strong> · Goals: <strong>${p.goals}</strong> · Assists: <strong>${p.assists}</strong> · Shots: <strong>${p.shots}</strong>`;
+
+    document.getElementById("norm").innerHTML =
+      `Goals/90: <strong>${per90(p.goals,p.minutes).toFixed(2)}</strong><br>` +
+      `Assists/90: <strong>${per90(p.assists,p.minutes).toFixed(2)}</strong><br>` +
+      `Shots/90: <strong>${per90(p.shots,p.minutes).toFixed(2)}</strong>`;
+
+    const c1 = document.getElementById("c1");
+    c1.href = `/compare.html?a=${p.id}&b=${R1_ID}`;
+    c1.textContent = `Compare vs ${R1_NAME}`;
+
+    const c2 = document.getElementById("c2");
+    c2.href = `/compare.html?a=${p.id}&b=${R2_ID}`;
+    c2.textContent = `Compare vs ${R2_NAME}`;
+
+    const c3 = document.getElementById("c3");
+    c3.href = `/compare.html?a=${p.id}&b=${R3_ID}`;
+    c3.textContent = `Compare vs ${R3_NAME}`;
+  });
+</script>
+
+</body>
+</html>
