@@ -4,56 +4,95 @@
   <meta charset="UTF-8" />
   <title>Learn – PlayersB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PlayersB methodology: how we normalize stats, compare players, and build explainable tools." />
+  <meta name="description" content="PlayersB methodology: how stats are normalized, how players are compared, and how explainable tools are built." />
+  <link rel="canonical" href="https://playersb.com/learn" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM');
+  </script>
 </head>
+
 <body>
-  <main style="max-width:920px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.7;">
-    <h1>Learn</h1>
-    <p><a href="/">← Back to home</a></p>
+  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.65;">
+    <header style="margin-bottom:18px;">
+      <h1 style="margin:0;">Learn</h1>
+      <p style="margin:10px 0 0 0;color:#444;">
+        This page explains the core concepts behind PlayersB tools.
+        The goal is transparency: what each metric represents, why it exists, and where its limits are.
+      </p>
 
-    <p>
-      PlayersB is tool-first. This section explains the <strong>minimum methodology</strong> behind our comparisons so you can
-      trust what you see and understand the tradeoffs.
-    </p>
+      <nav style="margin-top:12px;font-size:14px;">
+        <a href="/">Home</a> ·
+        <a href="/compare.html">Compare</a> ·
+        <a href="/tools.html">Tools</a> ·
+        <a href="/players/index.html">Players</a> ·
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
 
-    <h2>Core principles</h2>
-    <ul>
-      <li><strong>Normalize before comparing:</strong> totals can mislead when minutes differ, so we use per-90 / per-minute metrics where appropriate.</li>
-      <li><strong>Explainable outputs:</strong> if we compute a score (e.g., consistency), we show what goes into it.</li>
-      <li><strong>No predictions:</strong> PlayersB does not publish “locks” or guaranteed outcomes.</li>
-    </ul>
+    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
+      <h2 style="margin:0 0 10px 0;">Core principles</h2>
+      <ul style="margin:0;padding-left:18px;">
+        <li><strong>Normalize before comparing:</strong> raw totals can mislead when minutes differ, so rate-based metrics are used where appropriate.</li>
+        <li><strong>Explainable outputs:</strong> when a score or indicator is shown, its inputs are visible and understandable.</li>
+        <li><strong>No predictions:</strong> PlayersB does not publish tips, “locks”, or guaranteed outcomes.</li>
+      </ul>
+    </section>
 
-    <h2>Key concepts (short, practical)</h2>
+    <section style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
+      <h2 style="margin:0 0 10px 0;">Key concepts</h2>
 
-    <h3>Per-90 (why it exists)</h3>
-    <p>
-      Per-90 answers: “If this player played a full match, what would their rate look like?”
-      It helps compare players with different minutes played.
-    </p>
+      <h3 style="margin:12px 0 6px 0;">Per-90 metrics</h3>
+      <p style="margin:0;color:#444;">
+        Per-90 answers a simple question: “What would this player’s output look like over a full match?”
+        It allows fair comparison between players who have played different numbers of minutes.
+      </p>
 
-    <h3>Efficiency vs volume</h3>
-    <p>
-      Some players produce by volume (many shots/touches), others by efficiency (higher conversion).
-      Comparisons should show both—otherwise you misread the role.
-    </p>
+      <h3 style="margin:14px 0 6px 0;">Efficiency vs volume</h3>
+      <p style="margin:0;color:#444;">
+        Some players produce through volume (more shots, more touches), while others produce through efficiency
+        (higher conversion on fewer actions). A meaningful comparison shows both dimensions.
+      </p>
 
-    <h3>Consistency (simple definition)</h3>
-    <p>
-      Consistency isn’t “best player.” It’s “how stable is the output over games?”
-      A basic version can use variability of recent outputs relative to the average.
-      Lower variability → more consistent.
-    </p>
+      <h3 style="margin:14px 0 6px 0;">Consistency</h3>
+      <p style="margin:0;color:#444;">
+        Consistency describes how stable a player’s output is across matches.
+        A simple approach measures variation around an average: lower variation indicates more stable performance.
+      </p>
+    </section>
 
-    <h2>Next pages we will publish (tool-driven)</h2>
-    <ul>
-      <li><strong>How the Player Comparison works:</strong> normalization, role context, and what we do (and don’t) infer.</li>
-      <li><strong>Consistency score methodology:</strong> inputs, math, limits, and examples.</li>
-      <li><strong>Fantasy scoring explained:</strong> why scoring settings change who “wins” Player A vs Player B.</li>
-    </ul>
+    <section style="margin-top:18px;background:#fafafa;border:1px solid #eee;border-radius:12px;padding:14px;">
+      <h2 style="margin:0 0 8px 0;">How this connects to PlayersB tools</h2>
+      <ul style="margin:0;padding-left:18px;">
+        <li><strong>Player pages</strong> apply these concepts to individual profiles.</li>
+        <li><strong>Comparison tools</strong> use normalized metrics to highlight tradeoffs between players.</li>
+        <li><strong>Fantasy-safe tools</strong> apply scoring rules transparently without recommendations.</li>
+      </ul>
+    </section>
 
-    <p style="margin-top:18px;">
-      Next: <a href="/compare.html">Player Comparison (A vs B)</a> (launching soon)
-    </p>
+    <section style="margin-top:18px;">
+      <p style="margin:0;">
+        Explore these ideas in practice:
+        <a href="/compare.html">Player Comparison (A vs B)</a>
+      </p>
+    </section>
+
+    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+      <p>
+        <strong>Disclaimer:</strong> PlayersB provides educational tools and public-information summaries.
+        We do not accept bets, process wagers, or operate a sportsbook.
+      </p>
+      <p>
+        <a href="/privacy.html">Privacy</a> ·
+        <a href="/terms.html">Terms</a> ·
+        <a href="/contact.html">Contact</a>
+      </p>
+    </footer>
   </main>
 </body>
 </html>
