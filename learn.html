@@ -4,23 +4,55 @@
   <meta charset="UTF-8" />
   <title>Learn – PlayersB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PlayersB learning hub explaining metrics and comparison methodology." />
+  <meta name="description" content="PlayersB methodology: how we normalize stats, compare players, and build explainable tools." />
 </head>
 <body>
   <main style="max-width:920px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.7;">
     <h1>Learn</h1>
     <p><a href="/">← Back to home</a></p>
 
-    <h2>Methodology & concepts</h2>
+    <p>
+      PlayersB is tool-first. This section explains the <strong>minimum methodology</strong> behind our comparisons so you can
+      trust what you see and understand the tradeoffs.
+    </p>
+
+    <h2>Core principles</h2>
     <ul>
-      <li>Why per-90 and normalization matter</li>
-      <li>Consistency vs peak performance</li>
-      <li>How player comparisons are structured</li>
-      <li>Fantasy scoring explained</li>
+      <li><strong>Normalize before comparing:</strong> totals can mislead when minutes differ, so we use per-90 / per-minute metrics where appropriate.</li>
+      <li><strong>Explainable outputs:</strong> if we compute a score (e.g., consistency), we show what goes into it.</li>
+      <li><strong>No predictions:</strong> PlayersB does not publish “locks” or guaranteed outcomes.</li>
     </ul>
 
-    <p style="color:#666;">
-      This section exists to support the tools — not to publish generic content.
+    <h2>Key concepts (short, practical)</h2>
+
+    <h3>Per-90 (why it exists)</h3>
+    <p>
+      Per-90 answers: “If this player played a full match, what would their rate look like?”
+      It helps compare players with different minutes played.
+    </p>
+
+    <h3>Efficiency vs volume</h3>
+    <p>
+      Some players produce by volume (many shots/touches), others by efficiency (higher conversion).
+      Comparisons should show both—otherwise you misread the role.
+    </p>
+
+    <h3>Consistency (simple definition)</h3>
+    <p>
+      Consistency isn’t “best player.” It’s “how stable is the output over games?”
+      A basic version can use variability of recent outputs relative to the average.
+      Lower variability → more consistent.
+    </p>
+
+    <h2>Next pages we will publish (tool-driven)</h2>
+    <ul>
+      <li><strong>How the Player Comparison works:</strong> normalization, role context, and what we do (and don’t) infer.</li>
+      <li><strong>Consistency score methodology:</strong> inputs, math, limits, and examples.</li>
+      <li><strong>Fantasy scoring explained:</strong> why scoring settings change who “wins” Player A vs Player B.</li>
+    </ul>
+
+    <p style="margin-top:18px;">
+      Next: <a href="/compare.html">Player Comparison (A vs B)</a> (launching soon)
     </p>
   </main>
 </body>
