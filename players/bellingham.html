@@ -53,30 +53,49 @@
 
 <script>
 const PLAYER_ID = "bellingham";
-const DATA_URL = "/data/players-soccer-v1.json";
+const DATA_URL = "/data/players.json";
 
 const R1_ID = "debruyne",  R1_NAME = "Kevin De Bruyne";
 const R2_ID = "griezmann", R2_NAME = "Antoine Griezmann";
 const R3_ID = "vinicius",  R3_NAME = "Vinícius Júnior";
 
+const num = (v) => (typeof v === "number" && Number.isFinite(v)) ? v : 0;
 const per90 = (v,m) => m > 0 ? (v / (m / 90)) : 0;
 
-fetch(DATA_URL)
+fetch(DATA_URL, { cache: "no-store" })
   .then(r => r.json())
-  .then(players => {
+  .then(payload => {
+    const players = payload.players || [];
     const p = players.find(x => x.id === PLAYER_ID);
-    if (!p) return;
 
-    document.getElementById("name").textContent = p.name;
-    document.getElementById("meta").textContent = `${p.position} · ${p.team}`;
+    if (!p) {
+      document.getElementById("meta").textContent = "Player not found in dataset.";
+      document.getElementById("snapshot").textContent = "—";
+      document.getElementById("norm").textContent = "—";
+      document.getElementById("c1").textContent = `Compare vs ${R1_NAME}`;
+      document.getElementById("c1").href = `/compare.html`;
+      document.getElementById("c2").textContent = `Compare vs ${R2_NAME}`;
+      document.getElementById("c2").href = `/compare.html`;
+      document.getElementById("c3").textContent = `Compare vs ${R3_NAME}`;
+      document.getElementById("c3").href = `/compare.html`;
+      return;
+    }
+
+    const minutes = num(p.minutes);
+    const goals = num(p.goals);
+    const assists = num(p.assists);
+    const shots = num(p.shots);
+
+    document.getElementById("name").textContent = p.name || "Player";
+    document.getElementById("meta").textContent = `${p.position || ""} · ${p.team || ""}`.trim().replace(/^·\s*|\s*·$/g, "");
 
     document.getElementById("snapshot").innerHTML =
-      `Minutes: <strong>${p.minutes}</strong> · Goals: <strong>${p.goals}</strong> · Assists: <strong>${p.assists}</strong> · Shots: <strong>${p.shots}</strong>`;
+      `Minutes: <strong>${minutes}</strong> · Goals: <strong>${goals}</strong> · Assists: <strong>${assists}</strong> · Shots: <strong>${shots}</strong>`;
 
     document.getElementById("norm").innerHTML =
-      `Goals/90: <strong>${per90(p.goals,p.minutes).toFixed(2)}</strong><br>` +
-      `Assists/90: <strong>${per90(p.assists,p.minutes).toFixed(2)}</strong><br>` +
-      `Shots/90: <strong>${per90(p.shots,p.minutes).toFixed(2)}</strong>`;
+      `Goals/90: <strong>${per90(goals,minutes).toFixed(2)}</strong><br>` +
+      `Assists/90: <strong>${per90(assists,minutes).toFixed(2)}</strong><br>` +
+      `Shots/90: <strong>${per90(shots,minutes).toFixed(2)}</strong>`;
 
     const c1 = document.getElementById("c1");
     c1.href = `/compare.html?a=${p.id}&b=${R1_ID}`;
@@ -89,6 +108,12 @@ fetch(DATA_URL)
     const c3 = document.getElementById("c3");
     c3.href = `/compare.html?a=${p.id}&b=${R3_ID}`;
     c3.textContent = `Compare vs ${R3_NAME}`;
+  })
+  .catch(err => {
+    document.getElementById("meta").textContent = "Error loading data.";
+    document.getElementById("snapshot").textContent = "—";
+    document.getElementById("norm").textContent = "—";
+    console.error(err);
   });
 </script>
 
