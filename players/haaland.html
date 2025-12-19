@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Erling Haaland – PlayersB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Erling Haaland player page on PlayersB: normalized output, efficiency context, and comparison links." />
+</head>
+<body>
+  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+    <header style="margin-bottom:14px;">
+      <h1 id="name" style="margin:0;">Erling Haaland</h1>
+      <p id="sub" style="margin:10px 0 0 0;color:#444;">Loading…</p>
+      <nav style="margin-top:12px;font-size:14px;">
+        <a href="/">Home</a> ·
+        <a href="/players/index.html">Players</a> ·
+        <a href="/compare.html">Compare</a> ·
+        <a href="/tools.html">Tools</a> ·
+        <a href="/learn.html">Learn</a>
+      </nav>
+    </header>
+
+    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
+      <h2 style="margin:0 0 10px 0;">Snapshot</h2>
+      <div id="snapshot" style="color:#333;">Loading…</div>
+      <div style="margin-top:12px;font-size:14px;">
+        <a id="compareMbappe" href="#">Compare vs Mbappé</a> ·
+        <a id="compareSalah" href="#">Compare vs Salah</a> ·
+        <a id="compareKane" href="#">Compare vs Kane</a>
+      </div>
+    </section>
+
+    <section style="margin-top:14px;border:1px solid #eee;border-radius:12px;padding:14px;">
+      <h2 style="margin:0 0 10px 0;">Normalized output</h2>
+      <div id="norm" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;"></div>
+      <p style="margin-top:10px;color:#666;font-size:13px;">
+        Normalized metrics reduce minute-bias. They are indicators, not guarantees.
+      </p>
+    </section>
+
+    <section style="margin-top:14px;border:1px solid #eee;border-radius:12px;padding:14px;">
+      <h2 style="margin:0 0 10px 0;">Efficiency context</h2>
+      <div id="eff" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;"></div>
+      <p style="margin-top:10px;color:#666;font-size:13px;">
+        Efficiency is shown alongside volume so role differences don’t distort interpretation.
+      </p>
+    </section>
+
+    <section style="margin-top:14px;">
+      <h2>Related players</h2>
+      <ul>
+        <li><a href="/players/mbappe.html">Kylian Mbappé</a></li>
+        <li><a href="/players/kane.html">Harry Kane</a></li>
+        <li><a href="/players/osimhen.html">Victor Osimhen</a></li>
+      </ul>
+    </section>
+
+    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+      <p><strong>Disclaimer:</strong> Educational page. No tips, no predictions, no sportsbook.</p>
+      <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const PLAYER_ID = "haaland"; // change this per file
+    const DATA_URL = "/data/players-soccer-v1.json";
+
+    const per90 = (value, minutes) => minutes > 0 ? (value / (minutes / 90)) : 0;
+    const round = (n, d=2) => (Math.round(n * (10**d)) / (10**d)).toFixed(d);
+
+    function card(label, value, note="") {
+      return `
+        <div style="border:1px solid #eee;border-radius:12px;padding:12px;">
+          <div style="font-size:13px;color:#666;">${label}</div>
+          <div style="font-size:20px;font-weight:700;margin-top:6px;">${value}</div>
+          ${note ? `<div style="font-size:12px;color:#666;margin-top:6px;">${note}</div>` : ""}
+        </div>
+      `;
+    }
+
+    async function main() {
+      const res = await fetch(DATA_URL, { cache: "no-store" });
+      const players = await res.json();
+      const p = players.find(x => x.id === PLAYER_ID);
+
+      if (!p) {
+        document.getElementById("sub").textContent = "Player not found in dataset.";
+        document.getElementById("snapshot").textContent = "—";
+        return;
+      }
+
+      document.title = `${p.name} – PlayersB`;
+      document.getElementById("name").textContent = p.name;
+      document.getElementById("sub").textContent = `${p.position} · ${p.team}`;
+
+      document.getElementById("snapshot").innerHTML = `
+        Minutes: <strong>${p.minutes}</strong> · Goals: <strong>${p.goals}</strong> · Assists: <strong>${p.assists}</strong> · Shots: <strong>${p.shots}</strong>
+      `;
+
+      const g90 = per90(p.goals, p.minutes);
+      const a90 = per90(p.assists, p.minutes);
+      const s90 = per90(p.shots, p.minutes);
+      const sot90 = per90(p.shotsOnTarget, p.minutes);
+
+      document.getElementById("norm").innerHTML =
+        card("Goals / 90", round(g90, 2), "Rate-adjusted output") +
+        card("Assists / 90", round(a90, 2), "Rate-adjusted creation") +
+        card("Shots / 90", round(s90, 2), "Volume proxy") +
+        card("Shots on Target / 90", round(sot90, 2), "On-frame volume");
+
+      const shotAcc = p.shots > 0 ? (p.shotsOnTarget / p.shots) : 0;
+      const goalsPerShot = p.shots > 0 ? (p.goals / p.shots) : 0;
+
+      document.getElementById("eff").innerHTML =
+        card("Shot accuracy", `${Math.round(shotAcc * 100)}%`, "SOT / shots") +
+        card("Goals per shot", round(goalsPerShot, 3), "Goals / shots");
+
+      // Compare links
+      document.getElementById("compareMbappe").href = `/compare.html?a=${p.id}&b=mbappe`;
+      document.getElementById("compareSalah").href = `/compare.html?a=${p.id}&b=salah`;
+      document.getElementById("compareKane").href = `/compare.html?a=${p.id}&b=kane`;
+    }
+
+    main().catch(() => {
+      document.getElementById("sub").textContent = "Error loading player data.";
+    });
+  </script>
+</body>
+</html>
