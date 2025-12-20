@@ -1,34 +1,30 @@
-<h1 id="name">{{PLAYER_NAME}}</h1>
-<p id="meta">{{META_LINE}}</p>
-
-<p style="margin:10px 0 18px 0;">
-  <a href="/players/">← Back to players</a>
-</p>
+<h1>{{NAME}}</h1>
+<p>{{META_LINE}}</p>
 
 <section>
   <h2>Snapshot</h2>
-  <div id="snapshot">
+  <p>
     Minutes: <strong>{{MINUTES}}</strong> ·
     Goals: <strong>{{GOALS}}</strong> ·
     Assists: <strong>{{ASSISTS}}</strong> ·
     Shots: <strong>{{SHOTS}}</strong>
-  </div>
+  </p>
 </section>
 
 <section style="margin-top:16px;">
   <h2>Normalized output (per 90)</h2>
-  <div id="norm">
+  <p>
     Goals/90: <strong>{{G90}}</strong><br>
     Assists/90: <strong>{{A90}}</strong><br>
     Shots/90: <strong>{{S90}}</strong>
-  </div>
+  </p>
 </section>
 
 <section style="margin-top:16px;">
   <h2>Compare</h2>
-  <p style="margin:8px 0 0 0;">
-    <a href="/compare?a={{PLAYER_ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
-    <a href="/compare?a={{PLAYER_ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
-    <a href="/compare?a={{PLAYER_ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
+  <p>
+    <a href="/compare?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
+    <a href="/compare?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
+    <a href="/compare?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
   </p>
 </section>
