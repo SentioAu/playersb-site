@@ -41,12 +41,10 @@ const RIVALS = {
 function rivalsFor(id) {
   const r = RIVALS[id];
   if (r && r.length >= 3) return r;
-  // fallback
   return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
 }
 
 async function main() {
-  // Ensure required files exist
   try {
     await fs.access(DATA_PATH);
   } catch {
@@ -66,6 +64,8 @@ async function main() {
 
   await fs.mkdir(OUT_DIR, { recursive: true });
 
+  let written = 0;
+
   for (const p of players) {
     if (!p?.id) continue;
 
@@ -76,11 +76,12 @@ async function main() {
 
     const [r1, r2, r3] = rivalsFor(p.id);
 
-    const description = `${safeStr(p.name)} player page on PlayersB with normalized stats and comparison links.`;
+    const playerName = safeStr(p.name) || "Player";
+    const description = `${playerName} player page on PlayersB with normalized stats and comparison links.`;
 
     const html = tpl
-      .replaceAll("{{ID}}", safeStr(p.id))
-      .replaceAll("{{NAME}}", safeStr(p.name) || "Player")
+      .replaceAll("{{PLAYER_ID}}", safeStr(p.id))
+      .replaceAll("{{PLAYER_NAME}}", playerName)
       .replaceAll("{{DESCRIPTION}}", description)
       .replaceAll("{{META_LINE}}", metaLine(p) || "—")
       .replaceAll("{{MINUTES}}", String(minutes))
@@ -96,9 +97,10 @@ async function main() {
 
     const outPath = path.join(OUT_DIR, `${p.id}.html`);
     await fs.writeFile(outPath, html, "utf-8");
+    written += 1;
   }
 
-  console.log(`Generated ${players.length} player pages into /players`);
+  console.log(`Generated ${written} player pages into /players`);
 }
 
 main().catch((err) => {
