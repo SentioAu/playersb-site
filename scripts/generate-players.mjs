@@ -24,7 +24,7 @@ function metaLine(p) {
   return pos || team || "";
 }
 
-// simple defaults; expand anytime
+// simple defaults; you can expand this map anytime
 const RIVALS = {
   haaland:    [["mbappe","Kylian Mbappé"], ["kane","Harry Kane"], ["osimhen","Victor Osimhen"]],
   mbappe:     [["haaland","Erling Haaland"], ["vinicius","Vinícius Júnior"], ["salah","Mohamed Salah"]],
@@ -41,20 +41,32 @@ const RIVALS = {
 function rivalsFor(id) {
   const r = RIVALS[id];
   if (r && r.length >= 3) return r;
+  // fallback
   return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
 }
 
-async function mustExist(p, label) {
-  try {
-    await fs.access(p);
-  } catch {
-    throw new Error(`Missing ${label}: ${p}`);
+/**
+ * Replace multiple placeholder variants safely.
+ * Supports both:
+ *  - {{ID}} and {{PLAYER_ID}}
+ *  - {{NAME}} and {{PLAYER_NAME}}
+ */
+function applyReplacements(tpl, dict) {
+  let out = tpl;
+  for (const [key, value] of Object.entries(dict)) {
+    // replace all occurrences
+    out = out.split(key).join(value);
   }
+  return out;
 }
 
 async function main() {
-  await mustExist(DATA_PATH, "data file");
-  await mustExist(TEMPLATE_PATH, "player template");
+  // Ensure required files exist
+  try {
+    await fs.access(DATA_PATH);
+  } catch {
+    throw new Error(`Missing ${DATA_PATH}. Ensure data/players.json exists and is committed.`);
+  }
 
   const [rawData, tpl] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
@@ -63,47 +75,64 @@ async function main() {
 
   const parsed = JSON.parse(rawData);
   const players = parsed.players || [];
-  if (!players.length) throw new Error("data/players.json has no players[] array.");
+  if (!players.length) {
+    throw new Error("data/players.json has no players[] array.");
+  }
 
   await fs.mkdir(OUT_DIR, { recursive: true });
 
-  let count = 0;
+  let written = 0;
 
   for (const p of players) {
     if (!p?.id) continue;
+
+    const id = safeStr(p.id);
+    const name = safeStr(p.name) || "Player";
 
     const minutes = num(p.minutes);
     const goals = num(p.goals);
     const assists = num(p.assists);
     const shots = num(p.shots);
 
-    const [r1, r2, r3] = rivalsFor(p.id);
+    const [r1, r2, r3] = rivalsFor(id);
 
-    const description = `${safeStr(p.name)} player page on PlayersB with normalized stats and comparison links.`;
+    const description = `${name} player page on PlayersB with normalized stats and comparison links.`;
+    const meta = metaLine(p) || "—";
 
-    const html = tpl
-      // template variables must match your templates/player.html placeholders:
-      .replaceAll("{{ID}}", safeStr(p.id))
-      .replaceAll("{{NAME}}", safeStr(p.name) || "Player")
-      .replaceAll("{{DESCRIPTION}}", description)
-      .replaceAll("{{META_LINE}}", metaLine(p) || "—")
-      .replaceAll("{{MINUTES}}", String(minutes))
-      .replaceAll("{{GOALS}}", String(goals))
-      .replaceAll("{{ASSISTS}}", String(assists))
-      .replaceAll("{{SHOTS}}", String(shots))
-      .replaceAll("{{G90}}", fmt2(per90(goals, minutes)))
-      .replaceAll("{{A90}}", fmt2(per90(assists, minutes)))
-      .replaceAll("{{S90}}", fmt2(per90(shots, minutes)))
-      .replaceAll("{{R1_ID}}", r1[0]).replaceAll("{{R1_NAME}}", r1[1])
-      .replaceAll("{{R2_ID}}", r2[0]).replaceAll("{{R2_NAME}}", r2[1])
-      .replaceAll("{{R3_ID}}", r3[0]).replaceAll("{{R3_NAME}}", r3[1]);
+    const html = applyReplacements(tpl, {
+      // ID variants
+      "{{ID}}": id,
+      "{{PLAYER_ID}}": id,
 
-    const outPath = path.join(OUT_DIR, `${p.id}.html`);
+      // Name variants
+      "{{NAME}}": name,
+      "{{PLAYER_NAME}}": name,
+
+      // Meta/description variants
+      "{{DESCRIPTION}}": description,
+      "{{META_LINE}}": meta,
+
+      // Stats placeholders (if used by template)
+      "{{MINUTES}}": String(minutes),
+      "{{GOALS}}": String(goals),
+      "{{ASSISTS}}": String(assists),
+      "{{SHOTS}}": String(shots),
+      "{{G90}}": fmt2(per90(goals, minutes)),
+      "{{A90}}": fmt2(per90(assists, minutes)),
+      "{{S90}}": fmt2(per90(shots, minutes)),
+
+      // Rivals
+      "{{R1_ID}}": r1[0], "{{R1_NAME}}": r1[1],
+      "{{R2_ID}}": r2[0], "{{R2_NAME}}": r2[1],
+      "{{R3_ID}}": r3[0], "{{R3_NAME}}": r3[1],
+    });
+
+    const outPath = path.join(OUT_DIR, `${id}.html`);
     await fs.writeFile(outPath, html, "utf-8");
-    count++;
+    written++;
   }
 
-  console.log(`Generated ${count} player pages into /players`);
+  console.log(`Generated ${written} player pages into /players`);
 }
 
 main().catch((err) => {
