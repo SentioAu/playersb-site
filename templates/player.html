@@ -1,10 +1,6 @@
-{{LAYOUT_START}}
-{{HEADER_START}}
-  <h1 id="name">{{NAME}}</h1>
-  <p id="meta">{{META_LINE}}</p>
-{{HEADER_END}}
+<h1 id="name">{{PLAYER_NAME}}</h1>
+<p id="meta">{{META_LINE}}</p>
 
-{{CONTENT_START}}
 <section>
   <h2>Snapshot</h2>
   <div id="snapshot">
@@ -24,10 +20,8 @@
 <section style="margin-top:16px;">
   <h2>Compare</h2>
   <p>
-    <a href="/compare.html?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
-    <a href="/compare.html?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
-    <a href="/compare.html?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
+    <a href="/compare?a={{PLAYER_ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
+    <a href="/compare?a={{PLAYER_ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
+    <a href="/compare?a={{PLAYER_ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
   </p>
 </section>
-{{CONTENT_END}}
-{{LAYOUT_END}}
