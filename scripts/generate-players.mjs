@@ -1,4 +1,3 @@
-// scripts/generate-players.mjs
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -7,20 +6,18 @@ const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
-const PLAYER_BODY_PATH = path.join(ROOT, "templates", "player.html");
+const BODY_PATH = path.join(ROOT, "templates", "player.html"); // your BODY partial
 const OUT_DIR = path.join(ROOT, "players");
 
-const per90 = (v, m) => (m > 0 ? v / (m / 90) : 0);
+const per90 = (v, m) => (m > 0 ? (v / (m / 90)) : 0);
 const num = (v) => (typeof v === "number" && Number.isFinite(v) ? v : 0);
 
 function fmt2(n) {
   return Number.isFinite(n) ? n.toFixed(2) : "0.00";
 }
-
 function safeStr(s) {
   return String(s ?? "").trim();
 }
-
 function metaLine(p) {
   const pos = safeStr(p.position);
   const team = safeStr(p.team);
@@ -28,7 +25,7 @@ function metaLine(p) {
   return pos || team || "—";
 }
 
-// defaults; expand anytime
+// Simple defaults; expand anytime
 const RIVALS = {
   haaland:    [["mbappe","Kylian Mbappé"], ["kane","Harry Kane"], ["osimhen","Victor Osimhen"]],
   mbappe:     [["haaland","Erling Haaland"], ["vinicius","Vinícius Júnior"], ["salah","Mohamed Salah"]],
@@ -48,16 +45,33 @@ function rivalsFor(id) {
   return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
 }
 
+function replaceAllTokens(str, dict) {
+  let out = str;
+  for (const [k, v] of Object.entries(dict)) {
+    out = out.replaceAll(k, v);
+  }
+  return out;
+}
+
+function assertNoPlaceholders(finalHtml, fileLabel) {
+  // fail hard if ANY {{...}} leaks into generated output
+  const m = finalHtml.match(/{{[^}]+}}/g);
+  if (m?.length) {
+    const uniq = Array.from(new Set(m)).slice(0, 10).join(", ");
+    throw new Error(`${fileLabel}: unresolved template placeholders found: ${uniq}`);
+  }
+}
+
 async function main() {
   // Ensure required files exist
   await fs.access(DATA_PATH);
   await fs.access(LAYOUT_PATH);
-  await fs.access(PLAYER_BODY_PATH);
+  await fs.access(BODY_PATH);
 
-  const [rawData, layoutTpl, playerBodyTpl] = await Promise.all([
+  const [rawData, layoutTpl, bodyTpl] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
     fs.readFile(LAYOUT_PATH, "utf-8"),
-    fs.readFile(PLAYER_BODY_PATH, "utf-8"),
+    fs.readFile(BODY_PATH, "utf-8"),
   ]);
 
   const parsed = JSON.parse(rawData);
@@ -66,13 +80,13 @@ async function main() {
 
   await fs.mkdir(OUT_DIR, { recursive: true });
 
-  let written = 0;
+  let count = 0;
 
   for (const p of players) {
     const id = safeStr(p?.id);
     if (!id) continue;
 
-    const name = safeStr(p.name) || "Player";
+    const name = safeStr(p?.name) || "Player";
     const minutes = num(p.minutes);
     const goals = num(p.goals);
     const assists = num(p.assists);
@@ -80,39 +94,44 @@ async function main() {
 
     const [r1, r2, r3] = rivalsFor(id);
 
+    const body = replaceAllTokens(bodyTpl, {
+      "{{PLAYER_ID}}": id,
+      "{{PLAYER_NAME}}": name,
+      "{{META_LINE}}": metaLine(p),
+
+      "{{MINUTES}}": String(minutes),
+      "{{GOALS}}": String(goals),
+      "{{ASSISTS}}": String(assists),
+      "{{SHOTS}}": String(shots),
+
+      "{{G90}}": fmt2(per90(goals, minutes)),
+      "{{A90}}": fmt2(per90(assists, minutes)),
+      "{{S90}}": fmt2(per90(shots, minutes)),
+
+      "{{R1_ID}}": r1[0], "{{R1_NAME}}": r1[1],
+      "{{R2_ID}}": r2[0], "{{R2_NAME}}": r2[1],
+      "{{R3_ID}}": r3[0], "{{R3_NAME}}": r3[1],
+    });
+
+    const canonical = `${SITE_ORIGIN}/players/${id}.html`;
     const title = `${name} – PlayersB`;
     const description = `${name} player page on PlayersB with normalized stats and comparison links.`;
-    const canonical = `${SITE_ORIGIN}/players/${id}.html`;
 
-    // Build BODY from templates/player.html
-    const body = playerBodyTpl
-      .replaceAll("{{PLAYER_NAME}}", name)
-      .replaceAll("{{META_LINE}}", metaLine(p))
-      .replaceAll("{{MINUTES}}", String(minutes))
-      .replaceAll("{{GOALS}}", String(goals))
-      .replaceAll("{{ASSISTS}}", String(assists))
-      .replaceAll("{{SHOTS}}", String(shots))
-      .replaceAll("{{G90}}", fmt2(per90(goals, minutes)))
-      .replaceAll("{{A90}}", fmt2(per90(assists, minutes)))
-      .replaceAll("{{S90}}", fmt2(per90(shots, minutes)))
-      .replaceAll("{{PLAYER_ID}}", id)
-      .replaceAll("{{R1_ID}}", r1[0]).replaceAll("{{R1_NAME}}", r1[1])
-      .replaceAll("{{R2_ID}}", r2[0]).replaceAll("{{R2_NAME}}", r2[1])
-      .replaceAll("{{R3_ID}}", r3[0]).replaceAll("{{R3_NAME}}", r3[1]);
+    const html = replaceAllTokens(layoutTpl, {
+      "{{TITLE}}": title,
+      "{{DESCRIPTION}}": description,
+      "{{CANONICAL}}": canonical,
+      "{{BODY}}": body,
+    });
 
-    // Wrap BODY inside templates/layout.html
-    const html = layoutTpl
-      .replaceAll("{{TITLE}}", title)
-      .replaceAll("{{DESCRIPTION}}", description)
-      .replaceAll("{{CANONICAL}}", canonical)
-      .replaceAll("{{BODY}}", body);
+    assertNoPlaceholders(html, `players/${id}.html`);
 
     const outPath = path.join(OUT_DIR, `${id}.html`);
     await fs.writeFile(outPath, html, "utf-8");
-    written += 1;
+    count++;
   }
 
-  console.log(`Generated ${written} player pages into /players`);
+  console.log(`Generated ${count} player pages into /players`);
 }
 
 main().catch((err) => {
