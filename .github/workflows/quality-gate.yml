@@ -11,21 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Node is already available on GitHub-hosted runners.
-      # setup-node isn't needed here (and it complains about missing lockfiles).
-      - name: Show Node version
-        run: node -v
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-      - name: Verify required files exist
-        run: |
-          test -f data/players.json
-          test -f scripts/generate-core.mjs
-          test -f scripts/generate-players.mjs
-          test -f scripts/generate-sitemap.mjs
-          test -f scripts/quality-gate.mjs
-
-      - name: Generate core pages
-        run: node scripts/generate-core.mjs
+      - name: Verify data exists
+        run: test -f data/players.json
 
       - name: Generate player pages
         run: node scripts/generate-players.mjs
