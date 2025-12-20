@@ -1,42 +1,66 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs/promises";
+import path from "node:path";
 
-const SITE = "https://playersb.com";
+const ROOT = process.cwd();
+const SITE_ORIGIN = "https://playersb.com";
 
-const root = process.cwd();
-const playersDir = path.join(root, "players");
+const DATA_PATH = path.join(ROOT, "data", "players.json");
+const OUT_PATH = path.join(ROOT, "sitemap.xml");
 
-// Core routes you want indexed
-const core = [
-  "/",
-  "/compare.html",
-  "/tools.html",
-  "/learn.html",
-  "/about.html",
-  "/contact.html",
-  "/privacy.html",
-  "/terms.html",
-  "/players/",
+const CORE = [
+  "/",           // home served by index.html
+  "/compare",    // your clean URL canonical
+  "/tools",
+  "/learn",
+  "/about",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/players/",   // players directory
 ];
 
-// Collect /players/*.html
-let playerPages = [];
-if (fs.existsSync(playersDir)) {
-  playerPages = fs
-    .readdirSync(playersDir)
-    .filter(f => f.endsWith(".html") && f.toLowerCase() !== "index.html")
-    .map(f => `/players/${f}`);
+// Escape XML
+function esc(s) {
+  return String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
 }
 
-const urls = [...core, ...playerPages];
+function urlTag(loc) {
+  return `  <url>\n    <loc>${esc(loc)}</loc>\n  </url>`;
+}
 
-// Build XML
-const xml =
+async function main() {
+  const raw = await fs.readFile(DATA_PATH, "utf-8");
+  const parsed = JSON.parse(raw);
+  const players = parsed.players || [];
+
+  const urls = [];
+
+  // Core pages
+  for (const p of CORE) urls.push(`${SITE_ORIGIN}${p}`);
+
+  // Player entity pages (keep .html)
+  for (const p of players) {
+    if (!p?.id) continue;
+    urls.push(`${SITE_ORIGIN}/players/${p.id}.html`);
+  }
+
+  const xml =
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${SITE}${u}</loc></url>`).join("\n")}
+${urls.map(urlTag).join("\n")}
 </urlset>
 `;
 
-fs.writeFileSync(path.join(root, "sitemap.xml"), xml, "utf8");
-console.log(`✅ sitemap.xml generated with ${urls.length} URLs`);
+  await fs.writeFile(OUT_PATH, xml, "utf-8");
+  console.log(`Generated sitemap.xml with ${urls.length} URLs`);
+}
+
+main().catch((err) => {
+  console.error("generate-sitemap: fatal", err);
+  process.exit(1);
+});
