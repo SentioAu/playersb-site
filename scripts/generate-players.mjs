@@ -2,8 +2,11 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
+const SITE_ORIGIN = "https://playersb.com";
+
 const DATA_PATH = path.join(ROOT, "data", "players.json");
-const TEMPLATE_PATH = path.join(ROOT, "templates", "player.html");
+const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
+const PLAYER_BODY_PATH = path.join(ROOT, "templates", "player.html");
 const OUT_DIR = path.join(ROOT, "players");
 
 const per90 = (v, m) => (m > 0 ? (v / (m / 90)) : 0);
@@ -21,7 +24,7 @@ function metaLine(p) {
   const pos = safeStr(p.position);
   const team = safeStr(p.team);
   if (pos && team) return `${pos} · ${team}`;
-  return pos || team || "";
+  return pos || team || "—";
 }
 
 // simple defaults; you can expand this map anytime
@@ -44,26 +47,32 @@ function rivalsFor(id) {
   return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
 }
 
-async function main() {
-  // Ensure required files exist
+async function mustExist(p) {
   try {
-    await fs.access(DATA_PATH);
+    await fs.access(p);
   } catch {
-    throw new Error(`Missing ${DATA_PATH}. Ensure data/players.json exists and is committed.`);
+    throw new Error(`Missing required file: ${p}`);
   }
+}
 
-  const [rawData, tpl] = await Promise.all([
+async function main() {
+  await mustExist(DATA_PATH);
+  await mustExist(LAYOUT_PATH);
+  await mustExist(PLAYER_BODY_PATH);
+
+  const [rawData, layoutTpl, bodyTpl] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
-    fs.readFile(TEMPLATE_PATH, "utf-8"),
+    fs.readFile(LAYOUT_PATH, "utf-8"),
+    fs.readFile(PLAYER_BODY_PATH, "utf-8"),
   ]);
 
   const parsed = JSON.parse(rawData);
   const players = parsed.players || [];
-  if (!players.length) {
-    throw new Error("data/players.json has no players[] array.");
-  }
+  if (!players.length) throw new Error("data/players.json has no players[] array.");
 
   await fs.mkdir(OUT_DIR, { recursive: true });
+
+  let written = 0;
 
   for (const p of players) {
     if (!p?.id) continue;
@@ -78,44 +87,39 @@ async function main() {
 
     const [r1, r2, r3] = rivalsFor(id);
 
-    const description = `${name} player page on PlayersB with normalized stats and comparison links.`;
-
-    // IMPORTANT:
-    // Replace BOTH placeholder styles:
-    // - {{ID}} / {{NAME}}
-    // - {{PLAYER_ID}} / {{PLAYER_NAME}}
-    const html = tpl
-      // IDs / names
-      .replaceAll("{{ID}}", id)
-      .replaceAll("{{NAME}}", name)
+    // Player body
+    const body = bodyTpl
       .replaceAll("{{PLAYER_ID}}", id)
       .replaceAll("{{PLAYER_NAME}}", name)
-
-      // SEO/meta
-      .replaceAll("{{DESCRIPTION}}", description)
-      .replaceAll("{{META_LINE}}", metaLine(p) || "—")
-
-      // raw totals
+      .replaceAll("{{META_LINE}}", metaLine(p))
       .replaceAll("{{MINUTES}}", String(minutes))
       .replaceAll("{{GOALS}}", String(goals))
       .replaceAll("{{ASSISTS}}", String(assists))
       .replaceAll("{{SHOTS}}", String(shots))
-
-      // per90
       .replaceAll("{{G90}}", fmt2(per90(goals, minutes)))
       .replaceAll("{{A90}}", fmt2(per90(assists, minutes)))
       .replaceAll("{{S90}}", fmt2(per90(shots, minutes)))
-
-      // rivals
       .replaceAll("{{R1_ID}}", r1[0]).replaceAll("{{R1_NAME}}", r1[1])
       .replaceAll("{{R2_ID}}", r2[0]).replaceAll("{{R2_NAME}}", r2[1])
       .replaceAll("{{R3_ID}}", r3[0]).replaceAll("{{R3_NAME}}", r3[1]);
 
+    // Wrap in layout
+    const canonical = `${SITE_ORIGIN}/players/${id}.html`;
+    const title = `${name} – PlayersB`;
+    const description = `${name} player page on PlayersB with normalized stats and comparison links.`;
+
+    const html = layoutTpl
+      .replaceAll("{{TITLE}}", title)
+      .replaceAll("{{DESCRIPTION}}", description)
+      .replaceAll("{{CANONICAL}}", canonical)
+      .replaceAll("{{BODY}}", body);
+
     const outPath = path.join(OUT_DIR, `${id}.html`);
     await fs.writeFile(outPath, html, "utf-8");
+    written++;
   }
 
-  console.log(`Generated ${players.length} player pages into /players`);
+  console.log(`Generated ${written} player pages into /players`);
 }
 
 main().catch((err) => {
