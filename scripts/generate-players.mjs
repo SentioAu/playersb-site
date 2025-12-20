@@ -24,7 +24,7 @@ function metaLine(p) {
   return pos || team || "";
 }
 
-// simple defaults; you can expand this map anytime
+// simple defaults; expand anytime
 const RIVALS = {
   haaland:    [["mbappe","Kylian Mbappé"], ["kane","Harry Kane"], ["osimhen","Victor Osimhen"]],
   mbappe:     [["haaland","Erling Haaland"], ["vinicius","Vinícius Júnior"], ["salah","Mohamed Salah"]],
@@ -44,12 +44,17 @@ function rivalsFor(id) {
   return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
 }
 
-async function main() {
+async function mustExist(p, label) {
   try {
-    await fs.access(DATA_PATH);
+    await fs.access(p);
   } catch {
-    throw new Error(`Missing ${DATA_PATH}. Ensure data/players.json exists and is committed.`);
+    throw new Error(`Missing ${label}: ${p}`);
   }
+}
+
+async function main() {
+  await mustExist(DATA_PATH, "data file");
+  await mustExist(TEMPLATE_PATH, "player template");
 
   const [rawData, tpl] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
@@ -58,13 +63,11 @@ async function main() {
 
   const parsed = JSON.parse(rawData);
   const players = parsed.players || [];
-  if (!players.length) {
-    throw new Error("data/players.json has no players[] array.");
-  }
+  if (!players.length) throw new Error("data/players.json has no players[] array.");
 
   await fs.mkdir(OUT_DIR, { recursive: true });
 
-  let written = 0;
+  let count = 0;
 
   for (const p of players) {
     if (!p?.id) continue;
@@ -76,12 +79,12 @@ async function main() {
 
     const [r1, r2, r3] = rivalsFor(p.id);
 
-    const playerName = safeStr(p.name) || "Player";
-    const description = `${playerName} player page on PlayersB with normalized stats and comparison links.`;
+    const description = `${safeStr(p.name)} player page on PlayersB with normalized stats and comparison links.`;
 
     const html = tpl
-      .replaceAll("{{PLAYER_ID}}", safeStr(p.id))
-      .replaceAll("{{PLAYER_NAME}}", playerName)
+      // template variables must match your templates/player.html placeholders:
+      .replaceAll("{{ID}}", safeStr(p.id))
+      .replaceAll("{{NAME}}", safeStr(p.name) || "Player")
       .replaceAll("{{DESCRIPTION}}", description)
       .replaceAll("{{META_LINE}}", metaLine(p) || "—")
       .replaceAll("{{MINUTES}}", String(minutes))
@@ -97,10 +100,10 @@ async function main() {
 
     const outPath = path.join(OUT_DIR, `${p.id}.html`);
     await fs.writeFile(outPath, html, "utf-8");
-    written += 1;
+    count++;
   }
 
-  console.log(`Generated ${written} player pages into /players`);
+  console.log(`Generated ${count} player pages into /players`);
 }
 
 main().catch((err) => {
