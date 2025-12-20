@@ -190,9 +190,11 @@ function run() {
     if (hits.length) failures.push(`${rp}: contains disallowed phrase(s): ${hits.join(", ")}`);
 
     // Optional nav consistency warning (non-fatal)
-    const keyNav = ["/compare.html", "/tools.html", "/learn.html", "/players/index.html"];
-    const missingNav = keyNav.filter((k) => !html.includes(k));
-    if (missingNav.length >= 3) warnings.push(`${rp}: warning: nav links look inconsistent/missing (${missingNav.join(", ")})`);
+// Your site uses clean URLs (no .html)
+const keyNav = ["/compare", "/tools", "/learn", "/players/"];
+const missingNav = keyNav.filter((k) => !html.includes(k));
+if (missingNav.length >= 3) warnings.push(`${rp}: warning: nav links look inconsistent/missing (${missingNav.join(", ")})`);
+
   }
 
   if (warnings.length) {
