@@ -10,8 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -24,13 +22,8 @@ jobs:
       - name: Generate player pages
         run: node scripts/generate-players.mjs
 
+      - name: Generate sitemap
+        run: node scripts/generate-sitemap.mjs
+
       - name: Run quality gate
         run: node scripts/quality-gate.mjs
-
-      # Optional (recommended): helps debugging if gate fails
-      - name: Upload generated players folder (on failure)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: generated-players
-          path: players/
