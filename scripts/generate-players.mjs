@@ -41,23 +41,7 @@ const RIVALS = {
 function rivalsFor(id) {
   const r = RIVALS[id];
   if (r && r.length >= 3) return r;
-  // fallback
   return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
-}
-
-/**
- * Replace multiple placeholder variants safely.
- * Supports both:
- *  - {{ID}} and {{PLAYER_ID}}
- *  - {{NAME}} and {{PLAYER_NAME}}
- */
-function applyReplacements(tpl, dict) {
-  let out = tpl;
-  for (const [key, value] of Object.entries(dict)) {
-    // replace all occurrences
-    out = out.split(key).join(value);
-  }
-  return out;
 }
 
 async function main() {
@@ -81,8 +65,6 @@ async function main() {
 
   await fs.mkdir(OUT_DIR, { recursive: true });
 
-  let written = 0;
-
   for (const p of players) {
     if (!p?.id) continue;
 
@@ -97,42 +79,43 @@ async function main() {
     const [r1, r2, r3] = rivalsFor(id);
 
     const description = `${name} player page on PlayersB with normalized stats and comparison links.`;
-    const meta = metaLine(p) || "—";
 
-    const html = applyReplacements(tpl, {
-      // ID variants
-      "{{ID}}": id,
-      "{{PLAYER_ID}}": id,
+    // IMPORTANT:
+    // Replace BOTH placeholder styles:
+    // - {{ID}} / {{NAME}}
+    // - {{PLAYER_ID}} / {{PLAYER_NAME}}
+    const html = tpl
+      // IDs / names
+      .replaceAll("{{ID}}", id)
+      .replaceAll("{{NAME}}", name)
+      .replaceAll("{{PLAYER_ID}}", id)
+      .replaceAll("{{PLAYER_NAME}}", name)
 
-      // Name variants
-      "{{NAME}}": name,
-      "{{PLAYER_NAME}}": name,
+      // SEO/meta
+      .replaceAll("{{DESCRIPTION}}", description)
+      .replaceAll("{{META_LINE}}", metaLine(p) || "—")
 
-      // Meta/description variants
-      "{{DESCRIPTION}}": description,
-      "{{META_LINE}}": meta,
+      // raw totals
+      .replaceAll("{{MINUTES}}", String(minutes))
+      .replaceAll("{{GOALS}}", String(goals))
+      .replaceAll("{{ASSISTS}}", String(assists))
+      .replaceAll("{{SHOTS}}", String(shots))
 
-      // Stats placeholders (if used by template)
-      "{{MINUTES}}": String(minutes),
-      "{{GOALS}}": String(goals),
-      "{{ASSISTS}}": String(assists),
-      "{{SHOTS}}": String(shots),
-      "{{G90}}": fmt2(per90(goals, minutes)),
-      "{{A90}}": fmt2(per90(assists, minutes)),
-      "{{S90}}": fmt2(per90(shots, minutes)),
+      // per90
+      .replaceAll("{{G90}}", fmt2(per90(goals, minutes)))
+      .replaceAll("{{A90}}", fmt2(per90(assists, minutes)))
+      .replaceAll("{{S90}}", fmt2(per90(shots, minutes)))
 
-      // Rivals
-      "{{R1_ID}}": r1[0], "{{R1_NAME}}": r1[1],
-      "{{R2_ID}}": r2[0], "{{R2_NAME}}": r2[1],
-      "{{R3_ID}}": r3[0], "{{R3_NAME}}": r3[1],
-    });
+      // rivals
+      .replaceAll("{{R1_ID}}", r1[0]).replaceAll("{{R1_NAME}}", r1[1])
+      .replaceAll("{{R2_ID}}", r2[0]).replaceAll("{{R2_NAME}}", r2[1])
+      .replaceAll("{{R3_ID}}", r3[0]).replaceAll("{{R3_NAME}}", r3[1]);
 
     const outPath = path.join(OUT_DIR, `${id}.html`);
     await fs.writeFile(outPath, html, "utf-8");
-    written++;
   }
 
-  console.log(`Generated ${written} player pages into /players`);
+  console.log(`Generated ${players.length} player pages into /players`);
 }
 
 main().catch((err) => {
