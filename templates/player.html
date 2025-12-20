@@ -1,10 +1,17 @@
 <h1 id="name">{{PLAYER_NAME}}</h1>
 <p id="meta">{{META_LINE}}</p>
 
+<p style="margin:10px 0 18px 0;">
+  <a href="/players/">← Back to players</a>
+</p>
+
 <section>
   <h2>Snapshot</h2>
   <div id="snapshot">
-    Minutes: <strong>{{MINUTES}}</strong> · Goals: <strong>{{GOALS}}</strong> · Assists: <strong>{{ASSISTS}}</strong> · Shots: <strong>{{SHOTS}}</strong>
+    Minutes: <strong>{{MINUTES}}</strong> ·
+    Goals: <strong>{{GOALS}}</strong> ·
+    Assists: <strong>{{ASSISTS}}</strong> ·
+    Shots: <strong>{{SHOTS}}</strong>
   </div>
 </section>
 
@@ -19,7 +26,7 @@
 
 <section style="margin-top:16px;">
   <h2>Compare</h2>
-  <p>
+  <p style="margin:8px 0 0 0;">
     <a href="/compare?a={{PLAYER_ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
     <a href="/compare?a={{PLAYER_ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
     <a href="/compare?a={{PLAYER_ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
