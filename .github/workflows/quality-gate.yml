@@ -15,10 +15,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ""   # disable caching to avoid lockfile requirement
 
       - name: Verify data exists
         run: test -f data/players.json
+
+      - name: Generate core pages
+        run: node scripts/generate-core.mjs
 
       - name: Generate player pages
         run: node scripts/generate-players.mjs
