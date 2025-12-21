@@ -94,9 +94,16 @@ async function main() {
 
     const [r1, r2, r3] = rivalsFor(id);
 
+    // ✅ Support BOTH token styles:
+    // - New: {{ID}}, {{NAME}}
+    // - Old: {{PLAYER_ID}}, {{PLAYER_NAME}}
     const body = replaceAllTokens(bodyTpl, {
+      "{{ID}}": id,
+      "{{NAME}}": name,
+
       "{{PLAYER_ID}}": id,
       "{{PLAYER_NAME}}": name,
+
       "{{META_LINE}}": metaLine(p),
 
       "{{MINUTES}}": String(minutes),
