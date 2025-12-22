@@ -5,7 +5,7 @@
   <title>Players – PlayersB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="PlayersB player pages: entity hub for comparisons, normalized stats, and tools." />
-  <link rel="canonical" href="https://playersb.com/players" />
+  <link rel="canonical" href="https://playersb.com/players/" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
@@ -16,164 +16,43 @@
     gtag('config', 'G-D5798TYENM');
   </script>
 </head>
+
 <body>
-  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
-    <header style="margin-bottom:16px;">
-      <h1 style="margin:0;">Players</h1>
-      <p style="margin:10px 0 0 0;color:#444;">
+<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+
+<header style="margin-bottom:16px;">
+  <nav style="font-size:14px;margin-bottom:14px;">
+    <a href="/">Home</a> ·
+    <a href="/players/">Players</a> ·
+    <a href="/compare">Compare</a> ·
+    <a href="/tools">Tools</a> ·
+    <a href="/learn">Learn</a> ·
+    <a href="/about">About</a> ·
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<h1>Players</h1>
+      <p>
         Player pages link directly into tools (comparison, per-90, efficiency). Metrics show inputs—no tips, no predictions.
       </p>
-      <nav style="margin-top:12px;font-size:14px;">
-        <a href="/">Home</a> ·
-        <a href="/compare.html">Compare</a> ·
-        <a href="/tools.html">Tools</a> ·
-        <a href="/learn.html">Learn</a>
-      </nav>
-    </header>
-
-    <!-- SEO-safe, crawlable links (static) -->
-    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
-      <h2 style="margin:0 0 10px 0;font-size:16px;">Featured players</h2>
-      <p style="margin:0 0 10px 0;color:#555;font-size:13px;">
-        Start here, or use search to find any listed player.
+      <p style="margin-top:12px;">
+        <a href="/compare">Open Compare</a> ·
+        <a href="/">Back to Home</a>
       </p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:14px;">
-        <a href="/players/haaland.html">Erling Haaland</a>
-        <span style="color:#bbb;">·</span>
-        <a href="/players/mbappe.html">Kylian Mbappé</a>
-        <span style="color:#bbb;">·</span>
-        <a href="/players/salah.html">Mohamed Salah</a>
-        <span style="color:#bbb;">·</span>
-        <a href="/players/vinicius.html">Vinícius Júnior</a>
-        <span style="color:#bbb;">·</span>
-        <a href="/players/kane.html">Harry Kane</a>
-        <span style="color:#bbb;">·</span>
-        <a href="/players/bellingham.html">Jude Bellingham</a>
-      </div>
-    </section>
+      <p style="color:#666;font-size:13px;margin-top:10px;">
+        Tip: open any player entity page (e.g. <code>/players/haaland.html</code>) to see normalized stats and suggested rival comparisons.
+      </p>
 
-    <section style="border:1px solid #eee;border-radius:12px;padding:14px;margin-top:14px;">
-      <label for="q" style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Search</label>
-      <input id="q" placeholder="Type a name (e.g., Haaland)" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;" />
-      <div style="margin-top:8px;font-size:12px;color:#666;">
-        Tip: search by player, team, or position.
-      </div>
-    </section>
+<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+  <p><strong>Disclaimer:</strong> Educational content only. No tips. No predictions. No sportsbook.</p>
+  <p>
+    <a href="/privacy">Privacy</a> ·
+    <a href="/terms">Terms</a> ·
+    <a href="/contact">Contact</a>
+  </p>
+</footer>
 
-    <section id="list" style="margin-top:16px;"></section>
-
-    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-      <p><strong>Note:</strong> Player pages link to tools and show normalized metrics. No tips, no predictions.</p>
-      <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
-    </footer>
-  </main>
-
-  <script>
-    const DATA_URL = "/data/players.json";
-    const $q = document.getElementById("q");
-    const $list = document.getElementById("list");
-
-    // Custom rival per player (kept consistent with your player pages)
-    // Format: [rivalId, rivalName]
-    const RIVALS = {
-      haaland:    ["mbappe", "Kylian Mbappé"],
-      mbappe:     ["haaland", "Erling Haaland"],
-      kane:       ["haaland", "Erling Haaland"],
-      osimhen:    ["haaland", "Erling Haaland"],
-      salah:      ["son", "Son Heung-min"],
-      son:        ["salah", "Mohamed Salah"],
-      vinicius:   ["mbappe", "Kylian Mbappé"],
-      bellingham: ["debruyne", "Kevin De Bruyne"],
-      debruyne:   ["bellingham", "Jude Bellingham"],
-      griezmann:  ["debruyne", "Kevin De Bruyne"]
-    };
-
-    function escapeHtml(s) {
-      return String(s ?? "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-    }
-
-    function bestRivalFor(playerId, players) {
-      const entry = RIVALS[playerId];
-      if (entry) return { id: entry[0], name: entry[1] };
-
-      // fallback: pick Mbappé if exists, else first different player
-      const mb = players.find(p => p.id === "mbappe");
-      if (mb && playerId !== "mbappe") return { id: "mbappe", name: "Kylian Mbappé" };
-
-      const other = players.find(p => p.id && p.id !== playerId);
-      if (other) return { id: other.id, name: other.name || "Rival" };
-
-      return { id: "mbappe", name: "Kylian Mbappé" };
-    }
-
-    function render(players, query="") {
-      const q = query.trim().toLowerCase();
-      const filtered = players.filter(p =>
-        !q ||
-        (p.name || "").toLowerCase().includes(q) ||
-        (p.team || "").toLowerCase().includes(q) ||
-        (p.position || "").toLowerCase().includes(q)
-      );
-
-      filtered.sort((a,b) => (a.name || "").localeCompare(b.name || ""));
-
-      $list.innerHTML = `
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;">
-          ${filtered.map(p => {
-            const id = escapeHtml(p.id);
-            const name = escapeHtml(p.name);
-            const team = escapeHtml(p.team || "");
-            const pos = escapeHtml(p.position || "");
-            const rival = bestRivalFor(p.id, players);
-            const rivalId = escapeHtml(rival.id);
-            const rivalName = escapeHtml(rival.name);
-
-            return `
-              <div style="border:1px solid #eee;border-radius:12px;padding:12px;">
-                <div style="font-weight:700;">${name}</div>
-                <div style="color:#666;margin-top:6px;">${pos}${pos && team ? " · " : ""}${team}</div>
-
-                <div style="margin-top:10px;font-size:14px;">
-                  <a href="/players/${id}.html">Open player page</a>
-                </div>
-
-                <div style="margin-top:8px;font-size:13px;color:#555;">
-                  <a href="/compare.html?a=${id}&b=${rivalId}">Compare vs ${rivalName}</a>
-                </div>
-              </div>
-            `;
-          }).join("")}
-        </div>
-        <p style="color:#666;font-size:13px;margin-top:14px;">
-          Showing ${filtered.length} of ${players.length}.
-        </p>
-      `;
-    }
-
-    async function main() {
-      const res = await fetch(DATA_URL, { cache: "no-store" });
-      const payload = await res.json();
-      const players = payload.players || [];
-
-      if (!players.length) {
-        $list.innerHTML = `<p style="color:#b00;">No player data found. Please run the data builder workflow.</p>`;
-        return;
-      }
-
-      render(players);
-
-      $q.addEventListener("input", () => render(players, $q.value));
-    }
-
-    main().catch((err) => {
-      $list.innerHTML = `<p style="color:#b00;">Error loading players list.</p>`;
-      console.error(err);
-    });
-  </script>
+</main>
 </body>
 </html>

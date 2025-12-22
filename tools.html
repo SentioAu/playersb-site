@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Tools – PlayersB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PlayersB tools: player comparison, per-90 normalization, efficiency context, and fantasy-safe utilities—no betting tips or predictions." />
+  <meta name="description" content="PlayersB tools: player comparison, performance calculators, and fantasy-safe utilities." />
   <link rel="canonical" href="https://playersb.com/tools" />
 
   <!-- Google tag (gtag.js) -->
@@ -18,96 +18,51 @@
 </head>
 
 <body>
-  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.65;">
-    <header style="margin-bottom:18px;">
-      <h1 style="margin:0;">Tools</h1>
-      <p style="margin:10px 0 0 0;color:#444;">
-        PlayersB tools are built to be <strong>player-first</strong>: repeatable utilities that connect to player pages and show clear inputs.
-        We do not publish betting tips, picks, or predictions.
-      </p>
+<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
 
-      <nav style="margin-top:12px;font-size:14px;">
-        <a href="/">Home</a> ·
-        <a href="/compare.html">Compare</a> ·
-        <a href="/players/index.html">Players</a> ·
-        <a href="/learn.html">Learn</a> ·
-        <a href="/about.html">About</a> ·
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </header>
+<header style="margin-bottom:16px;">
+  <nav style="font-size:14px;margin-bottom:14px;">
+    <a href="/">Home</a> ·
+    <a href="/players/">Players</a> ·
+    <a href="/compare">Compare</a> ·
+    <a href="/tools">Tools</a> ·
+    <a href="/learn">Learn</a> ·
+    <a href="/about">About</a> ·
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
 
-    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
-      <h2 style="margin:0 0 10px 0;">Player comparison</h2>
-      <p style="margin:0 0 10px 0;color:#444;">
-        Compare two players using normalized rates (per-90) and simple efficiency context. Outputs are transparent and tied to inputs.
-      </p>
-
-      <div style="border:1px solid #eee;border-radius:12px;padding:12px;">
-        <div style="font-weight:700;">Player A vs Player B</div>
-        <div style="color:#666;margin-top:6px;">Per-90 rates, volume signals, and basic efficiency indicators.</div>
-        <div style="margin-top:10px;">
-          <a href="/compare.html">Open comparison tool →</a>
-        </div>
-      </div>
-    </section>
-
-    <section style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
-      <h2 style="margin:0 0 10px 0;">Performance calculators</h2>
-      <p style="margin:0 0 10px 0;color:#444;">
-        These calculators focus on time-normalized output and explainable rate metrics.
-      </p>
-      <ul style="margin:0;padding-left:18px;">
-        <li><strong>Per-90 / per-minute</strong> normalization (compare players with different minutes)</li>
-        <li><strong>Minutes per output</strong> (e.g., minutes per goal, minutes per assist)</li>
-        <li><strong>Shot accuracy</strong> (shots on target ÷ shots)</li>
-        <li><strong>Goals per shot</strong> (finishing efficiency proxy)</li>
-      </ul>
-    </section>
-
-    <section style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
-      <h2 style="margin:0 0 10px 0;">Fantasy-safe tools</h2>
-      <p style="margin:0 0 10px 0;color:#444;">
-        Tools designed for fantasy-style scoring and structured decisions—without predictions or “locks.”
-      </p>
-      <ul style="margin:0;padding-left:18px;">
-        <li><strong>Fantasy points calculator</strong> (transparent scoring breakdown)</li>
-        <li><strong>Comparison under scoring rules</strong> (same players, different scoring)</li>
-        <li><strong>Captain shortlister</strong> (stat-based context; explainable inputs)</li>
-      </ul>
-    </section>
-
-    <section style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
-      <h2 style="margin:0 0 10px 0;">Math utilities</h2>
-      <p style="margin:0 0 10px 0;color:#444;">
-        Calculation-only utilities. No advice. No recommendations.
-      </p>
-      <ul style="margin:0;padding-left:18px;">
-        <li><strong>Odds format converter</strong> (decimal / fractional / American)</li>
-        <li><strong>Implied probability</strong> (odds → probability)</li>
-        <li><strong>Overround / vig estimator</strong> (market margin from odds)</li>
-      </ul>
-    </section>
-
-    <section style="margin-top:18px;background:#fafafa;border:1px solid #eee;border-radius:12px;padding:14px;">
-      <h2 style="margin:0 0 8px 0;">How PlayersB pages connect</h2>
-      <ul style="margin:0;padding-left:18px;">
-        <li><strong>Player pages</strong> link into tools with pre-filled comparisons.</li>
-        <li><strong>Compare links</strong> are shareable (e.g., <code>?a=haaland&b=mbappe</code>).</li>
-        <li><strong>Learn pages</strong> explain what each metric means and its limits.</li>
-      </ul>
-    </section>
-
-    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+<h1>Tools</h1>
       <p>
-        <strong>Disclaimer:</strong> PlayersB provides educational tools and public-information summaries.
-        We do not accept bets, process wagers, or operate a sportsbook. Nothing here is advice or a guarantee.
+        PlayersB tools are built around player entities and repeat usage. Outputs are explainable and grounded in inputs.
       </p>
-      <p>
-        <a href="/privacy.html">Privacy</a> ·
-        <a href="/terms.html">Terms</a> ·
-        <a href="/contact.html">Contact</a>
-      </p>
-    </footer>
-  </main>
+
+      <h2>Player performance calculators</h2>
+      <ul>
+        <li><strong>Per-90 / Per-minute</strong> — normalize output by time played.</li>
+        <li><strong>Rate view</strong> — quick production rates for comparison.</li>
+        <li><strong>Minutes-to-output</strong> — how often a player produces per minutes played.</li>
+      </ul>
+
+      <h2>Player comparison</h2>
+      <ul>
+        <li><a href="/compare"><strong>Player A vs Player B</strong></a> — compare normalized stats side-by-side.</li>
+      </ul>
+
+      <h2>Players directory</h2>
+      <ul>
+        <li><a href="/players/"><strong>Browse players</strong></a> — open any player page and compare vs suggested rivals.</li>
+      </ul>
+
+<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+  <p><strong>Disclaimer:</strong> Educational content only. No tips. No predictions. No sportsbook.</p>
+  <p>
+    <a href="/privacy">Privacy</a> ·
+    <a href="/terms">Terms</a> ·
+    <a href="/contact">Contact</a>
+  </p>
+</footer>
+
+</main>
 </body>
 </html>
