@@ -19,6 +19,9 @@ jobs:
       - name: Verify data exists
         run: test -f data/players.json
 
+      - name: Generate core pages
+        run: node scripts/generate-core.mjs
+
       - name: Generate player pages
         run: node scripts/generate-players.mjs
 
