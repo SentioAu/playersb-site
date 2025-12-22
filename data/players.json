@@ -110,7 +110,18 @@
       "assists": 8,
       "shots": 45,
       "shotsOnTarget": 17
-    }
+    },
+{
+  "id": "rodri",
+  "name": "Rodri",
+  "position": "Midfielder",
+  "team": "Manchester City",
+  "minutes": 3120,
+  "goals": 8,
+  "assists": 9,
+  "shots": 62
+}
+
   ],
   "competitions": {
     "CL": {
