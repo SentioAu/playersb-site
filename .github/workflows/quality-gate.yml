@@ -31,5 +31,10 @@ jobs:
       - name: Generate sitemap
         run: node scripts/generate-sitemap.mjs
 
+      - name: Ensure generated files are committed
+        run: |
+          git status --porcelain
+          test -z "$(git status --porcelain)"
+
       - name: Run quality gate
         run: node scripts/quality-gate.mjs
