@@ -6,6 +6,11 @@ const SITE_ORIGIN = "https://playersb.com";
 
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 
+// Manual pages that must NOT be overwritten by generators.
+// - compare.html = real JS engine page
+// - contact.html = you may edit manually (email, wording) without CI dirty-tree issues
+const MANUAL_PAGES = new Set(["compare.html", "contact.html"]);
+
 const PAGES = [
   {
     out: "index.html",
@@ -117,6 +122,8 @@ const PAGES = [
     `,
   },
 
+  // NOTE: Contact is listed here for completeness, but is NOT written because it is in MANUAL_PAGES.
+  // Keep this content aligned with your decision (playersbdotcom@gmail.com).
   {
     out: "contact.html",
     canonical: `${SITE_ORIGIN}/contact`,
@@ -126,7 +133,7 @@ const PAGES = [
       <h1>Contact</h1>
 
       <h2>Email</h2>
-      <p style="font-size:18px;margin:6px 0 0 0;"><strong>contact [at] playersb.com</strong></p>
+      <p style="font-size:18px;margin:6px 0 0 0;"><strong>playersbdotcom@gmail.com</strong></p>
 
       <h2 style="margin-top:18px;">Include this for faster handling</h2>
       <ul>
@@ -222,7 +229,18 @@ function fill(layout, { title, description, canonical, body }) {
 async function main() {
   const layout = await fs.readFile(LAYOUT_PATH, "utf-8");
 
+  let written = 0;
+  let skipped = 0;
+
   for (const page of PAGES) {
+    const outRel = typeof page.out === "string" ? page.out : String(page.out);
+
+    // Skip manual pages (prevents CI dirty-tree issues)
+    if (MANUAL_PAGES.has(outRel)) {
+      skipped++;
+      continue;
+    }
+
     const outAbs = path.join(ROOT, page.out);
 
     // ensure parent dir exists (for players/index.html)
@@ -230,9 +248,12 @@ async function main() {
 
     const html = fill(layout, page);
     await fs.writeFile(outAbs, html, "utf-8");
+    written++;
   }
 
-  console.log(`Generated ${PAGES.length} core pages (compare.html is NOT generated/overwritten)`);
+  console.log(
+    `Generated ${written} core pages, skipped ${skipped} manual pages (compare.html + contact.html)`
+  );
 }
 
 main().catch((err) => {
