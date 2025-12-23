@@ -19,17 +19,8 @@ jobs:
       - name: Verify data exists
         run: test -f data/players.json
 
-      - name: Generate core pages
-        run: node scripts/generate-core.mjs
-
-      - name: Generate player pages
-        run: node scripts/generate-players.mjs
-
-      - name: Generate players index
-        run: node scripts/generate-players-index.mjs
-
-      - name: Generate sitemap
-        run: node scripts/generate-sitemap.mjs
+      - name: Generate site
+        run: node scripts/generate-all.mjs
 
       - name: Ensure generated files are committed
         run: |
