@@ -22,7 +22,7 @@ jobs:
       - name: Generate site
         run: node scripts/generate-all.mjs
 
-      - name: Ensure generated files are committed
+      - name: Ensure repo is clean after generation
         run: |
           git status --porcelain
           test -z "$(git status --porcelain)"
