@@ -1,13 +1,8 @@
-# Clean URL rewrites (serve .html files while keeping pretty URLs)
-# Format: /from  /to  200  (200 = rewrite)
-
- /compare   /compare.html   200
- /tools     /tools.html     200
- /learn     /learn.html     200
- /about     /about.html     200
- /contact   /contact.html   200
- /privacy   /privacy.html   200
- /terms     /terms.html     200
-
-# Players directory (optional; usually works anyway)
- /players   /players/       301
+/compare  /compare.html  200
+/tools    /tools.html    200
+/learn    /learn.html    200
+/about    /about.html    200
+/contact  /contact.html  200
+/privacy  /privacy.html  200
+/terms    /terms.html    200
+/players  /players/      301
