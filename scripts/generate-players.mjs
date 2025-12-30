@@ -6,10 +6,10 @@ const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
-const BODY_PATH = path.join(ROOT, "templates", "player.html"); // your BODY partial
+const BODY_PATH = path.join(ROOT, "templates", "player.html"); // BODY partial
 const OUT_DIR = path.join(ROOT, "players");
 
-const per90 = (v, m) => (m > 0 ? (v / (m / 90)) : 0);
+const per90 = (v, m) => (m > 0 ? v / (m / 90) : 0);
 const num = (v) => (typeof v === "number" && Number.isFinite(v) ? v : 0);
 
 function fmt2(n) {
@@ -27,39 +27,54 @@ function metaLine(p) {
 
 // Simple defaults; expand anytime
 const RIVALS = {
-  haaland:    [["mbappe","Kylian Mbappé"], ["kane","Harry Kane"], ["osimhen","Victor Osimhen"]],
-  mbappe:     [["haaland","Erling Haaland"], ["vinicius","Vinícius Júnior"], ["salah","Mohamed Salah"]],
-  kane:       [["haaland","Erling Haaland"], ["mbappe","Kylian Mbappé"], ["osimhen","Victor Osimhen"]],
-  osimhen:    [["haaland","Erling Haaland"], ["kane","Harry Kane"], ["mbappe","Kylian Mbappé"]],
-  salah:      [["son","Son Heung-min"], ["mbappe","Kylian Mbappé"], ["griezmann","Antoine Griezmann"]],
-  son:        [["salah","Mohamed Salah"], ["vinicius","Vinícius Júnior"], ["mbappe","Kylian Mbappé"]],
-  vinicius:   [["mbappe","Kylian Mbappé"], ["son","Son Heung-min"], ["salah","Mohamed Salah"]],
-  bellingham: [["debruyne","Kevin De Bruyne"], ["griezmann","Antoine Griezmann"], ["vinicius","Vinícius Júnior"]],
-  debruyne:   [["bellingham","Jude Bellingham"], ["griezmann","Antoine Griezmann"], ["salah","Mohamed Salah"]],
-  griezmann:  [["bellingham","Jude Bellingham"], ["debruyne","Kevin De Bruyne"], ["salah","Mohamed Salah"]],
+  haaland: [["mbappe", "Kylian Mbappé"], ["kane", "Harry Kane"], ["osimhen", "Victor Osimhen"]],
+  mbappe: [["haaland", "Erling Haaland"], ["vinicius", "Vinícius Júnior"], ["salah", "Mohamed Salah"]],
+  kane: [["haaland", "Erling Haaland"], ["mbappe", "Kylian Mbappé"], ["osimhen", "Victor Osimhen"]],
+  osimhen: [["haaland", "Erling Haaland"], ["kane", "Harry Kane"], ["mbappe", "Kylian Mbappé"]],
+  salah: [["son", "Son Heung-min"], ["mbappe", "Kylian Mbappé"], ["griezmann", "Antoine Griezmann"]],
+  son: [["salah", "Mohamed Salah"], ["vinicius", "Vinícius Júnior"], ["mbappe", "Kylian Mbappé"]],
+  vinicius: [["mbappe", "Kylian Mbappé"], ["son", "Son Heung-min"], ["salah", "Mohamed Salah"]],
+  bellingham: [["debruyne", "Kevin De Bruyne"], ["griezmann", "Antoine Griezmann"], ["vinicius", "Vinícius Júnior"]],
+  debruyne: [["bellingham", "Jude Bellingham"], ["griezmann", "Antoine Griezmann"], ["salah", "Mohamed Salah"]],
+  griezmann: [["bellingham", "Jude Bellingham"], ["debruyne", "Kevin De Bruyne"], ["salah", "Mohamed Salah"]],
 };
 
 function rivalsFor(id) {
   const r = RIVALS[id];
   if (r && r.length >= 3) return r;
-  return [["mbappe","Kylian Mbappé"], ["haaland","Erling Haaland"], ["salah","Mohamed Salah"]];
+  return [["mbappe", "Kylian Mbappé"], ["haaland", "Erling Haaland"], ["salah", "Mohamed Salah"]];
 }
 
 function replaceAllTokens(str, dict) {
   let out = str;
-  for (const [k, v] of Object.entries(dict)) {
-    out = out.replaceAll(k, v);
-  }
+  for (const [k, v] of Object.entries(dict)) out = out.replaceAll(k, v);
   return out;
 }
 
 function assertNoPlaceholders(finalHtml, fileLabel) {
-  // fail hard if ANY {{...}} leaks into generated output
   const m = finalHtml.match(/{{[^}]+}}/g);
   if (m?.length) {
     const uniq = Array.from(new Set(m)).slice(0, 10).join(", ");
     throw new Error(`${fileLabel}: unresolved template placeholders found: ${uniq}`);
   }
+}
+
+function sanitizeId(raw) {
+  // Keep it simple + safe for folder names and URLs
+  return safeStr(raw)
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function ensureTrailingSlash(url) {
+  return url.endsWith("/") ? url : `${url}/`;
+}
+
+async function writeFileEnsuringDir(filePath, content) {
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
+  await fs.writeFile(filePath, content, "utf-8");
 }
 
 async function main() {
@@ -83,10 +98,14 @@ async function main() {
   let count = 0;
 
   for (const p of players) {
-    const id = safeStr(p?.id);
+    const rawId = safeStr(p?.id);
+    if (!rawId) continue;
+
+    const id = sanitizeId(rawId);
     if (!id) continue;
 
     const name = safeStr(p?.name) || "Player";
+
     const minutes = num(p.minutes);
     const goals = num(p.goals);
     const assists = num(p.assists);
@@ -120,9 +139,10 @@ async function main() {
       "{{R3_ID}}": r3[0], "{{R3_NAME}}": r3[1],
     });
 
-    const canonical = `${SITE_ORIGIN}/players/${id}.html`;
-    const title = `${name} – PlayersB`;
-    const description = `${name} player page on PlayersB with normalized stats and comparison links.`;
+    // ✅ Directory-style canonical
+    const canonical = ensureTrailingSlash(`${SITE_ORIGIN}/players/${id}`);
+    const title = `${name}`;
+    const description = `${name} player profile on PlayersB — The Players Book. Stats, role, and comparison links based on verified historical data.`;
 
     const html = replaceAllTokens(layoutTpl, {
       "{{TITLE}}": title,
@@ -131,14 +151,23 @@ async function main() {
       "{{BODY}}": body,
     });
 
-    assertNoPlaceholders(html, `players/${id}.html`);
+    // Enforce: no unresolved placeholders and exactly one H1 (hard fail)
+    assertNoPlaceholders(html, `players/${id}/index.html`);
+    const h1Count = (html.match(/<h1\b/gi) || []).length;
+    if (h1Count !== 1) {
+      throw new Error(`players/${id}/index.html: expected exactly 1 <h1>, found ${h1Count}`);
+    }
 
-    const outPath = path.join(OUT_DIR, `${id}.html`);
-    await fs.writeFile(outPath, html, "utf-8");
+    // ✅ Write to /players/{id}/index.html
+    const outPath = path.join(OUT_DIR, id, "index.html");
+    await writeFileEnsuringDir(outPath, html);
     count++;
   }
 
-  console.log(`Generated ${count} player pages into /players`);
+  // Optional: small marker file for debugging builds
+  await writeFileEnsuringDir(path.join(OUT_DIR, ".generated.txt"), `generated=${count}\n`);
+
+  console.log(`Generated ${count} player pages into /players/{id}/index.html`);
 }
 
 main().catch((err) => {
