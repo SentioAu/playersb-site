@@ -8,15 +8,15 @@ const DATA_PATH = path.join(ROOT, "data", "players.json");
 const OUT_PATH = path.join(ROOT, "sitemap.xml");
 
 const CORE = [
-  "/",           // home served by index.html
-  "/compare",    // canonical clean URL
-  "/tools",
-  "/learn",
-  "/about",
-  "/contact",
-  "/privacy",
-  "/terms",
-  "/players/",   // players directory (trailing slash matches canonical)
+  "/",            // home served by index.html
+  "/compare/",    // canonical clean URL (trailing slash)
+  "/tools/",
+  "/learn/",
+  "/about/",
+  "/contact/",
+  "/privacy/",
+  "/terms/",
+  "/players/",    // players directory
 ];
 
 // Escape XML
@@ -29,13 +29,24 @@ function esc(s) {
     .replaceAll("'", "&apos;");
 }
 
+function sanitizeId(raw) {
+  return String(raw ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function normalizePath(p) {
   // ensure leading slash
   if (!p.startsWith("/")) p = "/" + p;
-  // keep "/" exactly, keep "/players/" trailing slash, otherwise strip trailing slash
+
+  // keep "/" exactly; everything else should end with "/"
   if (p === "/") return "/";
-  if (p === "/players/") return "/players/";
-  return p.endsWith("/") ? p.slice(0, -1) : p;
+
+  // ensure trailing slash for canonical directory pages
+  return p.endsWith("/") ? p : `${p}/`;
 }
 
 function urlTag(loc, lastmod = null) {
@@ -44,11 +55,9 @@ function urlTag(loc, lastmod = null) {
 }
 
 function pickLastMod(obj) {
-  // Optional: if you later add timestamps, sitemap will include them
   const v = obj?.lastmod || obj?.lastMod || obj?.updatedAt || obj?.updated_at || null;
   if (!v) return null;
 
-  // If it's already YYYY-MM-DD, use it. Otherwise attempt ISO date.
   const s = String(v);
   if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
 
@@ -62,7 +71,9 @@ async function main() {
   try {
     await fs.access(DATA_PATH);
   } catch {
-    throw new Error(`Missing ${DATA_PATH}. Commit data/players.json or update scripts/generate-sitemap.mjs.`);
+    throw new Error(
+      `Missing ${DATA_PATH}. Commit data/players.json or update scripts/generate-sitemap.mjs.`
+    );
   }
 
   const raw = await fs.readFile(DATA_PATH, "utf-8");
@@ -82,20 +93,21 @@ async function main() {
     }
   }
 
-  // Player entity pages (keep .html)
+  // Player entity pages (directory-style)
   const playerIds = players
-    .map(p => p?.id)
+    .map((p) => p?.id)
     .filter(Boolean)
-    .map(String)
+    .map(sanitizeId)
+    .filter(Boolean)
     .sort((a, b) => a.localeCompare(b));
 
   for (const id of playerIds) {
-    const loc = `${SITE_ORIGIN}/players/${id}.html`;
+    const loc = `${SITE_ORIGIN}/players/${id}/`;
     if (!seen.has(loc)) {
       seen.add(loc);
 
       // if you ever add timestamps per player, we can pull it:
-      const playerObj = players.find(p => String(p?.id) === id);
+      const playerObj = players.find((p) => sanitizeId(p?.id) === id);
       const lastmod = pickLastMod(playerObj);
 
       items.push({ loc, lastmod });
@@ -105,7 +117,7 @@ async function main() {
   const xml =
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${items.map(x => urlTag(x.loc, x.lastmod)).join("\n")}
+${items.map((x) => urlTag(x.loc, x.lastmod)).join("\n")}
 </urlset>
 `;
 
