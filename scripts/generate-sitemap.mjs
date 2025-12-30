@@ -8,8 +8,8 @@ const DATA_PATH = path.join(ROOT, "data", "players.json");
 const OUT_PATH = path.join(ROOT, "sitemap.xml");
 
 const CORE = [
-  "/",            // home served by index.html
-  "/compare/",    // canonical clean URL (trailing slash)
+  "/",            // home
+  "/compare/",    // compare tool (directory-style canonical)
   "/tools/",
   "/learn/",
   "/about/",
@@ -40,13 +40,13 @@ function sanitizeId(raw) {
 
 function normalizePath(p) {
   // ensure leading slash
-  if (!p.startsWith("/")) p = "/" + p;
+  let out = String(p ?? "");
+  if (!out.startsWith("/")) out = "/" + out;
 
   // keep "/" exactly; everything else should end with "/"
-  if (p === "/") return "/";
+  if (out === "/") return "/";
 
-  // ensure trailing slash for canonical directory pages
-  return p.endsWith("/") ? p : `${p}/`;
+  return out.endsWith("/") ? out : `${out}/`;
 }
 
 function urlTag(loc, lastmod = null) {
@@ -68,17 +68,19 @@ function pickLastMod(obj) {
 
 async function main() {
   // Ensure data exists for CI clarity
-  try {
-    await fs.access(DATA_PATH);
-  } catch {
-    throw new Error(
-      `Missing ${DATA_PATH}. Commit data/players.json or update scripts/generate-sitemap.mjs.`
-    );
-  }
+  await fs.access(DATA_PATH);
 
   const raw = await fs.readFile(DATA_PATH, "utf-8");
   const parsed = JSON.parse(raw);
   const players = Array.isArray(parsed.players) ? parsed.players : [];
+
+  // Build a slug->player map once (prevents find() per loop and ensures stable lastmod)
+  const slugToPlayer = new Map();
+  for (const p of players) {
+    const slug = sanitizeId(p?.id);
+    if (!slug) continue;
+    if (!slugToPlayer.has(slug)) slugToPlayer.set(slug, p);
+  }
 
   const seen = new Set();
   const items = [];
@@ -94,24 +96,17 @@ async function main() {
   }
 
   // Player entity pages (directory-style)
-  const playerIds = players
-    .map((p) => p?.id)
-    .filter(Boolean)
-    .map(sanitizeId)
-    .filter(Boolean)
-    .sort((a, b) => a.localeCompare(b));
+  const playerSlugs = Array.from(slugToPlayer.keys()).sort((a, b) => a.localeCompare(b));
 
-  for (const id of playerIds) {
-    const loc = `${SITE_ORIGIN}/players/${id}/`;
-    if (!seen.has(loc)) {
-      seen.add(loc);
+  for (const slug of playerSlugs) {
+    const loc = `${SITE_ORIGIN}/players/${slug}/`;
+    if (seen.has(loc)) continue;
 
-      // if you ever add timestamps per player, we can pull it:
-      const playerObj = players.find((p) => sanitizeId(p?.id) === id);
-      const lastmod = pickLastMod(playerObj);
+    seen.add(loc);
+    const playerObj = slugToPlayer.get(slug);
+    const lastmod = pickLastMod(playerObj);
 
-      items.push({ loc, lastmod });
-    }
+    items.push({ loc, lastmod });
   }
 
   const xml =
