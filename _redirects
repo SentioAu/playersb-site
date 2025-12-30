@@ -1,0 +1,8 @@
+# Legacy .html -> clean paths (safe one-way redirects)
+/compare.html   /compare/   301
+/tools.html     /tools/     301
+/learn.html     /learn/     301
+/about.html     /about/     301
+/contact.html   /contact/   301
+/privacy.html   /privacy/   301
+/terms.html     /terms/     301
