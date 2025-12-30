@@ -11,10 +11,6 @@ const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 // - contact.html = you may edit manually (email, wording) without CI dirty-tree issues
 const MANUAL_PAGES = new Set(["compare.html", "contact.html"]);
 
-function ensureTrailingSlash(url) {
-  return url.endsWith("/") ? url : `${url}/`;
-}
-
 function assertNoPlaceholders(finalHtml, fileLabel) {
   const m = finalHtml.match(/{{[^}]+}}/g);
   if (m?.length) {
@@ -23,6 +19,9 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
   }
 }
 
+// Directory-style core pages (single source of truth)
+// NOTE: we do NOT generate legacy root .html files like tools.html.
+// Those are handled via redirects only.
 const PAGES = [
   {
     // keep home at root as index.html
@@ -52,7 +51,7 @@ const PAGES = [
 
   {
     out: path.join("tools", "index.html"),
-    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/tools`),
+    canonical: `${SITE_ORIGIN}/tools/`,
     title: "Tools",
     description:
       "PlayersB tools: comparisons, calculators, similarity finders, and fantasy-safe utilities built on verified historical data.",
@@ -80,7 +79,7 @@ const PAGES = [
 
   {
     out: path.join("learn", "index.html"),
-    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/learn`),
+    canonical: `${SITE_ORIGIN}/learn/`,
     title: "Learn",
     description:
       "PlayersB methodology: how we normalize stats, compare players, and build explainable educational tools.",
@@ -105,7 +104,7 @@ const PAGES = [
 
   {
     out: path.join("about", "index.html"),
-    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/about`),
+    canonical: `${SITE_ORIGIN}/about/`,
     title: "About",
     description:
       "About PlayersB — The Players Book: player profiles, comparisons, and fantasy-safe tools with explainable metrics.",
@@ -135,7 +134,7 @@ const PAGES = [
   // NOTE: Contact is listed for completeness, but is NOT written because it is in MANUAL_PAGES.
   {
     out: "contact.html",
-    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/contact`),
+    canonical: `${SITE_ORIGIN}/contact/`,
     title: "Contact",
     description: "Contact PlayersB for feedback, corrections, or partnerships.",
     body: `
@@ -155,7 +154,7 @@ const PAGES = [
 
   {
     out: path.join("privacy", "index.html"),
-    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/privacy`),
+    canonical: `${SITE_ORIGIN}/privacy/`,
     title: "Privacy Policy",
     description: "PlayersB privacy policy covering analytics, cookies, and advertising.",
     body: `
@@ -185,7 +184,7 @@ const PAGES = [
 
   {
     out: path.join("terms", "index.html"),
-    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/terms`),
+    canonical: `${SITE_ORIGIN}/terms/`,
     title: "Terms of Use",
     description: "PlayersB terms of use and educational disclaimers.",
     body: `
