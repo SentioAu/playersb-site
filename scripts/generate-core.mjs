@@ -11,24 +11,37 @@ const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 // - contact.html = you may edit manually (email, wording) without CI dirty-tree issues
 const MANUAL_PAGES = new Set(["compare.html", "contact.html"]);
 
+function ensureTrailingSlash(url) {
+  return url.endsWith("/") ? url : `${url}/`;
+}
+
+function assertNoPlaceholders(finalHtml, fileLabel) {
+  const m = finalHtml.match(/{{[^}]+}}/g);
+  if (m?.length) {
+    const uniq = Array.from(new Set(m)).slice(0, 10).join(", ");
+    throw new Error(`${fileLabel}: unresolved template placeholders found: ${uniq}`);
+  }
+}
+
 const PAGES = [
   {
+    // keep home at root as index.html
     out: "index.html",
     canonical: `${SITE_ORIGIN}/`,
-    title: "PlayersB – Player Comparison & Fantasy-Safe Tools",
+    title: "PlayersB",
     description:
-      "PlayersB is a player-first utility platform for comparing performance and understanding stats—without betting tips or predictions.",
+      "PlayersB — The Players Book. Player profiles, comparisons, and fantasy-safe tools built on verified historical data.",
     body: `
-      <h1>PlayersB</h1>
+      <h1>PlayersB — The Players Book</h1>
       <p>
-        Player-first tools for comparing performance, understanding stats, and making fantasy decisions — without betting tips,
-        predictions, or a sportsbook.
+        Player-first tools for comparing performance, understanding stats, and making fantasy decisions — without betting or sportsbook activity.
+        Everything is explainable and grounded in verified historical data.
       </p>
       <p style="margin-top:12px;">
-        <a href="/compare">Compare players</a> ·
+        <a href="/compare/">Compare players</a> ·
         <a href="/players/">Browse players</a> ·
-        <a href="/tools">Tools</a> ·
-        <a href="/learn">Learn</a>
+        <a href="/tools/">Tools</a> ·
+        <a href="/learn/">Learn</a>
       </p>
     `,
   },
@@ -38,53 +51,50 @@ const PAGES = [
   // compare.html is your real JS engine page and must not be overwritten.
 
   {
-    out: "tools.html",
-    canonical: `${SITE_ORIGIN}/tools`,
-    title: "Tools – PlayersB",
+    out: path.join("tools", "index.html"),
+    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/tools`),
+    title: "Tools",
     description:
-      "PlayersB tools: player comparison, performance calculators, and fantasy-safe utilities.",
+      "PlayersB tools: comparisons, calculators, similarity finders, and fantasy-safe utilities built on verified historical data.",
     body: `
       <h1>Tools</h1>
       <p>
-        PlayersB tools are built around player entities and repeat usage. Outputs are explainable and grounded in inputs.
+        PlayersB tools are explainable, grounded in inputs, and designed for repeated use across player pages.
       </p>
 
-      <h2>Player performance calculators</h2>
+      <h2>Core tools</h2>
       <ul>
+        <li><strong>Player Comparison</strong> — side-by-side normalized stats with explanations.</li>
         <li><strong>Per-90 / Per-minute</strong> — normalize output by time played.</li>
         <li><strong>Rate view</strong> — quick production rates for comparison.</li>
         <li><strong>Minutes-to-output</strong> — how often a player produces per minutes played.</li>
       </ul>
 
-      <h2>Player comparison</h2>
+      <h2>Start here</h2>
       <ul>
-        <li><a href="/compare"><strong>Player A vs Player B</strong></a> — compare normalized stats side-by-side.</li>
-      </ul>
-
-      <h2>Players directory</h2>
-      <ul>
-        <li><a href="/players/"><strong>Browse players</strong></a> — open any player page and compare vs suggested rivals.</li>
+        <li><a href="/compare/"><strong>Compare players</strong></a></li>
+        <li><a href="/players/"><strong>Browse players</strong></a></li>
       </ul>
     `,
   },
 
   {
-    out: "learn.html",
-    canonical: `${SITE_ORIGIN}/learn`,
-    title: "Learn – PlayersB",
+    out: path.join("learn", "index.html"),
+    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/learn`),
+    title: "Learn",
     description:
-      "PlayersB methodology: how we normalize stats, compare players, and build explainable tools.",
+      "PlayersB methodology: how we normalize stats, compare players, and build explainable educational tools.",
     body: `
       <h1>Learn</h1>
       <p>
-        PlayersB is tool-first. This page explains the minimum methodology behind comparisons so you can understand tradeoffs.
+        PlayersB is tool-first. This page explains the core methodology behind comparisons so you can understand tradeoffs.
       </p>
 
       <h2>Core principles</h2>
       <ul>
         <li><strong>Normalize before comparing:</strong> totals can mislead when minutes differ, so we use per-90 metrics where appropriate.</li>
         <li><strong>Explainable outputs:</strong> derived metrics show what goes into them.</li>
-        <li><strong>No predictions:</strong> PlayersB does not publish “locks” or guaranteed outcomes.</li>
+        <li><strong>Educational framing:</strong> scenario-based tools may be offered for learning — no betting or sportsbook activity.</li>
       </ul>
 
       <h2>Key concepts</h2>
@@ -94,17 +104,17 @@ const PAGES = [
   },
 
   {
-    out: "about.html",
-    canonical: `${SITE_ORIGIN}/about`,
-    title: "About – PlayersB",
+    out: path.join("about", "index.html"),
+    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/about`),
+    title: "About",
     description:
-      "About PlayersB: player-first comparison tools, fantasy-safe calculators, and explainable metrics.",
+      "About PlayersB — The Players Book: player profiles, comparisons, and fantasy-safe tools with explainable metrics.",
     body: `
       <h1>About PlayersB</h1>
 
       <h2>What PlayersB is</h2>
       <p>
-        PlayersB is a player-first utility platform focused on comparison tools, performance normalization,
+        PlayersB — The Players Book — is a player-first platform focused on profiles, comparison tools, performance normalization,
         and fantasy-safe decision support. The site is built around player entities and repeat-use tools.
       </p>
 
@@ -122,12 +132,11 @@ const PAGES = [
     `,
   },
 
-  // NOTE: Contact is listed here for completeness, but is NOT written because it is in MANUAL_PAGES.
-  // Keep this content aligned with your decision (playersbdotcom@gmail.com).
+  // NOTE: Contact is listed for completeness, but is NOT written because it is in MANUAL_PAGES.
   {
     out: "contact.html",
-    canonical: `${SITE_ORIGIN}/contact`,
-    title: "Contact – PlayersB",
+    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/contact`),
+    title: "Contact",
     description: "Contact PlayersB for feedback, corrections, or partnerships.",
     body: `
       <h1>Contact</h1>
@@ -145,9 +154,9 @@ const PAGES = [
   },
 
   {
-    out: "privacy.html",
-    canonical: `${SITE_ORIGIN}/privacy`,
-    title: "Privacy Policy – PlayersB",
+    out: path.join("privacy", "index.html"),
+    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/privacy`),
+    title: "Privacy Policy",
     description: "PlayersB privacy policy covering analytics, cookies, and advertising.",
     body: `
       <h1>Privacy Policy</h1>
@@ -170,14 +179,14 @@ const PAGES = [
       <p>PlayersB may display advertising and may include affiliate links in the future.</p>
 
       <h2>Contact</h2>
-      <p>For privacy-related questions, see the <a href="/contact">Contact page</a>.</p>
+      <p>For privacy-related questions, see the <a href="/contact/">Contact page</a>.</p>
     `,
   },
 
   {
-    out: "terms.html",
-    canonical: `${SITE_ORIGIN}/terms`,
-    title: "Terms of Use – PlayersB",
+    out: path.join("terms", "index.html"),
+    canonical: ensureTrailingSlash(`${SITE_ORIGIN}/terms`),
+    title: "Terms of Use",
     description: "PlayersB terms of use and educational disclaimers.",
     body: `
       <h1>Terms of Use</h1>
@@ -194,26 +203,6 @@ const PAGES = [
 
       <h2>Changes</h2>
       <p>We may update these Terms. Continued use indicates acceptance of changes.</p>
-    `,
-  },
-
-  {
-    out: path.join("players", "index.html"),
-    canonical: `${SITE_ORIGIN}/players/`,
-    title: "Players – PlayersB",
-    description: "PlayersB player pages: entity hub for comparisons, normalized stats, and tools.",
-    body: `
-      <h1>Players</h1>
-      <p>
-        Player pages link directly into tools (comparison, per-90, efficiency). Metrics show inputs—no tips, no predictions.
-      </p>
-      <p style="margin-top:12px;">
-        <a href="/compare">Open Compare</a> ·
-        <a href="/">Back to Home</a>
-      </p>
-      <p style="color:#666;font-size:13px;margin-top:10px;">
-        Tip: open any player entity page (e.g. <code>/players/haaland.html</code>) to see normalized stats and suggested rival comparisons.
-      </p>
     `,
   },
 ];
@@ -243,10 +232,18 @@ async function main() {
 
     const outAbs = path.join(ROOT, page.out);
 
-    // ensure parent dir exists (for players/index.html)
+    // ensure parent dir exists
     await fs.mkdir(path.dirname(outAbs), { recursive: true });
 
     const html = fill(layout, page);
+
+    // enforce no leaked tokens and exactly 1 h1
+    assertNoPlaceholders(html, outRel);
+    const h1Count = (html.match(/<h1\b/gi) || []).length;
+    if (h1Count !== 1) {
+      throw new Error(`${outRel}: expected exactly 1 <h1>, found ${h1Count}`);
+    }
+
     await fs.writeFile(outAbs, html, "utf-8");
     written++;
   }
