@@ -15,9 +15,11 @@ const num = (v) => (typeof v === "number" && Number.isFinite(v) ? v : 0);
 function fmt2(n) {
   return Number.isFinite(n) ? n.toFixed(2) : "0.00";
 }
+
 function safeStr(s) {
   return String(s ?? "").trim();
 }
+
 function metaLine(p) {
   const pos = safeStr(p.position);
   const team = safeStr(p.team);
@@ -60,7 +62,7 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
 }
 
 function sanitizeId(raw) {
-  // Keep it simple + safe for folder names and URLs
+  // Safe for folder names and URLs
   return safeStr(raw)
     .toLowerCase()
     .replace(/[^a-z0-9-]/g, "-")
@@ -90,7 +92,7 @@ async function main() {
   ]);
 
   const parsed = JSON.parse(rawData);
-  const players = parsed.players || [];
+  const players = Array.isArray(parsed.players) ? parsed.players : [];
   if (!players.length) throw new Error("data/players.json has no players[] array.");
 
   await fs.mkdir(OUT_DIR, { recursive: true });
@@ -111,7 +113,12 @@ async function main() {
     const assists = num(p.assists);
     const shots = num(p.shots);
 
-    const [r1, r2, r3] = rivalsFor(id);
+    const [r1Raw, r2Raw, r3Raw] = rivalsFor(id);
+
+    // Sanitize rivals IDs defensively
+    const r1 = [sanitizeId(r1Raw[0]), r1Raw[1]];
+    const r2 = [sanitizeId(r2Raw[0]), r2Raw[1]];
+    const r3 = [sanitizeId(r3Raw[0]), r3Raw[1]];
 
     // ✅ Support BOTH token styles:
     // - New: {{ID}}, {{NAME}}
@@ -134,14 +141,17 @@ async function main() {
       "{{A90}}": fmt2(per90(assists, minutes)),
       "{{S90}}": fmt2(per90(shots, minutes)),
 
-      "{{R1_ID}}": r1[0], "{{R1_NAME}}": r1[1],
-      "{{R2_ID}}": r2[0], "{{R2_NAME}}": r2[1],
-      "{{R3_ID}}": r3[0], "{{R3_NAME}}": r3[1],
+      "{{R1_ID}}": r1[0],
+      "{{R1_NAME}}": r1[1],
+      "{{R2_ID}}": r2[0],
+      "{{R2_NAME}}": r2[1],
+      "{{R3_ID}}": r3[0],
+      "{{R3_NAME}}": r3[1],
     });
 
     // ✅ Directory-style canonical
     const canonical = ensureTrailingSlash(`${SITE_ORIGIN}/players/${id}`);
-    const title = `${name}`;
+    const title = `${name} – PlayersB`;
     const description = `${name} player profile on PlayersB — The Players Book. Stats, role, and comparison links based on verified historical data.`;
 
     const html = replaceAllTokens(layoutTpl, {
@@ -163,9 +173,6 @@ async function main() {
     await writeFileEnsuringDir(outPath, html);
     count++;
   }
-
-  // Optional: small marker file for debugging builds
-  await writeFileEnsuringDir(path.join(OUT_DIR, ".generated.txt"), `generated=${count}\n`);
 
   console.log(`Generated ${count} player pages into /players/{id}/index.html`);
 }
