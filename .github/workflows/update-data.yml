@@ -1,40 +1,74 @@
 name: Update PlayersB Data (Mode 1)
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "25 4 * * 1" # Monday 04:25 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [ "main" ]
+    paths:
+      - "data/**"
+      - "templates/**"
+      - "scripts/**"
+      - "_redirects"
+      - "compare.html"
+      - "contact.html"
+      - "robots.txt"
+      - "package.json"
+      - "package-lock.json"
+      - "pnpm-lock.yaml"
+      - "yarn.lock"
+      - ".github/workflows/update-data.yml"
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-data-main
+  cancel-in-progress: true
+
 jobs:
-  update:
+  regenerate:
+    # Prevent loops when this workflow commits generated files
+    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Build current (football-data.org)
-        env:
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-        run: node scripts/build-current.mjs
-
-      - name: Build history (phase 1 placeholder)
-        run: node scripts/build-history.mjs
-
-      - name: Merge serving dataset
-        run: node scripts/merge.mjs
-
-      - name: Commit changes
+      - name: Install dependencies
         run: |
-          git config user.name "playersb-bot"
-          git config user.email "playersb-bot@users.noreply.github.com"
-          git add data/current.json data/history.json data/players.json
-          git commit -m "Update data (Mode 1)" || echo "No changes"
-          git push
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f pnpm-lock.yaml ]; then
+            npm i -g pnpm
+            pnpm i --frozen-lockfile
+          elif [ -f yarn.lock ]; then
+            corepack enable
+            yarn install --frozen-lockfile
+          else
+            npm i
+          fi
+
+      - name: Generate site (core + players + sitemap) and run quality gate
+        run: node scripts/generate-all.mjs
+
+      - name: Commit generated files (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Only commit if there are changes
+          if git status --porcelain | grep .; then
+            git add -A
+            git commit -m "chore: regenerate site outputs"
+            git push
+          else
+            echo "No changes to commit."
+          fi
