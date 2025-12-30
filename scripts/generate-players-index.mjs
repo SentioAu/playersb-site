@@ -23,10 +23,6 @@ function sanitizeId(raw) {
     .replace(/^-|-$/g, "");
 }
 
-function ensureTrailingSlash(url) {
-  return url.endsWith("/") ? url : `${url}/`;
-}
-
 function escHtml(s) {
   return String(s ?? "")
     .replaceAll("&", "&amp;")
@@ -82,8 +78,10 @@ async function main() {
       const meta = metaLine(p);
 
       const playerUrl = `/players/${encodeURIComponent(id)}/`;
-      const compareUrl1 = `/compare/?a=${encodeURIComponent(id)}&b=haaland`;
-      const compareUrl2 = `/compare/?a=${encodeURIComponent(id)}&b=mbappe`;
+
+      // Compare tool uses query params; keep them sanitized and consistent
+      const compareUrl1 = `/compare/?a=${encodeURIComponent(id)}&b=${encodeURIComponent(sanitizeId("haaland"))}`;
+      const compareUrl2 = `/compare/?a=${encodeURIComponent(id)}&b=${encodeURIComponent(sanitizeId("mbappe"))}`;
 
       return `
         <li style="padding:10px 0;border-bottom:1px solid #eee;">
@@ -103,7 +101,7 @@ async function main() {
   const title = "Players";
   const description =
     "Browse PlayersB — The Players Book. Player profiles built on verified historical data with comparisons and educational tools.";
-  const canonical = ensureTrailingSlash(`${SITE_ORIGIN}/players`);
+  const canonical = `${SITE_ORIGIN}/players/`;
 
   const body = `
     <h1>Players</h1>
