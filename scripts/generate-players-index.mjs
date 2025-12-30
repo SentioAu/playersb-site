@@ -15,6 +15,18 @@ function safeStr(s) {
   return String(s ?? "").trim();
 }
 
+function sanitizeId(raw) {
+  return safeStr(raw)
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function ensureTrailingSlash(url) {
+  return url.endsWith("/") ? url : `${url}/`;
+}
+
 function escHtml(s) {
   return String(s ?? "")
     .replaceAll("&", "&amp;")
@@ -29,6 +41,14 @@ function metaLine(p) {
   const team = safeStr(p.team);
   if (pos && team) return `${pos} · ${team}`;
   return pos || team || "";
+}
+
+function assertNoPlaceholders(finalHtml, fileLabel) {
+  const m = finalHtml.match(/{{[^}]+}}/g);
+  if (m?.length) {
+    const uniq = Array.from(new Set(m)).slice(0, 10).join(", ");
+    throw new Error(`${fileLabel}: unresolved template placeholders found: ${uniq}`);
+  }
 }
 
 function fill(layout, { title, description, canonical, body }) {
@@ -57,36 +77,42 @@ async function main() {
   const listItems = players
     .filter((p) => safeStr(p?.id) && safeStr(p?.name))
     .map((p) => {
-      const id = safeStr(p.id);
+      const id = sanitizeId(p.id);
       const name = safeStr(p.name);
       const meta = metaLine(p);
+
+      const playerUrl = `/players/${encodeURIComponent(id)}/`;
+      const compareUrl1 = `/compare/?a=${encodeURIComponent(id)}&b=haaland`;
+      const compareUrl2 = `/compare/?a=${encodeURIComponent(id)}&b=mbappe`;
+
       return `
         <li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/${escHtml(id)}.html" style="font-weight:700;text-decoration:none;">
+          <a href="${playerUrl}" style="font-weight:700;text-decoration:none;">
             ${escHtml(name)}
           </a>
           ${meta ? `<div style="color:#666;font-size:13px;margin-top:4px;">${escHtml(meta)}</div>` : ""}
           <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare?a=${encodeURIComponent(id)}&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare?a=${encodeURIComponent(id)}&b=mbappe">Compare vs Mbappé</a>
+            <a href="${compareUrl1}">Compare vs Haaland</a> ·
+            <a href="${compareUrl2}">Compare vs Mbappé</a>
           </div>
         </li>
       `.trim();
     })
     .join("\n");
 
-  const title = "Players – PlayersB";
+  const title = "Players";
   const description =
-    "PlayersB player pages: entity hub for comparisons, normalized stats, and tools.";
-  const canonical = `${SITE_ORIGIN}/players/`;
+    "Browse PlayersB — The Players Book. Player profiles built on verified historical data with comparisons and educational tools.";
+  const canonical = ensureTrailingSlash(`${SITE_ORIGIN}/players`);
 
   const body = `
     <h1>Players</h1>
     <p>
-      Player pages link directly into tools (comparison, per-90, efficiency). Metrics show inputs—no tips, no predictions.
+      Browse player profiles and jump into comparisons and tools. Metrics show inputs and explanations — educational only.
     </p>
     <p style="margin-top:12px;">
-      <a href="/compare">Open Compare</a> ·
+      <a href="/compare/">Open Compare</a> ·
+      <a href="/tools/">Tools</a> ·
       <a href="/">Back to Home</a>
     </p>
 
@@ -98,11 +124,18 @@ async function main() {
     </div>
 
     <p style="color:#666;font-size:13px;margin-top:12px;">
-      Tip: open any player entity page (e.g. <code>/players/haaland.html</code>) to see normalized stats and suggested rival comparisons.
+      Example URL format: <code>/players/haaland/</code>
     </p>
   `;
 
   const html = fill(layout, { title, description, canonical, body });
+
+  assertNoPlaceholders(html, "players/index.html");
+
+  const h1Count = (html.match(/<h1\b/gi) || []).length;
+  if (h1Count !== 1) {
+    throw new Error(`players/index.html: expected exactly 1 <h1>, found ${h1Count}`);
+  }
 
   await fs.mkdir(path.dirname(OUT_PATH), { recursive: true });
   await fs.writeFile(OUT_PATH, html, "utf-8");
