@@ -11,7 +11,7 @@ const GA_ID = "G-D5798TYENM";
 
 /**
  * Canonical mapping (directory-style):
- * - Core pages: /tools/, /learn/, /about/, /privacy/, /terms/
+ * - Core pages: /tools/, /learn/, /about/, /privacy/, /terms/, /contact/
  * - Players index: /players/
  * - Player pages: /players/{id}/
  * - compare.html is manual engine page but canonical should be /compare/
@@ -91,6 +91,19 @@ function isPlayerEntityIndex(relPath) {
   return relPath.startsWith("players/") && relPath.endsWith("/index.html") && !isPlayerIndex(relPath);
 }
 
+function isLegacyCoreHtml(relPath) {
+  // Legacy root-level core pages that should NOT exist anymore in directory-style architecture
+  // (kept strict to avoid nuking compare/contact/index)
+  return (
+    relPath === "tools.html" ||
+    relPath === "learn.html" ||
+    relPath === "about.html" ||
+    relPath === "privacy.html" ||
+    relPath === "terms.html" ||
+    relPath === "players.html"
+  );
+}
+
 function isDisallowedLegacyPlayerHtml(relPath) {
   // Any players/*.html legacy file is disallowed now
   return relPath.startsWith("players/") && relPath.endsWith(".html") && !relPath.endsWith("/index.html");
@@ -105,9 +118,12 @@ function isLiveHtml(relPath) {
   if (!relPath.endsWith(".html")) return false;
 
   // root-level html
-  if (!relPath.includes("/")) return true;
+  if (!relPath.includes("/")) {
+    // only allow these 3 at root; disallow legacy tools.html etc
+    return relPath === "index.html" || relPath === "compare.html" || relPath === "contact.html";
+  }
 
-  // allowed directory pages
+  // allowed directory pages (explicit map)
   if (CANONICAL_MAP.has(relPath)) return true;
 
   // allowed player entity pages
@@ -204,6 +220,13 @@ function run() {
     }
   }
 
+  // Hard fail if legacy core .html exists (tools.html, learn.html, etc.)
+  for (const { rp } of allHtml) {
+    if (isLegacyCoreHtml(rp)) {
+      failures.push(`${rp}: legacy core .html detected. Expected directory-style: /${rp.replace(".html", "")}/index.html`);
+    }
+  }
+
   const files = allHtml.filter(({ rp }) => isLiveHtml(rp));
 
   for (const { abs, rp } of files) {
@@ -225,12 +248,12 @@ function run() {
     if (!hasTitle(html)) failures.push(`${rp}: missing/empty <title>`);
     if (!hasMetaDescription(html)) failures.push(`${rp}: missing/empty meta description`);
 
-    // Rule 4: canonical present and correct
+    // Rule 4: canonical present and correct (ENFORCED for all LIVE pages)
     const gotCanon = canonicalHref(html);
     const expCanon = expectedCanonical(rp);
 
     if (!expCanon) {
-      warnings.push(`${rp}: warning: canonical not enforced for this file`);
+      failures.push(`${rp}: internal error: expectedCanonical returned null for a live page`);
     } else {
       if (!gotCanon) {
         failures.push(`${rp}: missing canonical tag (expected ${expCanon})`);
@@ -244,6 +267,7 @@ function run() {
     if (hits.length) failures.push(`${rp}: contains disallowed phrase(s): ${hits.join(", ")}`);
 
     // Optional nav consistency warning (non-fatal)
+    // For directory-style site, nav should use trailing-slash links
     const keyNav = ["/compare/", "/tools/", "/learn/", "/players/"];
     const missingNav = keyNav.filter((k) => !html.includes(k));
     if (missingNav.length >= 3) {
