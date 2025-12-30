@@ -6,3 +6,6 @@
 /contact.html   /contact/   301
 /privacy.html   /privacy/   301
 /terms.html     /terms/     301
+
+# Legacy player .html -> directory pages (prevents indexed .html 404s)
+/players/:id.html  /players/:id/  301
