@@ -1,26 +1,14 @@
-# Clean URL rewrites (serve .html files while keeping pretty URLs)
-# Format: /from  /to  200
+# Clean URL rewrites for Cloudflare Pages
+# Use 200 rewrites ONLY (no 301s)
 
-/compare   /compare.html   200
-/compare/  /compare.html   200
-
-/tools     /tools.html     200
-/tools/    /tools.html     200
-
-/learn     /learn.html     200
-/learn/    /learn.html     200
-
-/about     /about.html     200
-/about/    /about.html     200
-
-/contact   /contact.html   200
-/contact/  /contact.html   200
-
-/privacy   /privacy.html   200
-/privacy/  /privacy.html   200
-
-/terms     /terms.html     200
-/terms/    /terms.html     200
+# Core pages
+/compare    /compare.html    200
+/tools      /tools.html      200
+/learn      /learn.html      200
+/about      /about.html      200
+/contact    /contact.html    200
+/privacy    /privacy.html    200
+/terms      /terms.html      200
 
 # Players directory
-/players   /players/       301
+/players    /players/index.html   200
