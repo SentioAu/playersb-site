@@ -25,12 +25,20 @@ jobs:
       - name: Ensure repo is clean after generation
         run: |
           git status --porcelain
-          # Allow generated outputs that are expected in the new directory URL architecture:
-          # - index.html and players/index.html can be regenerated
-          # - about/, learn/, privacy/, terms/, tools/ are generated directories
-          # - players/*/ are generated player directories
+
+          # Allow expected generated outputs in directory-style architecture:
+          # - index.html and players/index.html may be regenerated
+          # - about/ learn/ privacy/ terms/ tools/ are generated directories (index.html inside)
+          # - players/{id}/index.html are generated player pages
+          # - players/.generated.txt marker is allowed
+          # - sitemap.xml may be regenerated
           DIRTY="$(git status --porcelain \
-            | grep -vE '^(M index\.html|M players/index\.html|\?\? (about|learn|privacy|terms|tools)/|\?\? players/)' || true)"
+            | grep -vE '^(M|A|\?\?) (index\.html|players/index\.html|sitemap\.xml)$' \
+            | grep -vE '^(M|A|\?\?) (about|learn|privacy|terms|tools)/index\.html$' \
+            | grep -vE '^(M|A|\?\?) players/[^/]+/index\.html$' \
+            | grep -vE '^(M|A|\?\?) players/\.generated\.txt$' \
+            || true)"
+
           if [ -n "$DIRTY" ]; then
             echo "Unexpected dirty files after generation:"
             echo "$DIRTY"
