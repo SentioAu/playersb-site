@@ -26,18 +26,12 @@ jobs:
         run: |
           git status --porcelain
 
-          # Allow expected generated outputs in directory-style architecture:
-          # - index.html and players/index.html may be regenerated
-          # - about/ learn/ privacy/ terms/ tools/ are generated directories (index.html inside)
-          # - players/{id}/index.html are generated player pages
-          # - players/.generated.txt marker is allowed
-          # - sitemap.xml may be regenerated
-          DIRTY="$(git status --porcelain \
-            | grep -vE '^(M|A|\?\?) (index\.html|players/index\.html|sitemap\.xml)$' \
-            | grep -vE '^(M|A|\?\?) (about|learn|privacy|terms|tools)/index\.html$' \
-            | grep -vE '^(M|A|\?\?) players/[^/]+/index\.html$' \
-            | grep -vE '^(M|A|\?\?) players/\.generated\.txt$' \
-            || true)"
+          # git status --porcelain=v1 lines look like:
+          # " M path" or "M  path" or "?? path"
+          # => always TWO status chars, then a space, then the path
+          ALLOWED_REGEX='^.. (index\.html|players/index\.html|sitemap\.xml)$|^.. (about|learn|privacy|terms|tools)/index\.html$|^.. players/[^/]+/index\.html$|^.. players/\.generated\.txt$'
+
+          DIRTY="$(git status --porcelain | grep -Ev "$ALLOWED_REGEX" || true)"
 
           if [ -n "$DIRTY" ]; then
             echo "Unexpected dirty files after generation:"
