@@ -1,4 +1,18 @@
-# Legacy .html -> clean paths (safe one-way redirects)
+# =========================================================
+# PlayersB Redirects (canonical = trailing-slash directories)
+# =========================================================
+
+# ---- Normalize no-trailing-slash -> trailing-slash (core) ----
+/compare    /compare/   301
+/tools      /tools/     301
+/learn      /learn/     301
+/about      /about/     301
+/contact    /contact/   301
+/privacy    /privacy/   301
+/terms      /terms/     301
+/players    /players/   301
+
+# ---- Legacy .html -> directory paths (safe one-way redirects) ----
 /compare.html   /compare/   301
 /tools.html     /tools/     301
 /learn.html     /learn/     301
@@ -7,5 +21,5 @@
 /privacy.html   /privacy/   301
 /terms.html     /terms/     301
 
-# Legacy player .html -> directory pages (prevents indexed .html 404s)
+# ---- Legacy player .html -> directory pages (prevents indexed .html 404s) ----
 /players/:id.html  /players/:id/  301
