@@ -42,71 +42,293 @@
     gtag('js', new Date());
     gtag('config', 'G-D5798TYENM');
   </script>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #5b677a;
+      --border: #e2e8f0;
+      --accent: #1d4ed8;
+      --accent-soft: #e0e7ff;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 12px;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      z-index: 10;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+    }
+
+    .site-main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .brand-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .site-nav a {
+      color: inherit;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .site-nav a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .card + .card {
+      margin-top: 18px;
+    }
+
+    .section-title {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--accent);
+      border-color: var(--border);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .site-footer {
+      margin-top: 44px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .site-footer a {
+      color: inherit;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .stat {
+      background: #f8fafc;
+      border-radius: var(--radius-md);
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 18px;
+    }
+  </style>
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <main id="content" class="site-main">
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
-  </div>
+  <header class="site-header">
+    <div class="brand">
+      <a href="/" class="brand-link">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+    </div>
 
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/players/">Players</a>
+      <a href="/compare/">Compare</a>
+      <a href="/tools/">Tools</a>
+      <a href="/learn/">Learn</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
 
 <h1>Mohamed Salah</h1>
-<p>RW · Liverpool</p>
+<p class="muted">RW · Liverpool</p>
 
-<section>
-  <h2>Snapshot</h2>
-  <p>
-    Minutes: <strong>1480</strong> ·
-    Goals: <strong>14</strong> ·
-    Assists: <strong>7</strong> ·
-    Shots: <strong>68</strong>
-  </p>
+<section class="card">
+  <h2 class="section-title">Snapshot</h2>
+  <div class="stat-grid">
+    <div class="stat">
+      Minutes
+      <strong>1480</strong>
+    </div>
+    <div class="stat">
+      Goals
+      <strong>14</strong>
+    </div>
+    <div class="stat">
+      Assists
+      <strong>7</strong>
+    </div>
+    <div class="stat">
+      Shots
+      <strong>68</strong>
+    </div>
+  </div>
 </section>
 
-<section style="margin-top:16px;">
-  <h2>Normalized output (per 90)</h2>
-  <p>
-    Goals/90: <strong>0.85</strong><br>
-    Assists/90: <strong>0.43</strong><br>
-    Shots/90: <strong>4.14</strong>
-  </p>
+<section class="card">
+  <h2 class="section-title">Normalized output (per 90)</h2>
+  <div class="stat-grid">
+    <div class="stat">
+      Goals/90
+      <strong>0.85</strong>
+    </div>
+    <div class="stat">
+      Assists/90
+      <strong>0.43</strong>
+    </div>
+    <div class="stat">
+      Shots/90
+      <strong>4.14</strong>
+    </div>
+  </div>
 </section>
 
-<section style="margin-top:16px;">
-  <h2>Compare</h2>
-  <p>
-    <a href="/compare?a=salah&b=son">Compare vs Son Heung-min</a> ·
-    <a href="/compare?a=salah&b=mbappe">Compare vs Kylian Mbappé</a> ·
-    <a href="/compare?a=salah&b=griezmann">Compare vs Antoine Griezmann</a>
-  </p>
+<section class="card">
+  <h2 class="section-title">Compare</h2>
+  <p class="muted">Jump into side-by-side comparisons with similar players.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
+    <a class="button" href="/compare/?a=salah&b=son">Compare vs Son Heung-min</a>
+    <a class="button secondary" href="/compare/?a=salah&b=mbappe">Compare vs Kylian Mbappé</a>
+    <a class="button secondary" href="/compare/?a=salah&b=griezmann">Compare vs Antoine Griezmann</a>
+  </div>
 </section>
 
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
+  <footer class="site-footer">
+    <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+    <p>
+      <a href="/privacy/">Privacy</a> ·
+      <a href="/terms/">Terms</a> ·
+      <a href="/contact/">Contact</a>
+    </p>
+  </footer>
 
-</main>
+  </main>
 </body>
 </html>

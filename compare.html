@@ -28,33 +28,164 @@
     gtag('js', new Date());
     gtag('config', 'G-D5798TYENM');
   </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #5b677a;
+      --border: #e2e8f0;
+      --accent: #1d4ed8;
+      --accent-soft: #e0e7ff;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .site-main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .brand-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .site-nav a {
+      color: inherit;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .site-nav a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .section-title {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--accent);
+      border-color: var(--border);
+    }
+
+    .site-footer {
+      margin-top: 44px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .site-footer a {
+      color: inherit;
+    }
+  </style>
 </head>
 <body>
-  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.55;">
-    <header style="margin-bottom:18px;">
-      <div style="margin-bottom:10px;">
+  <main class="site-main">
+    <header class="site-header">
+      <div>
         <a href="/" style="text-decoration:none;color:inherit;">
-          <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-          <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
+          <div class="brand-title">PlayersB</div>
+          <div class="brand-subtitle">The Players Book</div>
         </a>
       </div>
 
-      <h1 style="margin:0;">Player Comparison</h1>
-      <p style="margin:10px 0 0 0;color:#444;">
-        Compare two players with normalized rates (per-90) and simple efficiency context. Educational tool — no betting or sportsbook activity.
-      </p>
-
-      <nav style="margin-top:12px;font-size:14px;">
-        <a href="/">Home</a> ·
-        <a href="/players/">Players</a> ·
-        <a href="/tools/">Tools</a> ·
-        <a href="/learn/">Learn</a> ·
-        <a href="/about/">About</a> ·
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/players/">Players</a>
+        <a href="/compare/">Compare</a>
+        <a href="/tools/">Tools</a>
+        <a href="/learn/">Learn</a>
+        <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
       </nav>
     </header>
 
-    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
+    <h1>Player Comparison</h1>
+    <p class="muted">
+      Compare two players with normalized rates (per-90) and simple efficiency context. Educational tool — no betting or sportsbook activity.
+    </p>
+
+    <section class="card" style="margin-top:16px;">
       <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
         <div style="flex:1;min-width:240px;">
           <label for="playerA" style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Player A</label>
@@ -65,20 +196,22 @@
           <select id="playerB" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;"></select>
         </div>
         <div>
-          <button id="swap" style="padding:10px 14px;border:1px solid #ddd;border-radius:10px;background:#fff;cursor:pointer;">
-            Swap
-          </button>
+          <button id="swap" class="button secondary" type="button">Swap</button>
         </div>
       </div>
 
-      <div style="margin-top:12px;font-size:13px;color:#666;">
-        Shareable link: <span id="shareUrl" style="word-break:break-all;"></span>
+      <div style="margin-top:12px;font-size:13px;color:#666;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <span>Shareable link: <span id="shareUrl" style="word-break:break-all;"></span></span>
+        <button id="copyShare" class="button secondary" type="button" style="padding:6px 12px;font-size:12px;">
+          Copy link
+        </button>
+        <span id="shareStatus" style="font-size:12px;color:#555;" aria-live="polite"></span>
       </div>
     </section>
 
     <section id="result" style="margin-top:18px;"></section>
 
-    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+    <footer class="site-footer">
       <p><strong>Disclaimer:</strong> Educational tool. No betting or sportsbook activity. Outputs are indicators based on historical/verified data — not guarantees.</p>
       <p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/contact/">Contact</a></p>
     </footer>
@@ -92,6 +225,8 @@
     const $swap = document.getElementById("swap");
     const $result = document.getElementById("result");
     const $share = document.getElementById("shareUrl");
+    const $copy = document.getElementById("copyShare");
+    const $status = document.getElementById("shareStatus");
 
     const round = (n, d=2) => Number.isFinite(n) ? (Math.round(n * (10**d)) / (10**d)) : 0;
     const per90 = (value, minutes) => minutes > 0 ? (value / (minutes / 90)) : 0;
@@ -123,6 +258,32 @@
       const url = shareUrlFor(a, b);
       history.replaceState({}, "", url);
       $share.textContent = url;
+    }
+
+    async function copyShare() {
+      const url = $share.textContent.trim();
+      if (!url) return;
+      if ($status) $status.textContent = "";
+
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(url);
+        } else {
+          const temp = document.createElement("textarea");
+          temp.value = url;
+          temp.setAttribute("readonly", "");
+          temp.style.position = "absolute";
+          temp.style.left = "-9999px";
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand("copy");
+          temp.remove();
+        }
+        if ($status) $status.textContent = "Copied.";
+      } catch (err) {
+        if ($status) $status.textContent = "Unable to copy. Select the link to copy manually.";
+        console.error(err);
+      }
     }
 
     function optionLabel(p) {
@@ -277,6 +438,7 @@
 
       $A.addEventListener("change", () => render(players));
       $B.addEventListener("change", () => render(players));
+      if ($copy) $copy.addEventListener("click", copyShare);
 
       $swap.addEventListener("click", () => {
         const tmp = $A.value;
