@@ -83,10 +83,8 @@ async function main() {
       const compareUrl1 = `/compare/?a=${encodeURIComponent(id)}&b=${encodeURIComponent(sanitizeId("haaland"))}`;
       const compareUrl2 = `/compare/?a=${encodeURIComponent(id)}&b=${encodeURIComponent(sanitizeId("mbappe"))}`;
 
-      const searchBlob = escHtml(`${name} ${meta}`.toLowerCase());
-
       return `
-        <li data-search="${searchBlob}" style="padding:10px 0;border-bottom:1px solid #eee;">
+        <li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="${playerUrl}" style="font-weight:700;text-decoration:none;">
             ${escHtml(name)}
           </a>
@@ -107,98 +105,25 @@ async function main() {
 
   const body = `
     <h1>Players</h1>
-    <p class="muted">
+    <p>
       Browse player profiles and jump into comparisons and tools. Metrics show inputs and explanations — educational only.
     </p>
-    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
-      <a class="button" href="/compare/">Open Compare</a>
-      <a class="button secondary" href="/tools/">Tools</a>
-      <a class="button secondary" href="/">Back to Home</a>
-    </div>
+    <p style="margin-top:12px;">
+      <a href="/compare/">Open Compare</a> ·
+      <a href="/tools/">Tools</a> ·
+      <a href="/">Back to Home</a>
+    </p>
 
-    <div class="card" style="margin-top:18px;">
+    <div style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
       <div style="font-weight:700;margin-bottom:8px;">All players</div>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:12px;">
-        <label style="display:block;font-size:13px;color:#555;flex:1;min-width:220px;">
-          Search players
-          <input id="playerSearch" type="search" placeholder="Search by name, team, or position" style="display:block;width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;margin-top:6px;" />
-        </label>
-        <button class="button secondary" type="button" id="clearSearch">Clear</button>
-        <div style="font-size:13px;color:#666;" id="playerCount"></div>
-      </div>
       <ul style="list-style:none;padding:0;margin:0;">
         ${listItems || `<li>No players found in data.</li>`}
       </ul>
-      <div id="noResults" class="muted" style="display:none;margin-top:12px;font-size:13px;">
-        No players match that search yet. Try a shorter name or team.
-      </div>
     </div>
 
-    <p class="muted" style="font-size:13px;margin-top:12px;">
+    <p style="color:#666;font-size:13px;margin-top:12px;">
       Example URL format: <code>/players/haaland/</code>
     </p>
-
-    <script>
-      (function () {
-        const input = document.getElementById("playerSearch");
-        const clear = document.getElementById("clearSearch");
-        const items = Array.from(document.querySelectorAll("li[data-search]"));
-        const count = document.getElementById("playerCount");
-        const empty = document.getElementById("noResults");
-        const total = items.length;
-
-        function updateQuery(q) {
-          const params = new URLSearchParams(window.location.search);
-          if (q) {
-            params.set("q", q);
-          } else {
-            params.delete("q");
-          }
-          const next = params.toString();
-          const url = next ? \`\${window.location.pathname}?\${next}\` : window.location.pathname;
-          window.history.replaceState({}, "", url);
-        }
-
-        function updateCount(visible) {
-          if (!count) return;
-          count.textContent = \`Showing \${visible} of \${total}\`;
-        }
-
-        function filter() {
-          if (!input) return;
-          const q = input.value.trim().toLowerCase();
-          let visible = 0;
-
-          for (const item of items) {
-            const hay = item.dataset.search || "";
-            const show = !q || hay.includes(q);
-            item.style.display = show ? "" : "none";
-            if (show) visible += 1;
-          }
-
-          updateCount(visible);
-          if (empty) empty.style.display = visible ? "none" : "block";
-          updateQuery(q);
-        }
-
-        updateCount(total);
-        if (input) input.addEventListener("input", filter);
-        if (clear) {
-          clear.addEventListener("click", () => {
-            input.value = "";
-            filter();
-            input.focus();
-          });
-        }
-
-        const params = new URLSearchParams(window.location.search);
-        const initial = params.get("q");
-        if (initial && input) {
-          input.value = initial;
-          filter();
-        }
-      })();
-    </script>
   `;
 
   const html = fill(layout, { title, description, canonical, body });
