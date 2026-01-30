@@ -1,52 +1,30 @@
 <h1>{{NAME}}</h1>
-<p class="muted">{{META_LINE}}</p>
+<p>{{META_LINE}}</p>
 
-<section class="card">
-  <h2 class="section-title">Snapshot</h2>
-  <div class="stat-grid">
-    <div class="stat">
-      Minutes
-      <strong>{{MINUTES}}</strong>
-    </div>
-    <div class="stat">
-      Goals
-      <strong>{{GOALS}}</strong>
-    </div>
-    <div class="stat">
-      Assists
-      <strong>{{ASSISTS}}</strong>
-    </div>
-    <div class="stat">
-      Shots
-      <strong>{{SHOTS}}</strong>
-    </div>
-  </div>
+<section>
+  <h2>Snapshot</h2>
+  <p>
+    Minutes: <strong>{{MINUTES}}</strong> ·
+    Goals: <strong>{{GOALS}}</strong> ·
+    Assists: <strong>{{ASSISTS}}</strong> ·
+    Shots: <strong>{{SHOTS}}</strong>
+  </p>
 </section>
 
-<section class="card">
-  <h2 class="section-title">Normalized output (per 90)</h2>
-  <div class="stat-grid">
-    <div class="stat">
-      Goals/90
-      <strong>{{G90}}</strong>
-    </div>
-    <div class="stat">
-      Assists/90
-      <strong>{{A90}}</strong>
-    </div>
-    <div class="stat">
-      Shots/90
-      <strong>{{S90}}</strong>
-    </div>
-  </div>
+<section style="margin-top:16px;">
+  <h2>Normalized output (per 90)</h2>
+  <p>
+    Goals/90: <strong>{{G90}}</strong><br>
+    Assists/90: <strong>{{A90}}</strong><br>
+    Shots/90: <strong>{{S90}}</strong>
+  </p>
 </section>
 
-<section class="card">
-  <h2 class="section-title">Compare</h2>
-  <p class="muted">Jump into side-by-side comparisons with similar players.</p>
-  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
-    <a class="button" href="/compare/?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a>
-    <a class="button secondary" href="/compare/?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a>
-    <a class="button secondary" href="/compare/?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
-  </div>
+<section style="margin-top:16px;">
+  <h2>Compare</h2>
+  <p>
+    <a href="/compare?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
+    <a href="/compare?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
+    <a href="/compare?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
+  </p>
 </section>

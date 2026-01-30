@@ -42,252 +42,44 @@
     gtag('js', new Date());
     gtag('config', 'G-D5798TYENM');
   </script>
-
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #5b677a;
-      --border: #e2e8f0;
-      --accent: #1d4ed8;
-      --accent-soft: #e0e7ff;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      --radius-lg: 18px;
-      --radius-md: 12px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 12px;
-      background: var(--accent);
-      color: #fff;
-      padding: 8px 12px;
-      border-radius: 999px;
-      z-index: 10;
-    }
-
-    .skip-link:focus {
-      left: 12px;
-    }
-
-    .site-main {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 32px 20px 56px;
-    }
-
-    .site-header {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 28px;
-    }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .brand-title {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-subtitle {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .site-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .site-nav a {
-      color: inherit;
-      padding: 6px 10px;
-      border-radius: 999px;
-    }
-
-    .site-nav a:hover {
-      background: var(--accent-soft);
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 20px;
-      box-shadow: var(--shadow);
-    }
-
-    .card + .card {
-      margin-top: 18px;
-    }
-
-    .section-title {
-      margin: 0 0 8px 0;
-      font-size: 20px;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 12px;
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      background: var(--accent);
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .button.secondary {
-      background: #fff;
-      color: var(--accent);
-      border-color: var(--border);
-    }
-
-    .grid {
-      display: grid;
-      gap: 16px;
-    }
-
-    .grid.cols-3 {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .grid.cols-2 {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .site-footer {
-      margin-top: 44px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .site-footer a {
-      color: inherit;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .stat {
-      background: #f8fafc;
-      border-radius: var(--radius-md);
-      padding: 12px;
-      text-align: center;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 18px;
-    }
-  </style>
 </head>
 
 <body>
-  <a class="skip-link" href="#content">Skip to content</a>
-  <main id="content" class="site-main">
+<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
 
-  <header class="site-header">
-    <div class="brand">
-      <a href="/" class="brand-link">
-        <span class="brand-title">PlayersB</span>
-        <span class="brand-subtitle">The Players Book</span>
-      </a>
-    </div>
+<header style="margin-bottom:16px;">
+  <div style="margin-bottom:10px;">
+    <a href="/" style="text-decoration:none;color:inherit;">
+      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
+      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
+    </a>
+  </div>
 
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/players/">Players</a>
-      <a href="/compare/">Compare</a>
-      <a href="/tools/">Tools</a>
-      <a href="/learn/">Learn</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-  </header>
+  <nav style="font-size:14px;margin-bottom:14px;">
+    <a href="/">Home</a> ·
+    <a href="/players/">Players</a> ·
+    <a href="/compare/">Compare</a> ·
+    <a href="/tools/">Tools</a> ·
+    <a href="/learn/">Learn</a> ·
+    <a href="/about/">About</a> ·
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
 
 <h1>Players</h1>
-    <p class="muted">
+    <p>
       Browse player profiles and jump into comparisons and tools. Metrics show inputs and explanations — educational only.
     </p>
-    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
-      <a class="button" href="/compare/">Open Compare</a>
-      <a class="button secondary" href="/tools/">Tools</a>
-      <a class="button secondary" href="/">Back to Home</a>
-    </div>
+    <p style="margin-top:12px;">
+      <a href="/compare/">Open Compare</a> ·
+      <a href="/tools/">Tools</a> ·
+      <a href="/">Back to Home</a>
+    </p>
 
-    <div class="card" style="margin-top:18px;">
+    <div style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
       <div style="font-weight:700;margin-bottom:8px;">All players</div>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:12px;">
-        <label style="display:block;font-size:13px;color:#555;flex:1;min-width:220px;">
-          Search players
-          <input id="playerSearch" type="search" placeholder="Search by name, team, or position" style="display:block;width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;margin-top:6px;" />
-        </label>
-        <button class="button secondary" type="button" id="clearSearch">Clear</button>
-        <div style="font-size:13px;color:#666;" id="playerCount"></div>
-      </div>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li data-search="antoine griezmann ss/am · atlético madrid" style="padding:10px 0;border-bottom:1px solid #eee;">
+        <li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/griezmann/" style="font-weight:700;text-decoration:none;">
             Antoine Griezmann
           </a>
@@ -297,7 +89,7 @@
             <a href="/compare/?a=griezmann&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="erling haaland st · manchester city" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/haaland/" style="font-weight:700;text-decoration:none;">
             Erling Haaland
           </a>
@@ -307,7 +99,7 @@
             <a href="/compare/?a=haaland&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="harry kane st · bayern munich" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/kane/" style="font-weight:700;text-decoration:none;">
             Harry Kane
           </a>
@@ -317,7 +109,7 @@
             <a href="/compare/?a=kane&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="jude bellingham am/cm · real madrid" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/bellingham/" style="font-weight:700;text-decoration:none;">
             Jude Bellingham
           </a>
@@ -327,7 +119,7 @@
             <a href="/compare/?a=bellingham&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="kevin de bruyne am/cm · manchester city" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/debruyne/" style="font-weight:700;text-decoration:none;">
             Kevin De Bruyne
           </a>
@@ -337,7 +129,7 @@
             <a href="/compare/?a=debruyne&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="kylian mbappé lw/st · paris saint-germain" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/mbappe/" style="font-weight:700;text-decoration:none;">
             Kylian Mbappé
           </a>
@@ -347,7 +139,7 @@
             <a href="/compare/?a=mbappe&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="mohamed salah rw · liverpool" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/salah/" style="font-weight:700;text-decoration:none;">
             Mohamed Salah
           </a>
@@ -357,7 +149,7 @@
             <a href="/compare/?a=salah&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="son heung-min lw · tottenham" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/son/" style="font-weight:700;text-decoration:none;">
             Son Heung-min
           </a>
@@ -367,7 +159,7 @@
             <a href="/compare/?a=son&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="victor osimhen st · napoli" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/osimhen/" style="font-weight:700;text-decoration:none;">
             Victor Osimhen
           </a>
@@ -377,7 +169,7 @@
             <a href="/compare/?a=osimhen&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li data-search="vinícius júnior lw · real madrid" style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:10px 0;border-bottom:1px solid #eee;">
           <a href="/players/vinicius/" style="font-weight:700;text-decoration:none;">
             Vinícius Júnior
           </a>
@@ -388,86 +180,21 @@
           </div>
         </li>
       </ul>
-      <div id="noResults" class="muted" style="display:none;margin-top:12px;font-size:13px;">
-        No players match that search yet. Try a shorter name or team.
-      </div>
     </div>
 
-    <p class="muted" style="font-size:13px;margin-top:12px;">
+    <p style="color:#666;font-size:13px;margin-top:12px;">
       Example URL format: <code>/players/haaland/</code>
     </p>
 
-    <script>
-      (function () {
-        const input = document.getElementById("playerSearch");
-        const clear = document.getElementById("clearSearch");
-        const items = Array.from(document.querySelectorAll("li[data-search]"));
-        const count = document.getElementById("playerCount");
-        const empty = document.getElementById("noResults");
-        const total = items.length;
+<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
+  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+  <p>
+    <a href="/privacy/">Privacy</a> ·
+    <a href="/terms/">Terms</a> ·
+    <a href="/contact/">Contact</a>
+  </p>
+</footer>
 
-        function updateQuery(q) {
-          const params = new URLSearchParams(window.location.search);
-          if (q) {
-            params.set("q", q);
-          } else {
-            params.delete("q");
-          }
-          const next = params.toString();
-          const url = next ? `${window.location.pathname}?${next}` : window.location.pathname;
-          window.history.replaceState({}, "", url);
-        }
-
-        function updateCount(visible) {
-          if (!count) return;
-          count.textContent = `Showing ${visible} of ${total}`;
-        }
-
-        function filter() {
-          if (!input) return;
-          const q = input.value.trim().toLowerCase();
-          let visible = 0;
-
-          for (const item of items) {
-            const hay = item.dataset.search || "";
-            const show = !q || hay.includes(q);
-            item.style.display = show ? "" : "none";
-            if (show) visible += 1;
-          }
-
-          updateCount(visible);
-          if (empty) empty.style.display = visible ? "none" : "block";
-          updateQuery(q);
-        }
-
-        updateCount(total);
-        if (input) input.addEventListener("input", filter);
-        if (clear) {
-          clear.addEventListener("click", () => {
-            input.value = "";
-            filter();
-            input.focus();
-          });
-        }
-
-        const params = new URLSearchParams(window.location.search);
-        const initial = params.get("q");
-        if (initial && input) {
-          input.value = initial;
-          filter();
-        }
-      })();
-    </script>
-
-  <footer class="site-footer">
-    <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-    <p>
-      <a href="/privacy/">Privacy</a> ·
-      <a href="/terms/">Terms</a> ·
-      <a href="/contact/">Contact</a>
-    </p>
-  </footer>
-
-  </main>
+</main>
 </body>
 </html>
