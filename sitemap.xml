@@ -28,6 +28,18 @@
     <loc>https://playersb.com/players/</loc>
   </url>
   <url>
+    <loc>https://playersb.com/positions/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/glossary/</loc>
+  </url>
+  <url>
     <loc>https://playersb.com/players/bellingham/</loc>
   </url>
   <url>
@@ -56,5 +68,71 @@
   </url>
   <url>
     <loc>https://playersb.com/players/vinicius/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/am/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/cm/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/lw/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/rw/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/ss/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/st/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/atl-tico-madrid/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/bayern-munich/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/liverpool/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/manchester-city/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/napoli/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/paris-saint-germain/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/real-madrid/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/tottenham/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/cl/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/pd/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/pl/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/per-90-normalization/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/efficiency-vs-volume/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/reading-comparisons/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/minutes-and-role/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/building-comparison-briefs/</loc>
   </url>
 </urlset>

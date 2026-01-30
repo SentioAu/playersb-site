@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const SITE_ORIGIN = "https://playersb.com";
 
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
+const LEARN_TOPICS_PATH = path.join(ROOT, "data", "learn-topics.json");
 
 // Manual pages that must NOT be overwritten by generators.
 // - compare.html = real JS engine page
@@ -19,11 +20,62 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
   }
 }
 
+function escHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function renderLearnTopics(topics) {
+  if (!topics.length) {
+    return `
+      <div class="card">
+        <p class="meta-text">Learning guides are being curated. Check back soon.</p>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="card-grid">
+      ${topics
+        .map((topic) => {
+          const slug = escHtml(topic.slug);
+          const title = escHtml(topic.title);
+          const summary = escHtml(topic.summary || topic.description || "");
+          return `
+            <div class="card">
+              <h3>${title}</h3>
+              <p class="meta-text">${summary}</p>
+              <a class="button small secondary" href="/learn/${slug}/">Read guide</a>
+            </div>
+          `.trim();
+        })
+        .join("\n")}
+    </div>
+  `;
+}
+
+function normalizeLearnTopics(rawTopics) {
+  if (!Array.isArray(rawTopics)) return [];
+  return rawTopics
+    .map((topic) => ({
+      slug: String(topic?.slug ?? "").trim(),
+      title: String(topic?.title ?? "").trim(),
+      description: String(topic?.description ?? "").trim(),
+      summary: String(topic?.summary ?? "").trim(),
+    }))
+    .filter((topic) => topic.slug && topic.title);
+}
+
 // Directory-style core pages (single source of truth)
 // NOTE: we do NOT generate legacy root .html files like tools.html.
 // Those are handled via redirects only.
-const PAGES = [
-  {
+function buildPages(learnTopicsMarkup) {
+  return [
+    {
     // keep home at root as index.html
     out: "index.html",
     canonical: `${SITE_ORIGIN}/`,
@@ -31,17 +83,75 @@ const PAGES = [
     description:
       "PlayersB — The Players Book. Player profiles, comparisons, and fantasy-safe tools built on verified historical data.",
     body: `
-      <h1>PlayersB — The Players Book</h1>
-      <p>
-        Player-first tools for comparing performance, understanding stats, and making fantasy decisions — without betting or sportsbook activity.
-        Everything is explainable and grounded in verified historical data.
-      </p>
-      <p style="margin-top:12px;">
-        <a href="/compare/">Compare players</a> ·
-        <a href="/players/">Browse players</a> ·
-        <a href="/tools/">Tools</a> ·
-        <a href="/learn/">Learn</a>
-      </p>
+      <section class="hero">
+        <span class="pill">PlayersB • The Players Book</span>
+        <h1>Player intelligence you can explain.</h1>
+        <p class="lead">
+          Compare players, normalize output, and explore profiles with transparent metrics — all educational, no betting or sportsbook activity.
+        </p>
+        <div class="button-row">
+          <a class="button" href="/compare/">Compare players</a>
+          <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/tools/">Explore tools</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Why PlayersB</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Explainable metrics</h3>
+            <p class="meta-text">Every output shows what goes into it — rates, volumes, and efficiency context.</p>
+          </div>
+          <div class="card">
+            <h3>Player-first navigation</h3>
+            <p class="meta-text">Profiles, comparisons, and tools are organized around each player.</p>
+          </div>
+          <div class="card">
+            <h3>Fantasy-safe focus</h3>
+            <p class="meta-text">Educational use only. No betting lines, tips, or sportsbook activity.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Start with a tool</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Player Comparison</h3>
+            <p class="meta-text">Side-by-side rates with clear tradeoffs and shareable links.</p>
+            <a class="button small" href="/compare/">Open compare</a>
+          </div>
+          <div class="card">
+            <h3>Player Profiles</h3>
+            <p class="meta-text">Snapshot totals, per-90 output, and quick comparison links.</p>
+            <a class="button small" href="/players/">View players</a>
+          </div>
+          <div class="card">
+            <h3>Learning Center</h3>
+            <p class="meta-text">Understand normalization, efficiency, and how to read indicators.</p>
+            <a class="button small" href="/learn/">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">What you can do today</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Build a comparison brief</h3>
+            <p class="meta-text">Use per-90 rates to compare two players with different minutes and roles.</p>
+          </div>
+          <div class="card">
+            <h3>Sanity-check efficiency</h3>
+            <p class="meta-text">Review goals per shot and shot accuracy to balance volume with finishing.</p>
+          </div>
+          <div class="card">
+            <h3>Share insights fast</h3>
+            <p class="meta-text">Generate shareable compare links for teammates, scouts, and analysts.</p>
+          </div>
+        </div>
+      </section>
     `,
   },
 
@@ -56,24 +166,49 @@ const PAGES = [
     description:
       "PlayersB tools: comparisons, calculators, similarity finders, and fantasy-safe utilities built on verified historical data.",
     body: `
-      <h1>Tools</h1>
-      <p>
-        PlayersB tools are explainable, grounded in inputs, and designed for repeated use across player pages.
-      </p>
+      <section class="hero">
+        <span class="pill">Tools</span>
+        <h1>Tools built for repeatable analysis.</h1>
+        <p class="lead">Every tool is grounded in inputs you can verify, with outputs framed for learning.</p>
+        <div class="button-row">
+          <a class="button" href="/compare/">Open comparison tool</a>
+          <a class="button secondary" href="/players/">Browse players</a>
+        </div>
+      </section>
 
-      <h2>Core tools</h2>
-      <ul>
-        <li><strong>Player Comparison</strong> — side-by-side normalized stats with explanations.</li>
-        <li><strong>Per-90 / Per-minute</strong> — normalize output by time played.</li>
-        <li><strong>Rate view</strong> — quick production rates for comparison.</li>
-        <li><strong>Minutes-to-output</strong> — how often a player produces per minutes played.</li>
-      </ul>
+      <section class="section">
+        <h2 class="section-title">Core tools</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Player Comparison</h3>
+            <p class="meta-text">Side-by-side per-90 rates with efficiency context and shareable links.</p>
+          </div>
+          <div class="card">
+            <h3>Per-90 normalization</h3>
+            <p class="meta-text">Normalize output by minutes played to compare different workloads.</p>
+          </div>
+          <div class="card">
+            <h3>Rate & efficiency views</h3>
+            <p class="meta-text">See volume signals (shots/90) alongside efficiency indicators.</p>
+          </div>
+          <div class="card">
+            <h3>Minutes-to-output</h3>
+            <p class="meta-text">Understand how often a player produces per minutes played.</p>
+          </div>
+        </div>
+      </section>
 
-      <h2>Start here</h2>
-      <ul>
-        <li><a href="/compare/"><strong>Compare players</strong></a></li>
-        <li><a href="/players/"><strong>Browse players</strong></a></li>
-      </ul>
+      <section class="section">
+        <div class="card">
+          <h2>How to use the tools</h2>
+          <ul class="info-list">
+            <li>Pick a player and compare against a similar role or rival.</li>
+            <li>Scan per-90 rates to normalize minutes and workloads.</li>
+            <li>Use efficiency indicators to balance volume with conversion.</li>
+            <li>Share the link as a quick brief for discussion.</li>
+          </ul>
+        </div>
+      </section>
     `,
   },
 
@@ -84,21 +219,74 @@ const PAGES = [
     description:
       "PlayersB methodology: how we normalize stats, compare players, and build explainable educational tools.",
     body: `
-      <h1>Learn</h1>
-      <p>
-        PlayersB is tool-first. This page explains the core methodology behind comparisons so you can understand tradeoffs.
-      </p>
+      <section class="hero">
+        <span class="pill">Learn</span>
+        <h1>Understand the methodology behind every tool.</h1>
+        <p class="lead">PlayersB uses transparent math, normalized rates, and clear tradeoffs so you can learn without hype.</p>
+        <div class="button-row">
+          <a class="button" href="/compare/">Practice with Compare</a>
+          <a class="button secondary" href="/players/">Browse player profiles</a>
+        </div>
+      </section>
 
-      <h2>Core principles</h2>
-      <ul>
-        <li><strong>Normalize before comparing:</strong> totals can mislead when minutes differ, so we use per-90 metrics where appropriate.</li>
-        <li><strong>Explainable outputs:</strong> derived metrics show what goes into them.</li>
-        <li><strong>Educational framing:</strong> scenario-based tools may be offered for learning — no betting or sportsbook activity.</li>
-      </ul>
+      <section class="section">
+        <h2 class="section-title">Core principles</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Normalize before comparing</h3>
+            <p class="meta-text">Totals can mislead when minutes differ. Per-90 rates keep comparisons honest.</p>
+          </div>
+          <div class="card">
+            <h3>Explainable outputs</h3>
+            <p class="meta-text">Derived metrics show inputs and assumptions — no black boxes.</p>
+          </div>
+          <div class="card">
+            <h3>Educational framing</h3>
+            <p class="meta-text">Scenario-based tools are for learning only. No betting, no guarantees.</p>
+          </div>
+        </div>
+      </section>
 
-      <h2>Key concepts</h2>
-      <p><strong>Per-90</strong> answers: “If this player played a full match, what would their rate look like?”</p>
-      <p><strong>Efficiency vs volume</strong> matters: shots/90 can proxy volume, goals per shot can proxy efficiency.</p>
+      <section class="section">
+        <h2 class="section-title">Key concepts</h2>
+        <div class="card">
+          <p><strong>Per-90</strong> answers: “If this player played a full match, what would their rate look like?”</p>
+          <p><strong>Efficiency vs volume</strong> matters: shots/90 can proxy volume, goals per shot can proxy efficiency.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Learning guides</h2>
+        ${learnTopicsMarkup}
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Glossary</h2>
+          <p class="meta-text">
+            New to performance metrics? Use the PlayersB glossary to decode terms like per-90, shot accuracy, and expected goals.
+          </p>
+          <a class="button small secondary" href="/glossary/">Open glossary</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Reading a comparison</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Minutes matter</h3>
+            <p class="meta-text">Always normalize first; a high total can be the result of heavy minutes.</p>
+          </div>
+          <div class="card">
+            <h3>Balance indicators</h3>
+            <p class="meta-text">Volume plus efficiency tells a more complete story than either alone.</p>
+          </div>
+          <div class="card">
+            <h3>Context wins</h3>
+            <p class="meta-text">Position and team role shape output — compare like-for-like when possible.</p>
+          </div>
+        </div>
+      </section>
     `,
   },
 
@@ -109,25 +297,48 @@ const PAGES = [
     description:
       "About PlayersB — The Players Book: player profiles, comparisons, and fantasy-safe tools with explainable metrics.",
     body: `
-      <h1>About PlayersB</h1>
+      <section class="hero">
+        <span class="pill">About</span>
+        <h1>Player-first insights, built responsibly.</h1>
+        <p class="lead">PlayersB organizes performance context, comparisons, and learning tools around real players.</p>
+      </section>
 
-      <h2>What PlayersB is</h2>
-      <p>
-        PlayersB — The Players Book — is a player-first platform focused on profiles, comparison tools, performance normalization,
-        and fantasy-safe decision support. The site is built around player entities and repeat-use tools.
-      </p>
+      <section class="section">
+        <div class="card-grid">
+          <div class="card">
+            <h3>What PlayersB is</h3>
+            <p class="meta-text">
+              PlayersB — The Players Book — is a player-first platform focused on profiles, comparison tools, performance normalization,
+              and fantasy-safe decision support.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What PlayersB is not</h3>
+            <ul class="info-list">
+              <li>No sportsbook or betting platform</li>
+              <li>No betting tips, locks, or guaranteed picks</li>
+              <li>No opaque “AI predictions”</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Responsible use</h3>
+            <p class="meta-text">
+              Sports outcomes are uncertain. PlayersB tools are educational and informational. Participate responsibly and legally.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <h2>What PlayersB is not</h2>
-      <ul>
-        <li>No sportsbook or betting platform</li>
-        <li>No betting tips, locks, or guaranteed picks</li>
-        <li>No opaque “AI predictions”</li>
-      </ul>
-
-      <h2>Responsible use</h2>
-      <p>
-        Sports outcomes are uncertain. PlayersB tools are educational and informational. Participate responsibly and legally.
-      </p>
+      <section class="section">
+        <div class="card">
+          <h2>What makes our data trustworthy</h2>
+          <ul class="info-list">
+            <li>Metrics are built from verified historical inputs.</li>
+            <li>Rates and indicators are transparent, not black-box outputs.</li>
+            <li>We keep educational framing at the center of every tool.</li>
+          </ul>
+        </div>
+      </section>
     `,
   },
 
@@ -138,17 +349,28 @@ const PAGES = [
     title: "Contact",
     description: "Contact PlayersB for feedback, corrections, or partnerships.",
     body: `
-      <h1>Contact</h1>
+      <section class="hero">
+        <span class="pill">Contact</span>
+        <h1>Get in touch with PlayersB.</h1>
+        <p class="lead">Feedback, corrections, and partnership ideas are welcome.</p>
+      </section>
 
-      <h2>Email</h2>
-      <p style="font-size:18px;margin:6px 0 0 0;"><strong>playersbdotcom@gmail.com</strong></p>
-
-      <h2 style="margin-top:18px;">Include this for faster handling</h2>
-      <ul>
-        <li><strong>Bug reports:</strong> page URL + steps to reproduce + expected vs actual result.</li>
-        <li><strong>Corrections:</strong> the exact claim + your source link(s) + which player/tool it affects.</li>
-        <li><strong>Partnerships:</strong> what you offer + how it improves player-first tools.</li>
-      </ul>
+      <section class="section">
+        <div class="card-grid">
+          <div class="card">
+            <h3>Email</h3>
+            <p class="meta-text"><strong>playersbdotcom@gmail.com</strong></p>
+          </div>
+          <div class="card">
+            <h3>Include this for faster handling</h3>
+            <ul class="info-list">
+              <li><strong>Bug reports:</strong> page URL + steps to reproduce + expected vs actual result.</li>
+              <li><strong>Corrections:</strong> the exact claim + your source link(s) + which player/tool it affects.</li>
+              <li><strong>Partnerships:</strong> what you offer + how it improves player-first tools.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     `,
   },
 
@@ -158,27 +380,46 @@ const PAGES = [
     title: "Privacy Policy",
     description: "PlayersB privacy policy covering analytics, cookies, and advertising.",
     body: `
-      <h1>Privacy Policy</h1>
-      <p><strong>Last updated:</strong> 2025-12-19</p>
+      <section class="hero">
+        <span class="pill">Privacy</span>
+        <h1>Privacy Policy</h1>
+        <p class="lead">We collect minimal data to understand usage and improve tools.</p>
+      </section>
 
-      <h2>Overview</h2>
-      <p>
-        PlayersB respects user privacy. We collect limited information to operate the site, understand usage, and improve tools.
-      </p>
+      <section class="section">
+        <div class="card">
+          <p><strong>Last updated:</strong> 2025-12-19</p>
+          <h2>Overview</h2>
+          <p>
+            PlayersB respects user privacy. We collect limited information to operate the site, understand usage, and improve tools.
+          </p>
 
-      <h2>Analytics</h2>
-      <p>
-        PlayersB uses Google Analytics (GA4) to measure traffic and engagement. Data is aggregated and not intended to identify individuals.
-      </p>
+          <h2>Analytics</h2>
+          <p>
+            PlayersB uses Google Analytics (GA4) to measure traffic and engagement. Data is aggregated and not intended to identify individuals.
+          </p>
 
-      <h2>Cookies</h2>
-      <p>Analytics and advertising technologies may use cookies or similar identifiers. You can manage cookies through browser settings.</p>
+          <h2>Cookies</h2>
+          <p>Analytics and advertising technologies may use cookies or similar identifiers. You can manage cookies through browser settings.</p>
 
-      <h2>Advertising</h2>
-      <p>PlayersB may display advertising and may include affiliate links in the future.</p>
+          <h2>Advertising</h2>
+          <p>PlayersB may display advertising and may include affiliate links in the future.</p>
 
-      <h2>Contact</h2>
-      <p>For privacy-related questions, see the <a href="/contact/">Contact page</a>.</p>
+          <h2>Contact</h2>
+          <p>For privacy-related questions, see the <a href="/contact/">Contact page</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Privacy commitments</h2>
+          <ul class="info-list">
+            <li>We collect aggregated analytics to understand usage patterns.</li>
+            <li>We do not sell personal data.</li>
+            <li>You can manage cookies through your browser settings.</li>
+          </ul>
+        </div>
+      </section>
     `,
   },
 
@@ -188,23 +429,43 @@ const PAGES = [
     title: "Terms of Use",
     description: "PlayersB terms of use and educational disclaimers.",
     body: `
-      <h1>Terms of Use</h1>
-      <p><strong>Last updated:</strong> 2025-12-19</p>
+      <section class="hero">
+        <span class="pill">Terms</span>
+        <h1>Terms of Use</h1>
+        <p class="lead">Educational tools and public-information summaries only.</p>
+      </section>
 
-      <h2>Educational use only</h2>
-      <p>PlayersB provides educational tools and public-information summaries. We do not provide betting advice or guarantees.</p>
+      <section class="section">
+        <div class="card">
+          <p><strong>Last updated:</strong> 2025-12-19</p>
+          <h2>Educational use only</h2>
+          <p>PlayersB provides educational tools and public-information summaries. We do not provide betting advice or guarantees.</p>
 
-      <h2>No sportsbook</h2>
-      <p>PlayersB does not accept bets, process wagers, or operate a sportsbook.</p>
+          <h2>No sportsbook</h2>
+          <p>PlayersB does not accept bets, process wagers, or operate a sportsbook.</p>
 
-      <h2>External links</h2>
-      <p>PlayersB may link to third-party sites. We are not responsible for their content or policies.</p>
+          <h2>External links</h2>
+          <p>PlayersB may link to third-party sites. We are not responsible for their content or policies.</p>
 
-      <h2>Changes</h2>
-      <p>We may update these Terms. Continued use indicates acceptance of changes.</p>
+          <h2>Changes</h2>
+          <p>We may update these Terms. Continued use indicates acceptance of changes.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Using PlayersB responsibly</h2>
+          <ul class="info-list">
+            <li>Use comparisons as learning aids, not predictions.</li>
+            <li>Verify any third-party sources you rely on.</li>
+            <li>Respect local laws and regulations related to sports participation.</li>
+          </ul>
+        </div>
+      </section>
     `,
   },
-];
+  ];
+}
 
 function fill(layout, { title, description, canonical, body }) {
   return layout
@@ -215,12 +476,19 @@ function fill(layout, { title, description, canonical, body }) {
 }
 
 async function main() {
-  const layout = await fs.readFile(LAYOUT_PATH, "utf-8");
+  const [layout, learnRaw] = await Promise.all([
+    fs.readFile(LAYOUT_PATH, "utf-8"),
+    fs.readFile(LEARN_TOPICS_PATH, "utf-8"),
+  ]);
+  const learnParsed = JSON.parse(learnRaw);
+  const learnTopics = normalizeLearnTopics(learnParsed?.topics);
+  const learnTopicsMarkup = renderLearnTopics(learnTopics);
+  const pages = buildPages(learnTopicsMarkup);
 
   let written = 0;
   let skipped = 0;
 
-  for (const page of PAGES) {
+  for (const page of pages) {
     const outRel = typeof page.out === "string" ? page.out : String(page.out);
 
     // Skip manual pages (prevents CI dirty-tree issues)

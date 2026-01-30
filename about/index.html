@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="About PlayersB — The Players Book: player profiles, comparisons, and fantasy-safe tools with explainable metrics." />
   <link rel="canonical" href="https://playersb.com/about/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -45,56 +51,120 @@
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
-  </div>
+  <main class="container main-content">
+    <section class="hero">
+        <span class="pill">About</span>
+        <h1>Player-first insights, built responsibly.</h1>
+        <p class="lead">PlayersB organizes performance context, comparisons, and learning tools around real players.</p>
+      </section>
 
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
+      <section class="section">
+        <div class="card-grid">
+          <div class="card">
+            <h3>What PlayersB is</h3>
+            <p class="meta-text">
+              PlayersB — The Players Book — is a player-first platform focused on profiles, comparison tools, performance normalization,
+              and fantasy-safe decision support.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What PlayersB is not</h3>
+            <ul class="info-list">
+              <li>No sportsbook or betting platform</li>
+              <li>No betting tips, locks, or guaranteed picks</li>
+              <li>No opaque “AI predictions”</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Responsible use</h3>
+            <p class="meta-text">
+              Sports outcomes are uncertain. PlayersB tools are educational and informational. Participate responsibly and legally.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<h1>About PlayersB</h1>
+      <section class="section">
+        <div class="card">
+          <h2>What makes our data trustworthy</h2>
+          <ul class="info-list">
+            <li>Metrics are built from verified historical inputs.</li>
+            <li>Rates and indicators are transparent, not black-box outputs.</li>
+            <li>We keep educational framing at the center of every tool.</li>
+          </ul>
+        </div>
+      </section>
+  </main>
 
-      <h2>What PlayersB is</h2>
-      <p>
-        PlayersB — The Players Book — is a player-first platform focused on profiles, comparison tools, performance normalization,
-        and fantasy-safe decision support. The site is built around player entities and repeat-use tools.
-      </p>
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
 
-      <h2>What PlayersB is not</h2>
-      <ul>
-        <li>No sportsbook or betting platform</li>
-        <li>No betting tips, locks, or guaranteed picks</li>
-        <li>No opaque “AI predictions”</li>
-      </ul>
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
 
-      <h2>Responsible use</h2>
-      <p>
-        Sports outcomes are uncertain. PlayersB tools are educational and informational. Participate responsibly and legally.
-      </p>
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
-
-</main>
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
 </body>
 </html>
