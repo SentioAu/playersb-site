@@ -1,30 +1,83 @@
-<h1>{{NAME}}</h1>
-<p>{{META_LINE}}</p>
-
-<section>
-  <h2>Snapshot</h2>
-  <p>
-    Minutes: <strong>{{MINUTES}}</strong> ·
-    Goals: <strong>{{GOALS}}</strong> ·
-    Assists: <strong>{{ASSISTS}}</strong> ·
-    Shots: <strong>{{SHOTS}}</strong>
-  </p>
+<section class="hero">
+  <div>
+    <span class="pill">Player profile</span>
+    <h1>{{NAME}}</h1>
+    <p class="lead">{{META_LINE}}</p>
+    <div class="button-row">
+      <a class="button" href="/compare/?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a>
+      <a class="button secondary" href="/players/">Back to players</a>
+    </div>
+  </div>
 </section>
 
-<section style="margin-top:16px;">
-  <h2>Normalized output (per 90)</h2>
-  <p>
-    Goals/90: <strong>{{G90}}</strong><br>
-    Assists/90: <strong>{{A90}}</strong><br>
-    Shots/90: <strong>{{S90}}</strong>
-  </p>
+{{BREADCRUMBS}}
+
+<section class="section">
+  <div class="card-grid">
+    <div class="card">
+      <h2>Snapshot</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-label">Minutes</div>
+          <div class="stat-value">{{MINUTES}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Goals</div>
+          <div class="stat-value">{{GOALS}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Assists</div>
+          <div class="stat-value">{{ASSISTS}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Shots</div>
+          <div class="stat-value">{{SHOTS}}</div>
+        </div>
+      </div>
+      <p class="meta-text">Numbers shown are verified historical totals.</p>
+    </div>
+    <div class="card">
+      <h2>Per 90 rates</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-label">Goals / 90</div>
+          <div class="stat-value">{{G90}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Assists / 90</div>
+          <div class="stat-value">{{A90}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Shots / 90</div>
+          <div class="stat-value">{{S90}}</div>
+        </div>
+      </div>
+      <p class="meta-text">Rates normalize output by minutes played.</p>
+    </div>
+  </div>
 </section>
 
-<section style="margin-top:16px;">
-  <h2>Compare</h2>
-  <p>
-    <a href="/compare?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a> ·
-    <a href="/compare?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a> ·
-    <a href="/compare?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
-  </p>
+<section class="section">
+  <div class="card">
+    <h2>Compare with peers</h2>
+    <p class="meta-text">Quick links to comparisons that highlight role, efficiency, and volume differences.</p>
+    <div class="button-row">
+      <a class="button secondary" href="/compare/?a={{ID}}&b={{R1_ID}}">Compare vs {{R1_NAME}}</a>
+      <a class="button secondary" href="/compare/?a={{ID}}&b={{R2_ID}}">Compare vs {{R2_NAME}}</a>
+      <a class="button secondary" href="/compare/?a={{ID}}&b={{R3_ID}}">Compare vs {{R3_NAME}}</a>
+    </div>
+  </div>
 </section>
+
+<section class="section">
+  <div class="card">
+    <h2>Similar players</h2>
+    <p class="meta-text">Closest profiles by per-90 production and role context.</p>
+    <div class="card-grid">
+      {{SIMILAR_PLAYERS}}
+    </div>
+  </div>
+</section>
+
+{{PLAYER_JSON_LD}}
+{{BREADCRUMB_JSON_LD}}

@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
+const LEARN_TOPICS_PATH = path.join(ROOT, "data", "learn-topics.json");
 const OUT_PATH = path.join(ROOT, "sitemap.xml");
 
 const CORE = [
@@ -17,6 +18,10 @@ const CORE = [
   "/privacy/",
   "/terms/",
   "/players/",    // players directory
+  "/positions/",
+  "/teams/",
+  "/competitions/",
+  "/glossary/",
 ];
 
 // Escape XML
@@ -69,10 +74,16 @@ function pickLastMod(obj) {
 async function main() {
   // Ensure data exists for CI clarity
   await fs.access(DATA_PATH);
+  await fs.access(LEARN_TOPICS_PATH);
 
-  const raw = await fs.readFile(DATA_PATH, "utf-8");
-  const parsed = JSON.parse(raw);
+  const [rawPlayers, rawTopics] = await Promise.all([
+    fs.readFile(DATA_PATH, "utf-8"),
+    fs.readFile(LEARN_TOPICS_PATH, "utf-8"),
+  ]);
+  const parsed = JSON.parse(rawPlayers);
+  const topicParsed = JSON.parse(rawTopics);
   const players = Array.isArray(parsed.players) ? parsed.players : [];
+  const learnTopics = Array.isArray(topicParsed?.topics) ? topicParsed.topics : [];
 
   // Build a slug->player map once (prevents find() per loop and ensures stable lastmod)
   const slugToPlayer = new Map();
@@ -107,6 +118,56 @@ async function main() {
     const lastmod = pickLastMod(playerObj);
 
     items.push({ loc, lastmod });
+  }
+
+  const positions = new Map();
+  const teams = new Map();
+
+  for (const p of players) {
+    const position = String(p?.position || "").trim();
+    if (position) {
+      for (const part of position.split("/").map((x) => x.trim()).filter(Boolean)) {
+        const slug = sanitizeId(part);
+        if (slug) positions.set(slug, part);
+      }
+    }
+
+    const team = String(p?.team || "").trim();
+    const teamSlug = sanitizeId(team);
+    if (teamSlug) teams.set(teamSlug, team);
+  }
+
+  for (const slug of Array.from(positions.keys()).sort()) {
+    const loc = `${SITE_ORIGIN}/positions/${slug}/`;
+    if (seen.has(loc)) continue;
+    seen.add(loc);
+    items.push({ loc, lastmod: null });
+  }
+
+  for (const slug of Array.from(teams.keys()).sort()) {
+    const loc = `${SITE_ORIGIN}/teams/${slug}/`;
+    if (seen.has(loc)) continue;
+    seen.add(loc);
+    items.push({ loc, lastmod: null });
+  }
+
+  const competitionKeys = Object.keys(parsed.competitions || {}).sort();
+  for (const key of competitionKeys) {
+    const slug = sanitizeId(key);
+    if (!slug) continue;
+    const loc = `${SITE_ORIGIN}/competitions/${slug}/`;
+    if (seen.has(loc)) continue;
+    seen.add(loc);
+    items.push({ loc, lastmod: null });
+  }
+
+  for (const topic of learnTopics) {
+    const slug = sanitizeId(topic?.slug || topic?.title);
+    if (!slug) continue;
+    const loc = `${SITE_ORIGIN}/learn/${slug}/`;
+    if (seen.has(loc)) continue;
+    seen.add(loc);
+    items.push({ loc, lastmod: null });
   }
 
   const xml =
