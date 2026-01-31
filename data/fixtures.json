@@ -1,0 +1,10 @@
+{
+  "generatedAt": null,
+  "competitions": [],
+  "sources": {
+    "footballData": {
+      "status": "pending",
+      "message": "Run scripts/fetch-football-data.mjs with FOOTBALL_DATA_API_TOKEN to populate fixtures."
+    }
+  }
+}

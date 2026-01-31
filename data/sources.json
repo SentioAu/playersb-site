@@ -1,12 +1,19 @@
 {
   "footballData": {
     "enabled": true,
-    "competitions": [
-      { "code": "CL", "label": "UEFA Champions League" },
-      { "code": "PL", "label": "Premier League" },
-      { "code": "PD", "label": "La Liga" }
-    ],
-    "limitMatches": 120
+    "competitionScope": "all",
+    "matchWindowDays": {
+      "past": 7,
+      "future": 14
+    },
+    "limitMatches": 200
+  },
+  "openfootball": {
+    "sourcesPath": "data/openfootball-sources.json"
+  },
+  "statsbomb": {
+    "enabled": true,
+    "limitMatches": null
   },
   "playersSeed": {
     "path": "data/players-soccer-v1.json"

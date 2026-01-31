@@ -138,6 +138,11 @@ function buildPages(learnTopicsMarkup) {
             <a class="button small" href="/fantasy/">Open fantasy picker</a>
           </div>
           <div class="card">
+            <h3>Matches & standings</h3>
+            <p class="meta-text">Track fixtures, live scores, and tables across all competitions.</p>
+            <a class="button small" href="/matches/">View matches</a>
+          </div>
+          <div class="card">
             <h3>Legacy Greats</h3>
             <p class="meta-text">Evergreen profiles for the all-time icons of the game.</p>
             <a class="button small" href="/legacy/">Explore legacy</a>
@@ -197,6 +202,16 @@ function buildPages(learnTopicsMarkup) {
             <h3>Fantasy Picker</h3>
             <p class="meta-text">Shortlist top options by role, form score, and per-90 value.</p>
             <a class="button small secondary" href="/fantasy/">Open fantasy picker</a>
+          </div>
+          <div class="card">
+            <h3>Matches & Fixtures</h3>
+            <p class="meta-text">Live scores, upcoming fixtures, and recent results in one view.</p>
+            <a class="button small secondary" href="/matches/">View matches</a>
+          </div>
+          <div class="card">
+            <h3>Standings</h3>
+            <p class="meta-text">League tables and points updates across every competition.</p>
+            <a class="button small secondary" href="/standings/">View standings</a>
           </div>
           <div class="card">
             <h3>Per-90 normalization</h3>

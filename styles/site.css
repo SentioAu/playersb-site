@@ -242,6 +242,18 @@ img {
   box-shadow: 0 10px 20px rgba(16, 24, 40, 0.04);
 }
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.card-subsection {
+  margin-top: 16px;
+}
+
 .card h3 {
   margin: 0 0 8px;
 }
@@ -342,6 +354,20 @@ img {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 10px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
 }
 
 .search-row {

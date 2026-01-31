@@ -40,6 +40,9 @@ const CANONICAL_MAP = new Map([
   ["embed/index.html", `${SITE_ORIGIN}/embed/`],
   ["embed/player/index.html", `${SITE_ORIGIN}/embed/player/`],
   ["sports/index.html", `${SITE_ORIGIN}/sports/`],
+  ["matches/index.html", `${SITE_ORIGIN}/matches/`],
+  ["standings/index.html", `${SITE_ORIGIN}/standings/`],
+  ["archive/index.html", `${SITE_ORIGIN}/archive/`],
 ]);
 
 // Keep this list specific to avoid false positives.
@@ -132,6 +135,10 @@ function isLegacyIndex(relPath) {
   return relPath.startsWith("legacy/") && relPath.endsWith("/index.html") && relPath !== "legacy/index.html";
 }
 
+function isArchiveSeasonIndex(relPath) {
+  return relPath.startsWith("archive/") && relPath.endsWith("/index.html") && relPath !== "archive/index.html";
+}
+
 function isLegacyCoreHtml(relPath) {
   // Legacy root-level core pages that should NOT exist anymore in directory-style architecture
   // (kept strict to avoid nuking compare/contact/index)
@@ -174,6 +181,7 @@ function isLiveHtml(relPath) {
   if (isCompetitionEntityIndex(relPath)) return true;
   if (isLearnTopicIndex(relPath)) return true;
   if (isLegacyIndex(relPath)) return true;
+  if (isArchiveSeasonIndex(relPath)) return true;
 
   return false;
 }
