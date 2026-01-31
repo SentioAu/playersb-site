@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ronaldinho — Legacy | PlayersB — The Players Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Legacy profile for Ronaldinho on PlayersB." />
+  <link rel="canonical" href="https://playersb.com/legacy/ronaldinho/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PlayersB — The Players Book" />
+  <meta property="og:title" content="Ronaldinho — Legacy | PlayersB" />
+  <meta property="og:description" content="Legacy profile for Ronaldinho on PlayersB." />
+  <meta property="og:url" content="https://playersb.com/legacy/ronaldinho/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ronaldinho — Legacy | PlayersB" />
+  <meta name="twitter:description" content="Legacy profile for Ronaldinho on PlayersB." />
+
+  <!-- Structured Data (WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayersB — The Players Book",
+    "url": "https://playersb.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playersb.com/players/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM');
+  </script>
+</head>
+
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+        <span class="pill">Legacy Greats</span>
+        <h1>Ronaldinho</h1>
+        <p class="lead">AM · Brazil · 1998–2015</p>
+        <div class="button-row">
+          <a class="button secondary" href="/legacy/">Back to legacy list</a>
+          <a class="button secondary" href="/players/">Current players</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card-grid">
+          <div class="card">
+            <h2>Peak season</h2>
+            <p class="meta-text">2005</p>
+          </div>
+          <div class="card">
+            <h2>Legacy snapshot</h2>
+            <p class="meta-text">A joyful creator who turned skill into entertainment while leading elite teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Career highlights</h2>
+          <ul class="info-list">
+            <li>Ballon d&#39;Or winner (2005)</li>
+<li>Creative playmaker with rare flair</li>
+<li>Champions League winner and global icon</li>
+          </ul>
+        </div>
+      </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
+</body>
+</html>

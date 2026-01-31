@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="PlayersB terms of use and educational disclaimers." />
   <link rel="canonical" href="https://playersb.com/terms/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -45,51 +51,111 @@
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
-  </div>
+  <main class="container main-content">
+    <section class="hero">
+        <span class="pill">Terms</span>
+        <h1>Terms of Use</h1>
+        <p class="lead">Educational tools and public-information summaries only.</p>
+      </section>
 
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
+      <section class="section">
+        <div class="card">
+          <p><strong>Last updated:</strong> 2025-12-19</p>
+          <h2>Educational use only</h2>
+          <p>PlayersB provides educational tools and public-information summaries. We do not provide betting advice or guarantees.</p>
 
-<h1>Terms of Use</h1>
-      <p><strong>Last updated:</strong> 2025-12-19</p>
+          <h2>No sportsbook</h2>
+          <p>PlayersB does not accept bets, process wagers, or operate a sportsbook.</p>
 
-      <h2>Educational use only</h2>
-      <p>PlayersB provides educational tools and public-information summaries. We do not provide betting advice or guarantees.</p>
+          <h2>External links</h2>
+          <p>PlayersB may link to third-party sites. We are not responsible for their content or policies.</p>
 
-      <h2>No sportsbook</h2>
-      <p>PlayersB does not accept bets, process wagers, or operate a sportsbook.</p>
+          <h2>Changes</h2>
+          <p>We may update these Terms. Continued use indicates acceptance of changes.</p>
+        </div>
+      </section>
 
-      <h2>External links</h2>
-      <p>PlayersB may link to third-party sites. We are not responsible for their content or policies.</p>
+      <section class="section">
+        <div class="card">
+          <h2>Using PlayersB responsibly</h2>
+          <ul class="info-list">
+            <li>Use comparisons as learning aids, not predictions.</li>
+            <li>Verify any third-party sources you rely on.</li>
+            <li>Respect local laws and regulations related to sports participation.</li>
+          </ul>
+        </div>
+      </section>
+  </main>
 
-      <h2>Changes</h2>
-      <p>We may update these Terms. Continued use indicates acceptance of changes.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
 
-</main>
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
 </body>
 </html>

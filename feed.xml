@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>PlayersB Updates</title>
+    <link>https://playersb.com/</link>
+    <description>New and updated player profiles from PlayersB.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Jan 2026 03:32:16 GMT</lastBuildDate>
+    
+    <item>
+      <title>Erling Haaland</title>
+      <link>https://playersb.com/players/haaland/</link>
+      <guid isPermaLink="true">https://playersb.com/players/haaland/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Erling Haaland profile on PlayersB. ST · Manchester City.</description>
+    </item>
+    <item>
+      <title>Kylian Mbappé</title>
+      <link>https://playersb.com/players/mbappe/</link>
+      <guid isPermaLink="true">https://playersb.com/players/mbappe/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Kylian Mbappé profile on PlayersB. LW/ST · Paris Saint-Germain.</description>
+    </item>
+    <item>
+      <title>Mohamed Salah</title>
+      <link>https://playersb.com/players/salah/</link>
+      <guid isPermaLink="true">https://playersb.com/players/salah/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Mohamed Salah profile on PlayersB. RW · Liverpool.</description>
+    </item>
+    <item>
+      <title>Harry Kane</title>
+      <link>https://playersb.com/players/kane/</link>
+      <guid isPermaLink="true">https://playersb.com/players/kane/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Harry Kane profile on PlayersB. ST · Bayern Munich.</description>
+    </item>
+    <item>
+      <title>Jude Bellingham</title>
+      <link>https://playersb.com/players/bellingham/</link>
+      <guid isPermaLink="true">https://playersb.com/players/bellingham/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Jude Bellingham profile on PlayersB. AM/CM · Real Madrid.</description>
+    </item>
+    <item>
+      <title>Kevin De Bruyne</title>
+      <link>https://playersb.com/players/debruyne/</link>
+      <guid isPermaLink="true">https://playersb.com/players/debruyne/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Kevin De Bruyne profile on PlayersB. AM/CM · Manchester City.</description>
+    </item>
+    <item>
+      <title>Vinícius Júnior</title>
+      <link>https://playersb.com/players/vinicius/</link>
+      <guid isPermaLink="true">https://playersb.com/players/vinicius/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Vinícius Júnior profile on PlayersB. LW · Real Madrid.</description>
+    </item>
+    <item>
+      <title>Victor Osimhen</title>
+      <link>https://playersb.com/players/osimhen/</link>
+      <guid isPermaLink="true">https://playersb.com/players/osimhen/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Victor Osimhen profile on PlayersB. ST · Napoli.</description>
+    </item>
+    <item>
+      <title>Son Heung-min</title>
+      <link>https://playersb.com/players/son/</link>
+      <guid isPermaLink="true">https://playersb.com/players/son/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Son Heung-min profile on PlayersB. LW · Tottenham.</description>
+    </item>
+    <item>
+      <title>Antoine Griezmann</title>
+      <link>https://playersb.com/players/griezmann/</link>
+      <guid isPermaLink="true">https://playersb.com/players/griezmann/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Antoine Griezmann profile on PlayersB. SS/AM · Atlético Madrid.</description>
+    </item>
+  </channel>
+</rss>

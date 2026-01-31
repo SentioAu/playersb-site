@@ -1,0 +1,54 @@
+{
+  "terms": [
+    {
+      "term": "Per-90",
+      "definition": "A rate statistic that scales output to a 90-minute match so players with different minutes can be compared fairly.",
+      "related": ["Minutes", "Normalization", "Rate stats"]
+    },
+    {
+      "term": "Minutes",
+      "definition": "Total playing time. High totals can reflect durability or role; always pair with per-90 rates for context.",
+      "related": ["Per-90", "Role"]
+    },
+    {
+      "term": "Goals per shot",
+      "definition": "An efficiency indicator showing how often a shot becomes a goal. Useful alongside shot volume.",
+      "related": ["Shot accuracy", "Shots"]
+    },
+    {
+      "term": "Shot accuracy",
+      "definition": "Percentage of shots that are on target. A quick proxy for finishing quality and decision making.",
+      "related": ["Goals per shot", "Shots on target"]
+    },
+    {
+      "term": "Shots per 90",
+      "definition": "Shot volume normalized to a full match. Highlights how often a player gets attempts.",
+      "related": ["Per-90", "Volume"]
+    },
+    {
+      "term": "Touches in box",
+      "definition": "How often a player gets touches in the penalty area. Often correlated with goal involvement.",
+      "related": ["Shots", "Role"]
+    },
+    {
+      "term": "xG (Expected Goals)",
+      "definition": "An estimate of scoring probability based on shot quality, location, and context. Used to separate chance quality from finishing.",
+      "related": ["Goals", "Shot quality"]
+    },
+    {
+      "term": "xA (Expected Assists)",
+      "definition": "An estimate of the likelihood a pass becomes an assist based on chance quality. Useful for evaluating creative output.",
+      "related": ["Assists", "Chance creation"]
+    },
+    {
+      "term": "Role",
+      "definition": "The tactical job a player performs (e.g., target striker, pressing winger). Role changes how stats should be interpreted.",
+      "related": ["Minutes", "Position"]
+    },
+    {
+      "term": "Volume vs efficiency",
+      "definition": "Volume reflects how often actions occur (shots/90), while efficiency reflects how well they convert (goals per shot).",
+      "related": ["Shots per 90", "Goals per shot"]
+    }
+  ]
+}

@@ -31,6 +31,15 @@ const CANONICAL_MAP = new Map([
   ["privacy/index.html", `${SITE_ORIGIN}/privacy/`],
   ["terms/index.html", `${SITE_ORIGIN}/terms/`],
   ["players/index.html", `${SITE_ORIGIN}/players/`],
+  ["positions/index.html", `${SITE_ORIGIN}/positions/`],
+  ["teams/index.html", `${SITE_ORIGIN}/teams/`],
+  ["competitions/index.html", `${SITE_ORIGIN}/competitions/`],
+  ["glossary/index.html", `${SITE_ORIGIN}/glossary/`],
+  ["legacy/index.html", `${SITE_ORIGIN}/legacy/`],
+  ["fantasy/index.html", `${SITE_ORIGIN}/fantasy/`],
+  ["embed/index.html", `${SITE_ORIGIN}/embed/`],
+  ["embed/player/index.html", `${SITE_ORIGIN}/embed/player/`],
+  ["sports/index.html", `${SITE_ORIGIN}/sports/`],
 ]);
 
 // Keep this list specific to avoid false positives.
@@ -91,6 +100,38 @@ function isPlayerEntityIndex(relPath) {
   return relPath.startsWith("players/") && relPath.endsWith("/index.html") && !isPlayerIndex(relPath);
 }
 
+function isPositionIndex(relPath) {
+  return relPath === "positions/index.html";
+}
+
+function isTeamIndex(relPath) {
+  return relPath === "teams/index.html";
+}
+
+function isCompetitionIndex(relPath) {
+  return relPath === "competitions/index.html";
+}
+
+function isLearnTopicIndex(relPath) {
+  return relPath.startsWith("learn/") && relPath.endsWith("/index.html") && relPath !== "learn/index.html";
+}
+
+function isPositionEntityIndex(relPath) {
+  return relPath.startsWith("positions/") && relPath.endsWith("/index.html") && !isPositionIndex(relPath);
+}
+
+function isTeamEntityIndex(relPath) {
+  return relPath.startsWith("teams/") && relPath.endsWith("/index.html") && !isTeamIndex(relPath);
+}
+
+function isCompetitionEntityIndex(relPath) {
+  return relPath.startsWith("competitions/") && relPath.endsWith("/index.html") && !isCompetitionIndex(relPath);
+}
+
+function isLegacyIndex(relPath) {
+  return relPath.startsWith("legacy/") && relPath.endsWith("/index.html") && relPath !== "legacy/index.html";
+}
+
 function isLegacyCoreHtml(relPath) {
   // Legacy root-level core pages that should NOT exist anymore in directory-style architecture
   // (kept strict to avoid nuking compare/contact/index)
@@ -128,6 +169,11 @@ function isLiveHtml(relPath) {
 
   // allowed player entity pages
   if (isPlayerEntityIndex(relPath)) return true;
+  if (isPositionEntityIndex(relPath)) return true;
+  if (isTeamEntityIndex(relPath)) return true;
+  if (isCompetitionEntityIndex(relPath)) return true;
+  if (isLearnTopicIndex(relPath)) return true;
+  if (isLegacyIndex(relPath)) return true;
 
   return false;
 }
@@ -188,6 +234,36 @@ function expectedCanonical(relPath) {
     const parts = relPath.split("/");
     const id = parts[1]; // players/{id}/index.html
     return `${SITE_ORIGIN}/players/${id}/`;
+  }
+
+  if (isPositionEntityIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/positions/${id}/`;
+  }
+
+  if (isTeamEntityIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/teams/${id}/`;
+  }
+
+  if (isCompetitionEntityIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/competitions/${id}/`;
+  }
+
+  if (isLearnTopicIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/learn/${id}/`;
+  }
+
+  if (isLegacyIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/legacy/${id}/`;
   }
 
   return null;
