@@ -21,11 +21,13 @@
   <meta property="og:description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
   <meta property="og:url" content="https://playersb.com/fantasy/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Fantasy Picker | PlayersB" />
   <meta name="twitter:description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
   <script type="application/ld+json">
@@ -83,6 +85,9 @@
       <p class="lead">Use per-90 rates to compare top performers and spot value picks quickly.</p>
       <p class="meta-text">
         Data source: Local players data (seeded).
+      </p>
+      <p class="meta-text">
+        Scores are adjusted by league difficulty and last-5 form where standings data is available.
       </p>
       <div class="button-row">
         <a class="button" href="/players/">Browse players</a>
@@ -243,7 +248,9 @@
       </div>
     </section>
 
-    <p class="meta-text">Form score blends goals, assists, and shot volume. Value score emphasizes per-90 impact.</p>
+    <p class="meta-text">
+      Form score blends goals, assists, and shot volume with league difficulty + last-5 form. Value score emphasizes per-90 impact.
+    </p>
 
     <script>
       (function () {

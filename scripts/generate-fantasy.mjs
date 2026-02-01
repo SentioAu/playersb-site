@@ -6,6 +6,7 @@ const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
+const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 const OUT_PATH = path.join(ROOT, "fantasy", "index.html");
 
@@ -47,10 +48,11 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
 }
 
 async function main() {
-  const [layout, rawPlayers, rawFantasy] = await Promise.all([
+  const [layout, rawPlayers, rawFantasy, rawStandings] = await Promise.all([
     fs.readFile(LAYOUT_PATH, "utf-8"),
     fs.readFile(DATA_PATH, "utf-8"),
     fs.readFile(FANTASY_PATH, "utf-8").catch(() => ""),
+    fs.readFile(STANDINGS_PATH, "utf-8").catch(() => ""),
   ]);
 
   const parsed = JSON.parse(rawPlayers);
@@ -58,21 +60,38 @@ async function main() {
   const fantasyPlayers = Array.isArray(fantasyParsed?.players) ? fantasyParsed.players : [];
   const players = fantasyPlayers.length ? fantasyPlayers : Array.isArray(parsed.players) ? parsed.players : [];
   const usingFantasyFeed = fantasyPlayers.length > 0;
+  const standingsParsed = rawStandings ? JSON.parse(rawStandings) : null;
+
+  const { leagueDifficulty, teamForm } = buildStandingsSignals(standingsParsed);
+  const difficultyValues = Array.from(leagueDifficulty.values());
+  const difficultyMin = difficultyValues.length ? Math.min(...difficultyValues) : 0;
+  const difficultyMax = difficultyValues.length ? Math.max(...difficultyValues) : 1;
 
   const rows = players.map((p) => {
     const mins = num(p.minutes ?? p.minutesEstimate);
     const g90 = per90(num(p.goals), mins);
     const a90 = per90(num(p.assists), mins);
     const s90 = per90(num(p.shots), mins);
-    const formScore = g90 * 4 + a90 * 3 + s90 * 0.5;
-    const valueScore = (g90 + a90) * 90;
+    const baseScore = g90 * 4 + a90 * 3 + s90 * 0.5;
+    const competitionName = String(p.competition?.name ?? "");
+    const competitionKey = sanitizeId(competitionName);
+    const teamKey = sanitizeId(p.team);
+    const difficultyRaw = leagueDifficulty.get(competitionKey) ?? null;
+    const difficultyNorm =
+      difficultyRaw == null || difficultyMax === difficultyMin
+        ? 1
+        : 0.85 + ((difficultyRaw - difficultyMin) / (difficultyMax - difficultyMin)) * 0.3;
+    const formScoreRaw = teamForm.get(teamKey) ?? 0.5;
+    const formBoost = 0.85 + formScoreRaw * 0.3;
+    const formScore = baseScore * difficultyNorm * formBoost;
+    const valueScore = (g90 + a90) * 90 * difficultyNorm;
 
     return {
       id: sanitizeId(p.id || p.name),
       name: String(p.name ?? "Player"),
       position: String(p.position ?? ""),
       team: String(p.team ?? ""),
-      competition: String(p.competition?.name ?? ""),
+      competition: competitionName,
       g90: g90.toFixed(2),
       a90: a90.toFixed(2),
       s90: s90.toFixed(2),
@@ -115,6 +134,9 @@ async function main() {
       <p class="lead">Use per-90 rates to compare top performers and spot value picks quickly.</p>
       <p class="meta-text">
         Data source: ${usingFantasyFeed ? "Football-Data.org scorers feed (per-90 via minutes estimate)." : "Local players data (seeded)."}
+      </p>
+      <p class="meta-text">
+        Scores are adjusted by league difficulty and last-5 form where standings data is available.
       </p>
       <div class="button-row">
         <a class="button" href="/players/">Browse players</a>
@@ -161,7 +183,9 @@ async function main() {
       </div>
     </section>
 
-    <p class="meta-text">Form score blends goals, assists, and shot volume. Value score emphasizes per-90 impact.</p>
+    <p class="meta-text">
+      Form score blends goals, assists, and shot volume with league difficulty + last-5 form. Value score emphasizes per-90 impact.
+    </p>
 
     <script>
       (function () {
@@ -219,6 +243,56 @@ async function main() {
   await fs.writeFile(OUT_PATH, html, "utf-8");
 
   console.log(`Generated fantasy/index.html with ${rows.length} players`);
+}
+
+function buildStandingsSignals(standingsParsed) {
+  const leagueDifficulty = new Map();
+  const teamForm = new Map();
+
+  const competitions = Array.isArray(standingsParsed?.competitions) ? standingsParsed.competitions : [];
+  for (const entry of competitions) {
+    const competitionName = String(entry?.competition?.name || "");
+    const competitionKey = sanitizeId(competitionName);
+    const standings = Array.isArray(entry?.standings) ? entry.standings : [];
+
+    let totalPoints = 0;
+    let totalGames = 0;
+    for (const standing of standings) {
+      for (const row of standing?.table || []) {
+        if (row?.points != null) totalPoints += Number(row.points) || 0;
+        if (row?.playedGames != null) totalGames += Number(row.playedGames) || 0;
+
+        const teamKey = sanitizeId(row?.team?.name);
+        const form = parseForm(row?.form);
+        if (teamKey && form != null) {
+          teamForm.set(teamKey, form);
+        }
+      }
+    }
+
+    if (competitionKey && totalGames > 0) {
+      leagueDifficulty.set(competitionKey, totalPoints / totalGames);
+    }
+  }
+
+  return { leagueDifficulty, teamForm };
+}
+
+function parseForm(formString) {
+  if (!formString) return null;
+  const parts = String(formString)
+    .split(",")
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .slice(-5);
+  if (!parts.length) return null;
+  const score = parts.reduce((acc, part) => {
+    if (part === "W") return acc + 1;
+    if (part === "D") return acc + 0.5;
+    if (part === "L") return acc;
+    return acc;
+  }, 0);
+  return score / parts.length;
 }
 
 main().catch((err) => {

@@ -69,6 +69,10 @@ async function main() {
   const parsed = JSON.parse(rawData || "{}");
   const competitions = Array.isArray(parsed?.competitions) ? parsed.competitions : [];
 
+  const allMatches = competitions.flatMap((entry) =>
+    Array.isArray(entry?.matches) ? entry.matches.map((match) => ({ match, competition: entry?.competition })) : []
+  );
+
   const sections = competitions
     .map((entry) => {
       const name = entry?.competition?.name || entry?.competition?.code || "Competition";
@@ -127,6 +131,37 @@ async function main() {
     "Live scores, upcoming fixtures, and recent results for every competition PlayersB tracks.";
   const canonical = `${SITE_ORIGIN}/matches/`;
 
+  const sportsSchema = allMatches
+    .filter(({ match }) => match?.utcDate && match?.homeTeam?.name && match?.awayTeam?.name)
+    .slice(0, 50)
+    .map(({ match, competition }) => ({
+      "@type": "SportsEvent",
+      name: `${match.homeTeam.name} vs ${match.awayTeam.name}`,
+      startDate: match.utcDate,
+      eventStatus: match.status ? `https://schema.org/${match.status}` : undefined,
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "SportsActivityLocation",
+        name: competition?.name || "Competition",
+      },
+      homeTeam: {
+        "@type": "SportsTeam",
+        name: match.homeTeam.name,
+      },
+      awayTeam: {
+        "@type": "SportsTeam",
+        name: match.awayTeam.name,
+      },
+    }));
+
+  const schemaBlock = sportsSchema.length
+    ? `
+      <script type="application/ld+json">
+      ${JSON.stringify({ "@context": "https://schema.org", "@graph": sportsSchema }, null, 2)}
+      </script>
+    `
+    : "";
+
   const body = `
     <section class="hero">
       <span class="pill">Matches</span>
@@ -143,6 +178,7 @@ async function main() {
     <section class="section">
       ${sections || `<div class="card"><p class="meta-text">No fixtures loaded yet. Run the data fetch script to populate fixtures.</p></div>`}
     </section>
+    ${schemaBlock}
   `;
 
   const html = fill(layout, { title, description, canonical, body });
