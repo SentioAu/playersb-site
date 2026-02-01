@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const SOURCES_PATH = path.join(ROOT, "data", "sources.json");
 const FIXTURES_PATH = path.join(ROOT, "data", "fixtures.json");
 const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
+const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
 
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
 
@@ -128,6 +129,30 @@ function normalizeStanding(standing) {
   };
 }
 
+function normalizeScorer(scorer, competition) {
+  const goals = Number(scorer?.goals ?? 0) || 0;
+  const assists = Number(scorer?.assists ?? 0) || 0;
+  const playedMatches = Number(scorer?.playedMatches ?? scorer?.played_matches ?? 0) || 0;
+
+  return {
+    id: scorer?.player?.id ?? null,
+    name: safeStr(scorer?.player?.name),
+    position: safeStr(scorer?.player?.position),
+    team: safeStr(scorer?.team?.name),
+    teamId: scorer?.team?.id ?? null,
+    competition: {
+      id: competition?.id ?? null,
+      code: competition?.code ?? "",
+      name: competition?.name ?? "",
+      slug: competition?.slug ?? "",
+    },
+    goals,
+    assists,
+    playedMatches,
+    minutesEstimate: playedMatches > 0 ? playedMatches * 90 : null,
+  };
+}
+
 async function main() {
   const token = process.env.FOOTBALL_DATA_API_TOKEN;
   if (!token) {
@@ -170,6 +195,7 @@ async function main() {
 
   const fixturesOutput = [];
   const standingsOutput = [];
+  const fantasyPlayers = [];
 
   for (const competition of selectedCompetitions) {
     if (!competition?.id) continue;
@@ -237,6 +263,18 @@ async function main() {
         error: err.message || String(err),
       });
     }
+
+    try {
+      const scorersUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionId}/scorers`;
+      const scorersPayload = await fetchJson(scorersUrl, token);
+      const scorers = Array.isArray(scorersPayload?.scorers) ? scorersPayload.scorers : [];
+      for (const scorer of scorers) {
+        const entry = normalizeScorer(scorer, { ...competition, slug });
+        if (entry.name) fantasyPlayers.push(entry);
+      }
+    } catch (err) {
+      console.warn(`fantasy: scorers failed for ${competitionLabel}`, err.message || err);
+    }
   }
 
   const generatedAt = new Date().toISOString();
@@ -267,11 +305,25 @@ async function main() {
     },
   };
 
+  const fantasyPayload = {
+    generatedAt,
+    players: fantasyPlayers,
+    sources: {
+      footballData: {
+        status: "ok",
+        fetchedAt: generatedAt,
+        competitionCount: standingsOutput.length,
+      },
+    },
+  };
+
   await fs.writeFile(FIXTURES_PATH, `${JSON.stringify(fixturesPayload, null, 2)}\n`, "utf-8");
   await fs.writeFile(STANDINGS_PATH, `${JSON.stringify(standingsPayload, null, 2)}\n`, "utf-8");
+  await fs.writeFile(FANTASY_PATH, `${JSON.stringify(fantasyPayload, null, 2)}\n`, "utf-8");
 
   console.log(`Fetched fixtures for ${fixturesOutput.length} competitions.`);
   console.log(`Fetched standings for ${standingsOutput.length} competitions.`);
+  console.log(`Fetched fantasy scorers: ${fantasyPlayers.length} entries.`);
 }
 
 main().catch((err) => {

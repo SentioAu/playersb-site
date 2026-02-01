@@ -526,6 +526,18 @@ img {
   color: var(--muted);
 }
 
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-credit {
+  margin: 0;
+}
+
 .footer-links {
   display: flex;
   gap: 12px;
