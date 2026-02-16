@@ -35,6 +35,14 @@ const CANONICAL_MAP = new Map([
   ["teams/index.html", `${SITE_ORIGIN}/teams/`],
   ["competitions/index.html", `${SITE_ORIGIN}/competitions/`],
   ["glossary/index.html", `${SITE_ORIGIN}/glossary/`],
+  ["legacy/index.html", `${SITE_ORIGIN}/legacy/`],
+  ["fantasy/index.html", `${SITE_ORIGIN}/fantasy/`],
+  ["embed/index.html", `${SITE_ORIGIN}/embed/`],
+  ["embed/player/index.html", `${SITE_ORIGIN}/embed/player/`],
+  ["sports/index.html", `${SITE_ORIGIN}/sports/`],
+  ["matches/index.html", `${SITE_ORIGIN}/matches/`],
+  ["standings/index.html", `${SITE_ORIGIN}/standings/`],
+  ["archive/index.html", `${SITE_ORIGIN}/archive/`],
 ]);
 
 // Keep this list specific to avoid false positives.
@@ -123,6 +131,14 @@ function isCompetitionEntityIndex(relPath) {
   return relPath.startsWith("competitions/") && relPath.endsWith("/index.html") && !isCompetitionIndex(relPath);
 }
 
+function isLegacyIndex(relPath) {
+  return relPath.startsWith("legacy/") && relPath.endsWith("/index.html") && relPath !== "legacy/index.html";
+}
+
+function isArchiveSeasonIndex(relPath) {
+  return relPath.startsWith("archive/") && relPath.endsWith("/index.html") && relPath !== "archive/index.html";
+}
+
 function isLegacyCoreHtml(relPath) {
   // Legacy root-level core pages that should NOT exist anymore in directory-style architecture
   // (kept strict to avoid nuking compare/contact/index)
@@ -164,6 +180,8 @@ function isLiveHtml(relPath) {
   if (isTeamEntityIndex(relPath)) return true;
   if (isCompetitionEntityIndex(relPath)) return true;
   if (isLearnTopicIndex(relPath)) return true;
+  if (isLegacyIndex(relPath)) return true;
+  if (isArchiveSeasonIndex(relPath)) return true;
 
   return false;
 }
@@ -248,6 +266,12 @@ function expectedCanonical(relPath) {
     const parts = relPath.split("/");
     const id = parts[1];
     return `${SITE_ORIGIN}/learn/${id}/`;
+  }
+
+  if (isLegacyIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/legacy/${id}/`;
   }
 
   return null;

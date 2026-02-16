@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "id": "pl-2023-24",
+      "competition": "Premier League",
+      "season": "2023-24",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json"
+    },
+    {
+      "id": "pd-2023-24",
+      "competition": "La Liga",
+      "season": "2023-24",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json"
+    },
+    {
+      "id": "sa-2023-24",
+      "competition": "Serie A",
+      "season": "2023-24",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/it.1.json"
+    },
+    {
+      "id": "bl1-2023-24",
+      "competition": "Bundesliga",
+      "season": "2023-24",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json"
+    },
+    {
+      "id": "fl1-2023-24",
+      "competition": "Ligue 1",
+      "season": "2023-24",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json"
+    },
+    {
+      "id": "cl-2023-24",
+      "competition": "UEFA Champions League",
+      "season": "2023-24",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json"
+    }
+  ]
+}

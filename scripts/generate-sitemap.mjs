@@ -6,6 +6,7 @@ const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const LEARN_TOPICS_PATH = path.join(ROOT, "data", "learn-topics.json");
+const ARCHIVE_PATH = path.join(ROOT, "data", "archive.json");
 const OUT_PATH = path.join(ROOT, "sitemap.xml");
 
 const CORE = [
@@ -22,6 +23,14 @@ const CORE = [
   "/teams/",
   "/competitions/",
   "/glossary/",
+  "/legacy/",
+  "/fantasy/",
+  "/embed/",
+  "/embed/player/",
+  "/sports/",
+  "/matches/",
+  "/standings/",
+  "/archive/",
 ];
 
 // Escape XML
@@ -76,14 +85,17 @@ async function main() {
   await fs.access(DATA_PATH);
   await fs.access(LEARN_TOPICS_PATH);
 
-  const [rawPlayers, rawTopics] = await Promise.all([
+  const [rawPlayers, rawTopics, rawArchive] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
     fs.readFile(LEARN_TOPICS_PATH, "utf-8"),
+    fs.readFile(ARCHIVE_PATH, "utf-8").catch(() => "{}"),
   ]);
   const parsed = JSON.parse(rawPlayers);
   const topicParsed = JSON.parse(rawTopics);
+  const archiveParsed = JSON.parse(rawArchive || "{}");
   const players = Array.isArray(parsed.players) ? parsed.players : [];
   const learnTopics = Array.isArray(topicParsed?.topics) ? topicParsed.topics : [];
+  const archiveEntries = Array.isArray(archiveParsed?.entries) ? archiveParsed.entries : [];
 
   // Build a slug->player map once (prevents find() per loop and ensures stable lastmod)
   const slugToPlayer = new Map();
@@ -168,6 +180,34 @@ async function main() {
     if (seen.has(loc)) continue;
     seen.add(loc);
     items.push({ loc, lastmod: null });
+  }
+
+  for (const entry of archiveEntries) {
+    const competitionSlug = sanitizeId(entry?.competition?.slug || entry?.competition?.name);
+    const seasonSlug = sanitizeId(entry?.season?.slug || entry?.season?.name);
+    if (!competitionSlug || !seasonSlug) continue;
+    const loc = `${SITE_ORIGIN}/archive/${competitionSlug}/${seasonSlug}/`;
+    if (seen.has(loc)) continue;
+    seen.add(loc);
+    items.push({ loc, lastmod: null });
+  }
+
+  const legacyPath = path.join(ROOT, "data", "legacy-players.json");
+  try {
+    const rawLegacy = await fs.readFile(legacyPath, "utf-8");
+    const legacyParsed = JSON.parse(rawLegacy);
+    const legacyPlayers = Array.isArray(legacyParsed.players) ? legacyParsed.players : [];
+
+    for (const legacy of legacyPlayers) {
+      const slug = sanitizeId(legacy?.id || legacy?.name);
+      if (!slug) continue;
+      const loc = `${SITE_ORIGIN}/legacy/${slug}/`;
+      if (seen.has(loc)) continue;
+      seen.add(loc);
+      items.push({ loc, lastmod: null });
+    }
+  } catch (err) {
+    console.warn("generate-sitemap: legacy-players.json not found, skipping legacy URLs");
   }
 
   const xml =

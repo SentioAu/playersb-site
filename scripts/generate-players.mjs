@@ -291,6 +291,7 @@ async function main() {
     const goals = num(p.goals);
     const assists = num(p.assists);
     const shots = num(p.shots);
+    const shotsOnTarget = num(p.shotsOnTarget);
 
     const similarPlayers = findSimilarPlayers(p, players, 3);
     const similarMarkup = renderSimilarCards(similarPlayers, id);
@@ -320,6 +321,7 @@ async function main() {
       "{{GOALS}}": String(goals),
       "{{ASSISTS}}": String(assists),
       "{{SHOTS}}": String(shots),
+      "{{SHOTS_ON_TARGET}}": String(shotsOnTarget),
 
       "{{G90}}": fmt2(per90(goals, minutes)),
       "{{A90}}": fmt2(per90(assists, minutes)),
@@ -335,6 +337,11 @@ async function main() {
       "{{PLAYER_JSON_LD}}": playerJsonLd,
       "{{BREADCRUMBS}}": breadcrumbHtml,
       "{{BREADCRUMB_JSON_LD}}": breadcrumbJsonLd,
+      "{{SEASON_LABEL}}": "2023/24",
+      "{{SEASON_MINUTES}}": String(minutes),
+      "{{SEASON_GOALS}}": String(goals),
+      "{{SEASON_ASSISTS}}": String(assists),
+      "{{SEASON_SOT}}": String(shotsOnTarget),
     });
 
     // ✅ Directory-style canonical

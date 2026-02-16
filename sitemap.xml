@@ -40,6 +40,30 @@
     <loc>https://playersb.com/glossary/</loc>
   </url>
   <url>
+    <loc>https://playersb.com/legacy/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/fantasy/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/embed/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/embed/player/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/sports/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/matches/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/standings/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/archive/</loc>
+  </url>
+  <url>
     <loc>https://playersb.com/players/bellingham/</loc>
   </url>
   <url>
@@ -134,5 +158,23 @@
   </url>
   <url>
     <loc>https://playersb.com/learn/building-comparison-briefs/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/maradona/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/pele/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/zidane/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/ronaldo/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/ronaldinho/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/cruyff/</loc>
   </url>
 </urlset>

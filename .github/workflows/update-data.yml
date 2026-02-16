@@ -2,6 +2,8 @@ name: Update PlayersB Data (Mode 1)
 
 on:
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 */6 * * *"
   push:
     branches: [ "main" ]
     paths:
@@ -58,7 +60,12 @@ jobs:
           fi
 
       - name: Generate site (core + players + sitemap) and run quality gate
-        run: node scripts/generate-all.mjs
+        env:
+          FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
+        run: |
+          node scripts/fetch-football-data.mjs
+          node scripts/fetch-archive.mjs
+          node scripts/generate-all.mjs
 
       - name: Commit generated files (if changed)
         run: |
