@@ -61,6 +61,7 @@ async function main() {
   const players = fantasyPlayers.length ? fantasyPlayers : Array.isArray(parsed.players) ? parsed.players : [];
   const usingFantasyFeed = fantasyPlayers.length > 0;
   const standingsParsed = rawStandings ? JSON.parse(rawStandings) : null;
+  const lastUpdated = fantasyParsed?.generatedAt || parsed?.generated_at || "Pending fetch";
 
   const { leagueDifficulty, teamForm } = buildStandingsSignals(standingsParsed);
   const difficultyValues = Array.from(leagueDifficulty.values());
@@ -138,6 +139,7 @@ async function main() {
       <p class="meta-text">
         Scores are adjusted by league difficulty and last-5 form where standings data is available.
       </p>
+      <p class="callout">Last updated: ${escHtml(lastUpdated)}</p>
       <div class="button-row">
         <a class="button" href="/players/">Browse players</a>
         <a class="button secondary" href="/compare/">Open compare</a>

@@ -25,7 +25,6 @@ concurrency:
 
 jobs:
   regenerate:
-    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -59,13 +58,67 @@ jobs:
             echo "No package.json — skipping dependency install"
           fi
 
-      - name: Generate site (core + players + sitemap) and run quality gate
+      - name: Resolve Football-Data token (supports 2 secret names)
         env:
-          FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
+          FOOTBALL_DATA_API_TOKEN_PRIMARY: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
+          FOOTBALL_DATA_TOKEN_FALLBACK: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          TOKEN_SOURCE=""
+          TOKEN="${FOOTBALL_DATA_API_TOKEN_PRIMARY}"
+          if [ -n "${TOKEN}" ]; then
+            TOKEN_SOURCE="FOOTBALL_DATA_API_TOKEN"
+          fi
+
+          if [ -z "${TOKEN}" ]; then
+            TOKEN="${FOOTBALL_DATA_TOKEN_FALLBACK}"
+            if [ -n "${TOKEN}" ]; then
+              TOKEN_SOURCE="FOOTBALL_DATA_TOKEN"
+            fi
+          fi
+
+          if [ -z "${TOKEN}" ]; then
+            echo "Missing repository secret. Set FOOTBALL_DATA_API_TOKEN (preferred) or FOOTBALL_DATA_TOKEN in Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+
+          echo "::add-mask::${TOKEN}"
+          echo "FOOTBALL_DATA_API_TOKEN=${TOKEN}" >> "$GITHUB_ENV"
+          echo "Football-Data token resolved successfully."
+          echo "Token source: ${TOKEN_SOURCE}"
+          echo "Token length: ${#TOKEN}"
+
+      - name: Fetch and generate site (core + players + sitemap) and run quality gate
+        env:
+          REQUIRE_FOOTBALL_DATA_TOKEN: "1"
         run: |
           node scripts/fetch-football-data.mjs
+
+          node -e "const fs=require('fs'); const f=JSON.parse(fs.readFileSync('data/fixtures.json','utf8')); const s=JSON.parse(fs.readFileSync('data/standings.json','utf8')); if(!Array.isArray(f.competitions)||f.competitions.length===0){console.error('sanity check failed: fixtures competitions are empty'); process.exit(1);} if(!Array.isArray(s.competitions)||s.competitions.length===0){console.error('sanity check failed: standings competitions are empty'); process.exit(1);} console.log('sanity check passed: fixtures and standings contain competitions');"
+
           node scripts/fetch-archive.mjs
+          node scripts/fetch-players.mjs --dry-run || echo "fetch-players dry-run failed; continuing with existing players source"
+          node scripts/fetch-players.mjs || echo "fetch-players failed; continuing with existing players.json"
+          node scripts/sync-players-from-fantasy.mjs
           node scripts/generate-all.mjs
+
+      - name: Notify pipeline failure webhook (optional)
+        if: ${{ failure() }}
+        env:
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: |
+          if [ -z "${ALERT_WEBHOOK_URL}" ]; then
+            echo "No ALERT_WEBHOOK_URL configured; skipping failure webhook."
+            exit 0
+          fi
+
+          PAYLOAD=$(cat <<JSON
+          {
+            "text": "PlayersB update-data workflow failed on branch ${{ github.ref_name }}. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          }
+          JSON
+          )
+
+          curl -sS -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$ALERT_WEBHOOK_URL" && echo "Failure webhook sent."
 
       - name: Commit generated files (if changed)
         run: |

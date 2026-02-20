@@ -172,7 +172,7 @@ async function main() {
         <a class="button secondary" href="/archive/">Browse archives</a>
         <a class="button secondary" href="/tools/">Back to tools</a>
       </div>
-      <p class="meta-text">Last refreshed: ${escHtml(parsed?.generatedAt || "Pending fetch")}</p>
+      <p class="callout">Last updated: ${escHtml(parsed?.generatedAt || "Pending fetch")}</p>
     </section>
 
     <section class="section">
