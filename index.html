@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="PlayersB — The Players Book. Player profiles, comparisons, and fantasy-safe tools built on verified historical data." />
   <link rel="canonical" href="https://playersb.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -13,11 +21,13 @@
   <meta property="og:description" content="PlayersB — The Players Book. Player profiles, comparisons, and fantasy-safe tools built on verified historical data." />
   <meta property="og:url" content="https://playersb.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="PlayersB | PlayersB" />
   <meta name="twitter:description" content="PlayersB — The Players Book. Player profiles, comparisons, and fantasy-safe tools built on verified historical data." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
   <script type="application/ld+json">
@@ -45,48 +55,165 @@
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
-  </div>
+  <main class="container main-content">
+    <section class="hero">
+        <span class="pill">PlayersB • The Players Book</span>
+        <h1>Player intelligence you can explain.</h1>
+        <p class="lead">
+          Compare players, normalize output, and explore profiles with transparent metrics — all educational, no betting or sportsbook activity.
+        </p>
+        <div class="button-row">
+          <a class="button" href="/compare/">Compare players</a>
+          <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/tools/">Explore tools</a>
+        </div>
+      </section>
 
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
+      <section class="section">
+        <h2 class="section-title">Why PlayersB</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Explainable metrics</h3>
+            <p class="meta-text">Every output shows what goes into it — rates, volumes, and efficiency context.</p>
+          </div>
+          <div class="card">
+            <h3>Player-first navigation</h3>
+            <p class="meta-text">Profiles, comparisons, and tools are organized around each player.</p>
+          </div>
+          <div class="card">
+            <h3>Fantasy-safe focus</h3>
+            <p class="meta-text">Educational use only. No betting lines, tips, or sportsbook activity.</p>
+          </div>
+        </div>
+      </section>
 
-<h1>PlayersB — The Players Book</h1>
-      <p>
-        Player-first tools for comparing performance, understanding stats, and making fantasy decisions — without betting or sportsbook activity.
-        Everything is explainable and grounded in verified historical data.
-      </p>
-      <p style="margin-top:12px;">
-        <a href="/compare/">Compare players</a> ·
-        <a href="/players/">Browse players</a> ·
-        <a href="/tools/">Tools</a> ·
-        <a href="/learn/">Learn</a>
-      </p>
+      <section class="section">
+        <h2 class="section-title">Start with a tool</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Player Comparison</h3>
+            <p class="meta-text">Side-by-side rates with clear tradeoffs and shareable links.</p>
+            <a class="button small" href="/compare/">Open compare</a>
+          </div>
+          <div class="card">
+            <h3>Player Profiles</h3>
+            <p class="meta-text">Snapshot totals, per-90 output, and quick comparison links.</p>
+            <a class="button small" href="/players/">View players</a>
+          </div>
+          <div class="card">
+            <h3>Learning Center</h3>
+            <p class="meta-text">Understand normalization, efficiency, and how to read indicators.</p>
+            <a class="button small" href="/learn/">Learn more</a>
+          </div>
+          <div class="card">
+            <h3>Fantasy Picker</h3>
+            <p class="meta-text">Compare top options by role, form, and per-90 value.</p>
+            <a class="button small" href="/fantasy/">Open fantasy picker</a>
+          </div>
+          <div class="card">
+            <h3>Matches & standings</h3>
+            <p class="meta-text">Track fixtures, live scores, and tables across all competitions.</p>
+            <a class="button small" href="/matches/">View matches</a>
+          </div>
+          <div class="card">
+            <h3>Legacy Greats</h3>
+            <p class="meta-text">Evergreen profiles for the all-time icons of the game.</p>
+            <a class="button small" href="/legacy/">Explore legacy</a>
+          </div>
+        </div>
+      </section>
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
+      <section class="section">
+        <h2 class="section-title">What you can do today</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Build a comparison brief</h3>
+            <p class="meta-text">Use per-90 rates to compare two players with different minutes and roles.</p>
+          </div>
+          <div class="card">
+            <h3>Sanity-check efficiency</h3>
+            <p class="meta-text">Review goals per shot and shot accuracy to balance volume with finishing.</p>
+          </div>
+          <div class="card">
+            <h3>Share insights fast</h3>
+            <p class="meta-text">Generate shareable compare links for teammates, scouts, and analysts.</p>
+          </div>
+        </div>
+      </section>
+  </main>
 
-</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
 </body>
 </html>

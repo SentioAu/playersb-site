@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fantasy Picker | PlayersB — The Players Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <link rel="canonical" href="https://playersb.com/fantasy/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PlayersB — The Players Book" />
+  <meta property="og:title" content="Fantasy Picker | PlayersB" />
+  <meta property="og:description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <meta property="og:url" content="https://playersb.com/fantasy/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fantasy Picker | PlayersB" />
+  <meta name="twitter:description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Structured Data (WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayersB — The Players Book",
+    "url": "https://playersb.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playersb.com/players/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM');
+  </script>
+</head>
+
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+      <span class="pill">Fantasy Picker</span>
+      <h1>Shortlist fantasy options by role and form.</h1>
+      <p class="lead">Use per-90 rates to compare top performers and spot value picks quickly.</p>
+      <p class="meta-text">
+        Data source: Local players data (seeded).
+      </p>
+      <p class="meta-text">
+        Scores are adjusted by league difficulty and last-5 form where standings data is available.
+      </p>
+      <p class="callout">Last updated: 2025-12-29T05:47:35.451Z</p>
+      <div class="button-row">
+        <a class="button" href="/players/">Browse players</a>
+        <a class="button secondary" href="/compare/">Open compare</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <div class="search-row">
+          <label style="flex:1;min-width:220px;">
+            <span class="meta-text">Search players</span>
+            <input id="fantasySearch" class="search-input" type="search" placeholder="Search by name, team, or position" />
+          </label>
+          <label style="min-width:180px;">
+            <span class="meta-text">Filter by role</span>
+            <select id="fantasyRole" class="select">
+              <option value="">All roles</option>
+              <option value="AM">AM</option>
+<option value="CM">CM</option>
+<option value="LW">LW</option>
+<option value="RW">RW</option>
+<option value="SS">SS</option>
+<option value="ST">ST</option>
+            </select>
+          </label>
+          <div class="meta-text" id="fantasyCount"></div>
+        </div>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Role</th>
+                <th>Team</th>
+                <th>Competition</th>
+                <th>Goals/90</th>
+                <th>Assists/90</th>
+                <th>Shots/90</th>
+                <th>Form score</th>
+                <th>Value score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-search="erling haaland st manchester city " data-position="ST">
+          <td><a href="/players/haaland/">Erling Haaland</a></td>
+          <td>ST</td>
+          <td>Manchester City</td>
+          <td>—</td>
+          <td>1.16</td>
+          <td>0.26</td>
+          <td>3.99</td>
+          <td>7.39</td>
+          <td>127.29</td>
+        </tr>
+<tr data-search="kylian mbappé lw/st paris saint-germain " data-position="LW/ST">
+          <td><a href="/players/mbappe/">Kylian Mbappé</a></td>
+          <td>LW/ST</td>
+          <td>Paris Saint-Germain</td>
+          <td>—</td>
+          <td>0.96</td>
+          <td>0.36</td>
+          <td>4.44</td>
+          <td>7.14</td>
+          <td>118.80</td>
+        </tr>
+<tr data-search="mohamed salah rw liverpool " data-position="RW">
+          <td><a href="/players/salah/">Mohamed Salah</a></td>
+          <td>RW</td>
+          <td>Liverpool</td>
+          <td>—</td>
+          <td>0.85</td>
+          <td>0.43</td>
+          <td>4.14</td>
+          <td>6.75</td>
+          <td>114.93</td>
+        </tr>
+<tr data-search="harry kane st bayern munich " data-position="ST">
+          <td><a href="/players/kane/">Harry Kane</a></td>
+          <td>ST</td>
+          <td>Bayern Munich</td>
+          <td>—</td>
+          <td>0.89</td>
+          <td>0.30</td>
+          <td>3.49</td>
+          <td>6.19</td>
+          <td>106.58</td>
+        </tr>
+<tr data-search="jude bellingham am/cm real madrid " data-position="AM/CM">
+          <td><a href="/players/bellingham/">Jude Bellingham</a></td>
+          <td>AM/CM</td>
+          <td>Real Madrid</td>
+          <td>—</td>
+          <td>0.57</td>
+          <td>0.38</td>
+          <td>2.60</td>
+          <td>4.72</td>
+          <td>85.56</td>
+        </tr>
+<tr data-search="kevin de bruyne am/cm manchester city " data-position="AM/CM">
+          <td><a href="/players/debruyne/">Kevin De Bruyne</a></td>
+          <td>AM/CM</td>
+          <td>Manchester City</td>
+          <td>—</td>
+          <td>0.37</td>
+          <td>0.92</td>
+          <td>2.02</td>
+          <td>5.23</td>
+          <td>115.71</td>
+        </tr>
+<tr data-search="vinícius júnior lw real madrid " data-position="LW">
+          <td><a href="/players/vinicius/">Vinícius Júnior</a></td>
+          <td>LW</td>
+          <td>Real Madrid</td>
+          <td>—</td>
+          <td>0.66</td>
+          <td>0.46</td>
+          <td>3.84</td>
+          <td>5.96</td>
+          <td>101.25</td>
+        </tr>
+<tr data-search="victor osimhen st napoli " data-position="ST">
+          <td><a href="/players/osimhen/">Victor Osimhen</a></td>
+          <td>ST</td>
+          <td>Napoli</td>
+          <td>—</td>
+          <td>0.84</td>
+          <td>0.23</td>
+          <td>3.74</td>
+          <td>5.91</td>
+          <td>96.10</td>
+        </tr>
+<tr data-search="son heung-min lw tottenham " data-position="LW">
+          <td><a href="/players/son/">Son Heung-min</a></td>
+          <td>LW</td>
+          <td>Tottenham</td>
+          <td>—</td>
+          <td>0.74</td>
+          <td>0.37</td>
+          <td>3.41</td>
+          <td>5.80</td>
+          <td>100.55</td>
+        </tr>
+<tr data-search="antoine griezmann ss/am atlético madrid " data-position="SS/AM">
+          <td><a href="/players/griezmann/">Antoine Griezmann</a></td>
+          <td>SS/AM</td>
+          <td>Atlético Madrid</td>
+          <td>—</td>
+          <td>0.54</td>
+          <td>0.48</td>
+          <td>2.72</td>
+          <td>4.98</td>
+          <td>92.42</td>
+        </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <p class="meta-text">
+      Form score blends goals, assists, and shot volume with league difficulty + last-5 form. Value score emphasizes per-90 impact.
+    </p>
+
+    <script>
+      (function () {
+        const input = document.getElementById("fantasySearch");
+        const role = document.getElementById("fantasyRole");
+        const rows = Array.from(document.querySelectorAll("tbody tr"));
+        const count = document.getElementById("fantasyCount");
+        const total = rows.length;
+
+        function updateCount(visible) {
+          if (!count) return;
+          count.textContent = "Showing " + visible + " of " + total;
+        }
+
+        function filter() {
+          const q = input ? input.value.trim().toLowerCase() : "";
+          const roleValue = role ? role.value : "";
+          let visible = 0;
+
+          for (const row of rows) {
+            const hay = row.dataset.search || "";
+            const positions = row.dataset.position || "";
+            const matchesQuery = !q || hay.includes(q);
+            const matchesRole = !roleValue || positions.includes(roleValue);
+            const show = matchesQuery && matchesRole;
+            row.style.display = show ? "" : "none";
+            if (show) visible += 1;
+          }
+
+          updateCount(visible);
+        }
+
+        updateCount(total);
+        if (input) input.addEventListener("input", filter);
+        if (role) role.addEventListener("change", filter);
+      })();
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
+</body>
+</html>

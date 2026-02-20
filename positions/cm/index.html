@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CM players | PlayersB — The Players Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Browse PlayersB player profiles for CM roles." />
+  <link rel="canonical" href="https://playersb.com/positions/cm/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PlayersB — The Players Book" />
+  <meta property="og:title" content="CM players | PlayersB" />
+  <meta property="og:description" content="Browse PlayersB player profiles for CM roles." />
+  <meta property="og:url" content="https://playersb.com/positions/cm/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CM players | PlayersB" />
+  <meta name="twitter:description" content="Browse PlayersB player profiles for CM roles." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Structured Data (WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayersB — The Players Book",
+    "url": "https://playersb.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playersb.com/players/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM');
+  </script>
+</head>
+
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+        <span class="pill">Position</span>
+        <h1>CM players</h1>
+        <p class="lead">Profiles and comparisons for CM roles.</p>
+        <div class="button-row">
+          <a class="button" href="/players/">Browse all players</a>
+          <a class="button secondary" href="/positions/">All positions</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <ul class="player-list">
+            <li class="player-item">
+            <a class="player-name" href="/players/bellingham/">Jude Bellingham</a>
+            <div class="player-meta">AM/CM · Real Madrid</div>
+          </li>
+<li class="player-item">
+            <a class="player-name" href="/players/debruyne/">Kevin De Bruyne</a>
+            <div class="player-meta">AM/CM · Manchester City</div>
+          </li>
+          </ul>
+        </div>
+      </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
