@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-25T12:35:18.072Z",
+  "generatedAt": "2026-02-25T18:48:21.880Z",
   "players": [
     {
       "id": 183151,
@@ -32,8 +32,8 @@
       },
       "goals": 13,
       "assists": 1,
-      "playedMatches": 30,
-      "minutesEstimate": 2700
+      "playedMatches": 31,
+      "minutesEstimate": 2790
     },
     {
       "id": 4359,
@@ -168,8 +168,8 @@
       },
       "goals": 10,
       "assists": 4,
-      "playedMatches": 21,
-      "minutesEstimate": 1890
+      "playedMatches": 22,
+      "minutesEstimate": 1980
     },
     {
       "id": 38101,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-25T12:35:18.072Z",
+      "fetchedAt": "2026-02-25T18:48:21.880Z",
       "competitionCount": 8
     }
   }
