@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-25T06:49:07.784Z",
+  "generatedAt": "2026-02-25T12:35:18.072Z",
   "competitions": [
     {
       "competition": {
@@ -3744,7 +3744,7 @@
           "id": 2420,
           "startDate": "2025-08-17",
           "endDate": "2026-05-16",
-          "currentMatchday": 23
+          "currentMatchday": 24
         },
         "slug": "ligue-1"
       },
@@ -4657,7 +4657,7 @@
           "id": 2414,
           "startDate": "2025-08-22",
           "endDate": "2026-05-16",
-          "currentMatchday": 23
+          "currentMatchday": 24
         },
         "slug": "bundesliga"
       },
@@ -6648,7 +6648,7 @@
           "id": 2400,
           "startDate": "2025-08-08",
           "endDate": "2026-05-17",
-          "currentMatchday": 24
+          "currentMatchday": 25
         },
         "slug": "eredivisie"
       },
@@ -8629,7 +8629,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-25T06:49:07.784Z",
+      "fetchedAt": "2026-02-25T12:35:18.072Z",
       "dateFrom": "2026-02-18",
       "dateTo": "2026-03-11",
       "competitionCount": 8
