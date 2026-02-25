@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Harry Kane player profile on PlayersB — The Players Book. Stats, role, and comparison links based on verified historical data." />
   <link rel="canonical" href="https://playersb.com/players/kane/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -13,11 +21,13 @@
   <meta property="og:description" content="Harry Kane player profile on PlayersB — The Players Book. Stats, role, and comparison links based on verified historical data." />
   <meta property="og:url" content="https://playersb.com/players/kane/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Harry Kane – PlayersB | PlayersB" />
   <meta name="twitter:description" content="Harry Kane player profile on PlayersB — The Players Book. Stats, role, and comparison links based on verified historical data." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
   <script type="application/ld+json">
@@ -45,68 +55,217 @@
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
+  <main class="container main-content">
+    <section class="hero">
+  <div>
+    <span class="pill">Player profile</span>
+    <h1>Harry Kane</h1>
+    <p class="lead">ST · Bayern Munich</p>
+    <div class="button-row">
+      <a class="button" href="/compare/?a=kane&b=haaland">Compare vs Erling Haaland</a>
+      <a class="button secondary" href="/players/">Back to players</a>
+    </div>
   </div>
-
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
-
-<h1>Harry Kane</h1>
-<p>ST · Bayern Munich</p>
-
-<section>
-  <h2>Snapshot</h2>
-  <p>
-    Minutes: <strong>1520</strong> ·
-    Goals: <strong>15</strong> ·
-    Assists: <strong>5</strong> ·
-    Shots: <strong>59</strong>
-  </p>
-</section>
-
-<section style="margin-top:16px;">
-  <h2>Normalized output (per 90)</h2>
-  <p>
-    Goals/90: <strong>0.89</strong><br>
-    Assists/90: <strong>0.30</strong><br>
-    Shots/90: <strong>3.49</strong>
-  </p>
-</section>
-
-<section style="margin-top:16px;">
-  <h2>Compare</h2>
-  <p>
-    <a href="/compare?a=kane&b=haaland">Compare vs Erling Haaland</a> ·
-    <a href="/compare?a=kane&b=mbappe">Compare vs Kylian Mbappé</a> ·
-    <a href="/compare?a=kane&b=osimhen">Compare vs Victor Osimhen</a>
-  </p>
 </section>
 
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a class="crumb" href="https://playersb.com/">Home</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/players/">Players</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/positions/st/">ST</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/teams/bayern-munich/">Bayern Munich</a><span class="crumb-sep">/</span><span class="crumb current" aria-current="page">Harry Kane</span>
+    </nav>
+  
 
-</main>
+<section class="section">
+  <div class="card-grid">
+    <div class="card">
+      <h2>Snapshot</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-label">Minutes</div>
+          <div class="stat-value">1520</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Goals</div>
+          <div class="stat-value">15</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Assists</div>
+          <div class="stat-value">5</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Shots</div>
+          <div class="stat-value">59</div>
+        </div>
+      </div>
+      <p class="meta-text">Numbers shown are verified historical totals.</p>
+    </div>
+    <div class="card">
+      <h2>Per 90 rates</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-label">Goals / 90</div>
+          <div class="stat-value">0.89</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Assists / 90</div>
+          <div class="stat-value">0.30</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Shots / 90</div>
+          <div class="stat-value">3.49</div>
+        </div>
+      </div>
+      <p class="meta-text">Rates normalize output by minutes played.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card">
+    <h2>2023/24 snapshot</h2>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat-label">Minutes</div>
+        <div class="stat-value">1520</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Goals</div>
+        <div class="stat-value">15</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Assists</div>
+        <div class="stat-value">5</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Shots on target</div>
+        <div class="stat-value">26</div>
+      </div>
+    </div>
+    <p class="meta-text">Snapshot reflects the latest available season in the dataset.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card">
+    <h2>Compare with peers</h2>
+    <p class="meta-text">Quick links to comparisons that highlight role, efficiency, and volume differences.</p>
+    <div class="button-row">
+      <a class="button secondary" href="/compare/?a=kane&b=haaland">Compare vs Erling Haaland</a>
+      <a class="button secondary" href="/compare/?a=kane&b=mbappe">Compare vs Kylian Mbappé</a>
+      <a class="button secondary" href="/compare/?a=kane&b=osimhen">Compare vs Victor Osimhen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card">
+    <h2>Similar players</h2>
+    <p class="meta-text">Closest profiles by per-90 production and role context.</p>
+    <div class="card-grid">
+      <div class="card">
+          <h3>Victor Osimhen</h3>
+          <p class="meta-text">ST · Napoli</p>
+          <div class="button-row">
+            <a class="button small secondary" href="/players/osimhen/">View profile</a>
+            <a class="button small secondary" href="/compare/?a=kane&b=osimhen">Compare</a>
+          </div>
+        </div>
+<div class="card">
+          <h3>Erling Haaland</h3>
+          <p class="meta-text">ST · Manchester City</p>
+          <div class="button-row">
+            <a class="button small secondary" href="/players/haaland/">View profile</a>
+            <a class="button small secondary" href="/compare/?a=kane&b=haaland">Compare</a>
+          </div>
+        </div>
+<div class="card">
+          <h3>Kylian Mbappé</h3>
+          <p class="meta-text">LW/ST · Paris Saint-Germain</p>
+          <div class="button-row">
+            <a class="button small secondary" href="/players/mbappe/">View profile</a>
+            <a class="button small secondary" href="/compare/?a=kane&b=mbappe">Compare</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Harry Kane","jobTitle":"ST","affiliation":{"@type":"SportsTeam","name":"Bayern Munich"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://playersb.com/"},{"@type":"ListItem","position":2,"name":"Players","item":"https://playersb.com/players/"},{"@type":"ListItem","position":3,"name":"ST","item":"https://playersb.com/positions/st/"},{"@type":"ListItem","position":4,"name":"Bayern Munich","item":"https://playersb.com/teams/bayern-munich/"},{"@type":"ListItem","position":5,"name":"Harry Kane","item":"https://playersb.com/players/kane/"}]}</script>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
 </body>
 </html>

@@ -29,7 +29,7 @@ jobs:
           # git status --porcelain=v1 lines look like:
           # " M path" or "M  path" or "?? path"
           # => always TWO status chars, then a space, then the path
-          ALLOWED_REGEX='^.. (index\.html|players/index\.html|sitemap\.xml)$|^.. (about|learn|privacy|terms|tools)/index\.html$|^.. players/[^/]+/index\.html$|^.. players/\.generated\.txt$'
+          ALLOWED_REGEX='^.. (index\.html|players/index\.html|sitemap\.xml|feed\.xml)$|^.. (about|learn|privacy|terms|tools|glossary|positions|teams|competitions|legacy|fantasy|embed|sports)/index\.html$|^.. players/[^/]+/index\.html$|^.. (learn|positions|teams|competitions|legacy|embed)/[^/]+/index\.html$|^.. players/\.generated\.txt$'
 
           DIRTY="$(git status --porcelain | grep -Ev "$ALLOWED_REGEX" || true)"
 

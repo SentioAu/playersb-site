@@ -1,0 +1,105 @@
+{
+  "comparisons": [
+    {
+      "a": "maradona",
+      "b": "zidane",
+      "label": "Maradona vs Zidane"
+    },
+    {
+      "a": "pele",
+      "b": "ronaldo",
+      "label": "Pelé vs Ronaldo"
+    },
+    {
+      "a": "cruyff",
+      "b": "ronaldinho",
+      "label": "Cruyff vs Ronaldinho"
+    }
+  ],
+  "players": [
+    {
+      "id": "maradona",
+      "name": "Diego Maradona",
+      "position": "AM",
+      "nation": "Argentina",
+      "era": "1976–1997",
+      "peakSeason": "1986",
+      "highlights": [
+        "World Cup winner and Golden Ball (1986)",
+        "Iconic dribbler and creative playmaker",
+        "Led Napoli to historic Serie A titles"
+      ],
+      "legacy": "A creative force who blended vision, dribbling, and leadership into defining moments for club and country."
+    },
+    {
+      "id": "pele",
+      "name": "Pelé",
+      "position": "ST",
+      "nation": "Brazil",
+      "era": "1956–1977",
+      "peakSeason": "1961",
+      "highlights": [
+        "Three-time World Cup winner",
+        "Record-breaking scoring output for club and country",
+        "Complete forward with pace, power, and finishing"
+      ],
+      "legacy": "A benchmark for goal-scoring excellence and global impact, setting standards for generations."
+    },
+    {
+      "id": "zidane",
+      "name": "Zinedine Zidane",
+      "position": "AM",
+      "nation": "France",
+      "era": "1989–2006",
+      "peakSeason": "1998",
+      "highlights": [
+        "World Cup and Ballon d'Or winner (1998)",
+        "Elite control, tempo management, and creativity",
+        "Key finals performances for club and country"
+      ],
+      "legacy": "A master of control and technique whose peak performances defined major tournaments."
+    },
+    {
+      "id": "ronaldo",
+      "name": "Ronaldo Nazário",
+      "position": "ST",
+      "nation": "Brazil",
+      "era": "1993–2011",
+      "peakSeason": "2002",
+      "highlights": [
+        "World Cup winner and Golden Boot (2002)",
+        "Explosive pace and finishing at his peak",
+        "Two-time Ballon d'Or winner"
+      ],
+      "legacy": "A prototype for modern strikers, combining speed, power, and elite finishing."
+    },
+    {
+      "id": "ronaldinho",
+      "name": "Ronaldinho",
+      "position": "AM",
+      "nation": "Brazil",
+      "era": "1998–2015",
+      "peakSeason": "2005",
+      "highlights": [
+        "Ballon d'Or winner (2005)",
+        "Creative playmaker with rare flair",
+        "Champions League winner and global icon"
+      ],
+      "legacy": "A joyful creator who turned skill into entertainment while leading elite teams."
+    },
+    {
+      "id": "cruyff",
+      "name": "Johan Cruyff",
+      "position": "FW",
+      "nation": "Netherlands",
+      "era": "1964–1984",
+      "peakSeason": "1974",
+      "highlights": [
+        "Three-time Ballon d'Or winner",
+        "Architect of Total Football ideology",
+        "Iconic World Cup performances"
+      ],
+      "legacy": "A visionary player who shaped modern football tactics and attacking movement."
+    }
+  ]
+}

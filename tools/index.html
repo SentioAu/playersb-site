@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="PlayersB tools: comparisons, calculators, similarity finders, and fantasy-safe utilities built on verified historical data." />
   <link rel="canonical" href="https://playersb.com/tools/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -13,11 +21,13 @@
   <meta property="og:description" content="PlayersB tools: comparisons, calculators, similarity finders, and fantasy-safe utilities built on verified historical data." />
   <meta property="og:url" content="https://playersb.com/tools/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Tools | PlayersB" />
   <meta name="twitter:description" content="PlayersB tools: comparisons, calculators, similarity finders, and fantasy-safe utilities built on verified historical data." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
   <script type="application/ld+json">
@@ -45,55 +55,139 @@
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
-  </div>
+  <main class="container main-content">
+    <section class="hero">
+        <span class="pill">Tools</span>
+        <h1>Tools built for repeatable analysis.</h1>
+        <p class="lead">Every tool is grounded in inputs you can verify, with outputs framed for learning.</p>
+        <div class="button-row">
+          <a class="button" href="/compare/">Open comparison tool</a>
+          <a class="button secondary" href="/players/">Browse players</a>
+        </div>
+      </section>
 
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
+      <section class="section">
+        <h2 class="section-title">Core tools</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Player Comparison</h3>
+            <p class="meta-text">Side-by-side per-90 rates with efficiency context and shareable links.</p>
+          </div>
+          <div class="card">
+            <h3>Fantasy Picker</h3>
+            <p class="meta-text">Shortlist top options by role, form score, and per-90 value.</p>
+            <a class="button small secondary" href="/fantasy/">Open fantasy picker</a>
+          </div>
+          <div class="card">
+            <h3>Matches & Fixtures</h3>
+            <p class="meta-text">Live scores, upcoming fixtures, and recent results in one view.</p>
+            <a class="button small secondary" href="/matches/">View matches</a>
+          </div>
+          <div class="card">
+            <h3>Standings</h3>
+            <p class="meta-text">League tables and points updates across every competition.</p>
+            <a class="button small secondary" href="/standings/">View standings</a>
+          </div>
+          <div class="card">
+            <h3>Per-90 normalization</h3>
+            <p class="meta-text">Normalize output by minutes played to compare different workloads.</p>
+          </div>
+          <div class="card">
+            <h3>Rate & efficiency views</h3>
+            <p class="meta-text">See volume signals (shots/90) alongside efficiency indicators.</p>
+          </div>
+          <div class="card">
+            <h3>Minutes-to-output</h3>
+            <p class="meta-text">Understand how often a player produces per minutes played.</p>
+          </div>
+        </div>
+      </section>
 
-<h1>Tools</h1>
-      <p>
-        PlayersB tools are explainable, grounded in inputs, and designed for repeated use across player pages.
-      </p>
+      <section class="section">
+        <div class="card">
+          <h2>How to use the tools</h2>
+          <ul class="info-list">
+            <li>Pick a player and compare against a similar role or rival.</li>
+            <li>Scan per-90 rates to normalize minutes and workloads.</li>
+            <li>Use efficiency indicators to balance volume with conversion.</li>
+            <li>Share the link as a quick brief for discussion.</li>
+          </ul>
+        </div>
+      </section>
+  </main>
 
-      <h2>Core tools</h2>
-      <ul>
-        <li><strong>Player Comparison</strong> — side-by-side normalized stats with explanations.</li>
-        <li><strong>Per-90 / Per-minute</strong> — normalize output by time played.</li>
-        <li><strong>Rate view</strong> — quick production rates for comparison.</li>
-        <li><strong>Minutes-to-output</strong> — how often a player produces per minutes played.</li>
-      </ul>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
 
-      <h2>Start here</h2>
-      <ul>
-        <li><a href="/compare/"><strong>Compare players</strong></a></li>
-        <li><a href="/players/"><strong>Browse players</strong></a></li>
-      </ul>
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
 
-</main>
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (!button) return;
+      updateButton(button);
+      button.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          localStorage.setItem(storageKey, "light");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          localStorage.setItem(storageKey, "dark");
+        }
+        updateButton(button);
+      });
+    });
+  })();
+</script>
 </body>
 </html>
