@@ -8,6 +8,9 @@ const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
 const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
 
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
+const REQUEST_INTERVAL_MS = Number(process.env.FOOTBALL_DATA_MIN_INTERVAL_MS || 6500);
+const MAX_RETRIES = Number(process.env.FOOTBALL_DATA_MAX_RETRIES || 2);
+let lastRequestAt = 0;
 
 function safeStr(value) {
   return String(value ?? "").trim();
@@ -34,20 +37,54 @@ async function readConfig() {
   }
 }
 
-async function fetchJson(url, token) {
-  const res = await fetch(url, {
-    headers: {
-      "X-Auth-Token": token,
-      "User-Agent": "playersb-site",
-    },
-  });
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, Math.max(0, ms || 0)));
+}
 
-  if (!res.ok) {
+function parseRetryAfterSeconds(message, headers) {
+  const retryHeader = headers?.get?.("retry-after");
+  if (retryHeader) {
+    const headerNum = Number(retryHeader);
+    if (Number.isFinite(headerNum) && headerNum > 0) return Math.ceil(headerNum);
+  }
+
+  const match = String(message || "").match(/wait\s+(\d+)\s*seconds?/i);
+  if (match) return Number(match[1]);
+  return null;
+}
+
+async function fetchJson(url, token) {
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt += 1) {
+    const elapsed = Date.now() - lastRequestAt;
+    if (elapsed < REQUEST_INTERVAL_MS) {
+      await sleep(REQUEST_INTERVAL_MS - elapsed);
+    }
+
+    const res = await fetch(url, {
+      headers: {
+        "X-Auth-Token": token,
+        "User-Agent": "playersb-site",
+      },
+    });
+    lastRequestAt = Date.now();
+
+    if (res.ok) {
+      return res.json();
+    }
+
     const text = await res.text();
+    if (res.status === 429 && attempt < MAX_RETRIES) {
+      const retryAfter = parseRetryAfterSeconds(text, res.headers);
+      const waitMs = Math.max((retryAfter || 60) * 1000, REQUEST_INTERVAL_MS);
+      console.warn(`football-data: rate limited (429) for ${url}; waiting ${Math.ceil(waitMs / 1000)}s before retry ${attempt + 1}/${MAX_RETRIES}`);
+      await sleep(waitMs);
+      continue;
+    }
+
     throw new Error(`Football-Data fetch failed: ${url} (${res.status}) ${text.slice(0, 200)}`);
   }
 
-  return res.json();
+  throw new Error(`Football-Data fetch failed after retries: ${url}`);
 }
 
 function normalizeCompetition(competition) {

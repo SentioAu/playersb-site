@@ -1,12 +1,22 @@
 {
   "footballData": {
     "enabled": true,
-    "competitionScope": "all",
+    "competitionScope": [
+      "PL",
+      "PD",
+      "SA",
+      "BL1",
+      "FL1",
+      "CL",
+      "ELC",
+      "DED"
+    ],
     "matchWindowDays": {
       "past": 7,
       "future": 14
     },
-    "limitMatches": 200
+    "limitMatches": 200,
+    "notes": "Reduced default scope for free-tier rate limits; use archive/free sources for long-tail competitions."
   },
   "openfootball": {
     "sourcesPath": "data/openfootball-sources.json"
@@ -16,6 +26,7 @@
     "limitMatches": null
   },
   "playersSeed": {
-    "path": "data/players-soccer-v1.json"
+    "path": "data/players-soccer-v1.json",
+    "enabled": true
   }
 }

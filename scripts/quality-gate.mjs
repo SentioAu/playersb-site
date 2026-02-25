@@ -274,6 +274,13 @@ function expectedCanonical(relPath) {
     return `${SITE_ORIGIN}/legacy/${id}/`;
   }
 
+  if (isArchiveSeasonIndex(relPath)) {
+    const parts = relPath.split("/");
+    const competition = parts[1];
+    const season = parts[2];
+    return `${SITE_ORIGIN}/archive/${competition}/${season}/`;
+  }
+
   return null;
 }
 

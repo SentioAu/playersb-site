@@ -5,9 +5,11 @@ import https from "node:https";
 const ROOT = process.cwd();
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const SOURCE_PATH = path.join(ROOT, "data", "players-source.json");
+const SOURCES_CONFIG_PATH = path.join(ROOT, "data", "sources.json");
 
-const DEFAULT_SOURCE_URL =
-  "https://raw.githubusercontent.com/openfootball/players/master/players.json";
+const DEFAULT_SOURCE_URLS = [
+  "https://raw.githubusercontent.com/openfootball/players/master/players.json",
+];
 
 function safeStr(value) {
   return String(value ?? "").trim();
@@ -25,6 +27,15 @@ function readJsonFile(filePath) {
   return fs.readFile(filePath, "utf-8").then((raw) => JSON.parse(raw));
 }
 
+
+async function readJsonSafe(filePath, fallback = null) {
+  try {
+    return await readJsonFile(filePath);
+  } catch (err) {
+    return fallback;
+  }
+}
+
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const req = https.get(url, { headers: { "User-Agent": "playersb-site" } }, (res) => {
@@ -39,7 +50,7 @@ function fetchJson(url) {
         try {
           resolve(JSON.parse(data));
         } catch (err) {
-          reject(err);
+          reject(new Error(`invalid json from ${url}: ${err.message}`));
         }
       });
     });
@@ -100,26 +111,79 @@ function mergeWithExisting(existing, nextPlayers) {
   };
 }
 
+async function tryRemoteSources(urls) {
+  for (const url of urls) {
+    try {
+      const data = await fetchJson(url);
+      const normalized = normalizePlayers(data);
+      if (normalized.length) {
+        return { source: data, url };
+      }
+      console.warn(`fetch-players: source returned no player rows: ${url}`);
+    } catch (err) {
+      console.warn(`fetch-players: source failed: ${url} (${err.message || err})`);
+    }
+  }
+  return null;
+}
+
 async function main() {
   const args = new Set(process.argv.slice(2));
   const dryRun = args.has("--dry-run");
   const localOnly = args.has("--local");
 
+  const existing = await readJsonFile(DATA_PATH);
+  const sourcesConfig = await readJsonSafe(SOURCES_CONFIG_PATH, {});
+  const seedPath = sourcesConfig?.playersSeed?.path ? path.join(ROOT, sourcesConfig.playersSeed.path) : null;
+  const seedEnabled = sourcesConfig?.playersSeed?.enabled !== false;
+
   let source = null;
   if (!localOnly && process.env.PLAYERS_SOURCE_URL) {
-    source = await fetchJson(process.env.PLAYERS_SOURCE_URL);
-  } else if (await fs.stat(SOURCE_PATH).then(() => true).catch(() => false)) {
+    try {
+      source = await fetchJson(process.env.PLAYERS_SOURCE_URL);
+      console.log(`fetch-players: using PLAYERS_SOURCE_URL (${process.env.PLAYERS_SOURCE_URL})`);
+    } catch (err) {
+      console.warn(`fetch-players: PLAYERS_SOURCE_URL failed (${err.message || err})`);
+    }
+  }
+
+  if (!source && !localOnly && (await fs.stat(SOURCE_PATH).then(() => true).catch(() => false))) {
     source = await readJsonFile(SOURCE_PATH);
-  } else if (!localOnly) {
-    source = await fetchJson(DEFAULT_SOURCE_URL);
-  } else {
-    source = await readJsonFile(DATA_PATH);
+    console.log("fetch-players: using data/players-source.json");
+  }
+
+  if (!source && seedEnabled && seedPath && (await fs.stat(seedPath).then(() => true).catch(() => false))) {
+    source = await readJsonFile(seedPath);
+    console.log(`fetch-players: using seed source ${seedPath.replace(`${ROOT}/`, "")}`);
+  }
+
+  if (!source && !localOnly) {
+    const extraUrls = process.env.PLAYERS_SOURCE_URLS
+      ? process.env.PLAYERS_SOURCE_URLS.split(",").map((v) => v.trim()).filter(Boolean)
+      : [];
+    const remote = await tryRemoteSources([...extraUrls, ...DEFAULT_SOURCE_URLS]);
+    if (remote) {
+      source = remote.source;
+      console.log(`fetch-players: using remote source ${remote.url}`);
+    }
+  }
+
+  if (!source) {
+    source = existing;
+    console.warn("fetch-players: no valid remote source available; keeping existing data/players.json");
   }
 
   const records = normalizePlayers(source);
   const cleaned = cleanPlayers(records);
 
-  const existing = await readJsonFile(DATA_PATH);
+  if (!cleaned.length) {
+    console.warn("fetch-players: source produced 0 normalized players; keeping existing data/players.json");
+    if (dryRun) {
+      console.log(`Fetched 0 players (dry-run fallback). Existing players: ${(existing?.players || []).length}`);
+    }
+    return;
+  }
+
   const next = mergeWithExisting(existing, cleaned);
 
   if (dryRun) {

@@ -44,3 +44,9 @@ If a run fails in `fetch-football-data.mjs` immediately, verify that the latest 
 
 Optional failure alert secret:
 - `ALERT_WEBHOOK_URL` (Slack/webhook endpoint called only when update workflow fails)
+
+
+## Free-source expansion (alongside Football-Data.org)
+- `fetch-archive.mjs` now reads a broader OpenFootball source list (multiple seasons) for historical coverage.
+- `fetch-players.mjs` now falls back to local seed data (`data/players-soccer-v1.json`) when external free sources are unavailable.
+- `data/sources.json` uses a curated Football-Data competition scope by default to reduce free-tier 429 rate-limit pressure.
