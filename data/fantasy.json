@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-25T18:48:21.880Z",
+  "generatedAt": "2026-02-26T00:58:04.682Z",
   "players": [
     {
       "id": 183151,
@@ -30,7 +30,7 @@
         "name": "Championship",
         "slug": "championship"
       },
-      "goals": 13,
+      "goals": 14,
       "assists": 1,
       "playedMatches": 31,
       "minutesEstimate": 2790
@@ -410,28 +410,28 @@
       "minutesEstimate": 720
     },
     {
-      "id": 61450,
-      "name": "Martinelli",
+      "id": 9434,
+      "name": "Victor Osimhen",
       "position": "",
-      "team": "Arsenal FC",
-      "teamId": 57,
+      "team": "Galatasaray SK",
+      "teamId": 610,
       "competition": {
         "id": 2001,
         "code": "CL",
         "name": "UEFA Champions League",
         "slug": "uefa-champions-league"
       },
-      "goals": 6,
+      "goals": 7,
       "assists": 1,
-      "playedMatches": 7,
-      "minutesEstimate": 630
+      "playedMatches": 8,
+      "minutesEstimate": 720
     },
     {
-      "id": 9434,
-      "name": "Victor Osimhen",
+      "id": 61450,
+      "name": "Martinelli",
       "position": "",
-      "team": "Galatasaray SK",
-      "teamId": 610,
+      "team": "Arsenal FC",
+      "teamId": 57,
       "competition": {
         "id": 2001,
         "code": "CL",
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-25T18:48:21.880Z",
+      "fetchedAt": "2026-02-26T00:58:04.682Z",
       "competitionCount": 8
     }
   }

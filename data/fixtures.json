@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-25T18:48:21.880Z",
+  "generatedAt": "2026-02-26T00:58:04.682Z",
   "competitions": [
     {
       "competition": {
@@ -684,7 +684,7 @@
         {
           "id": 541117,
           "utcDate": "2026-02-25T19:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 34,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -701,23 +701,23 @@
             "tla": "BIR"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 3,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T01:32:00Z"
+          "lastUpdated": "2026-02-25T21:44:34Z"
         },
         {
           "id": 541118,
           "utcDate": "2026-02-25T19:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 34,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -734,23 +734,23 @@
             "tla": "SHE"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-25T21:47:49Z"
         },
         {
           "id": 541119,
           "utcDate": "2026-02-25T19:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 34,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -767,23 +767,23 @@
             "tla": "COV"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 2
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T01:32:00Z"
+          "lastUpdated": "2026-02-25T21:47:44Z"
         },
         {
           "id": 541111,
           "utcDate": "2026-02-25T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 34,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -800,18 +800,18 @@
             "tla": "OXF"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-23T01:32:00Z"
+          "lastUpdated": "2026-02-25T21:57:31Z"
         },
         {
           "id": 541121,
@@ -2021,41 +2021,8 @@
         },
         "slug": "premier-league"
       },
-      "matchCount": 31,
+      "matchCount": 30,
       "matches": [
-        {
-          "id": 538094,
-          "utcDate": "2026-02-18T20:00:00Z",
-          "status": "FINISHED",
-          "matchday": 31,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 76,
-            "name": "Wolverhampton Wanderers FC",
-            "shortName": "Wolverhampton",
-            "tla": "WOL"
-          },
-          "awayTeam": {
-            "id": 57,
-            "name": "Arsenal FC",
-            "shortName": "Arsenal",
-            "tla": "ARS"
-          },
-          "score": {
-            "winner": "DRAW",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 2,
-              "away": 2
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 1
-            }
-          },
-          "lastUpdated": "2026-02-24T20:20:56Z"
-        },
         {
           "id": 538046,
           "utcDate": "2026-02-21T15:00:00Z",
@@ -3066,140 +3033,8 @@
         },
         "slug": "uefa-champions-league"
       },
-      "matchCount": 20,
+      "matchCount": 16,
       "matches": [
-        {
-          "id": 552054,
-          "utcDate": "2026-02-18T17:45:00Z",
-          "status": "FINISHED",
-          "matchday": 1,
-          "stage": "PLAYOFFS",
-          "group": "",
-          "homeTeam": {
-            "id": 611,
-            "name": "Qarabağ Ağdam FK",
-            "shortName": "Qarabağ Ağdam",
-            "tla": "QAR"
-          },
-          "awayTeam": {
-            "id": 67,
-            "name": "Newcastle United FC",
-            "shortName": "Newcastle",
-            "tla": "NEW"
-          },
-          "score": {
-            "winner": "AWAY_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 1,
-              "away": 6
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 5
-            }
-          },
-          "lastUpdated": "2026-02-24T15:21:03Z"
-        },
-        {
-          "id": 552056,
-          "utcDate": "2026-02-18T20:00:00Z",
-          "status": "FINISHED",
-          "matchday": 1,
-          "stage": "PLAYOFFS",
-          "group": "",
-          "homeTeam": {
-            "id": 851,
-            "name": "Club Brugge KV",
-            "shortName": "Club Brugge",
-            "tla": "BRU"
-          },
-          "awayTeam": {
-            "id": 78,
-            "name": "Club Atlético de Madrid",
-            "shortName": "Atleti",
-            "tla": "ATL"
-          },
-          "score": {
-            "winner": "DRAW",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 3,
-              "away": 3
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 2
-            }
-          },
-          "lastUpdated": "2026-02-24T15:21:03Z"
-        },
-        {
-          "id": 552058,
-          "utcDate": "2026-02-18T20:00:00Z",
-          "status": "FINISHED",
-          "matchday": 1,
-          "stage": "PLAYOFFS",
-          "group": "",
-          "homeTeam": {
-            "id": 654,
-            "name": "PAE Olympiakos SFP",
-            "shortName": "Olympiakos",
-            "tla": "OLY"
-          },
-          "awayTeam": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04"
-          },
-          "score": {
-            "winner": "AWAY_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 0,
-              "away": 2
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-24T15:21:03Z"
-        },
-        {
-          "id": 552059,
-          "utcDate": "2026-02-18T20:00:00Z",
-          "status": "FINISHED",
-          "matchday": 1,
-          "stage": "PLAYOFFS",
-          "group": "",
-          "homeTeam": {
-            "id": 5721,
-            "name": "FK Bodø/Glimt",
-            "shortName": "Bodø/Glimt",
-            "tla": "FK"
-          },
-          "awayTeam": {
-            "id": 108,
-            "name": "FC Internazionale Milano",
-            "shortName": "Inter",
-            "tla": "INT"
-          },
-          "score": {
-            "winner": "HOME_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 3,
-              "away": 1
-            },
-            "halfTime": {
-              "home": 1,
-              "away": 1
-            }
-          },
-          "lastUpdated": "2026-02-24T15:21:03Z"
-        },
         {
           "id": 552064,
           "utcDate": "2026-02-24T17:45:00Z",
@@ -3335,7 +3170,7 @@
         {
           "id": 552065,
           "utcDate": "2026-02-25T17:45:00Z",
-          "status": "PAUSED",
+          "status": "FINISHED",
           "matchday": 2,
           "stage": "PLAYOFFS",
           "group": "",
@@ -3355,20 +3190,20 @@
             "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": 2,
-              "away": 0
+              "home": 4,
+              "away": 1
             },
             "halfTime": {
               "home": 2,
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T18:39:19Z"
+          "lastUpdated": "2026-02-25T19:49:20Z"
         },
         {
           "id": 552060,
           "utcDate": "2026-02-25T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 2,
           "stage": "PLAYOFFS",
           "group": "",
@@ -3385,23 +3220,23 @@
             "tla": "BEN"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T15:21:03Z"
+          "lastUpdated": "2026-02-25T22:06:49Z"
         },
         {
           "id": 552061,
           "utcDate": "2026-02-25T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 2,
           "stage": "PLAYOFFS",
           "group": "",
@@ -3418,23 +3253,23 @@
             "tla": "ASM"
           },
           "score": {
-            "winner": "",
+            "winner": "DRAW",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 2
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-19T01:32:03Z"
+          "lastUpdated": "2026-02-25T21:59:30Z"
         },
         {
           "id": 552063,
           "utcDate": "2026-02-25T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 2,
           "stage": "PLAYOFFS",
           "group": "",
@@ -3451,18 +3286,18 @@
             "tla": "GAL"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 3,
+              "away": 2
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-19T01:32:03Z"
+          "lastUpdated": "2026-02-25T22:42:50Z"
         },
         {
           "id": 552068,
@@ -5607,41 +5442,8 @@
         },
         "slug": "serie-a"
       },
-      "matchCount": 31,
+      "matchCount": 30,
       "matches": [
-        {
-          "id": 537046,
-          "utcDate": "2026-02-18T19:45:00Z",
-          "status": "FINISHED",
-          "matchday": 24,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 98,
-            "name": "AC Milan",
-            "shortName": "Milan",
-            "tla": "MIL"
-          },
-          "awayTeam": {
-            "id": 7397,
-            "name": "Como 1907",
-            "shortName": "Como 1907",
-            "tla": "COM"
-          },
-          "score": {
-            "winner": "DRAW",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 1,
-              "away": 1
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 1
-            }
-          },
-          "lastUpdated": "2026-02-24T20:20:56Z"
-        },
         {
           "id": 537073,
           "utcDate": "2026-02-20T19:45:00Z",
@@ -7565,41 +7367,8 @@
         },
         "slug": "primera-division"
       },
-      "matchCount": 32,
+      "matchCount": 31,
       "matches": [
-        {
-          "id": 544364,
-          "utcDate": "2026-02-18T19:00:00Z",
-          "status": "FINISHED",
-          "matchday": 16,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 88,
-            "name": "Levante UD",
-            "shortName": "Levante",
-            "tla": "LEV"
-          },
-          "awayTeam": {
-            "id": 94,
-            "name": "Villarreal CF",
-            "shortName": "Villarreal",
-            "tla": "VIL"
-          },
-          "score": {
-            "winner": "AWAY_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 0,
-              "away": 1
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-24T20:20:56Z"
-        },
         {
           "id": 544452,
           "utcDate": "2026-02-20T20:00:00Z",
@@ -8629,9 +8398,9 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-25T18:48:21.880Z",
-      "dateFrom": "2026-02-18",
-      "dateTo": "2026-03-11",
+      "fetchedAt": "2026-02-26T00:58:04.682Z",
+      "dateFrom": "2026-02-19",
+      "dateTo": "2026-03-12",
       "competitionCount": 8
     }
   }

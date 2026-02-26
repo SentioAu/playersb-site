@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T18:48:27.718Z",
+  "generated_at": "2026-02-26T00:58:11.837Z",
   "players": [
     {
       "id": "4863",
@@ -304,7 +304,7 @@
       "position": "N/A",
       "team": "Coventry City FC",
       "minutes": 2790,
-      "goals": 13,
+      "goals": 14,
       "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
@@ -897,8 +897,8 @@
       "name": "Victor Osimhen",
       "position": "N/A",
       "team": "Galatasaray SK",
-      "minutes": 630,
-      "goals": 6,
+      "minutes": 720,
+      "goals": 7,
       "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
