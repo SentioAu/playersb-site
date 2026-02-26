@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-26T06:45:44.229Z",
+  "generatedAt": "2026-02-26T12:35:53.805Z",
   "competitions": [
     {
       "competition": {
@@ -15,7 +15,7 @@
           "id": 2416,
           "startDate": "2025-08-08",
           "endDate": "2026-12-29",
-          "currentMatchday": 34
+          "currentMatchday": 35
         },
         "slug": "championship"
       },
@@ -5438,7 +5438,7 @@
           "id": 2395,
           "startDate": "2025-08-24",
           "endDate": "2026-05-24",
-          "currentMatchday": 26
+          "currentMatchday": 27
         },
         "slug": "serie-a"
       },
@@ -7363,7 +7363,7 @@
           "id": 2429,
           "startDate": "2025-08-17",
           "endDate": "2026-05-24",
-          "currentMatchday": 25
+          "currentMatchday": 26
         },
         "slug": "primera-division"
       },
@@ -8398,7 +8398,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-26T06:45:44.229Z",
+      "fetchedAt": "2026-02-26T12:35:53.805Z",
       "dateFrom": "2026-02-19",
       "dateTo": "2026-03-12",
       "competitionCount": 8
