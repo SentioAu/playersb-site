@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-26T00:58:04.682Z",
+  "generatedAt": "2026-02-26T06:45:44.229Z",
   "competitions": [
     {
       "competition": {
@@ -52,7 +52,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541097,
@@ -85,7 +85,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541103,
@@ -118,7 +118,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541104,
@@ -151,7 +151,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541106,
@@ -184,7 +184,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541098,
@@ -217,7 +217,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541099,
@@ -250,7 +250,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541100,
@@ -283,7 +283,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541102,
@@ -316,7 +316,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541105,
@@ -349,7 +349,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541107,
@@ -382,7 +382,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541101,
@@ -415,7 +415,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541108,
@@ -448,7 +448,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T22:41:23Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541109,
@@ -481,7 +481,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T22:41:23Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541112,
@@ -514,7 +514,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T22:40:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541113,
@@ -547,7 +547,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T22:41:23Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541114,
@@ -580,7 +580,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T22:41:24Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541115,
@@ -613,7 +613,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T22:38:44Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541116,
@@ -646,7 +646,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T22:41:24Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541110,
@@ -679,7 +679,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T22:56:42Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541117,
@@ -712,7 +712,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T21:44:34Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541118,
@@ -745,7 +745,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T21:47:49Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541119,
@@ -778,7 +778,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T21:47:44Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541111,
@@ -811,7 +811,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-25T21:57:31Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541121,
@@ -910,7 +910,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541128,
@@ -943,7 +943,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:01Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541122,
@@ -976,7 +976,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541123,
@@ -1009,7 +1009,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541125,
@@ -1042,7 +1042,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:02Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541127,
@@ -1108,7 +1108,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:02Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541130,
@@ -1141,7 +1141,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:02Z"
+          "lastUpdated": "2026-02-26T01:32:01Z"
         },
         {
           "id": 541131,
@@ -1207,7 +1207,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:03Z"
+          "lastUpdated": "2026-02-26T01:32:03Z"
         },
         {
           "id": 541089,
@@ -1240,7 +1240,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:04Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 541138,
@@ -1867,7 +1867,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T15:21:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 541153,
@@ -2054,7 +2054,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538048,
@@ -2087,7 +2087,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538049,
@@ -2120,7 +2120,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538054,
@@ -2153,7 +2153,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538051,
@@ -2186,7 +2186,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538045,
@@ -2219,7 +2219,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538047,
@@ -2252,7 +2252,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538052,
@@ -2285,7 +2285,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538053,
@@ -2318,7 +2318,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538050,
@@ -2351,7 +2351,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538064,
@@ -2384,7 +2384,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538055,
@@ -2549,7 +2549,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538056,
@@ -2648,7 +2648,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538057,
@@ -2780,7 +2780,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538074,
@@ -2813,7 +2813,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:04Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 538066,
@@ -2846,7 +2846,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-22T15:08:19Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 538067,
@@ -2879,7 +2879,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-22T15:08:19Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 538069,
@@ -2912,7 +2912,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-22T15:08:19Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 538071,
@@ -2945,7 +2945,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 538072,
@@ -2978,7 +2978,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 538073,
@@ -3066,7 +3066,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:36:02Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552062,
@@ -3099,7 +3099,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T22:50:42Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552066,
@@ -3132,7 +3132,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T22:52:02Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552067,
@@ -3165,7 +3165,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T22:53:22Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552065,
@@ -3198,7 +3198,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T19:49:20Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552060,
@@ -3231,7 +3231,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-25T22:06:49Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552061,
@@ -3264,7 +3264,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-25T21:59:30Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552063,
@@ -3287,7 +3287,7 @@
           },
           "score": {
             "winner": "HOME_TEAM",
-            "duration": "REGULAR",
+            "duration": "EXTRA_TIME",
             "fullTime": {
               "home": 3,
               "away": 2
@@ -3297,7 +3297,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-25T22:42:50Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552068,
@@ -3307,10 +3307,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 524,
+            "name": "Paris Saint-Germain FC",
+            "shortName": "PSG",
+            "tla": "PSG"
           },
           "awayTeam": {
             "id": null,
@@ -3330,7 +3330,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-30T15:21:09Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552069,
@@ -3340,10 +3340,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 610,
+            "name": "Galatasaray SK",
+            "shortName": "Galatasaray",
+            "tla": "GAL"
           },
           "awayTeam": {
             "id": null,
@@ -3363,7 +3363,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-30T15:21:09Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552070,
@@ -3373,10 +3373,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 86,
+            "name": "Real Madrid CF",
+            "shortName": "Real Madrid",
+            "tla": "RMA"
           },
           "awayTeam": {
             "id": null,
@@ -3396,7 +3396,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-30T15:21:09Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552071,
@@ -3406,10 +3406,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 102,
+            "name": "Atalanta BC",
+            "shortName": "Atalanta",
+            "tla": "ATA"
           },
           "awayTeam": {
             "id": null,
@@ -3429,7 +3429,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-30T15:21:09Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 552072,
@@ -3439,10 +3439,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW"
           },
           "awayTeam": {
             "id": null,
@@ -3462,7 +3462,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-08-29T05:43:26Z"
+          "lastUpdated": "2026-02-25T05:20:55Z"
         },
         {
           "id": 552073,
@@ -3472,10 +3472,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 78,
+            "name": "Club Atlético de Madrid",
+            "shortName": "Atleti",
+            "tla": "ATL"
           },
           "awayTeam": {
             "id": null,
@@ -3495,7 +3495,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-08-29T05:43:26Z"
+          "lastUpdated": "2026-02-25T05:20:55Z"
         },
         {
           "id": 552074,
@@ -3505,10 +3505,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 5721,
+            "name": "FK Bodø/Glimt",
+            "shortName": "Bodø/Glimt",
+            "tla": "FK"
           },
           "awayTeam": {
             "id": null,
@@ -3528,7 +3528,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-08-29T05:43:26Z"
+          "lastUpdated": "2026-02-25T05:20:55Z"
         },
         {
           "id": 552075,
@@ -3538,10 +3538,10 @@
           "stage": "LAST_16",
           "group": "",
           "homeTeam": {
-            "id": null,
-            "name": "",
-            "shortName": "",
-            "tla": ""
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04"
           },
           "awayTeam": {
             "id": null,
@@ -3561,7 +3561,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-08-29T05:43:26Z"
+          "lastUpdated": "2026-02-25T05:20:55Z"
         }
       ]
     },
@@ -3616,7 +3616,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542610,
@@ -3649,7 +3649,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542606,
@@ -3682,7 +3682,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542608,
@@ -3715,7 +3715,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542604,
@@ -3748,7 +3748,7 @@
               "away": 3
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542605,
@@ -3781,7 +3781,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542607,
@@ -3814,7 +3814,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542611,
@@ -3847,7 +3847,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542609,
@@ -3880,7 +3880,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 542620,
@@ -4529,7 +4529,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540604,
@@ -4562,7 +4562,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540605,
@@ -4595,7 +4595,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540610,
@@ -4628,7 +4628,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540611,
@@ -4661,7 +4661,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540606,
@@ -4694,7 +4694,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540609,
@@ -4727,7 +4727,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540607,
@@ -4760,7 +4760,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540608,
@@ -4793,7 +4793,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540621,
@@ -4958,7 +4958,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540613,
@@ -5024,7 +5024,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540614,
@@ -5123,7 +5123,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-16T15:20:58Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 540627,
@@ -5222,7 +5222,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540628,
@@ -5321,7 +5321,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 540624,
@@ -5420,7 +5420,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         }
       ]
     },
@@ -5475,7 +5475,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537072,
@@ -5508,7 +5508,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537074,
@@ -5541,7 +5541,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537069,
@@ -5574,7 +5574,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537070,
@@ -5607,7 +5607,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537068,
@@ -5640,7 +5640,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537066,
@@ -5673,7 +5673,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537067,
@@ -5706,7 +5706,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537065,
@@ -5739,7 +5739,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537071,
@@ -5772,7 +5772,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 537080,
@@ -6487,7 +6487,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537655,
@@ -6520,7 +6520,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537654,
@@ -6553,7 +6553,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537648,
@@ -6586,7 +6586,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537656,
@@ -6619,7 +6619,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537650,
@@ -6652,7 +6652,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537653,
@@ -6685,7 +6685,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537649,
@@ -6718,7 +6718,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537651,
@@ -6751,7 +6751,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:55Z"
+          "lastUpdated": "2026-02-26T00:20:54Z"
         },
         {
           "id": 537664,
@@ -7400,7 +7400,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544460,
@@ -7433,7 +7433,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544455,
@@ -7466,7 +7466,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544458,
@@ -7499,7 +7499,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544453,
@@ -7532,7 +7532,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544457,
@@ -7565,7 +7565,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544454,
@@ -7598,7 +7598,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544456,
@@ -7631,7 +7631,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544459,
@@ -7664,7 +7664,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544451,
@@ -7697,7 +7697,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544465,
@@ -8027,7 +8027,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544440,
@@ -8060,7 +8060,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-13T15:20:59Z"
+          "lastUpdated": "2026-02-26T01:32:04Z"
         },
         {
           "id": 544479,
@@ -8225,7 +8225,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T20:20:56Z"
+          "lastUpdated": "2026-02-26T00:20:55Z"
         },
         {
           "id": 544477,
@@ -8398,7 +8398,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-26T00:58:04.682Z",
+      "fetchedAt": "2026-02-26T06:45:44.229Z",
       "dateFrom": "2026-02-19",
       "dateTo": "2026-03-12",
       "competitionCount": 8
