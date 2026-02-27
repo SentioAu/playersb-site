@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-26T18:37:17.706Z",
+  "generatedAt": "2026-02-27T00:59:48.838Z",
   "competitions": [
     {
       "competition": {
@@ -19,7 +19,7 @@
         },
         "slug": "championship"
       },
-      "matchCount": 60,
+      "matchCount": 61,
       "matches": [
         {
           "id": 541096,
@@ -2000,6 +2000,39 @@
             }
           },
           "lastUpdated": "2026-02-06T15:20:40Z"
+        },
+        {
+          "id": 541167,
+          "utcDate": "2026-03-13T20:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 404,
+            "name": "Wrexham AFC",
+            "shortName": "Wrexham",
+            "tla": "WRE"
+          },
+          "awayTeam": {
+            "id": 72,
+            "name": "Swansea City AFC",
+            "shortName": "Swansea",
+            "tla": "SWA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-13T15:21:00Z"
         }
       ]
     },
@@ -4496,7 +4529,7 @@
         },
         "slug": "bundesliga"
       },
-      "matchCount": 28,
+      "matchCount": 29,
       "matches": [
         {
           "id": 540612,
@@ -5421,6 +5454,39 @@
             }
           },
           "lastUpdated": "2026-02-26T00:20:54Z"
+        },
+        {
+          "id": 540637,
+          "utcDate": "2026-03-13T19:30:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 18,
+            "name": "Borussia Mönchengladbach",
+            "shortName": "M'gladbach",
+            "tla": "BMG"
+          },
+          "awayTeam": {
+            "id": 20,
+            "name": "FC St. Pauli 1910",
+            "shortName": "St. Pauli",
+            "tla": "STP"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-04T15:21:04Z"
         }
       ]
     },
@@ -6454,7 +6520,7 @@
         },
         "slug": "eredivisie"
       },
-      "matchCount": 27,
+      "matchCount": 28,
       "matches": [
         {
           "id": 537652,
@@ -7346,6 +7412,39 @@
             }
           },
           "lastUpdated": "2026-02-03T15:21:19Z"
+        },
+        {
+          "id": 537680,
+          "utcDate": "2026-03-13T19:00:00Z",
+          "status": "TIMED",
+          "matchday": 27,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 684,
+            "name": "PEC Zwolle",
+            "shortName": "Zwolle",
+            "tla": "ZWO"
+          },
+          "awayTeam": {
+            "id": 677,
+            "name": "FC Groningen",
+            "shortName": "Groningen",
+            "tla": "GRO"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-01-02T15:21:03Z"
         }
       ]
     },
@@ -7367,7 +7466,7 @@
         },
         "slug": "primera-division"
       },
-      "matchCount": 31,
+      "matchCount": 32,
       "matches": [
         {
           "id": 544452,
@@ -8391,6 +8490,39 @@
             }
           },
           "lastUpdated": "2026-02-12T15:21:05Z"
+        },
+        {
+          "id": 544481,
+          "utcDate": "2026-03-13T20:00:00Z",
+          "status": "TIMED",
+          "matchday": 28,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 263,
+            "name": "Deportivo Alavés",
+            "shortName": "Alavés",
+            "tla": "ALA"
+          },
+          "awayTeam": {
+            "id": 94,
+            "name": "Villarreal CF",
+            "shortName": "Villarreal",
+            "tla": "VIL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-19T20:20:59Z"
         }
       ]
     }
@@ -8398,9 +8530,9 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-26T18:37:17.706Z",
-      "dateFrom": "2026-02-19",
-      "dateTo": "2026-03-12",
+      "fetchedAt": "2026-02-27T00:59:48.838Z",
+      "dateFrom": "2026-02-20",
+      "dateTo": "2026-03-13",
       "competitionCount": 8
     }
   }
