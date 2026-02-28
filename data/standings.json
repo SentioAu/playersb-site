@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-27T18:26:44.106Z",
+  "generatedAt": "2026-02-28T00:52:18.266Z",
   "competitions": [
     {
       "competition": {
@@ -143,6 +143,24 @@
             {
               "position": 7,
               "team": {
+                "id": 346,
+                "name": "Watford FC",
+                "tla": "WAT",
+                "crest": "https://crests.football-data.org/346.png"
+              },
+              "playedGames": 35,
+              "won": 13,
+              "draw": 12,
+              "lost": 10,
+              "points": 51,
+              "goalsFor": 45,
+              "goalsAgainst": 41,
+              "goalDifference": 4,
+              "form": ""
+            },
+            {
+              "position": 8,
+              "team": {
                 "id": 340,
                 "name": "Southampton FC",
                 "tla": "SOU",
@@ -159,25 +177,25 @@
               "form": ""
             },
             {
-              "position": 8,
+              "position": 9,
               "team": {
                 "id": 387,
                 "name": "Bristol City FC",
                 "tla": "BRI",
                 "crest": "https://crests.football-data.org/387.png"
               },
-              "playedGames": 34,
+              "playedGames": 35,
               "won": 14,
               "draw": 8,
-              "lost": 12,
+              "lost": 13,
               "points": 50,
-              "goalsFor": 47,
-              "goalsAgainst": 42,
-              "goalDifference": 5,
+              "goalsFor": 48,
+              "goalsAgainst": 44,
+              "goalDifference": 4,
               "form": ""
             },
             {
-              "position": 9,
+              "position": 10,
               "team": {
                 "id": 1081,
                 "name": "Preston North End FC",
@@ -195,7 +213,7 @@
               "form": ""
             },
             {
-              "position": 10,
+              "position": 11,
               "team": {
                 "id": 332,
                 "name": "Birmingham City FC",
@@ -213,7 +231,7 @@
               "form": ""
             },
             {
-              "position": 11,
+              "position": 12,
               "team": {
                 "id": 342,
                 "name": "Derby County FC",
@@ -228,24 +246,6 @@
               "goalsFor": 49,
               "goalsAgainst": 45,
               "goalDifference": 4,
-              "form": ""
-            },
-            {
-              "position": 12,
-              "team": {
-                "id": 346,
-                "name": "Watford FC",
-                "tla": "WAT",
-                "crest": "https://crests.football-data.org/346.png"
-              },
-              "playedGames": 34,
-              "won": 12,
-              "draw": 12,
-              "lost": 10,
-              "points": 48,
-              "goalsFor": 43,
-              "goalsAgainst": 40,
-              "goalDifference": 3,
               "form": ""
             },
             {
@@ -543,14 +543,14 @@
                 "tla": "AVL",
                 "crest": "https://crests.football-data.org/58.png"
               },
-              "playedGames": 27,
+              "playedGames": 28,
               "won": 15,
               "draw": 6,
-              "lost": 6,
+              "lost": 7,
               "points": 51,
               "goalsFor": 38,
-              "goalsAgainst": 28,
-              "goalDifference": 10,
+              "goalsAgainst": 30,
+              "goalDifference": 8,
               "form": ""
             },
             {
@@ -849,14 +849,14 @@
                 "tla": "WOL",
                 "crest": "https://crests.football-data.org/76.png"
               },
-              "playedGames": 28,
-              "won": 1,
+              "playedGames": 29,
+              "won": 2,
               "draw": 7,
               "lost": 20,
-              "points": 10,
-              "goalsFor": 18,
+              "points": 13,
+              "goalsFor": 20,
               "goalsAgainst": 51,
-              "goalDifference": -33,
+              "goalDifference": -31,
               "form": ""
             }
           ]
@@ -1603,13 +1603,13 @@
                 "tla": "RCL",
                 "crest": "https://crests.football-data.org/546.png"
               },
-              "playedGames": 23,
+              "playedGames": 24,
               "won": 17,
-              "draw": 1,
+              "draw": 2,
               "lost": 5,
-              "points": 52,
-              "goalsFor": 44,
-              "goalsAgainst": 20,
+              "points": 53,
+              "goalsFor": 45,
+              "goalsAgainst": 21,
               "goalDifference": 24,
               "form": ""
             },
@@ -1693,13 +1693,13 @@
                 "tla": "RC",
                 "crest": "https://crests.football-data.org/576.png"
               },
-              "playedGames": 23,
+              "playedGames": 24,
               "won": 10,
-              "draw": 4,
+              "draw": 5,
               "lost": 9,
-              "points": 34,
-              "goalsFor": 39,
-              "goalsAgainst": 30,
+              "points": 35,
+              "goalsFor": 40,
+              "goalsAgainst": 31,
               "goalDifference": 9,
               "form": ""
             },
@@ -2083,6 +2083,24 @@
             {
               "position": 9,
               "team": {
+                "id": 16,
+                "name": "FC Augsburg",
+                "tla": "FCA",
+                "crest": "https://crests.football-data.org/16.png"
+              },
+              "playedGames": 24,
+              "won": 9,
+              "draw": 4,
+              "lost": 11,
+              "points": 31,
+              "goalsFor": 30,
+              "goalsAgainst": 41,
+              "goalDifference": -11,
+              "form": ""
+            },
+            {
+              "position": 10,
+              "team": {
                 "id": 28,
                 "name": "1. FC Union Berlin",
                 "tla": "UNB",
@@ -2096,24 +2114,6 @@
               "goalsFor": 29,
               "goalsAgainst": 37,
               "goalDifference": -8,
-              "form": ""
-            },
-            {
-              "position": 10,
-              "team": {
-                "id": 16,
-                "name": "FC Augsburg",
-                "tla": "FCA",
-                "crest": "https://crests.football-data.org/16.png"
-              },
-              "playedGames": 23,
-              "won": 8,
-              "draw": 4,
-              "lost": 11,
-              "points": 28,
-              "goalsFor": 28,
-              "goalsAgainst": 41,
-              "goalDifference": -13,
               "form": ""
             },
             {
@@ -2142,14 +2142,14 @@
                 "tla": "KOE",
                 "crest": "https://crests.football-data.org/1.png"
               },
-              "playedGames": 23,
+              "playedGames": 24,
               "won": 6,
               "draw": 6,
-              "lost": 11,
+              "lost": 12,
               "points": 24,
               "goalsFor": 33,
-              "goalsAgainst": 39,
-              "goalDifference": -6,
+              "goalsAgainst": 41,
+              "goalDifference": -8,
               "form": ""
             },
             {
@@ -2478,6 +2478,24 @@
             {
               "position": 11,
               "team": {
+                "id": 112,
+                "name": "Parma Calcio 1913",
+                "tla": "PAR",
+                "crest": "https://crests.football-data.org/112.png"
+              },
+              "playedGames": 27,
+              "won": 8,
+              "draw": 9,
+              "lost": 10,
+              "points": 33,
+              "goalsFor": 20,
+              "goalsAgainst": 32,
+              "goalDifference": -12,
+              "form": ""
+            },
+            {
+              "position": 12,
+              "team": {
                 "id": 115,
                 "name": "Udinese Calcio",
                 "tla": "UDI",
@@ -2494,24 +2512,6 @@
               "form": ""
             },
             {
-              "position": 12,
-              "team": {
-                "id": 112,
-                "name": "Parma Calcio 1913",
-                "tla": "PAR",
-                "crest": "https://crests.football-data.org/112.png"
-              },
-              "playedGames": 26,
-              "won": 8,
-              "draw": 8,
-              "lost": 10,
-              "points": 32,
-              "goalsFor": 19,
-              "goalsAgainst": 31,
-              "goalDifference": -12,
-              "form": ""
-            },
-            {
               "position": 13,
               "team": {
                 "id": 104,
@@ -2519,13 +2519,13 @@
                 "tla": "CAG",
                 "crest": "https://crests.football-data.org/104.png"
               },
-              "playedGames": 26,
+              "playedGames": 27,
               "won": 7,
-              "draw": 8,
+              "draw": 9,
               "lost": 11,
-              "points": 29,
-              "goalsFor": 28,
-              "goalsAgainst": 35,
+              "points": 30,
+              "goalsFor": 29,
+              "goalsAgainst": 36,
               "goalDifference": -7,
               "form": ""
             },
@@ -2968,14 +2968,14 @@
                 "tla": "NAC",
                 "crest": "https://crests.football-data.org/681.png"
               },
-              "playedGames": 24,
+              "playedGames": 25,
               "won": 5,
               "draw": 7,
-              "lost": 12,
+              "lost": 13,
               "points": 22,
               "goalsFor": 25,
-              "goalsAgainst": 36,
-              "goalDifference": -11,
+              "goalsAgainst": 39,
+              "goalDifference": -14,
               "form": ""
             },
             {
@@ -2986,14 +2986,14 @@
                 "tla": "TEL",
                 "crest": "https://crests.football-data.org/1912.png"
               },
-              "playedGames": 24,
-              "won": 3,
+              "playedGames": 25,
+              "won": 4,
               "draw": 9,
               "lost": 12,
-              "points": 18,
-              "goalsFor": 28,
+              "points": 21,
+              "goalsFor": 31,
               "goalsAgainst": 41,
-              "goalDifference": -13,
+              "goalDifference": -10,
               "form": ""
             },
             {
@@ -3291,14 +3291,14 @@
                 "tla": "ALA",
                 "crest": "https://crests.football-data.org/263.png"
               },
-              "playedGames": 25,
+              "playedGames": 26,
               "won": 7,
               "draw": 6,
-              "lost": 12,
+              "lost": 13,
               "points": 27,
               "goalsFor": 23,
-              "goalsAgainst": 32,
-              "goalDifference": -9,
+              "goalsAgainst": 34,
+              "goalDifference": -11,
               "form": ""
             },
             {
@@ -3381,14 +3381,14 @@
                 "tla": "LEV",
                 "crest": "https://crests.football-data.org/88.png"
               },
-              "playedGames": 25,
-              "won": 4,
+              "playedGames": 26,
+              "won": 5,
               "draw": 6,
               "lost": 15,
-              "points": 18,
-              "goalsFor": 26,
+              "points": 21,
+              "goalsFor": 28,
               "goalsAgainst": 44,
-              "goalDifference": -18,
+              "goalDifference": -16,
               "form": ""
             },
             {
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-27T18:26:44.106Z",
+      "fetchedAt": "2026-02-28T00:52:18.266Z",
       "competitionCount": 8
     }
   }

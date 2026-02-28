@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-27T18:26:44.106Z",
+  "generatedAt": "2026-02-28T00:52:18.266Z",
   "competitions": [
     {
       "competition": {
@@ -19,41 +19,8 @@
         },
         "slug": "championship"
       },
-      "matchCount": 61,
+      "matchCount": 70,
       "matches": [
-        {
-          "id": 541096,
-          "utcDate": "2026-02-20T20:00:00Z",
-          "status": "FINISHED",
-          "matchday": 33,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 59,
-            "name": "Blackburn Rovers FC",
-            "shortName": "Blackburn",
-            "tla": "BLA"
-          },
-          "awayTeam": {
-            "id": 1081,
-            "name": "Preston North End FC",
-            "shortName": "Preston NE",
-            "tla": "PNE"
-          },
-          "score": {
-            "winner": "HOME_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 1,
-              "away": 0
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-27T00:20:54Z"
-        },
         {
           "id": 541097,
           "utcDate": "2026-02-21T12:30:00Z",
@@ -2033,6 +2000,336 @@
             }
           },
           "lastUpdated": "2026-02-13T15:21:00Z"
+        },
+        {
+          "id": 541157,
+          "utcDate": "2026-03-14T12:30:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 1076,
+            "name": "Coventry City FC",
+            "shortName": "Coventry City",
+            "tla": "COV"
+          },
+          "awayTeam": {
+            "id": 340,
+            "name": "Southampton FC",
+            "shortName": "Southampton",
+            "tla": "SOU"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-13T15:21:00Z"
+        },
+        {
+          "id": 541159,
+          "utcDate": "2026-03-14T12:30:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 343,
+            "name": "Middlesbrough FC",
+            "shortName": "Middlesbrough",
+            "tla": "MID"
+          },
+          "awayTeam": {
+            "id": 387,
+            "name": "Bristol City FC",
+            "shortName": "Bristol City",
+            "tla": "BRI"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-13T15:21:00Z"
+        },
+        {
+          "id": 541162,
+          "utcDate": "2026-03-14T12:30:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 1082,
+            "name": "Oxford United FC",
+            "shortName": "Oxford United",
+            "tla": "OXF"
+          },
+          "awayTeam": {
+            "id": 348,
+            "name": "Charlton Athletic FC",
+            "shortName": "Charlton",
+            "tla": "CHA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-13T15:21:00Z"
+        },
+        {
+          "id": 541156,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 332,
+            "name": "Birmingham City FC",
+            "shortName": "Birmingham",
+            "tla": "BIR"
+          },
+          "awayTeam": {
+            "id": 356,
+            "name": "Sheffield United FC",
+            "shortName": "Sheffield Utd",
+            "tla": "SHE"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:26:51Z"
+        },
+        {
+          "id": 541158,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 338,
+            "name": "Leicester City FC",
+            "shortName": "Leicester City",
+            "tla": "LEI"
+          },
+          "awayTeam": {
+            "id": 69,
+            "name": "Queens Park Rangers FC",
+            "shortName": "QPR",
+            "tla": "QPR"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:26:51Z"
+        },
+        {
+          "id": 541160,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 384,
+            "name": "Millwall FC",
+            "shortName": "Millwall",
+            "tla": "MIL"
+          },
+          "awayTeam": {
+            "id": 59,
+            "name": "Blackburn Rovers FC",
+            "shortName": "Blackburn",
+            "tla": "BLA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:26:51Z"
+        },
+        {
+          "id": 541161,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 68,
+            "name": "Norwich City FC",
+            "shortName": "Norwich",
+            "tla": "NOR"
+          },
+          "awayTeam": {
+            "id": 1081,
+            "name": "Preston North End FC",
+            "shortName": "Preston NE",
+            "tla": "PNE"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-27T00:20:54Z"
+        },
+        {
+          "id": 541164,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 345,
+            "name": "Sheffield Wednesday FC",
+            "shortName": "Sheffield Wed",
+            "tla": "SHE"
+          },
+          "awayTeam": {
+            "id": 349,
+            "name": "Ipswich Town FC",
+            "shortName": "Ipswich Town",
+            "tla": "IPS"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:26:49Z"
+        },
+        {
+          "id": 541165,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 70,
+            "name": "Stoke City FC",
+            "shortName": "Stoke",
+            "tla": "STK"
+          },
+          "awayTeam": {
+            "id": 346,
+            "name": "Watford FC",
+            "shortName": "Watford",
+            "tla": "WAT"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:26:49Z"
+        },
+        {
+          "id": 541166,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 38,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 74,
+            "name": "West Bromwich Albion FC",
+            "shortName": "West Brom",
+            "tla": "WBA"
+          },
+          "awayTeam": {
+            "id": 322,
+            "name": "Hull City AFC",
+            "shortName": "Hull City",
+            "tla": "HUL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:26:49Z"
         }
       ]
     },
@@ -2054,7 +2351,7 @@
         },
         "slug": "premier-league"
       },
-      "matchCount": 30,
+      "matchCount": 35,
       "matches": [
         {
           "id": 538046,
@@ -3045,6 +3342,171 @@
             }
           },
           "lastUpdated": "2026-02-27T01:32:04Z"
+        },
+        {
+          "id": 538084,
+          "utcDate": "2026-03-14T12:30:00Z",
+          "status": "TIMED",
+          "matchday": 30,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 563,
+            "name": "West Ham United FC",
+            "shortName": "West Ham",
+            "tla": "WHU"
+          },
+          "awayTeam": {
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-27T00:20:54Z"
+        },
+        {
+          "id": 538075,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 30,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 71,
+            "name": "Sunderland AFC",
+            "shortName": "Sunderland",
+            "tla": "SUN"
+          },
+          "awayTeam": {
+            "id": 397,
+            "name": "Brighton & Hove Albion FC",
+            "shortName": "Brighton Hove",
+            "tla": "BHA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-12-29T15:20:57Z"
+        },
+        {
+          "id": 538076,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 30,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY"
+          },
+          "awayTeam": {
+            "id": 341,
+            "name": "Leeds United FC",
+            "shortName": "Leeds United",
+            "tla": "LEE"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-27T00:20:54Z"
+        },
+        {
+          "id": 538079,
+          "utcDate": "2026-03-14T15:00:00Z",
+          "status": "TIMED",
+          "matchday": 30,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 328,
+            "name": "Burnley FC",
+            "shortName": "Burnley",
+            "tla": "BUR"
+          },
+          "awayTeam": {
+            "id": 1044,
+            "name": "AFC Bournemouth",
+            "shortName": "Bournemouth",
+            "tla": "BOU"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-12-29T15:20:57Z"
+        },
+        {
+          "id": 538080,
+          "utcDate": "2026-03-14T17:30:00Z",
+          "status": "TIMED",
+          "matchday": 30,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE"
+          },
+          "awayTeam": {
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-01-22T15:08:19Z"
         }
       ]
     },
@@ -3616,41 +4078,8 @@
         },
         "slug": "ligue-1"
       },
-      "matchCount": 27,
+      "matchCount": 35,
       "matches": [
-        {
-          "id": 542612,
-          "utcDate": "2026-02-20T19:45:00Z",
-          "status": "FINISHED",
-          "matchday": 23,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 512,
-            "name": "Stade Brestois 29",
-            "shortName": "Brest",
-            "tla": "BRE"
-          },
-          "awayTeam": {
-            "id": 516,
-            "name": "Olympique de Marseille",
-            "shortName": "Marseille",
-            "tla": "MAR"
-          },
-          "score": {
-            "winner": "HOME_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 2,
-              "away": 0
-            },
-            "halfTime": {
-              "home": 2,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-27T00:20:53Z"
-        },
         {
           "id": 542610,
           "utcDate": "2026-02-21T16:00:00Z",
@@ -4508,6 +4937,303 @@
             }
           },
           "lastUpdated": "2026-02-08T00:20:52Z"
+        },
+        {
+          "id": 542631,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 533,
+            "name": "Le Havre AC",
+            "shortName": "Le Havre",
+            "tla": "HAC"
+          },
+          "awayTeam": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:25Z"
+        },
+        {
+          "id": 542632,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM"
+          },
+          "awayTeam": {
+            "id": 512,
+            "name": "Stade Brestois 29",
+            "shortName": "Brest",
+            "tla": "BRE"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
+        },
+        {
+          "id": 542633,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 525,
+            "name": "FC Lorient",
+            "shortName": "Lorient",
+            "tla": "FCL"
+          },
+          "awayTeam": {
+            "id": 546,
+            "name": "Racing Club de Lens",
+            "shortName": "RC Lens",
+            "tla": "RCL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
+        },
+        {
+          "id": 542634,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 545,
+            "name": "FC Metz",
+            "shortName": "FC Metz",
+            "tla": "FCM"
+          },
+          "awayTeam": {
+            "id": 511,
+            "name": "Toulouse FC",
+            "shortName": "Toulouse",
+            "tla": "TOU"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
+        },
+        {
+          "id": 542635,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 516,
+            "name": "Olympique de Marseille",
+            "shortName": "Marseille",
+            "tla": "MAR"
+          },
+          "awayTeam": {
+            "id": 519,
+            "name": "AJ Auxerre",
+            "shortName": "Auxerre",
+            "tla": "AJA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
+        },
+        {
+          "id": 542636,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 524,
+            "name": "Paris Saint-Germain FC",
+            "shortName": "PSG",
+            "tla": "PSG"
+          },
+          "awayTeam": {
+            "id": 543,
+            "name": "FC Nantes",
+            "shortName": "Nantes",
+            "tla": "NAN"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-29T05:20:57Z"
+        },
+        {
+          "id": 542637,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC"
+          },
+          "awayTeam": {
+            "id": 1045,
+            "name": "Paris FC",
+            "shortName": "Paris FC",
+            "tla": "PFC"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
+        },
+        {
+          "id": 542638,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 532,
+            "name": "Angers SCO",
+            "shortName": "Angers SCO",
+            "tla": "ANG"
+          },
+          "awayTeam": {
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
+        },
+        {
+          "id": 542639,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN"
+          },
+          "awayTeam": {
+            "id": 521,
+            "name": "Lille OSC",
+            "shortName": "Lille",
+            "tla": "LIL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-13T08:22:24Z"
         }
       ]
     },
@@ -4529,41 +5255,8 @@
         },
         "slug": "bundesliga"
       },
-      "matchCount": 29,
+      "matchCount": 33,
       "matches": [
-        {
-          "id": 540612,
-          "utcDate": "2026-02-20T19:30:00Z",
-          "status": "FINISHED",
-          "matchday": 23,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 15,
-            "name": "1. FSV Mainz 05",
-            "shortName": "Mainz",
-            "tla": "M05"
-          },
-          "awayTeam": {
-            "id": 7,
-            "name": "Hamburger SV",
-            "shortName": "HSV",
-            "tla": "HSV"
-          },
-          "score": {
-            "winner": "DRAW",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 1,
-              "away": 1
-            },
-            "halfTime": {
-              "home": 1,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-27T00:20:53Z"
-        },
         {
           "id": 540604,
           "utcDate": "2026-02-21T14:30:00Z",
@@ -5487,6 +6180,171 @@
             }
           },
           "lastUpdated": "2026-02-04T15:21:04Z"
+        },
+        {
+          "id": 540631,
+          "utcDate": "2026-03-14T14:30:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04"
+          },
+          "awayTeam": {
+            "id": 5,
+            "name": "FC Bayern München",
+            "shortName": "Bayern",
+            "tla": "FCB"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-04T15:21:04Z"
+        },
+        {
+          "id": 540634,
+          "utcDate": "2026-03-14T14:30:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 2,
+            "name": "TSG 1899 Hoffenheim",
+            "shortName": "Hoffenheim",
+            "tla": "TSG"
+          },
+          "awayTeam": {
+            "id": 11,
+            "name": "VfL Wolfsburg",
+            "shortName": "Wolfsburg",
+            "tla": "WOB"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-27T00:20:53Z"
+        },
+        {
+          "id": 540635,
+          "utcDate": "2026-03-14T14:30:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 4,
+            "name": "Borussia Dortmund",
+            "shortName": "Dortmund",
+            "tla": "BVB"
+          },
+          "awayTeam": {
+            "id": 16,
+            "name": "FC Augsburg",
+            "shortName": "Augsburg",
+            "tla": "FCA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-04T15:21:04Z"
+        },
+        {
+          "id": 540638,
+          "utcDate": "2026-03-14T14:30:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE"
+          },
+          "awayTeam": {
+            "id": 44,
+            "name": "1. FC Heidenheim 1846",
+            "shortName": "Heidenheim",
+            "tla": "HEI"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-04T15:21:04Z"
+        },
+        {
+          "id": 540639,
+          "utcDate": "2026-03-14T17:30:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 7,
+            "name": "Hamburger SV",
+            "shortName": "HSV",
+            "tla": "HSV"
+          },
+          "awayTeam": {
+            "id": 1,
+            "name": "1. FC Köln",
+            "shortName": "1. FC Köln",
+            "tla": "KOE"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-04T15:21:04Z"
         }
       ]
     },
@@ -5508,41 +6366,8 @@
         },
         "slug": "serie-a"
       },
-      "matchCount": 30,
+      "matchCount": 39,
       "matches": [
-        {
-          "id": 537073,
-          "utcDate": "2026-02-20T19:45:00Z",
-          "status": "FINISHED",
-          "matchday": 26,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 471,
-            "name": "US Sassuolo Calcio",
-            "shortName": "Sassuolo",
-            "tla": "SAS"
-          },
-          "awayTeam": {
-            "id": 450,
-            "name": "Hellas Verona FC",
-            "shortName": "Verona",
-            "tla": "HVE"
-          },
-          "score": {
-            "winner": "HOME_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 3,
-              "away": 0
-            },
-            "halfTime": {
-              "home": 2,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-27T00:20:54Z"
-        },
         {
           "id": 537072,
           "utcDate": "2026-02-21T14:00:00Z",
@@ -6499,6 +7324,336 @@
             }
           },
           "lastUpdated": "2025-07-04T12:08:07Z"
+        },
+        {
+          "id": 537095,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 7397,
+            "name": "Como 1907",
+            "shortName": "Como 1907",
+            "tla": "COM"
+          },
+          "awayTeam": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:06Z"
+        },
+        {
+          "id": 537096,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 586,
+            "name": "Torino FC",
+            "shortName": "Torino",
+            "tla": "TOR"
+          },
+          "awayTeam": {
+            "id": 112,
+            "name": "Parma Calcio 1913",
+            "shortName": "Parma",
+            "tla": "PAR"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:07Z"
+        },
+        {
+          "id": 537097,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 450,
+            "name": "Hellas Verona FC",
+            "shortName": "Verona",
+            "tla": "HVE"
+          },
+          "awayTeam": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:07Z"
+        },
+        {
+          "id": 537098,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 108,
+            "name": "FC Internazionale Milano",
+            "shortName": "Inter",
+            "tla": "INT"
+          },
+          "awayTeam": {
+            "id": 102,
+            "name": "Atalanta BC",
+            "shortName": "Atalanta",
+            "tla": "ATA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-29T05:20:57Z"
+        },
+        {
+          "id": 537099,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 110,
+            "name": "SS Lazio",
+            "shortName": "Lazio",
+            "tla": "LAZ"
+          },
+          "awayTeam": {
+            "id": 98,
+            "name": "AC Milan",
+            "shortName": "Milan",
+            "tla": "MIL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:07Z"
+        },
+        {
+          "id": 537100,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 487,
+            "name": "AC Pisa 1909",
+            "shortName": "AC Pisa",
+            "tla": "PIS"
+          },
+          "awayTeam": {
+            "id": 104,
+            "name": "Cagliari Calcio",
+            "shortName": "Cagliari",
+            "tla": "CAG"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:05Z"
+        },
+        {
+          "id": 537101,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 471,
+            "name": "US Sassuolo Calcio",
+            "shortName": "Sassuolo",
+            "tla": "SAS"
+          },
+          "awayTeam": {
+            "id": 103,
+            "name": "Bologna FC 1909",
+            "shortName": "Bologna",
+            "tla": "BOL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:05Z"
+        },
+        {
+          "id": 537102,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 113,
+            "name": "SSC Napoli",
+            "shortName": "Napoli",
+            "tla": "NAP"
+          },
+          "awayTeam": {
+            "id": 5890,
+            "name": "US Lecce",
+            "shortName": "Lecce",
+            "tla": "USL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:07Z"
+        },
+        {
+          "id": 537103,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 115,
+            "name": "Udinese Calcio",
+            "shortName": "Udinese",
+            "tla": "UDI"
+          },
+          "awayTeam": {
+            "id": 109,
+            "name": "Juventus FC",
+            "shortName": "Juventus",
+            "tla": "JUV"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-08-29T05:20:57Z"
+        },
+        {
+          "id": 537104,
+          "utcDate": "2026-03-15T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 457,
+            "name": "US Cremonese",
+            "shortName": "Cremonese",
+            "tla": "CRE"
+          },
+          "awayTeam": {
+            "id": 99,
+            "name": "ACF Fiorentina",
+            "shortName": "Fiorentina",
+            "tla": "FIO"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2025-07-04T12:08:06Z"
         }
       ]
     },
@@ -6520,41 +7675,8 @@
         },
         "slug": "eredivisie"
       },
-      "matchCount": 28,
+      "matchCount": 31,
       "matches": [
-        {
-          "id": 537652,
-          "utcDate": "2026-02-20T19:00:00Z",
-          "status": "FINISHED",
-          "matchday": 24,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 1920,
-            "name": "Fortuna Sittard",
-            "shortName": "Sittard",
-            "tla": "SIT"
-          },
-          "awayTeam": {
-            "id": 670,
-            "name": "SBV Excelsior",
-            "shortName": "Excelsior",
-            "tla": "EXC"
-          },
-          "score": {
-            "winner": "HOME_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 2,
-              "away": 1
-            },
-            "halfTime": {
-              "home": 1,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-27T00:20:53Z"
-        },
         {
           "id": 537655,
           "utcDate": "2026-02-21T17:45:00Z",
@@ -7445,6 +8567,138 @@
             }
           },
           "lastUpdated": "2026-01-02T15:21:03Z"
+        },
+        {
+          "id": 537677,
+          "utcDate": "2026-03-14T15:30:00Z",
+          "status": "TIMED",
+          "matchday": 27,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 1919,
+            "name": "FC Volendam",
+            "shortName": "Volendam",
+            "tla": "VOL"
+          },
+          "awayTeam": {
+            "id": 1920,
+            "name": "Fortuna Sittard",
+            "shortName": "Sittard",
+            "tla": "SIT"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-01-02T15:21:03Z"
+        },
+        {
+          "id": 537681,
+          "utcDate": "2026-03-14T17:45:00Z",
+          "status": "TIMED",
+          "matchday": 27,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 674,
+            "name": "PSV",
+            "shortName": "PSV",
+            "tla": "PSV"
+          },
+          "awayTeam": {
+            "id": 1915,
+            "name": "NEC",
+            "shortName": "NEC",
+            "tla": "NEC"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-01-02T15:21:03Z"
+        },
+        {
+          "id": 537682,
+          "utcDate": "2026-03-14T19:00:00Z",
+          "status": "TIMED",
+          "matchday": 27,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 673,
+            "name": "SC Heerenveen",
+            "shortName": "Heerenveen",
+            "tla": "HEE"
+          },
+          "awayTeam": {
+            "id": 1912,
+            "name": "Telstar 1963",
+            "shortName": "Telstar",
+            "tla": "TEL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-01-02T15:21:03Z"
+        },
+        {
+          "id": 537675,
+          "utcDate": "2026-03-14T20:00:00Z",
+          "status": "TIMED",
+          "matchday": 27,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 678,
+            "name": "AFC Ajax",
+            "shortName": "Ajax",
+            "tla": "AJA"
+          },
+          "awayTeam": {
+            "id": 6806,
+            "name": "Sparta Rotterdam",
+            "shortName": "Sparta",
+            "tla": "SPA"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-01-02T15:21:03Z"
         }
       ]
     },
@@ -7466,41 +8720,8 @@
         },
         "slug": "primera-division"
       },
-      "matchCount": 32,
+      "matchCount": 35,
       "matches": [
-        {
-          "id": 544452,
-          "utcDate": "2026-02-20T20:00:00Z",
-          "status": "FINISHED",
-          "matchday": 25,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 77,
-            "name": "Athletic Club",
-            "shortName": "Athletic",
-            "tla": "ATH"
-          },
-          "awayTeam": {
-            "id": 285,
-            "name": "Elche CF",
-            "shortName": "Elche",
-            "tla": "ELC"
-          },
-          "score": {
-            "winner": "HOME_TEAM",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": 2,
-              "away": 1
-            },
-            "halfTime": {
-              "home": 0,
-              "away": 0
-            }
-          },
-          "lastUpdated": "2026-02-27T00:20:53Z"
-        },
         {
           "id": 544460,
           "utcDate": "2026-02-21T13:00:00Z",
@@ -8523,6 +9744,138 @@
             }
           },
           "lastUpdated": "2026-02-19T20:20:59Z"
+        },
+        {
+          "id": 544486,
+          "utcDate": "2026-03-14T13:00:00Z",
+          "status": "TIMED",
+          "matchday": 28,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 298,
+            "name": "Girona FC",
+            "shortName": "Girona",
+            "tla": "GIR"
+          },
+          "awayTeam": {
+            "id": 77,
+            "name": "Athletic Club",
+            "shortName": "Athletic",
+            "tla": "ATH"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-19T20:20:59Z"
+        },
+        {
+          "id": 544482,
+          "utcDate": "2026-03-14T15:15:00Z",
+          "status": "TIMED",
+          "matchday": 28,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 78,
+            "name": "Club Atlético de Madrid",
+            "shortName": "Atleti",
+            "tla": "ATL"
+          },
+          "awayTeam": {
+            "id": 82,
+            "name": "Getafe CF",
+            "shortName": "Getafe",
+            "tla": "GET"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-19T20:20:59Z"
+        },
+        {
+          "id": 544485,
+          "utcDate": "2026-03-14T17:30:00Z",
+          "status": "TIMED",
+          "matchday": 28,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 1048,
+            "name": "Real Oviedo",
+            "shortName": "Real Oviedo",
+            "tla": "OVI"
+          },
+          "awayTeam": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-19T20:20:59Z"
+        },
+        {
+          "id": 544487,
+          "utcDate": "2026-03-14T20:00:00Z",
+          "status": "TIMED",
+          "matchday": 28,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 86,
+            "name": "Real Madrid CF",
+            "shortName": "Real Madrid",
+            "tla": "RMA"
+          },
+          "awayTeam": {
+            "id": 285,
+            "name": "Elche CF",
+            "shortName": "Elche",
+            "tla": "ELC"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-02-27T00:20:53Z"
         }
       ]
     }
@@ -8530,9 +9883,9 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-27T18:26:44.106Z",
-      "dateFrom": "2026-02-20",
-      "dateTo": "2026-03-13",
+      "fetchedAt": "2026-02-28T00:52:18.266Z",
+      "dateFrom": "2026-02-21",
+      "dateTo": "2026-03-14",
       "competitionCount": 8
     }
   }

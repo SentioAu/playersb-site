@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-27T18:26:48.412Z",
+  "generated_at": "2026-02-28T00:52:23.850Z",
   "players": [
     {
       "id": "4863",
@@ -119,17 +119,6 @@
       "minutes": 1980,
       "goals": 8,
       "assists": 1,
-      "shots": 0,
-      "shotsOnTarget": 0
-    },
-    {
-      "id": "6389",
-      "name": "Brandon Thomas-Asante",
-      "position": "N/A",
-      "team": "Coventry City FC",
-      "minutes": 1980,
-      "goals": 10,
-      "assists": 4,
       "shots": 0,
       "shotsOnTarget": 0
     },
@@ -424,8 +413,8 @@
       "name": "Joaquín Panichelli",
       "position": "N/A",
       "team": "RC Strasbourg Alsace",
-      "minutes": 2070,
-      "goals": 13,
+      "minutes": 2160,
+      "goals": 14,
       "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
@@ -721,7 +710,7 @@
       "name": "Odsonne Edouard",
       "position": "N/A",
       "team": "Racing Club de Lens",
-      "minutes": 1710,
+      "minutes": 1800,
       "goals": 9,
       "assists": 3,
       "shots": 0,
@@ -812,6 +801,17 @@
       "minutes": 1980,
       "goals": 10,
       "assists": 1,
+      "shots": 0,
+      "shotsOnTarget": 0
+    },
+    {
+      "id": "5812",
+      "name": "Scott Twine",
+      "position": "N/A",
+      "team": "Bristol City FC",
+      "minutes": 3060,
+      "goals": 10,
+      "assists": 6,
       "shots": 0,
       "shotsOnTarget": 0
     },
@@ -941,7 +941,7 @@
       "name": "Wesley Saïd",
       "position": "N/A",
       "team": "Racing Club de Lens",
-      "minutes": 1980,
+      "minutes": 2070,
       "goals": 10,
       "assists": 2,
       "shots": 0,

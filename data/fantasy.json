@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-27T18:26:44.106Z",
+  "generatedAt": "2026-02-28T00:52:18.266Z",
   "players": [
     {
       "id": 183151,
@@ -155,11 +155,11 @@
       "minutesEstimate": 1710
     },
     {
-      "id": 6389,
-      "name": "Brandon Thomas-Asante",
+      "id": 5812,
+      "name": "Scott Twine",
       "position": "",
-      "team": "Coventry City FC",
-      "teamId": 1076,
+      "team": "Bristol City FC",
+      "teamId": 387,
       "competition": {
         "id": 2016,
         "code": "ELC",
@@ -167,9 +167,9 @@
         "slug": "championship"
       },
       "goals": 10,
-      "assists": 4,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
+      "assists": 6,
+      "playedMatches": 34,
+      "minutesEstimate": 3060
     },
     {
       "id": 38101,
@@ -512,6 +512,23 @@
       "minutesEstimate": 810
     },
     {
+      "id": 203561,
+      "name": "Joaquín Panichelli",
+      "position": "",
+      "team": "RC Strasbourg Alsace",
+      "teamId": 576,
+      "competition": {
+        "id": 2015,
+        "code": "FL1",
+        "name": "Ligue 1",
+        "slug": "ligue-1"
+      },
+      "goals": 14,
+      "assists": 1,
+      "playedMatches": 24,
+      "minutesEstimate": 2160
+    },
+    {
       "id": 101075,
       "name": "Mason Greenwood",
       "position": "",
@@ -525,23 +542,6 @@
       },
       "goals": 14,
       "assists": 5,
-      "playedMatches": 23,
-      "minutesEstimate": 2070
-    },
-    {
-      "id": 203561,
-      "name": "Joaquín Panichelli",
-      "position": "",
-      "team": "RC Strasbourg Alsace",
-      "teamId": 576,
-      "competition": {
-        "id": 2015,
-        "code": "FL1",
-        "name": "Ligue 1",
-        "slug": "ligue-1"
-      },
-      "goals": 13,
-      "assists": 1,
       "playedMatches": 23,
       "minutesEstimate": 2070
     },
@@ -576,8 +576,8 @@
       },
       "goals": 10,
       "assists": 2,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
+      "playedMatches": 23,
+      "minutesEstimate": 2070
     },
     {
       "id": 16077,
@@ -593,8 +593,8 @@
       },
       "goals": 9,
       "assists": 3,
-      "playedMatches": 19,
-      "minutesEstimate": 1710
+      "playedMatches": 20,
+      "minutesEstimate": 1800
     },
     {
       "id": 121312,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-27T18:26:44.106Z",
+      "fetchedAt": "2026-02-28T00:52:18.266Z",
       "competitionCount": 8
     }
   }
