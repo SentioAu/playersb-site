@@ -5,7 +5,7 @@
     <link>https://playersb.com/</link>
     <description>New and updated player profiles from PlayersB.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 12:21:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 18:17:53 GMT</lastBuildDate>
     
     <item>
       <title>Adam Armstrong</title>
@@ -246,6 +246,13 @@
       <description>Jack Clarke profile on PlayersB. N/A · Ipswich Town FC.</description>
     </item>
     <item>
+      <title>Jacob Trenskow</title>
+      <link>https://playersb.com/players/210841/</link>
+      <guid isPermaLink="true">https://playersb.com/players/210841/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Jacob Trenskow profile on PlayersB. N/A · SC Heerenveen.</description>
+    </item>
+    <item>
       <title>Jens Hauge</title>
       <link>https://playersb.com/players/37916/</link>
       <guid isPermaLink="true">https://playersb.com/players/37916/</guid>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://playersb.com/players/202283/</guid>
       <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
       <description>Lamine Yamal profile on PlayersB. N/A · FC Barcelona.</description>
-    </item>
-    <item>
-      <title>Lautaro Martínez</title>
-      <link>https://playersb.com/players/3220/</link>
-      <guid isPermaLink="true">https://playersb.com/players/3220/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Lautaro Martínez profile on PlayersB. N/A · FC Internazionale Milano.</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-28T12:21:26.450Z",
+  "generatedAt": "2026-02-28T18:17:46.398Z",
   "competitions": [
     {
       "competition": {
@@ -8753,7 +8753,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544455,
@@ -8786,7 +8786,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544458,
@@ -8819,7 +8819,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544453,
@@ -8852,7 +8852,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544457,
@@ -8885,7 +8885,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544454,
@@ -8918,7 +8918,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544456,
@@ -8951,7 +8951,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544459,
@@ -8984,7 +8984,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544451,
@@ -9017,7 +9017,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544465,
@@ -9050,12 +9050,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544466,
           "utcDate": "2026-02-28T13:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -9072,23 +9072,23 @@
             "tla": "ATH"
           },
           "score": {
-            "winner": "",
+            "winner": "DRAW",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T01:32:01Z"
+          "lastUpdated": "2026-02-28T15:56:04Z"
         },
         {
           "id": 544461,
           "utcDate": "2026-02-28T15:15:00Z",
-          "status": "TIMED",
+          "status": "PAUSED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -9105,18 +9105,18 @@
             "tla": "VIL"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-02-28T17:16:35Z"
         },
         {
           "id": 544464,
@@ -9347,7 +9347,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544440,
@@ -9413,7 +9413,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         },
         {
           "id": 544479,
@@ -9875,7 +9875,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-02-28T10:21:01Z"
         }
       ]
     }
@@ -9883,7 +9883,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-28T12:21:26.450Z",
+      "fetchedAt": "2026-02-28T18:17:46.398Z",
       "dateFrom": "2026-02-21",
       "dateTo": "2026-03-14",
       "competitionCount": 8
