@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T12:23:04.207Z",
+  "generatedAt": "2026-03-01T18:18:33.251Z",
   "players": [
     {
       "id": 183151,
@@ -253,8 +253,8 @@
       },
       "goals": 11,
       "assists": 4,
-      "playedMatches": 27,
-      "minutesEstimate": 2430
+      "playedMatches": 28,
+      "minutesEstimate": 2520
     },
     {
       "id": 8279,
@@ -270,8 +270,8 @@
       },
       "goals": 10,
       "assists": 0,
-      "playedMatches": 26,
-      "minutesEstimate": 2340
+      "playedMatches": 27,
+      "minutesEstimate": 2430
     },
     {
       "id": 7839,
@@ -289,6 +289,23 @@
       "assists": 1,
       "playedMatches": 25,
       "minutesEstimate": 2250
+    },
+    {
+      "id": 3328,
+      "name": "Danny Welbeck",
+      "position": "",
+      "team": "Brighton & Hove Albion FC",
+      "teamId": 397,
+      "competition": {
+        "id": 2021,
+        "code": "PL",
+        "name": "Premier League",
+        "slug": "premier-league"
+      },
+      "goals": 10,
+      "assists": 0,
+      "playedMatches": 27,
+      "minutesEstimate": 2430
     },
     {
       "id": 1684,
@@ -321,25 +338,8 @@
       },
       "goals": 9,
       "assists": 3,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
-    },
-    {
-      "id": 3328,
-      "name": "Danny Welbeck",
-      "position": "",
-      "team": "Brighton & Hove Albion FC",
-      "teamId": 397,
-      "competition": {
-        "id": 2021,
-        "code": "PL",
-        "name": "Premier League",
-        "slug": "premier-league"
-      },
-      "goals": 9,
-      "assists": 0,
-      "playedMatches": 26,
-      "minutesEstimate": 2340
+      "playedMatches": 23,
+      "minutesEstimate": 2070
     },
     {
       "id": 3374,
@@ -644,8 +644,8 @@
       },
       "goals": 8,
       "assists": 4,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
+      "playedMatches": 23,
+      "minutesEstimate": 2070
     },
     {
       "id": 177248,
@@ -660,9 +660,9 @@
         "slug": "ligue-1"
       },
       "goals": 8,
-      "assists": 0,
-      "playedMatches": 21,
-      "minutesEstimate": 1890
+      "assists": 1,
+      "playedMatches": 22,
+      "minutesEstimate": 1980
     },
     {
       "id": 3373,
@@ -699,6 +699,23 @@
       "minutesEstimate": 2160
     },
     {
+      "id": 6928,
+      "name": "Deniz Undav",
+      "position": "",
+      "team": "VfB Stuttgart",
+      "teamId": 10,
+      "competition": {
+        "id": 2002,
+        "code": "BL1",
+        "name": "Bundesliga",
+        "slug": "bundesliga"
+      },
+      "goals": 14,
+      "assists": 3,
+      "playedMatches": 20,
+      "minutesEstimate": 1800
+    },
+    {
       "id": 22396,
       "name": "Luis Díaz",
       "position": "",
@@ -714,23 +731,6 @@
       "assists": 8,
       "playedMatches": 23,
       "minutesEstimate": 2070
-    },
-    {
-      "id": 6928,
-      "name": "Deniz Undav",
-      "position": "",
-      "team": "VfB Stuttgart",
-      "teamId": 10,
-      "competition": {
-        "id": 2002,
-        "code": "BL1",
-        "name": "Bundesliga",
-        "slug": "bundesliga"
-      },
-      "goals": 13,
-      "assists": 3,
-      "playedMatches": 19,
-      "minutesEstimate": 1710
     },
     {
       "id": 211,
@@ -797,8 +797,8 @@
       },
       "goals": 10,
       "assists": 6,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
+      "playedMatches": 23,
+      "minutesEstimate": 2070
     },
     {
       "id": 320,
@@ -848,8 +848,8 @@
       },
       "goals": 9,
       "assists": 0,
-      "playedMatches": 11,
-      "minutesEstimate": 990
+      "playedMatches": 12,
+      "minutesEstimate": 1080
     },
     {
       "id": 3220,
@@ -920,6 +920,23 @@
       "minutesEstimate": 2070
     },
     {
+      "id": 15892,
+      "name": "Rafael Leão",
+      "position": "",
+      "team": "AC Milan",
+      "teamId": 98,
+      "competition": {
+        "id": 2019,
+        "code": "SA",
+        "name": "Serie A",
+        "slug": "serie-a"
+      },
+      "goals": 9,
+      "assists": 2,
+      "playedMatches": 21,
+      "minutesEstimate": 1890
+    },
+    {
       "id": 145,
       "name": "Christian Pulisic",
       "position": "",
@@ -988,23 +1005,6 @@
       "minutesEstimate": 2070
     },
     {
-      "id": 15892,
-      "name": "Rafael Leão",
-      "position": "",
-      "team": "AC Milan",
-      "teamId": 98,
-      "competition": {
-        "id": 2019,
-        "code": "SA",
-        "name": "Serie A",
-        "slug": "serie-a"
-      },
-      "goals": 8,
-      "assists": 2,
-      "playedMatches": 21,
-      "minutesEstimate": 1890
-    },
-    {
       "id": 8685,
       "name": "Marcus Thuram-Ulien",
       "position": "",
@@ -1035,8 +1035,8 @@
       },
       "goals": 18,
       "assists": 1,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
+      "playedMatches": 23,
+      "minutesEstimate": 2070
     },
     {
       "id": 131041,
@@ -1052,8 +1052,8 @@
       },
       "goals": 13,
       "assists": 2,
-      "playedMatches": 19,
-      "minutesEstimate": 1710
+      "playedMatches": 20,
+      "minutesEstimate": 1800
     },
     {
       "id": 189574,
@@ -1137,8 +1137,8 @@
       },
       "goals": 10,
       "assists": 1,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
+      "playedMatches": 23,
+      "minutesEstimate": 2070
     },
     {
       "id": 38124,
@@ -1273,8 +1273,8 @@
       },
       "goals": 12,
       "assists": 0,
-      "playedMatches": 24,
-      "minutesEstimate": 2160
+      "playedMatches": 25,
+      "minutesEstimate": 2250
     },
     {
       "id": 32056,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-01T12:23:04.207Z",
+      "fetchedAt": "2026-03-01T18:18:33.251Z",
       "competitionCount": 8
     }
   }
