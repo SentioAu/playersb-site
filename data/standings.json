@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T06:33:26.976Z",
+  "generatedAt": "2026-03-01T12:23:04.207Z",
   "competitions": [
     {
       "competition": {
@@ -2321,11 +2321,11 @@
                 "tla": "MIL",
                 "crest": "https://crests.football-data.org/98.png"
               },
-              "playedGames": 26,
+              "playedGames": 27,
               "won": 15,
-              "draw": 9,
+              "draw": 10,
               "lost": 2,
-              "points": 54,
+              "points": 55,
               "goalsFor": 41,
               "goalsAgainst": 20,
               "goalDifference": 21,
@@ -2568,6 +2568,24 @@
             {
               "position": 16,
               "team": {
+                "id": 457,
+                "name": "US Cremonese",
+                "tla": "CRE",
+                "crest": "https://crests.football-data.org/457.png"
+              },
+              "playedGames": 27,
+              "won": 5,
+              "draw": 10,
+              "lost": 12,
+              "points": 25,
+              "goalsFor": 21,
+              "goalsAgainst": 36,
+              "goalDifference": -15,
+              "form": ""
+            },
+            {
+              "position": 17,
+              "team": {
                 "id": 99,
                 "name": "ACF Fiorentina",
                 "tla": "FIO",
@@ -2581,24 +2599,6 @@
               "goalsFor": 30,
               "goalsAgainst": 39,
               "goalDifference": -9,
-              "form": ""
-            },
-            {
-              "position": 17,
-              "team": {
-                "id": 457,
-                "name": "US Cremonese",
-                "tla": "CRE",
-                "crest": "https://crests.football-data.org/457.png"
-              },
-              "playedGames": 26,
-              "won": 5,
-              "draw": 9,
-              "lost": 12,
-              "points": 24,
-              "goalsFor": 21,
-              "goalsAgainst": 36,
-              "goalDifference": -15,
               "form": ""
             },
             {
@@ -2729,6 +2729,24 @@
             {
               "position": 3,
               "team": {
+                "id": 678,
+                "name": "AFC Ajax",
+                "tla": "AJA",
+                "crest": "https://crests.football-data.org/678.png"
+              },
+              "playedGames": 25,
+              "won": 11,
+              "draw": 11,
+              "lost": 3,
+              "points": 44,
+              "goalsFor": 47,
+              "goalsAgainst": 31,
+              "goalDifference": 16,
+              "form": ""
+            },
+            {
+              "position": 4,
+              "team": {
                 "id": 1915,
                 "name": "NEC",
                 "tla": "NEC",
@@ -2742,24 +2760,6 @@
               "goalsFor": 61,
               "goalsAgainst": 43,
               "goalDifference": 18,
-              "form": ""
-            },
-            {
-              "position": 4,
-              "team": {
-                "id": 678,
-                "name": "AFC Ajax",
-                "tla": "AJA",
-                "crest": "https://crests.football-data.org/678.png"
-              },
-              "playedGames": 24,
-              "won": 11,
-              "draw": 10,
-              "lost": 3,
-              "points": 43,
-              "goalsFor": 47,
-              "goalsAgainst": 31,
-              "goalDifference": 16,
               "form": ""
             },
             {
@@ -2896,11 +2896,11 @@
                 "tla": "ZWO",
                 "crest": "https://crests.football-data.org/684.png"
               },
-              "playedGames": 24,
+              "playedGames": 25,
               "won": 7,
-              "draw": 6,
+              "draw": 7,
               "lost": 11,
-              "points": 27,
+              "points": 28,
               "goalsFor": 34,
               "goalsAgainst": 50,
               "goalDifference": -16,
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-01T06:33:26.976Z",
+      "fetchedAt": "2026-03-01T12:23:04.207Z",
       "competitionCount": 8
     }
   }

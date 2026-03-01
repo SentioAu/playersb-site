@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-01T06:33:34.982Z",
+  "generated_at": "2026-03-01T12:23:07.876Z",
   "players": [
     {
       "id": "4863",
@@ -171,7 +171,7 @@
       "name": "Christian Pulisic",
       "position": "N/A",
       "team": "AC Milan",
-      "minutes": 1800,
+      "minutes": 1890,
       "goals": 8,
       "assists": 2,
       "shots": 0,
@@ -512,7 +512,7 @@
       "name": "Koen Kostons",
       "position": "N/A",
       "team": "PEC Zwolle",
-      "minutes": 2160,
+      "minutes": 2250,
       "goals": 10,
       "assists": 6,
       "shots": 0,
@@ -633,7 +633,7 @@
       "name": "Mika Godts",
       "position": "N/A",
       "team": "AFC Ajax",
-      "minutes": 1980,
+      "minutes": 2070,
       "goals": 13,
       "assists": 8,
       "shots": 0,
@@ -765,7 +765,7 @@
       "name": "Rafael Leão",
       "position": "N/A",
       "team": "AC Milan",
-      "minutes": 1800,
+      "minutes": 1890,
       "goals": 8,
       "assists": 2,
       "shots": 0,
