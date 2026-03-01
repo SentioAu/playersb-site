@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-28T18:17:53.091Z",
+  "generated_at": "2026-03-01T01:06:13.539Z",
   "players": [
     {
       "id": "4863",
@@ -17,7 +17,7 @@
       "name": "Alexander Sørloth",
       "position": "N/A",
       "team": "Club Atlético de Madrid",
-      "minutes": 2160,
+      "minutes": 2250,
       "goals": 9,
       "assists": 0,
       "shots": 0,
@@ -84,7 +84,7 @@
       "position": "N/A",
       "team": "Manchester City FC",
       "minutes": 2430,
-      "goals": 13,
+      "goals": 14,
       "assists": 4,
       "shots": 0,
       "shotsOnTarget": 0
@@ -116,8 +116,8 @@
       "name": "Bradley Barcola",
       "position": "N/A",
       "team": "Paris Saint-Germain FC",
-      "minutes": 1980,
-      "goals": 8,
+      "minutes": 2070,
+      "goals": 9,
       "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
@@ -211,17 +211,6 @@
       "shotsOnTarget": 0
     },
     {
-      "id": "2202",
-      "name": "Domenico Berardi",
-      "position": "N/A",
-      "team": "US Sassuolo Calcio",
-      "minutes": 1440,
-      "goals": 7,
-      "assists": 3,
-      "shots": 0,
-      "shotsOnTarget": 0
-    },
-    {
       "id": "7839",
       "name": "Dominic Calvert-Lewin",
       "position": "N/A",
@@ -299,6 +288,17 @@
       "shotsOnTarget": 0
     },
     {
+      "id": "1754",
+      "name": "Hakan Çalhanoğlu",
+      "position": "N/A",
+      "team": "FC Internazionale Milano",
+      "minutes": 1710,
+      "goals": 8,
+      "assists": 2,
+      "shots": 0,
+      "shotsOnTarget": 0
+    },
+    {
       "id": "63218",
       "name": "Haris Tabaković",
       "position": "N/A",
@@ -326,7 +326,7 @@
       "position": "N/A",
       "team": "FC Bayern München",
       "minutes": 2160,
-      "goals": 28,
+      "goals": 30,
       "assists": 4,
       "shots": 0,
       "shotsOnTarget": 0
@@ -589,7 +589,7 @@
       "name": "Marcus Thuram-Ulien",
       "position": "N/A",
       "team": "FC Internazionale Milano",
-      "minutes": 1890,
+      "minutes": 1980,
       "goals": 7,
       "assists": 3,
       "shots": 0,

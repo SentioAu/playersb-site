@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-28T18:17:46.398Z",
+  "generatedAt": "2026-03-01T01:06:04.598Z",
   "players": [
     {
       "id": 183151,
@@ -217,7 +217,7 @@
         "name": "Premier League",
         "slug": "premier-league"
       },
-      "goals": 13,
+      "goals": 14,
       "assists": 4,
       "playedMatches": 27,
       "minutesEstimate": 2430
@@ -580,6 +580,23 @@
       "minutesEstimate": 2070
     },
     {
+      "id": 172762,
+      "name": "Bradley Barcola",
+      "position": "",
+      "team": "Paris Saint-Germain FC",
+      "teamId": 524,
+      "competition": {
+        "id": 2015,
+        "code": "FL1",
+        "name": "Ligue 1",
+        "slug": "ligue-1"
+      },
+      "goals": 9,
+      "assists": 1,
+      "playedMatches": 23,
+      "minutesEstimate": 2070
+    },
+    {
       "id": 16077,
       "name": "Odsonne Edouard",
       "position": "",
@@ -648,23 +665,6 @@
       "minutesEstimate": 1890
     },
     {
-      "id": 172762,
-      "name": "Bradley Barcola",
-      "position": "",
-      "team": "Paris Saint-Germain FC",
-      "teamId": 524,
-      "competition": {
-        "id": 2015,
-        "code": "FL1",
-        "name": "Ligue 1",
-        "slug": "ligue-1"
-      },
-      "goals": 8,
-      "assists": 1,
-      "playedMatches": 22,
-      "minutesEstimate": 1980
-    },
-    {
       "id": 3373,
       "name": "Ousmane Dembélé",
       "position": "",
@@ -693,7 +693,7 @@
         "name": "Bundesliga",
         "slug": "bundesliga"
       },
-      "goals": 28,
+      "goals": 30,
       "assists": 4,
       "playedMatches": 24,
       "minutesEstimate": 2160
@@ -937,6 +937,23 @@
       "minutesEstimate": 1800
     },
     {
+      "id": 1754,
+      "name": "Hakan Çalhanoğlu",
+      "position": "",
+      "team": "FC Internazionale Milano",
+      "teamId": 108,
+      "competition": {
+        "id": 2019,
+        "code": "SA",
+        "name": "Serie A",
+        "slug": "serie-a"
+      },
+      "goals": 8,
+      "assists": 2,
+      "playedMatches": 19,
+      "minutesEstimate": 1710
+    },
+    {
       "id": 191712,
       "name": "Kenan Yıldız",
       "position": "",
@@ -1001,25 +1018,8 @@
       },
       "goals": 7,
       "assists": 3,
-      "playedMatches": 21,
-      "minutesEstimate": 1890
-    },
-    {
-      "id": 2202,
-      "name": "Domenico Berardi",
-      "position": "",
-      "team": "US Sassuolo Calcio",
-      "teamId": 471,
-      "competition": {
-        "id": 2019,
-        "code": "SA",
-        "name": "Serie A",
-        "slug": "serie-a"
-      },
-      "goals": 7,
-      "assists": 3,
-      "playedMatches": 16,
-      "minutesEstimate": 1440
+      "playedMatches": 22,
+      "minutesEstimate": 1980
     },
     {
       "id": 119460,
@@ -1341,8 +1341,8 @@
       },
       "goals": 9,
       "assists": 0,
-      "playedMatches": 24,
-      "minutesEstimate": 2160
+      "playedMatches": 25,
+      "minutesEstimate": 2250
     },
     {
       "id": 1556,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-02-28T18:17:46.398Z",
+      "fetchedAt": "2026-03-01T01:06:04.598Z",
       "competitionCount": 8
     }
   }
