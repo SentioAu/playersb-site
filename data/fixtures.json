@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T01:06:04.598Z",
+  "generatedAt": "2026-03-01T06:33:26.976Z",
   "competitions": [
     {
       "competition": {
@@ -52,7 +52,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541108,
@@ -85,7 +85,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541109,
@@ -118,7 +118,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541112,
@@ -151,7 +151,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541113,
@@ -184,7 +184,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541114,
@@ -217,7 +217,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541115,
@@ -250,7 +250,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541116,
@@ -283,7 +283,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541110,
@@ -316,7 +316,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541117,
@@ -349,7 +349,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541118,
@@ -382,7 +382,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541119,
@@ -415,7 +415,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541111,
@@ -448,7 +448,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541121,
@@ -481,7 +481,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541124,
@@ -514,7 +514,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T15:25:51Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541126,
@@ -547,7 +547,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T15:26:36Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541128,
@@ -580,12 +580,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T15:26:36Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541122,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -613,12 +613,12 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T17:16:24Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541123,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -635,10 +635,10 @@
             "tla": "STK"
           },
           "score": {
-            "winner": "DRAW",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": 1,
+              "home": 2,
               "away": 1
             },
             "halfTime": {
@@ -646,12 +646,12 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T17:16:24Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541125,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -671,7 +671,7 @@
             "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": 2,
+              "home": 3,
               "away": 0
             },
             "halfTime": {
@@ -679,12 +679,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T17:16:24Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541127,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -712,12 +712,12 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T17:16:25Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541129,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -738,19 +738,19 @@
             "duration": "REGULAR",
             "fullTime": {
               "home": 0,
-              "away": 1
+              "away": 2
             },
             "halfTime": {
               "home": 0,
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T17:16:25Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541130,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -778,12 +778,12 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-28T17:16:26Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541131,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 35,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -803,15 +803,15 @@
             "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": 0,
-              "away": 2
+              "home": 1,
+              "away": 3
             },
             "halfTime": {
               "home": 0,
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-28T17:16:27Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541120,
@@ -910,7 +910,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 541132,
@@ -943,7 +943,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-06T15:20:40Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 541136,
@@ -976,7 +976,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-06T15:20:40Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 541133,
@@ -1009,7 +1009,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:26:51Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 541134,
@@ -1042,7 +1042,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:26:51Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 541135,
@@ -1075,7 +1075,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:26:51Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 541137,
@@ -1108,7 +1108,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:26:51Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 541140,
@@ -1141,7 +1141,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:26:51Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 541142,
@@ -1174,7 +1174,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:26:51Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 541139,
@@ -1471,7 +1471,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541153,
@@ -1867,7 +1867,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T10:21:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 541164,
@@ -2021,7 +2021,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538047,
@@ -2054,7 +2054,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538052,
@@ -2087,7 +2087,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538053,
@@ -2120,7 +2120,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538050,
@@ -2153,7 +2153,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538064,
@@ -2186,12 +2186,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538055,
           "utcDate": "2026-02-28T12:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 28,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -2208,23 +2208,23 @@
             "tla": "SUN"
           },
           "score": {
-            "winner": "",
+            "winner": "DRAW",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538058,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 28,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -2241,23 +2241,23 @@
             "tla": "BRE"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 3,
+              "away": 4
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 3
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538060,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 28,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -2274,23 +2274,23 @@
             "tla": "WHU"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 5,
+              "away": 2
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 3,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538063,
           "utcDate": "2026-02-28T15:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 28,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -2307,23 +2307,23 @@
             "tla": "EVE"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 3
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 2
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538061,
           "utcDate": "2026-02-28T17:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 28,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -2340,18 +2340,18 @@
             "tla": "MCI"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538056,
@@ -2450,7 +2450,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538057,
@@ -2483,7 +2483,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-24T01:32:03Z"
+          "lastUpdated": "2026-03-01T01:32:01Z"
         },
         {
           "id": 538065,
@@ -2516,7 +2516,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:01Z"
         },
         {
           "id": 538068,
@@ -2549,7 +2549,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-25T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:01Z"
         },
         {
           "id": 538070,
@@ -2582,7 +2582,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:01Z"
         },
         {
           "id": 538074,
@@ -2615,7 +2615,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:02Z"
         },
         {
           "id": 538066,
@@ -2648,7 +2648,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-26T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:02Z"
         },
         {
           "id": 538067,
@@ -2747,7 +2747,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538072,
@@ -2780,7 +2780,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:02Z"
         },
         {
           "id": 538073,
@@ -2847,39 +2847,6 @@
             }
           },
           "lastUpdated": "2025-12-29T15:20:57Z"
-        },
-        {
-          "id": 538076,
-          "utcDate": "2026-03-14T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 30,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY"
-          },
-          "awayTeam": {
-            "id": 341,
-            "name": "Leeds United FC",
-            "shortName": "Leeds United",
-            "tla": "LEE"
-          },
-          "score": {
-            "winner": "",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": null,
-              "away": null
-            },
-            "halfTime": {
-              "home": null,
-              "away": null
-            }
-          },
-          "lastUpdated": "2026-02-28T00:20:53Z"
         },
         {
           "id": 538079,
@@ -3011,7 +2978,40 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
+        },
+        {
+          "id": 538076,
+          "utcDate": "2026-03-15T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 30,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY"
+          },
+          "awayTeam": {
+            "id": 341,
+            "name": "Leeds United FC",
+            "shortName": "Leeds United",
+            "tla": "LEE"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538082,
@@ -3044,7 +3044,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 538083,
@@ -3165,7 +3165,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552062,
@@ -3198,7 +3198,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552066,
@@ -3231,7 +3231,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552067,
@@ -3264,7 +3264,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552065,
@@ -3297,7 +3297,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552060,
@@ -3330,7 +3330,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552061,
@@ -3363,7 +3363,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552063,
@@ -3396,7 +3396,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552069,
@@ -3627,7 +3627,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 552074,
@@ -3715,7 +3715,7 @@
               "away": 3
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542605,
@@ -3748,7 +3748,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542607,
@@ -3781,7 +3781,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542611,
@@ -3814,7 +3814,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542609,
@@ -3847,7 +3847,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542620,
@@ -3880,12 +3880,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542621,
           "utcDate": "2026-02-28T16:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -3902,23 +3902,23 @@
             "tla": "TOU"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542614,
           "utcDate": "2026-02-28T18:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -3935,23 +3935,23 @@
             "tla": "ANG"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-23T01:32:03Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542613,
           "utcDate": "2026-02-28T20:05:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -3968,18 +3968,18 @@
             "tla": "PSG"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542617,
@@ -4111,7 +4111,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:00Z"
         },
         {
           "id": 542618,
@@ -4177,7 +4177,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 542623,
@@ -4210,7 +4210,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-08T00:20:52Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 542622,
@@ -4243,7 +4243,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-08T00:20:52Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 542624,
@@ -4276,7 +4276,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-08T00:20:52Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 542629,
@@ -4576,72 +4576,6 @@
           "lastUpdated": "2026-02-28T00:20:53Z"
         },
         {
-          "id": 542631,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 26,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 533,
-            "name": "Le Havre AC",
-            "shortName": "Le Havre",
-            "tla": "HAC"
-          },
-          "awayTeam": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO"
-          },
-          "score": {
-            "winner": "",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": null,
-              "away": null
-            },
-            "halfTime": {
-              "home": null,
-              "away": null
-            }
-          },
-          "lastUpdated": "2025-08-13T08:22:25Z"
-        },
-        {
-          "id": 542634,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 26,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 545,
-            "name": "FC Metz",
-            "shortName": "FC Metz",
-            "tla": "FCM"
-          },
-          "awayTeam": {
-            "id": 511,
-            "name": "Toulouse FC",
-            "shortName": "Toulouse",
-            "tla": "TOU"
-          },
-          "score": {
-            "winner": "",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": null,
-              "away": null
-            },
-            "halfTime": {
-              "home": null,
-              "away": null
-            }
-          },
-          "lastUpdated": "2025-08-13T08:22:24Z"
-        },
-        {
           "id": 542636,
           "utcDate": "2026-03-15T00:00:00Z",
           "status": "SCHEDULED",
@@ -4676,8 +4610,8 @@
         },
         {
           "id": 542637,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-03-15T14:00:00Z",
+          "status": "TIMED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -4705,12 +4639,78 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-08-13T08:22:24Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
+        },
+        {
+          "id": 542631,
+          "utcDate": "2026-03-15T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 533,
+            "name": "Le Havre AC",
+            "shortName": "Le Havre",
+            "tla": "HAC"
+          },
+          "awayTeam": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-03-01T00:20:54Z"
+        },
+        {
+          "id": 542634,
+          "utcDate": "2026-03-15T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 26,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 545,
+            "name": "FC Metz",
+            "shortName": "FC Metz",
+            "tla": "FCM"
+          },
+          "awayTeam": {
+            "id": 511,
+            "name": "Toulouse FC",
+            "shortName": "Toulouse",
+            "tla": "TOU"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 542639,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-03-15T19:45:00Z",
+          "status": "TIMED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -4738,7 +4738,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-08-13T08:22:24Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         }
       ]
     },
@@ -4793,7 +4793,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540607,
@@ -4826,7 +4826,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540608,
@@ -4859,7 +4859,7 @@
               "away": 2
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540621,
@@ -4892,12 +4892,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540615,
           "utcDate": "2026-02-28T14:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -4914,23 +4914,23 @@
             "tla": "M05"
           },
           "score": {
-            "winner": "",
+            "winner": "DRAW",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-22T01:32:03Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540618,
           "utcDate": "2026-02-28T14:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -4947,23 +4947,23 @@
             "tla": "UNB"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T01:32:00Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540619,
           "utcDate": "2026-02-28T14:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -4980,23 +4980,23 @@
             "tla": "STP"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540620,
           "utcDate": "2026-02-28T14:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -5013,23 +5013,23 @@
             "tla": "HEI"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540613,
           "utcDate": "2026-02-28T17:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 24,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -5046,18 +5046,18 @@
             "tla": "FCB"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 3
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540617,
@@ -5090,7 +5090,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T01:32:00Z"
         },
         {
           "id": 540614,
@@ -5222,7 +5222,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 540622,
@@ -5255,7 +5255,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-04T15:21:04Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 540626,
@@ -5288,7 +5288,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 540628,
@@ -5321,7 +5321,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-04T15:21:04Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 540629,
@@ -5354,7 +5354,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-04T15:21:04Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 540630,
@@ -5387,7 +5387,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 540624,
@@ -5420,7 +5420,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-04T15:21:04Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 540623,
@@ -5486,7 +5486,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540637,
@@ -5585,7 +5585,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540635,
@@ -5717,7 +5717,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 540636,
@@ -5783,7 +5783,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         }
       ]
     },
@@ -5805,7 +5805,7 @@
         },
         "slug": "serie-a"
       },
-      "matchCount": 36,
+      "matchCount": 35,
       "matches": [
         {
           "id": 537070,
@@ -5838,7 +5838,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537068,
@@ -5871,7 +5871,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537066,
@@ -5904,7 +5904,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537067,
@@ -5937,7 +5937,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537065,
@@ -5970,7 +5970,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537071,
@@ -6003,7 +6003,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537080,
@@ -6036,12 +6036,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537076,
           "utcDate": "2026-02-28T14:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 27,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -6058,23 +6058,23 @@
             "tla": "USL"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 3,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 3,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-24T01:32:01Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537078,
           "utcDate": "2026-02-28T17:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 27,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -6091,23 +6091,23 @@
             "tla": "NAP"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 2
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537079,
           "utcDate": "2026-02-28T19:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 27,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -6124,18 +6124,18 @@
             "tla": "GEN"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-23T01:32:03Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537084,
@@ -6267,7 +6267,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:01Z"
         },
         {
           "id": 537081,
@@ -6366,7 +6366,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 537088,
@@ -6399,7 +6399,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 537087,
@@ -6432,7 +6432,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 537091,
@@ -6465,7 +6465,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 537094,
@@ -6798,42 +6798,9 @@
           "lastUpdated": "2026-02-28T00:20:53Z"
         },
         {
-          "id": 537095,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 29,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 7397,
-            "name": "Como 1907",
-            "shortName": "Como 1907",
-            "tla": "COM"
-          },
-          "awayTeam": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM"
-          },
-          "score": {
-            "winner": "",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": null,
-              "away": null
-            },
-            "halfTime": {
-              "home": null,
-              "away": null
-            }
-          },
-          "lastUpdated": "2025-07-04T12:08:06Z"
-        },
-        {
           "id": 537097,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-03-15T11:30:00Z",
+          "status": "TIMED",
           "matchday": 29,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -6861,45 +6828,12 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:08:07Z"
-        },
-        {
-          "id": 537099,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 29,
-          "stage": "REGULAR_SEASON",
-          "group": "",
-          "homeTeam": {
-            "id": 110,
-            "name": "SS Lazio",
-            "shortName": "Lazio",
-            "tla": "LAZ"
-          },
-          "awayTeam": {
-            "id": 98,
-            "name": "AC Milan",
-            "shortName": "Milan",
-            "tla": "MIL"
-          },
-          "score": {
-            "winner": "",
-            "duration": "REGULAR",
-            "fullTime": {
-              "home": null,
-              "away": null
-            },
-            "halfTime": {
-              "home": null,
-              "away": null
-            }
-          },
-          "lastUpdated": "2025-07-04T12:08:07Z"
+          "lastUpdated": "2026-02-28T05:20:54Z"
         },
         {
           "id": 537100,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-03-15T14:00:00Z",
+          "status": "TIMED",
           "matchday": 29,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -6927,12 +6861,12 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:08:05Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 537101,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-03-15T14:00:00Z",
+          "status": "TIMED",
           "matchday": 29,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -6960,26 +6894,26 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:08:05Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
-          "id": 537104,
-          "utcDate": "2026-03-15T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 537095,
+          "utcDate": "2026-03-15T17:00:00Z",
+          "status": "TIMED",
           "matchday": 29,
           "stage": "REGULAR_SEASON",
           "group": "",
           "homeTeam": {
-            "id": 457,
-            "name": "US Cremonese",
-            "shortName": "Cremonese",
-            "tla": "CRE"
+            "id": 7397,
+            "name": "Como 1907",
+            "shortName": "Como 1907",
+            "tla": "COM"
           },
           "awayTeam": {
-            "id": 99,
-            "name": "ACF Fiorentina",
-            "shortName": "Fiorentina",
-            "tla": "FIO"
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM"
           },
           "score": {
             "winner": "",
@@ -6993,7 +6927,40 @@
               "away": null
             }
           },
-          "lastUpdated": "2025-07-04T12:08:06Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
+        },
+        {
+          "id": 537099,
+          "utcDate": "2026-03-15T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 29,
+          "stage": "REGULAR_SEASON",
+          "group": "",
+          "homeTeam": {
+            "id": 110,
+            "name": "SS Lazio",
+            "shortName": "Lazio",
+            "tla": "LAZ"
+          },
+          "awayTeam": {
+            "id": 98,
+            "name": "AC Milan",
+            "shortName": "Milan",
+            "tla": "MIL"
+          },
+          "score": {
+            "winner": "",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": null,
+              "away": null
+            },
+            "halfTime": {
+              "home": null,
+              "away": null
+            }
+          },
+          "lastUpdated": "2026-03-01T00:20:54Z"
         }
       ]
     },
@@ -7048,7 +7015,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537650,
@@ -7081,7 +7048,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537653,
@@ -7114,7 +7081,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537649,
@@ -7147,7 +7114,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537651,
@@ -7180,7 +7147,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537664,
@@ -7213,12 +7180,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:52Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537663,
           "utcDate": "2026-02-28T15:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 25,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -7235,23 +7202,23 @@
             "tla": "SPA"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537660,
           "utcDate": "2026-02-28T17:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 25,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -7268,23 +7235,23 @@
             "tla": "PSV"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 3
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 3
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537661,
           "utcDate": "2026-02-28T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 25,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -7301,18 +7268,18 @@
             "tla": "SIT"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 3
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:53Z"
         },
         {
           "id": 537662,
@@ -7378,7 +7345,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:03Z"
+          "lastUpdated": "2026-03-01T01:32:00Z"
         },
         {
           "id": 537665,
@@ -7444,7 +7411,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:00Z"
         },
         {
           "id": 537657,
@@ -7510,7 +7477,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 537667,
@@ -7543,7 +7510,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-02T15:21:03Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 537673,
@@ -7576,7 +7543,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-02T15:21:03Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 537666,
@@ -7609,7 +7576,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-01-02T15:21:03Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 537674,
@@ -8126,7 +8093,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544454,
@@ -8159,7 +8126,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544456,
@@ -8192,7 +8159,7 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544459,
@@ -8225,7 +8192,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544451,
@@ -8258,7 +8225,7 @@
               "away": 1
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544465,
@@ -8291,12 +8258,12 @@
               "away": 0
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544466,
           "utcDate": "2026-02-28T13:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -8313,23 +8280,23 @@
             "tla": "ATH"
           },
           "score": {
-            "winner": "",
+            "winner": "DRAW",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 1,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-24T01:32:01Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544461,
           "utcDate": "2026-02-28T15:15:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -8346,23 +8313,23 @@
             "tla": "VIL"
           },
           "score": {
-            "winner": "",
+            "winner": "HOME_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 4,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 2,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-23T01:32:02Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544464,
           "utcDate": "2026-02-28T17:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -8379,23 +8346,23 @@
             "tla": "RSO"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544467,
           "utcDate": "2026-02-28T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 26,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -8412,18 +8379,18 @@
             "tla": "ATL"
           },
           "score": {
-            "winner": "",
+            "winner": "AWAY_TEAM",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 1
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-02-22T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544463,
@@ -8456,7 +8423,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:03Z"
+          "lastUpdated": "2026-03-01T01:32:00Z"
         },
         {
           "id": 544470,
@@ -8489,7 +8456,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-23T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:00Z"
         },
         {
           "id": 544462,
@@ -8588,7 +8555,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544440,
@@ -8621,7 +8588,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-26T01:32:04Z"
+          "lastUpdated": "2026-03-01T01:32:02Z"
         },
         {
           "id": 544473,
@@ -8654,7 +8621,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T01:32:04Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544479,
@@ -8687,7 +8654,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:03Z"
         },
         {
           "id": 544478,
@@ -8720,7 +8687,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-12T15:21:05Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 544472,
@@ -8753,7 +8720,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-12T15:21:05Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 544471,
@@ -8786,7 +8753,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T01:32:04Z"
         },
         {
           "id": 544477,
@@ -9116,7 +9083,7 @@
               "away": null
             }
           },
-          "lastUpdated": "2026-02-28T00:20:53Z"
+          "lastUpdated": "2026-03-01T00:20:54Z"
         },
         {
           "id": 544488,
@@ -9256,7 +9223,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-01T01:06:04.598Z",
+      "fetchedAt": "2026-03-01T06:33:26.976Z",
       "dateFrom": "2026-02-22",
       "dateTo": "2026-03-15",
       "competitionCount": 8
