@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-01T18:18:37.260Z",
+  "generated_at": "2026-03-02T00:59:54.173Z",
   "players": [
     {
       "id": "4863",
@@ -105,7 +105,7 @@
       "name": "Borja Iglesias",
       "position": "N/A",
       "team": "RC Celta de Vigo",
-      "minutes": 2160,
+      "minutes": 2250,
       "goals": 11,
       "assists": 1,
       "shots": 0,
@@ -479,7 +479,7 @@
       "name": "Kenan Yıldız",
       "position": "N/A",
       "team": "Juventus FC",
-      "minutes": 2250,
+      "minutes": 2340,
       "goals": 8,
       "assists": 4,
       "shots": 0,
@@ -611,7 +611,7 @@
       "name": "Mason Greenwood",
       "position": "N/A",
       "team": "Olympique de Marseille",
-      "minutes": 2070,
+      "minutes": 2160,
       "goals": 14,
       "assists": 5,
       "shots": 0,
@@ -728,17 +728,6 @@
       "shotsOnTarget": 0
     },
     {
-      "id": "3373",
-      "name": "Ousmane Dembélé",
-      "position": "N/A",
-      "team": "Paris Saint-Germain FC",
-      "minutes": 1260,
-      "goals": 8,
-      "assists": 4,
-      "shots": 0,
-      "shotsOnTarget": 0
-    },
-    {
       "id": "177248",
       "name": "Pablo Pagis",
       "position": "N/A",
@@ -757,6 +746,17 @@
       "minutes": 1980,
       "goals": 9,
       "assists": 3,
+      "shots": 0,
+      "shotsOnTarget": 0
+    },
+    {
+      "id": "7801",
+      "name": "Pierre-Emerick Aubameyang",
+      "position": "N/A",
+      "team": "Olympique de Marseille",
+      "minutes": 2160,
+      "goals": 8,
+      "assists": 5,
       "shots": 0,
       "shotsOnTarget": 0
     },

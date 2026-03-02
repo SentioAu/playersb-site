@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T18:18:33.251Z",
+  "generatedAt": "2026-03-02T00:59:50.871Z",
   "players": [
     {
       "id": 183151,
@@ -542,8 +542,8 @@
       },
       "goals": 14,
       "assists": 5,
-      "playedMatches": 23,
-      "minutesEstimate": 2070
+      "playedMatches": 24,
+      "minutesEstimate": 2160
     },
     {
       "id": 149850,
@@ -631,6 +631,23 @@
       "minutesEstimate": 1980
     },
     {
+      "id": 7801,
+      "name": "Pierre-Emerick Aubameyang",
+      "position": "",
+      "team": "Olympique de Marseille",
+      "teamId": 516,
+      "competition": {
+        "id": 2015,
+        "code": "FL1",
+        "name": "Ligue 1",
+        "slug": "ligue-1"
+      },
+      "goals": 8,
+      "assists": 5,
+      "playedMatches": 24,
+      "minutesEstimate": 2160
+    },
+    {
       "id": 108520,
       "name": "Ilan Kebbal",
       "position": "",
@@ -663,23 +680,6 @@
       "assists": 1,
       "playedMatches": 22,
       "minutesEstimate": 1980
-    },
-    {
-      "id": 3373,
-      "name": "Ousmane Dembélé",
-      "position": "",
-      "team": "Paris Saint-Germain FC",
-      "teamId": 524,
-      "competition": {
-        "id": 2015,
-        "code": "FL1",
-        "name": "Ligue 1",
-        "slug": "ligue-1"
-      },
-      "goals": 8,
-      "assists": 4,
-      "playedMatches": 14,
-      "minutesEstimate": 1260
     },
     {
       "id": 8004,
@@ -984,8 +984,8 @@
       },
       "goals": 8,
       "assists": 4,
-      "playedMatches": 25,
-      "minutesEstimate": 2250
+      "playedMatches": 26,
+      "minutesEstimate": 2340
     },
     {
       "id": 2171,
@@ -1290,8 +1290,8 @@
       },
       "goals": 11,
       "assists": 1,
-      "playedMatches": 24,
-      "minutesEstimate": 2160
+      "playedMatches": 25,
+      "minutesEstimate": 2250
     },
     {
       "id": 371,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-01T18:18:33.251Z",
+      "fetchedAt": "2026-03-02T00:59:50.871Z",
       "competitionCount": 8
     }
   }
