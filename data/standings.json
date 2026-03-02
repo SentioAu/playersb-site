@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T12:30:38.916Z",
+  "generatedAt": "2026-03-02T18:31:32.216Z",
   "competitions": [
     {
       "competition": {
@@ -2447,11 +2447,11 @@
                 "tla": "BOL",
                 "crest": "https://crests.football-data.org/103.png"
               },
-              "playedGames": 26,
+              "playedGames": 27,
               "won": 10,
-              "draw": 6,
+              "draw": 7,
               "lost": 10,
-              "points": 36,
+              "points": 37,
               "goalsFor": 35,
               "goalsAgainst": 32,
               "goalDifference": 3,
@@ -2627,11 +2627,11 @@
                 "tla": "PIS",
                 "crest": "https://crests.football-data.org/487.png"
               },
-              "playedGames": 26,
+              "playedGames": 27,
               "won": 1,
-              "draw": 12,
+              "draw": 13,
               "lost": 13,
-              "points": 15,
+              "points": 16,
               "goalsFor": 20,
               "goalsAgainst": 43,
               "goalDifference": -23,
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-02T12:30:38.916Z",
+      "fetchedAt": "2026-03-02T18:31:32.216Z",
       "competitionCount": 8
     }
   }

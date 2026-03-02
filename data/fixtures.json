@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T12:30:38.916Z",
+  "generatedAt": "2026-03-02T18:31:32.216Z",
   "competitions": [
     {
       "competition": {
@@ -5777,7 +5777,7 @@
         {
           "id": 537081,
           "utcDate": "2026-03-02T17:30:00Z",
-          "status": "TIMED",
+          "status": "PAUSED",
           "matchday": 27,
           "stage": "REGULAR_SEASON",
           "group": "",
@@ -5794,18 +5794,18 @@
             "tla": "BOL"
           },
           "score": {
-            "winner": "",
+            "winner": "DRAW",
             "duration": "REGULAR",
             "fullTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             },
             "halfTime": {
-              "home": null,
-              "away": null
+              "home": 0,
+              "away": 0
             }
           },
-          "lastUpdated": "2026-03-02T01:32:00Z"
+          "lastUpdated": "2026-03-02T18:27:45Z"
         },
         {
           "id": 537083,
@@ -8497,7 +8497,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-02T12:30:38.916Z",
+      "fetchedAt": "2026-03-02T18:31:32.216Z",
       "dateFrom": "2026-02-23",
       "dateTo": "2026-03-16",
       "competitionCount": 8
