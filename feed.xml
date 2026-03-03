@@ -5,7 +5,7 @@
     <link>https://playersb.com/</link>
     <description>New and updated player profiles from PlayersB.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 18:31:43 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 01:01:35 GMT</lastBuildDate>
     
     <item>
       <title>Adam Armstrong</title>
@@ -309,6 +309,13 @@
       <description>Julián Álvarez profile on PlayersB. N/A · Club Atlético de Madrid.</description>
     </item>
     <item>
+      <title>Keinan Davis</title>
+      <link>https://playersb.com/players/3896/</link>
+      <guid isPermaLink="true">https://playersb.com/players/3896/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Keinan Davis profile on PlayersB. N/A · Udinese Calcio.</description>
+    </item>
+    <item>
       <title>Kenan Yıldız</title>
       <link>https://playersb.com/players/191712/</link>
       <guid isPermaLink="true">https://playersb.com/players/191712/</guid>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://playersb.com/players/3374/</guid>
       <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
       <description>Kylian Mbappé profile on PlayersB. N/A · Real Madrid CF.</description>
-    </item>
-    <item>
-      <title>Lamine Yamal</title>
-      <link>https://playersb.com/players/202283/</link>
-      <guid isPermaLink="true">https://playersb.com/players/202283/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Lamine Yamal profile on PlayersB. N/A · FC Barcelona.</description>
     </item>
   </channel>
 </rss>

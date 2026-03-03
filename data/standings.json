@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T18:31:32.216Z",
+  "generatedAt": "2026-03-03T01:01:27.451Z",
   "competitions": [
     {
       "competition": {
@@ -58,14 +58,14 @@
                 "tla": "MID",
                 "crest": "https://crests.football-data.org/343.png"
               },
-              "playedGames": 34,
-              "won": 18,
+              "playedGames": 35,
+              "won": 19,
               "draw": 9,
               "lost": 7,
-              "points": 63,
-              "goalsFor": 51,
-              "goalsAgainst": 34,
-              "goalDifference": 17,
+              "points": 66,
+              "goalsFor": 54,
+              "goalsAgainst": 35,
+              "goalDifference": 19,
               "form": ""
             },
             {
@@ -215,24 +215,6 @@
             {
               "position": 11,
               "team": {
-                "id": 332,
-                "name": "Birmingham City FC",
-                "tla": "BIR",
-                "crest": "https://crests.football-data.org/332.png"
-              },
-              "playedGames": 34,
-              "won": 13,
-              "draw": 10,
-              "lost": 11,
-              "points": 49,
-              "goalsFor": 45,
-              "goalsAgainst": 43,
-              "goalDifference": 2,
-              "form": ""
-            },
-            {
-              "position": 12,
-              "team": {
                 "id": 1081,
                 "name": "Preston North End FC",
                 "tla": "PNE",
@@ -246,6 +228,24 @@
               "goalsFor": 41,
               "goalsAgainst": 40,
               "goalDifference": 1,
+              "form": ""
+            },
+            {
+              "position": 12,
+              "team": {
+                "id": 332,
+                "name": "Birmingham City FC",
+                "tla": "BIR",
+                "crest": "https://crests.football-data.org/332.png"
+              },
+              "playedGames": 35,
+              "won": 13,
+              "draw": 10,
+              "lost": 12,
+              "points": 49,
+              "goalsFor": 46,
+              "goalsAgainst": 46,
+              "goalDifference": 0,
               "form": ""
             },
             {
@@ -2424,6 +2424,24 @@
             {
               "position": 8,
               "team": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+              },
+              "playedGames": 27,
+              "won": 11,
+              "draw": 6,
+              "lost": 10,
+              "points": 39,
+              "goalsFor": 36,
+              "goalsAgainst": 32,
+              "goalDifference": 4,
+              "form": ""
+            },
+            {
+              "position": 9,
+              "team": {
                 "id": 471,
                 "name": "US Sassuolo Calcio",
                 "tla": "SAS",
@@ -2440,25 +2458,25 @@
               "form": ""
             },
             {
-              "position": 9,
+              "position": 10,
               "team": {
-                "id": 103,
-                "name": "Bologna FC 1909",
-                "tla": "BOL",
-                "crest": "https://crests.football-data.org/103.png"
+                "id": 115,
+                "name": "Udinese Calcio",
+                "tla": "UDI",
+                "crest": "https://crests.football-data.org/115.png"
               },
               "playedGames": 27,
               "won": 10,
-              "draw": 7,
-              "lost": 10,
-              "points": 37,
-              "goalsFor": 35,
-              "goalsAgainst": 32,
-              "goalDifference": 3,
+              "draw": 5,
+              "lost": 12,
+              "points": 35,
+              "goalsFor": 31,
+              "goalsAgainst": 39,
+              "goalDifference": -8,
               "form": ""
             },
             {
-              "position": 10,
+              "position": 11,
               "team": {
                 "id": 110,
                 "name": "SS Lazio",
@@ -2476,7 +2494,7 @@
               "form": ""
             },
             {
-              "position": 11,
+              "position": 12,
               "team": {
                 "id": 112,
                 "name": "Parma Calcio 1913",
@@ -2491,24 +2509,6 @@
               "goalsFor": 20,
               "goalsAgainst": 32,
               "goalDifference": -12,
-              "form": ""
-            },
-            {
-              "position": 12,
-              "team": {
-                "id": 115,
-                "name": "Udinese Calcio",
-                "tla": "UDI",
-                "crest": "https://crests.football-data.org/115.png"
-              },
-              "playedGames": 26,
-              "won": 9,
-              "draw": 5,
-              "lost": 12,
-              "points": 32,
-              "goalsFor": 28,
-              "goalsAgainst": 39,
-              "goalDifference": -11,
               "form": ""
             },
             {
@@ -2573,14 +2573,14 @@
                 "tla": "FIO",
                 "crest": "https://crests.football-data.org/99.png"
               },
-              "playedGames": 26,
+              "playedGames": 27,
               "won": 5,
               "draw": 9,
-              "lost": 12,
+              "lost": 13,
               "points": 24,
               "goalsFor": 30,
-              "goalsAgainst": 39,
-              "goalDifference": -9,
+              "goalsAgainst": 42,
+              "goalDifference": -12,
               "form": ""
             },
             {
@@ -2629,12 +2629,12 @@
               },
               "playedGames": 27,
               "won": 1,
-              "draw": 13,
-              "lost": 13,
-              "points": 16,
+              "draw": 12,
+              "lost": 14,
+              "points": 15,
               "goalsFor": 20,
-              "goalsAgainst": 43,
-              "goalDifference": -23,
+              "goalsAgainst": 44,
+              "goalDifference": -24,
               "form": ""
             },
             {
@@ -3075,14 +3075,14 @@
                 "tla": "RMA",
                 "crest": "https://crests.football-data.org/86.png"
               },
-              "playedGames": 25,
+              "playedGames": 26,
               "won": 19,
               "draw": 3,
-              "lost": 3,
+              "lost": 4,
               "points": 60,
               "goalsFor": 54,
-              "goalsAgainst": 21,
-              "goalDifference": 33,
+              "goalsAgainst": 22,
+              "goalDifference": 32,
               "form": ""
             },
             {
@@ -3232,6 +3232,24 @@
             {
               "position": 11,
               "team": {
+                "id": 82,
+                "name": "Getafe CF",
+                "tla": "GET",
+                "crest": "https://crests.football-data.org/82.png"
+              },
+              "playedGames": 26,
+              "won": 9,
+              "draw": 5,
+              "lost": 12,
+              "points": 32,
+              "goalsFor": 21,
+              "goalsAgainst": 29,
+              "goalDifference": -8,
+              "form": ""
+            },
+            {
+              "position": 12,
+              "team": {
                 "id": 559,
                 "name": "Sevilla FC",
                 "tla": "SEV",
@@ -3248,7 +3266,7 @@
               "form": ""
             },
             {
-              "position": 12,
+              "position": 13,
               "team": {
                 "id": 298,
                 "name": "Girona FC",
@@ -3266,7 +3284,7 @@
               "form": ""
             },
             {
-              "position": 13,
+              "position": 14,
               "team": {
                 "id": 95,
                 "name": "Valencia CF",
@@ -3281,24 +3299,6 @@
               "goalsFor": 27,
               "goalsAgainst": 39,
               "goalDifference": -12,
-              "form": ""
-            },
-            {
-              "position": 14,
-              "team": {
-                "id": 82,
-                "name": "Getafe CF",
-                "tla": "GET",
-                "crest": "https://crests.football-data.org/82.png"
-              },
-              "playedGames": 25,
-              "won": 8,
-              "draw": 5,
-              "lost": 12,
-              "points": 29,
-              "goalsFor": 20,
-              "goalsAgainst": 29,
-              "goalDifference": -9,
               "form": ""
             },
             {
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-02T18:31:32.216Z",
+      "fetchedAt": "2026-03-03T01:01:27.451Z",
       "competitionCount": 8
     }
   }
