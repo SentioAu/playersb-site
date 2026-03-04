@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-04T12:29:40.930Z",
+  "generatedAt": "2026-03-04T18:32:58.401Z",
   "players": [
     {
       "id": 183151,
@@ -185,8 +185,8 @@
       },
       "goals": 22,
       "assists": 7,
-      "playedMatches": 27,
-      "minutesEstimate": 2430
+      "playedMatches": 28,
+      "minutesEstimate": 2520
     },
     {
       "id": 175994,
@@ -219,8 +219,8 @@
       },
       "goals": 14,
       "assists": 4,
-      "playedMatches": 27,
-      "minutesEstimate": 2430
+      "playedMatches": 28,
+      "minutesEstimate": 2520
     },
     {
       "id": 152454,
@@ -253,8 +253,8 @@
       },
       "goals": 11,
       "assists": 4,
-      "playedMatches": 28,
-      "minutesEstimate": 2520
+      "playedMatches": 29,
+      "minutesEstimate": 2610
     },
     {
       "id": 8279,
@@ -270,8 +270,8 @@
       },
       "goals": 10,
       "assists": 0,
-      "playedMatches": 27,
-      "minutesEstimate": 2430
+      "playedMatches": 28,
+      "minutesEstimate": 2520
     },
     {
       "id": 7839,
@@ -304,8 +304,8 @@
       },
       "goals": 10,
       "assists": 0,
-      "playedMatches": 27,
-      "minutesEstimate": 2430
+      "playedMatches": 28,
+      "minutesEstimate": 2520
     },
     {
       "id": 1684,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-04T12:29:40.930Z",
+      "fetchedAt": "2026-03-04T18:32:58.401Z",
       "competitionCount": 8
     }
   }
