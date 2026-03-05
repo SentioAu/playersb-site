@@ -12,6 +12,15 @@ const OUT_DIR = path.join(ROOT, "players");
 const per90 = (v, m) => (m > 0 ? v / (m / 90) : 0);
 const num = (v) => (typeof v === "number" && Number.isFinite(v) ? v : 0);
 
+function escHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
 function fmt2(n) {
   return Number.isFinite(n) ? n.toFixed(2) : "0.00";
 }
@@ -74,6 +83,176 @@ function ensureTrailingSlash(url) {
   return url.endsWith("/") ? url : `${url}/`;
 }
 
+function splitPositions(position) {
+  return safeStr(position)
+    .split("/")
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function primaryPosition(position) {
+  const parts = splitPositions(position);
+  return parts.length ? parts[0] : "";
+}
+
+function buildBreadcrumbs(player, playerId) {
+  const items = [
+    { name: "Home", url: `${SITE_ORIGIN}/` },
+    { name: "Players", url: `${SITE_ORIGIN}/players/` },
+  ];
+
+  const position = primaryPosition(player?.position);
+  if (position) {
+    const positionSlug = sanitizeId(position);
+    items.push({
+      name: position,
+      url: `${SITE_ORIGIN}/positions/${positionSlug}/`,
+    });
+  }
+
+  const team = safeStr(player?.team);
+  if (team) {
+    const teamSlug = sanitizeId(team);
+    items.push({
+      name: team,
+      url: `${SITE_ORIGIN}/teams/${teamSlug}/`,
+    });
+  }
+
+  const playerName = safeStr(player?.name) || "Player";
+  items.push({
+    name: playerName,
+    url: `${SITE_ORIGIN}/players/${playerId}/`,
+  });
+
+  const breadcrumbHtml = `
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      ${items
+        .map((item, index) => {
+          const isLast = index === items.length - 1;
+          const label = escHtml(item.name);
+          if (isLast) {
+            return `<span class="crumb current" aria-current="page">${label}</span>`;
+          }
+          return `<a class="crumb" href="${item.url}">${label}</a>`;
+        })
+        .join('<span class="crumb-sep">/</span>')}
+    </nav>
+  `;
+
+  const breadcrumbJson = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+
+  const breadcrumbJsonLd = `<script type="application/ld+json">${JSON.stringify(breadcrumbJson)}</script>`;
+
+  return { breadcrumbHtml, breadcrumbJsonLd };
+}
+
+function similarityScore(a, b) {
+  const minsA = num(a.minutes);
+  const minsB = num(b.minutes);
+
+  const g90a = per90(num(a.goals), minsA);
+  const g90b = per90(num(b.goals), minsB);
+  const a90a = per90(num(a.assists), minsA);
+  const a90b = per90(num(b.assists), minsB);
+  const s90a = per90(num(a.shots), minsA);
+  const s90b = per90(num(b.shots), minsB);
+
+  const dist = Math.sqrt(
+    (g90a - g90b) ** 2 +
+    (a90a - a90b) ** 2 +
+    (s90a - s90b) ** 2
+  );
+
+  return dist;
+}
+
+function findSimilarPlayers(player, players, limit = 3) {
+  const playerId = sanitizeId(player?.id);
+  const positions = new Set(splitPositions(player?.position));
+  const team = safeStr(player?.team);
+
+  const candidates = players
+    .filter((p) => sanitizeId(p?.id) && sanitizeId(p?.id) !== playerId)
+    .map((p) => {
+      const posSet = new Set(splitPositions(p?.position));
+      const sharedPos = [...posSet].some((pos) => positions.has(pos));
+      const sameTeam = team && safeStr(p?.team) === team;
+      const score = similarityScore(player, p);
+
+      return {
+        player: p,
+        score,
+        sharedPos,
+        sameTeam,
+      };
+    })
+    .sort((a, b) => {
+      if (a.sharedPos !== b.sharedPos) return a.sharedPos ? -1 : 1;
+      if (a.sameTeam !== b.sameTeam) return a.sameTeam ? 1 : -1;
+      return a.score - b.score;
+    });
+
+  return candidates.slice(0, limit).map((c) => c.player);
+}
+
+function renderSimilarCards(similar, currentId) {
+  if (!similar.length) {
+    return `<div class="card"><p class="meta-text">More profiles are needed to surface similarities.</p></div>`;
+  }
+
+  return similar
+    .map((p) => {
+      const id = sanitizeId(p?.id);
+      const name = safeStr(p?.name);
+      const meta = metaLine(p);
+      const compareUrl = `/compare/?a=${encodeURIComponent(currentId)}&b=${encodeURIComponent(id)}`;
+
+      return `
+        <div class="card">
+          <h3>${escHtml(name)}</h3>
+          <p class="meta-text">${escHtml(meta)}</p>
+          <div class="button-row">
+            <a class="button small secondary" href="/players/${encodeURIComponent(id)}/">View profile</a>
+            <a class="button small secondary" href="${compareUrl}">Compare</a>
+          </div>
+        </div>
+      `.trim();
+    })
+    .join("\n");
+}
+
+function buildPlayerJsonLd(player) {
+  const name = safeStr(player?.name);
+  const position = safeStr(player?.position);
+  const team = safeStr(player?.team);
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name,
+  };
+
+  if (position) schema.jobTitle = position;
+  if (team) {
+    schema.affiliation = {
+      "@type": "SportsTeam",
+      name: team,
+    };
+  }
+
+  return `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
 async function writeFileEnsuringDir(filePath, content) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, content, "utf-8");
@@ -112,6 +291,12 @@ async function main() {
     const goals = num(p.goals);
     const assists = num(p.assists);
     const shots = num(p.shots);
+    const shotsOnTarget = num(p.shotsOnTarget);
+
+    const similarPlayers = findSimilarPlayers(p, players, 3);
+    const similarMarkup = renderSimilarCards(similarPlayers, id);
+    const playerJsonLd = buildPlayerJsonLd(p);
+    const { breadcrumbHtml, breadcrumbJsonLd } = buildBreadcrumbs(p, id);
 
     const [r1Raw, r2Raw, r3Raw] = rivalsFor(id);
 
@@ -136,6 +321,7 @@ async function main() {
       "{{GOALS}}": String(goals),
       "{{ASSISTS}}": String(assists),
       "{{SHOTS}}": String(shots),
+      "{{SHOTS_ON_TARGET}}": String(shotsOnTarget),
 
       "{{G90}}": fmt2(per90(goals, minutes)),
       "{{A90}}": fmt2(per90(assists, minutes)),
@@ -147,6 +333,15 @@ async function main() {
       "{{R2_NAME}}": r2[1],
       "{{R3_ID}}": r3[0],
       "{{R3_NAME}}": r3[1],
+      "{{SIMILAR_PLAYERS}}": similarMarkup,
+      "{{PLAYER_JSON_LD}}": playerJsonLd,
+      "{{BREADCRUMBS}}": breadcrumbHtml,
+      "{{BREADCRUMB_JSON_LD}}": breadcrumbJsonLd,
+      "{{SEASON_LABEL}}": "2023/24",
+      "{{SEASON_MINUTES}}": String(minutes),
+      "{{SEASON_GOALS}}": String(goals),
+      "{{SEASON_ASSISTS}}": String(assists),
+      "{{SEASON_SOT}}": String(shotsOnTarget),
     });
 
     // ✅ Directory-style canonical

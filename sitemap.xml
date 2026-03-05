@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://playersb.com/</loc>
+    <lastmod>2025-12-29</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/compare/</loc>
@@ -26,6 +27,43 @@
   </url>
   <url>
     <loc>https://playersb.com/players/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/glossary/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/fantasy/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/embed/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/embed/player/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/sports/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/matches/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/standings/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/archive/</loc>
   </url>
   <url>
     <loc>https://playersb.com/players/bellingham/</loc>
@@ -56,5 +94,106 @@
   </url>
   <url>
     <loc>https://playersb.com/players/vinicius/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/am/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/cm/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/lw/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/rw/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/ss/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/st/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/atl-tico-madrid/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/bayern-munich/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/liverpool/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/manchester-city/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/napoli/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/paris-saint-germain/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/real-madrid/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/tottenham/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/cl/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/pd/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/competitions/pl/</loc>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/per-90-normalization/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/efficiency-vs-volume/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/reading-comparisons/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/minutes-and-role/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/learn/building-comparison-briefs/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/maradona/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/pele/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/zidane/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/ronaldo/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/ronaldinho/</loc>
+  </url>
+  <url>
+    <loc>https://playersb.com/legacy/cruyff/</loc>
   </url>
 </urlset>
