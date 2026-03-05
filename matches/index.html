@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matches & Fixtures | PlayersB — The Players Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Live scores, upcoming fixtures, and recent results for every competition PlayersB tracks." />
+  <link rel="canonical" href="https://playersb.com/matches/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PlayersB — The Players Book" />
+  <meta property="og:title" content="Matches & Fixtures | PlayersB" />
+  <meta property="og:description" content="Live scores, upcoming fixtures, and recent results for every competition PlayersB tracks." />
+  <meta property="og:url" content="https://playersb.com/matches/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Matches & Fixtures | PlayersB" />
+  <meta name="twitter:description" content="Live scores, upcoming fixtures, and recent results for every competition PlayersB tracks." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Structured Data (WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayersB — The Players Book",
+    "url": "https://playersb.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playersb.com/players/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.playersbTrack = function (eventName, params) {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, Object.assign({
+        page_path: window.location.pathname,
+        page_title: document.title,
+      }, params || {}));
+    };
+
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM', {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      send_page_view: true
+    });
+  </script>
+</head>
+
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+      <span class="pill">Matches</span>
+      <h1>Fixtures, live scores, and recent results.</h1>
+      <p class="lead">Updated from Football-Data.org on a rolling window so you can keep tabs on what is next.</p>
+      <div class="button-row">
+        <a class="button" href="/standings/">View standings</a>
+        <a class="button secondary" href="/archive/">Browse archives</a>
+        <a class="button secondary" href="/tools/">Back to tools</a>
+      </div>
+      <p class="callout">Last updated: Pending fetch • Unknown freshness</p>
+      <p class="meta-text">Source: football-data (pending) — Run scripts/fetch-football-data.mjs with FOOTBALL_DATA_API_TOKEN to populate fixtures.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Live matchboard</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Live / half-time</h3><p class="stat-value" data-live-count>0</p></div>
+        <div class="card"><h3>Upcoming</h3><p class="stat-value" data-upcoming-count>0</p></div>
+        <div class="card"><h3>Final</h3><p class="stat-value" data-final-count>0</p></div>
+      </div>
+      <div class="button-row" style="margin-top:1rem;">
+        <button class="button small" type="button" data-filter="all">All</button>
+        <button class="button small secondary" type="button" data-filter="live">Live</button>
+        <button class="button small secondary" type="button" data-filter="upcoming">Upcoming</button>
+        <button class="button small secondary" type="button" data-filter="final">Final</button>
+        <button class="button small secondary" type="button" data-filter="following">Following</button>
+        <button class="button small secondary" type="button" id="matchesRefreshNow">Check updates now</button>
+      </div>
+      <p class="meta-text" id="matches-refresh-label">Auto-checking feed updates every 60s.</p>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Focused matchboard</h2>
+        <p class="meta-text">Follow teams, players, and competitions to keep relevant fixtures visible.</p>
+        <div class="button-row" id="followTeamsToolbar"></div>
+        <div class="button-row" id="followPlayersToolbar"></div>
+        <div class="button-row" id="followCompetitionsToolbar"></div>
+      </div>
+    </section>
+
+    <section class="section" id="matchesSectionsRoot">
+      <div class="card"><p class="meta-text">No fixtures loaded yet. Run the data fetch script to populate fixtures.</p></div>
+    </section>
+
+    
+
+    <script>
+      (function () {
+        let currentGeneratedAt = "";
+        const initialCompetitions = [];
+        const allTeams = [];
+        const allPlayers = [];
+        const allCompetitions = [];
+        const storageKey = "playersb-followed-entities";
+
+        const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
+        const refreshLabel = document.getElementById("matches-refresh-label");
+        const refreshNowButton = document.getElementById("matchesRefreshNow");
+        const followTeamsToolbar = document.getElementById("followTeamsToolbar");
+        const followPlayersToolbar = document.getElementById("followPlayersToolbar");
+        const followCompetitionsToolbar = document.getElementById("followCompetitionsToolbar");
+
+        function track(eventName, params) {
+          if (typeof window.playersbTrack === "function") window.playersbTrack(eventName, params || {});
+        }
+
+        function readFollowed() {
+          try {
+            const raw = JSON.parse(localStorage.getItem(storageKey) || "{}");
+            return {
+              teams: new Set(Array.isArray(raw.teams) ? raw.teams.map(String) : []),
+              players: new Set(Array.isArray(raw.players) ? raw.players.map(String) : []),
+              competitions: new Set(Array.isArray(raw.competitions) ? raw.competitions.map(String) : []),
+            };
+          } catch {
+            return { teams: new Set(), players: new Set(), competitions: new Set() };
+          }
+        }
+
+        function writeFollowed(state) {
+          localStorage.setItem(storageKey, JSON.stringify({
+            teams: Array.from(state.teams),
+            players: Array.from(state.players),
+            competitions: Array.from(state.competitions),
+          }));
+        }
+
+        function renderFollowToolbar(container, pool, setRef, label, eventName) {
+          if (!container) return;
+          container.innerHTML = pool.map((item) => {
+            const active = setRef.has(item);
+            return '<button type="button" class="button small ' + (active ? '' : 'secondary') + '" data-follow-item="' + item.replaceAll('"', '&quot;') + '">' + (active ? 'Following: ' : label + ': ') + item + '</button>';
+          }).join(' ');
+
+          container.querySelectorAll('[data-follow-item]').forEach((button) => {
+            button.addEventListener('click', () => {
+              const item = button.getAttribute('data-follow-item') || '';
+              if (setRef.has(item)) setRef.delete(item); else setRef.add(item);
+              track(eventName, { value: item, following: setRef.has(item) });
+              renderAllFollowToolbars(followed);
+              writeFollowed(followed);
+              applyFilter(currentFilter, followed);
+            });
+          });
+        }
+
+        function renderAllFollowToolbars(state) {
+          renderFollowToolbar(followTeamsToolbar, allTeams, state.teams, 'Team', 'matches_follow_team_toggle');
+          renderFollowToolbar(followPlayersToolbar, allPlayers, state.players, 'Player', 'matches_follow_player_toggle');
+          renderFollowToolbar(followCompetitionsToolbar, allCompetitions, state.competitions, 'Competition', 'matches_follow_competition_toggle');
+        }
+
+        function statusBucket(match) {
+          const status = String(match && match.status || '');
+          if (status === 'IN_PLAY' || status === 'PAUSED') return 'live';
+          if (status === 'SCHEDULED') return 'upcoming';
+          if (status === 'FINISHED') return 'final';
+          return 'other';
+        }
+
+        function updateCounts(competitions) {
+          const matches = (competitions || []).flatMap((entry) => Array.isArray(entry.matches) ? entry.matches : []);
+          const live = matches.filter((m) => statusBucket(m) === 'live').length;
+          const upcoming = matches.filter((m) => statusBucket(m) === 'upcoming').length;
+          const final = matches.filter((m) => statusBucket(m) === 'final').length;
+          const lc = document.querySelector('[data-live-count]');
+          const uc = document.querySelector('[data-upcoming-count]');
+          const fc = document.querySelector('[data-final-count]');
+          if (lc) lc.textContent = String(live);
+          if (uc) uc.textContent = String(upcoming);
+          if (fc) fc.textContent = String(final);
+        }
+
+        let currentFilter = 'all';
+        function applyFilter(filterName, state) {
+          currentFilter = filterName;
+          document.querySelectorAll('tr[data-status]').forEach((row) => {
+            const rowStatus = row.getAttribute('data-status') || '';
+            const home = row.getAttribute('data-home-team') || '';
+            const away = row.getAttribute('data-away-team') || '';
+            const timelineText = (row.getAttribute('data-timeline-text') || '').toLowerCase();
+            const compCard = row.closest('[data-competition-name]');
+            const compName = (compCard?.getAttribute('data-competition-name') || '');
+
+            const byStatus = (filterName === 'all' || filterName === 'following') || rowStatus === filterName;
+            const byFollow = filterName !== 'following' ||
+              state.teams.has(home) || state.teams.has(away) ||
+              state.competitions.has(compName) ||
+              Array.from(state.players).some((p) => timelineText.includes(String(p).toLowerCase()));
+
+            row.style.display = (byStatus && byFollow) ? '' : 'none';
+          });
+
+          filterButtons.forEach((button) => {
+            button.classList.toggle('secondary', button.dataset.filter !== filterName);
+          });
+          track('matches_filter', { filter: filterName });
+        }
+
+        function inferPlayers(payload) {
+          const names = [];
+          const comps = Array.isArray(payload && payload.competitions) ? payload.competitions : [];
+          comps.forEach((entry) => {
+            const matches = Array.isArray(entry.matches) ? entry.matches : [];
+            matches.forEach((m) => {
+              const text = JSON.stringify(m.events || m.score?.scorers || []);
+              const found = text.match(/[A-Z][a-z]+(?:s[A-Z][a-z]+)+/g) || [];
+              names.push(...found);
+            });
+          });
+          return Array.from(new Set(names)).slice(0, 40);
+        }
+
+        function patchFromPayload(payload) {
+          const competitions = Array.isArray(payload && payload.competitions) ? payload.competitions : [];
+          const compMap = new Map(competitions.map((entry) => [String(entry?.competition?.slug || entry?.competition?.code || entry?.competition?.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'competition', entry]));
+
+          document.querySelectorAll('[data-competition-body]').forEach((tbody) => {
+            const key = tbody.getAttribute('data-competition-body') || '';
+            const entry = compMap.get(key);
+            if (!entry) return;
+            const rows = (Array.isArray(entry.matches) ? entry.matches : []).map((m) => {
+              const home = String(m?.homeTeam?.name || '');
+              const away = String(m?.awayTeam?.name || '');
+              const status = String(m?.status || '');
+              const date = (m?.utcDate ? new Date(m.utcDate).toISOString().replace('T', ' ').slice(0,16) + ' UTC' : '');
+              const bucket = statusBucket(m);
+              const score = (m?.score?.fullTime?.home != null && m?.score?.fullTime?.away != null) ? (m.score.fullTime.home + '-' + m.score.fullTime.away) : '—';
+              const timeline = JSON.stringify(m.events || m.score?.scorers || []);
+              return '<tr data-status="' + bucket + '" data-home-team="' + home.replaceAll('"','&quot;') + '" data-away-team="' + away.replaceAll('"','&quot;') + '" data-timeline-text="' + timeline.replaceAll('"','&quot;') + '">' +
+                '<td>' + date + '</td><td>' + home + '</td><td>' + score + '</td><td>' + away + '</td><td><span class="status-badge">' + statusLabel(status) + '</span></td></tr>';
+            }).join('');
+            if (rows) tbody.innerHTML = rows;
+          });
+
+          updateCounts(competitions);
+          const inferredPlayers = inferPlayers(payload);
+          if (inferredPlayers.length) {
+            inferredPlayers.forEach((p) => {
+              if (!allPlayers.includes(p)) allPlayers.push(p);
+            });
+            renderAllFollowToolbars(followed);
+          }
+          applyFilter(currentFilter, followed);
+        }
+
+        async function checkForUpdates(manual) {
+          try {
+            const response = await fetch('/data/fixtures.json?ts=' + Date.now(), { cache: 'no-store' });
+            if (!response.ok) throw new Error('bad_status');
+            const payload = await response.json();
+            const nextGeneratedAt = String(payload?.generatedAt || '');
+            if (nextGeneratedAt && nextGeneratedAt !== currentGeneratedAt) {
+              patchFromPayload(payload);
+              currentGeneratedAt = nextGeneratedAt;
+              if (refreshLabel) refreshLabel.textContent = 'Live data patched in place (' + nextGeneratedAt + ').';
+              track('matches_data_refresh', { source: manual ? 'manual' : 'auto', has_update: true, patch_mode: 'in_page' });
+              return;
+            }
+            if (manual && refreshLabel) refreshLabel.textContent = 'No newer feed available yet. Auto-check remains enabled.';
+            if (manual) track('matches_data_refresh', { source: 'manual', has_update: false, patch_mode: 'in_page' });
+          } catch {
+            if (manual && refreshLabel) refreshLabel.textContent = 'Could not check updates right now. Auto-check remains enabled.';
+          }
+        }
+
+        const followed = readFollowed();
+        renderAllFollowToolbars(followed);
+        filterButtons.forEach((button) => button.addEventListener('click', () => applyFilter(button.dataset.filter || 'all', followed)));
+        if (refreshNowButton) refreshNowButton.addEventListener('click', () => checkForUpdates(true));
+
+        updateCounts(initialCompetitions);
+        applyFilter('all', followed);
+
+        let secondsLeft = 60;
+        setInterval(() => {
+          secondsLeft = secondsLeft <= 1 ? 60 : secondsLeft - 1;
+          if (refreshLabel) refreshLabel.textContent = 'Auto-checking feed updates in ' + secondsLeft + 's.';
+          if (secondsLeft === 60) checkForUpdates(false);
+        }, 1000);
+      })();
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function track(eventName, params) {
+      if (typeof window.playersbTrack === "function") {
+        window.playersbTrack(eventName, params);
+      }
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (button) {
+        updateButton(button);
+        button.addEventListener("click", () => {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          const nextTheme = isDark ? "light" : "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+          } else {
+            root.setAttribute("data-theme", "dark");
+          }
+          localStorage.setItem(storageKey, nextTheme);
+          updateButton(button);
+          track("theme_toggle", { theme: nextTheme });
+        });
+      }
+
+      document.querySelectorAll("a[href]").forEach((anchor) => {
+        anchor.addEventListener("click", () => {
+          const href = anchor.getAttribute("href") || "";
+          const text = (anchor.textContent || "").trim().slice(0, 80);
+          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
+          const isNav = anchor.classList.contains("nav-link");
+          const isCta = anchor.classList.contains("button");
+
+          if (isOutbound) {
+            track("outbound_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isNav) {
+            track("nav_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isCta) {
+            track("cta_click", { destination: href, link_text: text });
+          }
+        });
+      });
+
+      setTimeout(() => {
+        track("engaged_read", { engaged_seconds: 30 });
+      }, 30000);
+    });
+  })();
+</script>
+</body>
+</html>
