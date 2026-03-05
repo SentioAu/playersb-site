@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-04T18:33:09.051Z",
+  "generated_at": "2026-03-05T01:01:08.190Z",
   "players": [
     {
       "id": "4863",
@@ -84,7 +84,7 @@
       "position": "N/A",
       "team": "Manchester City FC",
       "minutes": 2520,
-      "goals": 14,
+      "goals": 15,
       "assists": 4,
       "shots": 0,
       "shotsOnTarget": 0
@@ -138,7 +138,7 @@
       "name": "Bryan Mbeumo",
       "position": "N/A",
       "team": "Manchester United FC",
-      "minutes": 2070,
+      "minutes": 2160,
       "goals": 9,
       "assists": 3,
       "shots": 0,
@@ -414,8 +414,8 @@
       "position": "N/A",
       "team": "Chelsea FC",
       "minutes": 2610,
-      "goals": 11,
-      "assists": 4,
+      "goals": 14,
+      "assists": 5,
       "shots": 0,
       "shotsOnTarget": 0
     },
@@ -449,6 +449,17 @@
       "minutes": 1080,
       "goals": 9,
       "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0
+    },
+    {
+      "id": "133276",
+      "name": "Jorge de Frutos",
+      "position": "N/A",
+      "team": "Rayo Vallecano de Madrid",
+      "minutes": 2160,
+      "goals": 10,
+      "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
     },
@@ -911,17 +922,6 @@
       "minutes": 2520,
       "goals": 10,
       "assists": 0,
-      "shots": 0,
-      "shotsOnTarget": 0
-    },
-    {
-      "id": "1556",
-      "name": "Vinicius Junior",
-      "position": "N/A",
-      "team": "Real Madrid CF",
-      "minutes": 2160,
-      "goals": 9,
-      "assists": 5,
       "shots": 0,
       "shotsOnTarget": 0
     },

@@ -5,7 +5,7 @@
     <link>https://playersb.com/</link>
     <description>New and updated player profiles from PlayersB.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 18:33:09 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 01:01:08 GMT</lastBuildDate>
     
     <item>
       <title>Adam Armstrong</title>
@@ -295,6 +295,13 @@
       <description>Jonathan Burkardt profile on PlayersB. N/A · Eintracht Frankfurt.</description>
     </item>
     <item>
+      <title>Jorge de Frutos</title>
+      <link>https://playersb.com/players/133276/</link>
+      <guid isPermaLink="true">https://playersb.com/players/133276/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Jorge de Frutos profile on PlayersB. N/A · Rayo Vallecano de Madrid.</description>
+    </item>
+    <item>
       <title>Jude Bellingham</title>
       <link>https://playersb.com/players/bellingham/</link>
       <guid isPermaLink="true">https://playersb.com/players/bellingham/</guid>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://playersb.com/players/mbappe/</guid>
       <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
       <description>Kylian Mbappé profile on PlayersB. LW/ST · Paris Saint-Germain.</description>
-    </item>
-    <item>
-      <title>Kylian Mbappé</title>
-      <link>https://playersb.com/players/3374/</link>
-      <guid isPermaLink="true">https://playersb.com/players/3374/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Kylian Mbappé profile on PlayersB. N/A · Real Madrid CF.</description>
     </item>
   </channel>
 </rss>

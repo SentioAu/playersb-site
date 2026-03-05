@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-04T18:32:58.401Z",
+  "generatedAt": "2026-03-05T01:00:56.072Z",
   "competitions": [
     {
       "competition": {
@@ -507,14 +507,14 @@
                 "tla": "ARS",
                 "crest": "https://crests.football-data.org/57.png"
               },
-              "playedGames": 29,
-              "won": 19,
+              "playedGames": 30,
+              "won": 20,
               "draw": 7,
               "lost": 3,
-              "points": 64,
-              "goalsFor": 58,
+              "points": 67,
+              "goalsFor": 59,
               "goalsAgainst": 22,
-              "goalDifference": 36,
+              "goalDifference": 37,
               "form": ""
             },
             {
@@ -525,13 +525,13 @@
                 "tla": "MCI",
                 "crest": "https://crests.football-data.org/65.png"
               },
-              "playedGames": 28,
+              "playedGames": 29,
               "won": 18,
-              "draw": 5,
+              "draw": 6,
               "lost": 5,
-              "points": 59,
-              "goalsFor": 57,
-              "goalsAgainst": 25,
+              "points": 60,
+              "goalsFor": 59,
+              "goalsAgainst": 27,
               "goalDifference": 32,
               "form": ""
             },
@@ -543,14 +543,14 @@
                 "tla": "MUN",
                 "crest": "https://crests.football-data.org/66.png"
               },
-              "playedGames": 28,
+              "playedGames": 29,
               "won": 14,
               "draw": 9,
-              "lost": 5,
+              "lost": 6,
               "points": 51,
-              "goalsFor": 50,
-              "goalsAgainst": 38,
-              "goalDifference": 12,
+              "goalsFor": 51,
+              "goalsAgainst": 40,
+              "goalDifference": 11,
               "form": ""
             },
             {
@@ -561,18 +561,36 @@
                 "tla": "AVL",
                 "crest": "https://crests.football-data.org/58.png"
               },
-              "playedGames": 28,
+              "playedGames": 29,
               "won": 15,
               "draw": 6,
-              "lost": 7,
+              "lost": 8,
               "points": 51,
-              "goalsFor": 38,
-              "goalsAgainst": 30,
-              "goalDifference": 8,
+              "goalsFor": 39,
+              "goalsAgainst": 34,
+              "goalDifference": 5,
               "form": ""
             },
             {
               "position": 5,
+              "team": {
+                "id": 61,
+                "name": "Chelsea FC",
+                "tla": "CHE",
+                "crest": "https://crests.football-data.org/61.png"
+              },
+              "playedGames": 29,
+              "won": 13,
+              "draw": 9,
+              "lost": 7,
+              "points": 48,
+              "goalsFor": 53,
+              "goalsAgainst": 34,
+              "goalDifference": 19,
+              "form": ""
+            },
+            {
+              "position": 6,
               "team": {
                 "id": 64,
                 "name": "Liverpool FC",
@@ -587,24 +605,6 @@
               "goalsFor": 48,
               "goalsAgainst": 39,
               "goalDifference": 9,
-              "form": ""
-            },
-            {
-              "position": 6,
-              "team": {
-                "id": 61,
-                "name": "Chelsea FC",
-                "tla": "CHE",
-                "crest": "https://crests.football-data.org/61.png"
-              },
-              "playedGames": 28,
-              "won": 12,
-              "draw": 9,
-              "lost": 7,
-              "points": 45,
-              "goalsFor": 49,
-              "goalsAgainst": 33,
-              "goalDifference": 16,
               "form": ""
             },
             {
@@ -669,14 +669,14 @@
                 "tla": "FUL",
                 "crest": "https://crests.football-data.org/63.png"
               },
-              "playedGames": 28,
+              "playedGames": 29,
               "won": 12,
               "draw": 4,
-              "lost": 12,
+              "lost": 13,
               "points": 40,
               "goalsFor": 40,
-              "goalsAgainst": 42,
-              "goalDifference": -2,
+              "goalsAgainst": 43,
+              "goalDifference": -3,
               "form": ""
             },
             {
@@ -700,37 +700,37 @@
             {
               "position": 12,
               "team": {
-                "id": 397,
-                "name": "Brighton & Hove Albion FC",
-                "tla": "BHA",
-                "crest": "https://crests.football-data.org/397.png"
-              },
-              "playedGames": 28,
-              "won": 9,
-              "draw": 10,
-              "lost": 9,
-              "points": 37,
-              "goalsFor": 38,
-              "goalsAgainst": 35,
-              "goalDifference": 3,
-              "form": ""
-            },
-            {
-              "position": 13,
-              "team": {
                 "id": 67,
                 "name": "Newcastle United FC",
                 "tla": "NEW",
                 "crest": "https://crests.football-data.org/67.png"
               },
-              "playedGames": 28,
-              "won": 10,
+              "playedGames": 29,
+              "won": 11,
               "draw": 6,
               "lost": 12,
-              "points": 36,
-              "goalsFor": 40,
-              "goalsAgainst": 42,
-              "goalDifference": -2,
+              "points": 39,
+              "goalsFor": 42,
+              "goalsAgainst": 43,
+              "goalDifference": -1,
+              "form": ""
+            },
+            {
+              "position": 13,
+              "team": {
+                "id": 397,
+                "name": "Brighton & Hove Albion FC",
+                "tla": "BHA",
+                "crest": "https://crests.football-data.org/397.png"
+              },
+              "playedGames": 29,
+              "won": 9,
+              "draw": 10,
+              "lost": 10,
+              "points": 37,
+              "goalsFor": 38,
+              "goalsAgainst": 36,
+              "goalDifference": 2,
               "form": ""
             },
             {
@@ -795,13 +795,13 @@
                 "tla": "NOT",
                 "crest": "https://crests.football-data.org/351.png"
               },
-              "playedGames": 28,
+              "playedGames": 29,
               "won": 7,
-              "draw": 6,
+              "draw": 7,
               "lost": 15,
-              "points": 27,
-              "goalsFor": 26,
-              "goalsAgainst": 41,
+              "points": 28,
+              "goalsFor": 28,
+              "goalsAgainst": 43,
               "goalDifference": -15,
               "form": ""
             },
@@ -813,14 +813,14 @@
                 "tla": "WHU",
                 "crest": "https://crests.football-data.org/563.png"
               },
-              "playedGames": 28,
-              "won": 6,
+              "playedGames": 29,
+              "won": 7,
               "draw": 7,
               "lost": 15,
-              "points": 25,
-              "goalsFor": 34,
+              "points": 28,
+              "goalsFor": 35,
               "goalsAgainst": 54,
-              "goalDifference": -20,
+              "goalDifference": -19,
               "form": ""
             },
             {
@@ -1919,7 +1919,7 @@
           "id": 2414,
           "startDate": "2025-08-22",
           "endDate": "2026-05-16",
-          "currentMatchday": 24
+          "currentMatchday": 25
         },
         "slug": "bundesliga"
       },
@@ -1927,7 +1927,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 24,
+        "currentMatchday": 25,
         "winner": null
       },
       "standings": [
@@ -2034,14 +2034,14 @@
                 "tla": "B04",
                 "crest": "https://crests.football-data.org/3.png"
               },
-              "playedGames": 23,
-              "won": 12,
+              "playedGames": 24,
+              "won": 13,
               "draw": 4,
               "lost": 7,
-              "points": 40,
-              "goalsFor": 44,
+              "points": 43,
+              "goalsFor": 45,
               "goalsAgainst": 29,
-              "goalDifference": 15,
+              "goalDifference": 16,
               "form": ""
             },
             {
@@ -2124,14 +2124,14 @@
                 "tla": "HSV",
                 "crest": "https://crests.football-data.org/7.png"
               },
-              "playedGames": 23,
+              "playedGames": 24,
               "won": 6,
               "draw": 8,
-              "lost": 9,
+              "lost": 10,
               "points": 26,
               "goalsFor": 26,
-              "goalsAgainst": 34,
-              "goalDifference": -8,
+              "goalsAgainst": 35,
+              "goalDifference": -9,
               "form": ""
             },
             {
@@ -3250,6 +3250,24 @@
             {
               "position": 12,
               "team": {
+                "id": 87,
+                "name": "Rayo Vallecano de Madrid",
+                "tla": "RAY",
+                "crest": "https://crests.football-data.org/87.png"
+              },
+              "playedGames": 26,
+              "won": 7,
+              "draw": 9,
+              "lost": 10,
+              "points": 30,
+              "goalsFor": 26,
+              "goalsAgainst": 32,
+              "goalDifference": -6,
+              "form": ""
+            },
+            {
+              "position": 13,
+              "team": {
                 "id": 559,
                 "name": "Sevilla FC",
                 "tla": "SEV",
@@ -3266,7 +3284,7 @@
               "form": ""
             },
             {
-              "position": 13,
+              "position": 14,
               "team": {
                 "id": 298,
                 "name": "Girona FC",
@@ -3284,7 +3302,7 @@
               "form": ""
             },
             {
-              "position": 14,
+              "position": 15,
               "team": {
                 "id": 95,
                 "name": "Valencia CF",
@@ -3299,24 +3317,6 @@
               "goalsFor": 27,
               "goalsAgainst": 39,
               "goalDifference": -12,
-              "form": ""
-            },
-            {
-              "position": 15,
-              "team": {
-                "id": 87,
-                "name": "Rayo Vallecano de Madrid",
-                "tla": "RAY",
-                "crest": "https://crests.football-data.org/87.png"
-              },
-              "playedGames": 26,
-              "won": 6,
-              "draw": 10,
-              "lost": 10,
-              "points": 28,
-              "goalsFor": 23,
-              "goalsAgainst": 32,
-              "goalDifference": -9,
               "form": ""
             },
             {
@@ -3401,12 +3401,12 @@
               },
               "playedGames": 26,
               "won": 3,
-              "draw": 9,
-              "lost": 14,
-              "points": 18,
+              "draw": 8,
+              "lost": 15,
+              "points": 17,
               "goalsFor": 16,
-              "goalsAgainst": 40,
-              "goalDifference": -24,
+              "goalsAgainst": 43,
+              "goalDifference": -27,
               "form": ""
             }
           ]
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-04T18:32:58.401Z",
+      "fetchedAt": "2026-03-05T01:00:56.072Z",
       "competitionCount": 8
     }
   }
