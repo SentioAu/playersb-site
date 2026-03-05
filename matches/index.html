@@ -115,8 +115,9 @@
         <button class="button small secondary" type="button" data-filter="live">Live</button>
         <button class="button small secondary" type="button" data-filter="upcoming">Upcoming</button>
         <button class="button small secondary" type="button" data-filter="final">Final</button>
+        <button class="button small secondary" type="button" id="matchesRefreshNow">Check updates now</button>
       </div>
-      <p class="meta-text" id="matches-refresh-label">Auto-refresh suggestion: check again in 60s for live updates.</p>
+      <p class="meta-text" id="matches-refresh-label">Auto-checking feed updates every 60s.</p>
     </section>
 
     <section class="section">
@@ -130,6 +131,14 @@
         const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
         const rows = Array.from(document.querySelectorAll("tr[data-status]"));
         const refreshLabel = document.getElementById("matches-refresh-label");
+        const refreshNowButton = document.getElementById("matchesRefreshNow");
+        const initialGeneratedAt = "";
+
+        function track(eventName, params) {
+          if (typeof window.playersbTrack === "function") {
+            window.playersbTrack(eventName, params || {});
+          }
+        }
 
         function applyFilter(filterName) {
           rows.forEach((row) => {
@@ -141,8 +150,33 @@
             button.classList.toggle("secondary", !isActive);
           });
 
-          if (typeof window.playersbTrack === "function") {
-            window.playersbTrack("matches_filter", { filter: filterName });
+          track("matches_filter", { filter: filterName });
+        }
+
+        async function checkForUpdates(manual) {
+          try {
+            const response = await fetch("/data/fixtures.json?ts=" + Date.now(), { cache: "no-store" });
+            if (!response.ok) throw new Error("bad_status_" + response.status);
+            const payload = await response.json();
+            const nextGeneratedAt = String(payload && payload.generatedAt || "");
+            if (nextGeneratedAt && nextGeneratedAt !== initialGeneratedAt) {
+              if (refreshLabel) {
+                refreshLabel.textContent = "New match data detected. Refreshing view…";
+              }
+              track("matches_data_refresh", { source: manual ? "manual" : "auto", has_update: true });
+              window.location.reload();
+              return;
+            }
+            if (manual && refreshLabel) {
+              refreshLabel.textContent = "No newer feed available yet. Checking again automatically.";
+            }
+            if (manual) {
+              track("matches_data_refresh", { source: "manual", has_update: false });
+            }
+          } catch {
+            if (manual && refreshLabel) {
+              refreshLabel.textContent = "Could not check updates right now. Auto-check remains enabled.";
+            }
           }
         }
 
@@ -150,13 +184,22 @@
           button.addEventListener("click", () => applyFilter(button.dataset.filter || "all"));
         });
 
+        if (refreshNowButton) {
+          refreshNowButton.addEventListener("click", () => {
+            checkForUpdates(true);
+          });
+        }
+
         applyFilter("all");
 
         let secondsLeft = 60;
         setInterval(() => {
           secondsLeft = secondsLeft <= 1 ? 60 : secondsLeft - 1;
           if (refreshLabel) {
-            refreshLabel.textContent = "Auto-refresh suggestion: check again in " + secondsLeft + "s for live updates.";
+            refreshLabel.textContent = "Auto-checking feed updates in " + secondsLeft + "s.";
+          }
+          if (secondsLeft === 60) {
+            checkForUpdates(false);
           }
         }, 1000);
       })();
