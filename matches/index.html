@@ -104,8 +104,63 @@
     </section>
 
     <section class="section">
+      <h2 class="section-title">Live matchboard</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Live / half-time</h3><p class="stat-value">0</p></div>
+        <div class="card"><h3>Upcoming</h3><p class="stat-value">0</p></div>
+        <div class="card"><h3>Final</h3><p class="stat-value">0</p></div>
+      </div>
+      <div class="button-row" style="margin-top:1rem;">
+        <button class="button small" type="button" data-filter="all">All</button>
+        <button class="button small secondary" type="button" data-filter="live">Live</button>
+        <button class="button small secondary" type="button" data-filter="upcoming">Upcoming</button>
+        <button class="button small secondary" type="button" data-filter="final">Final</button>
+      </div>
+      <p class="meta-text" id="matches-refresh-label">Auto-refresh suggestion: check again in 60s for live updates.</p>
+    </section>
+
+    <section class="section">
       <div class="card"><p class="meta-text">No fixtures loaded yet. Run the data fetch script to populate fixtures.</p></div>
     </section>
+
+    
+
+    <script>
+      (function () {
+        const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
+        const rows = Array.from(document.querySelectorAll("tr[data-status]"));
+        const refreshLabel = document.getElementById("matches-refresh-label");
+
+        function applyFilter(filterName) {
+          rows.forEach((row) => {
+            row.style.display = (filterName === "all" || row.dataset.status === filterName) ? "" : "none";
+          });
+
+          filterButtons.forEach((button) => {
+            const isActive = button.dataset.filter === filterName;
+            button.classList.toggle("secondary", !isActive);
+          });
+
+          if (typeof window.playersbTrack === "function") {
+            window.playersbTrack("matches_filter", { filter: filterName });
+          }
+        }
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => applyFilter(button.dataset.filter || "all"));
+        });
+
+        applyFilter("all");
+
+        let secondsLeft = 60;
+        setInterval(() => {
+          secondsLeft = secondsLeft <= 1 ? 60 : secondsLeft - 1;
+          if (refreshLabel) {
+            refreshLabel.textContent = "Auto-refresh suggestion: check again in " + secondsLeft + "s for live updates.";
+          }
+        }, 1000);
+      })();
+    </script>
   </main>
 
   <footer class="site-footer">

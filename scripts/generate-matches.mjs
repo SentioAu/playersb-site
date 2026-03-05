@@ -35,6 +35,14 @@ function statusLabel(match) {
   return status || "";
 }
 
+function statusBucket(match) {
+  const status = String(match?.status || "");
+  if (["IN_PLAY", "PAUSED"].includes(status)) return "live";
+  if (status === "SCHEDULED") return "upcoming";
+  if (status === "FINISHED") return "final";
+  return "other";
+}
+
 function scoreText(match) {
   const score = match?.score?.fullTime;
   if (!score) return "";
@@ -73,6 +81,10 @@ async function main() {
     Array.isArray(entry?.matches) ? entry.matches.map((match) => ({ match, competition: entry?.competition })) : []
   );
 
+  const liveCount = allMatches.filter(({ match }) => statusBucket(match) === "live").length;
+  const upcomingCount = allMatches.filter(({ match }) => statusBucket(match) === "upcoming").length;
+  const finalCount = allMatches.filter(({ match }) => statusBucket(match) === "final").length;
+
   const sections = competitions
     .map((entry) => {
       const name = entry?.competition?.name || entry?.competition?.code || "Competition";
@@ -84,9 +96,10 @@ async function main() {
           const away = escHtml(match?.awayTeam?.name || "");
           const status = escHtml(statusLabel(match));
           const score = escHtml(scoreText(match));
+          const bucket = statusBucket(match);
 
           return `
-            <tr>
+            <tr data-status="${bucket}">
               <td>${date}</td>
               <td>${home}</td>
               <td>${score || "—"}</td>
@@ -176,15 +189,74 @@ async function main() {
     </section>
 
     <section class="section">
+      <h2 class="section-title">Live matchboard</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Live / half-time</h3><p class="stat-value">${liveCount}</p></div>
+        <div class="card"><h3>Upcoming</h3><p class="stat-value">${upcomingCount}</p></div>
+        <div class="card"><h3>Final</h3><p class="stat-value">${finalCount}</p></div>
+      </div>
+      <div class="button-row" style="margin-top:1rem;">
+        <button class="button small" type="button" data-filter="all">All</button>
+        <button class="button small secondary" type="button" data-filter="live">Live</button>
+        <button class="button small secondary" type="button" data-filter="upcoming">Upcoming</button>
+        <button class="button small secondary" type="button" data-filter="final">Final</button>
+      </div>
+      <p class="meta-text" id="matches-refresh-label">Auto-refresh suggestion: check again in 60s for live updates.</p>
+    </section>
+
+    <section class="section">
       ${sections || `<div class="card"><p class="meta-text">No fixtures loaded yet. Run the data fetch script to populate fixtures.</p></div>`}
     </section>
+
     ${schemaBlock}
+
+    <script>
+      (function () {
+        const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
+        const rows = Array.from(document.querySelectorAll("tr[data-status]"));
+        const refreshLabel = document.getElementById("matches-refresh-label");
+
+        function applyFilter(filterName) {
+          rows.forEach((row) => {
+            row.style.display = (filterName === "all" || row.dataset.status === filterName) ? "" : "none";
+          });
+
+          filterButtons.forEach((button) => {
+            const isActive = button.dataset.filter === filterName;
+            button.classList.toggle("secondary", !isActive);
+          });
+
+          if (typeof window.playersbTrack === "function") {
+            window.playersbTrack("matches_filter", { filter: filterName });
+          }
+        }
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => applyFilter(button.dataset.filter || "all"));
+        });
+
+        applyFilter("all");
+
+        let secondsLeft = 60;
+        setInterval(() => {
+          secondsLeft = secondsLeft <= 1 ? 60 : secondsLeft - 1;
+          if (refreshLabel) {
+            refreshLabel.textContent = "Auto-refresh suggestion: check again in " + secondsLeft + "s for live updates.";
+          }
+        }, 1000);
+      })();
+    </script>
   `;
 
-  const html = fill(layout, { title, description, canonical, body });
-  assertNoPlaceholders(html, OUT_PATH);
+  const html = fill(layout, {
+    title,
+    description,
+    canonical,
+    body,
+  });
 
-  await fs.writeFile(OUT_PATH, html, "utf-8");
+  assertNoPlaceholders(html, "matches/index.html");
+  await fs.writeFile(OUT_PATH, html);
   console.log(`Generated ${OUT_PATH}`);
 }
 
