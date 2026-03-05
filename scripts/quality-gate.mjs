@@ -219,6 +219,33 @@ function hasMetaDescription(html) {
   return /content=["'][^"']{10,}["']/i.test(m[0]);
 }
 
+
+function hasMetaProperty(html, propertyName) {
+  const tags = html.match(/<meta\s+[^>]*>/gi) || [];
+  const propertyNeedle = `property="${propertyName}"`;
+  const propertyNeedleAlt = `property='${propertyName}'`;
+  return tags.some((tag) => {
+    const lower = tag.toLowerCase();
+    return (lower.includes(propertyNeedle) || lower.includes(propertyNeedleAlt)) && /content=["'][^"']+["']/i.test(tag);
+  });
+}
+
+function hasMetaName(html, name) {
+  const tags = html.match(/<meta\s+[^>]*>/gi) || [];
+  const nameNeedle = `name="${name}"`;
+  const nameNeedleAlt = `name='${name}'`;
+  return tags.some((tag) => {
+    const lower = tag.toLowerCase();
+    return (lower.includes(nameNeedle) || lower.includes(nameNeedleAlt)) && /content=["'][^"']+["']/i.test(tag);
+  });
+}
+
+function hasDetailedAnalyticsTracking(html) {
+  if (!html.includes("playersbTrack")) return false;
+  const trackedEvents = ["nav_click", "cta_click", "outbound_click", "theme_toggle", "engaged_read"];
+  return trackedEvents.some((eventName) => html.includes(`"${eventName}"`) || html.includes(`'${eventName}'`));
+}
+
 function jsonLdBlocks(html) {
   const matches = [...html.matchAll(/<script\s+[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
   return matches.map((m) => (m[1] || "").trim()).filter(Boolean);
@@ -353,9 +380,22 @@ function run() {
     // Rule 2: GA present (all LIVE pages)
     if (!hasGA(html)) failures.push(`${rp}: missing Google Analytics (GA4) tag for ${GA_ID}`);
 
+    // Rule 2a: detailed GA behavior tracking should be wired on generated pages
+    if (!["compare.html", "contact.html", "embed/player/index.html"].includes(rp) && !hasDetailedAnalyticsTracking(html)) {
+      failures.push(`${rp}: missing detailed analytics event tracking hooks`);
+    }
+
     // Rule 3: title + meta description must exist
     if (!hasTitle(html)) failures.push(`${rp}: missing/empty <title>`);
     if (!hasMetaDescription(html)) failures.push(`${rp}: missing/empty meta description`);
+
+    // Rule 3a: social SEO tags should exist
+    if (rp !== "embed/player/index.html") {
+      if (!hasMetaProperty(html, "og:title")) failures.push(`${rp}: missing og:title`);
+      if (!hasMetaProperty(html, "og:description")) failures.push(`${rp}: missing og:description`);
+      if (!hasMetaProperty(html, "og:url")) failures.push(`${rp}: missing og:url`);
+      if (!hasMetaName(html, "twitter:card")) failures.push(`${rp}: missing twitter:card`);
+    }
 
     // Rule 3b: JSON-LD should be present and parseable (except lightweight embed iframe payload)
     if (!["embed/player/index.html", "compare.html", "contact.html"].includes(rp) && !hasValidJsonLd(html)) {

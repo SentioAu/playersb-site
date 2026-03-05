@@ -59,3 +59,9 @@ Optional indexing secrets:
 ## Workflow observability
 - `update-data.yml` now publishes `artifacts/update-run-report.json` on every run (success/failure) with key counters for fixtures, standings, fantasy players, and archive entries.
 - IndexNow submission supports changed-URL mode when changed HTML files are detected in the workflow run.
+
+## Analytics + SEO guardrails
+- Global templates now emit richer GA4 interaction events (`nav_click`, `cta_click`, `outbound_click`, `theme_toggle`, `engaged_read`) via a shared `playersbTrack` hook for behavior analysis.
+- `quality-gate.mjs` enforces core social SEO metadata (`og:title`, `og:description`, `og:url`, `twitter:card`) and validates JSON-LD blocks.
+- Update workflow changed-URL detection now handles push/manual edge-cases more safely and can include key crawl artifacts (`sitemap.xml`, `feed.xml`, `robots.txt`) when changed.
+

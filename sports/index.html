@@ -49,8 +49,20 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.playersbTrack = function (eventName, params) {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, Object.assign({
+        page_path: window.location.pathname,
+        page_title: document.title,
+      }, params || {}));
+    };
+
     gtag('js', new Date());
-    gtag('config', 'G-D5798TYENM');
+    gtag('config', 'G-D5798TYENM', {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      send_page_view: true
+    });
   </script>
 </head>
 
@@ -133,6 +145,12 @@
       root.setAttribute("data-theme", "dark");
     }
 
+    function track(eventName, params) {
+      if (typeof window.playersbTrack === "function") {
+        window.playersbTrack(eventName, params);
+      }
+    }
+
     function updateButton(button) {
       const isDark = root.getAttribute("data-theme") === "dark";
       button.textContent = isDark ? "Light mode" : "Dark mode";
@@ -141,19 +159,49 @@
 
     document.addEventListener("DOMContentLoaded", () => {
       const button = document.getElementById("themeToggle");
-      if (!button) return;
-      updateButton(button);
-      button.addEventListener("click", () => {
-        const isDark = root.getAttribute("data-theme") === "dark";
-        if (isDark) {
-          root.removeAttribute("data-theme");
-          localStorage.setItem(storageKey, "light");
-        } else {
-          root.setAttribute("data-theme", "dark");
-          localStorage.setItem(storageKey, "dark");
-        }
+      if (button) {
         updateButton(button);
+        button.addEventListener("click", () => {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          const nextTheme = isDark ? "light" : "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+          } else {
+            root.setAttribute("data-theme", "dark");
+          }
+          localStorage.setItem(storageKey, nextTheme);
+          updateButton(button);
+          track("theme_toggle", { theme: nextTheme });
+        });
+      }
+
+      document.querySelectorAll("a[href]").forEach((anchor) => {
+        anchor.addEventListener("click", () => {
+          const href = anchor.getAttribute("href") || "";
+          const text = (anchor.textContent || "").trim().slice(0, 80);
+          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
+          const isNav = anchor.classList.contains("nav-link");
+          const isCta = anchor.classList.contains("button");
+
+          if (isOutbound) {
+            track("outbound_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isNav) {
+            track("nav_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isCta) {
+            track("cta_click", { destination: href, link_text: text });
+          }
+        });
       });
+
+      setTimeout(() => {
+        track("engaged_read", { engaged_seconds: 30 });
+      }, 30000);
     });
   })();
 </script>
