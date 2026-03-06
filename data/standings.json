@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T01:04:40.627Z",
+  "generatedAt": "2026-03-06T06:34:40.380Z",
   "competitions": [
     {
       "competition": {
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-06T01:04:40.627Z",
+      "fetchedAt": "2026-03-06T06:34:40.380Z",
       "competitionCount": 8
     }
   }
