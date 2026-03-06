@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T19:06:16.705Z",
+  "generatedAt": "2026-03-06T01:04:40.627Z",
   "competitions": [
     {
       "competition": {
@@ -718,6 +718,24 @@
             {
               "position": 13,
               "team": {
+                "id": 354,
+                "name": "Crystal Palace FC",
+                "tla": "CRY",
+                "crest": "https://crests.football-data.org/354.png"
+              },
+              "playedGames": 29,
+              "won": 10,
+              "draw": 8,
+              "lost": 11,
+              "points": 38,
+              "goalsFor": 33,
+              "goalsAgainst": 35,
+              "goalDifference": -2,
+              "form": ""
+            },
+            {
+              "position": 14,
+              "team": {
                 "id": 397,
                 "name": "Brighton & Hove Albion FC",
                 "tla": "BHA",
@@ -731,24 +749,6 @@
               "goalsFor": 38,
               "goalsAgainst": 36,
               "goalDifference": 2,
-              "form": ""
-            },
-            {
-              "position": 14,
-              "team": {
-                "id": 354,
-                "name": "Crystal Palace FC",
-                "tla": "CRY",
-                "crest": "https://crests.football-data.org/354.png"
-              },
-              "playedGames": 28,
-              "won": 9,
-              "draw": 8,
-              "lost": 11,
-              "points": 35,
-              "goalsFor": 30,
-              "goalsAgainst": 34,
-              "goalDifference": -4,
               "form": ""
             },
             {
@@ -777,14 +777,14 @@
                 "tla": "TOT",
                 "crest": "https://crests.football-data.org/73.png"
               },
-              "playedGames": 28,
+              "playedGames": 29,
               "won": 7,
               "draw": 8,
-              "lost": 13,
+              "lost": 14,
               "points": 29,
-              "goalsFor": 38,
-              "goalsAgainst": 43,
-              "goalDifference": -5,
+              "goalsFor": 39,
+              "goalsAgainst": 46,
+              "goalDifference": -7,
               "form": ""
             },
             {
@@ -3417,7 +3417,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-05T19:06:16.705Z",
+      "fetchedAt": "2026-03-06T01:04:40.627Z",
       "competitionCount": 8
     }
   }

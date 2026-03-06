@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T19:06:16.705Z",
+  "generatedAt": "2026-03-06T01:04:40.627Z",
   "players": [
     {
       "id": 183151,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-05T19:06:16.705Z",
+      "fetchedAt": "2026-03-06T01:04:40.627Z",
       "competitionCount": 8
     }
   }
