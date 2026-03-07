@@ -36,24 +36,18 @@ function metaLine(p) {
   return pos || team || "—";
 }
 
-// Simple defaults; expand anytime
-const RIVALS = {
-  haaland: [["mbappe", "Kylian Mbappé"], ["kane", "Harry Kane"], ["osimhen", "Victor Osimhen"]],
-  mbappe: [["haaland", "Erling Haaland"], ["vinicius", "Vinícius Júnior"], ["salah", "Mohamed Salah"]],
-  kane: [["haaland", "Erling Haaland"], ["mbappe", "Kylian Mbappé"], ["osimhen", "Victor Osimhen"]],
-  osimhen: [["haaland", "Erling Haaland"], ["kane", "Harry Kane"], ["mbappe", "Kylian Mbappé"]],
-  salah: [["son", "Son Heung-min"], ["mbappe", "Kylian Mbappé"], ["griezmann", "Antoine Griezmann"]],
-  son: [["salah", "Mohamed Salah"], ["vinicius", "Vinícius Júnior"], ["mbappe", "Kylian Mbappé"]],
-  vinicius: [["mbappe", "Kylian Mbappé"], ["son", "Son Heung-min"], ["salah", "Mohamed Salah"]],
-  bellingham: [["debruyne", "Kevin De Bruyne"], ["griezmann", "Antoine Griezmann"], ["vinicius", "Vinícius Júnior"]],
-  debruyne: [["bellingham", "Jude Bellingham"], ["griezmann", "Antoine Griezmann"], ["salah", "Mohamed Salah"]],
-  griezmann: [["bellingham", "Jude Bellingham"], ["debruyne", "Kevin De Bruyne"], ["salah", "Mohamed Salah"]],
-};
+function rivalsFor(id, players, similarPlayers = []) {
+  const candidatePool = similarPlayers.length ? similarPlayers : players;
+  const picks = candidatePool
+    .filter((player) => sanitizeId(player?.id) && sanitizeId(player?.id) !== id)
+    .slice(0, 3)
+    .map((player) => [sanitizeId(player.id), safeStr(player.name) || "Player"]);
 
-function rivalsFor(id) {
-  const r = RIVALS[id];
-  if (r && r.length >= 3) return r;
-  return [["mbappe", "Kylian Mbappé"], ["haaland", "Erling Haaland"], ["salah", "Mohamed Salah"]];
+  while (picks.length < 3) {
+    picks.push([id, "Player"]);
+  }
+
+  return picks;
 }
 
 function replaceAllTokens(str, dict) {
@@ -298,7 +292,7 @@ async function main() {
     const playerJsonLd = buildPlayerJsonLd(p);
     const { breadcrumbHtml, breadcrumbJsonLd } = buildBreadcrumbs(p, id);
 
-    const [r1Raw, r2Raw, r3Raw] = rivalsFor(id);
+    const [r1Raw, r2Raw, r3Raw] = rivalsFor(id, players, similarPlayers);
 
     // Sanitize rivals IDs defensively
     const r1 = [sanitizeId(r1Raw[0]), r1Raw[1]];

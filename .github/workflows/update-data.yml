@@ -77,29 +77,33 @@ jobs:
           fi
 
           if [ -z "${TOKEN}" ]; then
-            echo "Missing repository secret. Set FOOTBALL_DATA_API_TOKEN (preferred) or FOOTBALL_DATA_TOKEN in Settings -> Secrets and variables -> Actions."
-            exit 1
+            echo "No Football-Data token configured. Continuing with free/fallback data sources only."
+            echo "HAS_FOOTBALL_DATA_TOKEN=0" >> "$GITHUB_ENV"
+            exit 0
           fi
 
           echo "::add-mask::${TOKEN}"
           echo "FOOTBALL_DATA_API_TOKEN=${TOKEN}" >> "$GITHUB_ENV"
+          echo "HAS_FOOTBALL_DATA_TOKEN=1" >> "$GITHUB_ENV"
           echo "Football-Data token resolved successfully."
           echo "Token source: ${TOKEN_SOURCE}"
           echo "Token length: ${#TOKEN}"
 
       - name: Fetch and generate site (core + players + sitemap) and run quality gate
-        env:
-          REQUIRE_FOOTBALL_DATA_TOKEN: "1"
         run: |
-          node scripts/fetch-football-data.mjs
-
-          node -e "const fs=require('fs'); const f=JSON.parse(fs.readFileSync('data/fixtures.json','utf8')); const s=JSON.parse(fs.readFileSync('data/standings.json','utf8')); if(!Array.isArray(f.competitions)||f.competitions.length===0){console.error('sanity check failed: fixtures competitions are empty'); process.exit(1);} if(!Array.isArray(s.competitions)||s.competitions.length===0){console.error('sanity check failed: standings competitions are empty'); process.exit(1);} console.log('sanity check passed: fixtures and standings contain competitions');"
+          if [ "${HAS_FOOTBALL_DATA_TOKEN}" = "1" ]; then
+            REQUIRE_FOOTBALL_DATA_TOKEN=1 node scripts/fetch-football-data.mjs
+            node -e "const fs=require('fs'); const f=JSON.parse(fs.readFileSync('data/fixtures.json','utf8')); const s=JSON.parse(fs.readFileSync('data/standings.json','utf8')); if(!Array.isArray(f.competitions)||f.competitions.length===0){console.error('sanity check failed: fixtures competitions are empty'); process.exit(1);} if(!Array.isArray(s.competitions)||s.competitions.length===0){console.error('sanity check failed: standings competitions are empty'); process.exit(1);} console.log('sanity check passed: fixtures and standings contain competitions');"
+          else
+            echo "Skipping football-data fetch and strict fixtures/standings sanity checks (no token)."
+          fi
 
           node scripts/fetch-archive.mjs
           node scripts/fetch-players.mjs --dry-run || echo "fetch-players dry-run failed; continuing with existing players source"
           node scripts/fetch-players.mjs || echo "fetch-players failed; continuing with existing players.json"
           node scripts/sync-players-from-fantasy.mjs
           node scripts/generate-all.mjs
+          node scripts/check-data-health.mjs
 
 
       - name: Build changed URL list for IndexNow (optional)

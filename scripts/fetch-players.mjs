@@ -131,6 +131,7 @@ async function main() {
   const args = new Set(process.argv.slice(2));
   const dryRun = args.has("--dry-run");
   const localOnly = args.has("--local");
+  const minPlayers = Number(process.env.MIN_PLAYERS_FETCH || 24);
 
   const existing = await readJsonFile(DATA_PATH);
   const sourcesConfig = await readJsonSafe(SOURCES_CONFIG_PATH, {});
@@ -147,16 +148,6 @@ async function main() {
     }
   }
 
-  if (!source && !localOnly && (await fs.stat(SOURCE_PATH).then(() => true).catch(() => false))) {
-    source = await readJsonFile(SOURCE_PATH);
-    console.log("fetch-players: using data/players-source.json");
-  }
-
-  if (!source && seedEnabled && seedPath && (await fs.stat(seedPath).then(() => true).catch(() => false))) {
-    source = await readJsonFile(seedPath);
-    console.log(`fetch-players: using seed source ${seedPath.replace(`${ROOT}/`, "")}`);
-  }
-
   if (!source && !localOnly) {
     const extraUrls = process.env.PLAYERS_SOURCE_URLS
       ? process.env.PLAYERS_SOURCE_URLS.split(",").map((v) => v.trim()).filter(Boolean)
@@ -166,6 +157,16 @@ async function main() {
       source = remote.source;
       console.log(`fetch-players: using remote source ${remote.url}`);
     }
+  }
+
+  if (!source && !localOnly && (await fs.stat(SOURCE_PATH).then(() => true).catch(() => false))) {
+    source = await readJsonFile(SOURCE_PATH);
+    console.log("fetch-players: using data/players-source.json");
+  }
+
+  if (!source && seedEnabled && seedPath && (await fs.stat(seedPath).then(() => true).catch(() => false))) {
+    source = await readJsonFile(seedPath);
+    console.log(`fetch-players: using seed source ${seedPath.replace(`${ROOT}/`, "")}`);
   }
 
   if (!source) {
@@ -181,6 +182,12 @@ async function main() {
     if (dryRun) {
       console.log(`Fetched 0 players (dry-run fallback). Existing players: ${(existing?.players || []).length}`);
     }
+    return;
+  }
+
+  const existingPlayers = Array.isArray(existing?.players) ? existing.players.length : 0;
+  if (cleaned.length < minPlayers && existingPlayers >= minPlayers) {
+    console.warn(`fetch-players: fetched ${cleaned.length} players (< min ${minPlayers}); keeping existing dataset with ${existingPlayers} players`);
     return;
   }
 

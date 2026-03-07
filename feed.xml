@@ -5,77 +5,357 @@
     <link>https://playersb.com/</link>
     <description>New and updated player profiles from PlayersB.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 15:45:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 03:49:26 GMT</lastBuildDate>
     
     <item>
       <title>Erling Haaland</title>
-      <link>https://playersb.com/players/haaland/</link>
-      <guid isPermaLink="true">https://playersb.com/players/haaland/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <link>https://playersb.com/players/erling-haaland/</link>
+      <guid isPermaLink="true">https://playersb.com/players/erling-haaland/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
       <description>Erling Haaland profile on PlayersB. ST · Manchester City.</description>
     </item>
     <item>
-      <title>Kylian Mbappé</title>
-      <link>https://playersb.com/players/mbappe/</link>
-      <guid isPermaLink="true">https://playersb.com/players/mbappe/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Kylian Mbappé profile on PlayersB. LW/ST · Paris Saint-Germain.</description>
+      <title>Phil Foden</title>
+      <link>https://playersb.com/players/phil-foden/</link>
+      <guid isPermaLink="true">https://playersb.com/players/phil-foden/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Phil Foden profile on PlayersB. RW · Manchester City.</description>
     </item>
     <item>
-      <title>Mohamed Salah</title>
-      <link>https://playersb.com/players/salah/</link>
-      <guid isPermaLink="true">https://playersb.com/players/salah/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Mohamed Salah profile on PlayersB. RW · Liverpool.</description>
-    </item>
-    <item>
-      <title>Harry Kane</title>
-      <link>https://playersb.com/players/kane/</link>
-      <guid isPermaLink="true">https://playersb.com/players/kane/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Harry Kane profile on PlayersB. ST · Bayern Munich.</description>
-    </item>
-    <item>
-      <title>Jude Bellingham</title>
-      <link>https://playersb.com/players/bellingham/</link>
-      <guid isPermaLink="true">https://playersb.com/players/bellingham/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Jude Bellingham profile on PlayersB. AM/CM · Real Madrid.</description>
+      <title>Rodri</title>
+      <link>https://playersb.com/players/rodri/</link>
+      <guid isPermaLink="true">https://playersb.com/players/rodri/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Rodri profile on PlayersB. CM · Manchester City.</description>
     </item>
     <item>
       <title>Kevin De Bruyne</title>
-      <link>https://playersb.com/players/debruyne/</link>
-      <guid isPermaLink="true">https://playersb.com/players/debruyne/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Kevin De Bruyne profile on PlayersB. AM/CM · Manchester City.</description>
+      <link>https://playersb.com/players/kevin-de-bruyne/</link>
+      <guid isPermaLink="true">https://playersb.com/players/kevin-de-bruyne/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Kevin De Bruyne profile on PlayersB. CB · Manchester City.</description>
+    </item>
+    <item>
+      <title>Mohamed Salah</title>
+      <link>https://playersb.com/players/mohamed-salah/</link>
+      <guid isPermaLink="true">https://playersb.com/players/mohamed-salah/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Mohamed Salah profile on PlayersB. LW · Liverpool.</description>
+    </item>
+    <item>
+      <title>Darwin Núñez</title>
+      <link>https://playersb.com/players/darwin-nunez/</link>
+      <guid isPermaLink="true">https://playersb.com/players/darwin-nunez/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Darwin Núñez profile on PlayersB. AM · Liverpool.</description>
+    </item>
+    <item>
+      <title>Alexis Mac Allister</title>
+      <link>https://playersb.com/players/alexis-mac-allister/</link>
+      <guid isPermaLink="true">https://playersb.com/players/alexis-mac-allister/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Alexis Mac Allister profile on PlayersB. DM · Liverpool.</description>
+    </item>
+    <item>
+      <title>Virgil van Dijk</title>
+      <link>https://playersb.com/players/virgil-van-dijk/</link>
+      <guid isPermaLink="true">https://playersb.com/players/virgil-van-dijk/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Virgil van Dijk profile on PlayersB. RB · Liverpool.</description>
+    </item>
+    <item>
+      <title>Bukayo Saka</title>
+      <link>https://playersb.com/players/bukayo-saka/</link>
+      <guid isPermaLink="true">https://playersb.com/players/bukayo-saka/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Bukayo Saka profile on PlayersB. ST · Arsenal.</description>
+    </item>
+    <item>
+      <title>Martin Ødegaard</title>
+      <link>https://playersb.com/players/martin-degaard/</link>
+      <guid isPermaLink="true">https://playersb.com/players/martin-degaard/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Martin Ødegaard profile on PlayersB. RW · Arsenal.</description>
+    </item>
+    <item>
+      <title>Declan Rice</title>
+      <link>https://playersb.com/players/declan-rice/</link>
+      <guid isPermaLink="true">https://playersb.com/players/declan-rice/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Declan Rice profile on PlayersB. CM · Arsenal.</description>
+    </item>
+    <item>
+      <title>Kai Havertz</title>
+      <link>https://playersb.com/players/kai-havertz/</link>
+      <guid isPermaLink="true">https://playersb.com/players/kai-havertz/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Kai Havertz profile on PlayersB. CB · Arsenal.</description>
+    </item>
+    <item>
+      <title>Heung-Min Son</title>
+      <link>https://playersb.com/players/heung-min-son/</link>
+      <guid isPermaLink="true">https://playersb.com/players/heung-min-son/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Heung-Min Son profile on PlayersB. LW · Tottenham.</description>
+    </item>
+    <item>
+      <title>James Maddison</title>
+      <link>https://playersb.com/players/james-maddison/</link>
+      <guid isPermaLink="true">https://playersb.com/players/james-maddison/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>James Maddison profile on PlayersB. AM · Tottenham.</description>
+    </item>
+    <item>
+      <title>Dejan Kulusevski</title>
+      <link>https://playersb.com/players/dejan-kulusevski/</link>
+      <guid isPermaLink="true">https://playersb.com/players/dejan-kulusevski/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Dejan Kulusevski profile on PlayersB. DM · Tottenham.</description>
+    </item>
+    <item>
+      <title>Cristian Romero</title>
+      <link>https://playersb.com/players/cristian-romero/</link>
+      <guid isPermaLink="true">https://playersb.com/players/cristian-romero/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Cristian Romero profile on PlayersB. RB · Tottenham.</description>
+    </item>
+    <item>
+      <title>Cole Palmer</title>
+      <link>https://playersb.com/players/cole-palmer/</link>
+      <guid isPermaLink="true">https://playersb.com/players/cole-palmer/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Cole Palmer profile on PlayersB. ST · Chelsea.</description>
+    </item>
+    <item>
+      <title>Enzo Fernández</title>
+      <link>https://playersb.com/players/enzo-fernandez/</link>
+      <guid isPermaLink="true">https://playersb.com/players/enzo-fernandez/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Enzo Fernández profile on PlayersB. RW · Chelsea.</description>
+    </item>
+    <item>
+      <title>Reece James</title>
+      <link>https://playersb.com/players/reece-james/</link>
+      <guid isPermaLink="true">https://playersb.com/players/reece-james/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Reece James profile on PlayersB. CM · Chelsea.</description>
+    </item>
+    <item>
+      <title>Christopher Nkunku</title>
+      <link>https://playersb.com/players/christopher-nkunku/</link>
+      <guid isPermaLink="true">https://playersb.com/players/christopher-nkunku/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Christopher Nkunku profile on PlayersB. CB · Chelsea.</description>
+    </item>
+    <item>
+      <title>Bruno Fernandes</title>
+      <link>https://playersb.com/players/bruno-fernandes/</link>
+      <guid isPermaLink="true">https://playersb.com/players/bruno-fernandes/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Bruno Fernandes profile on PlayersB. LW · Manchester United.</description>
+    </item>
+    <item>
+      <title>Rasmus Højlund</title>
+      <link>https://playersb.com/players/rasmus-h-jlund/</link>
+      <guid isPermaLink="true">https://playersb.com/players/rasmus-h-jlund/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Rasmus Højlund profile on PlayersB. AM · Manchester United.</description>
+    </item>
+    <item>
+      <title>Marcus Rashford</title>
+      <link>https://playersb.com/players/marcus-rashford/</link>
+      <guid isPermaLink="true">https://playersb.com/players/marcus-rashford/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Marcus Rashford profile on PlayersB. DM · Manchester United.</description>
+    </item>
+    <item>
+      <title>Lisandro Martínez</title>
+      <link>https://playersb.com/players/lisandro-martinez/</link>
+      <guid isPermaLink="true">https://playersb.com/players/lisandro-martinez/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Lisandro Martínez profile on PlayersB. RB · Manchester United.</description>
+    </item>
+    <item>
+      <title>Jude Bellingham</title>
+      <link>https://playersb.com/players/jude-bellingham/</link>
+      <guid isPermaLink="true">https://playersb.com/players/jude-bellingham/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Jude Bellingham profile on PlayersB. ST · Real Madrid.</description>
     </item>
     <item>
       <title>Vinícius Júnior</title>
-      <link>https://playersb.com/players/vinicius/</link>
-      <guid isPermaLink="true">https://playersb.com/players/vinicius/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Vinícius Júnior profile on PlayersB. LW · Real Madrid.</description>
+      <link>https://playersb.com/players/vinicius-junior/</link>
+      <guid isPermaLink="true">https://playersb.com/players/vinicius-junior/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Vinícius Júnior profile on PlayersB. RW · Real Madrid.</description>
     </item>
     <item>
-      <title>Victor Osimhen</title>
-      <link>https://playersb.com/players/osimhen/</link>
-      <guid isPermaLink="true">https://playersb.com/players/osimhen/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Victor Osimhen profile on PlayersB. ST · Napoli.</description>
+      <title>Federico Valverde</title>
+      <link>https://playersb.com/players/federico-valverde/</link>
+      <guid isPermaLink="true">https://playersb.com/players/federico-valverde/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Federico Valverde profile on PlayersB. CM · Real Madrid.</description>
     </item>
     <item>
-      <title>Son Heung-min</title>
-      <link>https://playersb.com/players/son/</link>
-      <guid isPermaLink="true">https://playersb.com/players/son/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Son Heung-min profile on PlayersB. LW · Tottenham.</description>
+      <title>Antonio Rüdiger</title>
+      <link>https://playersb.com/players/antonio-rudiger/</link>
+      <guid isPermaLink="true">https://playersb.com/players/antonio-rudiger/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Antonio Rüdiger profile on PlayersB. CB · Real Madrid.</description>
+    </item>
+    <item>
+      <title>Robert Lewandowski</title>
+      <link>https://playersb.com/players/robert-lewandowski/</link>
+      <guid isPermaLink="true">https://playersb.com/players/robert-lewandowski/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Robert Lewandowski profile on PlayersB. LW · Barcelona.</description>
+    </item>
+    <item>
+      <title>Pedri</title>
+      <link>https://playersb.com/players/pedri/</link>
+      <guid isPermaLink="true">https://playersb.com/players/pedri/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Pedri profile on PlayersB. AM · Barcelona.</description>
+    </item>
+    <item>
+      <title>Lamine Yamal</title>
+      <link>https://playersb.com/players/lamine-yamal/</link>
+      <guid isPermaLink="true">https://playersb.com/players/lamine-yamal/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Lamine Yamal profile on PlayersB. DM · Barcelona.</description>
+    </item>
+    <item>
+      <title>Ronald Araújo</title>
+      <link>https://playersb.com/players/ronald-araujo/</link>
+      <guid isPermaLink="true">https://playersb.com/players/ronald-araujo/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Ronald Araújo profile on PlayersB. RB · Barcelona.</description>
     </item>
     <item>
       <title>Antoine Griezmann</title>
-      <link>https://playersb.com/players/griezmann/</link>
-      <guid isPermaLink="true">https://playersb.com/players/griezmann/</guid>
-      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
-      <description>Antoine Griezmann profile on PlayersB. SS/AM · Atlético Madrid.</description>
+      <link>https://playersb.com/players/antoine-griezmann/</link>
+      <guid isPermaLink="true">https://playersb.com/players/antoine-griezmann/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Antoine Griezmann profile on PlayersB. ST · Atlético Madrid.</description>
+    </item>
+    <item>
+      <title>Álvaro Morata</title>
+      <link>https://playersb.com/players/alvaro-morata/</link>
+      <guid isPermaLink="true">https://playersb.com/players/alvaro-morata/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Álvaro Morata profile on PlayersB. RW · Atlético Madrid.</description>
+    </item>
+    <item>
+      <title>Rodrigo De Paul</title>
+      <link>https://playersb.com/players/rodrigo-de-paul/</link>
+      <guid isPermaLink="true">https://playersb.com/players/rodrigo-de-paul/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Rodrigo De Paul profile on PlayersB. CM · Atlético Madrid.</description>
+    </item>
+    <item>
+      <title>Jan Oblak</title>
+      <link>https://playersb.com/players/jan-oblak/</link>
+      <guid isPermaLink="true">https://playersb.com/players/jan-oblak/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Jan Oblak profile on PlayersB. CB · Atlético Madrid.</description>
+    </item>
+    <item>
+      <title>Harry Kane</title>
+      <link>https://playersb.com/players/harry-kane/</link>
+      <guid isPermaLink="true">https://playersb.com/players/harry-kane/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Harry Kane profile on PlayersB. LW · Bayern Munich.</description>
+    </item>
+    <item>
+      <title>Jamal Musiala</title>
+      <link>https://playersb.com/players/jamal-musiala/</link>
+      <guid isPermaLink="true">https://playersb.com/players/jamal-musiala/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Jamal Musiala profile on PlayersB. AM · Bayern Munich.</description>
+    </item>
+    <item>
+      <title>Leroy Sané</title>
+      <link>https://playersb.com/players/leroy-sane/</link>
+      <guid isPermaLink="true">https://playersb.com/players/leroy-sane/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Leroy Sané profile on PlayersB. DM · Bayern Munich.</description>
+    </item>
+    <item>
+      <title>Joshua Kimmich</title>
+      <link>https://playersb.com/players/joshua-kimmich/</link>
+      <guid isPermaLink="true">https://playersb.com/players/joshua-kimmich/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Joshua Kimmich profile on PlayersB. RB · Bayern Munich.</description>
+    </item>
+    <item>
+      <title>Julian Brandt</title>
+      <link>https://playersb.com/players/julian-brandt/</link>
+      <guid isPermaLink="true">https://playersb.com/players/julian-brandt/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Julian Brandt profile on PlayersB. ST · Borussia Dortmund.</description>
+    </item>
+    <item>
+      <title>Niclas Füllkrug</title>
+      <link>https://playersb.com/players/niclas-fullkrug/</link>
+      <guid isPermaLink="true">https://playersb.com/players/niclas-fullkrug/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Niclas Füllkrug profile on PlayersB. RW · Borussia Dortmund.</description>
+    </item>
+    <item>
+      <title>Karim Adeyemi</title>
+      <link>https://playersb.com/players/karim-adeyemi/</link>
+      <guid isPermaLink="true">https://playersb.com/players/karim-adeyemi/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Karim Adeyemi profile on PlayersB. CM · Borussia Dortmund.</description>
+    </item>
+    <item>
+      <title>Mats Hummels</title>
+      <link>https://playersb.com/players/mats-hummels/</link>
+      <guid isPermaLink="true">https://playersb.com/players/mats-hummels/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Mats Hummels profile on PlayersB. CB · Borussia Dortmund.</description>
+    </item>
+    <item>
+      <title>Florian Wirtz</title>
+      <link>https://playersb.com/players/florian-wirtz/</link>
+      <guid isPermaLink="true">https://playersb.com/players/florian-wirtz/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Florian Wirtz profile on PlayersB. LW · Bayer Leverkusen.</description>
+    </item>
+    <item>
+      <title>Victor Boniface</title>
+      <link>https://playersb.com/players/victor-boniface/</link>
+      <guid isPermaLink="true">https://playersb.com/players/victor-boniface/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Victor Boniface profile on PlayersB. AM · Bayer Leverkusen.</description>
+    </item>
+    <item>
+      <title>Granit Xhaka</title>
+      <link>https://playersb.com/players/granit-xhaka/</link>
+      <guid isPermaLink="true">https://playersb.com/players/granit-xhaka/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Granit Xhaka profile on PlayersB. DM · Bayer Leverkusen.</description>
+    </item>
+    <item>
+      <title>Jeremie Frimpong</title>
+      <link>https://playersb.com/players/jeremie-frimpong/</link>
+      <guid isPermaLink="true">https://playersb.com/players/jeremie-frimpong/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Jeremie Frimpong profile on PlayersB. RB · Bayer Leverkusen.</description>
+    </item>
+    <item>
+      <title>Kylian Mbappé</title>
+      <link>https://playersb.com/players/kylian-mbappe/</link>
+      <guid isPermaLink="true">https://playersb.com/players/kylian-mbappe/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Kylian Mbappé profile on PlayersB. ST · Paris Saint-Germain.</description>
+    </item>
+    <item>
+      <title>Ousmane Dembélé</title>
+      <link>https://playersb.com/players/ousmane-dembele/</link>
+      <guid isPermaLink="true">https://playersb.com/players/ousmane-dembele/</guid>
+      <pubDate>Sat, 07 Mar 2026 03:48:22 GMT</pubDate>
+      <description>Ousmane Dembélé profile on PlayersB. RW · Paris Saint-Germain.</description>
     </item>
   </channel>
 </rss>

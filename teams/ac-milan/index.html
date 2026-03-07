@@ -49,8 +49,20 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.playersbTrack = function (eventName, params) {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, Object.assign({
+        page_path: window.location.pathname,
+        page_title: document.title,
+      }, params || {}));
+    };
+
     gtag('js', new Date());
-    gtag('config', 'G-D5798TYENM');
+    gtag('config', 'G-D5798TYENM', {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      send_page_view: true
+    });
   </script>
 </head>
 
@@ -93,16 +105,25 @@
         <div class="card">
           <ul class="player-list">
             <li class="player-item">
-            <a class="player-name" href="/players/145/">Christian Pulisic</a>
-            <div class="player-meta">N/A · AC Milan</div>
+            <a class="player-name" href="/players/christian-pulisic/">Christian Pulisic</a>
+            <div class="player-meta">DM · AC Milan</div>
           </li>
 <li class="player-item">
-            <a class="player-name" href="/players/15892/">Rafael Leão</a>
-            <div class="player-meta">N/A · AC Milan</div>
+            <a class="player-name" href="/players/mike-maignan/">Mike Maignan</a>
+            <div class="player-meta">RB · AC Milan</div>
+          </li>
+<li class="player-item">
+            <a class="player-name" href="/players/rafael-leao/">Rafael Leão</a>
+            <div class="player-meta">LW · AC Milan</div>
+          </li>
+<li class="player-item">
+            <a class="player-name" href="/players/theo-hernandez/">Theo Hernández</a>
+            <div class="player-meta">AM · AC Milan</div>
           </li>
           </ul>
         </div>
       </section>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"AC Milan","url":"https://playersb.com/teams/ac-milan/","member":[{"@type":"Person","name":"Rafael Leão","url":"https://playersb.com/players/rafael-leao/","jobTitle":"LW"},{"@type":"Person","name":"Theo Hernández","url":"https://playersb.com/players/theo-hernandez/","jobTitle":"AM"},{"@type":"Person","name":"Christian Pulisic","url":"https://playersb.com/players/christian-pulisic/","jobTitle":"DM"},{"@type":"Person","name":"Mike Maignan","url":"https://playersb.com/players/mike-maignan/","jobTitle":"RB"}]}</script>
   </main>
 
   <footer class="site-footer">
@@ -131,6 +152,12 @@
       root.setAttribute("data-theme", "dark");
     }
 
+    function track(eventName, params) {
+      if (typeof window.playersbTrack === "function") {
+        window.playersbTrack(eventName, params);
+      }
+    }
+
     function updateButton(button) {
       const isDark = root.getAttribute("data-theme") === "dark";
       button.textContent = isDark ? "Light mode" : "Dark mode";
@@ -139,19 +166,49 @@
 
     document.addEventListener("DOMContentLoaded", () => {
       const button = document.getElementById("themeToggle");
-      if (!button) return;
-      updateButton(button);
-      button.addEventListener("click", () => {
-        const isDark = root.getAttribute("data-theme") === "dark";
-        if (isDark) {
-          root.removeAttribute("data-theme");
-          localStorage.setItem(storageKey, "light");
-        } else {
-          root.setAttribute("data-theme", "dark");
-          localStorage.setItem(storageKey, "dark");
-        }
+      if (button) {
         updateButton(button);
+        button.addEventListener("click", () => {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          const nextTheme = isDark ? "light" : "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+          } else {
+            root.setAttribute("data-theme", "dark");
+          }
+          localStorage.setItem(storageKey, nextTheme);
+          updateButton(button);
+          track("theme_toggle", { theme: nextTheme });
+        });
+      }
+
+      document.querySelectorAll("a[href]").forEach((anchor) => {
+        anchor.addEventListener("click", () => {
+          const href = anchor.getAttribute("href") || "";
+          const text = (anchor.textContent || "").trim().slice(0, 80);
+          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
+          const isNav = anchor.classList.contains("nav-link");
+          const isCta = anchor.classList.contains("button");
+
+          if (isOutbound) {
+            track("outbound_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isNav) {
+            track("nav_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isCta) {
+            track("cta_click", { destination: href, link_text: text });
+          }
+        });
       });
+
+      setTimeout(() => {
+        track("engaged_read", { engaged_seconds: 30 });
+      }, 30000);
     });
   })();
 </script>
