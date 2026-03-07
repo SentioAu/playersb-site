@@ -37,6 +37,38 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
   }
 }
 
+
+function competitionIndexSchema(entries) {
+  const itemList = entries.map(([code, comp], idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    url: `${SITE_ORIGIN}/competitions/${sanitizeId(code)}/`,
+    name: safeStr(comp?.label || code),
+  }));
+  return `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Competitions",
+    url: `${SITE_ORIGIN}/competitions/`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: itemList,
+    },
+  })}</script>`;
+}
+
+function competitionEntitySchema(code, comp) {
+  const label = safeStr(comp?.label || code);
+  const slug = sanitizeId(code);
+  return `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    name: label,
+    sport: "Association Football",
+    url: `${SITE_ORIGIN}/competitions/${slug}/`,
+  })}</script>`;
+}
+
 function fill(layout, { title, description, canonical, body }) {
   return layout
     .replaceAll("{{TITLE}}", title)
@@ -133,6 +165,8 @@ async function main() {
     })
     .join("\n");
 
+  const indexSchema = competitionIndexSchema(entries);
+
   const indexBody = `
     <section class="hero">
       <span class="pill">Competitions</span>
@@ -151,6 +185,7 @@ async function main() {
         </ul>
       </div>
     </section>
+    ${indexSchema}
   `;
 
   const indexHtml = fill(layout, {
@@ -173,6 +208,8 @@ async function main() {
     const standings = renderStandings(comp?.standings || []);
     const scorers = renderScorers(comp?.scorers || []);
 
+    const entitySchema = competitionEntitySchema(code, comp);
+
     const body = `
       <section class="hero">
         <span class="pill">Competition</span>
@@ -188,6 +225,7 @@ async function main() {
         ${standings}
         ${scorers}
       </section>
+      ${entitySchema}
     `;
 
     const html = fill(layout, {

@@ -32,7 +32,7 @@ function toRfc2822(dateStr) {
 }
 
 function pickLastMod(obj) {
-  return obj?.lastmod || obj?.lastMod || obj?.updatedAt || obj?.updated_at || null;
+  return obj?.lastmod || obj?.lastMod || obj?.updatedAt || obj?.updated_at || obj?.generatedAt || obj?.generated_at || null;
 }
 
 async function main() {
@@ -40,6 +40,9 @@ async function main() {
   const raw = await fs.readFile(DATA_PATH, "utf-8");
   const parsed = JSON.parse(raw);
   const players = Array.isArray(parsed.players) ? parsed.players : [];
+
+  const datasetLastMod = pickLastMod(parsed);
+  const nowUtc = new Date().toUTCString();
 
   const items = players
     .filter((p) => p?.id && p?.name)
@@ -49,7 +52,7 @@ async function main() {
       const meta = [p.position, p.team].filter(Boolean).join(" · ");
       const link = `${SITE_ORIGIN}/players/${slug}/`;
       const lastmod = pickLastMod(p);
-      const pubDate = toRfc2822(lastmod) || new Date("2025-01-01T00:00:00Z").toUTCString();
+      const pubDate = toRfc2822(lastmod) || toRfc2822(datasetLastMod) || nowUtc;
       const description = meta
         ? `${name} profile on PlayersB. ${meta}.`
         : `${name} profile on PlayersB.`;
@@ -64,8 +67,6 @@ async function main() {
     })
     .slice(0, 50);
 
-  const now = new Date().toUTCString();
-
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
@@ -73,7 +74,7 @@ async function main() {
     <link>${SITE_ORIGIN}/</link>
     <description>New and updated player profiles from PlayersB.</description>
     <language>en-us</language>
-    <lastBuildDate>${escXml(now)}</lastBuildDate>
+    <lastBuildDate>${escXml(nowUtc)}</lastBuildDate>
     ${items
       .map(
         (item) => `

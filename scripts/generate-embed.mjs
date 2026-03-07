@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const SITE_ORIGIN = "https://playersb.com";
 
 const OUT_DIR = path.join(ROOT, "embed");
+const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 
 function escHtml(s) {
   return String(s ?? "")
@@ -15,8 +16,56 @@ function escHtml(s) {
     .replaceAll("'", "&#39;");
 }
 
+function assertNoPlaceholders(finalHtml, fileLabel) {
+  const m = finalHtml.match(/{{[^}]+}}/g);
+  if (m?.length) {
+    const uniq = Array.from(new Set(m)).slice(0, 10).join(", ");
+    throw new Error(`${fileLabel}: unresolved template placeholders found: ${uniq}`);
+  }
+}
+
+function fill(layout, { title, description, canonical, body }) {
+  return layout
+    .replaceAll("{{TITLE}}", title)
+    .replaceAll("{{DESCRIPTION}}", description)
+    .replaceAll("{{CANONICAL}}", canonical)
+    .replaceAll("{{BODY}}", body.trim());
+}
+
 async function main() {
   await fs.mkdir(OUT_DIR, { recursive: true });
+
+  const layout = await fs.readFile(LAYOUT_PATH, "utf-8");
+
+  const indexBody = `
+    <section class="hero">
+      <span class="pill">Embed</span>
+      <h1>Embed a player card anywhere.</h1>
+      <p class="lead">Use the iframe below to embed a lightweight player card with live data.</p>
+      <div class="button-row">
+        <a class="button" href="${SITE_ORIGIN}/embed/player/?id=haaland">Preview player embed</a>
+        <a class="button secondary" href="/players/">Browse players</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Embed snippet</h2>
+        <pre class="code-block">${escHtml(
+          `<iframe src="${SITE_ORIGIN}/embed/player/?id=haaland" width="420" height="280" frameborder="0" loading="lazy"></iframe>`
+        )}</pre>
+        <p class="meta-text">Replace <strong>haaland</strong> with any player id.</p>
+      </div>
+    </section>
+  `;
+
+  const indexHtml = fill(layout, {
+    title: "Player Card Embed",
+    description: "Embed PlayersB player cards on any site.",
+    canonical: `${SITE_ORIGIN}/embed/`,
+    body: indexBody,
+  });
+  assertNoPlaceholders(indexHtml, "embed/index.html");
 
   const gaScript = `
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
@@ -26,39 +75,6 @@ async function main() {
     gtag('js', new Date());
     gtag('config', 'G-D5798TYENM');
   </script>`;
-
-  const indexHtml = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Player Card Embed | PlayersB</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Embed PlayersB player cards on any site." />
-  <link rel="canonical" href="${SITE_ORIGIN}/embed/" />
-  <link rel="stylesheet" href="/styles/site.css" />
-  <meta name="theme-color" content="#2563eb" />
-  ${gaScript}
-</head>
-<body>
-  <div class="page">
-    <main class="container main-content">
-      <section class="hero">
-        <span class="pill">Embed</span>
-        <h1>Embed a player card anywhere.</h1>
-        <p class="lead">Use the iframe below to embed a lightweight player card with live data.</p>
-      </section>
-
-      <section class="section">
-        <div class="card">
-          <h2>Embed snippet</h2>
-          <pre class="code-block">${escHtml(`<iframe src="${SITE_ORIGIN}/embed/player/?id=haaland" width="420" height="280" frameborder="0" loading="lazy"></iframe>`)}</pre>
-          <p class="meta-text">Replace <strong>haaland</strong> with any player id.</p>
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
-</html>`;
 
   const playerHtml = `<!DOCTYPE html>
 <html lang="en">
@@ -85,6 +101,12 @@ async function main() {
 </head>
 <body>
   <h1 class="visually-hidden">Player card embed</h1>
+  <nav class="visually-hidden" aria-label="Primary">
+    <a href="/compare/">Compare</a>
+    <a href="/tools/">Tools</a>
+    <a href="/learn/">Learn</a>
+    <a href="/players/">Players</a>
+  </nav>
   <div class="embed-card" id="embedCard">Loading...</div>
 
   <script>

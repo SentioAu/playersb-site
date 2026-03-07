@@ -37,6 +37,41 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
   }
 }
 
+
+function teamIndexSchema(teams) {
+  const itemList = teams.map(([slug, data], idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    url: `${SITE_ORIGIN}/teams/${slug}/`,
+    name: data.label,
+  }));
+  return `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Teams",
+    url: `${SITE_ORIGIN}/teams/`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: itemList,
+    },
+  })}</script>`;
+}
+
+function teamEntitySchema(slug, data) {
+  return `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    name: data.label,
+    url: `${SITE_ORIGIN}/teams/${slug}/`,
+    member: data.players.slice(0, 25).map((p) => ({
+      "@type": "Person",
+      name: p.name,
+      url: `${SITE_ORIGIN}/players/${sanitizeId(p.id)}/`,
+      jobTitle: p.position || undefined,
+    })),
+  })}</script>`;
+}
+
 function fill(layout, { title, description, canonical, body }) {
   return layout
     .replaceAll("{{TITLE}}", title)
@@ -84,6 +119,8 @@ async function main() {
     })
     .join("\n");
 
+  const indexSchema = teamIndexSchema(teams);
+
   const indexBody = `
     <section class="hero">
       <span class="pill">Teams</span>
@@ -103,6 +140,7 @@ async function main() {
         </ul>
       </div>
     </section>
+    ${indexSchema}
   `;
 
   const indexHtml = fill(layout, {
@@ -135,6 +173,8 @@ async function main() {
       })
       .join("\n");
 
+    const entitySchema = teamEntitySchema(slug, data);
+
     const body = `
       <section class="hero">
         <span class="pill">Team</span>
@@ -153,6 +193,7 @@ async function main() {
           </ul>
         </div>
       </section>
+      ${entitySchema}
     `;
 
     const html = fill(layout, {

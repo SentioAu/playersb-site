@@ -5,357 +5,77 @@
     <link>https://playersb.com/</link>
     <description>New and updated player profiles from PlayersB.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:56:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 15:45:17 GMT</lastBuildDate>
     
-    <item>
-      <title>Adam Armstrong</title>
-      <link>https://playersb.com/players/4863/</link>
-      <guid isPermaLink="true">https://playersb.com/players/4863/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Adam Armstrong profile on PlayersB. N/A · Southampton FC.</description>
-    </item>
-    <item>
-      <title>Alexander Sørloth</title>
-      <link>https://playersb.com/players/8167/</link>
-      <guid isPermaLink="true">https://playersb.com/players/8167/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Alexander Sørloth profile on PlayersB. N/A · Club Atlético de Madrid.</description>
-    </item>
-    <item>
-      <title>Anastasios Douvikas</title>
-      <link>https://playersb.com/players/43285/</link>
-      <guid isPermaLink="true">https://playersb.com/players/43285/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Anastasios Douvikas profile on PlayersB. N/A · Como 1907.</description>
-    </item>
-    <item>
-      <title>Andrej Kramarić</title>
-      <link>https://playersb.com/players/318/</link>
-      <guid isPermaLink="true">https://playersb.com/players/318/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Andrej Kramarić profile on PlayersB. N/A · TSG 1899 Hoffenheim.</description>
-    </item>
-    <item>
-      <title>Ante Budimir</title>
-      <link>https://playersb.com/players/2237/</link>
-      <guid isPermaLink="true">https://playersb.com/players/2237/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Ante Budimir profile on PlayersB. N/A · CA Osasuna.</description>
-    </item>
-    <item>
-      <title>Anthony Gordon</title>
-      <link>https://playersb.com/players/7848/</link>
-      <guid isPermaLink="true">https://playersb.com/players/7848/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Anthony Gordon profile on PlayersB. N/A · Newcastle United FC.</description>
-    </item>
-    <item>
-      <title>Antoine Griezmann</title>
-      <link>https://playersb.com/players/griezmann/</link>
-      <guid isPermaLink="true">https://playersb.com/players/griezmann/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Antoine Griezmann profile on PlayersB. SS/AM · Atlético Madrid.</description>
-    </item>
-    <item>
-      <title>Antoine Semenyo</title>
-      <link>https://playersb.com/players/4417/</link>
-      <guid isPermaLink="true">https://playersb.com/players/4417/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Antoine Semenyo profile on PlayersB. N/A · Manchester City FC.</description>
-    </item>
-    <item>
-      <title>Ayase Ueda</title>
-      <link>https://playersb.com/players/119460/</link>
-      <guid isPermaLink="true">https://playersb.com/players/119460/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Ayase Ueda profile on PlayersB. N/A · Feyenoord Rotterdam.</description>
-    </item>
-    <item>
-      <title>Borja Iglesias</title>
-      <link>https://playersb.com/players/32056/</link>
-      <guid isPermaLink="true">https://playersb.com/players/32056/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Borja Iglesias profile on PlayersB. N/A · RC Celta de Vigo.</description>
-    </item>
-    <item>
-      <title>Bradley Barcola</title>
-      <link>https://playersb.com/players/172762/</link>
-      <guid isPermaLink="true">https://playersb.com/players/172762/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Bradley Barcola profile on PlayersB. N/A · Paris Saint-Germain FC.</description>
-    </item>
-    <item>
-      <title>Bruno Guimarães</title>
-      <link>https://playersb.com/players/1684/</link>
-      <guid isPermaLink="true">https://playersb.com/players/1684/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Bruno Guimarães profile on PlayersB. N/A · Newcastle United FC.</description>
-    </item>
-    <item>
-      <title>Bryan Mbeumo</title>
-      <link>https://playersb.com/players/8626/</link>
-      <guid isPermaLink="true">https://playersb.com/players/8626/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Bryan Mbeumo profile on PlayersB. N/A · Manchester United FC.</description>
-    </item>
-    <item>
-      <title>Camilo Durán</title>
-      <link>https://playersb.com/players/270725/</link>
-      <guid isPermaLink="true">https://playersb.com/players/270725/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Camilo Durán profile on PlayersB. N/A · Qarabağ Ağdam FK.</description>
-    </item>
-    <item>
-      <title>Carlton Morris</title>
-      <link>https://playersb.com/players/5483/</link>
-      <guid isPermaLink="true">https://playersb.com/players/5483/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Carlton Morris profile on PlayersB. N/A · Derby County FC.</description>
-    </item>
-    <item>
-      <title>Christian Pulisic</title>
-      <link>https://playersb.com/players/145/</link>
-      <guid isPermaLink="true">https://playersb.com/players/145/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Christian Pulisic profile on PlayersB. N/A · AC Milan.</description>
-    </item>
-    <item>
-      <title>Christoph Baumgartner</title>
-      <link>https://playersb.com/players/56829/</link>
-      <guid isPermaLink="true">https://playersb.com/players/56829/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Christoph Baumgartner profile on PlayersB. N/A · RB Leipzig.</description>
-    </item>
-    <item>
-      <title>Danny Welbeck</title>
-      <link>https://playersb.com/players/3328/</link>
-      <guid isPermaLink="true">https://playersb.com/players/3328/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Danny Welbeck profile on PlayersB. N/A · Brighton &amp; Hove Albion FC.</description>
-    </item>
-    <item>
-      <title>Deniz Undav</title>
-      <link>https://playersb.com/players/6928/</link>
-      <guid isPermaLink="true">https://playersb.com/players/6928/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Deniz Undav profile on PlayersB. N/A · VfB Stuttgart.</description>
-    </item>
-    <item>
-      <title>Dominic Calvert-Lewin</title>
-      <link>https://playersb.com/players/7839/</link>
-      <guid isPermaLink="true">https://playersb.com/players/7839/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Dominic Calvert-Lewin profile on PlayersB. N/A · Leeds United FC.</description>
-    </item>
     <item>
       <title>Erling Haaland</title>
       <link>https://playersb.com/players/haaland/</link>
       <guid isPermaLink="true">https://playersb.com/players/haaland/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
       <description>Erling Haaland profile on PlayersB. ST · Manchester City.</description>
-    </item>
-    <item>
-      <title>Erling Haaland</title>
-      <link>https://playersb.com/players/38101/</link>
-      <guid isPermaLink="true">https://playersb.com/players/38101/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Erling Haaland profile on PlayersB. N/A · Manchester City FC.</description>
-    </item>
-    <item>
-      <title>Esteban Lepaul</title>
-      <link>https://playersb.com/players/149850/</link>
-      <guid isPermaLink="true">https://playersb.com/players/149850/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Esteban Lepaul profile on PlayersB. N/A · Stade Rennais FC 1901.</description>
-    </item>
-    <item>
-      <title>Ferrán Torres</title>
-      <link>https://playersb.com/players/33154/</link>
-      <guid isPermaLink="true">https://playersb.com/players/33154/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Ferrán Torres profile on PlayersB. N/A · FC Barcelona.</description>
-    </item>
-    <item>
-      <title>Guus Til</title>
-      <link>https://playersb.com/players/7688/</link>
-      <guid isPermaLink="true">https://playersb.com/players/7688/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Guus Til profile on PlayersB. N/A · PSV.</description>
-    </item>
-    <item>
-      <title>Haji Wright</title>
-      <link>https://playersb.com/players/10076/</link>
-      <guid isPermaLink="true">https://playersb.com/players/10076/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Haji Wright profile on PlayersB. N/A · Coventry City FC.</description>
-    </item>
-    <item>
-      <title>Hakan Çalhanoğlu</title>
-      <link>https://playersb.com/players/1754/</link>
-      <guid isPermaLink="true">https://playersb.com/players/1754/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Hakan Çalhanoğlu profile on PlayersB. N/A · FC Internazionale Milano.</description>
-    </item>
-    <item>
-      <title>Haris Tabaković</title>
-      <link>https://playersb.com/players/63218/</link>
-      <guid isPermaLink="true">https://playersb.com/players/63218/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Haris Tabaković profile on PlayersB. N/A · Borussia Mönchengladbach.</description>
-    </item>
-    <item>
-      <title>Harry Kane</title>
-      <link>https://playersb.com/players/kane/</link>
-      <guid isPermaLink="true">https://playersb.com/players/kane/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Harry Kane profile on PlayersB. ST · Bayern Munich.</description>
-    </item>
-    <item>
-      <title>Harry Kane</title>
-      <link>https://playersb.com/players/8004/</link>
-      <guid isPermaLink="true">https://playersb.com/players/8004/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Harry Kane profile on PlayersB. N/A · FC Bayern München.</description>
-    </item>
-    <item>
-      <title>Hugo Ekitike</title>
-      <link>https://playersb.com/players/152454/</link>
-      <guid isPermaLink="true">https://playersb.com/players/152454/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Hugo Ekitike profile on PlayersB. N/A · Liverpool FC.</description>
-    </item>
-    <item>
-      <title>Ilan Kebbal</title>
-      <link>https://playersb.com/players/108520/</link>
-      <guid isPermaLink="true">https://playersb.com/players/108520/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Ilan Kebbal profile on PlayersB. N/A · Paris FC.</description>
-    </item>
-    <item>
-      <title>Ismael Saibari</title>
-      <link>https://playersb.com/players/130173/</link>
-      <guid isPermaLink="true">https://playersb.com/players/130173/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Ismael Saibari profile on PlayersB. N/A · PSV.</description>
-    </item>
-    <item>
-      <title>Jack Clarke</title>
-      <link>https://playersb.com/players/4158/</link>
-      <guid isPermaLink="true">https://playersb.com/players/4158/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jack Clarke profile on PlayersB. N/A · Ipswich Town FC.</description>
-    </item>
-    <item>
-      <title>Jacob Trenskow</title>
-      <link>https://playersb.com/players/210841/</link>
-      <guid isPermaLink="true">https://playersb.com/players/210841/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jacob Trenskow profile on PlayersB. N/A · SC Heerenveen.</description>
-    </item>
-    <item>
-      <title>Jens Hauge</title>
-      <link>https://playersb.com/players/37916/</link>
-      <guid isPermaLink="true">https://playersb.com/players/37916/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jens Hauge profile on PlayersB. N/A · FK Bodø/Glimt.</description>
-    </item>
-    <item>
-      <title>Jizz Hornkamp</title>
-      <link>https://playersb.com/players/7432/</link>
-      <guid isPermaLink="true">https://playersb.com/players/7432/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jizz Hornkamp profile on PlayersB. N/A · Heracles Almelo.</description>
-    </item>
-    <item>
-      <title>João Pedro</title>
-      <link>https://playersb.com/players/103125/</link>
-      <guid isPermaLink="true">https://playersb.com/players/103125/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>João Pedro profile on PlayersB. N/A · Chelsea FC.</description>
-    </item>
-    <item>
-      <title>Joaquín Panichelli</title>
-      <link>https://playersb.com/players/203561/</link>
-      <guid isPermaLink="true">https://playersb.com/players/203561/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Joaquín Panichelli profile on PlayersB. N/A · RC Strasbourg Alsace.</description>
-    </item>
-    <item>
-      <title>Joe Gelhardt</title>
-      <link>https://playersb.com/players/80761/</link>
-      <guid isPermaLink="true">https://playersb.com/players/80761/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Joe Gelhardt profile on PlayersB. N/A · Hull City AFC.</description>
-    </item>
-    <item>
-      <title>Jonathan Burkardt</title>
-      <link>https://playersb.com/players/82404/</link>
-      <guid isPermaLink="true">https://playersb.com/players/82404/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jonathan Burkardt profile on PlayersB. N/A · Eintracht Frankfurt.</description>
-    </item>
-    <item>
-      <title>Jorge de Frutos</title>
-      <link>https://playersb.com/players/133276/</link>
-      <guid isPermaLink="true">https://playersb.com/players/133276/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jorge de Frutos profile on PlayersB. N/A · Rayo Vallecano de Madrid.</description>
-    </item>
-    <item>
-      <title>Jude Bellingham</title>
-      <link>https://playersb.com/players/bellingham/</link>
-      <guid isPermaLink="true">https://playersb.com/players/bellingham/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Jude Bellingham profile on PlayersB. AM/CM · Real Madrid.</description>
-    </item>
-    <item>
-      <title>Julián Álvarez</title>
-      <link>https://playersb.com/players/98571/</link>
-      <guid isPermaLink="true">https://playersb.com/players/98571/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Julián Álvarez profile on PlayersB. N/A · Club Atlético de Madrid.</description>
-    </item>
-    <item>
-      <title>Keinan Davis</title>
-      <link>https://playersb.com/players/3896/</link>
-      <guid isPermaLink="true">https://playersb.com/players/3896/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Keinan Davis profile on PlayersB. N/A · Udinese Calcio.</description>
-    </item>
-    <item>
-      <title>Kenan Yıldız</title>
-      <link>https://playersb.com/players/191712/</link>
-      <guid isPermaLink="true">https://playersb.com/players/191712/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Kenan Yıldız profile on PlayersB. N/A · Juventus FC.</description>
-    </item>
-    <item>
-      <title>Kevin De Bruyne</title>
-      <link>https://playersb.com/players/debruyne/</link>
-      <guid isPermaLink="true">https://playersb.com/players/debruyne/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Kevin De Bruyne profile on PlayersB. AM/CM · Manchester City.</description>
-    </item>
-    <item>
-      <title>Kieffer Moore</title>
-      <link>https://playersb.com/players/4350/</link>
-      <guid isPermaLink="true">https://playersb.com/players/4350/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Kieffer Moore profile on PlayersB. N/A · Wrexham AFC.</description>
-    </item>
-    <item>
-      <title>Koen Kostons</title>
-      <link>https://playersb.com/players/9701/</link>
-      <guid isPermaLink="true">https://playersb.com/players/9701/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Koen Kostons profile on PlayersB. N/A · PEC Zwolle.</description>
     </item>
     <item>
       <title>Kylian Mbappé</title>
       <link>https://playersb.com/players/mbappe/</link>
       <guid isPermaLink="true">https://playersb.com/players/mbappe/</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
       <description>Kylian Mbappé profile on PlayersB. LW/ST · Paris Saint-Germain.</description>
+    </item>
+    <item>
+      <title>Mohamed Salah</title>
+      <link>https://playersb.com/players/salah/</link>
+      <guid isPermaLink="true">https://playersb.com/players/salah/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Mohamed Salah profile on PlayersB. RW · Liverpool.</description>
+    </item>
+    <item>
+      <title>Harry Kane</title>
+      <link>https://playersb.com/players/kane/</link>
+      <guid isPermaLink="true">https://playersb.com/players/kane/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Harry Kane profile on PlayersB. ST · Bayern Munich.</description>
+    </item>
+    <item>
+      <title>Jude Bellingham</title>
+      <link>https://playersb.com/players/bellingham/</link>
+      <guid isPermaLink="true">https://playersb.com/players/bellingham/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Jude Bellingham profile on PlayersB. AM/CM · Real Madrid.</description>
+    </item>
+    <item>
+      <title>Kevin De Bruyne</title>
+      <link>https://playersb.com/players/debruyne/</link>
+      <guid isPermaLink="true">https://playersb.com/players/debruyne/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Kevin De Bruyne profile on PlayersB. AM/CM · Manchester City.</description>
+    </item>
+    <item>
+      <title>Vinícius Júnior</title>
+      <link>https://playersb.com/players/vinicius/</link>
+      <guid isPermaLink="true">https://playersb.com/players/vinicius/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Vinícius Júnior profile on PlayersB. LW · Real Madrid.</description>
+    </item>
+    <item>
+      <title>Victor Osimhen</title>
+      <link>https://playersb.com/players/osimhen/</link>
+      <guid isPermaLink="true">https://playersb.com/players/osimhen/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Victor Osimhen profile on PlayersB. ST · Napoli.</description>
+    </item>
+    <item>
+      <title>Son Heung-min</title>
+      <link>https://playersb.com/players/son/</link>
+      <guid isPermaLink="true">https://playersb.com/players/son/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Son Heung-min profile on PlayersB. LW · Tottenham.</description>
+    </item>
+    <item>
+      <title>Antoine Griezmann</title>
+      <link>https://playersb.com/players/griezmann/</link>
+      <guid isPermaLink="true">https://playersb.com/players/griezmann/</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:35 GMT</pubDate>
+      <description>Antoine Griezmann profile on PlayersB. SS/AM · Atlético Madrid.</description>
     </item>
   </channel>
 </rss>

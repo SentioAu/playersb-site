@@ -101,6 +101,63 @@ jobs:
           node scripts/sync-players-from-fantasy.mjs
           node scripts/generate-all.mjs
 
+
+      - name: Build changed URL list for IndexNow (optional)
+        env:
+          EVENT_BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          BASE_SHA="${EVENT_BEFORE_SHA}"
+          if [ -n "${BASE_SHA}" ] && [ "${BASE_SHA}" != "0000000000000000000000000000000000000000" ] && git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then
+            CHANGED=$(git diff --name-only "${BASE_SHA}" HEAD 2>/dev/null || true)
+          elif git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || true)
+          else
+            CHANGED=$(git ls-files '*.html' 'sitemap.xml' 'feed.xml' 'robots.txt' 2>/dev/null || true)
+          fi
+
+          URLS=""
+          COUNT=0
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            case "$file" in
+              */index.html)
+                path="/${file%index.html}"
+                ;;
+              index.html)
+                path="/"
+                ;;
+              sitemap.xml|feed.xml|robots.txt)
+                path="/${file}"
+                ;;
+              *.html)
+                continue
+                ;;
+              *)
+                continue
+                ;;
+            esac
+            URLS+="https://playersb.com${path}
+"
+            COUNT=$((COUNT+1))
+          done <<EOF
+          $CHANGED
+          EOF
+
+          {
+            echo "CHANGED_URL_COUNT=${COUNT}"
+            echo "CHANGED_URLS<<__URLS__"
+            printf "%b" "$URLS"
+            echo "__URLS__"
+          } >> "$GITHUB_ENV"
+
+      - name: Submit IndexNow URLs (optional)
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          INDEXNOW_KEY_LOCATION: ${{ secrets.INDEXNOW_KEY_LOCATION }}
+          CHANGED_URLS: ${{ env.CHANGED_URLS }}
+        run: |
+          node scripts/submit-indexnow.mjs || echo "IndexNow submission failed; continuing."
+
       - name: Notify pipeline failure webhook (optional)
         if: ${{ failure() }}
         env:
@@ -119,6 +176,18 @@ jobs:
           )
 
           curl -sS -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$ALERT_WEBHOOK_URL" && echo "Failure webhook sent."
+
+      - name: Build run report artifact
+        if: ${{ always() }}
+        run: |
+          node -e "const fs=require('fs'); const read=(p)=>{try{return JSON.parse(fs.readFileSync(p,'utf8'));}catch{return {}}}; const fixtures=read('data/fixtures.json'); const standings=read('data/standings.json'); const fantasy=read('data/fantasy.json'); const archive=read('data/archive.json'); const changedUrls=String(process.env.CHANGED_URLS||'').split(/\r?\n/).map(s=>s.trim()).filter(Boolean); const report={generatedAt:new Date().toISOString(), workflowRunId:process.env.GITHUB_RUN_ID||null, workflowRef:process.env.GITHUB_WORKFLOW_REF||null, changedUrlCount:changedUrls.length, indexNowMode:changedUrls.length?'changed_urls':'sitemap_fallback', qualityGate:'passed_before_artifact_step', fixturesCompetitions:Array.isArray(fixtures.competitions)?fixtures.competitions.length:0, standingsCompetitions:Array.isArray(standings.competitions)?standings.competitions.length:0, fantasyPlayers:Array.isArray(fantasy.players)?fantasy.players.length:0, archiveEntries:Array.isArray(archive.entries)?archive.entries.length:0}; fs.mkdirSync('artifacts',{recursive:true}); fs.writeFileSync('artifacts/update-run-report.json',JSON.stringify(report,null,2)); console.log('wrote artifacts/update-run-report.json');"
+
+      - name: Upload run report artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: update-run-report
+          path: artifacts/update-run-report.json
 
       - name: Commit generated files (if changed)
         run: |

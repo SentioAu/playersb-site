@@ -45,8 +45,26 @@ If a run fails in `fetch-football-data.mjs` immediately, verify that the latest 
 Optional failure alert secret:
 - `ALERT_WEBHOOK_URL` (Slack/webhook endpoint called only when update workflow fails)
 
+Optional indexing secrets:
+- `INDEXNOW_KEY` (recommended if using IndexNow submissions)
+- `INDEXNOW_KEY_LOCATION` (optional override; defaults to `https://playersb.com/playersb-indexnow-2025-key.txt`)
+
 
 ## Free-source expansion (alongside Football-Data.org)
 - `fetch-archive.mjs` now reads a broader OpenFootball source list (multiple seasons) for historical coverage.
 - `fetch-players.mjs` now falls back to local seed data (`data/players-soccer-v1.json`) when external free sources are unavailable.
 - `data/sources.json` uses a curated Football-Data competition scope by default to reduce free-tier 429 rate-limit pressure.
+
+
+## Workflow observability
+- `update-data.yml` now publishes `artifacts/update-run-report.json` on every run (success/failure) with key counters for fixtures, standings, fantasy players, and archive entries.
+- IndexNow submission supports changed-URL mode when changed HTML files are detected in the workflow run.
+
+## Analytics + SEO guardrails
+- Global templates now emit richer GA4 interaction events (`nav_click`, `cta_click`, `outbound_click`, `theme_toggle`, `engaged_read`) via a shared `playersbTrack` hook for behavior analysis.
+- `quality-gate.mjs` enforces core social SEO metadata (`og:title`, `og:description`, `og:url`, `twitter:card`) and validates JSON-LD blocks.
+- Update workflow changed-URL detection now handles push/manual edge-cases more safely and can include key crawl artifacts (`sitemap.xml`, `feed.xml`, `robots.txt`) when changed.
+
+
+## Analytics contract
+- See `docs/analytics-contract.md` for event names, required params, dashboard recommendations, and alerting thresholds.
