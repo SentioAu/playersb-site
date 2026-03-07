@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Browse PlayersB — The Players Book. Player profiles built on verified historical data with comparisons and educational tools." />
   <link rel="canonical" href="https://playersb.com/players/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -13,11 +21,13 @@
   <meta property="og:description" content="Browse PlayersB — The Players Book. Player profiles built on verified historical data with comparisons and educational tools." />
   <meta property="og:url" content="https://playersb.com/players/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Players | PlayersB" />
   <meta name="twitter:description" content="Browse PlayersB — The Players Book. Player profiles built on verified historical data with comparisons and educational tools." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
   <script type="application/ld+json">
@@ -39,162 +49,1005 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.playersbTrack = function (eventName, params) {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, Object.assign({
+        page_path: window.location.pathname,
+        page_title: document.title,
+      }, params || {}));
+    };
+
     gtag('js', new Date());
-    gtag('config', 'G-D5798TYENM');
+    gtag('config', 'G-D5798TYENM', {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      send_page_view: true
+    });
   </script>
 </head>
 
 <body>
-<main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/players/">Players</a>
+        <a class="nav-link" href="/compare/">Compare</a>
+        <a class="nav-link" href="/tools/">Tools</a>
+        <a class="nav-link" href="/learn/">Learn</a>
+        <a class="nav-link" href="/about/">About</a>
+        <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/">Start comparing</a>
+    </div>
+  </header>
 
-<header style="margin-bottom:16px;">
-  <div style="margin-bottom:10px;">
-    <a href="/" style="text-decoration:none;color:inherit;">
-      <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-      <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
-    </a>
-  </div>
+  <main class="container main-content">
+    <section class="hero">
+      <span class="pill">Players</span>
+      <h1>Browse every player profile.</h1>
+      <p class="lead">
+        Jump into comparisons, check per-90 rates, and keep everything in an educational, explainable format.
+      </p>
+      <div class="button-row">
+        <a class="button" href="/compare/">Open Compare</a>
+        <a class="button secondary" href="/tools/">Explore tools</a>
+        <a class="button secondary" href="/positions/">Browse positions</a>
+        <a class="button secondary" href="/teams/">Browse teams</a>
+        <a class="button secondary" href="/competitions/">Browse competitions</a>
+        <a class="button secondary" href="/">Back to Home</a>
+      </div>
+    </section>
 
-  <nav style="font-size:14px;margin-bottom:14px;">
-    <a href="/">Home</a> ·
-    <a href="/players/">Players</a> ·
-    <a href="/compare/">Compare</a> ·
-    <a href="/tools/">Tools</a> ·
-    <a href="/learn/">Learn</a> ·
-    <a href="/about/">About</a> ·
-    <a href="/contact/">Contact</a>
-  </nav>
-</header>
-
-<h1>Players</h1>
-    <p>
-      Browse player profiles and jump into comparisons and tools. Metrics show inputs and explanations — educational only.
-    </p>
-    <p style="margin-top:12px;">
-      <a href="/compare/">Open Compare</a> ·
-      <a href="/tools/">Tools</a> ·
-      <a href="/">Back to Home</a>
-    </p>
-
-    <div style="margin-top:18px;border:1px solid #eee;border-radius:12px;padding:14px;">
-      <div style="font-weight:700;margin-bottom:8px;">All players</div>
-      <ul style="list-style:none;padding:0;margin:0;">
-        <li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/griezmann/" style="font-weight:700;text-decoration:none;">
+    <section class="section">
+      <div class="card">
+        <div class="search-row">
+          <label style="flex:1;min-width:240px;">
+            <span class="meta-text">Search players</span>
+            <input id="playerSearch" class="search-input" type="search" placeholder="Search by name, team, or position" />
+          </label>
+          <div class="meta-text" id="playerCount"></div>
+        </div>
+        <ul class="player-list">
+          <li data-search="achraf hakimi cm · paris saint-germain" class="player-item">
+          <a href="/players/achraf-hakimi/" class="player-name">
+            Achraf Hakimi
+          </a>
+          <div class="player-meta">CM · Paris Saint-Germain</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=achraf-hakimi&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=achraf-hakimi&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="adrien rabiot dm · juventus" class="player-item">
+          <a href="/players/adrien-rabiot/" class="player-name">
+            Adrien Rabiot
+          </a>
+          <div class="player-meta">DM · Juventus</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=adrien-rabiot&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=adrien-rabiot&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="alessandro bastoni cb · inter" class="player-item">
+          <a href="/players/alessandro-bastoni/" class="player-name">
+            Alessandro Bastoni
+          </a>
+          <div class="player-meta">CB · Inter</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=alessandro-bastoni&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=alessandro-bastoni&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="alexis mac allister dm · liverpool" class="player-item">
+          <a href="/players/alexis-mac-allister/" class="player-name">
+            Alexis Mac Allister
+          </a>
+          <div class="player-meta">DM · Liverpool</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=alexis-mac-allister&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=alexis-mac-allister&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="álvaro morata rw · atlético madrid" class="player-item">
+          <a href="/players/alvaro-morata/" class="player-name">
+            Álvaro Morata
+          </a>
+          <div class="player-meta">RW · Atlético Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=alvaro-morata&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=alvaro-morata&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="amine harit am · marseille" class="player-item">
+          <a href="/players/amine-harit/" class="player-name">
+            Amine Harit
+          </a>
+          <div class="player-meta">AM · Marseille</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=amine-harit&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=amine-harit&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="ángel di maría st · benfica" class="player-item">
+          <a href="/players/angel-di-maria/" class="player-name">
+            Ángel Di María
+          </a>
+          <div class="player-meta">ST · Benfica</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=angel-di-maria&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=angel-di-maria&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="antoine griezmann st · atlético madrid" class="player-item">
+          <a href="/players/antoine-griezmann/" class="player-name">
             Antoine Griezmann
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">SS/AM · Atlético Madrid</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=griezmann&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=griezmann&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">ST · Atlético Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=antoine-griezmann&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=antoine-griezmann&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/haaland/" style="font-weight:700;text-decoration:none;">
+<li data-search="antonio rüdiger cb · real madrid" class="player-item">
+          <a href="/players/antonio-rudiger/" class="player-name">
+            Antonio Rüdiger
+          </a>
+          <div class="player-meta">CB · Real Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=antonio-rudiger&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=antonio-rudiger&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="antónio silva cb · benfica" class="player-item">
+          <a href="/players/antonio-silva/" class="player-name">
+            António Silva
+          </a>
+          <div class="player-meta">CB · Benfica</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=antonio-silva&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=antonio-silva&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="bremer rb · juventus" class="player-item">
+          <a href="/players/bremer/" class="player-name">
+            Bremer
+          </a>
+          <div class="player-meta">RB · Juventus</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=bremer&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=bremer&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="brian brobbey lw · ajax" class="player-item">
+          <a href="/players/brian-brobbey/" class="player-name">
+            Brian Brobbey
+          </a>
+          <div class="player-meta">LW · Ajax</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=brian-brobbey&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=brian-brobbey&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="bruno fernandes lw · manchester united" class="player-item">
+          <a href="/players/bruno-fernandes/" class="player-name">
+            Bruno Fernandes
+          </a>
+          <div class="player-meta">LW · Manchester United</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=bruno-fernandes&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=bruno-fernandes&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="bukayo saka st · arsenal" class="player-item">
+          <a href="/players/bukayo-saka/" class="player-name">
+            Bukayo Saka
+          </a>
+          <div class="player-meta">ST · Arsenal</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=bukayo-saka&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=bukayo-saka&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="chancel mbemba rb · marseille" class="player-item">
+          <a href="/players/chancel-mbemba/" class="player-name">
+            Chancel Mbemba
+          </a>
+          <div class="player-meta">RB · Marseille</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=chancel-mbemba&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=chancel-mbemba&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="christian pulisic dm · ac milan" class="player-item">
+          <a href="/players/christian-pulisic/" class="player-name">
+            Christian Pulisic
+          </a>
+          <div class="player-meta">DM · AC Milan</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=christian-pulisic&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=christian-pulisic&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="christopher nkunku cb · chelsea" class="player-item">
+          <a href="/players/christopher-nkunku/" class="player-name">
+            Christopher Nkunku
+          </a>
+          <div class="player-meta">CB · Chelsea</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=christopher-nkunku&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=christopher-nkunku&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="cole palmer st · chelsea" class="player-item">
+          <a href="/players/cole-palmer/" class="player-name">
+            Cole Palmer
+          </a>
+          <div class="player-meta">ST · Chelsea</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=cole-palmer&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=cole-palmer&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="cristian romero rb · tottenham" class="player-item">
+          <a href="/players/cristian-romero/" class="player-name">
+            Cristian Romero
+          </a>
+          <div class="player-meta">RB · Tottenham</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=cristian-romero&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=cristian-romero&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="darwin núñez am · liverpool" class="player-item">
+          <a href="/players/darwin-nunez/" class="player-name">
+            Darwin Núñez
+          </a>
+          <div class="player-meta">AM · Liverpool</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=darwin-nunez&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=darwin-nunez&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="declan rice cm · arsenal" class="player-item">
+          <a href="/players/declan-rice/" class="player-name">
+            Declan Rice
+          </a>
+          <div class="player-meta">CM · Arsenal</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=declan-rice&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=declan-rice&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="dejan kulusevski dm · tottenham" class="player-item">
+          <a href="/players/dejan-kulusevski/" class="player-name">
+            Dejan Kulusevski
+          </a>
+          <div class="player-meta">DM · Tottenham</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=dejan-kulusevski&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=dejan-kulusevski&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="dušan vlahović lw · juventus" class="player-item">
+          <a href="/players/dusan-vlahovic/" class="player-name">
+            Dušan Vlahović
+          </a>
+          <div class="player-meta">LW · Juventus</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=dusan-vlahovic&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=dusan-vlahovic&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="enzo fernández rw · chelsea" class="player-item">
+          <a href="/players/enzo-fernandez/" class="player-name">
+            Enzo Fernández
+          </a>
+          <div class="player-meta">RW · Chelsea</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=enzo-fernandez&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=enzo-fernandez&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="erling haaland st · manchester city" class="player-item">
+          <a href="/players/erling-haaland/" class="player-name">
             Erling Haaland
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">ST · Manchester City</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=haaland&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=haaland&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">ST · Manchester City</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=erling-haaland&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=erling-haaland&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/kane/" style="font-weight:700;text-decoration:none;">
+<li data-search="federico chiesa am · juventus" class="player-item">
+          <a href="/players/federico-chiesa/" class="player-name">
+            Federico Chiesa
+          </a>
+          <div class="player-meta">AM · Juventus</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=federico-chiesa&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=federico-chiesa&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="federico valverde cm · real madrid" class="player-item">
+          <a href="/players/federico-valverde/" class="player-name">
+            Federico Valverde
+          </a>
+          <div class="player-meta">CM · Real Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=federico-valverde&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=federico-valverde&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="florian wirtz lw · bayer leverkusen" class="player-item">
+          <a href="/players/florian-wirtz/" class="player-name">
+            Florian Wirtz
+          </a>
+          <div class="player-meta">LW · Bayer Leverkusen</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=florian-wirtz&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=florian-wirtz&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="giovanni di lorenzo cb · napoli" class="player-item">
+          <a href="/players/giovanni-di-lorenzo/" class="player-name">
+            Giovanni Di Lorenzo
+          </a>
+          <div class="player-meta">CB · Napoli</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=giovanni-di-lorenzo&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=giovanni-di-lorenzo&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="granit xhaka dm · bayer leverkusen" class="player-item">
+          <a href="/players/granit-xhaka/" class="player-name">
+            Granit Xhaka
+          </a>
+          <div class="player-meta">DM · Bayer Leverkusen</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=granit-xhaka&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=granit-xhaka&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="hakan çalhanoğlu cm · inter" class="player-item">
+          <a href="/players/hakan-calhanoglu/" class="player-name">
+            Hakan Çalhanoğlu
+          </a>
+          <div class="player-meta">CM · Inter</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=hakan-calhanoglu&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=hakan-calhanoglu&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="harry kane lw · bayern munich" class="player-item">
+          <a href="/players/harry-kane/" class="player-name">
             Harry Kane
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">ST · Bayern Munich</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=kane&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=kane&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">LW · Bayern Munich</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=harry-kane&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=harry-kane&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/bellingham/" style="font-weight:700;text-decoration:none;">
+<li data-search="heung-min son lw · tottenham" class="player-item">
+          <a href="/players/heung-min-son/" class="player-name">
+            Heung-Min Son
+          </a>
+          <div class="player-meta">LW · Tottenham</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=heung-min-son&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=heung-min-son&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="jamal musiala am · bayern munich" class="player-item">
+          <a href="/players/jamal-musiala/" class="player-name">
+            Jamal Musiala
+          </a>
+          <div class="player-meta">AM · Bayern Munich</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=jamal-musiala&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=jamal-musiala&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="james maddison am · tottenham" class="player-item">
+          <a href="/players/james-maddison/" class="player-name">
+            James Maddison
+          </a>
+          <div class="player-meta">AM · Tottenham</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=james-maddison&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=james-maddison&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="jan oblak cb · atlético madrid" class="player-item">
+          <a href="/players/jan-oblak/" class="player-name">
+            Jan Oblak
+          </a>
+          <div class="player-meta">CB · Atlético Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=jan-oblak&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=jan-oblak&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="jeremie frimpong rb · bayer leverkusen" class="player-item">
+          <a href="/players/jeremie-frimpong/" class="player-name">
+            Jeremie Frimpong
+          </a>
+          <div class="player-meta">RB · Bayer Leverkusen</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=jeremie-frimpong&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=jeremie-frimpong&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="joão mário rw · benfica" class="player-item">
+          <a href="/players/joao-mario/" class="player-name">
+            João Mário
+          </a>
+          <div class="player-meta">RW · Benfica</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=joao-mario&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=joao-mario&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="jordan veretout dm · marseille" class="player-item">
+          <a href="/players/jordan-veretout/" class="player-name">
+            Jordan Veretout
+          </a>
+          <div class="player-meta">DM · Marseille</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=jordan-veretout&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=jordan-veretout&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="jorrel hato rb · ajax" class="player-item">
+          <a href="/players/jorrel-hato/" class="player-name">
+            Jorrel Hato
+          </a>
+          <div class="player-meta">RB · Ajax</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=jorrel-hato&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=jorrel-hato&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="joshua kimmich rb · bayern munich" class="player-item">
+          <a href="/players/joshua-kimmich/" class="player-name">
+            Joshua Kimmich
+          </a>
+          <div class="player-meta">RB · Bayern Munich</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=joshua-kimmich&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=joshua-kimmich&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="jude bellingham st · real madrid" class="player-item">
+          <a href="/players/jude-bellingham/" class="player-name">
             Jude Bellingham
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">AM/CM · Real Madrid</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=bellingham&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=bellingham&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">ST · Real Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=jude-bellingham&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=jude-bellingham&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/debruyne/" style="font-weight:700;text-decoration:none;">
+<li data-search="julian brandt st · borussia dortmund" class="player-item">
+          <a href="/players/julian-brandt/" class="player-name">
+            Julian Brandt
+          </a>
+          <div class="player-meta">ST · Borussia Dortmund</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=julian-brandt&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=julian-brandt&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="kai havertz cb · arsenal" class="player-item">
+          <a href="/players/kai-havertz/" class="player-name">
+            Kai Havertz
+          </a>
+          <div class="player-meta">CB · Arsenal</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=kai-havertz&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=kai-havertz&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="karim adeyemi cm · borussia dortmund" class="player-item">
+          <a href="/players/karim-adeyemi/" class="player-name">
+            Karim Adeyemi
+          </a>
+          <div class="player-meta">CM · Borussia Dortmund</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=karim-adeyemi&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=karim-adeyemi&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="kenneth taylor dm · ajax" class="player-item">
+          <a href="/players/kenneth-taylor/" class="player-name">
+            Kenneth Taylor
+          </a>
+          <div class="player-meta">DM · Ajax</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=kenneth-taylor&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=kenneth-taylor&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="kevin de bruyne cb · manchester city" class="player-item">
+          <a href="/players/kevin-de-bruyne/" class="player-name">
             Kevin De Bruyne
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">AM/CM · Manchester City</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=debruyne&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=debruyne&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">CB · Manchester City</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=kevin-de-bruyne&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=kevin-de-bruyne&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/mbappe/" style="font-weight:700;text-decoration:none;">
+<li data-search="khvicha kvaratskhelia rw · napoli" class="player-item">
+          <a href="/players/khvicha-kvaratskhelia/" class="player-name">
+            Khvicha Kvaratskhelia
+          </a>
+          <div class="player-meta">RW · Napoli</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=khvicha-kvaratskhelia&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=khvicha-kvaratskhelia&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="kylian mbappé st · paris saint-germain" class="player-item">
+          <a href="/players/kylian-mbappe/" class="player-name">
             Kylian Mbappé
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">LW/ST · Paris Saint-Germain</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=mbappe&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=mbappe&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">ST · Paris Saint-Germain</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=kylian-mbappe&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=kylian-mbappe&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/salah/" style="font-weight:700;text-decoration:none;">
+<li data-search="lamine yamal dm · barcelona" class="player-item">
+          <a href="/players/lamine-yamal/" class="player-name">
+            Lamine Yamal
+          </a>
+          <div class="player-meta">DM · Barcelona</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=lamine-yamal&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=lamine-yamal&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="lautaro martínez st · inter" class="player-item">
+          <a href="/players/lautaro-martinez/" class="player-name">
+            Lautaro Martínez
+          </a>
+          <div class="player-meta">ST · Inter</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=lautaro-martinez&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=lautaro-martinez&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="leroy sané dm · bayern munich" class="player-item">
+          <a href="/players/leroy-sane/" class="player-name">
+            Leroy Sané
+          </a>
+          <div class="player-meta">DM · Bayern Munich</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=leroy-sane&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=leroy-sane&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="lisandro martínez rb · manchester united" class="player-item">
+          <a href="/players/lisandro-martinez/" class="player-name">
+            Lisandro Martínez
+          </a>
+          <div class="player-meta">RB · Manchester United</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=lisandro-martinez&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=lisandro-martinez&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="marcus rashford dm · manchester united" class="player-item">
+          <a href="/players/marcus-rashford/" class="player-name">
+            Marcus Rashford
+          </a>
+          <div class="player-meta">DM · Manchester United</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=marcus-rashford&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=marcus-rashford&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="martin ødegaard rw · arsenal" class="player-item">
+          <a href="/players/martin-degaard/" class="player-name">
+            Martin Ødegaard
+          </a>
+          <div class="player-meta">RW · Arsenal</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=martin-degaard&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=martin-degaard&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="mats hummels cb · borussia dortmund" class="player-item">
+          <a href="/players/mats-hummels/" class="player-name">
+            Mats Hummels
+          </a>
+          <div class="player-meta">CB · Borussia Dortmund</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=mats-hummels&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=mats-hummels&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="mike maignan rb · ac milan" class="player-item">
+          <a href="/players/mike-maignan/" class="player-name">
+            Mike Maignan
+          </a>
+          <div class="player-meta">RB · AC Milan</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=mike-maignan&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=mike-maignan&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="mohamed salah lw · liverpool" class="player-item">
+          <a href="/players/mohamed-salah/" class="player-name">
             Mohamed Salah
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">RW · Liverpool</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=salah&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=salah&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">LW · Liverpool</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=mohamed-salah&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=mohamed-salah&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/son/" style="font-weight:700;text-decoration:none;">
-            Son Heung-min
+<li data-search="niclas füllkrug rw · borussia dortmund" class="player-item">
+          <a href="/players/niclas-fullkrug/" class="player-name">
+            Niclas Füllkrug
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">LW · Tottenham</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=son&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=son&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">RW · Borussia Dortmund</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=niclas-fullkrug&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=niclas-fullkrug&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/osimhen/" style="font-weight:700;text-decoration:none;">
+<li data-search="nicolò barella rw · inter" class="player-item">
+          <a href="/players/nicolo-barella/" class="player-name">
+            Nicolò Barella
+          </a>
+          <div class="player-meta">RW · Inter</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=nicolo-barella&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=nicolo-barella&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="ousmane dembélé rw · paris saint-germain" class="player-item">
+          <a href="/players/ousmane-dembele/" class="player-name">
+            Ousmane Dembélé
+          </a>
+          <div class="player-meta">RW · Paris Saint-Germain</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=ousmane-dembele&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=ousmane-dembele&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="pedri am · barcelona" class="player-item">
+          <a href="/players/pedri/" class="player-name">
+            Pedri
+          </a>
+          <div class="player-meta">AM · Barcelona</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=pedri&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=pedri&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="phil foden rw · manchester city" class="player-item">
+          <a href="/players/phil-foden/" class="player-name">
+            Phil Foden
+          </a>
+          <div class="player-meta">RW · Manchester City</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=phil-foden&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=phil-foden&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="pierre-emerick aubameyang lw · marseille" class="player-item">
+          <a href="/players/pierre-emerick-aubameyang/" class="player-name">
+            Pierre-Emerick Aubameyang
+          </a>
+          <div class="player-meta">LW · Marseille</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=pierre-emerick-aubameyang&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=pierre-emerick-aubameyang&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="rafa silva cm · benfica" class="player-item">
+          <a href="/players/rafa-silva/" class="player-name">
+            Rafa Silva
+          </a>
+          <div class="player-meta">CM · Benfica</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=rafa-silva&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=rafa-silva&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="rafael leão lw · ac milan" class="player-item">
+          <a href="/players/rafael-leao/" class="player-name">
+            Rafael Leão
+          </a>
+          <div class="player-meta">LW · AC Milan</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=rafael-leao&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=rafael-leao&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="rasmus højlund am · manchester united" class="player-item">
+          <a href="/players/rasmus-h-jlund/" class="player-name">
+            Rasmus Højlund
+          </a>
+          <div class="player-meta">AM · Manchester United</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=rasmus-h-jlund&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=rasmus-h-jlund&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="reece james cm · chelsea" class="player-item">
+          <a href="/players/reece-james/" class="player-name">
+            Reece James
+          </a>
+          <div class="player-meta">CM · Chelsea</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=reece-james&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=reece-james&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="robert lewandowski lw · barcelona" class="player-item">
+          <a href="/players/robert-lewandowski/" class="player-name">
+            Robert Lewandowski
+          </a>
+          <div class="player-meta">LW · Barcelona</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=robert-lewandowski&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=robert-lewandowski&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="rodri cm · manchester city" class="player-item">
+          <a href="/players/rodri/" class="player-name">
+            Rodri
+          </a>
+          <div class="player-meta">CM · Manchester City</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=rodri&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=rodri&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="rodrigo de paul cm · atlético madrid" class="player-item">
+          <a href="/players/rodrigo-de-paul/" class="player-name">
+            Rodrigo De Paul
+          </a>
+          <div class="player-meta">CM · Atlético Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=rodrigo-de-paul&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=rodrigo-de-paul&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="ronald araújo rb · barcelona" class="player-item">
+          <a href="/players/ronald-araujo/" class="player-name">
+            Ronald Araújo
+          </a>
+          <div class="player-meta">RB · Barcelona</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=ronald-araujo&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=ronald-araujo&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="stanislav lobotka cm · napoli" class="player-item">
+          <a href="/players/stanislav-lobotka/" class="player-name">
+            Stanislav Lobotka
+          </a>
+          <div class="player-meta">CM · Napoli</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=stanislav-lobotka&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=stanislav-lobotka&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="steven bergwijn am · ajax" class="player-item">
+          <a href="/players/steven-bergwijn/" class="player-name">
+            Steven Bergwijn
+          </a>
+          <div class="player-meta">AM · Ajax</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=steven-bergwijn&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=steven-bergwijn&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="theo hernández am · ac milan" class="player-item">
+          <a href="/players/theo-hernandez/" class="player-name">
+            Theo Hernández
+          </a>
+          <div class="player-meta">AM · AC Milan</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=theo-hernandez&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=theo-hernandez&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="victor boniface am · bayer leverkusen" class="player-item">
+          <a href="/players/victor-boniface/" class="player-name">
+            Victor Boniface
+          </a>
+          <div class="player-meta">AM · Bayer Leverkusen</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=victor-boniface&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=victor-boniface&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="victor osimhen st · napoli" class="player-item">
+          <a href="/players/victor-osimhen/" class="player-name">
             Victor Osimhen
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">ST · Napoli</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=osimhen&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=osimhen&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">ST · Napoli</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=victor-osimhen&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=victor-osimhen&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
-          <a href="/players/vinicius/" style="font-weight:700;text-decoration:none;">
+<li data-search="vinícius júnior rw · real madrid" class="player-item">
+          <a href="/players/vinicius-junior/" class="player-name">
             Vinícius Júnior
           </a>
-          <div style="color:#666;font-size:13px;margin-top:4px;">LW · Real Madrid</div>
-          <div style="margin-top:6px;font-size:13px;">
-            <a href="/compare/?a=vinicius&b=haaland">Compare vs Haaland</a> ·
-            <a href="/compare/?a=vinicius&b=mbappe">Compare vs Mbappé</a>
+          <div class="player-meta">RW · Real Madrid</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=vinicius-junior&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=vinicius-junior&b=mbappe">Compare vs Mbappé</a>
           </div>
         </li>
-      </ul>
-    </div>
+<li data-search="virgil van dijk rb · liverpool" class="player-item">
+          <a href="/players/virgil-van-dijk/" class="player-name">
+            Virgil van Dijk
+          </a>
+          <div class="player-meta">RB · Liverpool</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=virgil-van-dijk&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=virgil-van-dijk&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+<li data-search="vitinha cb · paris saint-germain" class="player-item">
+          <a href="/players/vitinha/" class="player-name">
+            Vitinha
+          </a>
+          <div class="player-meta">CB · Paris Saint-Germain</div>
+          <div class="player-actions">
+            <a class="button small secondary" href="/compare/?a=vitinha&b=haaland">Compare vs Haaland</a>
+            <a class="button small secondary" href="/compare/?a=vitinha&b=mbappe">Compare vs Mbappé</a>
+          </div>
+        </li>
+        </ul>
+        <div id="noResults" class="meta-text" style="display:none;margin-top:12px;">
+          No players match that search yet. Try a shorter name or team.
+        </div>
+      </div>
+    </section>
 
-    <p style="color:#666;font-size:13px;margin-top:12px;">
+    <p class="meta-text">
       Example URL format: <code>/players/haaland/</code>
     </p>
 
-<footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-  <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
-  <p>
-    <a href="/privacy/">Privacy</a> ·
-    <a href="/terms/">Terms</a> ·
-    <a href="/contact/">Contact</a>
-  </p>
-</footer>
+    <script>
+      (function () {
+        const input = document.getElementById("playerSearch");
+        const items = Array.from(document.querySelectorAll("li[data-search]"));
+        const count = document.getElementById("playerCount");
+        const empty = document.getElementById("noResults");
+        const total = items.length;
 
-</main>
+        function updateCount(visible) {
+          if (!count) return;
+          count.textContent = `Showing ${visible} of ${total}`;
+        }
+
+        function filter() {
+          if (!input) return;
+          const q = input.value.trim().toLowerCase();
+          let visible = 0;
+
+          for (const item of items) {
+            const hay = item.dataset.search || "";
+            const show = !q || hay.includes(q);
+            item.style.display = show ? "" : "none";
+            if (show) visible += 1;
+          }
+
+          updateCount(visible);
+          if (empty) empty.style.display = visible ? "none" : "block";
+        }
+
+        updateCount(total);
+        if (input) input.addEventListener("input", filter);
+      })();
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function track(eventName, params) {
+      if (typeof window.playersbTrack === "function") {
+        window.playersbTrack(eventName, params);
+      }
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (button) {
+        updateButton(button);
+        button.addEventListener("click", () => {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          const nextTheme = isDark ? "light" : "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+          } else {
+            root.setAttribute("data-theme", "dark");
+          }
+          localStorage.setItem(storageKey, nextTheme);
+          updateButton(button);
+          track("theme_toggle", { theme: nextTheme });
+        });
+      }
+
+      document.querySelectorAll("a[href]").forEach((anchor) => {
+        anchor.addEventListener("click", () => {
+          const href = anchor.getAttribute("href") || "";
+          const text = (anchor.textContent || "").trim().slice(0, 80);
+          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
+          const isNav = anchor.classList.contains("nav-link");
+          const isCta = anchor.classList.contains("button");
+
+          if (isOutbound) {
+            track("outbound_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isNav) {
+            track("nav_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isCta) {
+            track("cta_click", { destination: href, link_text: text });
+          }
+        });
+      });
+
+      setTimeout(() => {
+        track("engaged_read", { engaged_seconds: 30 });
+      }, 30000);
+    });
+  })();
+</script>
 </body>
 </html>

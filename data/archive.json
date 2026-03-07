@@ -1,0 +1,14 @@
+{
+  "generatedAt": null,
+  "entries": [],
+  "sources": {
+    "statsbomb": {
+      "status": "pending",
+      "message": "Run scripts/fetch-archive.mjs to populate StatsBomb open data archives."
+    },
+    "openfootball": {
+      "status": "pending",
+      "message": "Run scripts/fetch-archive.mjs to populate OpenFootball archives."
+    }
+  }
+}

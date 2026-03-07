@@ -31,6 +31,18 @@ const CANONICAL_MAP = new Map([
   ["privacy/index.html", `${SITE_ORIGIN}/privacy/`],
   ["terms/index.html", `${SITE_ORIGIN}/terms/`],
   ["players/index.html", `${SITE_ORIGIN}/players/`],
+  ["positions/index.html", `${SITE_ORIGIN}/positions/`],
+  ["teams/index.html", `${SITE_ORIGIN}/teams/`],
+  ["competitions/index.html", `${SITE_ORIGIN}/competitions/`],
+  ["glossary/index.html", `${SITE_ORIGIN}/glossary/`],
+  ["legacy/index.html", `${SITE_ORIGIN}/legacy/`],
+  ["fantasy/index.html", `${SITE_ORIGIN}/fantasy/`],
+  ["embed/index.html", `${SITE_ORIGIN}/embed/`],
+  ["embed/player/index.html", `${SITE_ORIGIN}/embed/player/`],
+  ["sports/index.html", `${SITE_ORIGIN}/sports/`],
+  ["matches/index.html", `${SITE_ORIGIN}/matches/`],
+  ["standings/index.html", `${SITE_ORIGIN}/standings/`],
+  ["archive/index.html", `${SITE_ORIGIN}/archive/`],
 ]);
 
 // Keep this list specific to avoid false positives.
@@ -91,6 +103,42 @@ function isPlayerEntityIndex(relPath) {
   return relPath.startsWith("players/") && relPath.endsWith("/index.html") && !isPlayerIndex(relPath);
 }
 
+function isPositionIndex(relPath) {
+  return relPath === "positions/index.html";
+}
+
+function isTeamIndex(relPath) {
+  return relPath === "teams/index.html";
+}
+
+function isCompetitionIndex(relPath) {
+  return relPath === "competitions/index.html";
+}
+
+function isLearnTopicIndex(relPath) {
+  return relPath.startsWith("learn/") && relPath.endsWith("/index.html") && relPath !== "learn/index.html";
+}
+
+function isPositionEntityIndex(relPath) {
+  return relPath.startsWith("positions/") && relPath.endsWith("/index.html") && !isPositionIndex(relPath);
+}
+
+function isTeamEntityIndex(relPath) {
+  return relPath.startsWith("teams/") && relPath.endsWith("/index.html") && !isTeamIndex(relPath);
+}
+
+function isCompetitionEntityIndex(relPath) {
+  return relPath.startsWith("competitions/") && relPath.endsWith("/index.html") && !isCompetitionIndex(relPath);
+}
+
+function isLegacyIndex(relPath) {
+  return relPath.startsWith("legacy/") && relPath.endsWith("/index.html") && relPath !== "legacy/index.html";
+}
+
+function isArchiveSeasonIndex(relPath) {
+  return relPath.startsWith("archive/") && relPath.endsWith("/index.html") && relPath !== "archive/index.html";
+}
+
 function isLegacyCoreHtml(relPath) {
   // Legacy root-level core pages that should NOT exist anymore in directory-style architecture
   // (kept strict to avoid nuking compare/contact/index)
@@ -128,6 +176,12 @@ function isLiveHtml(relPath) {
 
   // allowed player entity pages
   if (isPlayerEntityIndex(relPath)) return true;
+  if (isPositionEntityIndex(relPath)) return true;
+  if (isTeamEntityIndex(relPath)) return true;
+  if (isCompetitionEntityIndex(relPath)) return true;
+  if (isLearnTopicIndex(relPath)) return true;
+  if (isLegacyIndex(relPath)) return true;
+  if (isArchiveSeasonIndex(relPath)) return true;
 
   return false;
 }
@@ -165,6 +219,51 @@ function hasMetaDescription(html) {
   return /content=["'][^"']{10,}["']/i.test(m[0]);
 }
 
+
+function hasMetaProperty(html, propertyName) {
+  const tags = html.match(/<meta\s+[^>]*>/gi) || [];
+  const propertyNeedle = `property="${propertyName}"`;
+  const propertyNeedleAlt = `property='${propertyName}'`;
+  return tags.some((tag) => {
+    const lower = tag.toLowerCase();
+    return (lower.includes(propertyNeedle) || lower.includes(propertyNeedleAlt)) && /content=["'][^"']+["']/i.test(tag);
+  });
+}
+
+function hasMetaName(html, name) {
+  const tags = html.match(/<meta\s+[^>]*>/gi) || [];
+  const nameNeedle = `name="${name}"`;
+  const nameNeedleAlt = `name='${name}'`;
+  return tags.some((tag) => {
+    const lower = tag.toLowerCase();
+    return (lower.includes(nameNeedle) || lower.includes(nameNeedleAlt)) && /content=["'][^"']+["']/i.test(tag);
+  });
+}
+
+function hasDetailedAnalyticsTracking(html) {
+  if (!html.includes("playersbTrack")) return false;
+  const trackedEvents = ["nav_click", "cta_click", "outbound_click", "theme_toggle", "engaged_read"];
+  return trackedEvents.some((eventName) => html.includes(`"${eventName}"`) || html.includes(`'${eventName}'`));
+}
+
+function jsonLdBlocks(html) {
+  const matches = [...html.matchAll(/<script\s+[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+  return matches.map((m) => (m[1] || "").trim()).filter(Boolean);
+}
+
+function hasValidJsonLd(html) {
+  const blocks = jsonLdBlocks(html);
+  if (!blocks.length) return false;
+  for (const block of blocks) {
+    try {
+      JSON.parse(block);
+    } catch {
+      return false;
+    }
+  }
+  return true;
+}
+
 function assertNoPlaceholders(html) {
   const m = html.match(/{{[^}]+}}/g);
   return !m?.length;
@@ -188,6 +287,43 @@ function expectedCanonical(relPath) {
     const parts = relPath.split("/");
     const id = parts[1]; // players/{id}/index.html
     return `${SITE_ORIGIN}/players/${id}/`;
+  }
+
+  if (isPositionEntityIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/positions/${id}/`;
+  }
+
+  if (isTeamEntityIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/teams/${id}/`;
+  }
+
+  if (isCompetitionEntityIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/competitions/${id}/`;
+  }
+
+  if (isLearnTopicIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/learn/${id}/`;
+  }
+
+  if (isLegacyIndex(relPath)) {
+    const parts = relPath.split("/");
+    const id = parts[1];
+    return `${SITE_ORIGIN}/legacy/${id}/`;
+  }
+
+  if (isArchiveSeasonIndex(relPath)) {
+    const parts = relPath.split("/");
+    const competition = parts[1];
+    const season = parts[2];
+    return `${SITE_ORIGIN}/archive/${competition}/${season}/`;
   }
 
   return null;
@@ -244,9 +380,27 @@ function run() {
     // Rule 2: GA present (all LIVE pages)
     if (!hasGA(html)) failures.push(`${rp}: missing Google Analytics (GA4) tag for ${GA_ID}`);
 
+    // Rule 2a: detailed GA behavior tracking should be wired on generated pages
+    if (!["compare.html", "contact.html", "embed/player/index.html"].includes(rp) && !hasDetailedAnalyticsTracking(html)) {
+      failures.push(`${rp}: missing detailed analytics event tracking hooks`);
+    }
+
     // Rule 3: title + meta description must exist
     if (!hasTitle(html)) failures.push(`${rp}: missing/empty <title>`);
     if (!hasMetaDescription(html)) failures.push(`${rp}: missing/empty meta description`);
+
+    // Rule 3a: social SEO tags should exist
+    if (rp !== "embed/player/index.html") {
+      if (!hasMetaProperty(html, "og:title")) failures.push(`${rp}: missing og:title`);
+      if (!hasMetaProperty(html, "og:description")) failures.push(`${rp}: missing og:description`);
+      if (!hasMetaProperty(html, "og:url")) failures.push(`${rp}: missing og:url`);
+      if (!hasMetaName(html, "twitter:card")) failures.push(`${rp}: missing twitter:card`);
+    }
+
+    // Rule 3b: JSON-LD should be present and parseable (except lightweight embed iframe payload)
+    if (!["embed/player/index.html", "compare.html", "contact.html"].includes(rp) && !hasValidJsonLd(html)) {
+      failures.push(`${rp}: missing/invalid JSON-LD script block`);
+    }
 
     // Rule 4: canonical present and correct (ENFORCED for all LIVE pages)
     const gotCanon = canonicalHref(html);
