@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T18:29:46.748Z",
+  "generated_at": "2026-03-07T00:56:38.702Z",
   "players": [
     {
       "id": "4863",
@@ -105,8 +105,8 @@
       "name": "Borja Iglesias",
       "position": "N/A",
       "team": "RC Celta de Vigo",
-      "minutes": 2250,
-      "goals": 11,
+      "minutes": 2340,
+      "goals": 12,
       "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
@@ -116,8 +116,8 @@
       "name": "Bradley Barcola",
       "position": "N/A",
       "team": "Paris Saint-Germain FC",
-      "minutes": 2070,
-      "goals": 9,
+      "minutes": 2160,
+      "goals": 10,
       "assists": 1,
       "shots": 0,
       "shotsOnTarget": 0
@@ -590,8 +590,8 @@
       "position": "N/A",
       "team": "FC Bayern München",
       "minutes": 2160,
-      "goals": 13,
-      "assists": 8,
+      "goals": 14,
+      "assists": 9,
       "shots": 0,
       "shotsOnTarget": 0
     },
@@ -787,7 +787,7 @@
       "name": "Rasmus Højlund",
       "position": "N/A",
       "team": "SSC Napoli",
-      "minutes": 2070,
+      "minutes": 2160,
       "goals": 9,
       "assists": 2,
       "shots": 0,

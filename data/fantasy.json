@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T18:29:40.450Z",
+  "generatedAt": "2026-03-07T00:56:24.421Z",
   "players": [
     {
       "id": 183151,
@@ -591,10 +591,10 @@
         "name": "Ligue 1",
         "slug": "ligue-1"
       },
-      "goals": 9,
+      "goals": 10,
       "assists": 1,
-      "playedMatches": 23,
-      "minutesEstimate": 2070
+      "playedMatches": 24,
+      "minutesEstimate": 2160
     },
     {
       "id": 16077,
@@ -699,6 +699,23 @@
       "minutesEstimate": 2160
     },
     {
+      "id": 22396,
+      "name": "Luis Díaz",
+      "position": "",
+      "team": "FC Bayern München",
+      "teamId": 5,
+      "competition": {
+        "id": 2002,
+        "code": "BL1",
+        "name": "Bundesliga",
+        "slug": "bundesliga"
+      },
+      "goals": 14,
+      "assists": 9,
+      "playedMatches": 24,
+      "minutesEstimate": 2160
+    },
+    {
       "id": 6928,
       "name": "Deniz Undav",
       "position": "",
@@ -714,23 +731,6 @@
       "assists": 3,
       "playedMatches": 20,
       "minutesEstimate": 1800
-    },
-    {
-      "id": 22396,
-      "name": "Luis Díaz",
-      "position": "",
-      "team": "FC Bayern München",
-      "teamId": 5,
-      "competition": {
-        "id": 2002,
-        "code": "BL1",
-        "name": "Bundesliga",
-        "slug": "bundesliga"
-      },
-      "goals": 13,
-      "assists": 8,
-      "playedMatches": 24,
-      "minutesEstimate": 2160
     },
     {
       "id": 211,
@@ -916,8 +916,8 @@
       },
       "goals": 9,
       "assists": 2,
-      "playedMatches": 23,
-      "minutesEstimate": 2070
+      "playedMatches": 24,
+      "minutesEstimate": 2160
     },
     {
       "id": 15892,
@@ -1288,10 +1288,10 @@
         "name": "Primera Division",
         "slug": "primera-division"
       },
-      "goals": 11,
+      "goals": 12,
       "assists": 1,
-      "playedMatches": 25,
-      "minutesEstimate": 2250
+      "playedMatches": 26,
+      "minutesEstimate": 2340
     },
     {
       "id": 371,
@@ -1365,7 +1365,7 @@
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-06T18:29:40.450Z",
+      "fetchedAt": "2026-03-07T00:56:24.421Z",
       "competitionCount": 8
     }
   }
