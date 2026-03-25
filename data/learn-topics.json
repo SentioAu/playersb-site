@@ -1,0 +1,173 @@
+{
+  "topics": [
+    {
+      "slug": "per-90-normalization",
+      "title": "Per-90 normalization",
+      "description": "Compare players fairly by adjusting totals to a per-90 minute rate.",
+      "summary": "Per-90 rates let you compare output when players have different minutes, roles, or match availability.",
+      "takeaways": [
+        "Use per-90 to compare players who played very different minutes.",
+        "Pair per-90 with totals so you understand both rate and workload.",
+        "Look for supporting context like role and team style before drawing conclusions."
+      ],
+      "sections": [
+        {
+          "title": "Why it matters",
+          "body": [
+            "Raw totals can be misleading when one player has twice the minutes of another.",
+            "Per-90 rates normalize outputs to a full-match basis, helping you compare roles and production fairly."
+          ]
+        },
+        {
+          "title": "How to interpret",
+          "body": [
+            "If a player has high per-90 output but low minutes, look at consistency and recent starts.",
+            "If a player has high totals but lower per-90, they may be volume-dependent or play more minutes than peers."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is per-90 always better than totals?",
+          "a": "Per-90 is best for comparing rates, but totals still matter for understanding workload and durability. Use both together."
+        },
+        {
+          "q": "What minutes threshold is reliable?",
+          "a": "There is no fixed rule, but rates stabilize more when minutes are higher. Use context like starts, role, and recent minutes."
+        }
+      ]
+    },
+    {
+      "slug": "efficiency-vs-volume",
+      "title": "Efficiency vs volume",
+      "description": "Balance how often a player shoots with how often those shots turn into goals.",
+      "summary": "Great output can come from high volume, elite efficiency, or both. Learn to separate them.",
+      "takeaways": [
+        "Volume signals opportunity; efficiency signals conversion quality.",
+        "Avoid overvaluing small-sample efficiency without consistent volume.",
+        "Compare players within similar roles to avoid misleading extremes."
+      ],
+      "sections": [
+        {
+          "title": "Spotting volume",
+          "body": [
+            "Shots/90 and touches in the box highlight players who generate chances frequently.",
+            "High volume without finishing may still be valuable if it keeps pressure on opponents."
+          ]
+        },
+        {
+          "title": "Reading efficiency",
+          "body": [
+            "Goals per shot and shot accuracy show how well a player converts chances.",
+            "Efficiency spikes can be volatile, so check multiple seasons or similar-minute samples."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What if a player is low volume but high efficiency?",
+          "a": "That can indicate elite finishing or a small sample. Look at minutes and role before projecting future output."
+        }
+      ]
+    },
+    {
+      "slug": "reading-comparisons",
+      "title": "Reading a comparison",
+      "description": "Break down head-to-head comparisons without overreacting to one metric.",
+      "summary": "Use comparison outputs as a learning brief: rate, efficiency, and role context in one view.",
+      "takeaways": [
+        "Start with minutes and per-90 rates to normalize differences.",
+        "Check efficiency next, then interpret with team and role context.",
+        "Use comparisons for discussion, not prediction."
+      ],
+      "sections": [
+        {
+          "title": "Start with the baseline",
+          "body": [
+            "Always open with minutes played and per-90 outputs before scanning totals.",
+            "Comparing like-for-like roles reduces noise in the results."
+          ]
+        },
+        {
+          "title": "Layer in context",
+          "body": [
+            "Team style, position, and tactical role can change how stats show up.",
+            "If two players have similar per-90 rates, context can explain the differences in totals."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use comparisons to predict results?",
+          "a": "No. Comparisons are educational and should be used as a discussion tool, not as a prediction engine."
+        }
+      ]
+    },
+    {
+      "slug": "minutes-and-role",
+      "title": "Minutes and role context",
+      "description": "Understand how playing time and tactical role influence every stat.",
+      "summary": "Minutes and role determine opportunity. Context tells you if a rate is sustainable.",
+      "takeaways": [
+        "Minutes show reliability and coaching trust.",
+        "Role explains why similar players have different outputs.",
+        "Context helps avoid unfair comparisons across positions."
+      ],
+      "sections": [
+        {
+          "title": "Why minutes matter",
+          "body": [
+            "High totals can be a product of heavy minutes rather than elite efficiency.",
+            "Low minutes may hide upside or reflect role limitations."
+          ]
+        },
+        {
+          "title": "Role-driven output",
+          "body": [
+            "A pressing winger and a target striker will generate different stat profiles.",
+            "Use roles to explain trade-offs instead of declaring one player better."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Should I ignore a player with low minutes?",
+          "a": "Not necessarily. Look for recent trend lines, injuries, or tactical changes that explain the minutes."
+        }
+      ]
+    },
+    {
+      "slug": "building-comparison-briefs",
+      "title": "Building comparison briefs",
+      "description": "Turn a comparison into a short, shareable insight summary.",
+      "summary": "Use a structured brief to summarize a comparison for scouting notes or team discussions.",
+      "takeaways": [
+        "Summarize rate, efficiency, and role in three short bullets.",
+        "Call out one key advantage and one caution for each player.",
+        "Link back to the comparison for transparency."
+      ],
+      "sections": [
+        {
+          "title": "Brief structure",
+          "body": [
+            "Start with a one-line overview of the players being compared.",
+            "Add three bullets: rate highlight, efficiency highlight, and role context."
+          ]
+        },
+        {
+          "title": "Sharing responsibly",
+          "body": [
+            "Always label comparisons as educational and non-predictive.",
+            "Include the compare link so others can verify the numbers."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where should I share a brief?",
+          "a": "Use internal channels or discussions with scouts, analysts, or fans. Avoid presenting it as a prediction or betting advice."
+        }
+      ]
+    }
+  ]
+}

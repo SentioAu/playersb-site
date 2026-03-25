@@ -1,0 +1,1740 @@
+{
+  "generatedAt": "2026-03-07T07:08:32.467Z",
+  "sourceStatus": {
+    "seed": {
+      "status": "ok",
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "wikipedia": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:08:32.467Z",
+      "message": "Wikipedia summaries success=0, failed=80"
+    }
+  },
+  "players": {
+    "erling-haaland": {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "dateOfBirth": "2000-07-21",
+      "age": 25,
+      "nationality": "Norway",
+      "heightCm": 194,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Bryne",
+        "Molde",
+        "Red Bull Salzburg",
+        "Borussia Dortmund"
+      ],
+      "careerGoals": 250,
+      "careerAssists": 55,
+      "careerAppearances": 320,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "phil-foden": {
+      "id": "phil-foden",
+      "name": "Phil Foden",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "rodri": {
+      "id": "rodri",
+      "name": "Rodri",
+      "dateOfBirth": "1996-06-22",
+      "age": 29,
+      "nationality": "Spain",
+      "heightCm": 191,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Villarreal",
+        "Atlético Madrid",
+        "Manchester City"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 35,
+      "careerAppearances": 430,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "kevin-de-bruyne": {
+      "id": "kevin-de-bruyne",
+      "name": "Kevin De Bruyne",
+      "dateOfBirth": "1991-06-28",
+      "age": 34,
+      "nationality": "Belgium",
+      "heightCm": 181,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Genk",
+        "Chelsea",
+        "Werder Bremen",
+        "Wolfsburg",
+        "Manchester City"
+      ],
+      "careerGoals": 150,
+      "careerAssists": 250,
+      "careerAppearances": 640,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "mohamed-salah": {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "dateOfBirth": "1992-06-15",
+      "age": 33,
+      "nationality": "Egypt",
+      "heightCm": 175,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Basel",
+        "Chelsea",
+        "Fiorentina",
+        "Roma",
+        "Liverpool"
+      ],
+      "careerGoals": 290,
+      "careerAssists": 130,
+      "careerAppearances": 560,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "darwin-nunez": {
+      "id": "darwin-nunez",
+      "name": "Darwin Núñez",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "alexis-mac-allister": {
+      "id": "alexis-mac-allister",
+      "name": "Alexis Mac Allister",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "virgil-van-dijk": {
+      "id": "virgil-van-dijk",
+      "name": "Virgil van Dijk",
+      "dateOfBirth": "1991-07-08",
+      "age": 34,
+      "nationality": "Netherlands",
+      "heightCm": 193,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Groningen",
+        "Celtic",
+        "Southampton",
+        "Liverpool"
+      ],
+      "careerGoals": 60,
+      "careerAssists": 20,
+      "careerAppearances": 520,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "bukayo-saka": {
+      "id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "dateOfBirth": "2001-09-05",
+      "age": 24,
+      "nationality": "England",
+      "heightCm": 178,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Arsenal"
+      ],
+      "careerGoals": 95,
+      "careerAssists": 85,
+      "careerAppearances": 340,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "martin-degaard": {
+      "id": "martin-degaard",
+      "name": "Martin Ødegaard",
+      "dateOfBirth": "1998-12-17",
+      "age": 27,
+      "nationality": "Norway",
+      "heightCm": 178,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Strømsgodset",
+        "Real Madrid",
+        "Heerenveen",
+        "Vitesse",
+        "Real Sociedad",
+        "Arsenal"
+      ],
+      "careerGoals": 80,
+      "careerAssists": 95,
+      "careerAppearances": 430,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "declan-rice": {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "kai-havertz": {
+      "id": "kai-havertz",
+      "name": "Kai Havertz",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "heung-min-son": {
+      "id": "heung-min-son",
+      "name": "Heung-Min Son",
+      "dateOfBirth": "1992-07-08",
+      "age": 33,
+      "nationality": "South Korea",
+      "heightCm": 183,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Hamburg",
+        "Bayer Leverkusen",
+        "Tottenham"
+      ],
+      "careerGoals": 230,
+      "careerAssists": 120,
+      "careerAppearances": 620,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "james-maddison": {
+      "id": "james-maddison",
+      "name": "James Maddison",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "dejan-kulusevski": {
+      "id": "dejan-kulusevski",
+      "name": "Dejan Kulusevski",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "cristian-romero": {
+      "id": "cristian-romero",
+      "name": "Cristian Romero",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "cole-palmer": {
+      "id": "cole-palmer",
+      "name": "Cole Palmer",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "enzo-fernandez": {
+      "id": "enzo-fernandez",
+      "name": "Enzo Fernández",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "reece-james": {
+      "id": "reece-james",
+      "name": "Reece James",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "christopher-nkunku": {
+      "id": "christopher-nkunku",
+      "name": "Christopher Nkunku",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "bruno-fernandes": {
+      "id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "dateOfBirth": "1994-09-08",
+      "age": 31,
+      "nationality": "Portugal",
+      "heightCm": 179,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Novara",
+        "Udinese",
+        "Sampdoria",
+        "Sporting CP",
+        "Manchester United"
+      ],
+      "careerGoals": 190,
+      "careerAssists": 140,
+      "careerAppearances": 620,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "rasmus-h-jlund": {
+      "id": "rasmus-h-jlund",
+      "name": "Rasmus Højlund",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "marcus-rashford": {
+      "id": "marcus-rashford",
+      "name": "Marcus Rashford",
+      "dateOfBirth": "1997-10-31",
+      "age": 28,
+      "nationality": "England",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Manchester United"
+      ],
+      "careerGoals": 150,
+      "careerAssists": 80,
+      "careerAppearances": 450,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "lisandro-martinez": {
+      "id": "lisandro-martinez",
+      "name": "Lisandro Martínez",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "jude-bellingham": {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "dateOfBirth": "2003-06-29",
+      "age": 22,
+      "nationality": "England",
+      "heightCm": 186,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Birmingham City",
+        "Borussia Dortmund",
+        "Real Madrid"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 45,
+      "careerAppearances": 260,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "vinicius-junior": {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "dateOfBirth": "2000-07-12",
+      "age": 25,
+      "nationality": "Brazil",
+      "heightCm": 176,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Flamengo",
+        "Real Madrid"
+      ],
+      "careerGoals": 120,
+      "careerAssists": 95,
+      "careerAppearances": 380,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "federico-valverde": {
+      "id": "federico-valverde",
+      "name": "Federico Valverde",
+      "dateOfBirth": "1998-07-22",
+      "age": 27,
+      "nationality": "Uruguay",
+      "heightCm": 182,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Peñarol",
+        "Real Madrid Castilla",
+        "Deportivo La Coruña",
+        "Real Madrid"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 45,
+      "careerAppearances": 350,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "antonio-rudiger": {
+      "id": "antonio-rudiger",
+      "name": "Antonio Rüdiger",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "robert-lewandowski": {
+      "id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "dateOfBirth": "1988-08-21",
+      "age": 37,
+      "nationality": "Poland",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Lech Poznań",
+        "Borussia Dortmund",
+        "Bayern Munich",
+        "Barcelona"
+      ],
+      "careerGoals": 650,
+      "careerAssists": 140,
+      "careerAppearances": 910,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "pedri": {
+      "id": "pedri",
+      "name": "Pedri",
+      "dateOfBirth": "2002-11-25",
+      "age": 23,
+      "nationality": "Spain",
+      "heightCm": 174,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Las Palmas",
+        "Barcelona"
+      ],
+      "careerGoals": 30,
+      "careerAssists": 25,
+      "careerAppearances": 220,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "lamine-yamal": {
+      "id": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "ronald-araujo": {
+      "id": "ronald-araujo",
+      "name": "Ronald Araújo",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "antoine-griezmann": {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "dateOfBirth": "1991-03-21",
+      "age": 34,
+      "nationality": "France",
+      "heightCm": 176,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Real Sociedad",
+        "Atlético Madrid",
+        "Barcelona"
+      ],
+      "careerGoals": 270,
+      "careerAssists": 110,
+      "careerAppearances": 760,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "alvaro-morata": {
+      "id": "alvaro-morata",
+      "name": "Álvaro Morata",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "rodrigo-de-paul": {
+      "id": "rodrigo-de-paul",
+      "name": "Rodrigo De Paul",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "jan-oblak": {
+      "id": "jan-oblak",
+      "name": "Jan Oblak",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "harry-kane": {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "dateOfBirth": "1993-07-28",
+      "age": 32,
+      "nationality": "England",
+      "heightCm": 188,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Tottenham",
+        "Bayern Munich"
+      ],
+      "careerGoals": 380,
+      "careerAssists": 90,
+      "careerAppearances": 600,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "jamal-musiala": {
+      "id": "jamal-musiala",
+      "name": "Jamal Musiala",
+      "dateOfBirth": "2003-02-26",
+      "age": 23,
+      "nationality": "Germany",
+      "heightCm": 184,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Bayern Munich"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 45,
+      "careerAppearances": 250,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "leroy-sane": {
+      "id": "leroy-sane",
+      "name": "Leroy Sané",
+      "dateOfBirth": "1996-01-11",
+      "age": 30,
+      "nationality": "Germany",
+      "heightCm": 183,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Schalke 04",
+        "Manchester City",
+        "Bayern Munich"
+      ],
+      "careerGoals": 145,
+      "careerAssists": 130,
+      "careerAppearances": 500,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "joshua-kimmich": {
+      "id": "joshua-kimmich",
+      "name": "Joshua Kimmich",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "julian-brandt": {
+      "id": "julian-brandt",
+      "name": "Julian Brandt",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "niclas-fullkrug": {
+      "id": "niclas-fullkrug",
+      "name": "Niclas Füllkrug",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "karim-adeyemi": {
+      "id": "karim-adeyemi",
+      "name": "Karim Adeyemi",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "mats-hummels": {
+      "id": "mats-hummels",
+      "name": "Mats Hummels",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "florian-wirtz": {
+      "id": "florian-wirtz",
+      "name": "Florian Wirtz",
+      "dateOfBirth": "2003-05-03",
+      "age": 22,
+      "nationality": "Germany",
+      "heightCm": 176,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Bayer Leverkusen"
+      ],
+      "careerGoals": 55,
+      "careerAssists": 65,
+      "careerAppearances": 220,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "victor-boniface": {
+      "id": "victor-boniface",
+      "name": "Victor Boniface",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "granit-xhaka": {
+      "id": "granit-xhaka",
+      "name": "Granit Xhaka",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "jeremie-frimpong": {
+      "id": "jeremie-frimpong",
+      "name": "Jeremie Frimpong",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "kylian-mbappe": {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "dateOfBirth": "1998-12-20",
+      "age": 27,
+      "nationality": "France",
+      "heightCm": 178,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Monaco",
+        "Paris Saint-Germain"
+      ],
+      "careerGoals": 330,
+      "careerAssists": 120,
+      "careerAppearances": 430,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "ousmane-dembele": {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "achraf-hakimi": {
+      "id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "dateOfBirth": "1998-11-04",
+      "age": 27,
+      "nationality": "Morocco",
+      "heightCm": 181,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Real Madrid",
+        "Borussia Dortmund",
+        "Inter",
+        "Paris Saint-Germain"
+      ],
+      "careerGoals": 50,
+      "careerAssists": 75,
+      "careerAppearances": 430,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "vitinha": {
+      "id": "vitinha",
+      "name": "Vitinha",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "pierre-emerick-aubameyang": {
+      "id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "amine-harit": {
+      "id": "amine-harit",
+      "name": "Amine Harit",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "jordan-veretout": {
+      "id": "jordan-veretout",
+      "name": "Jordan Veretout",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "chancel-mbemba": {
+      "id": "chancel-mbemba",
+      "name": "Chancel Mbemba",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "lautaro-martinez": {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "dateOfBirth": "1997-08-22",
+      "age": 28,
+      "nationality": "Argentina",
+      "heightCm": 174,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Racing Club",
+        "Inter"
+      ],
+      "careerGoals": 180,
+      "careerAssists": 45,
+      "careerAppearances": 410,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "nicolo-barella": {
+      "id": "nicolo-barella",
+      "name": "Nicolò Barella",
+      "dateOfBirth": "1997-02-07",
+      "age": 29,
+      "nationality": "Italy",
+      "heightCm": 172,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Cagliari",
+        "Inter"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 65,
+      "careerAppearances": 470,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "hakan-calhanoglu": {
+      "id": "hakan-calhanoglu",
+      "name": "Hakan Çalhanoğlu",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "alessandro-bastoni": {
+      "id": "alessandro-bastoni",
+      "name": "Alessandro Bastoni",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "rafael-leao": {
+      "id": "rafael-leao",
+      "name": "Rafael Leão",
+      "dateOfBirth": "1999-06-10",
+      "age": 26,
+      "nationality": "Portugal",
+      "heightCm": 188,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Sporting CP",
+        "Lille",
+        "AC Milan"
+      ],
+      "careerGoals": 110,
+      "careerAssists": 75,
+      "careerAppearances": 390,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "theo-hernandez": {
+      "id": "theo-hernandez",
+      "name": "Theo Hernández",
+      "dateOfBirth": "1997-10-06",
+      "age": 28,
+      "nationality": "France",
+      "heightCm": 184,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Atlético Madrid",
+        "Alavés",
+        "Real Madrid",
+        "Real Sociedad",
+        "AC Milan"
+      ],
+      "careerGoals": 55,
+      "careerAssists": 70,
+      "careerAppearances": 450,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "christian-pulisic": {
+      "id": "christian-pulisic",
+      "name": "Christian Pulisic",
+      "dateOfBirth": "1998-09-18",
+      "age": 27,
+      "nationality": "United States",
+      "heightCm": 178,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Borussia Dortmund",
+        "Chelsea",
+        "AC Milan"
+      ],
+      "careerGoals": 95,
+      "careerAssists": 70,
+      "careerAppearances": 430,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "mike-maignan": {
+      "id": "mike-maignan",
+      "name": "Mike Maignan",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "victor-osimhen": {
+      "id": "victor-osimhen",
+      "name": "Victor Osimhen",
+      "dateOfBirth": "1998-12-29",
+      "age": 27,
+      "nationality": "Nigeria",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Wolfsburg",
+        "Charleroi",
+        "Lille",
+        "Napoli"
+      ],
+      "careerGoals": 135,
+      "careerAssists": 30,
+      "careerAppearances": 280,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "khvicha-kvaratskhelia": {
+      "id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "dateOfBirth": "2001-02-12",
+      "age": 25,
+      "nationality": "Georgia",
+      "heightCm": 183,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Dinamo Tbilisi",
+        "Rubin Kazan",
+        "Dinamo Batumi",
+        "Napoli"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 65,
+      "careerAppearances": 270,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "stanislav-lobotka": {
+      "id": "stanislav-lobotka",
+      "name": "Stanislav Lobotka",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "giovanni-di-lorenzo": {
+      "id": "giovanni-di-lorenzo",
+      "name": "Giovanni Di Lorenzo",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "dusan-vlahovic": {
+      "id": "dusan-vlahovic",
+      "name": "Dušan Vlahović",
+      "dateOfBirth": "2000-01-28",
+      "age": 26,
+      "nationality": "Serbia",
+      "heightCm": 190,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Partizan",
+        "Fiorentina",
+        "Juventus"
+      ],
+      "careerGoals": 140,
+      "careerAssists": 25,
+      "careerAppearances": 320,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "federico-chiesa": {
+      "id": "federico-chiesa",
+      "name": "Federico Chiesa",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "adrien-rabiot": {
+      "id": "adrien-rabiot",
+      "name": "Adrien Rabiot",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "bremer": {
+      "id": "bremer",
+      "name": "Bremer",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "angel-di-maria": {
+      "id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "joao-mario": {
+      "id": "joao-mario",
+      "name": "João Mário",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "rafa-silva": {
+      "id": "rafa-silva",
+      "name": "Rafa Silva",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "antonio-silva": {
+      "id": "antonio-silva",
+      "name": "António Silva",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "brian-brobbey": {
+      "id": "brian-brobbey",
+      "name": "Brian Brobbey",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "steven-bergwijn": {
+      "id": "steven-bergwijn",
+      "name": "Steven Bergwijn",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "kenneth-taylor": {
+      "id": "kenneth-taylor",
+      "name": "Kenneth Taylor",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    },
+    "jorrel-hato": {
+      "id": "jorrel-hato",
+      "name": "Jorrel Hato",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-03-07T07:08:32.467Z"
+    }
+  }
+}

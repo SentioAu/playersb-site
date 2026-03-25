@@ -1,0 +1,260 @@
+{
+  "comparisons": [
+    {
+      "a": "maradona",
+      "b": "zidane",
+      "label": "Maradona vs Zidane"
+    },
+    {
+      "a": "pele",
+      "b": "ronaldo",
+      "label": "Pelé vs Ronaldo"
+    },
+    {
+      "a": "cruyff",
+      "b": "ronaldinho",
+      "label": "Cruyff vs Ronaldinho"
+    },
+    {
+      "a": "messi",
+      "b": "cristiano-ronaldo",
+      "label": "Messi vs Cristiano Ronaldo"
+    },
+    {
+      "a": "xavi",
+      "b": "iniesta",
+      "label": "Xavi vs Iniesta"
+    },
+    {
+      "a": "beckenbauer",
+      "b": "maldini",
+      "label": "Beckenbauer vs Maldini"
+    }
+  ],
+  "players": [
+    {
+      "id": "maradona",
+      "name": "Diego Maradona",
+      "position": "AM",
+      "nation": "Argentina",
+      "era": "1976–1997",
+      "peakSeason": "1986",
+      "highlights": [
+        "Diego Maradona defined elite AM play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Diego Maradona remains a benchmark for AM impact, production, and football culture."
+    },
+    {
+      "id": "pele",
+      "name": "Pelé",
+      "position": "ST",
+      "nation": "Brazil",
+      "era": "1956–1977",
+      "peakSeason": "1961",
+      "highlights": [
+        "Pelé defined elite ST play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Pelé remains a benchmark for ST impact, production, and football culture."
+    },
+    {
+      "id": "zidane",
+      "name": "Zinedine Zidane",
+      "position": "AM",
+      "nation": "France",
+      "era": "1989–2006",
+      "peakSeason": "1998",
+      "highlights": [
+        "Zinedine Zidane defined elite AM play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Zinedine Zidane remains a benchmark for AM impact, production, and football culture."
+    },
+    {
+      "id": "ronaldo",
+      "name": "Ronaldo Nazário",
+      "position": "ST",
+      "nation": "Brazil",
+      "era": "1993–2011",
+      "peakSeason": "1997",
+      "highlights": [
+        "Ronaldo Nazário defined elite ST play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Ronaldo Nazário remains a benchmark for ST impact, production, and football culture."
+    },
+    {
+      "id": "cruyff",
+      "name": "Johan Cruyff",
+      "position": "CF",
+      "nation": "Netherlands",
+      "era": "1964–1984",
+      "peakSeason": "1974",
+      "highlights": [
+        "Johan Cruyff defined elite CF play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Johan Cruyff remains a benchmark for CF impact, production, and football culture."
+    },
+    {
+      "id": "ronaldinho",
+      "name": "Ronaldinho",
+      "position": "AM",
+      "nation": "Brazil",
+      "era": "1998–2015",
+      "peakSeason": "2005",
+      "highlights": [
+        "Ronaldinho defined elite AM play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Ronaldinho remains a benchmark for AM impact, production, and football culture."
+    },
+    {
+      "id": "messi",
+      "name": "Lionel Messi",
+      "position": "RW",
+      "nation": "Argentina",
+      "era": "2003–present",
+      "peakSeason": "2012",
+      "highlights": [
+        "Lionel Messi defined elite RW play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Lionel Messi remains a benchmark for RW impact, production, and football culture."
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "position": "LW/ST",
+      "nation": "Portugal",
+      "era": "2002–present",
+      "peakSeason": "2014",
+      "highlights": [
+        "Cristiano Ronaldo defined elite LW/ST play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Cristiano Ronaldo remains a benchmark for LW/ST impact, production, and football culture."
+    },
+    {
+      "id": "xavi",
+      "name": "Xavi Hernández",
+      "position": "CM",
+      "nation": "Spain",
+      "era": "1998–2019",
+      "peakSeason": "2011",
+      "highlights": [
+        "Xavi Hernández defined elite CM play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Xavi Hernández remains a benchmark for CM impact, production, and football culture."
+    },
+    {
+      "id": "iniesta",
+      "name": "Andrés Iniesta",
+      "position": "CM",
+      "nation": "Spain",
+      "era": "2002–2023",
+      "peakSeason": "2012",
+      "highlights": [
+        "Andrés Iniesta defined elite CM play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Andrés Iniesta remains a benchmark for CM impact, production, and football culture."
+    },
+    {
+      "id": "beckenbauer",
+      "name": "Franz Beckenbauer",
+      "position": "SW",
+      "nation": "Germany",
+      "era": "1964–1983",
+      "peakSeason": "1974",
+      "highlights": [
+        "Franz Beckenbauer defined elite SW play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Franz Beckenbauer remains a benchmark for SW impact, production, and football culture."
+    },
+    {
+      "id": "maldini",
+      "name": "Paolo Maldini",
+      "position": "CB",
+      "nation": "Italy",
+      "era": "1984–2009",
+      "peakSeason": "1994",
+      "highlights": [
+        "Paolo Maldini defined elite CB play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Paolo Maldini remains a benchmark for CB impact, production, and football culture."
+    },
+    {
+      "id": "george-best",
+      "name": "George Best",
+      "position": "RW",
+      "nation": "Northern Ireland",
+      "era": "1963–1984",
+      "peakSeason": "1968",
+      "highlights": [
+        "George Best defined elite RW play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "George Best remains a benchmark for RW impact, production, and football culture."
+    },
+    {
+      "id": "eusebio",
+      "name": "Eusébio",
+      "position": "ST",
+      "nation": "Portugal",
+      "era": "1960–1978",
+      "peakSeason": "1965",
+      "highlights": [
+        "Eusébio defined elite ST play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Eusébio remains a benchmark for ST impact, production, and football culture."
+    },
+    {
+      "id": "garrincha",
+      "name": "Garrincha",
+      "position": "RW",
+      "nation": "Brazil",
+      "era": "1953–1972",
+      "peakSeason": "1962",
+      "highlights": [
+        "Garrincha defined elite RW play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Garrincha remains a benchmark for RW impact, production, and football culture."
+    },
+    {
+      "id": "platini",
+      "name": "Michel Platini",
+      "position": "AM",
+      "nation": "France",
+      "era": "1972–1987",
+      "peakSeason": "1985",
+      "highlights": [
+        "Michel Platini defined elite AM play in the modern game.",
+        "Multiple title runs and decisive tournament performances.",
+        "Enduring influence on tactical evolution and player development."
+      ],
+      "legacy": "Michel Platini remains a benchmark for AM impact, production, and football culture."
+    }
+  ]
+}
