@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: "20"
 
@@ -49,7 +49,7 @@ jobs:
         run: node scripts/check-data-health.mjs --ci
 
       - name: Lint GitHub Actions workflows (actionlint)
-        uses: rhysd/actionlint@v1
+        uses: rhysd/actionlint@v1.6.26
 
       - name: Start local server for Lighthouse
         run: |
@@ -58,7 +58,7 @@ jobs:
           sleep 2
 
       - name: Lighthouse smoke audit (regression gate)
-        uses: treosh/lighthouse-ci-action@v12
+        uses: treosh/lighthouse-ci-action@v12.6.0
         with:
           configPath: ./.lighthouserc.json
           uploadArtifacts: true
