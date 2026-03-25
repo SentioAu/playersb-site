@@ -1,0 +1,429 @@
+{
+  "updatedAt": "2026-03-07T00:00:00.000Z",
+  "players": {
+    "erling-haaland": {
+      "dateOfBirth": "2000-07-21",
+      "nationality": "Norway",
+      "heightCm": 194,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Bryne",
+        "Molde",
+        "Red Bull Salzburg",
+        "Borussia Dortmund"
+      ],
+      "careerGoals": 250,
+      "careerAssists": 55,
+      "careerAppearances": 320
+    },
+    "kylian-mbappe": {
+      "dateOfBirth": "1998-12-20",
+      "nationality": "France",
+      "heightCm": 178,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Monaco",
+        "Paris Saint-Germain"
+      ],
+      "careerGoals": 330,
+      "careerAssists": 120,
+      "careerAppearances": 430
+    },
+    "harry-kane": {
+      "dateOfBirth": "1993-07-28",
+      "nationality": "England",
+      "heightCm": 188,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Tottenham",
+        "Bayern Munich"
+      ],
+      "careerGoals": 380,
+      "careerAssists": 90,
+      "careerAppearances": 600
+    },
+    "mohamed-salah": {
+      "dateOfBirth": "1992-06-15",
+      "nationality": "Egypt",
+      "heightCm": 175,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Basel",
+        "Chelsea",
+        "Fiorentina",
+        "Roma",
+        "Liverpool"
+      ],
+      "careerGoals": 290,
+      "careerAssists": 130,
+      "careerAppearances": 560
+    },
+    "kevin-de-bruyne": {
+      "dateOfBirth": "1991-06-28",
+      "nationality": "Belgium",
+      "heightCm": 181,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Genk",
+        "Chelsea",
+        "Werder Bremen",
+        "Wolfsburg",
+        "Manchester City"
+      ],
+      "careerGoals": 150,
+      "careerAssists": 250,
+      "careerAppearances": 640
+    },
+    "jude-bellingham": {
+      "dateOfBirth": "2003-06-29",
+      "nationality": "England",
+      "heightCm": 186,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Birmingham City",
+        "Borussia Dortmund",
+        "Real Madrid"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 45,
+      "careerAppearances": 260
+    },
+    "vinicius-junior": {
+      "dateOfBirth": "2000-07-12",
+      "nationality": "Brazil",
+      "heightCm": 176,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Flamengo",
+        "Real Madrid"
+      ],
+      "careerGoals": 120,
+      "careerAssists": 95,
+      "careerAppearances": 380
+    },
+    "lautaro-martinez": {
+      "dateOfBirth": "1997-08-22",
+      "nationality": "Argentina",
+      "heightCm": 174,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Racing Club",
+        "Inter"
+      ],
+      "careerGoals": 180,
+      "careerAssists": 45,
+      "careerAppearances": 410
+    },
+    "victor-osimhen": {
+      "dateOfBirth": "1998-12-29",
+      "nationality": "Nigeria",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Wolfsburg",
+        "Charleroi",
+        "Lille",
+        "Napoli"
+      ],
+      "careerGoals": 135,
+      "careerAssists": 30,
+      "careerAppearances": 280
+    },
+    "robert-lewandowski": {
+      "dateOfBirth": "1988-08-21",
+      "nationality": "Poland",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Lech Poznań",
+        "Borussia Dortmund",
+        "Bayern Munich",
+        "Barcelona"
+      ],
+      "careerGoals": 650,
+      "careerAssists": 140,
+      "careerAppearances": 910
+    },
+    "heung-min-son": {
+      "dateOfBirth": "1992-07-08",
+      "nationality": "South Korea",
+      "heightCm": 183,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Hamburg",
+        "Bayer Leverkusen",
+        "Tottenham"
+      ],
+      "careerGoals": 230,
+      "careerAssists": 120,
+      "careerAppearances": 620
+    },
+    "antoine-griezmann": {
+      "dateOfBirth": "1991-03-21",
+      "nationality": "France",
+      "heightCm": 176,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Real Sociedad",
+        "Atlético Madrid",
+        "Barcelona"
+      ],
+      "careerGoals": 270,
+      "careerAssists": 110,
+      "careerAppearances": 760
+    },
+    "jamal-musiala": {
+      "dateOfBirth": "2003-02-26",
+      "nationality": "Germany",
+      "heightCm": 184,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Bayern Munich"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 45,
+      "careerAppearances": 250
+    },
+    "pedri": {
+      "dateOfBirth": "2002-11-25",
+      "nationality": "Spain",
+      "heightCm": 174,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Las Palmas",
+        "Barcelona"
+      ],
+      "careerGoals": 30,
+      "careerAssists": 25,
+      "careerAppearances": 220
+    },
+    "federico-valverde": {
+      "dateOfBirth": "1998-07-22",
+      "nationality": "Uruguay",
+      "heightCm": 182,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Peñarol",
+        "Real Madrid Castilla",
+        "Deportivo La Coruña",
+        "Real Madrid"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 45,
+      "careerAppearances": 350
+    },
+    "bukayo-saka": {
+      "dateOfBirth": "2001-09-05",
+      "nationality": "England",
+      "heightCm": 178,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Arsenal"
+      ],
+      "careerGoals": 95,
+      "careerAssists": 85,
+      "careerAppearances": 340
+    },
+    "martin-degaard": {
+      "dateOfBirth": "1998-12-17",
+      "nationality": "Norway",
+      "heightCm": 178,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Strømsgodset",
+        "Real Madrid",
+        "Heerenveen",
+        "Vitesse",
+        "Real Sociedad",
+        "Arsenal"
+      ],
+      "careerGoals": 80,
+      "careerAssists": 95,
+      "careerAppearances": 430
+    },
+    "rodri": {
+      "dateOfBirth": "1996-06-22",
+      "nationality": "Spain",
+      "heightCm": 191,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Villarreal",
+        "Atlético Madrid",
+        "Manchester City"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 35,
+      "careerAppearances": 430
+    },
+    "virgil-van-dijk": {
+      "dateOfBirth": "1991-07-08",
+      "nationality": "Netherlands",
+      "heightCm": 193,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Groningen",
+        "Celtic",
+        "Southampton",
+        "Liverpool"
+      ],
+      "careerGoals": 60,
+      "careerAssists": 20,
+      "careerAppearances": 520
+    },
+    "achraf-hakimi": {
+      "dateOfBirth": "1998-11-04",
+      "nationality": "Morocco",
+      "heightCm": 181,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Real Madrid",
+        "Borussia Dortmund",
+        "Inter",
+        "Paris Saint-Germain"
+      ],
+      "careerGoals": 50,
+      "careerAssists": 75,
+      "careerAppearances": 430
+    },
+    "rafael-leao": {
+      "dateOfBirth": "1999-06-10",
+      "nationality": "Portugal",
+      "heightCm": 188,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Sporting CP",
+        "Lille",
+        "AC Milan"
+      ],
+      "careerGoals": 110,
+      "careerAssists": 75,
+      "careerAppearances": 390
+    },
+    "theo-hernandez": {
+      "dateOfBirth": "1997-10-06",
+      "nationality": "France",
+      "heightCm": 184,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Atlético Madrid",
+        "Alavés",
+        "Real Madrid",
+        "Real Sociedad",
+        "AC Milan"
+      ],
+      "careerGoals": 55,
+      "careerAssists": 70,
+      "careerAppearances": 450
+    },
+    "khvicha-kvaratskhelia": {
+      "dateOfBirth": "2001-02-12",
+      "nationality": "Georgia",
+      "heightCm": 183,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Dinamo Tbilisi",
+        "Rubin Kazan",
+        "Dinamo Batumi",
+        "Napoli"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 65,
+      "careerAppearances": 270
+    },
+    "florian-wirtz": {
+      "dateOfBirth": "2003-05-03",
+      "nationality": "Germany",
+      "heightCm": 176,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Bayer Leverkusen"
+      ],
+      "careerGoals": 55,
+      "careerAssists": 65,
+      "careerAppearances": 220
+    },
+    "leroy-sane": {
+      "dateOfBirth": "1996-01-11",
+      "nationality": "Germany",
+      "heightCm": 183,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Schalke 04",
+        "Manchester City",
+        "Bayern Munich"
+      ],
+      "careerGoals": 145,
+      "careerAssists": 130,
+      "careerAppearances": 500
+    },
+    "bruno-fernandes": {
+      "dateOfBirth": "1994-09-08",
+      "nationality": "Portugal",
+      "heightCm": 179,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Novara",
+        "Udinese",
+        "Sampdoria",
+        "Sporting CP",
+        "Manchester United"
+      ],
+      "careerGoals": 190,
+      "careerAssists": 140,
+      "careerAppearances": 620
+    },
+    "marcus-rashford": {
+      "dateOfBirth": "1997-10-31",
+      "nationality": "England",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Manchester United"
+      ],
+      "careerGoals": 150,
+      "careerAssists": 80,
+      "careerAppearances": 450
+    },
+    "christian-pulisic": {
+      "dateOfBirth": "1998-09-18",
+      "nationality": "United States",
+      "heightCm": 178,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Borussia Dortmund",
+        "Chelsea",
+        "AC Milan"
+      ],
+      "careerGoals": 95,
+      "careerAssists": 70,
+      "careerAppearances": 430
+    },
+    "nicolo-barella": {
+      "dateOfBirth": "1997-02-07",
+      "nationality": "Italy",
+      "heightCm": 172,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Cagliari",
+        "Inter"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 65,
+      "careerAppearances": 470
+    },
+    "dusan-vlahovic": {
+      "dateOfBirth": "2000-01-28",
+      "nationality": "Serbia",
+      "heightCm": 190,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Partizan",
+        "Fiorentina",
+        "Juventus"
+      ],
+      "careerGoals": 140,
+      "careerAssists": 25,
+      "careerAppearances": 320
+    }
+  }
+}
