@@ -1,0 +1,38 @@
+# PlayersB - Full LLM Context
+
+PlayersB is a football analytics website with static, generator-driven pages and scheduled data automation.
+
+## Core sections
+- `/players/` and `/players/{id}/`: player profiles and performance snapshots.
+- `/compare/`: side-by-side player comparison tool.
+- `/fantasy/`: role/filter-based fantasy shortlist page.
+- `/matches/`: competition fixtures and recent results.
+- `/standings/`: league tables by competition.
+- `/archive/`: historical competition/season archive pages.
+- `/teams/`, `/positions/`, `/competitions/`: navigational taxonomy pages.
+- `/learn/` and `/glossary/`: educational explainers and definitions.
+
+## Structured/crawl signals
+- Canonicals are directory-style URLs with trailing slashes.
+- Sitemap is generated at `/sitemap.xml`.
+- RSS/updates feed is generated at `/feed.xml`.
+- JSON-LD is included across templates and topic pages.
+
+## Automation model
+- Scheduled workflow runs approximately every 6 hours.
+- Pipeline sequence:
+  1. fetch football data (fixtures/standings/scorers)
+  2. fetch archive sources
+  3. fetch players with fallback strategy
+  4. sync players from fantasy scorers
+  5. generate all pages + quality gate
+
+## Data reliability policy
+- Supports secret aliases for Football-Data token in CI.
+- Uses pacing/retries for Football-Data rate limits.
+- Uses free-source and local-seed fallbacks to avoid pipeline breaks.
+- Includes post-fetch sanity checks to avoid publishing empty competition datasets.
+
+## Site intent
+- Educational football analytics for discoverability, explainability, and player-first workflows.
+- Not a betting site.
