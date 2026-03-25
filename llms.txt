@@ -1,0 +1,31 @@
+# PlayersB
+
+> PlayersB is a football intelligence site focused on player profiles, comparisons, fantasy tools, fixtures, standings, and historical archives.
+
+## Primary URLs
+- Home: https://playersb.com/
+- Players index: https://playersb.com/players/
+- Compare tool: https://playersb.com/compare/
+- Fantasy: https://playersb.com/fantasy/
+- Matches: https://playersb.com/matches/
+- Standings: https://playersb.com/standings/
+- Archive: https://playersb.com/archive/
+- Learn: https://playersb.com/learn/
+- Glossary: https://playersb.com/glossary/
+
+## Machine-readable discovery
+- Sitemap: https://playersb.com/sitemap.xml
+- Feed: https://playersb.com/feed.xml
+
+## Data freshness
+- Core football datasets are refreshed by automation every ~6 hours.
+- Matches/Standings/Fantasy pages display "Last updated" values from generated data files.
+
+## Data sources
+- Football-Data.org (fixtures, standings, scorers)
+- OpenFootball + StatsBomb open-data (archive/historical coverage)
+- Local fallback seeds for resiliency when free sources are unavailable
+
+## Notes
+- Content is educational and analytical.
+- No betting recommendations or sportsbook operations.
