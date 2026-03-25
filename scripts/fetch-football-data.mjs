@@ -191,7 +191,8 @@ function normalizeScorer(scorer, competition) {
 }
 
 async function main() {
-  const token = process.env.FOOTBALL_DATA_API_TOKEN || process.env.FOOTBALL_DATA_TOKEN;
+  const tokenRaw = process.env.FOOTBALL_DATA_API_TOKEN || process.env.FOOTBALL_DATA_TOKEN;
+  const token = String(tokenRaw || "").trim();
   if (!token) {
     const requireToken = process.env.REQUIRE_FOOTBALL_DATA_TOKEN === "1";
     const message = "FOOTBALL_DATA_API_TOKEN/FOOTBALL_DATA_TOKEN is not set; skipping Football-Data.org fetch and keeping existing data files.";

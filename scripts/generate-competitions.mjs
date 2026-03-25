@@ -5,6 +5,9 @@ const ROOT = process.cwd();
 const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
+const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
+const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
+const SCORERS_PATH = path.join(ROOT, "data", "scorers.json");
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 const OUT_DIR = path.join(ROOT, "competitions");
 
@@ -140,17 +143,101 @@ function renderScorers(scorers) {
   `;
 }
 
+
+function buildCompetitionsFromLive(standingsParsed, fantasyParsed, scorersParsed, playersParsed) {
+  const map = new Map();
+
+  const standingEntries = Array.isArray(standingsParsed?.competitions) ? standingsParsed.competitions : [];
+  for (const entry of standingEntries) {
+    const comp = entry?.competition || {};
+    const code = safeStr(comp.code || comp.slug || comp.name || "unknown").toUpperCase();
+    if (!code) continue;
+    if (!map.has(code)) map.set(code, { label: safeStr(comp.name || code), standings: [], scorers: [] });
+    const target = map.get(code);
+    const blocks = Array.isArray(entry?.standings) ? entry.standings : [];
+    target.standings = blocks.map((block) => ({
+      group: safeStr(block?.group || block?.stage || block?.type || "Table"),
+      stage: safeStr(block?.stage || ""),
+      table: (Array.isArray(block?.table) ? block.table : []).map((row) => ({
+        position: row?.position ?? null,
+        team: safeStr(row?.team?.name || row?.team),
+        points: row?.points ?? null,
+        goalDifference: row?.goalDifference ?? null,
+      })),
+    }));
+  }
+
+  const scorerEntries = Array.isArray(scorersParsed?.competitions) ? scorersParsed.competitions : [];
+  for (const entry of scorerEntries) {
+    const code = safeStr(entry?.competitionCode || "").toUpperCase();
+    if (!code) continue;
+    if (!map.has(code)) map.set(code, { label: code, standings: [], scorers: [] });
+    const target = map.get(code);
+    const rows = Array.isArray(entry?.scorers) ? entry.scorers : [];
+    for (const row of rows) {
+      target.scorers.push({
+        player: safeStr(row?.player),
+        team: safeStr(row?.team),
+        goals: Number(row?.goals ?? 0) || 0,
+      });
+    }
+  }
+
+  const fantasyRows = Array.isArray(fantasyParsed?.players) ? fantasyParsed.players : [];
+  for (const row of fantasyRows) {
+    const compObj = row?.competition || {};
+    const code = safeStr(compObj.code || compObj.slug || compObj.name || "").toUpperCase();
+    if (!code) continue;
+    if (!map.has(code)) map.set(code, { label: safeStr(compObj.name || code), standings: [], scorers: [] });
+    map.get(code).scorers.push({
+      player: safeStr(row?.name),
+      team: safeStr(row?.team),
+      goals: Number(row?.goals ?? 0) || 0,
+    });
+  }
+
+  for (const comp of map.values()) {
+    const dedupe = new Map();
+    for (const row of comp.scorers) {
+      const key = `${row.player}::${row.team}`;
+      if (!dedupe.has(key)) dedupe.set(key, { ...row });
+      else dedupe.get(key).goals += row.goals;
+    }
+    comp.scorers = Array.from(dedupe.values()).sort((a, b) => b.goals - a.goals || String(a.player).localeCompare(String(b.player)));
+  }
+
+  // fallback: derive pseudo scorers from player goals if needed
+  if (!map.size) {
+    const players = Array.isArray(playersParsed?.players) ? playersParsed.players : [];
+    map.set("GLOBAL", {
+      label: "Global players",
+      standings: [],
+      scorers: players
+        .map((p) => ({ player: safeStr(p.name), team: safeStr(p.team), goals: Number(p.goals ?? 0) || 0 }))
+        .sort((a, b) => b.goals - a.goals),
+    });
+  }
+
+  return Object.fromEntries(map.entries());
+}
+
 async function main() {
   await fs.access(DATA_PATH);
   await fs.access(LAYOUT_PATH);
 
-  const [raw, layout] = await Promise.all([
+  const [rawPlayers, rawStandings, rawFantasy, rawScorers, layout] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
+    fs.readFile(STANDINGS_PATH, "utf-8").catch(() => "{}"),
+    fs.readFile(FANTASY_PATH, "utf-8").catch(() => "{}"),
+    fs.readFile(SCORERS_PATH, "utf-8").catch(() => "{}"),
     fs.readFile(LAYOUT_PATH, "utf-8"),
   ]);
 
-  const parsed = JSON.parse(raw);
-  const competitions = parsed.competitions || {};
+  const playersParsed = JSON.parse(rawPlayers || "{}");
+  const standingsParsed = JSON.parse(rawStandings || "{}");
+  const fantasyParsed = JSON.parse(rawFantasy || "{}");
+  const scorersParsed = JSON.parse(rawScorers || "{}");
+  const competitions = buildCompetitionsFromLive(standingsParsed, fantasyParsed, scorersParsed, playersParsed);
   const entries = Object.entries(competitions);
 
   const indexItems = entries

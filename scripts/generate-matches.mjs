@@ -17,6 +17,11 @@ function escHtml(s) {
     .replaceAll("'", "&#39;");
 }
 
+
+function safeStr(value) {
+  return String(value ?? "").trim();
+}
+
 function formatDate(value) {
   if (!value) return "";
   const date = new Date(value);
@@ -139,6 +144,9 @@ function renderRow(match) {
   const context = escHtml(richContext(match));
   const timeline = renderTimeline(match);
   const timelineText = escHtml(timelineItems(match).join(" | "));
+  const provenance = escHtml(String(match?.provenanceSummary || match?.fieldMeta?.status?.source || "unknown"));
+  const conf = Number(match?.fieldMeta?.status?.confidence ?? 0);
+  const confPct = Number.isFinite(conf) ? `${Math.round(conf * 100)}%` : "n/a";
 
   return `
     <tr data-status="${bucket}" data-home-team="${home}" data-away-team="${away}" data-timeline-text="${timelineText}">
@@ -147,7 +155,7 @@ function renderRow(match) {
       <td>${score || "—"}</td>
       <td>${away}</td>
       <td>
-        <span class="status-badge">${status || ""}</span>
+        <span class="status-badge" title="Source: ${provenance} • Confidence: ${confPct}">${status || ""}</span>
         ${context ? `<div class="meta-text">${context}</div>` : ""}
         ${timeline}
       </td>
@@ -187,6 +195,25 @@ function renderSection(entry) {
       </div>
     </div>
   `.trim();
+}
+
+
+function summarizeSources(sources) {
+  const entries = Object.entries(sources || {});
+  if (!entries.length) return "No source metadata";
+  return entries
+    .map(([name, meta]) => `${name}:${safeStr(meta?.status || "unknown")}`)
+    .join(" | ");
+}
+
+function confidenceLabel(generatedAt, sources) {
+  const hasOkSource = Object.values(sources || {}).some((meta) => ["ok", "fallback"].includes(String(meta?.status || "").toLowerCase()));
+  if (!generatedAt) return hasOkSource ? "Medium confidence" : "Low confidence";
+  const ageMin = Math.floor((Date.now() - new Date(generatedAt).getTime()) / 60000);
+  if (!Number.isFinite(ageMin)) return "Low confidence";
+  if (hasOkSource && ageMin <= 120) return "High confidence";
+  if (hasOkSource && ageMin <= 720) return "Medium confidence";
+  return "Low confidence";
 }
 
 function freshnessLabel(generatedAt) {
@@ -229,8 +256,10 @@ async function main() {
   const description = "Live scores, upcoming fixtures, and recent results for every competition PlayersB tracks.";
   const canonical = `${SITE_ORIGIN}/matches/`;
 
-  const sourceStatus = parsed?.sources?.footballData?.status || "unknown";
-  const sourceMessage = parsed?.sources?.footballData?.message || "Source state unavailable";
+  const sourcesMeta = parsed?.sources || {};
+  const sourceSummary = summarizeSources(sourcesMeta);
+  const sourceMessage = parsed?.sources?.footballData?.message || parsed?.sources?.openfootball?.message || "Source state unavailable";
+  const confidence = confidenceLabel(parsed?.generatedAt, sourcesMeta);
 
   const sportsSchema = allMatches
     .filter(({ match }) => match?.utcDate && match?.homeTeam?.name && match?.awayTeam?.name)
@@ -254,14 +283,15 @@ async function main() {
     <section class="hero">
       <span class="pill">Matches</span>
       <h1>Fixtures, live scores, and recent results.</h1>
-      <p class="lead">Updated from Football-Data.org on a rolling window so you can keep tabs on what is next.</p>
+      <p class="lead">Updated from a multi-source pipeline (Football-Data, OpenFootball, and resilient fallbacks) so you can keep tabs on what is next.</p>
       <div class="button-row">
         <a class="button" href="/standings/">View standings</a>
         <a class="button secondary" href="/archive/">Browse archives</a>
         <a class="button secondary" href="/tools/">Back to tools</a>
       </div>
       <p class="callout">Last updated: ${escHtml(parsed?.generatedAt || "Pending fetch")} • ${escHtml(freshnessLabel(parsed?.generatedAt))}</p>
-      <p class="meta-text">Source: football-data (${escHtml(sourceStatus)}) — ${escHtml(sourceMessage)}</p>
+      <p class="meta-text">Sources: ${escHtml(sourceSummary)}</p>
+      <p class="meta-text">Confidence: ${escHtml(confidence)} • ${escHtml(sourceMessage)}</p>
     </section>
 
     <section class="section">

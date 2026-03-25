@@ -7,6 +7,7 @@ const SITE_ORIGIN = "https://playersb.com";
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 const BODY_PATH = path.join(ROOT, "templates", "player.html"); // BODY partial
+const ENRICHMENT_PATH = path.join(ROOT, "data", "player-enrichment.json");
 const OUT_DIR = path.join(ROOT, "players");
 
 const per90 = (v, m) => (m > 0 ? v / (m / 90) : 0);
@@ -225,6 +226,41 @@ function renderSimilarCards(similar, currentId) {
     .join("\n");
 }
 
+
+function renderEnrichmentPanel(entry) {
+  if (!entry) {
+    return `<section class="section"><div class="card"><h2>Career context</h2><p class="meta-text">Enrichment data is loading. Check back after the next data refresh.</p></div></section>`;
+  }
+
+  const chips = [];
+  if (entry.age) chips.push(`Age ${entry.age}`);
+  if (entry.nationality) chips.push(entry.nationality);
+  if (entry.heightCm) chips.push(`${entry.heightCm} cm`);
+  if (entry.preferredFoot) chips.push(`${entry.preferredFoot}-footed`);
+
+  const previousTeams = Array.isArray(entry.previousTeams) ? entry.previousTeams.filter(Boolean) : [];
+  const links = [];
+  if (entry.wikiUrl) links.push(`<a class="button small secondary" href="${entry.wikiUrl}" target="_blank" rel="noopener">Wikipedia profile</a>`);
+
+  return `
+    <section class="section">
+      <div class="card">
+        <h2>Career context</h2>
+        <p class="meta-text">${chips.length ? escHtml(chips.join(" · ")) : "Additional biographical details are being collected."}</p>
+        <div class="stat-grid" style="margin-top:12px;">
+          <div class="stat"><div class="stat-label">Career appearances</div><div class="stat-value">${entry.careerAppearances ?? "—"}</div></div>
+          <div class="stat"><div class="stat-label">Career goals</div><div class="stat-value">${entry.careerGoals ?? "—"}</div></div>
+          <div class="stat"><div class="stat-label">Career assists</div><div class="stat-value">${entry.careerAssists ?? "—"}</div></div>
+          <div class="stat"><div class="stat-label">DOB</div><div class="stat-value">${escHtml(entry.dateOfBirth || "—")}</div></div>
+        </div>
+        ${previousTeams.length ? `<p class="meta-text" style="margin-top:12px;">Previous clubs: ${escHtml(previousTeams.join(", "))}</p>` : ""}
+        ${entry.summary ? `<p class="meta-text" style="margin-top:12px;">${escHtml(entry.summary)}</p>` : ""}
+        ${links.length ? `<div class="button-row" style="margin-top:10px;">${links.join(" ")}</div>` : ""}
+      </div>
+    </section>
+  `;
+}
+
 function buildPlayerJsonLd(player) {
   const name = safeStr(player?.name);
   const position = safeStr(player?.position);
@@ -258,13 +294,16 @@ async function main() {
   await fs.access(LAYOUT_PATH);
   await fs.access(BODY_PATH);
 
-  const [rawData, layoutTpl, bodyTpl] = await Promise.all([
+  const [rawData, layoutTpl, bodyTpl, enrichmentRaw] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
     fs.readFile(LAYOUT_PATH, "utf-8"),
     fs.readFile(BODY_PATH, "utf-8"),
+    fs.readFile(ENRICHMENT_PATH, "utf-8").catch(() => "{}"),
   ]);
 
   const parsed = JSON.parse(rawData);
+  const enrichment = JSON.parse(enrichmentRaw || "{}");
+  const enrichmentPlayers = enrichment?.players || {};
   const players = Array.isArray(parsed.players) ? parsed.players : [];
   if (!players.length) throw new Error("data/players.json has no players[] array.");
 
@@ -293,6 +332,7 @@ async function main() {
     const { breadcrumbHtml, breadcrumbJsonLd } = buildBreadcrumbs(p, id);
 
     const [r1Raw, r2Raw, r3Raw] = rivalsFor(id, players, similarPlayers);
+    const enrichmentPanel = renderEnrichmentPanel(enrichmentPlayers[id]);
 
     // Sanitize rivals IDs defensively
     const r1 = [sanitizeId(r1Raw[0]), r1Raw[1]];
@@ -331,6 +371,7 @@ async function main() {
       "{{PLAYER_JSON_LD}}": playerJsonLd,
       "{{BREADCRUMBS}}": breadcrumbHtml,
       "{{BREADCRUMB_JSON_LD}}": breadcrumbJsonLd,
+      "{{ENRICHMENT_PANEL}}": enrichmentPanel,
       "{{SEASON_LABEL}}": "2023/24",
       "{{SEASON_MINUTES}}": String(minutes),
       "{{SEASON_GOALS}}": String(goals),

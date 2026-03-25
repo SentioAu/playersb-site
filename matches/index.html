@@ -94,22 +94,23 @@
     <section class="hero">
       <span class="pill">Matches</span>
       <h1>Fixtures, live scores, and recent results.</h1>
-      <p class="lead">Updated from Football-Data.org on a rolling window so you can keep tabs on what is next.</p>
+      <p class="lead">Updated from a multi-source pipeline (Football-Data, OpenFootball, and resilient fallbacks) so you can keep tabs on what is next.</p>
       <div class="button-row">
         <a class="button" href="/standings/">View standings</a>
         <a class="button secondary" href="/archive/">Browse archives</a>
         <a class="button secondary" href="/tools/">Back to tools</a>
       </div>
-      <p class="callout">Last updated: Pending fetch • Unknown freshness</p>
-      <p class="meta-text">Source: football-data (pending) — Run scripts/fetch-football-data.mjs with FOOTBALL_DATA_API_TOKEN to populate fixtures.</p>
+      <p class="callout">Last updated: 2026-03-07T07:13:03.301Z • Fresh (0m old)</p>
+      <p class="meta-text">Sources: footballData:fallback | openfootball:partial | clubelo:error | wikidata:error</p>
+      <p class="meta-text">Confidence: High confidence • Football-Data unavailable or disabled; using free-source fallback ingest.</p>
     </section>
 
     <section class="section">
       <h2 class="section-title">Live matchboard</h2>
       <div class="card-grid">
         <div class="card"><h3>Live / half-time</h3><p class="stat-value" data-live-count>0</p></div>
-        <div class="card"><h3>Upcoming</h3><p class="stat-value" data-upcoming-count>0</p></div>
-        <div class="card"><h3>Final</h3><p class="stat-value" data-final-count>0</p></div>
+        <div class="card"><h3>Upcoming</h3><p class="stat-value" data-upcoming-count>30</p></div>
+        <div class="card"><h3>Final</h3><p class="stat-value" data-final-count>36</p></div>
       </div>
       <div class="button-row" style="margin-top:1rem;">
         <button class="button small" type="button" data-filter="all">All</button>
@@ -133,18 +134,1724 @@
     </section>
 
     <section class="section" id="matchesSectionsRoot">
-      <div class="card"><p class="meta-text">No fixtures loaded yet. Run the data fetch script to populate fixtures.</p></div>
+      <div class="card" data-competition-key="playersb-synthetic-league" data-competition-name="PlayersB Synthetic League" id="playersb-synthetic-league">
+      <div class="card-header">
+        <div>
+          <h3>PlayersB Synthetic League</h3>
+          <p class="meta-text">66 matches in the current window.</p>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date (UTC)</th>
+              <th>Home</th>
+              <th>Score</th>
+              <th>Away</th>
+              <th>Status / context</th>
+            </tr>
+          </thead>
+          <tbody data-competition-body="playersb-synthetic-league">
+            <tr data-status="final" data-home-team="Manchester City" data-away-team="Liverpool" data-timeline-text="">
+      <td>2026-02-06 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>1-1</td>
+      <td>Liverpool</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Arsenal" data-timeline-text="">
+      <td>2026-02-07 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>2-2</td>
+      <td>Arsenal</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Tottenham" data-timeline-text="">
+      <td>2026-02-08 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>3-0</td>
+      <td>Tottenham</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Chelsea" data-timeline-text="">
+      <td>2026-02-09 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>0-1</td>
+      <td>Chelsea</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Manchester United" data-timeline-text="">
+      <td>2026-02-10 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>1-2</td>
+      <td>Manchester United</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Real Madrid" data-timeline-text="">
+      <td>2026-02-11 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>2-0</td>
+      <td>Real Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-02-12 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>3-1</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-02-13 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>0-2</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-02-14 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>1-0</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-02-15 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>2-1</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester City" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-02-16 07:13 UTC</td>
+      <td>Manchester City</td>
+      <td>3-2</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Arsenal" data-timeline-text="">
+      <td>2026-02-19 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>3-1</td>
+      <td>Arsenal</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Tottenham" data-timeline-text="">
+      <td>2026-02-20 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>0-2</td>
+      <td>Tottenham</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Chelsea" data-timeline-text="">
+      <td>2026-02-21 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>1-0</td>
+      <td>Chelsea</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Manchester United" data-timeline-text="">
+      <td>2026-02-22 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>2-1</td>
+      <td>Manchester United</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Real Madrid" data-timeline-text="">
+      <td>2026-02-23 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>3-2</td>
+      <td>Real Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-02-24 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>0-0</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-02-25 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>1-1</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-02-26 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>2-2</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-02-27 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>3-0</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Liverpool" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-02-28 07:13 UTC</td>
+      <td>Liverpool</td>
+      <td>0-1</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Arsenal" data-away-team="Tottenham" data-timeline-text="">
+      <td>2026-03-04 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>1-1</td>
+      <td>Tottenham</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Arsenal" data-away-team="Chelsea" data-timeline-text="">
+      <td>2026-03-05 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>2-2</td>
+      <td>Chelsea</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Arsenal" data-away-team="Manchester United" data-timeline-text="">
+      <td>2026-03-06 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>3-0</td>
+      <td>Manchester United</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Arsenal" data-away-team="Real Madrid" data-timeline-text="">
+      <td>2026-03-07 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>—</td>
+      <td>Real Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Arsenal" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-03-08 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>—</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Arsenal" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-03-09 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>—</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Arsenal" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-03-10 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>—</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Arsenal" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-03-11 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>—</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Arsenal" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-03-12 07:13 UTC</td>
+      <td>Arsenal</td>
+      <td>—</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Chelsea" data-timeline-text="">
+      <td>2026-03-17 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Chelsea</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Manchester United" data-timeline-text="">
+      <td>2026-03-18 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Manchester United</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Real Madrid" data-timeline-text="">
+      <td>2026-03-19 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Real Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-03-20 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-03-21 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-03-22 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-03-23 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Tottenham" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-03-24 07:13 UTC</td>
+      <td>Tottenham</td>
+      <td>—</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Manchester United" data-timeline-text="">
+      <td>2026-03-30 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Manchester United</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Real Madrid" data-timeline-text="">
+      <td>2026-03-31 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Real Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-04-01 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-04-02 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-04-03 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-04-04 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Chelsea" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-04-05 07:13 UTC</td>
+      <td>Chelsea</td>
+      <td>—</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester United" data-away-team="Real Madrid" data-timeline-text="">
+      <td>2026-02-11 07:13 UTC</td>
+      <td>Manchester United</td>
+      <td>3-1</td>
+      <td>Real Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester United" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-02-12 07:13 UTC</td>
+      <td>Manchester United</td>
+      <td>0-2</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester United" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-02-13 07:13 UTC</td>
+      <td>Manchester United</td>
+      <td>1-0</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester United" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-02-14 07:13 UTC</td>
+      <td>Manchester United</td>
+      <td>2-1</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester United" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-02-15 07:13 UTC</td>
+      <td>Manchester United</td>
+      <td>3-2</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Manchester United" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-02-16 07:13 UTC</td>
+      <td>Manchester United</td>
+      <td>0-0</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Real Madrid" data-away-team="Barcelona" data-timeline-text="">
+      <td>2026-02-24 07:13 UTC</td>
+      <td>Real Madrid</td>
+      <td>1-1</td>
+      <td>Barcelona</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Real Madrid" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-02-25 07:13 UTC</td>
+      <td>Real Madrid</td>
+      <td>2-2</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Real Madrid" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-02-26 07:13 UTC</td>
+      <td>Real Madrid</td>
+      <td>3-0</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Home</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Real Madrid" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-02-27 07:13 UTC</td>
+      <td>Real Madrid</td>
+      <td>0-1</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Real Madrid" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-02-28 07:13 UTC</td>
+      <td>Real Madrid</td>
+      <td>1-2</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Winner: Away</div>
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Barcelona" data-away-team="Atlético Madrid" data-timeline-text="">
+      <td>2026-03-09 07:13 UTC</td>
+      <td>Barcelona</td>
+      <td>—</td>
+      <td>Atlético Madrid</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Barcelona" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-03-10 07:13 UTC</td>
+      <td>Barcelona</td>
+      <td>—</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Barcelona" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-03-11 07:13 UTC</td>
+      <td>Barcelona</td>
+      <td>—</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Barcelona" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-03-12 07:13 UTC</td>
+      <td>Barcelona</td>
+      <td>—</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Atlético Madrid" data-away-team="Bayern Munich" data-timeline-text="">
+      <td>2026-03-22 07:13 UTC</td>
+      <td>Atlético Madrid</td>
+      <td>—</td>
+      <td>Bayern Munich</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Atlético Madrid" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-03-23 07:13 UTC</td>
+      <td>Atlético Madrid</td>
+      <td>—</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Atlético Madrid" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-03-24 07:13 UTC</td>
+      <td>Atlético Madrid</td>
+      <td>—</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Bayern Munich" data-away-team="Borussia Dortmund" data-timeline-text="">
+      <td>2026-04-04 07:13 UTC</td>
+      <td>Bayern Munich</td>
+      <td>—</td>
+      <td>Borussia Dortmund</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="upcoming" data-home-team="Bayern Munich" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-04-05 07:13 UTC</td>
+      <td>Bayern Munich</td>
+      <td>—</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Scheduled</span>
+        
+        
+      </td>
+    </tr>
+<tr data-status="final" data-home-team="Borussia Dortmund" data-away-team="Bayer Leverkusen" data-timeline-text="">
+      <td>2026-02-16 07:13 UTC</td>
+      <td>Borussia Dortmund</td>
+      <td>1-1</td>
+      <td>Bayer Leverkusen</td>
+      <td>
+        <span class="status-badge" title="Source: synthetic • Confidence: 50%">Final</span>
+        <div class="meta-text">Result: Draw</div>
+        
+      </td>
+    </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     </section>
 
     
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Liverpool",
+      "startDate": "2026-02-06T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Arsenal",
+      "startDate": "2026-02-07T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Tottenham",
+      "startDate": "2026-02-08T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Chelsea",
+      "startDate": "2026-02-09T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Manchester United",
+      "startDate": "2026-02-10T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Real Madrid",
+      "startDate": "2026-02-11T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Real Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Barcelona",
+      "startDate": "2026-02-12T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Atlético Madrid",
+      "startDate": "2026-02-13T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Atlético Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Bayern Munich",
+      "startDate": "2026-02-14T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayern Munich"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Borussia Dortmund",
+      "startDate": "2026-02-15T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Borussia Dortmund"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester City vs Bayer Leverkusen",
+      "startDate": "2026-02-16T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayer Leverkusen"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Arsenal",
+      "startDate": "2026-02-19T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Tottenham",
+      "startDate": "2026-02-20T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Chelsea",
+      "startDate": "2026-02-21T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Manchester United",
+      "startDate": "2026-02-22T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Real Madrid",
+      "startDate": "2026-02-23T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Real Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Barcelona",
+      "startDate": "2026-02-24T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Atlético Madrid",
+      "startDate": "2026-02-25T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Atlético Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Bayern Munich",
+      "startDate": "2026-02-26T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayern Munich"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Borussia Dortmund",
+      "startDate": "2026-02-27T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Borussia Dortmund"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Liverpool vs Bayer Leverkusen",
+      "startDate": "2026-02-28T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Liverpool"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayer Leverkusen"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Tottenham",
+      "startDate": "2026-03-04T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Chelsea",
+      "startDate": "2026-03-05T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Manchester United",
+      "startDate": "2026-03-06T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Real Madrid",
+      "startDate": "2026-03-07T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Real Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Barcelona",
+      "startDate": "2026-03-08T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Atlético Madrid",
+      "startDate": "2026-03-09T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Atlético Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Bayern Munich",
+      "startDate": "2026-03-10T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayern Munich"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Borussia Dortmund",
+      "startDate": "2026-03-11T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Borussia Dortmund"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Arsenal vs Bayer Leverkusen",
+      "startDate": "2026-03-12T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Arsenal"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayer Leverkusen"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Chelsea",
+      "startDate": "2026-03-17T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Manchester United",
+      "startDate": "2026-03-18T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Real Madrid",
+      "startDate": "2026-03-19T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Real Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Barcelona",
+      "startDate": "2026-03-20T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Atlético Madrid",
+      "startDate": "2026-03-21T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Atlético Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Bayern Munich",
+      "startDate": "2026-03-22T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayern Munich"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Borussia Dortmund",
+      "startDate": "2026-03-23T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Borussia Dortmund"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Tottenham vs Bayer Leverkusen",
+      "startDate": "2026-03-24T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Tottenham"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayer Leverkusen"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Manchester United",
+      "startDate": "2026-03-30T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Real Madrid",
+      "startDate": "2026-03-31T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Real Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Barcelona",
+      "startDate": "2026-04-01T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Atlético Madrid",
+      "startDate": "2026-04-02T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Atlético Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Bayern Munich",
+      "startDate": "2026-04-03T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayern Munich"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Borussia Dortmund",
+      "startDate": "2026-04-04T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Borussia Dortmund"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Chelsea vs Bayer Leverkusen",
+      "startDate": "2026-04-05T07:13:04.264Z",
+      "eventStatus": "https://schema.org/SCHEDULED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Chelsea"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayer Leverkusen"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester United vs Real Madrid",
+      "startDate": "2026-02-11T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Real Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester United vs Barcelona",
+      "startDate": "2026-02-12T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester United vs Atlético Madrid",
+      "startDate": "2026-02-13T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Atlético Madrid"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester United vs Bayern Munich",
+      "startDate": "2026-02-14T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Bayern Munich"
+      }
+    },
+    {
+      "@type": "SportsEvent",
+      "name": "Manchester United vs Borussia Dortmund",
+      "startDate": "2026-02-15T07:13:04.264Z",
+      "eventStatus": "https://schema.org/FINISHED",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "PlayersB Synthetic League"
+      },
+      "homeTeam": {
+        "@type": "SportsTeam",
+        "name": "Manchester United"
+      },
+      "awayTeam": {
+        "@type": "SportsTeam",
+        "name": "Borussia Dortmund"
+      }
+    }
+  ]
+}
+</script>
+
 
     <script>
       (function () {
-        let currentGeneratedAt = "";
-        const initialCompetitions = [];
-        const allTeams = [];
+        let currentGeneratedAt = "2026-03-07T07:13:03.301Z";
+        const initialCompetitions = [{"competition":{"id":null,"code":"SYNTH","name":"PlayersB Synthetic League","area":{"name":"Global","code":"GLB"},"plan":"fallback","currentSeason":{"id":null,"startDate":null,"endDate":null,"currentMatchday":null},"slug":"playersb-synthetic-league"},"matchCount":66,"matches":[{"id":"synthetic-0-1","utcDate":"2026-02-06T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":1,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-06T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-2","utcDate":"2026-02-07T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":2,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-07T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-3","utcDate":"2026-02-08T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-08T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-4","utcDate":"2026-02-09T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":0,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-09T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-5","utcDate":"2026-02-10T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":1,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-10T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-6","utcDate":"2026-02-11T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":2,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-11T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-7","utcDate":"2026-02-12T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-12T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-8","utcDate":"2026-02-13T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":0,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-13T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-9","utcDate":"2026-02-14T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":1,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-14T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-10","utcDate":"2026-02-15T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":2,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-15T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-0-11","utcDate":"2026-02-16T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester City","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-16T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester City","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-2","utcDate":"2026-02-19T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-19T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-3","utcDate":"2026-02-20T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":0,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-20T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-4","utcDate":"2026-02-21T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":1,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-21T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-5","utcDate":"2026-02-22T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":2,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-22T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-6","utcDate":"2026-02-23T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-23T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-7","utcDate":"2026-02-24T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":0,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-24T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-8","utcDate":"2026-02-25T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":1,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-25T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-9","utcDate":"2026-02-26T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":2,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-26T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-10","utcDate":"2026-02-27T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-27T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-1-11","utcDate":"2026-02-28T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Liverpool","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":0,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-28T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Liverpool","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-3","utcDate":"2026-03-04T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":1,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-04T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-4","utcDate":"2026-03-05T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":2,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-05T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-5","utcDate":"2026-03-06T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-06T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-6","utcDate":"2026-03-07T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-07T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-7","utcDate":"2026-03-08T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-08T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-8","utcDate":"2026-03-09T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-09T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-9","utcDate":"2026-03-10T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-10T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-10","utcDate":"2026-03-11T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-11T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-2-11","utcDate":"2026-03-12T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Arsenal","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-12T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Arsenal","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-4","utcDate":"2026-03-17T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-17T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-5","utcDate":"2026-03-18T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-18T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-6","utcDate":"2026-03-19T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-19T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-7","utcDate":"2026-03-20T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-20T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-8","utcDate":"2026-03-21T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-21T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-9","utcDate":"2026-03-22T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-22T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-10","utcDate":"2026-03-23T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-23T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-3-11","utcDate":"2026-03-24T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Tottenham","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-24T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Tottenham","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-5","utcDate":"2026-03-30T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-30T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-6","utcDate":"2026-03-31T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-31T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-7","utcDate":"2026-04-01T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-01T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-8","utcDate":"2026-04-02T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-02T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-9","utcDate":"2026-04-03T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-03T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-10","utcDate":"2026-04-04T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-04T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-4-11","utcDate":"2026-04-05T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Chelsea","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-05T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Chelsea","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-5-6","utcDate":"2026-02-11T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-11T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-5-7","utcDate":"2026-02-12T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":0,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-12T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-5-8","utcDate":"2026-02-13T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":1,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-13T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-5-9","utcDate":"2026-02-14T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":2,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-14T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-5-10","utcDate":"2026-02-15T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-15T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-5-11","utcDate":"2026-02-16T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Manchester United","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":0,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-16T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Manchester United","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-6-7","utcDate":"2026-02-24T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":1,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-24T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-6-8","utcDate":"2026-02-25T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":2,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-25T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"2-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-6-9","utcDate":"2026-02-26T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":{"home":3,"away":0},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-26T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"3-0","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-6-10","utcDate":"2026-02-27T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":0,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-27T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"0-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-6-11","utcDate":"2026-02-28T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Real Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":{"home":1,"away":2},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-28T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Real Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-2","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-7-8","utcDate":"2026-03-09T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-09T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-7-9","utcDate":"2026-03-10T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-10T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-7-10","utcDate":"2026-03-11T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-11T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-7-11","utcDate":"2026-03-12T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Barcelona","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-12T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Barcelona","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-8-9","utcDate":"2026-03-22T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-22T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-8-10","utcDate":"2026-03-23T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-23T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-8-11","utcDate":"2026-03-24T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Atlético Madrid","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-03-24T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Atlético Madrid","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-9-10","utcDate":"2026-04-04T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"score":{"winner":"HOME_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-04T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-9-11","utcDate":"2026-04-05T07:13:04.264Z","status":"SCHEDULED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Bayern Munich","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"AWAY_TEAM","duration":"REGULAR","fullTime":null,"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-04-05T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Bayern Munich","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":null,"source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"SCHEDULED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"},{"id":"synthetic-10-11","utcDate":"2026-02-16T07:13:04.264Z","status":"FINISHED","matchday":null,"stage":"Synthetic","group":"","homeTeam":{"id":null,"name":"Borussia Dortmund","shortName":"","tla":""},"awayTeam":{"id":null,"name":"Bayer Leverkusen","shortName":"","tla":""},"score":{"winner":"DRAW","duration":"REGULAR","fullTime":{"home":1,"away":1},"halfTime":null,"scorers":{"home":[],"away":[]}},"lastUpdated":"2026-03-07T07:13:03.301Z","fieldMeta":{"utcDate":{"value":"2026-02-16T07:13:04.264Z","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"homeTeamName":{"value":"Borussia Dortmund","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"awayTeamName":{"value":"Bayer Leverkusen","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"score":{"value":"1-1","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5},"status":{"value":"FINISHED","source":"synthetic","fetchedAt":"2026-03-07T07:13:03.301Z","confidence":0.5}},"provenanceSummary":"synthetic"}]}];
+        const allTeams = ["Arsenal","Atlético Madrid","Barcelona","Bayer Leverkusen","Bayern Munich","Borussia Dortmund","Chelsea","Liverpool","Manchester City","Manchester United","Real Madrid","Tottenham"];
         const allPlayers = [];
-        const allCompetitions = [];
+        const allCompetitions = ["PlayersB Synthetic League"];
         const storageKey = "playersb-followed-entities";
 
         const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));

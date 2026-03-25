@@ -39,6 +39,21 @@ function fill(layout, { title, description, canonical, body }) {
     .replaceAll("{{BODY}}", body.trim());
 }
 
+function summarizeSources(sources) {
+  const entries = Object.entries(sources || {});
+  if (!entries.length) return "No source metadata";
+  return entries.map(([name, meta]) => `${name}:${String(meta?.status || "unknown")}`).join(" | ");
+}
+
+function confidenceLabel(lastUpdated, usingFantasyFeed) {
+  const d = new Date(lastUpdated || "");
+  if (Number.isNaN(d.getTime())) return usingFantasyFeed ? "Medium confidence" : "Seed confidence";
+  const ageHours = (Date.now() - d.getTime()) / (1000 * 60 * 60);
+  if (usingFantasyFeed && ageHours <= 12) return "High confidence";
+  if (usingFantasyFeed && ageHours <= 72) return "Medium confidence";
+  return usingFantasyFeed ? "Low confidence" : "Seed confidence";
+}
+
 function assertNoPlaceholders(finalHtml, fileLabel) {
   const m = finalHtml.match(/{{[^}]+}}/g);
   if (m?.length) {
@@ -140,6 +155,8 @@ async function main() {
         Scores are adjusted by league difficulty and last-5 form where standings data is available.
       </p>
       <p class="callout">Last updated: ${escHtml(lastUpdated)}</p>
+      <p class="meta-text">Sources: ${escHtml(summarizeSources(fantasyParsed?.sources || {}))}</p>
+      <p class="meta-text">Confidence: ${escHtml(confidenceLabel(lastUpdated, usingFantasyFeed))}</p>
       <div class="button-row">
         <a class="button" href="/players/">Browse players</a>
         <a class="button secondary" href="/compare/">Open compare</a>

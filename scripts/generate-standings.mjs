@@ -48,6 +48,7 @@ function renderTable(standing) {
           <td>${row.goalsAgainst ?? ""}</td>
           <td>${row.goalDifference ?? ""}</td>
           <td>${row.points ?? ""}</td>
+          <td title="Source: ${escHtml(String(row?.strengthMeta?.source || "n/a"))} • Confidence: ${Math.round((Number(row?.strengthMeta?.confidence ?? 0) || 0) * 100)}%">${row.strengthRating ?? "—"}</td>
         </tr>
       `.trim();
     })
@@ -68,10 +69,11 @@ function renderTable(standing) {
             <th>GA</th>
             <th>GD</th>
             <th>Pts</th>
+            <th>Elo</th>
           </tr>
         </thead>
         <tbody>
-          ${rows || `<tr><td colspan="10">No standings available yet.</td></tr>`}
+          ${rows || `<tr><td colspan="11">No standings available yet.</td></tr>`}
         </tbody>
       </table>
     </div>
@@ -114,7 +116,7 @@ async function main() {
           <div class="card-header">
             <div>
               <h3>${escHtml(name)}</h3>
-              <p class="meta-text">Updated from Football-Data.org.</p>
+              <p class="meta-text">Updated from multi-source live ingest (Football-Data/OpenFootball + ClubElo).</p>
             </div>
           </div>
           ${tables || `<p class="meta-text">No standings data loaded yet.</p>`}
@@ -139,6 +141,8 @@ async function main() {
         <a class="button secondary" href="/tools/">Back to tools</a>
       </div>
       <p class="callout">Last updated: ${escHtml(parsed?.generatedAt || "Pending fetch")}</p>
+      <p class="meta-text">Sources: ${escHtml(summarizeSources(parsed?.sources || {}))}</p>
+      <p class="meta-text">Confidence: ${escHtml(confidenceLabel(parsed?.generatedAt, parsed?.sources || {}))}</p>
     </section>
 
     <section class="section">
@@ -151,6 +155,22 @@ async function main() {
 
   await fs.writeFile(OUT_PATH, html, "utf-8");
   console.log(`Generated ${OUT_PATH}`);
+}
+
+function summarizeSources(sources) {
+  const entries = Object.entries(sources || {});
+  if (!entries.length) return "No source metadata";
+  return entries.map(([name, meta]) => `${name}:${safeStr(meta?.status || "unknown")}`).join(" | ");
+}
+
+function confidenceLabel(generatedAt, sources) {
+  const hasOk = Object.values(sources || {}).some((meta) => ["ok", "fallback"].includes(String(meta?.status || "").toLowerCase()));
+  if (!generatedAt) return hasOk ? "Medium confidence" : "Low confidence";
+  const ageHours = (Date.now() - new Date(generatedAt).getTime()) / (1000 * 60 * 60);
+  if (!Number.isFinite(ageHours)) return "Low confidence";
+  if (hasOk && ageHours <= 6) return "High confidence";
+  if (hasOk && ageHours <= 48) return "Medium confidence";
+  return "Low confidence";
 }
 
 function safeStr(value) {
