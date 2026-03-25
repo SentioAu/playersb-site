@@ -29,12 +29,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4.1.0
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
 
@@ -202,7 +202,7 @@ jobs:
 
       - name: Upload run report artifact
         if: ${{ always() }}
-        uses: actions/upload-artifact@v4.6.1
+        uses: actions/upload-artifact@v4
         with:
           name: update-run-report
           path: artifacts/update-run-report.json
