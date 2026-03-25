@@ -1,0 +1,4398 @@
+{
+  "generatedAt": "2026-03-07T07:13:03.301Z",
+  "competitions": [
+    {
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "area": {
+          "name": "Global",
+          "code": "GLB"
+        },
+        "plan": "fallback",
+        "currentSeason": {
+          "id": null,
+          "startDate": null,
+          "endDate": null,
+          "currentMatchday": null
+        },
+        "slug": "playersb-synthetic-league"
+      },
+      "matchCount": 66,
+      "matches": [
+        {
+          "id": "synthetic-0-1",
+          "utcDate": "2026-02-06T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-06T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-2",
+          "utcDate": "2026-02-07T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-07T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-3",
+          "utcDate": "2026-02-08T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-08T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-4",
+          "utcDate": "2026-02-09T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-09T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-5",
+          "utcDate": "2026-02-10T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-10T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-6",
+          "utcDate": "2026-02-11T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-11T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-7",
+          "utcDate": "2026-02-12T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-12T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-8",
+          "utcDate": "2026-02-13T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-13T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-9",
+          "utcDate": "2026-02-14T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-14T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-10",
+          "utcDate": "2026-02-15T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-15T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-0-11",
+          "utcDate": "2026-02-16T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester City",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-16T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester City",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-2",
+          "utcDate": "2026-02-19T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-19T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-3",
+          "utcDate": "2026-02-20T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-20T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-4",
+          "utcDate": "2026-02-21T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-21T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-5",
+          "utcDate": "2026-02-22T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-22T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-6",
+          "utcDate": "2026-02-23T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-23T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-7",
+          "utcDate": "2026-02-24T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-24T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-8",
+          "utcDate": "2026-02-25T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-25T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-9",
+          "utcDate": "2026-02-26T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-26T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-10",
+          "utcDate": "2026-02-27T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-27T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-1-11",
+          "utcDate": "2026-02-28T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Liverpool",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-28T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Liverpool",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-3",
+          "utcDate": "2026-03-04T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-04T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-4",
+          "utcDate": "2026-03-05T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-05T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-5",
+          "utcDate": "2026-03-06T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-06T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-6",
+          "utcDate": "2026-03-07T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-07T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-7",
+          "utcDate": "2026-03-08T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-08T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-8",
+          "utcDate": "2026-03-09T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-09T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-9",
+          "utcDate": "2026-03-10T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-10T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-10",
+          "utcDate": "2026-03-11T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-11T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-2-11",
+          "utcDate": "2026-03-12T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Arsenal",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-12T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Arsenal",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-4",
+          "utcDate": "2026-03-17T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-17T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-5",
+          "utcDate": "2026-03-18T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-18T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-6",
+          "utcDate": "2026-03-19T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-19T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-7",
+          "utcDate": "2026-03-20T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-20T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-8",
+          "utcDate": "2026-03-21T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-21T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-9",
+          "utcDate": "2026-03-22T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-22T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-10",
+          "utcDate": "2026-03-23T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-23T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-3-11",
+          "utcDate": "2026-03-24T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Tottenham",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-24T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Tottenham",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-5",
+          "utcDate": "2026-03-30T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-30T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-6",
+          "utcDate": "2026-03-31T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-31T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-7",
+          "utcDate": "2026-04-01T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-01T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-8",
+          "utcDate": "2026-04-02T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-02T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-9",
+          "utcDate": "2026-04-03T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-03T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-10",
+          "utcDate": "2026-04-04T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-04T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-4-11",
+          "utcDate": "2026-04-05T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Chelsea",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-05T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Chelsea",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-5-6",
+          "utcDate": "2026-02-11T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-11T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-5-7",
+          "utcDate": "2026-02-12T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-12T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-5-8",
+          "utcDate": "2026-02-13T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-13T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-5-9",
+          "utcDate": "2026-02-14T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-14T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-5-10",
+          "utcDate": "2026-02-15T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-15T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-5-11",
+          "utcDate": "2026-02-16T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Manchester United",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-16T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Manchester United",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-6-7",
+          "utcDate": "2026-02-24T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-24T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-6-8",
+          "utcDate": "2026-02-25T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 2,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-25T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "2-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-6-9",
+          "utcDate": "2026-02-26T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 3,
+              "away": 0
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-26T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "3-0",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-6-10",
+          "utcDate": "2026-02-27T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 0,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-27T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "0-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-6-11",
+          "utcDate": "2026-02-28T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Real Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 2
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-28T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Real Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-2",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-7-8",
+          "utcDate": "2026-03-09T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-09T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-7-9",
+          "utcDate": "2026-03-10T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-10T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-7-10",
+          "utcDate": "2026-03-11T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-11T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-7-11",
+          "utcDate": "2026-03-12T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Barcelona",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-12T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Barcelona",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-8-9",
+          "utcDate": "2026-03-22T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-22T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-8-10",
+          "utcDate": "2026-03-23T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-23T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-8-11",
+          "utcDate": "2026-03-24T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Atlético Madrid",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-03-24T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Atlético Madrid",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-9-10",
+          "utcDate": "2026-04-04T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "HOME_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-04T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-9-11",
+          "utcDate": "2026-04-05T07:13:04.264Z",
+          "status": "SCHEDULED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Bayern Munich",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "AWAY_TEAM",
+            "duration": "REGULAR",
+            "fullTime": null,
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-04-05T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Bayern Munich",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": null,
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "SCHEDULED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        },
+        {
+          "id": "synthetic-10-11",
+          "utcDate": "2026-02-16T07:13:04.264Z",
+          "status": "FINISHED",
+          "matchday": null,
+          "stage": "Synthetic",
+          "group": "",
+          "homeTeam": {
+            "id": null,
+            "name": "Borussia Dortmund",
+            "shortName": "",
+            "tla": ""
+          },
+          "awayTeam": {
+            "id": null,
+            "name": "Bayer Leverkusen",
+            "shortName": "",
+            "tla": ""
+          },
+          "score": {
+            "winner": "DRAW",
+            "duration": "REGULAR",
+            "fullTime": {
+              "home": 1,
+              "away": 1
+            },
+            "halfTime": null,
+            "scorers": {
+              "home": [],
+              "away": []
+            }
+          },
+          "lastUpdated": "2026-03-07T07:13:03.301Z",
+          "fieldMeta": {
+            "utcDate": {
+              "value": "2026-02-16T07:13:04.264Z",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "homeTeamName": {
+              "value": "Borussia Dortmund",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "awayTeamName": {
+              "value": "Bayer Leverkusen",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "score": {
+              "value": "1-1",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            },
+            "status": {
+              "value": "FINISHED",
+              "source": "synthetic",
+              "fetchedAt": "2026-03-07T07:13:03.301Z",
+              "confidence": 0.5
+            }
+          },
+          "provenanceSummary": "synthetic"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "footballData": {
+      "status": "fallback",
+      "message": "Football-Data unavailable or disabled; using free-source fallback ingest.",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "confidence": 0.7
+    },
+    "openfootball": {
+      "status": "partial",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "competitionCount": 1,
+      "errors": [
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/it.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/es.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/it.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/de.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/fr.1.json: fetch failed"
+      ],
+      "confidence": 0.7
+    },
+    "clubelo": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "message": "fetch failed",
+      "confidence": 0.5
+    },
+    "wikidata": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "message": "fetch failed",
+      "confidence": 0.5
+    }
+  }
+}
