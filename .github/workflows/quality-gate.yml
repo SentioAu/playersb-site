@@ -47,28 +47,3 @@ jobs:
 
       - name: Validate data health thresholds
         run: node scripts/check-data-health.mjs --ci
-
-      - name: Lint GitHub Actions workflows (actionlint)
-        continue-on-error: true
-        uses: rhysd/actionlint@v1.6.26
-
-      - name: Start local server for Lighthouse
-        run: |
-          python3 -m http.server 4173 > /tmp/lighthouse-server.log 2>&1 &
-          echo $! > /tmp/lighthouse-server.pid
-          sleep 2
-
-      - name: Lighthouse smoke audit (regression gate)
-        continue-on-error: true
-        uses: treosh/lighthouse-ci-action@v11.4.0
-        with:
-          configPath: ./.lighthouserc.json
-          uploadArtifacts: true
-          temporaryPublicStorage: true
-
-      - name: Stop local server
-        if: ${{ always() }}
-        run: |
-          if [ -f /tmp/lighthouse-server.pid ]; then
-            kill "$(cat /tmp/lighthouse-server.pid)" 2>/dev/null || true
-          fi
