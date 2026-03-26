@@ -29,6 +29,8 @@ concurrency:
 jobs:
   regenerate:
     runs-on: ubuntu-latest
+    env:
+      FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
 
     steps:
       - name: Checkout

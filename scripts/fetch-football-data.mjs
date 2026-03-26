@@ -6,10 +6,20 @@ const SOURCES_PATH = path.join(ROOT, "data", "sources.json");
 const FIXTURES_PATH = path.join(ROOT, "data", "fixtures.json");
 const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
 const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
+const PLAYERS_SCORES_PATH = path.join(ROOT, "data", "players-scores.json");
 
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
-const REQUEST_INTERVAL_MS = Number(process.env.FOOTBALL_DATA_MIN_INTERVAL_MS || 6500);
+const REQUEST_INTERVAL_MS = Number(process.env.FOOTBALL_DATA_MIN_INTERVAL_MS || 1200);
 const MAX_RETRIES = Number(process.env.FOOTBALL_DATA_MAX_RETRIES || 2);
+const DEFAULT_COMPETITION_CODES = ["PL", "PD", "SA", "BL1", "FL1", "CL"];
+const COMPETITION_NAMES = {
+  PL: "Premier League",
+  PD: "La Liga",
+  SA: "Serie A",
+  BL1: "Bundesliga",
+  FL1: "Ligue 1",
+  CL: "UEFA Champions League",
+};
 let lastRequestAt = 0;
 
 function safeStr(value) {
@@ -73,6 +83,7 @@ async function fetchJson(url, token) {
     }
 
     const text = await res.text();
+    console.error(`football-data: request failed status=${res.status} url=${url} body=${text.slice(0, 500)}`);
     if (res.status === 429 && attempt < MAX_RETRIES) {
       const retryAfter = parseRetryAfterSeconds(text, res.headers);
       const waitMs = Math.max((retryAfter || 60) * 1000, REQUEST_INTERVAL_MS);
@@ -85,6 +96,22 @@ async function fetchJson(url, token) {
   }
 
   throw new Error(`Football-Data fetch failed after retries: ${url}`);
+}
+
+async function probeToken(token) {
+  const url = `${FOOTBALL_DATA_BASE}/competitions`;
+  const res = await fetch(url, {
+    headers: {
+      "X-Auth-Token": token,
+      "User-Agent": "playersb-site",
+    },
+  });
+  const body = await res.text();
+  console.log(`football-data token probe: GET /competitions status=${res.status}`);
+  if (!res.ok) {
+    console.error(`football-data token probe failed body=${body.slice(0, 500)}`);
+    throw new Error(`Football-Data token probe failed with status ${res.status}`);
+  }
 }
 
 function normalizeCompetition(competition) {
@@ -191,8 +218,8 @@ function normalizeScorer(scorer, competition) {
 }
 
 async function main() {
-  const tokenRaw = process.env.FOOTBALL_DATA_API_TOKEN || process.env.FOOTBALL_DATA_TOKEN;
-  const token = String(tokenRaw || "").trim();
+  const API_TOKEN = process.env.FOOTBALL_DATA_API_TOKEN;
+  const token = String(API_TOKEN || process.env.FOOTBALL_DATA_TOKEN || "").trim();
   if (!token) {
     const requireToken = process.env.REQUIRE_FOOTBALL_DATA_TOKEN === "1";
     const message = "FOOTBALL_DATA_API_TOKEN/FOOTBALL_DATA_TOKEN is not set; skipping Football-Data.org fetch and keeping existing data files.";
@@ -205,28 +232,26 @@ async function main() {
 
   const config = await readConfig();
   const footballConfig = config?.footballData || {};
-  const scope = footballConfig?.competitionScope || footballConfig?.competitions || "all";
+  const scope = footballConfig?.competitionScope || footballConfig?.competitions || DEFAULT_COMPETITION_CODES;
   const matchWindow = footballConfig?.matchWindowDays || { past: 7, future: 14 };
   const limitMatches = Number.isFinite(footballConfig?.limitMatches)
     ? Number(footballConfig.limitMatches)
     : null;
 
-  const competitionsPayload = await fetchJson(`${FOOTBALL_DATA_BASE}/competitions`, token);
-  const competitions = Array.isArray(competitionsPayload?.competitions)
-    ? competitionsPayload.competitions.map(normalizeCompetition)
-    : [];
+  await probeToken(token);
 
-  const selectedCompetitions = competitions.filter((comp) => {
-    if (!comp?.id) return false;
-    if (scope === "all") return true;
-    if (Array.isArray(scope)) {
-      return scope.some((entry) => {
-        const code = safeStr(entry?.code || entry);
-        return code && (code === comp.code || code === comp.name || code === String(comp.id));
-      });
-    }
-    return true;
-  });
+  const selectedCodes = Array.isArray(scope)
+    ? scope.map((entry) => safeStr(entry?.code || entry).toUpperCase()).filter(Boolean)
+    : DEFAULT_COMPETITION_CODES;
+
+  const selectedCompetitions = selectedCodes.map((code) => normalizeCompetition({
+    id: null,
+    code,
+    name: COMPETITION_NAMES[code] || code,
+    area: { name: "", code: "" },
+    plan: "TIER_ONE",
+    currentSeason: null,
+  }));
 
   const now = new Date();
   const from = new Date(now);
@@ -242,14 +267,14 @@ async function main() {
   const fantasyPlayers = [];
 
   for (const competition of selectedCompetitions) {
-    if (!competition?.id) continue;
+    const competitionCode = competition.code;
+    if (!competitionCode) continue;
 
-    const competitionId = competition.id;
-    const competitionLabel = competition.name || competition.code || String(competitionId);
+    const competitionLabel = competition.name || competitionCode;
     const slug = sanitizeSlug(competitionLabel);
 
     try {
-      const matchesUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionId}/matches?dateFrom=${dateFrom}&dateTo=${dateTo}`;
+      const matchesUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionCode}/matches?dateFrom=${dateFrom}&dateTo=${dateTo}`;
       const matchesPayload = await fetchJson(matchesUrl, token);
       let matches = Array.isArray(matchesPayload?.matches)
         ? matchesPayload.matches.map(normalizeMatch)
@@ -281,7 +306,7 @@ async function main() {
     }
 
     try {
-      const standingsUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionId}/standings`;
+      const standingsUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionCode}/standings`;
       const standingsPayload = await fetchJson(standingsUrl, token);
       const standings = Array.isArray(standingsPayload?.standings)
         ? standingsPayload.standings.map(normalizeStanding)
@@ -309,7 +334,7 @@ async function main() {
     }
 
     try {
-      const scorersUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionId}/scorers`;
+      const scorersUrl = `${FOOTBALL_DATA_BASE}/competitions/${competitionCode}/scorers`;
       const scorersPayload = await fetchJson(scorersUrl, token);
       const scorers = Array.isArray(scorersPayload?.scorers) ? scorersPayload.scorers : [];
       for (const scorer of scorers) {
@@ -361,9 +386,22 @@ async function main() {
     },
   };
 
+  const playersScoresPayload = {
+    generatedAt,
+    players: fantasyPlayers,
+    sources: {
+      footballData: {
+        status: "ok",
+        fetchedAt: generatedAt,
+        competitionCount: standingsOutput.length,
+      },
+    },
+  };
+
   await fs.writeFile(FIXTURES_PATH, `${JSON.stringify(fixturesPayload, null, 2)}\n`, "utf-8");
   await fs.writeFile(STANDINGS_PATH, `${JSON.stringify(standingsPayload, null, 2)}\n`, "utf-8");
   await fs.writeFile(FANTASY_PATH, `${JSON.stringify(fantasyPayload, null, 2)}\n`, "utf-8");
+  await fs.writeFile(PLAYERS_SCORES_PATH, `${JSON.stringify(playersScoresPayload, null, 2)}\n`, "utf-8");
 
   console.log(`Fetched fixtures for ${fixturesOutput.length} competitions.`);
   console.log(`Fetched standings for ${standingsOutput.length} competitions.`);
