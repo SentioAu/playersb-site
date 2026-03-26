@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-03-07T07:13:03.301Z",
+  "sourceStatus": {
+    "clubelo": {
+      "status": "error",
+      "message": "fetch failed",
+      "fetchedAt": "2026-03-07T07:13:03.301Z"
+    }
+  },
+  "teams": []
+}
