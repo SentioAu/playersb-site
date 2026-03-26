@@ -12,8 +12,24 @@ function run(cmd) {
 // 4) Sitemap (directory URLs only)
 // 5) Quality gate (hard verify outputs + canonicals)
 run("node scripts/generate-core.mjs");
+if (process.env.FETCH_PLAYERS === "1") {
+  run("node scripts/fetch-players.mjs");
+}
 run("node scripts/generate-players.mjs");
 run("node scripts/generate-players-index.mjs");
+run("node scripts/generate-positions.mjs");
+run("node scripts/generate-teams.mjs");
+run("node scripts/generate-competitions.mjs");
+run("node scripts/generate-learn-topics.mjs");
+run("node scripts/generate-glossary.mjs");
+run("node scripts/generate-feed.mjs");
+run("node scripts/generate-legacy.mjs");
+run("node scripts/generate-fantasy.mjs");
+run("node scripts/generate-embed.mjs");
+run("node scripts/generate-sports.mjs");
+run("node scripts/generate-matches.mjs");
+run("node scripts/generate-standings.mjs");
+run("node scripts/generate-archive.mjs");
 run("node scripts/generate-sitemap.mjs");
 run("node scripts/quality-gate.mjs");
 

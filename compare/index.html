@@ -8,6 +8,9 @@
   <meta name="description" content="Compare Player A vs Player B using normalized rates and clear tradeoffs: per-90, efficiency, and stability indicators." />
 
   <link rel="canonical" href="https://playersb.com/compare/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
@@ -20,6 +23,8 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Player Comparison (A vs B) | PlayersB" />
   <meta name="twitter:description" content="Compare players using normalized rates (per-90), efficiency context, and explainable indicators." />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <meta name="theme-color" content="#2563eb" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
@@ -31,59 +36,111 @@
   </script>
 </head>
 <body>
-  <main style="max-width:980px;margin:40px auto;font-family:Arial,Helvetica,sans-serif;line-height:1.55;">
-    <header style="margin-bottom:18px;">
-      <div style="margin-bottom:10px;">
-        <a href="/" style="text-decoration:none;color:inherit;">
-          <div style="font-size:20px;font-weight:700;line-height:1.1;">PlayersB</div>
-          <div style="font-size:13px;color:#555;margin-top:2px;">The Players Book</div>
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand" aria-label="PlayersB homepage">
+          <span class="brand-title">PlayersB</span>
+          <span class="brand-subtitle">The Players Book</span>
         </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/players/">Players</a>
+          <a class="nav-link" href="/compare/">Compare</a>
+          <a class="nav-link" href="/tools/">Tools</a>
+          <a class="nav-link" href="/learn/">Learn</a>
+          <a class="nav-link" href="/about/">About</a>
+          <a class="nav-link" href="/contact/">Contact</a>
+        </nav>
+        <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+          Dark mode
+        </button>
+        <a class="button small" href="/players/">Browse players</a>
       </div>
-
-      <h1 style="margin:0;">Player Comparison</h1>
-      <p style="margin:10px 0 0 0;color:#444;">
-        Compare two players with normalized rates (per-90) and simple efficiency context. Educational tool — no betting or sportsbook activity.
-      </p>
-
-      <nav style="margin-top:12px;font-size:14px;">
-        <a href="/">Home</a> ·
-        <a href="/players/">Players</a> ·
-        <a href="/tools/">Tools</a> ·
-        <a href="/learn/">Learn</a> ·
-        <a href="/about/">About</a> ·
-        <a href="/contact/">Contact</a>
-      </nav>
     </header>
 
-    <section style="border:1px solid #eee;border-radius:12px;padding:14px;">
-      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
-        <div style="flex:1;min-width:240px;">
-          <label for="playerA" style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Player A</label>
-          <select id="playerA" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;"></select>
+    <main class="container main-content">
+      <section class="hero">
+        <span class="pill">Comparison Tool</span>
+        <h1>Compare players with clear, normalized context.</h1>
+        <p class="lead">Per-90 rates, efficiency indicators, and shareable summaries — educational only.</p>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <div class="compare-controls">
+            <div style="flex:1;min-width:240px;">
+              <label for="playerA" class="meta-text">Player A</label>
+              <select id="playerA" class="select"></select>
+            </div>
+            <div style="flex:1;min-width:240px;">
+              <label for="playerB" class="meta-text">Player B</label>
+              <select id="playerB" class="select"></select>
+            </div>
+            <div>
+              <button id="swap" class="button secondary" type="button">Swap</button>
+            </div>
+          </div>
+
+          <div class="share-row">
+            <span>Shareable link: <span id="shareUrl" style="word-break:break-all;"></span></span>
+            <button id="copyShare" type="button" class="button small secondary">Copy link</button>
+            <span id="shareStatus" class="meta-text" aria-live="polite"></span>
+          </div>
         </div>
-        <div style="flex:1;min-width:240px;">
-          <label for="playerB" style="display:block;font-size:13px;color:#555;margin-bottom:6px;">Player B</label>
-          <select id="playerB" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;"></select>
-        </div>
-        <div>
-          <button id="swap" style="padding:10px 14px;border:1px solid #ddd;border-radius:10px;background:#fff;cursor:pointer;">
-            Swap
-          </button>
+      </section>
+
+      <section id="result" class="compare-result"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p><strong>Disclaimer:</strong> Educational tool. No betting or sportsbook activity. Outputs are indicators based on historical/verified data — not guarantees.</p>
+        <div class="footer-links">
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/contact/">Contact</a>
         </div>
       </div>
-
-      <div style="margin-top:12px;font-size:13px;color:#666;">
-        Shareable link: <span id="shareUrl" style="word-break:break-all;"></span>
-      </div>
-    </section>
-
-    <section id="result" style="margin-top:18px;"></section>
-
-    <footer style="margin-top:40px;font-size:14px;color:#555;line-height:1.65;">
-      <p><strong>Disclaimer:</strong> Educational tool. No betting or sportsbook activity. Outputs are indicators based on historical/verified data — not guarantees.</p>
-      <p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/contact/">Contact</a></p>
     </footer>
-  </main>
+  </div>
+
+  <script>
+    (function () {
+      const storageKey = "playersb-theme";
+      const root = document.documentElement;
+      const stored = localStorage.getItem(storageKey);
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+      if (initialTheme === "dark") {
+        root.setAttribute("data-theme", "dark");
+      }
+
+      function updateButton(button) {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        button.textContent = isDark ? "Light mode" : "Dark mode";
+        button.setAttribute("aria-pressed", String(isDark));
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("themeToggle");
+        if (!button) return;
+        updateButton(button);
+        button.addEventListener("click", () => {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+            localStorage.setItem(storageKey, "light");
+          } else {
+            root.setAttribute("data-theme", "dark");
+            localStorage.setItem(storageKey, "dark");
+          }
+          updateButton(button);
+        });
+      });
+    })();
+  </script>
 
   <script>
     const DATA_URL = "/data/players.json";
@@ -93,6 +150,8 @@
     const $swap = document.getElementById("swap");
     const $result = document.getElementById("result");
     const $share = document.getElementById("shareUrl");
+    const $copy = document.getElementById("copyShare");
+    const $status = document.getElementById("shareStatus");
 
     const round = (n, d=2) => Number.isFinite(n) ? (Math.round(n * (10**d)) / (10**d)) : 0;
     const per90 = (value, minutes) => minutes > 0 ? (value / (minutes / 90)) : 0;
@@ -124,6 +183,32 @@
       const url = shareUrlFor(a, b);
       history.replaceState({}, "", url);
       $share.textContent = url;
+    }
+
+    async function copyShare() {
+      const url = $share.textContent.trim();
+      if (!url) return;
+      if ($status) $status.textContent = "";
+
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(url);
+        } else {
+          const temp = document.createElement("textarea");
+          temp.value = url;
+          temp.setAttribute("readonly", "");
+          temp.style.position = "absolute";
+          temp.style.left = "-9999px";
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand("copy");
+          temp.remove();
+        }
+        if ($status) $status.textContent = "Copied.";
+      } catch (err) {
+        if ($status) $status.textContent = "Unable to copy. Select the link to copy manually.";
+        console.error(err);
+      }
     }
 
     function optionLabel(p) {
@@ -172,20 +257,18 @@
       const bPct = (bVal / max) * 100;
 
       return `
-        <div style="margin:10px 0;">
-          <div style="display:flex;justify-content:space-between;gap:10px;">
-            <div style="font-weight:600;">${label}</div>
-            <div style="color:#666;font-size:13px;">${note}</div>
+        <div class="bar-row">
+          <div class="bar-row-header">
+            <div class="bar-row-title">${label}</div>
+            <div class="bar-row-note">${note}</div>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 120px 1fr;gap:10px;align-items:center;margin-top:6px;">
-            <div style="background:#f4f4f4;border-radius:10px;overflow:hidden;height:12px;">
-              <div style="height:12px;width:${aPct}%;background:#111;"></div>
+          <div class="bar-row-grid">
+            <div class="bar-track">
+              <div class="bar-fill" style="width:${aPct}%;"></div>
             </div>
-            <div style="text-align:center;font-size:13px;color:#333;">
-              ${fmt(aVal)} vs ${fmt(bVal)}
-            </div>
-            <div style="background:#f4f4f4;border-radius:10px;overflow:hidden;height:12px;">
-              <div style="height:12px;width:${bPct}%;background:#111;"></div>
+            <div class="bar-values">${fmt(aVal)} vs ${fmt(bVal)}</div>
+            <div class="bar-track">
+              <div class="bar-fill is-b" style="width:${bPct}%;"></div>
             </div>
           </div>
         </div>
@@ -207,45 +290,69 @@
       const fmtPct = (x) => `${Math.round(x * 100)}%`;
 
       $result.innerHTML = `
-        <section style="border:1px solid #eee;border-radius:12px;padding:16px;">
-          <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
-            <div style="flex:1;min-width:260px;">
-              <h2 style="margin:0;">${a.name}</h2>
-              <div style="color:#666;margin-top:6px;">${a.position || ""} · ${a.team || ""}</div>
-              <div style="margin-top:10px;font-size:13px;color:#444;">
-                Minutes: <strong>${num(a.minutes)}</strong> · Goals: <strong>${num(a.goals)}</strong> · Assists: <strong>${num(a.assists)}</strong>
+        <section class="card">
+          <div class="card-grid" style="grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));">
+            <div>
+              <h2>${a.name}</h2>
+              <div class="meta-text">${a.position || ""} · ${a.team || ""}</div>
+              <div class="stat-grid">
+                <div class="stat">
+                  <div class="stat-label">Minutes</div>
+                  <div class="stat-value">${num(a.minutes)}</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-label">Goals</div>
+                  <div class="stat-value">${num(a.goals)}</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-label">Assists</div>
+                  <div class="stat-value">${num(a.assists)}</div>
+                </div>
               </div>
-              <div style="margin-top:8px;font-size:13px;">
-                <a href="/players/${encodeURIComponent(aId)}/">Open player page</a>
+              <div class="button-row" style="margin-top:12px;">
+                <a class="button small secondary" href="/players/${encodeURIComponent(aId)}/">Open player page</a>
               </div>
             </div>
-            <div style="flex:1;min-width:260px;">
-              <h2 style="margin:0;">${b.name}</h2>
-              <div style="color:#666;margin-top:6px;">${b.position || ""} · ${b.team || ""}</div>
-              <div style="margin-top:10px;font-size:13px;color:#444;">
-                Minutes: <strong>${num(b.minutes)}</strong> · Goals: <strong>${num(b.goals)}</strong> · Assists: <strong>${num(b.assists)}</strong>
+            <div>
+              <h2>${b.name}</h2>
+              <div class="meta-text">${b.position || ""} · ${b.team || ""}</div>
+              <div class="stat-grid">
+                <div class="stat">
+                  <div class="stat-label">Minutes</div>
+                  <div class="stat-value">${num(b.minutes)}</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-label">Goals</div>
+                  <div class="stat-value">${num(b.goals)}</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-label">Assists</div>
+                  <div class="stat-value">${num(b.assists)}</div>
+                </div>
               </div>
-              <div style="margin-top:8px;font-size:13px;">
-                <a href="/players/${encodeURIComponent(bId)}/">Open player page</a>
+              <div class="button-row" style="margin-top:12px;">
+                <a class="button small secondary" href="/players/${encodeURIComponent(bId)}/">Open player page</a>
               </div>
             </div>
           </div>
 
-          <hr style="margin:14px 0;" />
+          <div class="section">
+            <h3>Normalized output (per 90)</h3>
+            ${barRow("Goals / 90", A.g90, B.g90, fmt2, "Rate-adjusted finishing")}
+            ${barRow("Assists / 90", A.a90, B.a90, fmt2, "Playmaking rate")}
+            ${barRow("Shots / 90", A.s90, B.s90, fmt2, "Volume proxy")}
+            ${barRow("Shots on target / 90", A.sot90, B.sot90, fmt2, "On-frame volume")}
+          </div>
 
-          <h3 style="margin:0 0 8px 0;">Normalized output (per 90)</h3>
-          ${barRow("Goals / 90", A.g90, B.g90, fmt2, "Rate-adjusted finishing")}
-          ${barRow("Assists / 90", A.a90, B.a90, fmt2, "Playmaking rate")}
-          ${barRow("Shots / 90", A.s90, B.s90, fmt2, "Volume proxy")}
-          ${barRow("Shots on target / 90", A.sot90, B.sot90, fmt2, "On-frame volume")}
+          <div class="section">
+            <h3>Efficiency context</h3>
+            ${barRow("Shot accuracy", A.shotAccuracy, B.shotAccuracy, fmtPct, "SOT / shots")}
+            ${barRow("Goals per shot", A.goalPerShot, B.goalPerShot, fmt2, "Goals / shots")}
+          </div>
 
-          <h3 style="margin:18px 0 8px 0;">Efficiency context</h3>
-          ${barRow("Shot accuracy", A.shotAccuracy, B.shotAccuracy, fmtPct, "SOT / shots")}
-          ${barRow("Goals per shot", A.goalPerShot, B.goalPerShot, fmt2, "Goals / shots")}
-
-          <div style="margin-top:18px;background:#fafafa;border:1px solid #eee;border-radius:12px;padding:12px;">
+          <div class="callout">
             <strong>How to read this:</strong>
-            <ul style="margin:8px 0 0 18px;">
+            <ul class="info-list">
               <li><strong>Per-90</strong> helps compare players with different minutes.</li>
               <li><strong>Shots/90</strong> is a rough volume signal; <strong>goals per shot</strong> is a rough efficiency signal.</li>
               <li>These are educational indicators, not guarantees.</li>
@@ -278,6 +385,7 @@
 
       $A.addEventListener("change", () => render(players));
       $B.addEventListener("change", () => render(players));
+      if ($copy) $copy.addEventListener("click", copyShare);
 
       $swap.addEventListener("click", () => {
         const tmp = $A.value;
