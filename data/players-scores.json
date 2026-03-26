@@ -1,0 +1,2976 @@
+{
+  "generatedAt": "2026-03-07T07:13:03.301Z",
+  "players": [
+    {
+      "id": "darwin-nunez",
+      "name": "Darwin Núñez",
+      "position": "AM",
+      "team": "Liverpool",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 9,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 9,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "julian-brandt",
+      "name": "Julian Brandt",
+      "position": "ST",
+      "team": "Borussia Dortmund",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 9,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 9,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "position": "RW",
+      "team": "Napoli",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 9,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 9,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "position": "CM",
+      "team": "Arsenal",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 9,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 9,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "jan-oblak",
+      "name": "Jan Oblak",
+      "position": "CB",
+      "team": "Atlético Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 9,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 9,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "adrien-rabiot",
+      "name": "Adrien Rabiot",
+      "position": "DM",
+      "team": "Juventus",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 9,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 9,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "cole-palmer",
+      "name": "Cole Palmer",
+      "position": "ST",
+      "team": "Chelsea",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 8,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "niclas-fullkrug",
+      "name": "Niclas Füllkrug",
+      "position": "RW",
+      "team": "Borussia Dortmund",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 8,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "brian-brobbey",
+      "name": "Brian Brobbey",
+      "position": "LW",
+      "team": "Ajax",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 8,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "victor-boniface",
+      "name": "Victor Boniface",
+      "position": "AM",
+      "team": "Bayer Leverkusen",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 8,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "kai-havertz",
+      "name": "Kai Havertz",
+      "position": "CB",
+      "team": "Arsenal",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 8,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "granit-xhaka",
+      "name": "Granit Xhaka",
+      "position": "DM",
+      "team": "Bayer Leverkusen",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 8,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "bremer",
+      "name": "Bremer",
+      "position": "RB",
+      "team": "Juventus",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 8,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "cristian-romero",
+      "name": "Cristian Romero",
+      "position": "RB",
+      "team": "Tottenham",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 8,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "antonio-silva",
+      "name": "António Silva",
+      "position": "CB",
+      "team": "Benfica",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 8,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 8,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "enzo-fernandez",
+      "name": "Enzo Fernández",
+      "position": "RW",
+      "team": "Chelsea",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 7,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
+      "position": "LW",
+      "team": "Marseille",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 7,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "steven-bergwijn",
+      "name": "Steven Bergwijn",
+      "position": "AM",
+      "team": "Ajax",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 7,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "position": "LW",
+      "team": "Manchester United",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 7,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "rasmus-h-jlund",
+      "name": "Rasmus Højlund",
+      "position": "AM",
+      "team": "Manchester United",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 7,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "marcus-rashford",
+      "name": "Marcus Rashford",
+      "position": "DM",
+      "team": "Manchester United",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 7,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "position": "RW",
+      "team": "Real Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 7,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "jeremie-frimpong",
+      "name": "Jeremie Frimpong",
+      "position": "RB",
+      "team": "Bayer Leverkusen",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 7,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "position": "CM",
+      "team": "Paris Saint-Germain",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 7,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "vitinha",
+      "name": "Vitinha",
+      "position": "CB",
+      "team": "Paris Saint-Germain",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 7,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "chancel-mbemba",
+      "name": "Chancel Mbemba",
+      "position": "RB",
+      "team": "Marseille",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 7,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 7,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "position": "LW",
+      "team": "Barcelona",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "amine-harit",
+      "name": "Amine Harit",
+      "position": "AM",
+      "team": "Marseille",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 6,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "position": "ST",
+      "team": "Inter",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 6,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "nicolo-barella",
+      "name": "Nicolò Barella",
+      "position": "RW",
+      "team": "Inter",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 6,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "position": "ST",
+      "team": "Manchester City",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "phil-foden",
+      "name": "Phil Foden",
+      "position": "RW",
+      "team": "Manchester City",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "lisandro-martinez",
+      "name": "Lisandro Martínez",
+      "position": "RB",
+      "team": "Manchester United",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "hakan-calhanoglu",
+      "name": "Hakan Çalhanoğlu",
+      "position": "CM",
+      "team": "Inter",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 6,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "rafael-leao",
+      "name": "Rafael Leão",
+      "position": "LW",
+      "team": "AC Milan",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 6,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "theo-hernandez",
+      "name": "Theo Hernández",
+      "position": "AM",
+      "team": "AC Milan",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 6,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "federico-valverde",
+      "name": "Federico Valverde",
+      "position": "CM",
+      "team": "Real Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "antonio-rudiger",
+      "name": "Antonio Rüdiger",
+      "position": "CB",
+      "team": "Real Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "position": "DM",
+      "team": "Barcelona",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "ronald-araujo",
+      "name": "Ronald Araújo",
+      "position": "RB",
+      "team": "Barcelona",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 6,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "position": "LW",
+      "team": "Liverpool",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "pedri",
+      "name": "Pedri",
+      "position": "AM",
+      "team": "Barcelona",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "victor-osimhen",
+      "name": "Victor Osimhen",
+      "position": "ST",
+      "team": "Napoli",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 5,
+      "assists": 6,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 6,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "position": "ST",
+      "team": "Atlético Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "alvaro-morata",
+      "name": "Álvaro Morata",
+      "position": "RW",
+      "team": "Atlético Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "rodrigo-de-paul",
+      "name": "Rodrigo De Paul",
+      "position": "CM",
+      "team": "Atlético Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1580,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "position": "LW",
+      "team": "Bayern Munich",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "jamal-musiala",
+      "name": "Jamal Musiala",
+      "position": "AM",
+      "team": "Bayern Munich",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "alessandro-bastoni",
+      "name": "Alessandro Bastoni",
+      "position": "CB",
+      "team": "Inter",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 5,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1700,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "rodri",
+      "name": "Rodri",
+      "position": "CM",
+      "team": "Manchester City",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "kevin-de-bruyne",
+      "name": "Kevin De Bruyne",
+      "position": "CB",
+      "team": "Manchester City",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "christian-pulisic",
+      "name": "Christian Pulisic",
+      "position": "DM",
+      "team": "AC Milan",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 5,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "mike-maignan",
+      "name": "Mike Maignan",
+      "position": "RB",
+      "team": "AC Milan",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 5,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "alexis-mac-allister",
+      "name": "Alexis Mac Allister",
+      "position": "DM",
+      "team": "Liverpool",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "virgil-van-dijk",
+      "name": "Virgil van Dijk",
+      "position": "RB",
+      "team": "Liverpool",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 5,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "stanislav-lobotka",
+      "name": "Stanislav Lobotka",
+      "position": "CM",
+      "team": "Napoli",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 5,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "giovanni-di-lorenzo",
+      "name": "Giovanni Di Lorenzo",
+      "position": "CB",
+      "team": "Napoli",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 5,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "position": "ST",
+      "team": "Arsenal",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "martin-degaard",
+      "name": "Martin Ødegaard",
+      "position": "RW",
+      "team": "Arsenal",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "dusan-vlahovic",
+      "name": "Dušan Vlahović",
+      "position": "LW",
+      "team": "Juventus",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 4,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "federico-chiesa",
+      "name": "Federico Chiesa",
+      "position": "AM",
+      "team": "Juventus",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 4,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "heung-min-son",
+      "name": "Heung-Min Son",
+      "position": "LW",
+      "team": "Tottenham",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "james-maddison",
+      "name": "James Maddison",
+      "position": "AM",
+      "team": "Tottenham",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "position": "ST",
+      "team": "Benfica",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 4,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "joao-mario",
+      "name": "João Mário",
+      "position": "RW",
+      "team": "Benfica",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 4,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "leroy-sane",
+      "name": "Leroy Sané",
+      "position": "DM",
+      "team": "Bayern Munich",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "joshua-kimmich",
+      "name": "Joshua Kimmich",
+      "position": "RB",
+      "team": "Bayern Munich",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1460,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "karim-adeyemi",
+      "name": "Karim Adeyemi",
+      "position": "CM",
+      "team": "Borussia Dortmund",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "mats-hummels",
+      "name": "Mats Hummels",
+      "position": "CB",
+      "team": "Borussia Dortmund",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 4,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "florian-wirtz",
+      "name": "Florian Wirtz",
+      "position": "LW",
+      "team": "Bayer Leverkusen",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 3,
+      "assists": 5,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 5,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "position": "ST",
+      "team": "Paris Saint-Germain",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 3,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "position": "RW",
+      "team": "Paris Saint-Germain",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 3,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "dejan-kulusevski",
+      "name": "Dejan Kulusevski",
+      "position": "DM",
+      "team": "Tottenham",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 3,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "rafa-silva",
+      "name": "Rafa Silva",
+      "position": "CM",
+      "team": "Benfica",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 3,
+      "assists": 3,
+      "playedMatches": null,
+      "minutesEstimate": 1340,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "reece-james",
+      "name": "Reece James",
+      "position": "CM",
+      "team": "Chelsea",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 3,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "christopher-nkunku",
+      "name": "Christopher Nkunku",
+      "position": "CB",
+      "team": "Chelsea",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 3,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "kenneth-taylor",
+      "name": "Kenneth Taylor",
+      "position": "DM",
+      "team": "Ajax",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 3,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "jorrel-hato",
+      "name": "Jorrel Hato",
+      "position": "RB",
+      "team": "Ajax",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 3,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1220,
+      "fieldMeta": {
+        "goals": {
+          "value": 3,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "position": "ST",
+      "team": "Real Madrid",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "slug": "playersb-synthetic-league"
+      },
+      "goals": 2,
+      "assists": 4,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 4,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "PlayersB Synthetic League",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    },
+    {
+      "id": "jordan-veretout",
+      "name": "Jordan Veretout",
+      "position": "DM",
+      "team": "Marseille",
+      "teamId": null,
+      "competition": {
+        "id": null,
+        "code": "",
+        "name": "",
+        "slug": ""
+      },
+      "goals": 2,
+      "assists": 2,
+      "playedMatches": null,
+      "minutesEstimate": 1100,
+      "fieldMeta": {
+        "goals": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "assists": {
+          "value": 2,
+          "source": "players_seed",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        },
+        "competition": {
+          "value": "",
+          "source": "derived_from_fixtures",
+          "fetchedAt": "2026-03-07T07:13:03.301Z",
+          "confidence": 0.5
+        }
+      }
+    }
+  ],
+  "sources": {
+    "footballData": {
+      "status": "fallback",
+      "message": "Derived from local players + fixture competition mapping.",
+      "fetchedAt": "2026-03-07T07:13:03.301Z"
+    },
+    "playersSeed": {
+      "status": "ok",
+      "fetchedAt": "2026-03-07T07:13:03.301Z"
+    }
+  }
+}
