@@ -1,19 +1,15 @@
-name: Update PlayersB Data (Mode 1)
+name: Update PlayersB Data
 
 on:
   workflow_dispatch: {}
   schedule:
     - cron: "0 */6 * * *"
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
       - "data/**"
-      - "templates/**"
       - "scripts/**"
-      - "_redirects"
-      - "compare.html"
-      - "contact.html"
-      - "robots.txt"
+      - "templates/**"
       - ".github/workflows/update-data.yml"
 
 env:
@@ -21,10 +17,6 @@ env:
 
 permissions:
   contents: write
-
-concurrency:
-  group: update-data-main
-  cancel-in-progress: true
 
 jobs:
   regenerate:
@@ -35,192 +27,42 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
-      # ✅ Only install if package.json exists (your repo may not need deps)
-      - name: Install dependencies (optional)
+      - name: Install dependencies
         run: |
-          if [ -f package.json ]; then
-            echo "package.json found — installing dependencies"
-            if [ -f package-lock.json ]; then
-              npm ci
-            elif [ -f pnpm-lock.yaml ]; then
-              npm i -g pnpm
-              pnpm i --frozen-lockfile
-            elif [ -f yarn.lock ]; then
-              corepack enable
-              yarn install --frozen-lockfile
-            else
-              npm i
-            fi
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install
           else
-            echo "No package.json — skipping dependency install"
+            echo "No package.json found; skipping npm install"
           fi
 
-      - name: Resolve Football-Data token (supports 2 secret names)
+      - name: Test API token
+        run: node scripts/test-api.mjs
         env:
-          FOOTBALL_DATA_API_TOKEN_PRIMARY: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
-          FOOTBALL_DATA_TOKEN_FALLBACK: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
+
+      - name: Fetch football data
+        run: node scripts/fetch-football-data.mjs
+
+      - name: Sync scorers to players
+        run: node scripts/sync-scorers.mjs
+
+      - name: Generate site
+        run: node scripts/generate-all.mjs
+
+      - name: Commit updated data
         run: |
-          TOKEN_SOURCE=""
-          TOKEN="${FOOTBALL_DATA_API_TOKEN_PRIMARY}"
-          if [ -n "${TOKEN}" ]; then
-            TOKEN_SOURCE="FOOTBALL_DATA_API_TOKEN"
-          fi
-
-          if [ -z "${TOKEN}" ]; then
-            TOKEN="${FOOTBALL_DATA_TOKEN_FALLBACK}"
-            if [ -n "${TOKEN}" ]; then
-              TOKEN_SOURCE="FOOTBALL_DATA_TOKEN"
-            fi
-          fi
-
-          if [ -z "${TOKEN}" ]; then
-            echo "No Football-Data token configured. Continuing with free/fallback data sources only."
-            echo "HAS_FOOTBALL_DATA_TOKEN=0" >> "$GITHUB_ENV"
-            exit 0
-          fi
-
-          TOKEN="$(printf %s "${TOKEN}" | tr -d "\r\n")"
-          echo "::add-mask::${TOKEN}"
-          echo "FOOTBALL_DATA_API_TOKEN=${TOKEN}" >> "$GITHUB_ENV"
-          echo "HAS_FOOTBALL_DATA_TOKEN=1" >> "$GITHUB_ENV"
-          echo "Football-Data token resolved successfully."
-          echo "Token source: ${TOKEN_SOURCE}"
-          echo "Token length: ${#TOKEN}"
-
-      - name: Fetch and generate site (core + players + sitemap) and run quality gate
-        run: |
-          FOOTBALL_FETCH_OK=0
-          if [ "${HAS_FOOTBALL_DATA_TOKEN}" = "1" ]; then
-            echo "Attempting Football-Data live fetch with configured token..."
-            if REQUIRE_FOOTBALL_DATA_TOKEN=1 node scripts/fetch-football-data.mjs; then
-              FOOTBALL_FETCH_OK=1
-              echo "Football-Data fetch succeeded."
-            else
-              echo "Football-Data fetch failed despite token. Falling back to free OpenFootball live ingest."
-            fi
-          else
-            echo "No Football-Data token in this run context. Using free OpenFootball live fallback."
-          fi
-
-          if [ "${FOOTBALL_FETCH_OK}" != "1" ]; then
-            ALLOW_SYNTHETIC_FALLBACK=0 node scripts/fetch-live-fallback.mjs
-          fi
-
-          node -e "const fs=require('fs'); const f=JSON.parse(fs.readFileSync('data/fixtures.json','utf8')); const s=JSON.parse(fs.readFileSync('data/standings.json','utf8')); if(!Array.isArray(f.competitions)||f.competitions.length===0){console.error('sanity check failed: fixtures competitions are empty'); process.exit(1);} if(!Array.isArray(s.competitions)||s.competitions.length===0){console.error('sanity check failed: standings competitions are empty'); process.exit(1);} console.log('sanity check passed: fixtures and standings contain competitions');"
-
-          node scripts/fetch-archive.mjs
-          node scripts/fetch-players.mjs --dry-run || echo "fetch-players dry-run failed; continuing with existing players source"
-          node scripts/fetch-players.mjs || echo "fetch-players failed; continuing with existing players.json"
-          node scripts/fetch-player-enrichment.mjs || echo "fetch-player-enrichment failed; continuing with cached enrichment"
-          node scripts/sync-players-from-fantasy.mjs
-          node scripts/generate-all.mjs
-          node scripts/check-data-health.mjs --write-health
-
-
-      - name: Build changed URL list for IndexNow (optional)
+          git config user.name "playersb-bot"
+          git config user.email "bot@playersb.com"
+          git add data/fixtures.json data/standings.json data/scorers.json data/players.json data/players-scores.json matches/index.html standings/index.html
+          git diff --staged --quiet || git commit -m "chore: auto-update data [skip ci]"
+          git push
         env:
-          EVENT_BEFORE_SHA: ${{ github.event.before }}
-        run: |
-          BASE_SHA="${EVENT_BEFORE_SHA}"
-          if [ -n "${BASE_SHA}" ] && [ "${BASE_SHA}" != "0000000000000000000000000000000000000000" ] && git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then
-            CHANGED=$(git diff --name-only "${BASE_SHA}" HEAD 2>/dev/null || true)
-          elif git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || true)
-          else
-            CHANGED=$(git ls-files '*.html' 'sitemap.xml' 'feed.xml' 'robots.txt' 2>/dev/null || true)
-          fi
-
-          URLS=""
-          COUNT=0
-          while IFS= read -r file; do
-            [ -z "$file" ] && continue
-            case "$file" in
-              */index.html)
-                path="/${file%index.html}"
-                ;;
-              index.html)
-                path="/"
-                ;;
-              sitemap.xml|feed.xml|robots.txt)
-                path="/${file}"
-                ;;
-              *.html)
-                continue
-                ;;
-              *)
-                continue
-                ;;
-            esac
-            URLS+="https://playersb.com${path}
-"
-            COUNT=$((COUNT+1))
-          done <<EOF
-          $CHANGED
-          EOF
-
-          {
-            echo "CHANGED_URL_COUNT=${COUNT}"
-            echo "CHANGED_URLS<<__URLS__"
-            printf "%b" "$URLS"
-            echo "__URLS__"
-          } >> "$GITHUB_ENV"
-
-      - name: Submit IndexNow URLs (optional)
-        env:
-          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
-          INDEXNOW_KEY_LOCATION: ${{ secrets.INDEXNOW_KEY_LOCATION }}
-          CHANGED_URLS: ${{ env.CHANGED_URLS }}
-        run: |
-          node scripts/submit-indexnow.mjs || echo "IndexNow submission failed; continuing."
-
-      - name: Notify pipeline failure webhook (optional)
-        if: ${{ failure() }}
-        env:
-          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
-        run: |
-          if [ -z "${ALERT_WEBHOOK_URL}" ]; then
-            echo "No ALERT_WEBHOOK_URL configured; skipping failure webhook."
-            exit 0
-          fi
-
-          PAYLOAD=$(cat <<JSON
-          {
-            "text": "PlayersB update-data workflow failed on branch ${{ github.ref_name }}. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          }
-          JSON
-          )
-
-          curl -sS -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$ALERT_WEBHOOK_URL" && echo "Failure webhook sent."
-
-      - name: Build run report artifact
-        if: ${{ always() }}
-        run: |
-          node -e "const fs=require('fs'); const read=(p)=>{try{return JSON.parse(fs.readFileSync(p,'utf8'));}catch{return {}}}; const fixtures=read('data/fixtures.json'); const standings=read('data/standings.json'); const fantasy=read('data/fantasy.json'); const archive=read('data/archive.json'); const changedUrls=String(process.env.CHANGED_URLS||'').split(/\r?\n/).map(s=>s.trim()).filter(Boolean); const health=read('data/health.json'); const report={generatedAt:new Date().toISOString(), workflowRunId:process.env.GITHUB_RUN_ID||null, workflowRef:process.env.GITHUB_WORKFLOW_REF||null, changedUrlCount:changedUrls.length, indexNowMode:changedUrls.length?'changed_urls':'sitemap_fallback', qualityGate:'passed_before_artifact_step', fixturesCompetitions:Array.isArray(fixtures.competitions)?fixtures.competitions.length:0, standingsCompetitions:Array.isArray(standings.competitions)?standings.competitions.length:0, fantasyPlayers:Array.isArray(fantasy.players)?fantasy.players.length:0, archiveEntries:Array.isArray(archive.entries)?archive.entries.length:0, healthStatus:health?.status||'unknown', healthCriticalCount:Array.isArray(health?.criticalIssues)?health.criticalIssues.length:0}; fs.mkdirSync('artifacts',{recursive:true}); fs.writeFileSync('artifacts/update-run-report.json',JSON.stringify(report,null,2)); console.log('wrote artifacts/update-run-report.json');"
-
-      - name: Upload run report artifact
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: update-run-report
-          path: artifacts/update-run-report.json
-
-      - name: Commit generated files (if changed)
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          if git status --porcelain | grep .; then
-            git add -A
-            git commit -m "chore: regenerate site outputs"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
