@@ -5,30 +5,47 @@ const ROOT = process.cwd();
 const SCORERS_PATH = path.join(ROOT, 'data', 'scorers.json');
 const PLAYERS_PATH = path.join(ROOT, 'data', 'players.json');
 
-const norm = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+const normalizeName = (s) => String(s ?? '')
+  .normalize('NFD')
+  .replace(/\p{Diacritic}/gu, '')
+  .toLowerCase()
+  .replace(/[^a-z0-9 ]/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
 
-function similarity(a, b) {
-  if (!a || !b) return 0;
-  if (a === b) return 1;
-  const short = a.length < b.length ? a : b;
-  const long = a.length < b.length ? b : a;
-  let hits = 0;
-  for (const ch of short) if (long.includes(ch)) hits += 1;
-  return hits / Math.max(1, long.length);
+function tokenSetScore(a, b) {
+  const sa = new Set(normalizeName(a).split(' ').filter(Boolean));
+  const sb = new Set(normalizeName(b).split(' ').filter(Boolean));
+  if (!sa.size || !sb.size) return 0;
+  let common = 0;
+  for (const t of sa) if (sb.has(t)) common += 1;
+  return common / Math.max(sa.size, sb.size);
 }
 
-function findPlayerIndex(players, scorerName) {
-  const target = norm(scorerName);
-  let bestIdx = -1;
-  let bestScore = 0;
-  for (let i = 0; i < players.length; i += 1) {
-    const score = similarity(norm(players[i]?.name), target);
-    if (score > bestScore) {
-      bestScore = score;
-      bestIdx = i;
-    }
+function extractScorers(raw) {
+  const parsed = JSON.parse(raw || '{}');
+  if (Array.isArray(parsed?.scorers)) return parsed.scorers;
+  if (Array.isArray(parsed?.competitions)) {
+    return parsed.competitions.flatMap((comp) => {
+      const code = comp?.competitionCode || comp?.competition || '';
+      const rows = Array.isArray(comp?.scorers) ? comp.scorers : [];
+      return rows.map((r) => ({ ...r, competition: code || r.competition }));
+    });
   }
-  return bestScore >= 0.75 ? bestIdx : -1;
+  return [];
+}
+
+function bestPlayerIndex(players, scorerName) {
+  const target = normalizeName(scorerName);
+  let best = { idx: -1, score: 0 };
+  for (let i = 0; i < players.length; i += 1) {
+    const p = players[i];
+    const pName = normalizeName(p?.name);
+    let score = tokenSetScore(target, pName);
+    if (pName === target) score = 1;
+    if (score > best.score) best = { idx: i, score };
+  }
+  return best.score >= 0.6 ? best.idx : -1;
 }
 
 async function main() {
@@ -37,14 +54,13 @@ async function main() {
     fs.readFile(PLAYERS_PATH, 'utf8'),
   ]);
 
-  const scorersParsed = JSON.parse(scorersRaw || '{}');
+  const scorers = extractScorers(scorersRaw);
   const playersParsed = JSON.parse(playersRaw || '{}');
-  const scorers = Array.isArray(scorersParsed?.scorers) ? scorersParsed.scorers : [];
   const players = Array.isArray(playersParsed?.players) ? playersParsed.players : [];
 
   let updated = 0;
   for (const s of scorers) {
-    const idx = findPlayerIndex(players, s?.name);
+    const idx = bestPlayerIndex(players, s?.name);
     if (idx < 0) continue;
 
     const goals = Number(s?.goals ?? 0) || 0;
@@ -66,13 +82,12 @@ async function main() {
     updated += 1;
   }
 
-  const out = {
+  await fs.writeFile(PLAYERS_PATH, JSON.stringify({
     ...playersParsed,
     generated_at: new Date().toISOString(),
     players,
-  };
+  }, null, 2) + '\n', 'utf8');
 
-  await fs.writeFile(PLAYERS_PATH, JSON.stringify(out, null, 2) + '\n', 'utf8');
   console.log(`sync-scorers: updated ${updated} players from ${scorers.length} scorer rows.`);
 }
 

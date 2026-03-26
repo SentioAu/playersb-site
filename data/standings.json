@@ -1,1741 +1,690 @@
 {
-  "updatedAt": "2026-03-26T09:24:46.223Z",
-  "generatedAt": "2026-03-26T09:24:46.223Z",
-  "source": "football-data.org",
+  "generatedAt": "2026-03-07T07:13:03.301Z",
+  "competitions": [
+    {
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "area": {
+          "name": "Global",
+          "code": "GLB"
+        },
+        "plan": "fallback",
+        "currentSeason": {
+          "id": null,
+          "startDate": null,
+          "endDate": null,
+          "currentMatchday": null
+        },
+        "slug": "playersb-synthetic-league"
+      },
+      "season": {
+        "id": null,
+        "startDate": null,
+        "endDate": null,
+        "currentMatchday": null
+      },
+      "standings": [
+        {
+          "stage": "Synthetic",
+          "type": "TOTAL",
+          "group": "",
+          "table": [
+            {
+              "position": 1,
+              "team": {
+                "id": null,
+                "name": "Manchester City",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 11,
+              "won": 6,
+              "draw": 2,
+              "lost": 3,
+              "points": 20,
+              "goalsFor": 18,
+              "goalsAgainst": 12,
+              "goalDifference": 6,
+              "form": "WLWWW",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 20,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 6,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "WLWWW",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 2,
+              "team": {
+                "id": null,
+                "name": "Liverpool",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 11,
+              "won": 5,
+              "draw": 4,
+              "lost": 2,
+              "points": 19,
+              "goalsFor": 16,
+              "goalsAgainst": 11,
+              "goalDifference": 5,
+              "form": "DDDWL",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 19,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "DDDWL",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 3,
+              "team": {
+                "id": null,
+                "name": "Manchester United",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 9,
+              "won": 5,
+              "draw": 1,
+              "lost": 3,
+              "points": 16,
+              "goalsFor": 12,
+              "goalsAgainst": 12,
+              "goalDifference": 0,
+              "form": "LWWWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 16,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 0,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LWWWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 4,
+              "team": {
+                "id": null,
+                "name": "Bayer Leverkusen",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 5,
+              "won": 2,
+              "draw": 2,
+              "lost": 1,
+              "points": 8,
+              "goalsFor": 6,
+              "goalsAgainst": 5,
+              "goalDifference": 1,
+              "form": "LWDWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 8,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LWDWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 5,
+              "team": {
+                "id": null,
+                "name": "Arsenal",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 5,
+              "won": 1,
+              "draw": 3,
+              "lost": 1,
+              "points": 6,
+              "goalsFor": 9,
+              "goalsAgainst": 8,
+              "goalDifference": 1,
+              "form": "DLDDW",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 6,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "DLDDW",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 6,
+              "team": {
+                "id": null,
+                "name": "Atlético Madrid",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 4,
+              "won": 1,
+              "draw": 2,
+              "lost": 1,
+              "points": 5,
+              "goalsFor": 5,
+              "goalsAgainst": 4,
+              "goalDifference": 1,
+              "form": "WDLD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "WDLD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 7,
+              "team": {
+                "id": null,
+                "name": "Barcelona",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 4,
+              "won": 1,
+              "draw": 2,
+              "lost": 1,
+              "points": 5,
+              "goalsFor": 4,
+              "goalsAgainst": 4,
+              "goalDifference": 0,
+              "form": "LDWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 0,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LDWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 8,
+              "team": {
+                "id": null,
+                "name": "Real Madrid",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 8,
+              "won": 1,
+              "draw": 2,
+              "lost": 5,
+              "points": 5,
+              "goalsFor": 10,
+              "goalsAgainst": 14,
+              "goalDifference": -4,
+              "form": "DDWLL",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "DDWLL",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 9,
+              "team": {
+                "id": null,
+                "name": "Chelsea",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 3,
+              "won": 1,
+              "draw": 1,
+              "lost": 1,
+              "points": 4,
+              "goalsFor": 3,
+              "goalsAgainst": 3,
+              "goalDifference": 0,
+              "form": "WLD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 0,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "WLD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 10,
+              "team": {
+                "id": null,
+                "name": "Tottenham",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 3,
+              "won": 1,
+              "draw": 1,
+              "lost": 1,
+              "points": 4,
+              "goalsFor": 3,
+              "goalsAgainst": 4,
+              "goalDifference": -1,
+              "form": "LWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 11,
+              "team": {
+                "id": null,
+                "name": "Borussia Dortmund",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 5,
+              "won": 1,
+              "draw": 1,
+              "lost": 3,
+              "points": 4,
+              "goalsFor": 5,
+              "goalsAgainst": 9,
+              "goalDifference": -4,
+              "form": "LLLWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LLLWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 12,
+              "team": {
+                "id": null,
+                "name": "Bayern Munich",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 4,
+              "won": 0,
+              "draw": 1,
+              "lost": 3,
+              "points": 1,
+              "goalsFor": 3,
+              "goalsAgainst": 8,
+              "goalDifference": -5,
+              "form": "LDLL",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LDLL",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "sources": {
     "footballData": {
-      "status": "ok",
-      "fetchedAt": "2026-03-26T09:24:46.223Z"
+      "status": "fallback",
+      "message": "Football-Data unavailable or disabled; using free-source fallback ingest.",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "confidence": 0.7
+    },
+    "openfootball": {
+      "status": "partial",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "competitionCount": 1,
+      "errors": [
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/it.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/es.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/it.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/de.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/fr.1.json: fetch failed"
+      ],
+      "confidence": 0.7
+    },
+    "clubelo": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "message": "fetch failed",
+      "confidence": 0.5
+    },
+    "wikidata": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "message": "fetch failed",
+      "confidence": 0.5
     }
-  },
-  "standings": {
-    "Premier League": [
-      {
-        "position": 1,
-        "team": "Arsenal FC",
-        "played": 31,
-        "won": 21,
-        "draw": 7,
-        "lost": 3,
-        "goals": 61,
-        "goalsAgainst": 22,
-        "gd": 39,
-        "points": 70,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "Manchester City FC",
-        "played": 30,
-        "won": 18,
-        "draw": 7,
-        "lost": 5,
-        "goals": 60,
-        "goalsAgainst": 28,
-        "gd": 32,
-        "points": 61,
-        "form": null
-      },
-      {
-        "position": 3,
-        "team": "Manchester United FC",
-        "played": 31,
-        "won": 15,
-        "draw": 10,
-        "lost": 6,
-        "goals": 56,
-        "goalsAgainst": 43,
-        "gd": 13,
-        "points": 55,
-        "form": null
-      },
-      {
-        "position": 4,
-        "team": "Aston Villa FC",
-        "played": 31,
-        "won": 16,
-        "draw": 6,
-        "lost": 9,
-        "goals": 42,
-        "goalsAgainst": 37,
-        "gd": 5,
-        "points": 54,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "Liverpool FC",
-        "played": 31,
-        "won": 14,
-        "draw": 7,
-        "lost": 10,
-        "goals": 50,
-        "goalsAgainst": 42,
-        "gd": 8,
-        "points": 49,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "Chelsea FC",
-        "played": 31,
-        "won": 13,
-        "draw": 9,
-        "lost": 9,
-        "goals": 53,
-        "goalsAgainst": 38,
-        "gd": 15,
-        "points": 48,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Brentford FC",
-        "played": 31,
-        "won": 13,
-        "draw": 7,
-        "lost": 11,
-        "goals": 46,
-        "goalsAgainst": 42,
-        "gd": 4,
-        "points": 46,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "Everton FC",
-        "played": 31,
-        "won": 13,
-        "draw": 7,
-        "lost": 11,
-        "goals": 37,
-        "goalsAgainst": 35,
-        "gd": 2,
-        "points": 46,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Fulham FC",
-        "played": 31,
-        "won": 13,
-        "draw": 5,
-        "lost": 13,
-        "goals": 43,
-        "goalsAgainst": 44,
-        "gd": -1,
-        "points": 44,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "Brighton & Hove Albion FC",
-        "played": 31,
-        "won": 11,
-        "draw": 10,
-        "lost": 10,
-        "goals": 41,
-        "goalsAgainst": 37,
-        "gd": 4,
-        "points": 43,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "Sunderland AFC",
-        "played": 31,
-        "won": 11,
-        "draw": 10,
-        "lost": 10,
-        "goals": 32,
-        "goalsAgainst": 36,
-        "gd": -4,
-        "points": 43,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "Newcastle United FC",
-        "played": 31,
-        "won": 12,
-        "draw": 6,
-        "lost": 13,
-        "goals": 44,
-        "goalsAgainst": 45,
-        "gd": -1,
-        "points": 42,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "AFC Bournemouth",
-        "played": 31,
-        "won": 9,
-        "draw": 15,
-        "lost": 7,
-        "goals": 46,
-        "goalsAgainst": 48,
-        "gd": -2,
-        "points": 42,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Crystal Palace FC",
-        "played": 30,
-        "won": 10,
-        "draw": 9,
-        "lost": 11,
-        "goals": 33,
-        "goalsAgainst": 35,
-        "gd": -2,
-        "points": 39,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "Leeds United FC",
-        "played": 31,
-        "won": 7,
-        "draw": 12,
-        "lost": 12,
-        "goals": 37,
-        "goalsAgainst": 48,
-        "gd": -11,
-        "points": 33,
-        "form": null
-      },
-      {
-        "position": 16,
-        "team": "Nottingham Forest FC",
-        "played": 31,
-        "won": 8,
-        "draw": 8,
-        "lost": 15,
-        "goals": 31,
-        "goalsAgainst": 43,
-        "gd": -12,
-        "points": 32,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "Tottenham Hotspur FC",
-        "played": 31,
-        "won": 7,
-        "draw": 9,
-        "lost": 15,
-        "goals": 40,
-        "goalsAgainst": 50,
-        "gd": -10,
-        "points": 30,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "West Ham United FC",
-        "played": 31,
-        "won": 7,
-        "draw": 8,
-        "lost": 16,
-        "goals": 36,
-        "goalsAgainst": 57,
-        "gd": -21,
-        "points": 29,
-        "form": null
-      },
-      {
-        "position": 19,
-        "team": "Burnley FC",
-        "played": 31,
-        "won": 4,
-        "draw": 8,
-        "lost": 19,
-        "goals": 33,
-        "goalsAgainst": 61,
-        "gd": -28,
-        "points": 20,
-        "form": null
-      },
-      {
-        "position": 20,
-        "team": "Wolverhampton Wanderers FC",
-        "played": 31,
-        "won": 3,
-        "draw": 8,
-        "lost": 20,
-        "goals": 24,
-        "goalsAgainst": 54,
-        "gd": -30,
-        "points": 17,
-        "form": null
-      }
-    ],
-    "La Liga": [
-      {
-        "position": 1,
-        "team": "FC Barcelona",
-        "played": 29,
-        "won": 24,
-        "draw": 1,
-        "lost": 4,
-        "goals": 78,
-        "goalsAgainst": 28,
-        "gd": 50,
-        "points": 73,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "Real Madrid CF",
-        "played": 29,
-        "won": 22,
-        "draw": 3,
-        "lost": 4,
-        "goals": 63,
-        "goalsAgainst": 26,
-        "gd": 37,
-        "points": 69,
-        "form": null
-      },
-      {
-        "position": 3,
-        "team": "Villarreal CF",
-        "played": 29,
-        "won": 18,
-        "draw": 4,
-        "lost": 7,
-        "goals": 54,
-        "goalsAgainst": 34,
-        "gd": 20,
-        "points": 58,
-        "form": null
-      },
-      {
-        "position": 4,
-        "team": "Club Atlético de Madrid",
-        "played": 29,
-        "won": 17,
-        "draw": 6,
-        "lost": 6,
-        "goals": 49,
-        "goalsAgainst": 28,
-        "gd": 21,
-        "points": 57,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "Real Betis Balompié",
-        "played": 29,
-        "won": 11,
-        "draw": 11,
-        "lost": 7,
-        "goals": 44,
-        "goalsAgainst": 37,
-        "gd": 7,
-        "points": 44,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "RC Celta de Vigo",
-        "played": 29,
-        "won": 10,
-        "draw": 11,
-        "lost": 8,
-        "goals": 41,
-        "goalsAgainst": 35,
-        "gd": 6,
-        "points": 41,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Real Sociedad de Fútbol",
-        "played": 29,
-        "won": 10,
-        "draw": 8,
-        "lost": 11,
-        "goals": 44,
-        "goalsAgainst": 45,
-        "gd": -1,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "Getafe CF",
-        "played": 29,
-        "won": 11,
-        "draw": 5,
-        "lost": 13,
-        "goals": 25,
-        "goalsAgainst": 31,
-        "gd": -6,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Athletic Club",
-        "played": 29,
-        "won": 11,
-        "draw": 5,
-        "lost": 13,
-        "goals": 32,
-        "goalsAgainst": 41,
-        "gd": -9,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "CA Osasuna",
-        "played": 29,
-        "won": 10,
-        "draw": 7,
-        "lost": 12,
-        "goals": 34,
-        "goalsAgainst": 35,
-        "gd": -1,
-        "points": 37,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "RCD Espanyol de Barcelona",
-        "played": 29,
-        "won": 10,
-        "draw": 7,
-        "lost": 12,
-        "goals": 36,
-        "goalsAgainst": 44,
-        "gd": -8,
-        "points": 37,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "Valencia CF",
-        "played": 29,
-        "won": 9,
-        "draw": 8,
-        "lost": 12,
-        "goals": 32,
-        "goalsAgainst": 42,
-        "gd": -10,
-        "points": 35,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "Girona FC",
-        "played": 29,
-        "won": 8,
-        "draw": 10,
-        "lost": 11,
-        "goals": 31,
-        "goalsAgainst": 44,
-        "gd": -13,
-        "points": 34,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Rayo Vallecano de Madrid",
-        "played": 29,
-        "won": 7,
-        "draw": 11,
-        "lost": 11,
-        "goals": 28,
-        "goalsAgainst": 35,
-        "gd": -7,
-        "points": 32,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "Sevilla FC",
-        "played": 29,
-        "won": 8,
-        "draw": 7,
-        "lost": 14,
-        "goals": 37,
-        "goalsAgainst": 49,
-        "gd": -12,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 16,
-        "team": "Deportivo Alavés",
-        "played": 29,
-        "won": 8,
-        "draw": 7,
-        "lost": 14,
-        "goals": 30,
-        "goalsAgainst": 41,
-        "gd": -11,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "Elche CF",
-        "played": 29,
-        "won": 6,
-        "draw": 11,
-        "lost": 12,
-        "goals": 38,
-        "goalsAgainst": 46,
-        "gd": -8,
-        "points": 29,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "RCD Mallorca",
-        "played": 29,
-        "won": 7,
-        "draw": 7,
-        "lost": 15,
-        "goals": 34,
-        "goalsAgainst": 47,
-        "gd": -13,
-        "points": 28,
-        "form": null
-      },
-      {
-        "position": 19,
-        "team": "Levante UD",
-        "played": 29,
-        "won": 6,
-        "draw": 8,
-        "lost": 15,
-        "goals": 34,
-        "goalsAgainst": 48,
-        "gd": -14,
-        "points": 26,
-        "form": null
-      },
-      {
-        "position": 20,
-        "team": "Real Oviedo",
-        "played": 29,
-        "won": 4,
-        "draw": 9,
-        "lost": 16,
-        "goals": 20,
-        "goalsAgainst": 48,
-        "gd": -28,
-        "points": 21,
-        "form": null
-      }
-    ],
-    "Serie A": [
-      {
-        "position": 1,
-        "team": "FC Internazionale Milano",
-        "played": 30,
-        "won": 22,
-        "draw": 3,
-        "lost": 5,
-        "goals": 66,
-        "goalsAgainst": 24,
-        "gd": 42,
-        "points": 69,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "AC Milan",
-        "played": 30,
-        "won": 18,
-        "draw": 9,
-        "lost": 3,
-        "goals": 47,
-        "goalsAgainst": 23,
-        "gd": 24,
-        "points": 63,
-        "form": null
-      },
-      {
-        "position": 3,
-        "team": "SSC Napoli",
-        "played": 30,
-        "won": 19,
-        "draw": 5,
-        "lost": 6,
-        "goals": 46,
-        "goalsAgainst": 30,
-        "gd": 16,
-        "points": 62,
-        "form": null
-      },
-      {
-        "position": 4,
-        "team": "Como 1907",
-        "played": 30,
-        "won": 16,
-        "draw": 9,
-        "lost": 5,
-        "goals": 53,
-        "goalsAgainst": 22,
-        "gd": 31,
-        "points": 57,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "Juventus FC",
-        "played": 30,
-        "won": 15,
-        "draw": 9,
-        "lost": 6,
-        "goals": 52,
-        "goalsAgainst": 29,
-        "gd": 23,
-        "points": 54,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "AS Roma",
-        "played": 30,
-        "won": 17,
-        "draw": 3,
-        "lost": 10,
-        "goals": 40,
-        "goalsAgainst": 23,
-        "gd": 17,
-        "points": 54,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Atalanta BC",
-        "played": 30,
-        "won": 13,
-        "draw": 11,
-        "lost": 6,
-        "goals": 41,
-        "goalsAgainst": 27,
-        "gd": 14,
-        "points": 50,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "SS Lazio",
-        "played": 30,
-        "won": 11,
-        "draw": 10,
-        "lost": 9,
-        "goals": 31,
-        "goalsAgainst": 28,
-        "gd": 3,
-        "points": 43,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Bologna FC 1909",
-        "played": 30,
-        "won": 12,
-        "draw": 6,
-        "lost": 12,
-        "goals": 38,
-        "goalsAgainst": 36,
-        "gd": 2,
-        "points": 42,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "US Sassuolo Calcio",
-        "played": 30,
-        "won": 11,
-        "draw": 6,
-        "lost": 13,
-        "goals": 36,
-        "goalsAgainst": 40,
-        "gd": -4,
-        "points": 39,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "Udinese Calcio",
-        "played": 30,
-        "won": 11,
-        "draw": 6,
-        "lost": 13,
-        "goals": 35,
-        "goalsAgainst": 42,
-        "gd": -7,
-        "points": 39,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "Parma Calcio 1913",
-        "played": 30,
-        "won": 8,
-        "draw": 10,
-        "lost": 12,
-        "goals": 21,
-        "goalsAgainst": 38,
-        "gd": -17,
-        "points": 34,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "Genoa CFC",
-        "played": 30,
-        "won": 8,
-        "draw": 9,
-        "lost": 13,
-        "goals": 36,
-        "goalsAgainst": 42,
-        "gd": -6,
-        "points": 33,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Torino FC",
-        "played": 30,
-        "won": 9,
-        "draw": 6,
-        "lost": 15,
-        "goals": 34,
-        "goalsAgainst": 53,
-        "gd": -19,
-        "points": 33,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "Cagliari Calcio",
-        "played": 30,
-        "won": 7,
-        "draw": 9,
-        "lost": 14,
-        "goals": 31,
-        "goalsAgainst": 42,
-        "gd": -11,
-        "points": 30,
-        "form": null
-      },
-      {
-        "position": 16,
-        "team": "ACF Fiorentina",
-        "played": 30,
-        "won": 6,
-        "draw": 11,
-        "lost": 13,
-        "goals": 35,
-        "goalsAgainst": 44,
-        "gd": -9,
-        "points": 29,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "US Cremonese",
-        "played": 30,
-        "won": 6,
-        "draw": 9,
-        "lost": 15,
-        "goals": 25,
-        "goalsAgainst": 44,
-        "gd": -19,
-        "points": 27,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "US Lecce",
-        "played": 30,
-        "won": 7,
-        "draw": 6,
-        "lost": 17,
-        "goals": 21,
-        "goalsAgainst": 40,
-        "gd": -19,
-        "points": 27,
-        "form": null
-      },
-      {
-        "position": 19,
-        "team": "Hellas Verona FC",
-        "played": 30,
-        "won": 3,
-        "draw": 9,
-        "lost": 18,
-        "goals": 22,
-        "goalsAgainst": 52,
-        "gd": -30,
-        "points": 18,
-        "form": null
-      },
-      {
-        "position": 20,
-        "team": "AC Pisa 1909",
-        "played": 30,
-        "won": 2,
-        "draw": 12,
-        "lost": 16,
-        "goals": 23,
-        "goalsAgainst": 54,
-        "gd": -31,
-        "points": 18,
-        "form": null
-      }
-    ],
-    "Bundesliga": [
-      {
-        "position": 1,
-        "team": "FC Bayern München",
-        "played": 27,
-        "won": 22,
-        "draw": 4,
-        "lost": 1,
-        "goals": 97,
-        "goalsAgainst": 25,
-        "gd": 72,
-        "points": 70,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "Borussia Dortmund",
-        "played": 27,
-        "won": 18,
-        "draw": 7,
-        "lost": 2,
-        "goals": 58,
-        "goalsAgainst": 28,
-        "gd": 30,
-        "points": 61,
-        "form": null
-      },
-      {
-        "position": 3,
-        "team": "VfB Stuttgart",
-        "played": 27,
-        "won": 16,
-        "draw": 5,
-        "lost": 6,
-        "goals": 56,
-        "goalsAgainst": 36,
-        "gd": 20,
-        "points": 53,
-        "form": null
-      },
-      {
-        "position": 4,
-        "team": "RB Leipzig",
-        "played": 27,
-        "won": 15,
-        "draw": 5,
-        "lost": 7,
-        "goals": 53,
-        "goalsAgainst": 35,
-        "gd": 18,
-        "points": 50,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "TSG 1899 Hoffenheim",
-        "played": 27,
-        "won": 15,
-        "draw": 5,
-        "lost": 7,
-        "goals": 54,
-        "goalsAgainst": 39,
-        "gd": 15,
-        "points": 50,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "Bayer 04 Leverkusen",
-        "played": 27,
-        "won": 13,
-        "draw": 7,
-        "lost": 7,
-        "goals": 52,
-        "goalsAgainst": 36,
-        "gd": 16,
-        "points": 46,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Eintracht Frankfurt",
-        "played": 27,
-        "won": 10,
-        "draw": 8,
-        "lost": 9,
-        "goals": 50,
-        "goalsAgainst": 51,
-        "gd": -1,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "SC Freiburg",
-        "played": 27,
-        "won": 10,
-        "draw": 7,
-        "lost": 10,
-        "goals": 39,
-        "goalsAgainst": 44,
-        "gd": -5,
-        "points": 37,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "1. FC Union Berlin",
-        "played": 27,
-        "won": 8,
-        "draw": 7,
-        "lost": 12,
-        "goals": 31,
-        "goalsAgainst": 46,
-        "gd": -15,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "FC Augsburg",
-        "played": 27,
-        "won": 9,
-        "draw": 4,
-        "lost": 14,
-        "goals": 33,
-        "goalsAgainst": 50,
-        "gd": -17,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "1. FSV Mainz 05",
-        "played": 27,
-        "won": 7,
-        "draw": 9,
-        "lost": 11,
-        "goals": 33,
-        "goalsAgainst": 42,
-        "gd": -9,
-        "points": 30,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "Hamburger SV",
-        "played": 27,
-        "won": 7,
-        "draw": 9,
-        "lost": 11,
-        "goals": 31,
-        "goalsAgainst": 40,
-        "gd": -9,
-        "points": 30,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "Borussia Mönchengladbach",
-        "played": 27,
-        "won": 7,
-        "draw": 8,
-        "lost": 12,
-        "goals": 33,
-        "goalsAgainst": 46,
-        "gd": -13,
-        "points": 29,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "SV Werder Bremen",
-        "played": 27,
-        "won": 7,
-        "draw": 7,
-        "lost": 13,
-        "goals": 30,
-        "goalsAgainst": 47,
-        "gd": -17,
-        "points": 28,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "1. FC Köln",
-        "played": 27,
-        "won": 6,
-        "draw": 8,
-        "lost": 13,
-        "goals": 38,
-        "goalsAgainst": 47,
-        "gd": -9,
-        "points": 26,
-        "form": null
-      },
-      {
-        "position": 16,
-        "team": "FC St. Pauli 1910",
-        "played": 27,
-        "won": 6,
-        "draw": 6,
-        "lost": 15,
-        "goals": 24,
-        "goalsAgainst": 44,
-        "gd": -20,
-        "points": 24,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "VfL Wolfsburg",
-        "played": 27,
-        "won": 5,
-        "draw": 6,
-        "lost": 16,
-        "goals": 35,
-        "goalsAgainst": 57,
-        "gd": -22,
-        "points": 21,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "1. FC Heidenheim 1846",
-        "played": 27,
-        "won": 3,
-        "draw": 6,
-        "lost": 18,
-        "goals": 27,
-        "goalsAgainst": 61,
-        "gd": -34,
-        "points": 15,
-        "form": null
-      }
-    ],
-    "Ligue 1": [
-      {
-        "position": 1,
-        "team": "Paris Saint-Germain FC",
-        "played": 26,
-        "won": 19,
-        "draw": 3,
-        "lost": 4,
-        "goals": 58,
-        "goalsAgainst": 22,
-        "gd": 36,
-        "points": 60,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "Racing Club de Lens",
-        "played": 27,
-        "won": 19,
-        "draw": 2,
-        "lost": 6,
-        "goals": 54,
-        "goalsAgainst": 24,
-        "gd": 30,
-        "points": 59,
-        "form": null
-      },
-      {
-        "position": 3,
-        "team": "Olympique de Marseille",
-        "played": 27,
-        "won": 15,
-        "draw": 4,
-        "lost": 8,
-        "goals": 54,
-        "goalsAgainst": 35,
-        "gd": 19,
-        "points": 49,
-        "form": null
-      },
-      {
-        "position": 4,
-        "team": "Olympique Lyonnais",
-        "played": 27,
-        "won": 14,
-        "draw": 5,
-        "lost": 8,
-        "goals": 41,
-        "goalsAgainst": 29,
-        "gd": 12,
-        "points": 47,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "Lille OSC",
-        "played": 27,
-        "won": 14,
-        "draw": 5,
-        "lost": 8,
-        "goals": 42,
-        "goalsAgainst": 34,
-        "gd": 8,
-        "points": 47,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "AS Monaco FC",
-        "played": 27,
-        "won": 14,
-        "draw": 4,
-        "lost": 9,
-        "goals": 47,
-        "goalsAgainst": 38,
-        "gd": 9,
-        "points": 46,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Stade Rennais FC 1901",
-        "played": 27,
-        "won": 12,
-        "draw": 8,
-        "lost": 7,
-        "goals": 43,
-        "goalsAgainst": 37,
-        "gd": 6,
-        "points": 44,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "RC Strasbourg Alsace",
-        "played": 27,
-        "won": 11,
-        "draw": 7,
-        "lost": 9,
-        "goals": 43,
-        "goalsAgainst": 33,
-        "gd": 10,
-        "points": 40,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Toulouse FC",
-        "played": 27,
-        "won": 10,
-        "draw": 7,
-        "lost": 10,
-        "goals": 38,
-        "goalsAgainst": 32,
-        "gd": 6,
-        "points": 37,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "FC Lorient",
-        "played": 27,
-        "won": 9,
-        "draw": 10,
-        "lost": 8,
-        "goals": 37,
-        "goalsAgainst": 41,
-        "gd": -4,
-        "points": 37,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "Stade Brestois 29",
-        "played": 27,
-        "won": 10,
-        "draw": 6,
-        "lost": 11,
-        "goals": 34,
-        "goalsAgainst": 39,
-        "gd": -5,
-        "points": 36,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "Angers SCO",
-        "played": 27,
-        "won": 9,
-        "draw": 5,
-        "lost": 13,
-        "goals": 24,
-        "goalsAgainst": 37,
-        "gd": -13,
-        "points": 32,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "Paris FC",
-        "played": 27,
-        "won": 7,
-        "draw": 10,
-        "lost": 10,
-        "goals": 32,
-        "goalsAgainst": 43,
-        "gd": -11,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Le Havre AC",
-        "played": 27,
-        "won": 6,
-        "draw": 9,
-        "lost": 12,
-        "goals": 22,
-        "goalsAgainst": 35,
-        "gd": -13,
-        "points": 27,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "OGC Nice",
-        "played": 27,
-        "won": 7,
-        "draw": 6,
-        "lost": 14,
-        "goals": 32,
-        "goalsAgainst": 52,
-        "gd": -20,
-        "points": 27,
-        "form": null
-      },
-      {
-        "position": 16,
-        "team": "AJ Auxerre",
-        "played": 27,
-        "won": 5,
-        "draw": 7,
-        "lost": 15,
-        "goals": 22,
-        "goalsAgainst": 36,
-        "gd": -14,
-        "points": 22,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "FC Nantes",
-        "played": 26,
-        "won": 4,
-        "draw": 5,
-        "lost": 17,
-        "goals": 24,
-        "goalsAgainst": 45,
-        "gd": -21,
-        "points": 17,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "FC Metz",
-        "played": 27,
-        "won": 3,
-        "draw": 5,
-        "lost": 19,
-        "goals": 25,
-        "goalsAgainst": 60,
-        "gd": -35,
-        "points": 14,
-        "form": null
-      }
-    ],
-    "Champions League": [
-      {
-        "position": 1,
-        "team": "Arsenal FC",
-        "played": 8,
-        "won": 8,
-        "draw": 0,
-        "lost": 0,
-        "goals": 23,
-        "goalsAgainst": 4,
-        "gd": 19,
-        "points": 24,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "FC Bayern München",
-        "played": 8,
-        "won": 7,
-        "draw": 0,
-        "lost": 1,
-        "goals": 22,
-        "goalsAgainst": 8,
-        "gd": 14,
-        "points": 21,
-        "form": null
-      },
-      {
-        "position": 3,
-        "team": "Liverpool FC",
-        "played": 8,
-        "won": 6,
-        "draw": 0,
-        "lost": 2,
-        "goals": 20,
-        "goalsAgainst": 8,
-        "gd": 12,
-        "points": 18,
-        "form": null
-      },
-      {
-        "position": 4,
-        "team": "Tottenham Hotspur FC",
-        "played": 8,
-        "won": 5,
-        "draw": 2,
-        "lost": 1,
-        "goals": 17,
-        "goalsAgainst": 7,
-        "gd": 10,
-        "points": 17,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "FC Barcelona",
-        "played": 8,
-        "won": 5,
-        "draw": 1,
-        "lost": 2,
-        "goals": 22,
-        "goalsAgainst": 14,
-        "gd": 8,
-        "points": 16,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "Chelsea FC",
-        "played": 8,
-        "won": 5,
-        "draw": 1,
-        "lost": 2,
-        "goals": 17,
-        "goalsAgainst": 10,
-        "gd": 7,
-        "points": 16,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Sporting Clube de Portugal",
-        "played": 8,
-        "won": 5,
-        "draw": 1,
-        "lost": 2,
-        "goals": 17,
-        "goalsAgainst": 11,
-        "gd": 6,
-        "points": 16,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "Manchester City FC",
-        "played": 8,
-        "won": 5,
-        "draw": 1,
-        "lost": 2,
-        "goals": 15,
-        "goalsAgainst": 9,
-        "gd": 6,
-        "points": 16,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Real Madrid CF",
-        "played": 8,
-        "won": 5,
-        "draw": 0,
-        "lost": 3,
-        "goals": 21,
-        "goalsAgainst": 12,
-        "gd": 9,
-        "points": 15,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "FC Internazionale Milano",
-        "played": 8,
-        "won": 5,
-        "draw": 0,
-        "lost": 3,
-        "goals": 15,
-        "goalsAgainst": 7,
-        "gd": 8,
-        "points": 15,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "Paris Saint-Germain FC",
-        "played": 8,
-        "won": 4,
-        "draw": 2,
-        "lost": 2,
-        "goals": 21,
-        "goalsAgainst": 11,
-        "gd": 10,
-        "points": 14,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "Newcastle United FC",
-        "played": 8,
-        "won": 4,
-        "draw": 2,
-        "lost": 2,
-        "goals": 17,
-        "goalsAgainst": 7,
-        "gd": 10,
-        "points": 14,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "Juventus FC",
-        "played": 8,
-        "won": 3,
-        "draw": 4,
-        "lost": 1,
-        "goals": 14,
-        "goalsAgainst": 10,
-        "gd": 4,
-        "points": 13,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Club Atlético de Madrid",
-        "played": 8,
-        "won": 4,
-        "draw": 1,
-        "lost": 3,
-        "goals": 17,
-        "goalsAgainst": 15,
-        "gd": 2,
-        "points": 13,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "Atalanta BC",
-        "played": 8,
-        "won": 4,
-        "draw": 1,
-        "lost": 3,
-        "goals": 10,
-        "goalsAgainst": 10,
-        "gd": 0,
-        "points": 13,
-        "form": null
-      },
-      {
-        "position": 16,
-        "team": "Bayer 04 Leverkusen",
-        "played": 8,
-        "won": 3,
-        "draw": 3,
-        "lost": 2,
-        "goals": 13,
-        "goalsAgainst": 14,
-        "gd": -1,
-        "points": 12,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "Borussia Dortmund",
-        "played": 8,
-        "won": 3,
-        "draw": 2,
-        "lost": 3,
-        "goals": 19,
-        "goalsAgainst": 17,
-        "gd": 2,
-        "points": 11,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "PAE Olympiakos SFP",
-        "played": 8,
-        "won": 3,
-        "draw": 2,
-        "lost": 3,
-        "goals": 10,
-        "goalsAgainst": 14,
-        "gd": -4,
-        "points": 11,
-        "form": null
-      },
-      {
-        "position": 19,
-        "team": "Club Brugge KV",
-        "played": 8,
-        "won": 3,
-        "draw": 1,
-        "lost": 4,
-        "goals": 15,
-        "goalsAgainst": 17,
-        "gd": -2,
-        "points": 10,
-        "form": null
-      },
-      {
-        "position": 20,
-        "team": "Galatasaray SK",
-        "played": 8,
-        "won": 3,
-        "draw": 1,
-        "lost": 4,
-        "goals": 9,
-        "goalsAgainst": 11,
-        "gd": -2,
-        "points": 10,
-        "form": null
-      },
-      {
-        "position": 21,
-        "team": "AS Monaco FC",
-        "played": 8,
-        "won": 2,
-        "draw": 4,
-        "lost": 2,
-        "goals": 8,
-        "goalsAgainst": 14,
-        "gd": -6,
-        "points": 10,
-        "form": null
-      },
-      {
-        "position": 22,
-        "team": "Qarabağ Ağdam FK",
-        "played": 8,
-        "won": 3,
-        "draw": 1,
-        "lost": 4,
-        "goals": 13,
-        "goalsAgainst": 21,
-        "gd": -8,
-        "points": 10,
-        "form": null
-      },
-      {
-        "position": 23,
-        "team": "FK Bodø/Glimt",
-        "played": 8,
-        "won": 2,
-        "draw": 3,
-        "lost": 3,
-        "goals": 14,
-        "goalsAgainst": 15,
-        "gd": -1,
-        "points": 9,
-        "form": null
-      },
-      {
-        "position": 24,
-        "team": "Sport Lisboa e Benfica",
-        "played": 8,
-        "won": 3,
-        "draw": 0,
-        "lost": 5,
-        "goals": 10,
-        "goalsAgainst": 12,
-        "gd": -2,
-        "points": 9,
-        "form": null
-      },
-      {
-        "position": 25,
-        "team": "Olympique de Marseille",
-        "played": 8,
-        "won": 3,
-        "draw": 0,
-        "lost": 5,
-        "goals": 11,
-        "goalsAgainst": 14,
-        "gd": -3,
-        "points": 9,
-        "form": null
-      },
-      {
-        "position": 26,
-        "team": "Paphos FC",
-        "played": 8,
-        "won": 2,
-        "draw": 3,
-        "lost": 3,
-        "goals": 8,
-        "goalsAgainst": 11,
-        "gd": -3,
-        "points": 9,
-        "form": null
-      },
-      {
-        "position": 27,
-        "team": "Royale Union Saint-Gilloise",
-        "played": 8,
-        "won": 3,
-        "draw": 0,
-        "lost": 5,
-        "goals": 8,
-        "goalsAgainst": 17,
-        "gd": -9,
-        "points": 9,
-        "form": null
-      },
-      {
-        "position": 28,
-        "team": "PSV",
-        "played": 8,
-        "won": 2,
-        "draw": 2,
-        "lost": 4,
-        "goals": 16,
-        "goalsAgainst": 16,
-        "gd": 0,
-        "points": 8,
-        "form": null
-      },
-      {
-        "position": 29,
-        "team": "Athletic Club",
-        "played": 8,
-        "won": 2,
-        "draw": 2,
-        "lost": 4,
-        "goals": 9,
-        "goalsAgainst": 14,
-        "gd": -5,
-        "points": 8,
-        "form": null
-      },
-      {
-        "position": 30,
-        "team": "SSC Napoli",
-        "played": 8,
-        "won": 2,
-        "draw": 2,
-        "lost": 4,
-        "goals": 9,
-        "goalsAgainst": 15,
-        "gd": -6,
-        "points": 8,
-        "form": null
-      },
-      {
-        "position": 31,
-        "team": "FC København",
-        "played": 8,
-        "won": 2,
-        "draw": 2,
-        "lost": 4,
-        "goals": 12,
-        "goalsAgainst": 21,
-        "gd": -9,
-        "points": 8,
-        "form": null
-      },
-      {
-        "position": 32,
-        "team": "AFC Ajax",
-        "played": 8,
-        "won": 2,
-        "draw": 0,
-        "lost": 6,
-        "goals": 8,
-        "goalsAgainst": 21,
-        "gd": -13,
-        "points": 6,
-        "form": null
-      },
-      {
-        "position": 33,
-        "team": "Eintracht Frankfurt",
-        "played": 8,
-        "won": 1,
-        "draw": 1,
-        "lost": 6,
-        "goals": 10,
-        "goalsAgainst": 21,
-        "gd": -11,
-        "points": 4,
-        "form": null
-      },
-      {
-        "position": 34,
-        "team": "SK Slavia Praha",
-        "played": 8,
-        "won": 0,
-        "draw": 3,
-        "lost": 5,
-        "goals": 5,
-        "goalsAgainst": 19,
-        "gd": -14,
-        "points": 3,
-        "form": null
-      },
-      {
-        "position": 35,
-        "team": "Villarreal CF",
-        "played": 8,
-        "won": 0,
-        "draw": 1,
-        "lost": 7,
-        "goals": 5,
-        "goalsAgainst": 18,
-        "gd": -13,
-        "points": 1,
-        "form": null
-      },
-      {
-        "position": 36,
-        "team": "FK Kairat",
-        "played": 8,
-        "won": 0,
-        "draw": 1,
-        "lost": 7,
-        "goals": 7,
-        "goalsAgainst": 22,
-        "gd": -15,
-        "points": 1,
-        "form": null
-      }
-    ]
   }
 }
