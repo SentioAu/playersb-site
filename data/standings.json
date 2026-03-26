@@ -1,0 +1,690 @@
+{
+  "generatedAt": "2026-03-07T07:13:03.301Z",
+  "competitions": [
+    {
+      "competition": {
+        "id": null,
+        "code": "SYNTH",
+        "name": "PlayersB Synthetic League",
+        "area": {
+          "name": "Global",
+          "code": "GLB"
+        },
+        "plan": "fallback",
+        "currentSeason": {
+          "id": null,
+          "startDate": null,
+          "endDate": null,
+          "currentMatchday": null
+        },
+        "slug": "playersb-synthetic-league"
+      },
+      "season": {
+        "id": null,
+        "startDate": null,
+        "endDate": null,
+        "currentMatchday": null
+      },
+      "standings": [
+        {
+          "stage": "Synthetic",
+          "type": "TOTAL",
+          "group": "",
+          "table": [
+            {
+              "position": 1,
+              "team": {
+                "id": null,
+                "name": "Manchester City",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 11,
+              "won": 6,
+              "draw": 2,
+              "lost": 3,
+              "points": 20,
+              "goalsFor": 18,
+              "goalsAgainst": 12,
+              "goalDifference": 6,
+              "form": "WLWWW",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 20,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 6,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "WLWWW",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 2,
+              "team": {
+                "id": null,
+                "name": "Liverpool",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 11,
+              "won": 5,
+              "draw": 4,
+              "lost": 2,
+              "points": 19,
+              "goalsFor": 16,
+              "goalsAgainst": 11,
+              "goalDifference": 5,
+              "form": "DDDWL",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 19,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "DDDWL",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 3,
+              "team": {
+                "id": null,
+                "name": "Manchester United",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 9,
+              "won": 5,
+              "draw": 1,
+              "lost": 3,
+              "points": 16,
+              "goalsFor": 12,
+              "goalsAgainst": 12,
+              "goalDifference": 0,
+              "form": "LWWWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 16,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 0,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LWWWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 4,
+              "team": {
+                "id": null,
+                "name": "Bayer Leverkusen",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 5,
+              "won": 2,
+              "draw": 2,
+              "lost": 1,
+              "points": 8,
+              "goalsFor": 6,
+              "goalsAgainst": 5,
+              "goalDifference": 1,
+              "form": "LWDWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 8,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LWDWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 5,
+              "team": {
+                "id": null,
+                "name": "Arsenal",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 5,
+              "won": 1,
+              "draw": 3,
+              "lost": 1,
+              "points": 6,
+              "goalsFor": 9,
+              "goalsAgainst": 8,
+              "goalDifference": 1,
+              "form": "DLDDW",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 6,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "DLDDW",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 6,
+              "team": {
+                "id": null,
+                "name": "Atlético Madrid",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 4,
+              "won": 1,
+              "draw": 2,
+              "lost": 1,
+              "points": 5,
+              "goalsFor": 5,
+              "goalsAgainst": 4,
+              "goalDifference": 1,
+              "form": "WDLD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "WDLD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 7,
+              "team": {
+                "id": null,
+                "name": "Barcelona",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 4,
+              "won": 1,
+              "draw": 2,
+              "lost": 1,
+              "points": 5,
+              "goalsFor": 4,
+              "goalsAgainst": 4,
+              "goalDifference": 0,
+              "form": "LDWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 0,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LDWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 8,
+              "team": {
+                "id": null,
+                "name": "Real Madrid",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 8,
+              "won": 1,
+              "draw": 2,
+              "lost": 5,
+              "points": 5,
+              "goalsFor": 10,
+              "goalsAgainst": 14,
+              "goalDifference": -4,
+              "form": "DDWLL",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "DDWLL",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 9,
+              "team": {
+                "id": null,
+                "name": "Chelsea",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 3,
+              "won": 1,
+              "draw": 1,
+              "lost": 1,
+              "points": 4,
+              "goalsFor": 3,
+              "goalsAgainst": 3,
+              "goalDifference": 0,
+              "form": "WLD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": 0,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "WLD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 10,
+              "team": {
+                "id": null,
+                "name": "Tottenham",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 3,
+              "won": 1,
+              "draw": 1,
+              "lost": 1,
+              "points": 4,
+              "goalsFor": 3,
+              "goalsAgainst": 4,
+              "goalDifference": -1,
+              "form": "LWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 11,
+              "team": {
+                "id": null,
+                "name": "Borussia Dortmund",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 5,
+              "won": 1,
+              "draw": 1,
+              "lost": 3,
+              "points": 4,
+              "goalsFor": 5,
+              "goalsAgainst": 9,
+              "goalDifference": -4,
+              "form": "LLLWD",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -4,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LLLWD",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            },
+            {
+              "position": 12,
+              "team": {
+                "id": null,
+                "name": "Bayern Munich",
+                "tla": "",
+                "crest": null
+              },
+              "playedGames": 4,
+              "won": 0,
+              "draw": 1,
+              "lost": 3,
+              "points": 1,
+              "goalsFor": 3,
+              "goalsAgainst": 8,
+              "goalDifference": -5,
+              "form": "LDLL",
+              "strengthRating": null,
+              "strengthMeta": {
+                "value": null,
+                "source": "derived",
+                "fetchedAt": "2026-03-07T07:13:03.301Z",
+                "confidence": 0.5
+              },
+              "fieldMeta": {
+                "points": {
+                  "value": 1,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "goalDifference": {
+                  "value": -5,
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "form": {
+                  "value": "LDLL",
+                  "source": "derived_from_openfootball",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.7
+                },
+                "strengthRating": {
+                  "value": null,
+                  "source": "derived",
+                  "fetchedAt": "2026-03-07T07:13:03.301Z",
+                  "confidence": 0.5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "footballData": {
+      "status": "fallback",
+      "message": "Football-Data unavailable or disabled; using free-source fallback ingest.",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "confidence": 0.7
+    },
+    "openfootball": {
+      "status": "partial",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "competitionCount": 1,
+      "errors": [
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/it.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/es.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/it.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/de.1.json: fetch failed",
+        "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/fr.1.json: fetch failed"
+      ],
+      "confidence": 0.7
+    },
+    "clubelo": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "message": "fetch failed",
+      "confidence": 0.5
+    },
+    "wikidata": {
+      "status": "error",
+      "fetchedAt": "2026-03-07T07:13:03.301Z",
+      "message": "fetch failed",
+      "confidence": 0.5
+    }
+  }
+}

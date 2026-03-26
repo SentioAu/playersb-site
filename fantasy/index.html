@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fantasy Picker | PlayersB — The Players Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <link rel="canonical" href="https://playersb.com/fantasy/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PlayersB — The Players Book" />
+  <meta property="og:title" content="Fantasy Picker | PlayersB" />
+  <meta property="og:description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <meta property="og:url" content="https://playersb.com/fantasy/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fantasy Picker | PlayersB" />
+  <meta name="twitter:description" content="Fantasy football picker: compare players by per-90 form and value to shortlist options." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Structured Data (WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayersB — The Players Book",
+    "url": "https://playersb.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playersb.com/players/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.playersbTrack = function (eventName, params) {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, Object.assign({
+        page_path: window.location.pathname,
+        page_title: document.title,
+      }, params || {}));
+    };
+
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM', {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      send_page_view: true
+    });
+  </script>
+</head>
+
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
+        <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
+        <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
+        <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
+        <a class="nav-link" href="/about/" data-track-event="nav_click">About</a>
+        <a class="nav-link" href="/contact/" data-track-event="nav_click">Contact</a>
+      </nav>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/" data-track-event="cta_click">Start comparing</a>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+      <span class="pill">Fantasy Picker</span>
+      <h1>Shortlist fantasy options by role and form.</h1>
+      <p class="lead">Use per-90 rates to compare top performers and spot value picks quickly.</p>
+      <p class="meta-text">
+        Data source: Football-Data.org scorers feed (per-90 via minutes estimate).
+      </p>
+      <p class="meta-text">
+        Scores are adjusted by league difficulty and last-5 form where standings data is available.
+      </p>
+      <p class="callout">Last updated: 2026-03-07T07:13:03.301Z</p>
+      <p class="meta-text">Sources: footballData:fallback | playersSeed:ok</p>
+      <p class="meta-text">Confidence: Low confidence</p>
+      <div class="button-row">
+        <a class="button" href="/players/">Browse players</a>
+        <a class="button secondary" href="/compare/">Open compare</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <div class="search-row">
+          <label style="flex:1;min-width:220px;">
+            <span class="meta-text">Search players</span>
+            <input id="fantasySearch" class="search-input" type="search" placeholder="Search by name, team, or position" />
+          </label>
+          <label style="min-width:180px;">
+            <span class="meta-text">Filter by role</span>
+            <select id="fantasyRole" class="select">
+              <option value="">All roles</option>
+              <option value="AM">AM</option>
+<option value="CB">CB</option>
+<option value="CM">CM</option>
+<option value="DM">DM</option>
+<option value="LW">LW</option>
+<option value="RB">RB</option>
+<option value="RW">RW</option>
+<option value="ST">ST</option>
+            </select>
+          </label>
+          <div class="meta-text" id="fantasyCount"></div>
+        </div>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Role</th>
+                <th>Team</th>
+                <th>Competition</th>
+                <th>Goals/90</th>
+                <th>Assists/90</th>
+                <th>Shots/90</th>
+                <th>Form score</th>
+                <th>Value score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-search="darwin núñez am liverpool playersb synthetic league" data-position="AM">
+          <td><a href="/players/darwin-nunez/">Darwin Núñez</a></td>
+          <td>AM</td>
+          <td>Liverpool</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.48</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>2.43</td>
+          <td>71.47</td>
+        </tr>
+<tr data-search="julian brandt st borussia dortmund playersb synthetic league" data-position="ST">
+          <td><a href="/players/julian-brandt/">Julian Brandt</a></td>
+          <td>ST</td>
+          <td>Borussia Dortmund</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.51</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.61</td>
+          <td>76.90</td>
+        </tr>
+<tr data-search="khvicha kvaratskhelia rw napoli " data-position="RW">
+          <td><a href="/players/khvicha-kvaratskhelia/">Khvicha Kvaratskhelia</a></td>
+          <td>RW</td>
+          <td>Napoli</td>
+          <td>—</td>
+          <td>0.48</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>2.86</td>
+          <td>71.47</td>
+        </tr>
+<tr data-search="declan rice cm arsenal playersb synthetic league" data-position="CM">
+          <td><a href="/players/declan-rice/">Declan Rice</a></td>
+          <td>CM</td>
+          <td>Arsenal</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.51</td>
+          <td>0.23</td>
+          <td>0.00</td>
+          <td>2.32</td>
+          <td>66.65</td>
+        </tr>
+<tr data-search="jan oblak cb atlético madrid playersb synthetic league" data-position="CB">
+          <td><a href="/players/jan-oblak/">Jan Oblak</a></td>
+          <td>CB</td>
+          <td>Atlético Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.48</td>
+          <td>0.21</td>
+          <td>0.00</td>
+          <td>2.16</td>
+          <td>61.94</td>
+        </tr>
+<tr data-search="adrien rabiot dm juventus " data-position="DM">
+          <td><a href="/players/adrien-rabiot/">Adrien Rabiot</a></td>
+          <td>DM</td>
+          <td>Juventus</td>
+          <td>—</td>
+          <td>0.51</td>
+          <td>0.23</td>
+          <td>0.00</td>
+          <td>2.73</td>
+          <td>66.65</td>
+        </tr>
+<tr data-search="cole palmer st chelsea playersb synthetic league" data-position="ST">
+          <td><a href="/players/cole-palmer/">Cole Palmer</a></td>
+          <td>ST</td>
+          <td>Chelsea</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.46</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.42</td>
+          <td>71.77</td>
+        </tr>
+<tr data-search="niclas füllkrug rw borussia dortmund playersb synthetic league" data-position="RW">
+          <td><a href="/players/niclas-fullkrug/">Niclas Füllkrug</a></td>
+          <td>RW</td>
+          <td>Borussia Dortmund</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.42</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>2.25</td>
+          <td>66.71</td>
+        </tr>
+<tr data-search="brian brobbey lw ajax " data-position="LW">
+          <td><a href="/players/brian-brobbey/">Brian Brobbey</a></td>
+          <td>LW</td>
+          <td>Ajax</td>
+          <td>—</td>
+          <td>0.46</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.85</td>
+          <td>71.77</td>
+        </tr>
+<tr data-search="victor boniface am bayer leverkusen playersb synthetic league" data-position="AM">
+          <td><a href="/players/victor-boniface/">Victor Boniface</a></td>
+          <td>AM</td>
+          <td>Bayer Leverkusen</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.49</td>
+          <td>0.31</td>
+          <td>0.00</td>
+          <td>2.46</td>
+          <td>72.12</td>
+        </tr>
+<tr data-search="kai havertz cb arsenal playersb synthetic league" data-position="CB">
+          <td><a href="/players/kai-havertz/">Kai Havertz</a></td>
+          <td>CB</td>
+          <td>Arsenal</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.42</td>
+          <td>0.21</td>
+          <td>0.00</td>
+          <td>1.98</td>
+          <td>57.18</td>
+        </tr>
+<tr data-search="granit xhaka dm bayer leverkusen playersb synthetic league" data-position="DM">
+          <td><a href="/players/granit-xhaka/">Granit Xhaka</a></td>
+          <td>DM</td>
+          <td>Bayer Leverkusen</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.46</td>
+          <td>0.23</td>
+          <td>0.00</td>
+          <td>2.13</td>
+          <td>61.52</td>
+        </tr>
+<tr data-search="bremer rb juventus " data-position="RB">
+          <td><a href="/players/bremer/">Bremer</a></td>
+          <td>RB</td>
+          <td>Juventus</td>
+          <td>—</td>
+          <td>0.42</td>
+          <td>0.21</td>
+          <td>0.00</td>
+          <td>2.33</td>
+          <td>57.18</td>
+        </tr>
+<tr data-search="cristian romero rb tottenham playersb synthetic league" data-position="RB">
+          <td><a href="/players/cristian-romero/">Cristian Romero</a></td>
+          <td>RB</td>
+          <td>Tottenham</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.49</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>2.15</td>
+          <td>61.03</td>
+        </tr>
+<tr data-search="antónio silva cb benfica " data-position="CB">
+          <td><a href="/players/antonio-silva/">António Silva</a></td>
+          <td>CB</td>
+          <td>Benfica</td>
+          <td>—</td>
+          <td>0.49</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>2.53</td>
+          <td>61.03</td>
+        </tr>
+<tr data-search="enzo fernández rw chelsea playersb synthetic league" data-position="RW">
+          <td><a href="/players/enzo-fernandez/">Enzo Fernández</a></td>
+          <td>RW</td>
+          <td>Chelsea</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.37</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>2.07</td>
+          <td>61.94</td>
+        </tr>
+<tr data-search="pierre-emerick aubameyang lw marseille " data-position="LW">
+          <td><a href="/players/pierre-emerick-aubameyang/">Pierre-Emerick Aubameyang</a></td>
+          <td>LW</td>
+          <td>Marseille</td>
+          <td>—</td>
+          <td>0.40</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.62</td>
+          <td>66.65</td>
+        </tr>
+<tr data-search="steven bergwijn am ajax " data-position="AM">
+          <td><a href="/players/steven-bergwijn/">Steven Bergwijn</a></td>
+          <td>AM</td>
+          <td>Ajax</td>
+          <td>—</td>
+          <td>0.37</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>2.44</td>
+          <td>61.94</td>
+        </tr>
+<tr data-search="bruno fernandes lw manchester united playersb synthetic league" data-position="LW">
+          <td><a href="/players/bruno-fernandes/">Bruno Fernandes</a></td>
+          <td>LW</td>
+          <td>Manchester United</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.47</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.45</td>
+          <td>72.54</td>
+        </tr>
+<tr data-search="rasmus højlund am manchester united playersb synthetic league" data-position="AM">
+          <td><a href="/players/rasmus-h-jlund/">Rasmus Højlund</a></td>
+          <td>AM</td>
+          <td>Manchester United</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.43</td>
+          <td>0.31</td>
+          <td>0.00</td>
+          <td>2.25</td>
+          <td>66.58</td>
+        </tr>
+<tr data-search="marcus rashford dm manchester united playersb synthetic league" data-position="DM">
+          <td><a href="/players/marcus-rashford/">Marcus Rashford</a></td>
+          <td>DM</td>
+          <td>Manchester United</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.40</td>
+          <td>0.23</td>
+          <td>0.00</td>
+          <td>1.94</td>
+          <td>56.39</td>
+        </tr>
+<tr data-search="vinícius júnior rw real madrid playersb synthetic league" data-position="RW">
+          <td><a href="/players/vinicius-junior/">Vinícius Júnior</a></td>
+          <td>RW</td>
+          <td>Real Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.52</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>2.51</td>
+          <td>73.03</td>
+        </tr>
+<tr data-search="jeremie frimpong rb bayer leverkusen playersb synthetic league" data-position="RB">
+          <td><a href="/players/jeremie-frimpong/">Jeremie Frimpong</a></td>
+          <td>RB</td>
+          <td>Bayer Leverkusen</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.37</td>
+          <td>0.21</td>
+          <td>0.00</td>
+          <td>1.80</td>
+          <td>52.41</td>
+        </tr>
+<tr data-search="achraf hakimi cm paris saint-germain " data-position="CM">
+          <td><a href="/players/achraf-hakimi/">Achraf Hakimi</a></td>
+          <td>CM</td>
+          <td>Paris Saint-Germain</td>
+          <td>—</td>
+          <td>0.47</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>2.49</td>
+          <td>60.45</td>
+        </tr>
+<tr data-search="vitinha cb paris saint-germain " data-position="CB">
+          <td><a href="/players/vitinha/">Vitinha</a></td>
+          <td>CB</td>
+          <td>Paris Saint-Germain</td>
+          <td>—</td>
+          <td>0.43</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>2.28</td>
+          <td>55.48</td>
+        </tr>
+<tr data-search="chancel mbemba rb marseille " data-position="RB">
+          <td><a href="/players/chancel-mbemba/">Chancel Mbemba</a></td>
+          <td>RB</td>
+          <td>Marseille</td>
+          <td>—</td>
+          <td>0.52</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>2.51</td>
+          <td>59.75</td>
+        </tr>
+<tr data-search="robert lewandowski lw barcelona playersb synthetic league" data-position="LW">
+          <td><a href="/players/robert-lewandowski/">Robert Lewandowski</a></td>
+          <td>LW</td>
+          <td>Barcelona</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.34</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.03</td>
+          <td>61.52</td>
+        </tr>
+<tr data-search="amine harit am marseille " data-position="AM">
+          <td><a href="/players/amine-harit/">Amine Harit</a></td>
+          <td>AM</td>
+          <td>Marseille</td>
+          <td>—</td>
+          <td>0.32</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>2.22</td>
+          <td>57.18</td>
+        </tr>
+<tr data-search="lautaro martínez st inter " data-position="ST">
+          <td><a href="/players/lautaro-martinez/">Lautaro Martínez</a></td>
+          <td>ST</td>
+          <td>Inter</td>
+          <td>—</td>
+          <td>0.40</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.62</td>
+          <td>66.49</td>
+        </tr>
+<tr data-search="nicolò barella rw inter " data-position="RW">
+          <td><a href="/players/nicolo-barella/">Nicolò Barella</a></td>
+          <td>RW</td>
+          <td>Inter</td>
+          <td>—</td>
+          <td>0.37</td>
+          <td>0.31</td>
+          <td>0.00</td>
+          <td>2.40</td>
+          <td>61.03</td>
+        </tr>
+<tr data-search="erling haaland st manchester city playersb synthetic league" data-position="ST">
+          <td><a href="/players/erling-haaland/">Erling Haaland</a></td>
+          <td>ST</td>
+          <td>Manchester City</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.49</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>2.50</td>
+          <td>73.64</td>
+        </tr>
+<tr data-search="phil foden rw manchester city playersb synthetic league" data-position="RW">
+          <td><a href="/players/phil-foden/">Phil Foden</a></td>
+          <td>RW</td>
+          <td>Manchester City</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.44</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>2.26</td>
+          <td>66.39</td>
+        </tr>
+<tr data-search="lisandro martínez rb manchester united playersb synthetic league" data-position="RB">
+          <td><a href="/players/lisandro-martinez/">Lisandro Martínez</a></td>
+          <td>RB</td>
+          <td>Manchester United</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.32</td>
+          <td>0.21</td>
+          <td>0.00</td>
+          <td>1.62</td>
+          <td>47.65</td>
+        </tr>
+<tr data-search="hakan çalhanoğlu cm inter " data-position="CM">
+          <td><a href="/players/hakan-calhanoglu/">Hakan Çalhanoğlu</a></td>
+          <td>CM</td>
+          <td>Inter</td>
+          <td>—</td>
+          <td>0.34</td>
+          <td>0.23</td>
+          <td>0.00</td>
+          <td>2.05</td>
+          <td>51.27</td>
+        </tr>
+<tr data-search="rafael leão lw ac milan " data-position="LW">
+          <td><a href="/players/rafael-leao/">Rafael Leão</a></td>
+          <td>LW</td>
+          <td>AC Milan</td>
+          <td>—</td>
+          <td>0.49</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>2.95</td>
+          <td>73.64</td>
+        </tr>
+<tr data-search="theo hernández am ac milan " data-position="AM">
+          <td><a href="/players/theo-hernandez/">Theo Hernández</a></td>
+          <td>AM</td>
+          <td>AC Milan</td>
+          <td>—</td>
+          <td>0.44</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>2.66</td>
+          <td>66.39</td>
+        </tr>
+<tr data-search="federico valverde cm real madrid playersb synthetic league" data-position="CM">
+          <td><a href="/players/federico-valverde/">Federico Valverde</a></td>
+          <td>CM</td>
+          <td>Real Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.40</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>1.88</td>
+          <td>54.40</td>
+        </tr>
+<tr data-search="antonio rüdiger cb real madrid playersb synthetic league" data-position="CB">
+          <td><a href="/players/antonio-rudiger/">Antonio Rüdiger</a></td>
+          <td>CB</td>
+          <td>Real Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.37</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>1.73</td>
+          <td>49.93</td>
+        </tr>
+<tr data-search="lamine yamal dm barcelona playersb synthetic league" data-position="DM">
+          <td><a href="/players/lamine-yamal/">Lamine Yamal</a></td>
+          <td>DM</td>
+          <td>Barcelona</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.49</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>2.09</td>
+          <td>58.91</td>
+        </tr>
+<tr data-search="ronald araújo rb barcelona playersb synthetic league" data-position="RB">
+          <td><a href="/players/ronald-araujo/">Ronald Araújo</a></td>
+          <td>RB</td>
+          <td>Barcelona</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.44</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>1.88</td>
+          <td>53.11</td>
+        </tr>
+<tr data-search="mohamed salah lw liverpool playersb synthetic league" data-position="LW">
+          <td><a href="/players/mohamed-salah/">Mohamed Salah</a></td>
+          <td>LW</td>
+          <td>Liverpool</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.28</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>1.84</td>
+          <td>56.39</td>
+        </tr>
+<tr data-search="pedri am barcelona playersb synthetic league" data-position="AM">
+          <td><a href="/players/pedri/">Pedri</a></td>
+          <td>AM</td>
+          <td>Barcelona</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.26</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>1.71</td>
+          <td>52.41</td>
+        </tr>
+<tr data-search="victor osimhen st napoli " data-position="ST">
+          <td><a href="/players/victor-osimhen/">Victor Osimhen</a></td>
+          <td>ST</td>
+          <td>Napoli</td>
+          <td>—</td>
+          <td>0.28</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.16</td>
+          <td>56.39</td>
+        </tr>
+<tr data-search="antoine griezmann st atlético madrid playersb synthetic league" data-position="ST">
+          <td><a href="/players/antoine-griezmann/">Antoine Griezmann</a></td>
+          <td>ST</td>
+          <td>Atlético Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.34</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.00</td>
+          <td>60.45</td>
+        </tr>
+<tr data-search="álvaro morata rw atlético madrid playersb synthetic league" data-position="RW">
+          <td><a href="/players/alvaro-morata/">Álvaro Morata</a></td>
+          <td>RW</td>
+          <td>Atlético Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.31</td>
+          <td>0.31</td>
+          <td>0.00</td>
+          <td>1.83</td>
+          <td>55.48</td>
+        </tr>
+<tr data-search="rodrigo de paul cm atlético madrid playersb synthetic league" data-position="CM">
+          <td><a href="/players/rodrigo-de-paul/">Rodrigo De Paul</a></td>
+          <td>CM</td>
+          <td>Atlético Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.28</td>
+          <td>0.23</td>
+          <td>0.00</td>
+          <td>1.55</td>
+          <td>46.14</td>
+        </tr>
+<tr data-search="harry kane lw bayern munich playersb synthetic league" data-position="LW">
+          <td><a href="/players/harry-kane/">Harry Kane</a></td>
+          <td>LW</td>
+          <td>Bayern Munich</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.41</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>2.23</td>
+          <td>66.27</td>
+        </tr>
+<tr data-search="jamal musiala am bayern munich playersb synthetic league" data-position="AM">
+          <td><a href="/players/jamal-musiala/">Jamal Musiala</a></td>
+          <td>AM</td>
+          <td>Bayern Munich</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.37</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>2.01</td>
+          <td>59.75</td>
+        </tr>
+<tr data-search="alessandro bastoni cb inter " data-position="CB">
+          <td><a href="/players/alessandro-bastoni/">Alessandro Bastoni</a></td>
+          <td>CB</td>
+          <td>Inter</td>
+          <td>—</td>
+          <td>0.26</td>
+          <td>0.21</td>
+          <td>0.00</td>
+          <td>1.69</td>
+          <td>42.88</td>
+        </tr>
+<tr data-search="rodri cm manchester city playersb synthetic league" data-position="CM">
+          <td><a href="/players/rodri/">Rodri</a></td>
+          <td>CM</td>
+          <td>Manchester City</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.34</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>1.66</td>
+          <td>48.36</td>
+        </tr>
+<tr data-search="kevin de bruyne cb manchester city playersb synthetic league" data-position="CB">
+          <td><a href="/players/kevin-de-bruyne/">Kevin De Bruyne</a></td>
+          <td>CB</td>
+          <td>Manchester City</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.31</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>1.52</td>
+          <td>44.38</td>
+        </tr>
+<tr data-search="christian pulisic dm ac milan " data-position="DM">
+          <td><a href="/players/christian-pulisic/">Christian Pulisic</a></td>
+          <td>DM</td>
+          <td>AC Milan</td>
+          <td>—</td>
+          <td>0.34</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>1.95</td>
+          <td>48.36</td>
+        </tr>
+<tr data-search="mike maignan rb ac milan " data-position="RB">
+          <td><a href="/players/mike-maignan/">Mike Maignan</a></td>
+          <td>RB</td>
+          <td>AC Milan</td>
+          <td>—</td>
+          <td>0.31</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>1.79</td>
+          <td>44.38</td>
+        </tr>
+<tr data-search="alexis mac allister dm liverpool playersb synthetic league" data-position="DM">
+          <td><a href="/players/alexis-mac-allister/">Alexis Mac Allister</a></td>
+          <td>DM</td>
+          <td>Liverpool</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.41</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>1.81</td>
+          <td>51.55</td>
+        </tr>
+<tr data-search="virgil van dijk rb liverpool playersb synthetic league" data-position="RB">
+          <td><a href="/players/virgil-van-dijk/">Virgil van Dijk</a></td>
+          <td>RB</td>
+          <td>Liverpool</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.37</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>1.63</td>
+          <td>46.48</td>
+        </tr>
+<tr data-search="stanislav lobotka cm napoli " data-position="CM">
+          <td><a href="/players/stanislav-lobotka/">Stanislav Lobotka</a></td>
+          <td>CM</td>
+          <td>Napoli</td>
+          <td>—</td>
+          <td>0.41</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>2.13</td>
+          <td>51.55</td>
+        </tr>
+<tr data-search="giovanni di lorenzo cb napoli " data-position="CB">
+          <td><a href="/players/giovanni-di-lorenzo/">Giovanni Di Lorenzo</a></td>
+          <td>CB</td>
+          <td>Napoli</td>
+          <td>—</td>
+          <td>0.37</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>1.92</td>
+          <td>46.48</td>
+        </tr>
+<tr data-search="bukayo saka st arsenal playersb synthetic league" data-position="ST">
+          <td><a href="/players/bukayo-saka/">Bukayo Saka</a></td>
+          <td>ST</td>
+          <td>Arsenal</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.27</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>1.77</td>
+          <td>54.40</td>
+        </tr>
+<tr data-search="martin ødegaard rw arsenal playersb synthetic league" data-position="RW">
+          <td><a href="/players/martin-degaard/">Martin Ødegaard</a></td>
+          <td>RW</td>
+          <td>Arsenal</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.25</td>
+          <td>0.31</td>
+          <td>0.00</td>
+          <td>1.62</td>
+          <td>49.93</td>
+        </tr>
+<tr data-search="dušan vlahović lw juventus " data-position="LW">
+          <td><a href="/players/dusan-vlahovic/">Dušan Vlahović</a></td>
+          <td>LW</td>
+          <td>Juventus</td>
+          <td>—</td>
+          <td>0.27</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>2.08</td>
+          <td>54.40</td>
+        </tr>
+<tr data-search="federico chiesa am juventus " data-position="AM">
+          <td><a href="/players/federico-chiesa/">Federico Chiesa</a></td>
+          <td>AM</td>
+          <td>Juventus</td>
+          <td>—</td>
+          <td>0.25</td>
+          <td>0.31</td>
+          <td>0.00</td>
+          <td>1.91</td>
+          <td>49.93</td>
+        </tr>
+<tr data-search="heung-min son lw tottenham playersb synthetic league" data-position="LW">
+          <td><a href="/players/heung-min-son/">Heung-Min Son</a></td>
+          <td>LW</td>
+          <td>Tottenham</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.33</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>1.95</td>
+          <td>58.91</td>
+        </tr>
+<tr data-search="james maddison am tottenham playersb synthetic league" data-position="AM">
+          <td><a href="/players/james-maddison/">James Maddison</a></td>
+          <td>AM</td>
+          <td>Tottenham</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.30</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>1.76</td>
+          <td>53.11</td>
+        </tr>
+<tr data-search="ángel di maría st benfica " data-position="ST">
+          <td><a href="/players/angel-di-maria/">Ángel Di María</a></td>
+          <td>ST</td>
+          <td>Benfica</td>
+          <td>—</td>
+          <td>0.33</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>2.29</td>
+          <td>58.91</td>
+        </tr>
+<tr data-search="joão mário rw benfica " data-position="RW">
+          <td><a href="/players/joao-mario/">João Mário</a></td>
+          <td>RW</td>
+          <td>Benfica</td>
+          <td>—</td>
+          <td>0.30</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>2.07</td>
+          <td>53.11</td>
+        </tr>
+<tr data-search="leroy sané dm bayern munich playersb synthetic league" data-position="DM">
+          <td><a href="/players/leroy-sane/">Leroy Sané</a></td>
+          <td>DM</td>
+          <td>Bayern Munich</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.27</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>1.43</td>
+          <td>42.31</td>
+        </tr>
+<tr data-search="joshua kimmich rb bayern munich playersb synthetic league" data-position="RB">
+          <td><a href="/players/joshua-kimmich/">Joshua Kimmich</a></td>
+          <td>RB</td>
+          <td>Bayern Munich</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.25</td>
+          <td>0.18</td>
+          <td>0.00</td>
+          <td>1.31</td>
+          <td>38.84</td>
+        </tr>
+<tr data-search="karim adeyemi cm borussia dortmund playersb synthetic league" data-position="CM">
+          <td><a href="/players/karim-adeyemi/">Karim Adeyemi</a></td>
+          <td>CM</td>
+          <td>Borussia Dortmund</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.33</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>1.53</td>
+          <td>44.18</td>
+        </tr>
+<tr data-search="mats hummels cb borussia dortmund playersb synthetic league" data-position="CB">
+          <td><a href="/players/mats-hummels/">Mats Hummels</a></td>
+          <td>CB</td>
+          <td>Borussia Dortmund</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.30</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>1.38</td>
+          <td>39.84</td>
+        </tr>
+<tr data-search="florian wirtz lw bayer leverkusen playersb synthetic league" data-position="LW">
+          <td><a href="/players/florian-wirtz/">Florian Wirtz</a></td>
+          <td>LW</td>
+          <td>Bayer Leverkusen</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.20</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>1.54</td>
+          <td>48.36</td>
+        </tr>
+<tr data-search="kylian mbappé st paris saint-germain " data-position="ST">
+          <td><a href="/players/kylian-mbappe/">Kylian Mbappé</a></td>
+          <td>ST</td>
+          <td>Paris Saint-Germain</td>
+          <td>—</td>
+          <td>0.25</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>1.96</td>
+          <td>51.55</td>
+        </tr>
+<tr data-search="ousmane dembélé rw paris saint-germain " data-position="RW">
+          <td><a href="/players/ousmane-dembele/">Ousmane Dembélé</a></td>
+          <td>RW</td>
+          <td>Paris Saint-Germain</td>
+          <td>—</td>
+          <td>0.22</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>1.77</td>
+          <td>46.48</td>
+        </tr>
+<tr data-search="dejan kulusevski dm tottenham playersb synthetic league" data-position="DM">
+          <td><a href="/players/dejan-kulusevski/">Dejan Kulusevski</a></td>
+          <td>DM</td>
+          <td>Tottenham</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.20</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>1.20</td>
+          <td>36.27</td>
+        </tr>
+<tr data-search="rafa silva cm benfica " data-position="CM">
+          <td><a href="/players/rafa-silva/">Rafa Silva</a></td>
+          <td>CM</td>
+          <td>Benfica</td>
+          <td>—</td>
+          <td>0.20</td>
+          <td>0.20</td>
+          <td>0.00</td>
+          <td>1.41</td>
+          <td>36.27</td>
+        </tr>
+<tr data-search="reece james cm chelsea playersb synthetic league" data-position="CM">
+          <td><a href="/players/reece-james/">Reece James</a></td>
+          <td>CM</td>
+          <td>Chelsea</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.25</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>1.25</td>
+          <td>36.82</td>
+        </tr>
+<tr data-search="christopher nkunku cb chelsea playersb synthetic league" data-position="CB">
+          <td><a href="/players/christopher-nkunku/">Christopher Nkunku</a></td>
+          <td>CB</td>
+          <td>Chelsea</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.22</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>1.13</td>
+          <td>33.20</td>
+        </tr>
+<tr data-search="kenneth taylor dm ajax " data-position="DM">
+          <td><a href="/players/kenneth-taylor/">Kenneth Taylor</a></td>
+          <td>DM</td>
+          <td>Ajax</td>
+          <td>—</td>
+          <td>0.25</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>1.47</td>
+          <td>36.82</td>
+        </tr>
+<tr data-search="jorrel hato rb ajax " data-position="RB">
+          <td><a href="/players/jorrel-hato/">Jorrel Hato</a></td>
+          <td>RB</td>
+          <td>Ajax</td>
+          <td>—</td>
+          <td>0.22</td>
+          <td>0.15</td>
+          <td>0.00</td>
+          <td>1.33</td>
+          <td>33.20</td>
+        </tr>
+<tr data-search="jude bellingham st real madrid playersb synthetic league" data-position="ST">
+          <td><a href="/players/jude-bellingham/">Jude Bellingham</a></td>
+          <td>ST</td>
+          <td>Real Madrid</td>
+          <td>PlayersB Synthetic League</td>
+          <td>0.16</td>
+          <td>0.33</td>
+          <td>0.00</td>
+          <td>1.39</td>
+          <td>44.18</td>
+        </tr>
+<tr data-search="jordan veretout dm marseille " data-position="DM">
+          <td><a href="/players/jordan-veretout/">Jordan Veretout</a></td>
+          <td>DM</td>
+          <td>Marseille</td>
+          <td>—</td>
+          <td>0.16</td>
+          <td>0.16</td>
+          <td>0.00</td>
+          <td>1.15</td>
+          <td>29.45</td>
+        </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <p class="meta-text">
+      Form score blends goals, assists, and shot volume with league difficulty + last-5 form. Value score emphasizes per-90 impact.
+    </p>
+
+    <script>
+      (function () {
+        const input = document.getElementById("fantasySearch");
+        const role = document.getElementById("fantasyRole");
+        const rows = Array.from(document.querySelectorAll("tbody tr"));
+        const count = document.getElementById("fantasyCount");
+        const total = rows.length;
+
+        function updateCount(visible) {
+          if (!count) return;
+          count.textContent = "Showing " + visible + " of " + total;
+        }
+
+        function filter() {
+          const q = input ? input.value.trim().toLowerCase() : "";
+          const roleValue = role ? role.value : "";
+          let visible = 0;
+
+          for (const row of rows) {
+            const hay = row.dataset.search || "";
+            const positions = row.dataset.position || "";
+            const matchesQuery = !q || hay.includes(q);
+            const matchesRole = !roleValue || positions.includes(roleValue);
+            const show = matchesQuery && matchesRole;
+            row.style.display = show ? "" : "none";
+            if (show) visible += 1;
+          }
+
+          updateCount(visible);
+        }
+
+        updateCount(total);
+        if (input) input.addEventListener("input", filter);
+        if (role) role.addEventListener("change", filter);
+      })();
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    const storageKey = "playersb-theme";
+    const root = document.documentElement;
+    const stored = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+
+    if (initialTheme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    }
+
+    function track(eventName, params) {
+      if (typeof window.playersbTrack === "function") {
+        window.playersbTrack(eventName, params);
+      }
+    }
+
+    function updateButton(button) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("themeToggle");
+      if (button) {
+        updateButton(button);
+        button.addEventListener("click", () => {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          const nextTheme = isDark ? "light" : "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+          } else {
+            root.setAttribute("data-theme", "dark");
+          }
+          localStorage.setItem(storageKey, nextTheme);
+          updateButton(button);
+          track("theme_toggle", { theme: nextTheme });
+        });
+      }
+
+      document.querySelectorAll("a[href]").forEach((anchor) => {
+        anchor.addEventListener("click", () => {
+          const href = anchor.getAttribute("href") || "";
+          const text = (anchor.textContent || "").trim().slice(0, 80);
+          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
+          const isNav = anchor.classList.contains("nav-link");
+          const isCta = anchor.classList.contains("button");
+
+          if (isOutbound) {
+            track("outbound_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isNav) {
+            track("nav_click", { destination: href, link_text: text });
+            return;
+          }
+
+          if (isCta) {
+            track("cta_click", { destination: href, link_text: text });
+          }
+        });
+      });
+
+      setTimeout(() => {
+        track("engaged_read", { engaged_seconds: 30 });
+      }, 30000);
+    });
+  })();
+</script>
+</body>
+</html>

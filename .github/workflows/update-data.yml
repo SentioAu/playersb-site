@@ -1,74 +1,68 @@
-name: Update PlayersB Data (Mode 1)
+name: Update PlayersB Data
 
 on:
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 */6 * * *"
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
       - "data/**"
-      - "templates/**"
       - "scripts/**"
-      - "_redirects"
-      - "compare.html"
-      - "contact.html"
-      - "robots.txt"
+      - "templates/**"
       - ".github/workflows/update-data.yml"
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 permissions:
   contents: write
 
-concurrency:
-  group: update-data-main
-  cancel-in-progress: true
-
 jobs:
   regenerate:
-    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
+    env:
+      FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
-      # ✅ Only install if package.json exists (your repo may not need deps)
-      - name: Install dependencies (optional)
+      - name: Install dependencies
         run: |
-          if [ -f package.json ]; then
-            echo "package.json found — installing dependencies"
-            if [ -f package-lock.json ]; then
-              npm ci
-            elif [ -f pnpm-lock.yaml ]; then
-              npm i -g pnpm
-              pnpm i --frozen-lockfile
-            elif [ -f yarn.lock ]; then
-              corepack enable
-              yarn install --frozen-lockfile
-            else
-              npm i
-            fi
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install
           else
-            echo "No package.json — skipping dependency install"
+            echo "No package.json found; skipping npm install"
           fi
 
-      - name: Generate site (core + players + sitemap) and run quality gate
+      - name: Test API token
+        run: node scripts/test-api.mjs
+        env:
+          FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
+
+      - name: Fetch football data
+        run: node scripts/fetch-football-data.mjs
+
+      - name: Sync scorers to players
+        run: node scripts/sync-scorers.mjs
+
+      - name: Generate site
         run: node scripts/generate-all.mjs
 
-      - name: Commit generated files (if changed)
+      - name: Commit updated data
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          if git status --porcelain | grep .; then
-            git add -A
-            git commit -m "chore: regenerate site outputs"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          git config user.name "playersb-bot"
+          git config user.email "bot@playersb.com"
+          git add data/fixtures.json data/standings.json data/scorers.json data/players.json data/players-scores.json matches/index.html standings/index.html
+          git diff --staged --quiet || git commit -m "chore: auto-update data [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
