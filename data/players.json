@@ -1,19 +1,16 @@
 {
-  "generated_at": "2026-03-26T09:49:26.820Z",
+  "generated_at": "2026-03-26T09:32:13.434Z",
   "players": [
     {
       "id": "erling-haaland",
       "name": "Erling Haaland",
       "position": "ST",
-      "team": "Manchester City FC",
+      "team": "Manchester City",
       "minutes": 1100,
-      "goals": 8,
-      "assists": 0,
+      "goals": 6,
+      "assists": 4,
       "shots": 39,
-      "shotsOnTarget": 20,
-      "playedMatches": 10,
-      "goalsPer90": 72,
-      "assistsPer90": 0
+      "shotsOnTarget": 20
     },
     {
       "id": "phil-foden",
@@ -184,29 +181,23 @@
       "id": "cole-palmer",
       "name": "Cole Palmer",
       "position": "ST",
-      "team": "Chelsea FC",
+      "team": "Chelsea",
       "minutes": 1580,
-      "goals": 9,
-      "assists": 1,
+      "goals": 8,
+      "assists": 6,
       "shots": 56,
-      "shotsOnTarget": 29,
-      "playedMatches": 21,
-      "goalsPer90": 38.57,
-      "assistsPer90": 4.29
+      "shotsOnTarget": 29
     },
     {
       "id": "enzo-fernandez",
       "name": "Enzo Fernández",
       "position": "RW",
-      "team": "Chelsea FC",
+      "team": "Chelsea",
       "minutes": 1700,
-      "goals": 8,
-      "assists": 3,
+      "goals": 7,
+      "assists": 6,
       "shots": 61,
-      "shotsOnTarget": 31,
-      "playedMatches": 30,
-      "goalsPer90": 24,
-      "assistsPer90": 9
+      "shotsOnTarget": 31
     },
     {
       "id": "reece-james",
@@ -234,43 +225,34 @@
       "id": "bruno-fernandes",
       "name": "Bruno Fernandes",
       "position": "LW",
-      "team": "Manchester United FC",
+      "team": "Manchester United",
       "minutes": 1340,
-      "goals": 8,
-      "assists": 16,
+      "goals": 7,
+      "assists": 5,
       "shots": 48,
-      "shotsOnTarget": 24,
-      "playedMatches": 28,
-      "goalsPer90": 25.71,
-      "assistsPer90": 51.43
+      "shotsOnTarget": 24
     },
     {
       "id": "rasmus-h-jlund",
       "name": "Rasmus Højlund",
       "position": "AM",
-      "team": "SSC Napoli",
+      "team": "Manchester United",
       "minutes": 1460,
-      "goals": 10,
-      "assists": 2,
+      "goals": 7,
+      "assists": 5,
       "shots": 52,
-      "shotsOnTarget": 27,
-      "playedMatches": 26,
-      "goalsPer90": 34.62,
-      "assistsPer90": 6.92
+      "shotsOnTarget": 27
     },
     {
       "id": "marcus-rashford",
       "name": "Marcus Rashford",
       "position": "DM",
-      "team": "FC Barcelona",
+      "team": "Manchester United",
       "minutes": 1580,
-      "goals": 5,
-      "assists": 3,
+      "goals": 7,
+      "assists": 4,
       "shots": 56,
-      "shotsOnTarget": 29,
-      "playedMatches": 10,
-      "goalsPer90": 45,
-      "assistsPer90": 27
+      "shotsOnTarget": 29
     },
     {
       "id": "lisandro-martinez",
@@ -298,15 +280,12 @@
       "id": "vinicius-junior",
       "name": "Vinícius Júnior",
       "position": "RW",
-      "team": "Real Madrid CF",
+      "team": "Real Madrid",
       "minutes": 1220,
-      "goals": 11,
-      "assists": 5,
+      "goals": 7,
+      "assists": 4,
       "shots": 44,
-      "shotsOnTarget": 22,
-      "playedMatches": 27,
-      "goalsPer90": 36.67,
-      "assistsPer90": 16.67
+      "shotsOnTarget": 22
     },
     {
       "id": "federico-valverde",
@@ -334,15 +313,12 @@
       "id": "robert-lewandowski",
       "name": "Robert Lewandowski",
       "position": "LW",
-      "team": "FC Barcelona",
+      "team": "Barcelona",
       "minutes": 1580,
-      "goals": 11,
-      "assists": 1,
+      "goals": 6,
+      "assists": 6,
       "shots": 56,
-      "shotsOnTarget": 29,
-      "playedMatches": 26,
-      "goalsPer90": 38.08,
-      "assistsPer90": 3.46
+      "shotsOnTarget": 29
     },
     {
       "id": "pedri",
@@ -359,15 +335,12 @@
       "id": "lamine-yamal",
       "name": "Lamine Yamal",
       "position": "DM",
-      "team": "FC Barcelona",
+      "team": "Barcelona",
       "minutes": 1100,
-      "goals": 5,
-      "assists": 3,
+      "goals": 6,
+      "assists": 2,
       "shots": 39,
-      "shotsOnTarget": 20,
-      "playedMatches": 8,
-      "goalsPer90": 56.25,
-      "assistsPer90": 33.75
+      "shotsOnTarget": 20
     },
     {
       "id": "ronald-araujo",
@@ -428,15 +401,12 @@
       "id": "harry-kane",
       "name": "Harry Kane",
       "position": "LW",
-      "team": "FC Bayern München",
+      "team": "Bayern Munich",
       "minutes": 1100,
-      "goals": 10,
-      "assists": 0,
+      "goals": 5,
+      "assists": 4,
       "shots": 39,
-      "shotsOnTarget": 20,
-      "playedMatches": 10,
-      "goalsPer90": 90,
-      "assistsPer90": 0
+      "shotsOnTarget": 20
     },
     {
       "id": "jamal-musiala",
@@ -563,29 +533,23 @@
       "id": "kylian-mbappe",
       "name": "Kylian Mbappé",
       "position": "ST",
-      "team": "Real Madrid CF",
+      "team": "Paris Saint-Germain",
       "minutes": 1100,
-      "goals": 13,
-      "assists": 1,
+      "goals": 3,
+      "assists": 4,
       "shots": 39,
-      "shotsOnTarget": 20,
-      "playedMatches": 10,
-      "goalsPer90": 117,
-      "assistsPer90": 9
+      "shotsOnTarget": 20
     },
     {
       "id": "ousmane-dembele",
       "name": "Ousmane Dembélé",
       "position": "RW",
-      "team": "Paris Saint-Germain FC",
+      "team": "Paris Saint-Germain",
       "minutes": 1220,
-      "goals": 8,
-      "assists": 5,
+      "goals": 3,
+      "assists": 4,
       "shots": 44,
-      "shotsOnTarget": 22,
-      "playedMatches": 16,
-      "goalsPer90": 45,
-      "assistsPer90": 28.13
+      "shotsOnTarget": 22
     },
     {
       "id": "achraf-hakimi",
@@ -602,29 +566,23 @@
       "id": "vitinha",
       "name": "Vitinha",
       "position": "CB",
-      "team": "Paris Saint-Germain FC",
+      "team": "Paris Saint-Germain",
       "minutes": 1460,
-      "goals": 6,
-      "assists": 1,
+      "goals": 7,
+      "assists": 3,
       "shots": 52,
-      "shotsOnTarget": 27,
-      "playedMatches": 12,
-      "goalsPer90": 45,
-      "assistsPer90": 7.5
+      "shotsOnTarget": 27
     },
     {
       "id": "pierre-emerick-aubameyang",
       "name": "Pierre-Emerick Aubameyang",
       "position": "LW",
-      "team": "Olympique de Marseille",
+      "team": "Marseille",
       "minutes": 1580,
-      "goals": 8,
-      "assists": 5,
+      "goals": 7,
+      "assists": 6,
       "shots": 56,
-      "shotsOnTarget": 29,
-      "playedMatches": 27,
-      "goalsPer90": 26.67,
-      "assistsPer90": 16.67
+      "shotsOnTarget": 29
     },
     {
       "id": "amine-harit",
@@ -663,15 +621,12 @@
       "id": "lautaro-martinez",
       "name": "Lautaro Martínez",
       "position": "ST",
-      "team": "FC Internazionale Milano",
+      "team": "Inter",
       "minutes": 1340,
-      "goals": 14,
-      "assists": 4,
+      "goals": 6,
+      "assists": 5,
       "shots": 48,
-      "shotsOnTarget": 24,
-      "playedMatches": 26,
-      "goalsPer90": 48.46,
-      "assistsPer90": 13.85
+      "shotsOnTarget": 24
     },
     {
       "id": "nicolo-barella",
@@ -688,15 +643,12 @@
       "id": "hakan-calhanoglu",
       "name": "Hakan Çalhanoğlu",
       "position": "CM",
-      "team": "FC Internazionale Milano",
+      "team": "Inter",
       "minutes": 1580,
-      "goals": 8,
-      "assists": 2,
+      "goals": 6,
+      "assists": 4,
       "shots": 56,
-      "shotsOnTarget": 29,
-      "playedMatches": 21,
-      "goalsPer90": 34.29,
-      "assistsPer90": 8.57
+      "shotsOnTarget": 29
     },
     {
       "id": "alessandro-bastoni",
@@ -715,13 +667,10 @@
       "position": "LW",
       "team": "AC Milan",
       "minutes": 1100,
-      "goals": 9,
-      "assists": 2,
+      "goals": 6,
+      "assists": 4,
       "shots": 39,
-      "shotsOnTarget": 20,
-      "playedMatches": 23,
-      "goalsPer90": 35.22,
-      "assistsPer90": 7.83
+      "shotsOnTarget": 20
     },
     {
       "id": "theo-hernandez",
@@ -740,13 +689,10 @@
       "position": "DM",
       "team": "AC Milan",
       "minutes": 1340,
-      "goals": 8,
+      "goals": 5,
       "assists": 3,
       "shots": 48,
-      "shotsOnTarget": 24,
-      "playedMatches": 24,
-      "goalsPer90": 30,
-      "assistsPer90": 11.25
+      "shotsOnTarget": 24
     },
     {
       "id": "mike-maignan",
@@ -763,29 +709,23 @@
       "id": "victor-osimhen",
       "name": "Victor Osimhen",
       "position": "ST",
-      "team": "Galatasaray SK",
+      "team": "Napoli",
       "minutes": 1580,
-      "goals": 7,
-      "assists": 2,
+      "goals": 5,
+      "assists": 6,
       "shots": 56,
-      "shotsOnTarget": 29,
-      "playedMatches": 10,
-      "goalsPer90": 63,
-      "assistsPer90": 18
+      "shotsOnTarget": 29
     },
     {
       "id": "khvicha-kvaratskhelia",
       "name": "Khvicha Kvaratskhelia",
       "position": "RW",
-      "team": "Paris Saint-Germain FC",
+      "team": "Napoli",
       "minutes": 1700,
-      "goals": 7,
-      "assists": 4,
+      "goals": 9,
+      "assists": 6,
       "shots": 61,
-      "shotsOnTarget": 31,
-      "playedMatches": 11,
-      "goalsPer90": 57.27,
-      "assistsPer90": 32.73
+      "shotsOnTarget": 31
     },
     {
       "id": "stanislav-lobotka",

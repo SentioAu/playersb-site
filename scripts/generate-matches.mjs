@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { statSync } from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
@@ -71,6 +72,10 @@ function renderRows(rows) {
 
 async function main() {
   await fs.mkdir(path.dirname(OUT_PATH), { recursive: true });
+  let size = 0;
+  try { size = statSync(DATA_PATH).size; } catch {}
+  console.log(`Reading from: data/fixtures.json, size: ${size} bytes`);
+
   const [layout, raw] = await Promise.all([
     fs.readFile(LAYOUT_PATH, 'utf8'),
     fs.readFile(DATA_PATH, 'utf8').catch(() => '{}'),
@@ -83,16 +88,23 @@ async function main() {
   const tabs = Array.from(grouped.keys()).map((k, idx) => `<a class="button small ${idx ? 'secondary' : ''}" href="#${slug(k)}">${esc(k)}</a>`).join('');
 
   const sections = Array.from(grouped.entries()).map(([name, rows]) => {
-    const finished = rows.filter((m) => m.status === 'FINISHED').slice(0, 30);
-    const upcoming = rows.filter((m) => m.status === 'SCHEDULED').slice(0, 30);
-    const combined = [...finished, ...upcoming];
+    const finished = rows.filter((m) => m.status === 'FINISHED').slice(0, 10);
+    const upcoming = rows.filter((m) => ['SCHEDULED', 'TIMED'].includes(String(m.status))).slice(0, 10);
     return `
       <div class="card" id="${slug(name)}">
         <h3>${esc(name)}</h3>
+        <h4>Recent results</h4>
         <div class="table-wrapper">
           <table class="table">
             <thead><tr><th>Date</th><th>Home</th><th>Score</th><th>Away</th><th>Status</th></tr></thead>
-            <tbody>${renderRows(combined)}</tbody>
+            <tbody>${finished.length ? renderRows(finished) : '<tr><td colspan="5">No finished matches yet.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <h4 style="margin-top:1rem;">Upcoming fixtures</h4>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead><tr><th>Date</th><th>Home</th><th>Score</th><th>Away</th><th>Status</th></tr></thead>
+            <tbody>${upcoming.length ? renderRows(upcoming) : '<tr><td colspan="5">No upcoming fixtures yet.</td></tr>'}</tbody>
           </table>
         </div>
       </div>
