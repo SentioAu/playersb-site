@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-03-30T07:29:43.493Z",
-  "generatedAt": "2026-03-30T07:29:43.493Z",
+  "updatedAt": "2026-03-30T13:22:00.670Z",
+  "generatedAt": "2026-03-30T13:22:00.671Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-30T07:29:43.493Z"
+      "fetchedAt": "2026-03-30T13:22:00.671Z"
     }
   },
   "fixtures": [
