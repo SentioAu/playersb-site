@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-03-31T13:20:54.226Z",
-  "generatedAt": "2026-03-31T13:20:54.226Z",
+  "updatedAt": "2026-03-31T19:04:12.141Z",
+  "generatedAt": "2026-03-31T19:04:12.141Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-03-31T13:20:54.226Z"
+      "fetchedAt": "2026-03-31T19:04:12.141Z"
     }
   },
   "fixtures": [
@@ -18867,7 +18867,7 @@
       "id": 542680,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
-      "date": "2026-04-25T15:00:00Z",
+      "date": "2026-04-25T13:00:00Z",
       "status": "TIMED",
       "home": "Olympique Lyonnais",
       "away": "AJ Auxerre",
