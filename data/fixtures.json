@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-02T13:15:48.102Z",
-  "generatedAt": "2026-04-02T13:15:48.103Z",
+  "updatedAt": "2026-04-02T18:59:03.662Z",
+  "generatedAt": "2026-04-02T18:59:03.662Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-02T13:15:48.103Z"
+      "fetchedAt": "2026-04-02T18:59:03.662Z"
     }
   },
   "fixtures": [
@@ -3849,6 +3849,17 @@
       "awayScore": null
     },
     {
+      "id": 538140,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-05-09T11:30:00Z",
+      "status": "TIMED",
+      "home": "Liverpool FC",
+      "away": "Chelsea FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
       "id": 538135,
       "competitionCode": "PL",
       "competition": "Premier League",
@@ -3904,21 +3915,10 @@
       "awayScore": null
     },
     {
-      "id": 538140,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-09T14:00:00Z",
-      "status": "TIMED",
-      "home": "Liverpool FC",
-      "away": "Chelsea FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 538141,
       "competitionCode": "PL",
       "competition": "Premier League",
-      "date": "2026-05-09T14:00:00Z",
+      "date": "2026-05-09T16:30:00Z",
       "status": "TIMED",
       "home": "Manchester City FC",
       "away": "Brentford FC",
@@ -3929,7 +3929,7 @@
       "id": 538142,
       "competitionCode": "PL",
       "competition": "Premier League",
-      "date": "2026-05-09T14:00:00Z",
+      "date": "2026-05-10T13:00:00Z",
       "status": "TIMED",
       "home": "Nottingham Forest FC",
       "away": "Newcastle United FC",
@@ -3937,24 +3937,24 @@
       "awayScore": null
     },
     {
-      "id": 538143,
+      "id": 538144,
       "competitionCode": "PL",
       "competition": "Premier League",
-      "date": "2026-05-09T14:00:00Z",
+      "date": "2026-05-10T15:30:00Z",
       "status": "TIMED",
-      "home": "Tottenham Hotspur FC",
-      "away": "Leeds United FC",
+      "home": "West Ham United FC",
+      "away": "Arsenal FC",
       "homeScore": null,
       "awayScore": null
     },
     {
-      "id": 538144,
+      "id": 538143,
       "competitionCode": "PL",
       "competition": "Premier League",
-      "date": "2026-05-09T14:00:00Z",
+      "date": "2026-05-11T19:00:00Z",
       "status": "TIMED",
-      "home": "West Ham United FC",
-      "away": "Arsenal FC",
+      "home": "Tottenham Hotspur FC",
+      "away": "Leeds United FC",
       "homeScore": null,
       "awayScore": null
     },
