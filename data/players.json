@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T13:05:42.287Z",
+  "generated_at": "2026-04-03T18:49:48.850Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -583,9 +583,9 @@
       "assists": 5,
       "shots": 44,
       "shotsOnTarget": 22,
-      "playedMatches": 16,
-      "goalsPer90": 45,
-      "assistsPer90": 28.13
+      "playedMatches": 17,
+      "goalsPer90": 42.35,
+      "assistsPer90": 26.47
     },
     {
       "id": "achraf-hakimi",

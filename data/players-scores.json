@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-03T13:05:42.208Z",
-  "generatedAt": "2026-04-03T13:05:42.208Z",
+  "updatedAt": "2026-04-03T18:49:48.765Z",
+  "generatedAt": "2026-04-03T18:49:48.765Z",
   "source": "football-data.org",
   "players": [
     {
@@ -342,7 +342,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Alexander Sørloth",
@@ -430,7 +430,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Cucho Hernández",
@@ -1024,7 +1024,7 @@
       "goals": 8,
       "assists": 5,
       "penalties": 2,
-      "playedMatches": 16
+      "playedMatches": 17
     },
     {
       "name": "Yann Gboho",
@@ -1035,7 +1035,7 @@
       "goals": 8,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Romain Del Castillo",
