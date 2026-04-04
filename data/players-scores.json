@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-04T07:03:11.046Z",
-  "generatedAt": "2026-04-04T07:03:11.046Z",
+  "updatedAt": "2026-04-04T12:57:46.471Z",
+  "generatedAt": "2026-04-04T12:57:46.471Z",
   "source": "football-data.org",
   "players": [
     {
@@ -298,7 +298,7 @@
       "goals": 12,
       "assists": 3,
       "penalties": 5,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Raphinha",
@@ -628,7 +628,7 @@
       "goals": 7,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Domenico Berardi",
@@ -639,7 +639,7 @@
       "goals": 7,
       "assists": 4,
       "penalties": 2,
-      "playedMatches": 20
+      "playedMatches": 21
     },
     {
       "name": "Riccardo Orsolini",
@@ -694,7 +694,7 @@
       "goals": 15,
       "assists": 9,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Sehrou Guirassy",
@@ -716,7 +716,7 @@
       "goals": 12,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Michael Olise",
@@ -727,7 +727,7 @@
       "goals": 11,
       "assists": 17,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Haris Tabaković",
@@ -738,7 +738,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Nadiem Amiri",
@@ -771,7 +771,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 3,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Yan Diomandé",
@@ -782,7 +782,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Patrik Schick",
@@ -793,7 +793,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Ermedin Demirovic",
@@ -826,7 +826,7 @@
       "goals": 8,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Mohammed Amoura",
@@ -837,7 +837,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Serge Gnabry",
@@ -848,7 +848,7 @@
       "goals": 8,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Igor Matanovic",
@@ -859,7 +859,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Maximilian Beier",
@@ -881,7 +881,7 @@
       "goals": 7,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 22
+      "playedMatches": 23
     },
     {
       "name": "Joaquín Panichelli",

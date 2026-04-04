@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-04T07:03:11.041Z",
-  "generatedAt": "2026-04-04T07:03:11.041Z",
+  "updatedAt": "2026-04-04T12:57:46.465Z",
+  "generatedAt": "2026-04-04T12:57:46.466Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-04T07:03:11.041Z"
+      "fetchedAt": "2026-04-04T12:57:46.466Z"
     }
   },
   "fixtures": [
@@ -7384,11 +7384,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-04T12:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "home": "Real Sociedad de Fútbol",
       "away": "Levante UD",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 544505,

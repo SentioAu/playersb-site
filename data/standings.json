@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-04T07:03:11.044Z",
-  "generatedAt": "2026-04-04T07:03:11.044Z",
+  "updatedAt": "2026-04-04T12:57:46.471Z",
+  "generatedAt": "2026-04-04T12:57:46.471Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-04T07:03:11.044Z"
+      "fetchedAt": "2026-04-04T12:57:46.471Z"
     }
   },
   "standings": {
@@ -353,14 +353,14 @@
       {
         "position": 7,
         "team": "Real Sociedad de Fútbol",
-        "played": 29,
+        "played": 30,
         "won": 10,
-        "draw": 8,
+        "draw": 9,
         "lost": 11,
         "goals": 44,
         "goalsAgainst": 45,
         "gd": -1,
-        "points": 38,
+        "points": 39,
         "form": null
       },
       {
@@ -509,14 +509,14 @@
       {
         "position": 19,
         "team": "Levante UD",
-        "played": 29,
+        "played": 30,
         "won": 6,
-        "draw": 8,
+        "draw": 9,
         "lost": 15,
         "goals": 34,
         "goalsAgainst": 48,
         "gd": -14,
-        "points": 26,
+        "points": 27,
         "form": null
       },
       {
