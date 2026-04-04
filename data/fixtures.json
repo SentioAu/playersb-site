@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-04T12:57:46.465Z",
-  "generatedAt": "2026-04-04T12:57:46.466Z",
+  "updatedAt": "2026-04-04T18:44:05.057Z",
+  "generatedAt": "2026-04-04T18:44:05.057Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-04T12:57:46.466Z"
+      "fetchedAt": "2026-04-04T18:44:05.057Z"
     }
   },
   "fixtures": [
@@ -7384,10 +7384,10 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-04T12:00:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "home": "Real Sociedad de Fútbol",
       "away": "Levante UD",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0
     },
     {
@@ -7395,22 +7395,22 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-04T14:15:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "RCD Mallorca",
       "away": "Real Madrid CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 544503,
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-04T16:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Real Betis Balompié",
       "away": "RCD Espanyol de Barcelona",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 544502,
@@ -11663,22 +11663,22 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-04T13:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "US Sassuolo Calcio",
       "away": "Cagliari Calcio",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 537115,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-04T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Hellas Verona FC",
       "away": "ACF Fiorentina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537118,
@@ -15216,77 +15216,77 @@
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "SC Freiburg",
       "away": "FC Bayern München",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": 540651,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "TSG 1899 Hoffenheim",
       "away": "1. FSV Mainz 05",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 540652,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "SV Werder Bremen",
       "away": "RB Leipzig",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 540653,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Bayer 04 Leverkusen",
       "away": "VfL Wolfsburg",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 3
     },
     {
       "id": 540654,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Hamburger SV",
       "away": "FC Augsburg",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 540656,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Borussia Mönchengladbach",
       "away": "1. FC Heidenheim 1846",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": 540650,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-04T16:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "VfB Stuttgart",
       "away": "Borussia Dortmund",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 2
     },
     {
       "id": 540655,
@@ -18582,22 +18582,22 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-04T15:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "RC Strasbourg Alsace",
       "away": "OGC Nice",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 542657,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-04T17:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Stade Brestois 29",
       "away": "Stade Rennais FC 1901",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 4
     },
     {
       "id": 542653,
