@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-03T18:49:48.759Z",
-  "generatedAt": "2026-04-03T18:49:48.759Z",
+  "updatedAt": "2026-04-04T02:10:00.265Z",
+  "generatedAt": "2026-04-04T02:10:00.265Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-03T18:49:48.759Z"
+      "fetchedAt": "2026-04-04T02:10:00.265Z"
     }
   },
   "fixtures": [
@@ -7373,11 +7373,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-03T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Rayo Vallecano de Madrid",
       "away": "Elche CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 544510,
@@ -18571,11 +18571,11 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-03T18:45:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Paris Saint-Germain FC",
       "away": "Toulouse FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 542655,

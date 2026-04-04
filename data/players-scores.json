@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-03T18:49:48.765Z",
-  "generatedAt": "2026-04-03T18:49:48.765Z",
+  "updatedAt": "2026-04-04T02:10:00.271Z",
+  "generatedAt": "2026-04-04T02:10:00.271Z",
   "source": "football-data.org",
   "players": [
     {
@@ -950,6 +950,17 @@
       "playedMatches": 24
     },
     {
+      "name": "Ousmane Dembélé",
+      "team": "Paris Saint-Germain FC",
+      "competition": "Ligue 1",
+      "nationality": "France",
+      "position": "",
+      "goals": 10,
+      "assists": 5,
+      "penalties": 2,
+      "playedMatches": 17
+    },
+    {
       "name": "Pavel Šulc",
       "team": "Olympique Lyonnais",
       "competition": "Ligue 1",
@@ -1014,17 +1025,6 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 22
-    },
-    {
-      "name": "Ousmane Dembélé",
-      "team": "Paris Saint-Germain FC",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 8,
-      "assists": 5,
-      "penalties": 2,
-      "playedMatches": 17
     },
     {
       "name": "Yann Gboho",
