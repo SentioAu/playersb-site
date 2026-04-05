@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-05T12:59:42.388Z",
-  "generatedAt": "2026-04-05T12:59:42.388Z",
+  "updatedAt": "2026-04-05T18:45:34.409Z",
+  "generatedAt": "2026-04-05T18:45:34.409Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-05T12:59:42.388Z"
+      "fetchedAt": "2026-04-05T18:45:34.409Z"
     }
   },
   "scorers": [
@@ -271,7 +271,7 @@
       "goals": 14,
       "assists": 0,
       "penalties": 4,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Ferrán Torres",
@@ -293,7 +293,7 @@
       "goals": 12,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Mikel Oyarzabal",
@@ -370,7 +370,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Vladyslav Vanat",
@@ -414,7 +414,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Julián Álvarez",
@@ -458,7 +458,7 @@
       "goals": 14,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Anastasios Douvikas",
@@ -568,7 +568,7 @@
       "goals": 8,
       "assists": 2,
       "penalties": 4,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Giovanni Simeone",
@@ -579,7 +579,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Nikola Krstović",
@@ -626,6 +626,17 @@
       "playedMatches": 25
     },
     {
+      "name": "Federico Bonazzoli",
+      "team": "US Cremonese",
+      "competition": "Serie A",
+      "nationality": "Italy",
+      "position": "",
+      "goals": 7,
+      "assists": 2,
+      "penalties": 2,
+      "playedMatches": 30
+    },
+    {
       "name": "Marcus Thuram-Ulien",
       "team": "FC Internazionale Milano",
       "competition": "Serie A",
@@ -634,7 +645,7 @@
       "goals": 7,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Domenico Berardi",
@@ -656,17 +667,6 @@
       "goals": 7,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 31
-    },
-    {
-      "name": "Santiago Castro",
-      "team": "Bologna FC 1909",
-      "competition": "Serie A",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 7,
-      "assists": 2,
-      "penalties": 0,
       "playedMatches": 31
     },
     {
@@ -777,7 +777,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Andrej Kramarić",
@@ -789,6 +789,17 @@
       "assists": 5,
       "penalties": 3,
       "playedMatches": 28
+    },
+    {
+      "name": "Jonathan Burkardt",
+      "team": "Eintracht Frankfurt",
+      "competition": "Bundesliga",
+      "nationality": "Germany",
+      "position": "",
+      "goals": 10,
+      "assists": 0,
+      "penalties": 2,
+      "playedMatches": 16
     },
     {
       "name": "Yan Diomandé",
@@ -822,17 +833,6 @@
       "assists": 2,
       "penalties": 1,
       "playedMatches": 19
-    },
-    {
-      "name": "Jonathan Burkardt",
-      "team": "Eintracht Frankfurt",
-      "competition": "Bundesliga",
-      "nationality": "Germany",
-      "position": "",
-      "goals": 9,
-      "assists": 0,
-      "penalties": 2,
-      "playedMatches": 15
     },
     {
       "name": "Mohammed Amoura",
@@ -997,7 +997,18 @@
       "goals": 9,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 24
+      "playedMatches": 25
+    },
+    {
+      "name": "Lassine Sinayoko",
+      "team": "AJ Auxerre",
+      "competition": "Ligue 1",
+      "nationality": "Mali",
+      "position": "",
+      "goals": 8,
+      "assists": 3,
+      "penalties": 3,
+      "playedMatches": 26
     },
     {
       "name": "Pierre-Emerick Aubameyang",
@@ -1008,7 +1019,7 @@
       "goals": 8,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Ilan Kebbal",
@@ -1019,7 +1030,7 @@
       "goals": 8,
       "assists": 4,
       "penalties": 3,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Pablo Pagis",
@@ -1028,9 +1039,9 @@
       "nationality": "France",
       "position": "",
       "goals": 8,
-      "assists": 1,
+      "assists": 2,
       "penalties": 1,
-      "playedMatches": 22
+      "playedMatches": 23
     },
     {
       "name": "Yann Gboho",
@@ -1063,7 +1074,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 3,
-      "playedMatches": 19
+      "playedMatches": 20
     },
     {
       "name": "Martial Godo",
@@ -1077,6 +1088,17 @@
       "playedMatches": 25
     },
     {
+      "name": "Ahmadou Bamba Dieng",
+      "team": "FC Lorient",
+      "competition": "Ligue 1",
+      "nationality": "Senegal",
+      "position": "",
+      "goals": 8,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 21
+    },
+    {
       "name": "Hákon Haraldsson",
       "team": "Lille OSC",
       "competition": "Ligue 1",
@@ -1086,28 +1108,6 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 26
-    },
-    {
-      "name": "Lassine Sinayoko",
-      "team": "AJ Auxerre",
-      "competition": "Ligue 1",
-      "nationality": "Mali",
-      "position": "",
-      "goals": 7,
-      "assists": 3,
-      "penalties": 3,
-      "playedMatches": 25
-    },
-    {
-      "name": "Corentin Tolisso",
-      "team": "Olympique Lyonnais",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 7,
-      "assists": 1,
-      "penalties": 1,
-      "playedMatches": 25
     },
     {
       "name": "Kylian Mbappé",
