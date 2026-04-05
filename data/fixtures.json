@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-05T07:08:15.793Z",
-  "generatedAt": "2026-04-05T07:08:15.794Z",
+  "updatedAt": "2026-04-05T12:59:42.382Z",
+  "generatedAt": "2026-04-05T12:59:42.383Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-05T07:08:15.794Z"
+      "fetchedAt": "2026-04-05T12:59:42.383Z"
     }
   },
   "fixtures": [
@@ -7428,11 +7428,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-05T12:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "home": "Getafe CF",
       "away": "Athletic Club",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 544508,

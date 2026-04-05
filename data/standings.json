@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-05T07:08:15.798Z",
-  "generatedAt": "2026-04-05T07:08:15.798Z",
+  "updatedAt": "2026-04-05T12:59:42.387Z",
+  "generatedAt": "2026-04-05T12:59:42.387Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-05T07:08:15.798Z"
+      "fetchedAt": "2026-04-05T12:59:42.387Z"
     }
   },
   "standings": {
@@ -366,14 +366,14 @@
       {
         "position": 8,
         "team": "Getafe CF",
-        "played": 29,
-        "won": 11,
+        "played": 30,
+        "won": 12,
         "draw": 5,
         "lost": 13,
-        "goals": 25,
+        "goals": 26,
         "goalsAgainst": 31,
-        "gd": -6,
-        "points": 38,
+        "gd": -5,
+        "points": 41,
         "form": null
       },
       {
@@ -392,13 +392,13 @@
       {
         "position": 10,
         "team": "Athletic Club",
-        "played": 29,
+        "played": 30,
         "won": 11,
         "draw": 5,
-        "lost": 13,
+        "lost": 14,
         "goals": 32,
-        "goalsAgainst": 41,
-        "gd": -9,
+        "goalsAgainst": 42,
+        "gd": -10,
         "points": 38,
         "form": null
       },
