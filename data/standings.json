@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-04T18:44:05.062Z",
-  "generatedAt": "2026-04-04T18:44:05.062Z",
+  "updatedAt": "2026-04-05T02:31:26.701Z",
+  "generatedAt": "2026-04-05T02:31:26.701Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-04T18:44:05.062Z"
+      "fetchedAt": "2026-04-05T02:31:26.701Z"
     }
   },
   "standings": {
@@ -275,14 +275,14 @@
       {
         "position": 1,
         "team": "FC Barcelona",
-        "played": 29,
-        "won": 24,
+        "played": 30,
+        "won": 25,
         "draw": 1,
         "lost": 4,
-        "goals": 78,
-        "goalsAgainst": 28,
-        "gd": 50,
-        "points": 73,
+        "goals": 80,
+        "goalsAgainst": 29,
+        "gd": 51,
+        "points": 76,
         "form": null
       },
       {
@@ -314,13 +314,13 @@
       {
         "position": 4,
         "team": "Club Atlético de Madrid",
-        "played": 29,
+        "played": 30,
         "won": 17,
         "draw": 6,
-        "lost": 6,
-        "goals": 49,
-        "goalsAgainst": 28,
-        "gd": 21,
+        "lost": 7,
+        "goals": 50,
+        "goalsAgainst": 30,
+        "gd": 20,
         "points": 57,
         "form": null
       },
@@ -628,14 +628,14 @@
       {
         "position": 8,
         "team": "SS Lazio",
-        "played": 30,
+        "played": 31,
         "won": 11,
-        "draw": 10,
+        "draw": 11,
         "lost": 9,
-        "goals": 31,
-        "goalsAgainst": 28,
+        "goals": 32,
+        "goalsAgainst": 29,
         "gd": 3,
-        "points": 43,
+        "points": 44,
         "form": null
       },
       {
@@ -680,14 +680,14 @@
       {
         "position": 12,
         "team": "Parma Calcio 1913",
-        "played": 30,
+        "played": 31,
         "won": 8,
-        "draw": 10,
+        "draw": 11,
         "lost": 12,
-        "goals": 21,
-        "goalsAgainst": 38,
+        "goals": 22,
+        "goalsAgainst": 39,
         "gd": -17,
-        "points": 34,
+        "points": 35,
         "form": null
       },
       {
@@ -1048,18 +1048,31 @@
       {
         "position": 2,
         "team": "Racing Club de Lens",
-        "played": 27,
+        "played": 28,
         "won": 19,
         "draw": 2,
-        "lost": 6,
+        "lost": 7,
         "goals": 54,
-        "goalsAgainst": 24,
-        "gd": 30,
+        "goalsAgainst": 27,
+        "gd": 27,
         "points": 59,
         "form": null
       },
       {
         "position": 3,
+        "team": "Lille OSC",
+        "played": 28,
+        "won": 15,
+        "draw": 5,
+        "lost": 8,
+        "goals": 45,
+        "goalsAgainst": 34,
+        "gd": 11,
+        "points": 50,
+        "form": null
+      },
+      {
+        "position": 4,
         "team": "Olympique de Marseille",
         "played": 27,
         "won": 15,
@@ -1072,7 +1085,7 @@
         "form": null
       },
       {
-        "position": 4,
+        "position": 5,
         "team": "Olympique Lyonnais",
         "played": 27,
         "won": 14,
@@ -1085,27 +1098,14 @@
         "form": null
       },
       {
-        "position": 5,
-        "team": "Lille OSC",
-        "played": 27,
-        "won": 14,
-        "draw": 5,
-        "lost": 8,
-        "goals": 42,
-        "goalsAgainst": 34,
-        "gd": 8,
-        "points": 47,
-        "form": null
-      },
-      {
         "position": 6,
         "team": "Stade Rennais FC 1901",
         "played": 28,
         "won": 13,
         "draw": 8,
         "lost": 7,
-        "goals": 46,
-        "goalsAgainst": 39,
+        "goals": 47,
+        "goalsAgainst": 40,
         "gd": 7,
         "points": 47,
         "form": null
@@ -1169,8 +1169,8 @@
         "won": 10,
         "draw": 6,
         "lost": 12,
-        "goals": 36,
-        "goalsAgainst": 42,
+        "goals": 37,
+        "goalsAgainst": 43,
         "gd": -6,
         "points": 36,
         "form": null
