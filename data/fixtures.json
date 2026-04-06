@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-06T13:12:47.718Z",
-  "generatedAt": "2026-04-06T13:12:47.718Z",
+  "updatedAt": "2026-04-06T19:02:03.458Z",
+  "generatedAt": "2026-04-06T19:02:03.459Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-06T13:12:47.718Z"
+      "fetchedAt": "2026-04-06T19:02:03.459Z"
     }
   },
   "fixtures": [
@@ -3651,17 +3651,6 @@
       "awayScore": null
     },
     {
-      "id": 538115,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-04-25T14:00:00Z",
-      "status": "TIMED",
-      "home": "AFC Bournemouth",
-      "away": "Leeds United FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 538121,
       "competitionCode": "PL",
       "competition": "Premier League",
@@ -3702,28 +3691,6 @@
       "status": "TIMED",
       "home": "Arsenal FC",
       "away": "Newcastle United FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538119,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-04-26T13:00:00Z",
-      "status": "TIMED",
-      "home": "Burnley FC",
-      "away": "Manchester City FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538117,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-04-26T15:30:00Z",
-      "status": "TIMED",
-      "home": "Brighton & Hove Albion FC",
-      "away": "Chelsea FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -11740,33 +11707,33 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-06T13:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "US Lecce",
       "away": "Atalanta BC",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 3
     },
     {
       "id": 537117,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-06T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Juventus FC",
       "away": "Genoa CFC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": 537121,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-06T18:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "SSC Napoli",
       "away": "AC Milan",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537127,

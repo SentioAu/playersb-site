@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-06T13:12:47.723Z",
-  "generatedAt": "2026-04-06T13:12:47.723Z",
+  "updatedAt": "2026-04-06T19:02:03.464Z",
+  "generatedAt": "2026-04-06T19:02:03.464Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-06T13:12:47.723Z"
+      "fetchedAt": "2026-04-06T19:02:03.464Z"
     }
   },
   "standings": {
@@ -301,14 +301,14 @@
       {
         "position": 3,
         "team": "Villarreal CF",
-        "played": 29,
+        "played": 30,
         "won": 18,
-        "draw": 4,
+        "draw": 5,
         "lost": 7,
         "goals": 54,
         "goalsAgainst": 34,
         "gd": 20,
-        "points": 58,
+        "points": 59,
         "form": null
       },
       {
@@ -444,14 +444,14 @@
       {
         "position": 14,
         "team": "Girona FC",
-        "played": 29,
+        "played": 30,
         "won": 8,
-        "draw": 10,
+        "draw": 11,
         "lost": 11,
         "goals": 31,
         "goalsAgainst": 44,
         "gd": -13,
-        "points": 34,
+        "points": 35,
         "form": null
       },
       {
@@ -550,27 +550,27 @@
       {
         "position": 2,
         "team": "AC Milan",
-        "played": 30,
+        "played": 31,
         "won": 18,
-        "draw": 9,
+        "draw": 10,
         "lost": 3,
         "goals": 47,
         "goalsAgainst": 23,
         "gd": 24,
-        "points": 63,
+        "points": 64,
         "form": null
       },
       {
         "position": 3,
         "team": "SSC Napoli",
-        "played": 30,
+        "played": 31,
         "won": 19,
-        "draw": 5,
+        "draw": 6,
         "lost": 6,
         "goals": 46,
         "goalsAgainst": 30,
         "gd": 16,
-        "points": 62,
+        "points": 63,
         "form": null
       },
       {
@@ -589,14 +589,14 @@
       {
         "position": 5,
         "team": "Juventus FC",
-        "played": 30,
-        "won": 15,
+        "played": 31,
+        "won": 16,
         "draw": 9,
         "lost": 6,
-        "goals": 52,
+        "goals": 54,
         "goalsAgainst": 29,
-        "gd": 23,
-        "points": 54,
+        "gd": 25,
+        "points": 57,
         "form": null
       },
       {
@@ -616,13 +616,13 @@
         "position": 7,
         "team": "Atalanta BC",
         "played": 31,
-        "won": 13,
-        "draw": 12,
+        "won": 14,
+        "draw": 11,
         "lost": 6,
-        "goals": 41,
+        "goals": 44,
         "goalsAgainst": 27,
-        "gd": 14,
-        "points": 51,
+        "gd": 17,
+        "points": 53,
         "form": null
       },
       {
@@ -706,13 +706,13 @@
       {
         "position": 14,
         "team": "Genoa CFC",
-        "played": 30,
+        "played": 31,
         "won": 8,
         "draw": 9,
-        "lost": 13,
+        "lost": 14,
         "goals": 36,
-        "goalsAgainst": 42,
-        "gd": -6,
+        "goalsAgainst": 44,
+        "gd": -8,
         "points": 33,
         "form": null
       },
@@ -744,19 +744,6 @@
       },
       {
         "position": 17,
-        "team": "US Lecce",
-        "played": 31,
-        "won": 7,
-        "draw": 7,
-        "lost": 17,
-        "goals": 21,
-        "goalsAgainst": 40,
-        "gd": -19,
-        "points": 28,
-        "form": null
-      },
-      {
-        "position": 18,
         "team": "US Cremonese",
         "played": 31,
         "won": 6,
@@ -765,6 +752,19 @@
         "goals": 26,
         "goalsAgainst": 46,
         "gd": -20,
+        "points": 27,
+        "form": null
+      },
+      {
+        "position": 18,
+        "team": "US Lecce",
+        "played": 31,
+        "won": 7,
+        "draw": 6,
+        "lost": 18,
+        "goals": 21,
+        "goalsAgainst": 43,
+        "gd": -22,
         "points": 27,
         "form": null
       },

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-06T13:12:47.724Z",
-  "generatedAt": "2026-04-06T13:12:47.724Z",
+  "updatedAt": "2026-04-06T19:02:03.464Z",
+  "generatedAt": "2026-04-06T19:02:03.464Z",
   "source": "football-data.org",
   "players": [
     {
@@ -386,7 +386,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Georges Mikautadze",
@@ -397,7 +397,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Alberto Moleiro",
@@ -408,7 +408,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Toni Martínez",
@@ -496,7 +496,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 1,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Rasmus Højlund",
@@ -521,6 +521,17 @@
       "playedMatches": 22
     },
     {
+      "name": "Nikola Krstović",
+      "team": "Atalanta BC",
+      "competition": "Serie A",
+      "nationality": "Montenegro",
+      "position": "",
+      "goals": 9,
+      "assists": 4,
+      "penalties": 0,
+      "playedMatches": 31
+    },
+    {
       "name": "Rafael Leão",
       "team": "AC Milan",
       "competition": "Serie A",
@@ -529,7 +540,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Gianluca Scamacca",
@@ -573,7 +584,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Giovanni Simeone",
@@ -585,17 +596,6 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 27
-    },
-    {
-      "name": "Nikola Krstović",
-      "team": "Atalanta BC",
-      "competition": "Serie A",
-      "nationality": "Montenegro",
-      "position": "",
-      "goals": 8,
-      "assists": 4,
-      "penalties": 0,
-      "playedMatches": 31
     },
     {
       "name": "Mateo Pellegrino",
@@ -628,7 +628,7 @@
       "goals": 7,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Federico Bonazzoli",
