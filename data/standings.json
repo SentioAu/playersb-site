@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-06T07:45:17.549Z",
-  "generatedAt": "2026-04-06T07:45:17.549Z",
+  "updatedAt": "2026-04-06T13:12:47.723Z",
+  "generatedAt": "2026-04-06T13:12:47.723Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-06T07:45:17.549Z"
+      "fetchedAt": "2026-04-06T13:12:47.723Z"
     }
   },
   "standings": {
@@ -576,14 +576,14 @@
       {
         "position": 4,
         "team": "Como 1907",
-        "played": 30,
+        "played": 31,
         "won": 16,
-        "draw": 9,
+        "draw": 10,
         "lost": 5,
         "goals": 53,
         "goalsAgainst": 22,
         "gd": 31,
-        "points": 57,
+        "points": 58,
         "form": null
       },
       {
@@ -615,14 +615,14 @@
       {
         "position": 7,
         "team": "Atalanta BC",
-        "played": 30,
+        "played": 31,
         "won": 13,
-        "draw": 11,
+        "draw": 12,
         "lost": 6,
         "goals": 41,
         "goalsAgainst": 27,
         "gd": 14,
-        "points": 50,
+        "points": 51,
         "form": null
       },
       {
@@ -667,14 +667,14 @@
       {
         "position": 11,
         "team": "Udinese Calcio",
-        "played": 30,
+        "played": 31,
         "won": 11,
-        "draw": 6,
+        "draw": 7,
         "lost": 13,
         "goals": 35,
         "goalsAgainst": 42,
         "gd": -7,
-        "points": 39,
+        "points": 40,
         "form": null
       },
       {
@@ -745,14 +745,14 @@
       {
         "position": 17,
         "team": "US Lecce",
-        "played": 30,
+        "played": 31,
         "won": 7,
-        "draw": 6,
+        "draw": 7,
         "lost": 17,
         "goals": 21,
         "goalsAgainst": 40,
         "gd": -19,
-        "points": 27,
+        "points": 28,
         "form": null
       },
       {

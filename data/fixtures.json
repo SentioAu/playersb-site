@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-06T07:45:17.544Z",
-  "generatedAt": "2026-04-06T07:45:17.544Z",
+  "updatedAt": "2026-04-06T13:12:47.718Z",
+  "generatedAt": "2026-04-06T13:12:47.718Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-06T07:45:17.544Z"
+      "fetchedAt": "2026-04-06T13:12:47.718Z"
     }
   },
   "fixtures": [
@@ -11729,22 +11729,22 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-06T10:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Udinese Calcio",
       "away": "Como 1907",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537124,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-06T13:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "US Lecce",
       "away": "Atalanta BC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537117,
