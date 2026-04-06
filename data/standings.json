@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-05T18:45:34.409Z",
-  "generatedAt": "2026-04-05T18:45:34.409Z",
+  "updatedAt": "2026-04-06T02:32:53.620Z",
+  "generatedAt": "2026-04-06T02:32:53.620Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-05T18:45:34.409Z"
+      "fetchedAt": "2026-04-06T02:32:53.620Z"
     }
   },
   "standings": {
@@ -378,6 +378,19 @@
       },
       {
         "position": 9,
+        "team": "CA Osasuna",
+        "played": 30,
+        "won": 10,
+        "draw": 8,
+        "lost": 12,
+        "goals": 36,
+        "goalsAgainst": 37,
+        "gd": -1,
+        "points": 38,
+        "form": null
+      },
+      {
+        "position": 10,
         "team": "RCD Espanyol de Barcelona",
         "played": 30,
         "won": 10,
@@ -390,7 +403,7 @@
         "form": null
       },
       {
-        "position": 10,
+        "position": 11,
         "team": "Athletic Club",
         "played": 30,
         "won": 11,
@@ -400,19 +413,6 @@
         "goalsAgainst": 43,
         "gd": -11,
         "points": 38,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "CA Osasuna",
-        "played": 29,
-        "won": 10,
-        "draw": 7,
-        "lost": 12,
-        "goals": 34,
-        "goalsAgainst": 35,
-        "gd": -1,
-        "points": 37,
         "form": null
       },
       {
@@ -456,6 +456,19 @@
       },
       {
         "position": 15,
+        "team": "Deportivo Alavés",
+        "played": 30,
+        "won": 8,
+        "draw": 8,
+        "lost": 14,
+        "goals": 32,
+        "goalsAgainst": 43,
+        "gd": -11,
+        "points": 32,
+        "form": null
+      },
+      {
+        "position": 16,
         "team": "RCD Mallorca",
         "played": 30,
         "won": 8,
@@ -468,7 +481,7 @@
         "form": null
       },
       {
-        "position": 16,
+        "position": 17,
         "team": "Sevilla FC",
         "played": 30,
         "won": 8,
@@ -477,19 +490,6 @@
         "goals": 37,
         "goalsAgainst": 50,
         "gd": -13,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "Deportivo Alavés",
-        "played": 29,
-        "won": 8,
-        "draw": 7,
-        "lost": 14,
-        "goals": 30,
-        "goalsAgainst": 41,
-        "gd": -11,
         "points": 31,
         "form": null
       },
@@ -537,14 +537,14 @@
       {
         "position": 1,
         "team": "FC Internazionale Milano",
-        "played": 30,
-        "won": 22,
+        "played": 31,
+        "won": 23,
         "draw": 3,
         "lost": 5,
-        "goals": 66,
-        "goalsAgainst": 24,
-        "gd": 42,
-        "points": 69,
+        "goals": 71,
+        "goalsAgainst": 26,
+        "gd": 45,
+        "points": 72,
         "form": null
       },
       {
@@ -602,13 +602,13 @@
       {
         "position": 6,
         "team": "AS Roma",
-        "played": 30,
+        "played": 31,
         "won": 17,
         "draw": 3,
-        "lost": 10,
-        "goals": 40,
-        "goalsAgainst": 23,
-        "gd": 17,
+        "lost": 11,
+        "goals": 42,
+        "goalsAgainst": 28,
+        "gd": 14,
         "points": 54,
         "form": null
       },
@@ -1074,18 +1074,31 @@
       {
         "position": 4,
         "team": "Olympique de Marseille",
-        "played": 27,
+        "played": 28,
         "won": 15,
         "draw": 4,
-        "lost": 8,
-        "goals": 54,
-        "goalsAgainst": 35,
-        "gd": 19,
+        "lost": 9,
+        "goals": 55,
+        "goalsAgainst": 37,
+        "gd": 18,
         "points": 49,
         "form": null
       },
       {
         "position": 5,
+        "team": "AS Monaco FC",
+        "played": 28,
+        "won": 15,
+        "draw": 4,
+        "lost": 9,
+        "goals": 49,
+        "goalsAgainst": 39,
+        "gd": 10,
+        "points": 49,
+        "form": null
+      },
+      {
+        "position": 6,
         "team": "Olympique Lyonnais",
         "played": 28,
         "won": 14,
@@ -1098,7 +1111,7 @@
         "form": null
       },
       {
-        "position": 6,
+        "position": 7,
         "team": "Stade Rennais FC 1901",
         "played": 28,
         "won": 13,
@@ -1108,19 +1121,6 @@
         "goalsAgainst": 40,
         "gd": 7,
         "points": 47,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "AS Monaco FC",
-        "played": 27,
-        "won": 14,
-        "draw": 4,
-        "lost": 9,
-        "goals": 47,
-        "goalsAgainst": 38,
-        "gd": 9,
-        "points": 46,
         "form": null
       },
       {

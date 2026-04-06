@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T18:45:34.497Z",
+  "generated_at": "2026-04-06T02:32:53.704Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -665,12 +665,12 @@
       "position": "ST",
       "team": "FC Internazionale Milano",
       "minutes": 1340,
-      "goals": 14,
+      "goals": 16,
       "assists": 4,
       "shots": 48,
       "shotsOnTarget": 24,
       "playedMatches": 27,
-      "goalsPer90": 46.67,
+      "goalsPer90": 53.33,
       "assistsPer90": 13.33
     },
     {
@@ -690,13 +690,13 @@
       "position": "CM",
       "team": "FC Internazionale Milano",
       "minutes": 1580,
-      "goals": 8,
-      "assists": 2,
+      "goals": 9,
+      "assists": 3,
       "shots": 56,
       "shotsOnTarget": 29,
       "playedMatches": 22,
-      "goalsPer90": 32.73,
-      "assistsPer90": 8.18
+      "goalsPer90": 36.82,
+      "assistsPer90": 12.27
     },
     {
       "id": "alessandro-bastoni",
