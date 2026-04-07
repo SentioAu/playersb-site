@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-06T19:02:03.458Z",
-  "generatedAt": "2026-04-06T19:02:03.459Z",
+  "updatedAt": "2026-04-07T02:27:57.473Z",
+  "generatedAt": "2026-04-07T02:27:57.473Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-06T19:02:03.459Z"
+      "fetchedAt": "2026-04-07T02:27:57.473Z"
     }
   },
   "fixtures": [
@@ -7439,11 +7439,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-06T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Girona FC",
       "away": "Villarreal CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 544520,
@@ -11729,10 +11729,10 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-06T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "SSC Napoli",
       "away": "AC Milan",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0
     },
     {

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-06T19:02:03.464Z",
-  "generatedAt": "2026-04-06T19:02:03.464Z",
+  "updatedAt": "2026-04-07T02:27:57.478Z",
+  "generatedAt": "2026-04-07T02:27:57.478Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-06T19:02:03.464Z"
+      "fetchedAt": "2026-04-07T02:27:57.478Z"
     }
   },
   "standings": {
@@ -303,12 +303,12 @@
         "team": "Villarreal CF",
         "played": 30,
         "won": 18,
-        "draw": 5,
-        "lost": 7,
+        "draw": 4,
+        "lost": 8,
         "goals": 54,
-        "goalsAgainst": 34,
-        "gd": 20,
-        "points": 59,
+        "goalsAgainst": 35,
+        "gd": 19,
+        "points": 58,
         "form": null
       },
       {
@@ -417,6 +417,19 @@
       },
       {
         "position": 12,
+        "team": "Girona FC",
+        "played": 30,
+        "won": 9,
+        "draw": 10,
+        "lost": 11,
+        "goals": 32,
+        "goalsAgainst": 44,
+        "gd": -12,
+        "points": 37,
+        "form": null
+      },
+      {
+        "position": 13,
         "team": "Rayo Vallecano de Madrid",
         "played": 30,
         "won": 8,
@@ -429,7 +442,7 @@
         "form": null
       },
       {
-        "position": 13,
+        "position": 14,
         "team": "Valencia CF",
         "played": 30,
         "won": 9,
@@ -438,19 +451,6 @@
         "goals": 34,
         "goalsAgainst": 45,
         "gd": -11,
-        "points": 35,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Girona FC",
-        "played": 30,
-        "won": 8,
-        "draw": 11,
-        "lost": 11,
-        "goals": 31,
-        "goalsAgainst": 44,
-        "gd": -13,
         "points": 35,
         "form": null
       },
@@ -549,27 +549,27 @@
       },
       {
         "position": 2,
-        "team": "AC Milan",
+        "team": "SSC Napoli",
         "played": 31,
-        "won": 18,
-        "draw": 10,
-        "lost": 3,
+        "won": 20,
+        "draw": 5,
+        "lost": 6,
         "goals": 47,
-        "goalsAgainst": 23,
-        "gd": 24,
-        "points": 64,
+        "goalsAgainst": 30,
+        "gd": 17,
+        "points": 65,
         "form": null
       },
       {
         "position": 3,
-        "team": "SSC Napoli",
+        "team": "AC Milan",
         "played": 31,
-        "won": 19,
-        "draw": 6,
-        "lost": 6,
-        "goals": 46,
-        "goalsAgainst": 30,
-        "gd": 16,
+        "won": 18,
+        "draw": 9,
+        "lost": 4,
+        "goals": 47,
+        "goalsAgainst": 24,
+        "gd": 23,
         "points": 63,
         "form": null
       },
