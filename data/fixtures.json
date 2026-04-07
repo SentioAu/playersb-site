@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-07T13:21:05.173Z",
-  "generatedAt": "2026-04-07T13:21:05.173Z",
+  "updatedAt": "2026-04-07T19:05:25.489Z",
+  "generatedAt": "2026-04-07T19:05:25.489Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-07T13:21:05.173Z"
+      "fetchedAt": "2026-04-07T19:05:25.489Z"
     }
   },
   "fixtures": [
@@ -21178,11 +21178,11 @@
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-07T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Real Madrid CF",
       "away": "FC Bayern München",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 556721,

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-07T13:21:05.179Z",
-  "generatedAt": "2026-04-07T13:21:05.179Z",
+  "updatedAt": "2026-04-07T19:05:25.495Z",
+  "generatedAt": "2026-04-07T19:05:25.495Z",
   "source": "football-data.org",
   "players": [
     {
@@ -1112,7 +1112,7 @@
       "goals": 13,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Harry Kane",
@@ -1123,7 +1123,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 3,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Anthony Gordon",
@@ -1189,7 +1189,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 9
+      "playedMatches": 10
     },
     {
       "name": "Jens Hauge",
@@ -1277,7 +1277,7 @@
       "goals": 5,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Lamine Yamal",
