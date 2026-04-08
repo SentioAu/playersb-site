@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-08T13:22:12.505Z",
-  "generatedAt": "2026-04-08T13:22:12.505Z",
+  "updatedAt": "2026-04-08T19:18:21.027Z",
+  "generatedAt": "2026-04-08T19:18:21.027Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-08T13:22:12.505Z"
+      "fetchedAt": "2026-04-08T19:18:21.027Z"
     }
   },
   "fixtures": [
@@ -19150,6 +19150,28 @@
       "awayScore": null
     },
     {
+      "id": 542664,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-13T00:00:00Z",
+      "status": "SCHEDULED",
+      "home": "Racing Club de Lens",
+      "away": "Paris Saint-Germain FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542665,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-13T00:00:00Z",
+      "status": "SCHEDULED",
+      "home": "Stade Brestois 29",
+      "away": "RC Strasbourg Alsace",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
       "id": 542703,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
@@ -21211,22 +21233,22 @@
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-08T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Paris Saint-Germain FC",
       "away": "Liverpool FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 556720,
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-08T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "FC Barcelona",
       "away": "Club Atlético de Madrid",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 556722,

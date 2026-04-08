@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-08T13:22:12.510Z",
-  "generatedAt": "2026-04-08T13:22:12.510Z",
+  "updatedAt": "2026-04-08T19:18:21.033Z",
+  "generatedAt": "2026-04-08T19:18:21.033Z",
   "source": "football-data.org",
   "players": [
     {
@@ -1156,7 +1156,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Khvicha Kvaratskhelia",
@@ -1167,7 +1167,7 @@
       "goals": 7,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Victor Osimhen",
@@ -1222,7 +1222,7 @@
       "goals": 6,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 9
+      "playedMatches": 10
     },
     {
       "name": "Vitinha",
@@ -1233,7 +1233,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 12
+      "playedMatches": 13
     },
     {
       "name": "Camilo Durán",
@@ -1255,7 +1255,7 @@
       "goals": 5,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Gorka Guruzeta",
@@ -1288,7 +1288,18 @@
       "goals": 5,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 8
+      "playedMatches": 9
+    },
+    {
+      "name": "Desire Doue",
+      "team": "Paris Saint-Germain FC",
+      "competition": "Champions League",
+      "nationality": "France",
+      "position": "",
+      "goals": 5,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 9
     },
     {
       "name": "Dominik Szoboszlai",
@@ -1299,7 +1310,7 @@
       "goals": 5,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Luis Díaz",
@@ -1311,17 +1322,6 @@
       "assists": 3,
       "penalties": 0,
       "playedMatches": 9
-    },
-    {
-      "name": "Folarin Balogun",
-      "team": "AS Monaco FC",
-      "competition": "Champions League",
-      "nationality": "USA",
-      "position": "",
-      "goals": 5,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 10
     }
   ]
 }

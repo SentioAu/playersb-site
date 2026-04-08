@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T13:22:12.592Z",
+  "generated_at": "2026-04-08T19:18:21.116Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -268,9 +268,9 @@
       "assists": 3,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 10,
-      "goalsPer90": 45,
-      "assistsPer90": 27
+      "playedMatches": 11,
+      "goalsPer90": 40.91,
+      "assistsPer90": 24.55
     },
     {
       "id": "lisandro-martinez",
@@ -365,9 +365,9 @@
       "assists": 3,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 8,
-      "goalsPer90": 56.25,
-      "assistsPer90": 33.75
+      "playedMatches": 9,
+      "goalsPer90": 50,
+      "assistsPer90": 30
     },
     {
       "id": "ronald-araujo",
@@ -608,9 +608,9 @@
       "assists": 1,
       "shots": 52,
       "shotsOnTarget": 27,
-      "playedMatches": 12,
-      "goalsPer90": 45,
-      "assistsPer90": 7.5
+      "playedMatches": 13,
+      "goalsPer90": 41.54,
+      "assistsPer90": 6.92
     },
     {
       "id": "pierre-emerick-aubameyang",
@@ -783,9 +783,9 @@
       "assists": 4,
       "shots": 61,
       "shotsOnTarget": 31,
-      "playedMatches": 11,
-      "goalsPer90": 57.27,
-      "assistsPer90": 32.73
+      "playedMatches": 12,
+      "goalsPer90": 52.5,
+      "assistsPer90": 30
     },
     {
       "id": "stanislav-lobotka",
