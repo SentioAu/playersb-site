@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-07T19:05:25.489Z",
-  "generatedAt": "2026-04-07T19:05:25.489Z",
+  "updatedAt": "2026-04-08T02:28:38.557Z",
+  "generatedAt": "2026-04-08T02:28:38.557Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-07T19:05:25.489Z"
+      "fetchedAt": "2026-04-08T02:28:38.557Z"
     }
   },
   "fixtures": [
@@ -3625,6 +3625,39 @@
       "status": "TIMED",
       "home": "Crystal Palace FC",
       "away": "West Ham United FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 538117,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-04-21T19:00:00Z",
+      "status": "TIMED",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Chelsea FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 538115,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-04-22T19:00:00Z",
+      "status": "TIMED",
+      "home": "AFC Bournemouth",
+      "away": "Leeds United FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 538119,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-04-22T19:00:00Z",
+      "status": "TIMED",
+      "home": "Burnley FC",
+      "away": "Manchester City FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -21178,22 +21211,22 @@
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-07T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Real Madrid CF",
       "away": "FC Bayern München",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 556721,
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-07T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Sporting Clube de Portugal",
       "away": "Arsenal FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 556718,
