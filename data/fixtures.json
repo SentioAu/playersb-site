@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-08T07:21:55.834Z",
-  "generatedAt": "2026-04-08T07:21:55.834Z",
+  "updatedAt": "2026-04-08T13:22:12.505Z",
+  "generatedAt": "2026-04-08T13:22:12.505Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-08T07:21:55.834Z"
+      "fetchedAt": "2026-04-08T13:22:12.505Z"
     }
   },
   "fixtures": [
@@ -19146,28 +19146,6 @@
       "status": "TIMED",
       "home": "Stade Rennais FC 1901",
       "away": "Paris FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 542664,
-      "competitionCode": "FL1",
-      "competition": "Ligue 1",
-      "date": "2026-05-13T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Racing Club de Lens",
-      "away": "Paris Saint-Germain FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 542665,
-      "competitionCode": "FL1",
-      "competition": "Ligue 1",
-      "date": "2026-05-13T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Stade Brestois 29",
-      "away": "RC Strasbourg Alsace",
       "homeScore": null,
       "awayScore": null
     },
