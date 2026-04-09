@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-08T19:18:21.033Z",
-  "generatedAt": "2026-04-08T19:18:21.033Z",
+  "updatedAt": "2026-04-09T02:15:24.639Z",
+  "generatedAt": "2026-04-09T02:15:24.639Z",
   "source": "football-data.org",
   "players": [
     {
@@ -1137,23 +1137,12 @@
       "playedMatches": 12
     },
     {
-      "name": "Erling Haaland",
-      "team": "Manchester City FC",
-      "competition": "Champions League",
-      "nationality": "Norway",
-      "position": "",
-      "goals": 8,
-      "assists": 0,
-      "penalties": 1,
-      "playedMatches": 10
-    },
-    {
       "name": "Julián Álvarez",
       "team": "Club Atlético de Madrid",
       "competition": "Champions League",
       "nationality": "Argentina",
       "position": "",
-      "goals": 8,
+      "goals": 9,
       "assists": 3,
       "penalties": 2,
       "playedMatches": 12
@@ -1164,10 +1153,21 @@
       "competition": "Champions League",
       "nationality": "Georgia",
       "position": "",
-      "goals": 7,
+      "goals": 8,
       "assists": 4,
       "penalties": 0,
       "playedMatches": 12
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Manchester City FC",
+      "competition": "Champions League",
+      "nationality": "Norway",
+      "position": "",
+      "goals": 8,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 10
     },
     {
       "name": "Victor Osimhen",
@@ -1234,6 +1234,17 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 13
+    },
+    {
+      "name": "Alexander Sørloth",
+      "team": "Club Atlético de Madrid",
+      "competition": "Champions League",
+      "nationality": "Norway",
+      "position": "",
+      "goals": 6,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 12
     },
     {
       "name": "Camilo Durán",
@@ -1311,17 +1322,6 @@
       "assists": 4,
       "penalties": 1,
       "playedMatches": 11
-    },
-    {
-      "name": "Luis Díaz",
-      "team": "FC Bayern München",
-      "competition": "Champions League",
-      "nationality": "Colombia",
-      "position": "",
-      "goals": 5,
-      "assists": 3,
-      "penalties": 0,
-      "playedMatches": 9
     }
   ]
 }

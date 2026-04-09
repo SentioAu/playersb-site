@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T19:18:21.116Z",
+  "generated_at": "2026-04-09T02:15:24.719Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -779,12 +779,12 @@
       "position": "RW",
       "team": "Paris Saint-Germain FC",
       "minutes": 1700,
-      "goals": 7,
+      "goals": 8,
       "assists": 4,
       "shots": 61,
       "shotsOnTarget": 31,
       "playedMatches": 12,
-      "goalsPer90": 52.5,
+      "goalsPer90": 60,
       "assistsPer90": 30
     },
     {
