@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-10T13:12:02.916Z",
-  "generatedAt": "2026-04-10T13:12:02.916Z",
+  "updatedAt": "2026-04-10T18:55:17.956Z",
+  "generatedAt": "2026-04-10T18:55:17.956Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-10T13:12:02.916Z"
+      "fetchedAt": "2026-04-10T18:55:17.956Z"
     }
   },
   "standings": {
@@ -851,14 +851,14 @@
       {
         "position": 5,
         "team": "TSG 1899 Hoffenheim",
-        "played": 28,
+        "played": 29,
         "won": 15,
-        "draw": 5,
+        "draw": 6,
         "lost": 8,
         "goals": 55,
         "goalsAgainst": 41,
         "gd": 14,
-        "points": 50,
+        "points": 51,
         "form": null
       },
       {
@@ -915,6 +915,19 @@
       },
       {
         "position": 10,
+        "team": "FC Augsburg",
+        "played": 29,
+        "won": 9,
+        "draw": 6,
+        "lost": 14,
+        "goals": 34,
+        "goalsAgainst": 51,
+        "gd": -17,
+        "points": 33,
+        "form": null
+      },
+      {
+        "position": 11,
         "team": "1. FC Union Berlin",
         "played": 28,
         "won": 8,
@@ -923,19 +936,6 @@
         "goals": 32,
         "goalsAgainst": 47,
         "gd": -15,
-        "points": 32,
-        "form": null
-      },
-      {
-        "position": 11,
-        "team": "FC Augsburg",
-        "played": 28,
-        "won": 9,
-        "draw": 5,
-        "lost": 14,
-        "goals": 34,
-        "goalsAgainst": 51,
-        "gd": -17,
         "points": 32,
         "form": null
       },
@@ -1087,13 +1087,13 @@
       {
         "position": 5,
         "team": "AS Monaco FC",
-        "played": 28,
+        "played": 29,
         "won": 15,
         "draw": 4,
-        "lost": 9,
-        "goals": 49,
-        "goalsAgainst": 39,
-        "gd": 10,
+        "lost": 10,
+        "goals": 50,
+        "goalsAgainst": 42,
+        "gd": 8,
         "points": 49,
         "form": null
       },
@@ -1177,6 +1177,19 @@
       },
       {
         "position": 12,
+        "team": "Paris FC",
+        "played": 29,
+        "won": 8,
+        "draw": 11,
+        "lost": 10,
+        "goals": 36,
+        "goalsAgainst": 45,
+        "gd": -9,
+        "points": 35,
+        "form": null
+      },
+      {
+        "position": 13,
         "team": "Angers SCO",
         "played": 28,
         "won": 9,
@@ -1186,19 +1199,6 @@
         "goalsAgainst": 37,
         "gd": -13,
         "points": 33,
-        "form": null
-      },
-      {
-        "position": 13,
-        "team": "Paris FC",
-        "played": 28,
-        "won": 7,
-        "draw": 11,
-        "lost": 10,
-        "goals": 33,
-        "goalsAgainst": 44,
-        "gd": -11,
-        "points": 32,
         "form": null
       },
       {

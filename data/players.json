@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T13:12:02.995Z",
+  "generated_at": "2026-04-10T18:55:18.036Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -304,9 +304,9 @@
       "assists": 5,
       "shots": 44,
       "shotsOnTarget": 22,
-      "playedMatches": 28,
-      "goalsPer90": 35.36,
-      "assistsPer90": 16.07
+      "playedMatches": 29,
+      "goalsPer90": 34.14,
+      "assistsPer90": 15.52
     },
     {
       "id": "federico-valverde",
@@ -622,9 +622,9 @@
       "assists": 5,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 28,
-      "goalsPer90": 25.71,
-      "assistsPer90": 16.07
+      "playedMatches": 29,
+      "goalsPer90": 24.83,
+      "assistsPer90": 15.52
     },
     {
       "id": "amine-harit",

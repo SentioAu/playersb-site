@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-10T13:12:02.916Z",
-  "generatedAt": "2026-04-10T13:12:02.916Z",
+  "updatedAt": "2026-04-10T18:55:17.957Z",
+  "generatedAt": "2026-04-10T18:55:17.957Z",
   "source": "football-data.org",
   "players": [
     {
@@ -232,7 +232,7 @@
       "goals": 23,
       "assists": 4,
       "penalties": 8,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Vedat Muriqi",
@@ -331,7 +331,7 @@
       "goals": 11,
       "assists": 5,
       "penalties": 4,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Jorge de Frutos",
@@ -620,6 +620,17 @@
       "playedMatches": 27
     },
     {
+      "name": "Donyell Malen",
+      "team": "AS Roma",
+      "competition": "Serie A",
+      "nationality": "Netherlands",
+      "position": "",
+      "goals": 8,
+      "assists": 0,
+      "penalties": 2,
+      "playedMatches": 12
+    },
+    {
       "name": "Scott McTominay",
       "team": "SSC Napoli",
       "competition": "Serie A",
@@ -651,17 +662,6 @@
       "assists": 4,
       "penalties": 2,
       "playedMatches": 21
-    },
-    {
-      "name": "Riccardo Orsolini",
-      "team": "Bologna FC 1909",
-      "competition": "Serie A",
-      "nationality": "Italy",
-      "position": "",
-      "goals": 7,
-      "assists": 1,
-      "penalties": 3,
-      "playedMatches": 31
     },
     {
       "name": "Harry Kane",
@@ -782,7 +782,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 3,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Jonathan Burkardt",
@@ -815,7 +815,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Ermedin Demirovic",
@@ -914,7 +914,7 @@
       "goals": 15,
       "assists": 5,
       "penalties": 5,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Odsonne Edouard",
@@ -926,6 +926,17 @@
       "assists": 3,
       "penalties": 1,
       "playedMatches": 24
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "AS Monaco FC",
+      "competition": "Ligue 1",
+      "nationality": "USA",
+      "position": "",
+      "goals": 11,
+      "assists": 3,
+      "penalties": 2,
+      "playedMatches": 26
     },
     {
       "name": "Wesley Saïd",
@@ -959,17 +970,6 @@
       "assists": 5,
       "penalties": 2,
       "playedMatches": 17
-    },
-    {
-      "name": "Folarin Balogun",
-      "team": "AS Monaco FC",
-      "competition": "Ligue 1",
-      "nationality": "USA",
-      "position": "",
-      "goals": 10,
-      "assists": 3,
-      "penalties": 2,
-      "playedMatches": 25
     },
     {
       "name": "Pavel Šulc",
@@ -1013,7 +1013,7 @@
       "goals": 8,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Ilan Kebbal",
@@ -1024,7 +1024,7 @@
       "goals": 8,
       "assists": 4,
       "penalties": 3,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Pablo Pagis",
@@ -1068,7 +1068,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 3,
-      "playedMatches": 20
+      "playedMatches": 21
     },
     {
       "name": "Martial Godo",
