@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-10T18:55:17.951Z",
-  "generatedAt": "2026-04-10T18:55:17.951Z",
+  "updatedAt": "2026-04-11T02:13:21.120Z",
+  "generatedAt": "2026-04-11T02:13:21.120Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-10T18:55:17.951Z"
+      "fetchedAt": "2026-04-11T02:13:21.120Z"
     }
   },
   "fixtures": [
@@ -3413,11 +3413,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-04-10T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "West Ham United FC",
       "away": "Wolverhampton Wanderers FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 0
     },
     {
       "id": 538097,
@@ -7483,11 +7483,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-10T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Real Madrid CF",
       "away": "Girona FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 544516,
@@ -11773,10 +11773,10 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-10T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "AS Roma",
       "away": "AC Pisa 1909",
-      "homeScore": 0,
+      "homeScore": 3,
       "awayScore": 0
     },
     {
@@ -15315,11 +15315,11 @@
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-10T18:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "FC Augsburg",
       "away": "TSG 1899 Hoffenheim",
       "homeScore": 2,
-      "awayScore": 0
+      "awayScore": 2
     },
     {
       "id": 540659,
@@ -18670,7 +18670,7 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-10T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Paris FC",
       "away": "AS Monaco FC",
       "homeScore": 4,
@@ -18681,11 +18681,11 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-10T19:05:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Olympique de Marseille",
       "away": "FC Metz",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 542658,
@@ -18952,6 +18952,105 @@
       "awayScore": null
     },
     {
+      "id": 542687,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-01T18:45:00Z",
+      "status": "TIMED",
+      "home": "FC Nantes",
+      "away": "Olympique de Marseille",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542692,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-02T15:00:00Z",
+      "status": "TIMED",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Lorient",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542686,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-02T17:00:00Z",
+      "status": "TIMED",
+      "home": "FC Metz",
+      "away": "AS Monaco FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542689,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-02T19:05:00Z",
+      "status": "TIMED",
+      "home": "OGC Nice",
+      "away": "Racing Club de Lens",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542691,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-03T13:00:00Z",
+      "status": "TIMED",
+      "home": "Lille OSC",
+      "away": "Le Havre AC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542685,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-03T15:15:00Z",
+      "status": "TIMED",
+      "home": "AJ Auxerre",
+      "away": "Angers SCO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542688,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-03T15:15:00Z",
+      "status": "TIMED",
+      "home": "Paris FC",
+      "away": "Stade Brestois 29",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542693,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-03T15:15:00Z",
+      "status": "TIMED",
+      "home": "RC Strasbourg Alsace",
+      "away": "Toulouse FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542690,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-03T18:45:00Z",
+      "status": "TIMED",
+      "home": "Olympique Lyonnais",
+      "away": "Stade Rennais FC 1901",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
       "id": 542694,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
@@ -19058,6 +19157,17 @@
       "status": "SCHEDULED",
       "home": "Racing Club de Lens",
       "away": "Paris Saint-Germain FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542665,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-13T18:00:00Z",
+      "status": "TIMED",
+      "home": "Stade Brestois 29",
+      "away": "RC Strasbourg Alsace",
       "homeScore": null,
       "awayScore": null
     },

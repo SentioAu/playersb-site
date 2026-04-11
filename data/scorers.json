@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-10T18:55:17.956Z",
-  "generatedAt": "2026-04-10T18:55:17.956Z",
+  "updatedAt": "2026-04-11T02:13:21.125Z",
+  "generatedAt": "2026-04-11T02:13:21.125Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-10T18:55:17.956Z"
+      "fetchedAt": "2026-04-11T02:13:21.125Z"
     }
   },
   "scorers": [
@@ -516,6 +516,17 @@
       "playedMatches": 26
     },
     {
+      "name": "Donyell Malen",
+      "team": "AS Roma",
+      "competition": "Serie A",
+      "nationality": "Netherlands",
+      "position": "",
+      "goals": 10,
+      "assists": 0,
+      "penalties": 2,
+      "playedMatches": 12
+    },
+    {
       "name": "Hakan Çalhanoğlu",
       "team": "FC Internazionale Milano",
       "competition": "Serie A",
@@ -624,17 +635,6 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 27
-    },
-    {
-      "name": "Donyell Malen",
-      "team": "AS Roma",
-      "competition": "Serie A",
-      "nationality": "Netherlands",
-      "position": "",
-      "goals": 8,
-      "assists": 0,
-      "penalties": 2,
-      "playedMatches": 12
     },
     {
       "name": "Scott McTominay",
@@ -819,7 +819,7 @@
       "nationality": "Kosovo",
       "position": "",
       "goals": 9,
-      "assists": 4,
+      "assists": 5,
       "penalties": 0,
       "playedMatches": 29
     },
@@ -918,7 +918,7 @@
       "nationality": "England",
       "position": "",
       "goals": 15,
-      "assists": 5,
+      "assists": 7,
       "penalties": 5,
       "playedMatches": 28
     },
@@ -989,6 +989,17 @@
       "playedMatches": 24
     },
     {
+      "name": "Pierre-Emerick Aubameyang",
+      "team": "Olympique de Marseille",
+      "competition": "Ligue 1",
+      "nationality": "Gabon",
+      "position": "",
+      "goals": 9,
+      "assists": 5,
+      "penalties": 0,
+      "playedMatches": 29
+    },
+    {
       "name": "Florian Thauvin",
       "team": "Racing Club de Lens",
       "competition": "Ligue 1",
@@ -1009,17 +1020,6 @@
       "assists": 3,
       "penalties": 3,
       "playedMatches": 26
-    },
-    {
-      "name": "Pierre-Emerick Aubameyang",
-      "team": "Olympique de Marseille",
-      "competition": "Ligue 1",
-      "nationality": "Gabon",
-      "position": "",
-      "goals": 8,
-      "assists": 5,
-      "penalties": 0,
-      "playedMatches": 29
     },
     {
       "name": "Ilan Kebbal",

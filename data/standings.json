@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-10T18:55:17.956Z",
-  "generatedAt": "2026-04-10T18:55:17.956Z",
+  "updatedAt": "2026-04-11T02:13:21.124Z",
+  "generatedAt": "2026-04-11T02:13:21.124Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-10T18:55:17.956Z"
+      "fetchedAt": "2026-04-11T02:13:21.124Z"
     }
   },
   "standings": {
@@ -220,6 +220,19 @@
       },
       {
         "position": 17,
+        "team": "West Ham United FC",
+        "played": 32,
+        "won": 8,
+        "draw": 8,
+        "lost": 16,
+        "goals": 40,
+        "goalsAgainst": 57,
+        "gd": -17,
+        "points": 32,
+        "form": null
+      },
+      {
+        "position": 18,
         "team": "Tottenham Hotspur FC",
         "played": 31,
         "won": 7,
@@ -229,19 +242,6 @@
         "goalsAgainst": 50,
         "gd": -10,
         "points": 30,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "West Ham United FC",
-        "played": 31,
-        "won": 7,
-        "draw": 8,
-        "lost": 16,
-        "goals": 36,
-        "goalsAgainst": 57,
-        "gd": -21,
-        "points": 29,
         "form": null
       },
       {
@@ -260,13 +260,13 @@
       {
         "position": 20,
         "team": "Wolverhampton Wanderers FC",
-        "played": 31,
+        "played": 32,
         "won": 3,
         "draw": 8,
-        "lost": 20,
+        "lost": 21,
         "goals": 24,
-        "goalsAgainst": 54,
-        "gd": -30,
+        "goalsAgainst": 58,
+        "gd": -34,
         "points": 17,
         "form": null
       }
@@ -288,14 +288,14 @@
       {
         "position": 2,
         "team": "Real Madrid CF",
-        "played": 30,
+        "played": 31,
         "won": 22,
-        "draw": 3,
+        "draw": 4,
         "lost": 5,
-        "goals": 64,
-        "goalsAgainst": 28,
+        "goals": 65,
+        "goalsAgainst": 29,
         "gd": 36,
-        "points": 69,
+        "points": 70,
         "form": null
       },
       {
@@ -418,14 +418,14 @@
       {
         "position": 12,
         "team": "Girona FC",
-        "played": 30,
+        "played": 31,
         "won": 9,
-        "draw": 10,
+        "draw": 11,
         "lost": 11,
-        "goals": 32,
-        "goalsAgainst": 44,
+        "goals": 33,
+        "goalsAgainst": 45,
         "gd": -12,
-        "points": 37,
+        "points": 38,
         "form": null
       },
       {
@@ -602,14 +602,14 @@
       {
         "position": 6,
         "team": "AS Roma",
-        "played": 31,
-        "won": 17,
+        "played": 32,
+        "won": 18,
         "draw": 3,
         "lost": 11,
-        "goals": 42,
+        "goals": 45,
         "goalsAgainst": 28,
-        "gd": 14,
-        "points": 54,
+        "gd": 17,
+        "points": 57,
         "form": null
       },
       {
@@ -784,13 +784,13 @@
       {
         "position": 20,
         "team": "AC Pisa 1909",
-        "played": 31,
+        "played": 32,
         "won": 2,
         "draw": 12,
-        "lost": 17,
+        "lost": 18,
         "goals": 23,
-        "goalsAgainst": 55,
-        "gd": -32,
+        "goalsAgainst": 58,
+        "gd": -35,
         "points": 18,
         "form": null
       }
@@ -855,8 +855,8 @@
         "won": 15,
         "draw": 6,
         "lost": 8,
-        "goals": 55,
-        "goalsAgainst": 41,
+        "goals": 57,
+        "goalsAgainst": 43,
         "gd": 14,
         "points": 51,
         "form": null
@@ -920,8 +920,8 @@
         "won": 9,
         "draw": 6,
         "lost": 14,
-        "goals": 34,
-        "goalsAgainst": 51,
+        "goals": 36,
+        "goalsAgainst": 53,
         "gd": -17,
         "points": 33,
         "form": null
@@ -1060,6 +1060,19 @@
       },
       {
         "position": 3,
+        "team": "Olympique de Marseille",
+        "played": 29,
+        "won": 16,
+        "draw": 4,
+        "lost": 9,
+        "goals": 58,
+        "goalsAgainst": 38,
+        "gd": 20,
+        "points": 52,
+        "form": null
+      },
+      {
+        "position": 4,
         "team": "Lille OSC",
         "played": 28,
         "won": 15,
@@ -1072,19 +1085,6 @@
         "form": null
       },
       {
-        "position": 4,
-        "team": "Olympique de Marseille",
-        "played": 28,
-        "won": 15,
-        "draw": 4,
-        "lost": 9,
-        "goals": 55,
-        "goalsAgainst": 37,
-        "gd": 18,
-        "points": 49,
-        "form": null
-      },
-      {
         "position": 5,
         "team": "AS Monaco FC",
         "played": 29,
@@ -1092,8 +1092,8 @@
         "draw": 4,
         "lost": 10,
         "goals": 50,
-        "goalsAgainst": 42,
-        "gd": 8,
+        "goalsAgainst": 43,
+        "gd": 7,
         "points": 49,
         "form": null
       },
@@ -1182,9 +1182,9 @@
         "won": 8,
         "draw": 11,
         "lost": 10,
-        "goals": 36,
+        "goals": 37,
         "goalsAgainst": 45,
-        "gd": -9,
+        "gd": -8,
         "points": 35,
         "form": null
       },
@@ -1256,13 +1256,13 @@
       {
         "position": 18,
         "team": "FC Metz",
-        "played": 28,
+        "played": 29,
         "won": 3,
         "draw": 6,
-        "lost": 19,
-        "goals": 25,
-        "goalsAgainst": 60,
-        "gd": -35,
+        "lost": 20,
+        "goals": 26,
+        "goalsAgainst": 63,
+        "gd": -37,
         "points": 15,
         "form": null
       }

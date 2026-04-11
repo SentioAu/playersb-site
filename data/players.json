@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T18:55:18.036Z",
+  "generated_at": "2026-04-11T02:13:21.203Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -618,12 +618,12 @@
       "position": "LW",
       "team": "Olympique de Marseille",
       "minutes": 1580,
-      "goals": 8,
+      "goals": 9,
       "assists": 5,
       "shots": 56,
       "shotsOnTarget": 29,
       "playedMatches": 29,
-      "goalsPer90": 24.83,
+      "goalsPer90": 27.93,
       "assistsPer90": 15.52
     },
     {
