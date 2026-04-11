@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-11T12:59:47.582Z",
-  "generatedAt": "2026-04-11T12:59:47.582Z",
+  "updatedAt": "2026-04-11T18:45:47.705Z",
+  "generatedAt": "2026-04-11T18:45:47.705Z",
   "source": "football-data.org",
   "players": [
     {
@@ -20,9 +20,9 @@
       "competition": "Premier League",
       "nationality": "Brazil",
       "position": "",
-      "goals": 19,
+      "goals": 21,
       "assists": 1,
-      "penalties": 6,
+      "penalties": 7,
       "playedMatches": 32
     },
     {
@@ -67,7 +67,7 @@
       "goals": 12,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Hugo Ekitike",
@@ -78,7 +78,7 @@
       "goals": 11,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Dominic Calvert-Lewin",
@@ -100,7 +100,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Eli Kroupi",
@@ -177,7 +177,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 4,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Ollie Watkins",
@@ -246,6 +246,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Lamine Yamal",
+      "team": "FC Barcelona",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 15,
+      "assists": 11,
+      "penalties": 2,
+      "playedMatches": 27
+    },
+    {
       "name": "Ante Budimir",
       "team": "CA Osasuna",
       "competition": "La Liga",
@@ -257,26 +268,15 @@
       "playedMatches": 29
     },
     {
-      "name": "Lamine Yamal",
-      "team": "FC Barcelona",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 14,
-      "assists": 9,
-      "penalties": 2,
-      "playedMatches": 26
-    },
-    {
       "name": "Ferrán Torres",
       "team": "FC Barcelona",
       "competition": "La Liga",
       "nationality": "Spain",
       "position": "",
-      "goals": 12,
+      "goals": 14,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Borja Iglesias",
@@ -309,7 +309,7 @@
       "goals": 12,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Raphinha",
@@ -334,6 +334,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Lucas Boyé",
+      "team": "Deportivo Alavés",
+      "competition": "La Liga",
+      "nationality": "Argentina",
+      "position": "",
+      "goals": 11,
+      "assists": 1,
+      "penalties": 3,
+      "playedMatches": 26
+    },
+    {
       "name": "Jorge de Frutos",
       "team": "Rayo Vallecano de Madrid",
       "competition": "La Liga",
@@ -353,18 +364,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 29
-    },
-    {
-      "name": "Lucas Boyé",
-      "team": "Deportivo Alavés",
-      "competition": "La Liga",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 10,
-      "assists": 1,
-      "penalties": 3,
-      "playedMatches": 26
+      "playedMatches": 30
     },
     {
       "name": "Hugo Duro",
@@ -375,7 +375,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Vladyslav Vanat",
@@ -430,7 +430,7 @@
       "goals": 8,
       "assists": 4,
       "penalties": 2,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Rafael Mir",
@@ -441,7 +441,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Lautaro Martínez",
@@ -485,7 +485,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 4,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Kenan Yıldız",
@@ -496,7 +496,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Rasmus Højlund",
@@ -532,6 +532,17 @@
       "playedMatches": 22
     },
     {
+      "name": "Giovanni Simeone",
+      "team": "Torino FC",
+      "competition": "Serie A",
+      "nationality": "Argentina",
+      "position": "",
+      "goals": 9,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 28
+    },
+    {
       "name": "Nikola Krstović",
       "team": "Atalanta BC",
       "competition": "Serie A",
@@ -540,7 +551,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Rafael Leão",
@@ -551,7 +562,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Gianluca Scamacca",
@@ -562,7 +573,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Marcus Thuram-Ulien",
@@ -595,18 +606,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 25
-    },
-    {
-      "name": "Giovanni Simeone",
-      "team": "Torino FC",
-      "competition": "Serie A",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 8,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 26
     },
     {
       "name": "Mateo Pellegrino",
@@ -672,7 +672,7 @@
       "goals": 31,
       "assists": 4,
       "penalties": 10,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Deniz Undav",
@@ -694,7 +694,7 @@
       "goals": 15,
       "assists": 9,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Sehrou Guirassy",
@@ -708,26 +708,26 @@
       "playedMatches": 29
     },
     {
+      "name": "Michael Olise",
+      "team": "FC Bayern München",
+      "competition": "Bundesliga",
+      "nationality": "France",
+      "position": "",
+      "goals": 12,
+      "assists": 18,
+      "penalties": 0,
+      "playedMatches": 28
+    },
+    {
       "name": "Christoph Baumgartner",
       "team": "RB Leipzig",
       "competition": "Bundesliga",
       "nationality": "Austria",
       "position": "",
       "goals": 12,
-      "assists": 6,
+      "assists": 7,
       "penalties": 0,
       "playedMatches": 28
-    },
-    {
-      "name": "Michael Olise",
-      "team": "FC Bayern München",
-      "competition": "Bundesliga",
-      "nationality": "France",
-      "position": "",
-      "goals": 11,
-      "assists": 18,
-      "penalties": 0,
-      "playedMatches": 27
     },
     {
       "name": "Haris Tabaković",
@@ -737,6 +737,17 @@
       "position": "",
       "goals": 11,
       "assists": 1,
+      "penalties": 0,
+      "playedMatches": 28
+    },
+    {
+      "name": "Yan Diomandé",
+      "team": "RB Leipzig",
+      "competition": "Bundesliga",
+      "nationality": "Ivory Coast",
+      "position": "",
+      "goals": 11,
+      "assists": 6,
       "penalties": 0,
       "playedMatches": 28
     },
@@ -794,17 +805,6 @@
       "assists": 0,
       "penalties": 2,
       "playedMatches": 17
-    },
-    {
-      "name": "Yan Diomandé",
-      "team": "RB Leipzig",
-      "competition": "Bundesliga",
-      "nationality": "Ivory Coast",
-      "position": "",
-      "goals": 10,
-      "assists": 6,
-      "penalties": 0,
-      "playedMatches": 28
     },
     {
       "name": "Fisnik Asllani",
@@ -903,7 +903,7 @@
       "goals": 16,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Mason Greenwood",
@@ -1013,7 +1013,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Ilan Kebbal",
