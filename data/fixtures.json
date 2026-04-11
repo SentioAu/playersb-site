@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-11T07:03:02.853Z",
-  "generatedAt": "2026-04-11T07:03:02.853Z",
+  "updatedAt": "2026-04-11T12:59:47.575Z",
+  "generatedAt": "2026-04-11T12:59:47.576Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-11T07:03:02.853Z"
+      "fetchedAt": "2026-04-11T12:59:47.576Z"
     }
   },
   "fixtures": [
@@ -3424,11 +3424,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-04-11T11:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Arsenal FC",
       "away": "AFC Bournemouth",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 538098,
@@ -7494,11 +7494,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-11T12:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "home": "Real Sociedad de Fútbol",
       "away": "Deportivo Alavés",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": 544514,

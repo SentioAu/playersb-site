@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-11T07:03:02.858Z",
-  "generatedAt": "2026-04-11T07:03:02.858Z",
+  "updatedAt": "2026-04-11T12:59:47.582Z",
+  "generatedAt": "2026-04-11T12:59:47.582Z",
   "source": "football-data.org",
   "players": [
     {
@@ -23,7 +23,7 @@
       "goals": 19,
       "assists": 1,
       "penalties": 6,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Antoine Semenyo",
@@ -48,6 +48,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Viktor Gyökeres",
+      "team": "Arsenal FC",
+      "competition": "Premier League",
+      "nationality": "Sweden",
+      "position": "",
+      "goals": 12,
+      "assists": 0,
+      "penalties": 3,
+      "playedMatches": 30
+    },
+    {
       "name": "Danny Welbeck",
       "team": "Brighton & Hove Albion FC",
       "competition": "Premier League",
@@ -70,17 +81,6 @@
       "playedMatches": 28
     },
     {
-      "name": "Viktor Gyökeres",
-      "team": "Arsenal FC",
-      "competition": "Premier League",
-      "nationality": "Sweden",
-      "position": "",
-      "goals": 11,
-      "assists": 0,
-      "penalties": 2,
-      "playedMatches": 29
-    },
-    {
       "name": "Dominic Calvert-Lewin",
       "team": "Leeds United FC",
       "competition": "Premier League",
@@ -101,6 +101,17 @@
       "assists": 6,
       "penalties": 0,
       "playedMatches": 29
+    },
+    {
+      "name": "Eli Kroupi",
+      "team": "AFC Bournemouth",
+      "competition": "Premier League",
+      "nationality": "France",
+      "position": "",
+      "goals": 10,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 32
     },
     {
       "name": "Richarlison",
@@ -156,17 +167,6 @@
       "assists": 1,
       "penalties": 0,
       "playedMatches": 28
-    },
-    {
-      "name": "Eli Kroupi",
-      "team": "AFC Bournemouth",
-      "competition": "Premier League",
-      "nationality": "France",
-      "position": "",
-      "goals": 9,
-      "assists": 0,
-      "penalties": 1,
-      "playedMatches": 31
     },
     {
       "name": "Raúl Jiménez",
@@ -298,7 +298,7 @@
       "goals": 12,
       "assists": 3,
       "penalties": 5,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Robert Lewandowski",
@@ -364,7 +364,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Hugo Duro",
@@ -419,7 +419,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Julián Álvarez",
@@ -606,7 +606,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Mateo Pellegrino",
@@ -650,7 +650,7 @@
       "goals": 7,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Domenico Berardi",
@@ -705,7 +705,7 @@
       "goals": 13,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Christoph Baumgartner",
@@ -716,7 +716,7 @@
       "goals": 12,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Michael Olise",
@@ -738,7 +738,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Patrik Schick",
@@ -749,7 +749,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 3,
-      "playedMatches": 22
+      "playedMatches": 23
     },
     {
       "name": "Nadiem Amiri",
@@ -793,7 +793,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 2,
-      "playedMatches": 16
+      "playedMatches": 17
     },
     {
       "name": "Yan Diomandé",
@@ -804,7 +804,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Fisnik Asllani",
@@ -837,7 +837,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Romulo Cruz",
@@ -848,7 +848,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Serge Gnabry",
@@ -870,7 +870,7 @@
       "goals": 8,
       "assists": 7,
       "penalties": 3,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Igor Matanovic",
