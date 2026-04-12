@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-11T18:45:47.704Z",
-  "generatedAt": "2026-04-11T18:45:47.704Z",
+  "updatedAt": "2026-04-12T02:36:31.650Z",
+  "generatedAt": "2026-04-12T02:36:31.650Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-11T18:45:47.704Z"
+      "fetchedAt": "2026-04-12T02:36:31.650Z"
     }
   },
   "standings": {
@@ -314,13 +314,13 @@
       {
         "position": 4,
         "team": "Club Atlético de Madrid",
-        "played": 30,
+        "played": 31,
         "won": 17,
         "draw": 6,
-        "lost": 7,
-        "goals": 50,
-        "goalsAgainst": 30,
-        "gd": 20,
+        "lost": 8,
+        "goals": 51,
+        "goalsAgainst": 32,
+        "gd": 19,
         "points": 57,
         "form": null
       },
@@ -456,6 +456,19 @@
       },
       {
         "position": 15,
+        "team": "Sevilla FC",
+        "played": 31,
+        "won": 9,
+        "draw": 7,
+        "lost": 15,
+        "goals": 39,
+        "goalsAgainst": 51,
+        "gd": -12,
+        "points": 34,
+        "form": null
+      },
+      {
+        "position": 16,
         "team": "Deportivo Alavés",
         "played": 31,
         "won": 8,
@@ -468,7 +481,7 @@
         "form": null
       },
       {
-        "position": 16,
+        "position": 17,
         "team": "Elche CF",
         "played": 31,
         "won": 7,
@@ -481,7 +494,7 @@
         "form": null
       },
       {
-        "position": 17,
+        "position": 18,
         "team": "RCD Mallorca",
         "played": 30,
         "won": 8,
@@ -490,19 +503,6 @@
         "goals": 36,
         "goalsAgainst": 48,
         "gd": -12,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "Sevilla FC",
-        "played": 30,
-        "won": 8,
-        "draw": 7,
-        "lost": 15,
-        "goals": 37,
-        "goalsAgainst": 50,
-        "gd": -13,
         "points": 31,
         "form": null
       },
@@ -575,6 +575,19 @@
       },
       {
         "position": 4,
+        "team": "Juventus FC",
+        "played": 32,
+        "won": 17,
+        "draw": 9,
+        "lost": 6,
+        "goals": 55,
+        "goalsAgainst": 29,
+        "gd": 26,
+        "points": 60,
+        "form": null
+      },
+      {
+        "position": 5,
         "team": "Como 1907",
         "played": 31,
         "won": 16,
@@ -584,19 +597,6 @@
         "goalsAgainst": 22,
         "gd": 31,
         "points": 58,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "Juventus FC",
-        "played": 31,
-        "won": 16,
-        "draw": 9,
-        "lost": 6,
-        "goals": 54,
-        "goalsAgainst": 29,
-        "gd": 25,
-        "points": 57,
         "form": null
       },
       {
@@ -615,13 +615,13 @@
       {
         "position": 7,
         "team": "Atalanta BC",
-        "played": 31,
+        "played": 32,
         "won": 14,
         "draw": 11,
-        "lost": 6,
+        "lost": 7,
         "goals": 44,
-        "goalsAgainst": 27,
-        "gd": 17,
+        "goalsAgainst": 28,
+        "gd": 16,
         "points": 53,
         "form": null
       },
@@ -1086,6 +1086,19 @@
       },
       {
         "position": 5,
+        "team": "Stade Rennais FC 1901",
+        "played": 29,
+        "won": 14,
+        "draw": 8,
+        "lost": 7,
+        "goals": 49,
+        "goalsAgainst": 41,
+        "gd": 8,
+        "points": 50,
+        "form": null
+      },
+      {
+        "position": 6,
         "team": "AS Monaco FC",
         "played": 29,
         "won": 15,
@@ -1098,7 +1111,7 @@
         "form": null
       },
       {
-        "position": 6,
+        "position": 7,
         "team": "Olympique Lyonnais",
         "played": 28,
         "won": 14,
@@ -1108,19 +1121,6 @@
         "goalsAgainst": 29,
         "gd": 12,
         "points": 48,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Stade Rennais FC 1901",
-        "played": 28,
-        "won": 13,
-        "draw": 8,
-        "lost": 7,
-        "goals": 47,
-        "goalsAgainst": 40,
-        "gd": 7,
-        "points": 47,
         "form": null
       },
       {
@@ -1191,13 +1191,13 @@
       {
         "position": 13,
         "team": "Angers SCO",
-        "played": 28,
+        "played": 29,
         "won": 9,
         "draw": 6,
-        "lost": 13,
-        "goals": 24,
-        "goalsAgainst": 37,
-        "gd": -13,
+        "lost": 14,
+        "goals": 25,
+        "goalsAgainst": 39,
+        "gd": -14,
         "points": 33,
         "form": null
       },

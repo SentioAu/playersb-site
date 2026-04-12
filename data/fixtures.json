@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-11T18:45:47.699Z",
-  "generatedAt": "2026-04-11T18:45:47.699Z",
+  "updatedAt": "2026-04-12T02:36:31.646Z",
+  "generatedAt": "2026-04-12T02:36:31.646Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-11T18:45:47.699Z"
+      "fetchedAt": "2026-04-12T02:36:31.646Z"
     }
   },
   "fixtures": [
@@ -7527,11 +7527,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-11T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Sevilla FC",
       "away": "Club Atlético de Madrid",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 544518,
@@ -7809,35 +7809,35 @@
       "awayScore": null
     },
     {
+      "id": 544546,
+      "competitionCode": "PD",
+      "competition": "La Liga",
+      "date": "2026-05-01T19:00:00Z",
+      "status": "TIMED",
+      "home": "Girona FC",
+      "away": "RCD Mallorca",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 544549,
+      "competitionCode": "PD",
+      "competition": "La Liga",
+      "date": "2026-05-02T12:00:00Z",
+      "status": "TIMED",
+      "home": "Villarreal CF",
+      "away": "Levante UD",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
       "id": 544541,
       "competitionCode": "PD",
       "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
+      "date": "2026-05-02T16:30:00Z",
+      "status": "TIMED",
       "home": "Deportivo Alavés",
       "away": "Athletic Club",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544542,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Real Betis Balompié",
-      "away": "Real Oviedo",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544543,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "RC Celta de Vigo",
-      "away": "Elche CF",
       "homeScore": null,
       "awayScore": null
     },
@@ -7849,28 +7849,6 @@
       "status": "SCHEDULED",
       "home": "RCD Espanyol de Barcelona",
       "away": "Real Madrid CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544545,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Getafe CF",
-      "away": "Rayo Vallecano de Madrid",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544546,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Girona FC",
-      "away": "RCD Mallorca",
       "homeScore": null,
       "awayScore": null
     },
@@ -7897,13 +7875,35 @@
       "awayScore": null
     },
     {
-      "id": 544549,
+      "id": 544543,
       "competitionCode": "PD",
       "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Villarreal CF",
-      "away": "Levante UD",
+      "date": "2026-05-03T12:00:00Z",
+      "status": "TIMED",
+      "home": "RC Celta de Vigo",
+      "away": "Elche CF",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 544545,
+      "competitionCode": "PD",
+      "competition": "La Liga",
+      "date": "2026-05-03T14:15:00Z",
+      "status": "TIMED",
+      "home": "Getafe CF",
+      "away": "Rayo Vallecano de Madrid",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 544542,
+      "competitionCode": "PD",
+      "competition": "La Liga",
+      "date": "2026-05-03T16:30:00Z",
+      "status": "TIMED",
+      "home": "Real Betis Balompié",
+      "away": "Real Oviedo",
       "homeScore": null,
       "awayScore": null
     },
@@ -7911,8 +7911,8 @@
       "id": 544550,
       "competitionCode": "PD",
       "competition": "La Liga",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
+      "date": "2026-05-04T19:00:00Z",
+      "status": "TIMED",
       "home": "Sevilla FC",
       "away": "Real Sociedad de Fútbol",
       "homeScore": null,
@@ -11798,7 +11798,7 @@
       "status": "FINISHED",
       "home": "Torino FC",
       "away": "Hellas Verona FC",
-      "homeScore": 3,
+      "homeScore": 2,
       "awayScore": 1
     },
     {
@@ -11817,11 +11817,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-11T18:45:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Atalanta BC",
       "away": "Juventus FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537130,
@@ -15362,7 +15362,7 @@
       "status": "FINISHED",
       "home": "1. FC Heidenheim 1846",
       "away": "1. FC Union Berlin",
-      "homeScore": 4,
+      "homeScore": 3,
       "awayScore": 1
     },
     {
@@ -15374,7 +15374,7 @@
       "home": "FC St. Pauli 1910",
       "away": "FC Bayern München",
       "homeScore": 0,
-      "awayScore": 6
+      "awayScore": 5
     },
     {
       "id": 540662,
@@ -18692,7 +18692,7 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-11T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "AJ Auxerre",
       "away": "FC Nantes",
       "homeScore": 0,
@@ -18703,11 +18703,11 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-11T19:05:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Stade Rennais FC 1901",
       "away": "Angers SCO",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 542660,
