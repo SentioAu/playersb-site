@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T13:03:40.909Z",
+  "generated_at": "2026-04-12T18:52:40.869Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -190,9 +190,9 @@
       "assists": 1,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 21,
-      "goalsPer90": 38.57,
-      "assistsPer90": 4.29
+      "playedMatches": 22,
+      "goalsPer90": 36.82,
+      "assistsPer90": 4.09
     },
     {
       "id": "enzo-fernandez",
@@ -251,12 +251,12 @@
       "team": "SSC Napoli",
       "minutes": 1460,
       "goals": 10,
-      "assists": 2,
+      "assists": 3,
       "shots": 52,
       "shotsOnTarget": 27,
       "playedMatches": 27,
       "goalsPer90": 33.33,
-      "assistsPer90": 6.67
+      "assistsPer90": 10
     },
     {
       "id": "marcus-rashford",
@@ -669,9 +669,9 @@
       "assists": 4,
       "shots": 48,
       "shotsOnTarget": 24,
-      "playedMatches": 27,
-      "goalsPer90": 53.33,
-      "assistsPer90": 13.33
+      "playedMatches": 28,
+      "goalsPer90": 51.43,
+      "assistsPer90": 12.86
     },
     {
       "id": "nicolo-barella",
@@ -694,9 +694,9 @@
       "assists": 3,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 22,
-      "goalsPer90": 36.82,
-      "assistsPer90": 12.27
+      "playedMatches": 23,
+      "goalsPer90": 35.22,
+      "assistsPer90": 11.74
     },
     {
       "id": "alessandro-bastoni",
