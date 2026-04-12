@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-12T07:16:12.566Z",
-  "generatedAt": "2026-04-12T07:16:12.567Z",
+  "updatedAt": "2026-04-12T13:03:40.818Z",
+  "generatedAt": "2026-04-12T13:03:40.818Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-12T07:16:12.567Z"
+      "fetchedAt": "2026-04-12T13:03:40.818Z"
     }
   },
   "fixtures": [
@@ -7538,11 +7538,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-12T12:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "home": "CA Osasuna",
       "away": "Real Betis Balompié",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 544515,
@@ -11751,11 +11751,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-12T10:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Genoa CFC",
       "away": "US Sassuolo Calcio",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 537134,

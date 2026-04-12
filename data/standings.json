@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-12T07:16:12.571Z",
-  "generatedAt": "2026-04-12T07:16:12.571Z",
+  "updatedAt": "2026-04-12T13:03:40.823Z",
+  "generatedAt": "2026-04-12T13:03:40.823Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-12T07:16:12.571Z"
+      "fetchedAt": "2026-04-12T13:03:40.823Z"
     }
   },
   "standings": {
@@ -52,14 +52,14 @@
       {
         "position": 4,
         "team": "Aston Villa FC",
-        "played": 31,
+        "played": 32,
         "won": 16,
-        "draw": 6,
+        "draw": 7,
         "lost": 9,
         "goals": 42,
         "goalsAgainst": 37,
         "gd": 5,
-        "points": 54,
+        "points": 55,
         "form": null
       },
       {
@@ -156,40 +156,40 @@
       {
         "position": 12,
         "team": "Sunderland AFC",
-        "played": 31,
+        "played": 32,
         "won": 11,
-        "draw": 10,
+        "draw": 11,
         "lost": 10,
         "goals": 32,
         "goalsAgainst": 36,
         "gd": -4,
-        "points": 43,
+        "points": 44,
         "form": null
       },
       {
         "position": 13,
         "team": "Newcastle United FC",
-        "played": 31,
+        "played": 32,
         "won": 12,
-        "draw": 6,
+        "draw": 7,
         "lost": 13,
         "goals": 44,
         "goalsAgainst": 45,
         "gd": -1,
-        "points": 42,
+        "points": 43,
         "form": null
       },
       {
         "position": 14,
         "team": "Crystal Palace FC",
-        "played": 30,
+        "played": 31,
         "won": 10,
-        "draw": 9,
+        "draw": 10,
         "lost": 11,
         "goals": 33,
         "goalsAgainst": 35,
         "gd": -2,
-        "points": 39,
+        "points": 40,
         "form": null
       },
       {
@@ -208,14 +208,14 @@
       {
         "position": 16,
         "team": "Nottingham Forest FC",
-        "played": 31,
+        "played": 32,
         "won": 8,
-        "draw": 8,
+        "draw": 9,
         "lost": 15,
         "goals": 31,
         "goalsAgainst": 43,
         "gd": -12,
-        "points": 32,
+        "points": 33,
         "form": null
       },
       {
@@ -234,14 +234,14 @@
       {
         "position": 18,
         "team": "Tottenham Hotspur FC",
-        "played": 31,
+        "played": 32,
         "won": 7,
-        "draw": 9,
+        "draw": 10,
         "lost": 15,
         "goals": 40,
         "goalsAgainst": 50,
         "gd": -10,
-        "points": 30,
+        "points": 31,
         "form": null
       },
       {
@@ -327,14 +327,14 @@
       {
         "position": 5,
         "team": "Real Betis Balompié",
-        "played": 30,
+        "played": 31,
         "won": 11,
-        "draw": 12,
+        "draw": 13,
         "lost": 7,
-        "goals": 44,
-        "goalsAgainst": 37,
+        "goals": 45,
+        "goalsAgainst": 38,
         "gd": 7,
-        "points": 45,
+        "points": 46,
         "form": null
       },
       {
@@ -379,14 +379,14 @@
       {
         "position": 9,
         "team": "CA Osasuna",
-        "played": 30,
+        "played": 31,
         "won": 10,
-        "draw": 8,
+        "draw": 9,
         "lost": 12,
-        "goals": 36,
-        "goalsAgainst": 37,
+        "goals": 37,
+        "goalsAgainst": 38,
         "gd": -1,
-        "points": 38,
+        "points": 39,
         "form": null
       },
       {
@@ -550,14 +550,14 @@
       {
         "position": 2,
         "team": "SSC Napoli",
-        "played": 31,
+        "played": 32,
         "won": 20,
-        "draw": 5,
+        "draw": 6,
         "lost": 6,
         "goals": 47,
         "goalsAgainst": 30,
         "gd": 17,
-        "points": 65,
+        "points": 66,
         "form": null
       },
       {
@@ -667,13 +667,13 @@
       {
         "position": 11,
         "team": "US Sassuolo Calcio",
-        "played": 31,
+        "played": 32,
         "won": 12,
         "draw": 6,
-        "lost": 13,
-        "goals": 38,
-        "goalsAgainst": 41,
-        "gd": -3,
+        "lost": 14,
+        "goals": 39,
+        "goalsAgainst": 43,
+        "gd": -4,
         "points": 42,
         "form": null
       },
@@ -692,28 +692,28 @@
       },
       {
         "position": 13,
-        "team": "Parma Calcio 1913",
-        "played": 31,
-        "won": 8,
-        "draw": 11,
-        "lost": 12,
-        "goals": 22,
-        "goalsAgainst": 39,
-        "gd": -17,
-        "points": 35,
+        "team": "Genoa CFC",
+        "played": 32,
+        "won": 9,
+        "draw": 9,
+        "lost": 14,
+        "goals": 38,
+        "goalsAgainst": 45,
+        "gd": -7,
+        "points": 36,
         "form": null
       },
       {
         "position": 14,
-        "team": "Genoa CFC",
-        "played": 31,
+        "team": "Parma Calcio 1913",
+        "played": 32,
         "won": 8,
-        "draw": 9,
-        "lost": 14,
-        "goals": 36,
-        "goalsAgainst": 44,
-        "gd": -8,
-        "points": 33,
+        "draw": 12,
+        "lost": 12,
+        "goals": 22,
+        "goalsAgainst": 39,
+        "gd": -17,
+        "points": 36,
         "form": null
       },
       {

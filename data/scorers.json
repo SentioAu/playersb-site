@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-12T07:16:12.572Z",
-  "generatedAt": "2026-04-12T07:16:12.572Z",
+  "updatedAt": "2026-04-12T13:03:40.824Z",
+  "generatedAt": "2026-04-12T13:03:40.824Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-12T07:16:12.572Z"
+      "fetchedAt": "2026-04-12T13:03:40.824Z"
     }
   },
   "scorers": [
@@ -128,7 +128,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Bruno Guimarães",
@@ -194,7 +194,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Morgan Gibbs-White",
@@ -205,7 +205,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Enzo Fernández",
@@ -252,6 +252,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Ante Budimir",
+      "team": "CA Osasuna",
+      "competition": "La Liga",
+      "nationality": "Croatia",
+      "position": "",
+      "goals": 16,
+      "assists": 0,
+      "penalties": 6,
+      "playedMatches": 30
+    },
+    {
       "name": "Lamine Yamal",
       "team": "FC Barcelona",
       "competition": "La Liga",
@@ -261,17 +272,6 @@
       "assists": 11,
       "penalties": 2,
       "playedMatches": 27
-    },
-    {
-      "name": "Ante Budimir",
-      "team": "CA Osasuna",
-      "competition": "La Liga",
-      "nationality": "Croatia",
-      "position": "",
-      "goals": 15,
-      "assists": 0,
-      "penalties": 5,
-      "playedMatches": 29
     },
     {
       "name": "Ferrán Torres",
@@ -513,7 +513,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Donyell Malen",
@@ -601,7 +601,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Christian Pulisic",
@@ -645,7 +645,7 @@
       "goals": 7,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Federico Bonazzoli",
@@ -667,7 +667,7 @@
       "goals": 7,
       "assists": 4,
       "penalties": 2,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Harry Kane",
@@ -788,7 +788,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Andrej Kramarić",
