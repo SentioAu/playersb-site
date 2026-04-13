@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-13T13:27:47.305Z",
-  "generatedAt": "2026-04-13T13:27:47.305Z",
+  "updatedAt": "2026-04-13T19:16:21.173Z",
+  "generatedAt": "2026-04-13T19:16:21.173Z",
   "source": "football-data.org",
   "players": [
     {
@@ -100,7 +100,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Harry Wilson",
@@ -155,7 +155,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Cole Palmer",
@@ -177,7 +177,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Raúl Jiménez",

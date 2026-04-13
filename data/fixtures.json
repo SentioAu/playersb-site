@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-13T13:27:47.299Z",
-  "generatedAt": "2026-04-13T13:27:47.299Z",
+  "updatedAt": "2026-04-13T19:16:21.168Z",
+  "generatedAt": "2026-04-13T19:16:21.168Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-13T13:27:47.299Z"
+      "fetchedAt": "2026-04-13T19:16:21.168Z"
     }
   },
   "fixtures": [
@@ -3512,11 +3512,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-04-13T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Manchester United FC",
       "away": "Leeds United FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 538107,
@@ -7582,11 +7582,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-13T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Levante UD",
       "away": "Getafe CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 544531,
@@ -11795,11 +11795,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-13T18:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "ACF Fiorentina",
       "away": "SS Lazio",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537140,
@@ -18641,7 +18641,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 5
+      "awayScore": 4
     },
     {
       "id": 542661,
