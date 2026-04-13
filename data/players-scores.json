@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-12T18:52:40.798Z",
-  "generatedAt": "2026-04-12T18:52:40.798Z",
+  "updatedAt": "2026-04-13T02:41:43.577Z",
+  "generatedAt": "2026-04-13T02:41:43.577Z",
   "source": "football-data.org",
   "players": [
     {
@@ -471,10 +471,21 @@
       "competition": "Serie A",
       "nationality": "Argentina",
       "position": "",
-      "goals": 10,
+      "goals": 11,
       "assists": 6,
       "penalties": 0,
       "playedMatches": 31
+    },
+    {
+      "name": "Marcus Thuram-Ulien",
+      "team": "FC Internazionale Milano",
+      "competition": "Serie A",
+      "nationality": "France",
+      "position": "",
+      "goals": 10,
+      "assists": 5,
+      "penalties": 0,
+      "playedMatches": 26
     },
     {
       "name": "Keinan Davis",
@@ -527,7 +538,7 @@
       "nationality": "Turkey",
       "position": "",
       "goals": 9,
-      "assists": 3,
+      "assists": 4,
       "penalties": 4,
       "playedMatches": 23
     },
@@ -585,17 +596,6 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 25
-    },
-    {
-      "name": "Marcus Thuram-Ulien",
-      "team": "FC Internazionale Milano",
-      "competition": "Serie A",
-      "nationality": "France",
-      "position": "",
-      "goals": 8,
-      "assists": 5,
-      "penalties": 0,
-      "playedMatches": 26
     },
     {
       "name": "Andrea Pinamonti",
@@ -1027,6 +1027,17 @@
       "playedMatches": 25
     },
     {
+      "name": "Corentin Tolisso",
+      "team": "Olympique Lyonnais",
+      "competition": "Ligue 1",
+      "nationality": "France",
+      "position": "",
+      "goals": 8,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 26
+    },
+    {
       "name": "Pablo Pagis",
       "team": "FC Lorient",
       "competition": "Ligue 1",
@@ -1091,17 +1102,6 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 22
-    },
-    {
-      "name": "Olivier Giroud",
-      "team": "Lille OSC",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 7,
-      "assists": 1,
-      "penalties": 3,
-      "playedMatches": 26
     },
     {
       "name": "Kylian Mbappé",

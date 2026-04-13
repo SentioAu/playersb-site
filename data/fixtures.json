@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-12T18:52:40.793Z",
-  "generatedAt": "2026-04-12T18:52:40.793Z",
+  "updatedAt": "2026-04-13T02:41:43.572Z",
+  "generatedAt": "2026-04-13T02:41:43.572Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-12T18:52:40.793Z"
+      "fetchedAt": "2026-04-13T02:41:43.572Z"
     }
   },
   "fixtures": [
@@ -7571,11 +7571,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-12T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Athletic Club",
       "away": "Villarreal CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 544519,
@@ -11861,11 +11861,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-12T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Como 1907",
       "away": "FC Internazionale Milano",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 3,
+      "awayScore": 4
     },
     {
       "id": 537125,
@@ -15403,7 +15403,7 @@
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-12T17:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "1. FSV Mainz 05",
       "away": "SC Freiburg",
       "homeScore": 0,
@@ -18718,7 +18718,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 5
+      "awayScore": 4
     },
     {
       "id": 542661,
@@ -18736,10 +18736,10 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-12T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Olympique Lyonnais",
       "away": "FC Lorient",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0
     },
     {

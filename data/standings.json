@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-12T18:52:40.797Z",
-  "generatedAt": "2026-04-12T18:52:40.797Z",
+  "updatedAt": "2026-04-13T02:41:43.576Z",
+  "generatedAt": "2026-04-13T02:41:43.576Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-12T18:52:40.797Z"
+      "fetchedAt": "2026-04-13T02:41:43.576Z"
     }
   },
   "standings": {
@@ -301,14 +301,14 @@
       {
         "position": 3,
         "team": "Villarreal CF",
-        "played": 30,
-        "won": 18,
+        "played": 31,
+        "won": 19,
         "draw": 4,
         "lost": 8,
-        "goals": 54,
-        "goalsAgainst": 35,
-        "gd": 19,
-        "points": 58,
+        "goals": 56,
+        "goalsAgainst": 36,
+        "gd": 20,
+        "points": 61,
         "form": null
       },
       {
@@ -404,24 +404,24 @@
       },
       {
         "position": 11,
-        "team": "Athletic Club",
-        "played": 30,
-        "won": 11,
-        "draw": 5,
-        "lost": 14,
-        "goals": 32,
-        "goalsAgainst": 43,
-        "gd": -11,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 12,
         "team": "Girona FC",
         "played": 31,
         "won": 9,
         "draw": 11,
         "lost": 11,
+        "goals": 33,
+        "goalsAgainst": 45,
+        "gd": -12,
+        "points": 38,
+        "form": null
+      },
+      {
+        "position": 12,
+        "team": "Athletic Club",
+        "played": 31,
+        "won": 11,
+        "draw": 5,
+        "lost": 15,
         "goals": 33,
         "goalsAgainst": 45,
         "gd": -12,
@@ -537,14 +537,14 @@
       {
         "position": 1,
         "team": "FC Internazionale Milano",
-        "played": 31,
-        "won": 23,
+        "played": 32,
+        "won": 24,
         "draw": 3,
         "lost": 5,
-        "goals": 71,
-        "goalsAgainst": 26,
-        "gd": 45,
-        "points": 72,
+        "goals": 75,
+        "goalsAgainst": 29,
+        "gd": 46,
+        "points": 75,
         "form": null
       },
       {
@@ -589,13 +589,13 @@
       {
         "position": 5,
         "team": "Como 1907",
-        "played": 31,
+        "played": 32,
         "won": 16,
         "draw": 10,
-        "lost": 5,
-        "goals": 53,
-        "goalsAgainst": 22,
-        "gd": 31,
+        "lost": 6,
+        "goals": 56,
+        "goalsAgainst": 26,
+        "gd": 30,
         "points": 58,
         "form": null
       },
@@ -891,13 +891,13 @@
         "position": 8,
         "team": "SC Freiburg",
         "played": 29,
-        "won": 10,
-        "draw": 8,
+        "won": 11,
+        "draw": 7,
         "lost": 11,
-        "goals": 41,
+        "goals": 42,
         "goalsAgainst": 47,
-        "gd": -6,
-        "points": 38,
+        "gd": -5,
+        "points": 40,
         "form": null
       },
       {
@@ -905,12 +905,12 @@
         "team": "1. FSV Mainz 05",
         "played": 29,
         "won": 8,
-        "draw": 10,
-        "lost": 11,
+        "draw": 9,
+        "lost": 12,
         "goals": 35,
-        "goalsAgainst": 43,
-        "gd": -8,
-        "points": 34,
+        "goalsAgainst": 44,
+        "gd": -9,
+        "points": 33,
         "form": null
       },
       {
@@ -1086,6 +1086,19 @@
       },
       {
         "position": 5,
+        "team": "Olympique Lyonnais",
+        "played": 29,
+        "won": 15,
+        "draw": 6,
+        "lost": 8,
+        "goals": 43,
+        "goalsAgainst": 29,
+        "gd": 14,
+        "points": 51,
+        "form": null
+      },
+      {
+        "position": 6,
         "team": "Stade Rennais FC 1901",
         "played": 29,
         "won": 14,
@@ -1098,7 +1111,7 @@
         "form": null
       },
       {
-        "position": 6,
+        "position": 7,
         "team": "AS Monaco FC",
         "played": 29,
         "won": 15,
@@ -1108,19 +1121,6 @@
         "goalsAgainst": 43,
         "gd": 7,
         "points": 49,
-        "form": null
-      },
-      {
-        "position": 7,
-        "team": "Olympique Lyonnais",
-        "played": 28,
-        "won": 14,
-        "draw": 6,
-        "lost": 8,
-        "goals": 41,
-        "goalsAgainst": 29,
-        "gd": 12,
-        "points": 48,
         "form": null
       },
       {
@@ -1139,13 +1139,13 @@
       {
         "position": 9,
         "team": "FC Lorient",
-        "played": 28,
+        "played": 29,
         "won": 9,
         "draw": 11,
-        "lost": 8,
+        "lost": 9,
         "goals": 38,
-        "goalsAgainst": 42,
-        "gd": -4,
+        "goalsAgainst": 44,
+        "gd": -6,
         "points": 38,
         "form": null
       },
