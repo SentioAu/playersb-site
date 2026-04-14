@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-13T19:16:21.172Z",
-  "generatedAt": "2026-04-13T19:16:21.172Z",
+  "updatedAt": "2026-04-14T02:35:16.808Z",
+  "generatedAt": "2026-04-14T02:35:16.808Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-13T19:16:21.172Z"
+      "fetchedAt": "2026-04-14T02:35:16.808Z"
     }
   },
   "standings": {
@@ -41,12 +41,12 @@
         "team": "Manchester United FC",
         "played": 32,
         "won": 15,
-        "draw": 11,
-        "lost": 6,
-        "goals": 56,
-        "goalsAgainst": 43,
-        "gd": 13,
-        "points": 56,
+        "draw": 10,
+        "lost": 7,
+        "goals": 57,
+        "goalsAgainst": 45,
+        "gd": 12,
+        "points": 55,
         "form": null
       },
       {
@@ -196,13 +196,13 @@
         "position": 15,
         "team": "Leeds United FC",
         "played": 32,
-        "won": 7,
-        "draw": 13,
+        "won": 8,
+        "draw": 12,
         "lost": 12,
-        "goals": 37,
-        "goalsAgainst": 48,
-        "gd": -11,
-        "points": 34,
+        "goals": 39,
+        "goalsAgainst": 49,
+        "gd": -10,
+        "points": 36,
         "form": null
       },
       {
@@ -368,12 +368,12 @@
         "team": "Getafe CF",
         "played": 31,
         "won": 12,
-        "draw": 6,
-        "lost": 13,
+        "draw": 5,
+        "lost": 14,
         "goals": 27,
-        "goalsAgainst": 31,
-        "gd": -4,
-        "points": 42,
+        "goalsAgainst": 32,
+        "gd": -5,
+        "points": 41,
         "form": null
       },
       {
@@ -510,13 +510,13 @@
         "position": 19,
         "team": "Levante UD",
         "played": 31,
-        "won": 6,
-        "draw": 9,
+        "won": 7,
+        "draw": 8,
         "lost": 16,
-        "goals": 34,
+        "goals": 35,
         "goalsAgainst": 50,
-        "gd": -16,
-        "points": 27,
+        "gd": -15,
+        "points": 29,
         "form": null
       },
       {
@@ -643,12 +643,12 @@
         "team": "SS Lazio",
         "played": 32,
         "won": 11,
-        "draw": 12,
-        "lost": 9,
+        "draw": 11,
+        "lost": 10,
         "goals": 32,
-        "goalsAgainst": 29,
-        "gd": 3,
-        "points": 45,
+        "goalsAgainst": 30,
+        "gd": 2,
+        "points": 44,
         "form": null
       },
       {
@@ -720,13 +720,13 @@
         "position": 15,
         "team": "ACF Fiorentina",
         "played": 32,
-        "won": 7,
-        "draw": 12,
+        "won": 8,
+        "draw": 11,
         "lost": 13,
-        "goals": 36,
+        "goals": 37,
         "goalsAgainst": 44,
-        "gd": -8,
-        "points": 33,
+        "gd": -7,
+        "points": 35,
         "form": null
       },
       {
