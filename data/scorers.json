@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-14T02:35:16.809Z",
-  "generatedAt": "2026-04-14T02:35:16.809Z",
+  "updatedAt": "2026-04-14T07:48:00.455Z",
+  "generatedAt": "2026-04-14T07:48:00.455Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-14T02:35:16.809Z"
+      "fetchedAt": "2026-04-14T07:48:00.455Z"
     }
   },
   "scorers": [
