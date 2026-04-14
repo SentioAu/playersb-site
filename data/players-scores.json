@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-14T13:28:12.254Z",
-  "generatedAt": "2026-04-14T13:28:12.254Z",
+  "updatedAt": "2026-04-14T19:17:49.555Z",
+  "generatedAt": "2026-04-14T19:17:49.555Z",
   "source": "football-data.org",
   "players": [
     {
@@ -1145,7 +1145,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 12
+      "playedMatches": 13
     },
     {
       "name": "Khvicha Kvaratskhelia",
@@ -1156,7 +1156,7 @@
       "goals": 8,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 12
+      "playedMatches": 13
     },
     {
       "name": "Erling Haaland",
@@ -1222,6 +1222,17 @@
       "goals": 6,
       "assists": 4,
       "penalties": 0,
+      "playedMatches": 11
+    },
+    {
+      "name": "Lamine Yamal",
+      "team": "FC Barcelona",
+      "competition": "Champions League",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 6,
+      "assists": 3,
+      "penalties": 3,
       "playedMatches": 10
     },
     {
@@ -1233,7 +1244,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 13
+      "playedMatches": 14
     },
     {
       "name": "Alexander Sørloth",
@@ -1244,7 +1255,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 12
+      "playedMatches": 13
     },
     {
       "name": "Camilo Durán",
@@ -1266,7 +1277,7 @@
       "goals": 5,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Gorka Guruzeta",
@@ -1291,17 +1302,6 @@
       "playedMatches": 11
     },
     {
-      "name": "Lamine Yamal",
-      "team": "FC Barcelona",
-      "competition": "Champions League",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 5,
-      "assists": 3,
-      "penalties": 3,
-      "playedMatches": 9
-    },
-    {
       "name": "Desire Doue",
       "team": "Paris Saint-Germain FC",
       "competition": "Champions League",
@@ -1310,7 +1310,7 @@
       "goals": 5,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 9
+      "playedMatches": 10
     },
     {
       "name": "Dominik Szoboszlai",
@@ -1321,7 +1321,7 @@
       "goals": 5,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 11
+      "playedMatches": 12
     }
   ]
 }

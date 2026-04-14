@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-14T13:28:12.248Z",
-  "generatedAt": "2026-04-14T13:28:12.248Z",
+  "updatedAt": "2026-04-14T19:17:49.549Z",
+  "generatedAt": "2026-04-14T19:17:49.549Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-14T13:28:12.248Z"
+      "fetchedAt": "2026-04-14T19:17:49.549Z"
     }
   },
   "fixtures": [
@@ -21255,22 +21255,22 @@
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-14T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Liverpool FC",
       "away": "Paris Saint-Germain FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 556724,
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-14T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Club Atlético de Madrid",
       "away": "FC Barcelona",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 556723,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T13:28:12.339Z",
+  "generated_at": "2026-04-14T19:17:49.642Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -268,9 +268,9 @@
       "assists": 3,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 11,
-      "goalsPer90": 40.91,
-      "assistsPer90": 24.55
+      "playedMatches": 12,
+      "goalsPer90": 37.5,
+      "assistsPer90": 22.5
     },
     {
       "id": "lisandro-martinez",
@@ -361,13 +361,13 @@
       "position": "DM",
       "team": "FC Barcelona",
       "minutes": 1100,
-      "goals": 5,
+      "goals": 6,
       "assists": 3,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 9,
-      "goalsPer90": 50,
-      "assistsPer90": 30
+      "playedMatches": 10,
+      "goalsPer90": 54,
+      "assistsPer90": 27
     },
     {
       "id": "ronald-araujo",
@@ -608,9 +608,9 @@
       "assists": 1,
       "shots": 52,
       "shotsOnTarget": 27,
-      "playedMatches": 13,
-      "goalsPer90": 41.54,
-      "assistsPer90": 6.92
+      "playedMatches": 14,
+      "goalsPer90": 38.57,
+      "assistsPer90": 6.43
     },
     {
       "id": "pierre-emerick-aubameyang",
@@ -783,9 +783,9 @@
       "assists": 4,
       "shots": 61,
       "shotsOnTarget": 31,
-      "playedMatches": 12,
-      "goalsPer90": 60,
-      "assistsPer90": 30
+      "playedMatches": 13,
+      "goalsPer90": 55.38,
+      "assistsPer90": 27.69
     },
     {
       "id": "stanislav-lobotka",
