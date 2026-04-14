@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-14T07:48:00.449Z",
-  "generatedAt": "2026-04-14T07:48:00.450Z",
+  "updatedAt": "2026-04-14T13:28:12.248Z",
+  "generatedAt": "2026-04-14T13:28:12.248Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-14T07:48:00.450Z"
+      "fetchedAt": "2026-04-14T13:28:12.248Z"
     }
   },
   "fixtures": [
@@ -18718,7 +18718,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 5
+      "awayScore": 4
     },
     {
       "id": 542661,
