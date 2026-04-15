@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T19:17:49.642Z",
+  "generated_at": "2026-04-15T02:33:26.859Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -780,12 +780,12 @@
       "team": "Paris Saint-Germain FC",
       "minutes": 1700,
       "goals": 8,
-      "assists": 4,
+      "assists": 5,
       "shots": 61,
       "shotsOnTarget": 31,
       "playedMatches": 13,
       "goalsPer90": 55.38,
-      "assistsPer90": 27.69
+      "assistsPer90": 34.62
     },
     {
       "id": "stanislav-lobotka",

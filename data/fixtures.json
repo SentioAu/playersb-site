@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-14T19:17:49.549Z",
-  "generatedAt": "2026-04-14T19:17:49.549Z",
+  "updatedAt": "2026-04-15T02:33:26.770Z",
+  "generatedAt": "2026-04-15T02:33:26.770Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-14T19:17:49.549Z"
+      "fetchedAt": "2026-04-15T02:33:26.770Z"
     }
   },
   "fixtures": [
@@ -21255,22 +21255,22 @@
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-14T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Liverpool FC",
       "away": "Paris Saint-Germain FC",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 2
     },
     {
       "id": 556724,
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-14T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Club Atlético de Madrid",
       "away": "FC Barcelona",
-      "homeScore": 0,
-      "awayScore": 1
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 556723,
@@ -21300,7 +21300,7 @@
       "competition": "Champions League",
       "date": "2026-04-28T00:00:00Z",
       "status": "SCHEDULED",
-      "home": "",
+      "home": "Paris Saint-Germain FC",
       "away": "",
       "homeScore": null,
       "awayScore": null
@@ -21311,7 +21311,7 @@
       "competition": "Champions League",
       "date": "2026-04-29T00:00:00Z",
       "status": "SCHEDULED",
-      "home": "",
+      "home": "Club Atlético de Madrid",
       "away": "",
       "homeScore": null,
       "awayScore": null
@@ -21323,7 +21323,7 @@
       "date": "2026-05-05T00:00:00Z",
       "status": "SCHEDULED",
       "home": "",
-      "away": "",
+      "away": "Paris Saint-Germain FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -21334,7 +21334,7 @@
       "date": "2026-05-06T00:00:00Z",
       "status": "SCHEDULED",
       "home": "",
-      "away": "",
+      "away": "Club Atlético de Madrid",
       "homeScore": null,
       "awayScore": null
     },

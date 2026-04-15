@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-14T19:17:49.555Z",
-  "generatedAt": "2026-04-14T19:17:49.555Z",
+  "updatedAt": "2026-04-15T02:33:26.776Z",
+  "generatedAt": "2026-04-15T02:33:26.776Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-14T19:17:49.555Z"
+      "fetchedAt": "2026-04-15T02:33:26.776Z"
     }
   },
   "scorers": [
@@ -1160,7 +1160,7 @@
       "nationality": "Georgia",
       "position": "",
       "goals": 8,
-      "assists": 4,
+      "assists": 5,
       "penalties": 0,
       "playedMatches": 13
     },
