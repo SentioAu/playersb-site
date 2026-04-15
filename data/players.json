@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T13:26:20.551Z",
+  "generated_at": "2026-04-15T19:19:58.986Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -434,8 +434,8 @@
       "assists": 0,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 11,
-      "goalsPer90": 90,
+      "playedMatches": 12,
+      "goalsPer90": 82.5,
       "assistsPer90": 0
     },
     {
@@ -569,9 +569,9 @@
       "assists": 1,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 11,
-      "goalsPer90": 114.55,
-      "assistsPer90": 8.18
+      "playedMatches": 12,
+      "goalsPer90": 105,
+      "assistsPer90": 7.5
     },
     {
       "id": "ousmane-dembele",

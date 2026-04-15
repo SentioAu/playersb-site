@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-15T13:26:20.471Z",
-  "generatedAt": "2026-04-15T13:26:20.471Z",
+  "updatedAt": "2026-04-15T19:19:58.901Z",
+  "generatedAt": "2026-04-15T19:19:58.901Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-15T13:26:20.471Z"
+      "fetchedAt": "2026-04-15T19:19:58.901Z"
     }
   },
   "scorers": [
@@ -1118,7 +1118,7 @@
       "goals": 14,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Harry Kane",
@@ -1129,7 +1129,7 @@
       "goals": 11,
       "assists": 0,
       "penalties": 3,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Anthony Gordon",
@@ -1195,7 +1195,7 @@
       "goals": 6,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Jens Hauge",
@@ -1305,7 +1305,7 @@
       "goals": 5,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Desire Doue",
