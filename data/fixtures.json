@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-16T02:40:04.074Z",
-  "generatedAt": "2026-04-16T02:40:04.074Z",
+  "updatedAt": "2026-04-16T07:48:16.785Z",
+  "generatedAt": "2026-04-16T07:48:16.785Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-16T02:40:04.074Z"
+      "fetchedAt": "2026-04-16T07:48:16.785Z"
     }
   },
   "fixtures": [
@@ -21293,28 +21293,6 @@
       "away": "Sporting Clube de Portugal",
       "homeScore": 0,
       "awayScore": 0
-    },
-    {
-      "id": 552092,
-      "competitionCode": "CL",
-      "competition": "Champions League",
-      "date": "2026-04-28T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 552093,
-      "competitionCode": "CL",
-      "competition": "Champions League",
-      "date": "2026-04-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Club Atlético de Madrid",
-      "away": "Arsenal FC",
-      "homeScore": null,
-      "awayScore": null
     },
     {
       "id": 552094,
