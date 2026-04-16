@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-16T13:46:01.395Z",
-  "generatedAt": "2026-04-16T13:46:01.395Z",
+  "updatedAt": "2026-04-16T19:16:01.292Z",
+  "generatedAt": "2026-04-16T19:16:01.292Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-16T13:46:01.395Z"
+      "fetchedAt": "2026-04-16T19:16:01.292Z"
     }
   },
   "standings": {
