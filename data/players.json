@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T19:19:58.986Z",
+  "generated_at": "2026-04-16T02:40:04.162Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -430,13 +430,13 @@
       "position": "LW",
       "team": "FC Bayern München",
       "minutes": 1100,
-      "goals": 11,
-      "assists": 0,
+      "goals": 12,
+      "assists": 1,
       "shots": 39,
       "shotsOnTarget": 20,
       "playedMatches": 12,
-      "goalsPer90": 82.5,
-      "assistsPer90": 0
+      "goalsPer90": 90,
+      "assistsPer90": 7.5
     },
     {
       "id": "jamal-musiala",
@@ -565,12 +565,12 @@
       "position": "ST",
       "team": "Real Madrid CF",
       "minutes": 1100,
-      "goals": 14,
+      "goals": 15,
       "assists": 1,
       "shots": 39,
       "shotsOnTarget": 20,
       "playedMatches": 12,
-      "goalsPer90": 105,
+      "goalsPer90": 112.5,
       "assistsPer90": 7.5
     },
     {

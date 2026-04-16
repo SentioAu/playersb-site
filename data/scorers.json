@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-15T19:19:58.901Z",
-  "generatedAt": "2026-04-15T19:19:58.901Z",
+  "updatedAt": "2026-04-16T02:40:04.080Z",
+  "generatedAt": "2026-04-16T02:40:04.080Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-15T19:19:58.901Z"
+      "fetchedAt": "2026-04-16T02:40:04.080Z"
     }
   },
   "scorers": [
@@ -1115,7 +1115,7 @@
       "competition": "Champions League",
       "nationality": "France",
       "position": "",
-      "goals": 14,
+      "goals": 15,
       "assists": 1,
       "penalties": 3,
       "playedMatches": 12
@@ -1126,8 +1126,8 @@
       "competition": "Champions League",
       "nationality": "England",
       "position": "",
-      "goals": 11,
-      "assists": 0,
+      "goals": 12,
+      "assists": 1,
       "penalties": 3,
       "playedMatches": 12
     },
@@ -1253,6 +1253,17 @@
       "playedMatches": 14
     },
     {
+      "name": "Luis Díaz",
+      "team": "FC Bayern München",
+      "competition": "Champions League",
+      "nationality": "Colombia",
+      "position": "",
+      "goals": 6,
+      "assists": 3,
+      "penalties": 0,
+      "playedMatches": 10
+    },
+    {
       "name": "Alexander Sørloth",
       "team": "Club Atlético de Madrid",
       "competition": "Champions League",
@@ -1317,17 +1328,6 @@
       "assists": 2,
       "penalties": 0,
       "playedMatches": 10
-    },
-    {
-      "name": "Dominik Szoboszlai",
-      "team": "Liverpool FC",
-      "competition": "Champions League",
-      "nationality": "Hungary",
-      "position": "",
-      "goals": 5,
-      "assists": 4,
-      "penalties": 1,
-      "playedMatches": 12
     }
   ]
 }
