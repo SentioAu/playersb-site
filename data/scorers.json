@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-17T13:21:48.389Z",
-  "generatedAt": "2026-04-17T13:21:48.389Z",
+  "updatedAt": "2026-04-17T19:02:40.564Z",
+  "generatedAt": "2026-04-17T19:02:40.564Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-17T13:21:48.389Z"
+      "fetchedAt": "2026-04-17T19:02:40.564Z"
     }
   },
   "scorers": [
@@ -461,6 +461,17 @@
       "playedMatches": 28
     },
     {
+      "name": "Nico Paz",
+      "team": "Como 1907",
+      "competition": "Serie A",
+      "nationality": "Argentina",
+      "position": "",
+      "goals": 12,
+      "assists": 6,
+      "penalties": 0,
+      "playedMatches": 32
+    },
+    {
       "name": "Anastasios Douvikas",
       "team": "Como 1907",
       "competition": "Serie A",
@@ -469,18 +480,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 32
-    },
-    {
-      "name": "Nico Paz",
-      "team": "Como 1907",
-      "competition": "Serie A",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 11,
-      "assists": 6,
-      "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 33
     },
     {
       "name": "Marcus Thuram-Ulien",
@@ -491,7 +491,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Keinan Davis",
@@ -546,7 +546,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 4,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Giovanni Simeone",
@@ -612,7 +612,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Christian Pulisic",
@@ -744,7 +744,7 @@
       "goals": 11,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Haris Tabaković",
@@ -931,7 +931,7 @@
       "goals": 12,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Folarin Balogun",
@@ -953,7 +953,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Bradley Barcola",
@@ -1008,7 +1008,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 2,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Lassine Sinayoko",
@@ -1063,7 +1063,7 @@
       "goals": 8,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Romain Del Castillo",

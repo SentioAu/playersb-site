@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T13:21:48.475Z",
+  "generated_at": "2026-04-17T19:02:40.648Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -694,9 +694,9 @@
       "assists": 4,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 23,
-      "goalsPer90": 35.22,
-      "assistsPer90": 15.65
+      "playedMatches": 24,
+      "goalsPer90": 33.75,
+      "assistsPer90": 15
     },
     {
       "id": "alessandro-bastoni",
