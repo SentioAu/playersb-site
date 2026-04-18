@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-18T02:27:05.454Z",
-  "generatedAt": "2026-04-18T02:27:05.454Z",
+  "updatedAt": "2026-04-18T07:09:40.590Z",
+  "generatedAt": "2026-04-18T07:09:40.591Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-18T02:27:05.454Z"
+      "fetchedAt": "2026-04-18T07:09:40.591Z"
     }
   },
   "fixtures": [
@@ -12143,17 +12143,6 @@
       "awayScore": null
     },
     {
-      "id": 537156,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Atalanta BC",
-      "away": "Genoa CFC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 537158,
       "competitionCode": "SA",
       "competition": "Serie A",
@@ -18718,7 +18707,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 4
+      "awayScore": 5
     },
     {
       "id": 542661,
