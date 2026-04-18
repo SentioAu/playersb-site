@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-18T07:09:40.595Z",
-  "generatedAt": "2026-04-18T07:09:40.595Z",
+  "updatedAt": "2026-04-18T13:04:23.602Z",
+  "generatedAt": "2026-04-18T13:04:23.602Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-18T07:09:40.595Z"
+      "fetchedAt": "2026-04-18T13:04:23.602Z"
     }
   },
   "scorers": [
@@ -29,7 +29,7 @@
       "goals": 21,
       "assists": 1,
       "penalties": 7,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Antoine Semenyo",
@@ -106,7 +106,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Harry Wilson",
@@ -117,7 +117,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Eli Kroupi",
@@ -128,7 +128,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Richarlison",
@@ -150,7 +150,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 2,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Bryan Mbeumo",
@@ -194,7 +194,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 4,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Ollie Watkins",
@@ -645,7 +645,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Moise Kean",
@@ -711,7 +711,7 @@
       "goals": 13,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Michael Olise",
@@ -777,7 +777,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 3,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Nadiem Amiri",
@@ -799,7 +799,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 3,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Jonathan Burkardt",
@@ -821,7 +821,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Ermedin Demirovic",
@@ -843,7 +843,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Romulo Cruz",
@@ -876,7 +876,7 @@
       "goals": 8,
       "assists": 7,
       "penalties": 3,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Igor Matanovic",

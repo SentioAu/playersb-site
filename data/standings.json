@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-18T07:09:40.595Z",
-  "generatedAt": "2026-04-18T07:09:40.595Z",
+  "updatedAt": "2026-04-18T13:04:23.602Z",
+  "generatedAt": "2026-04-18T13:04:23.602Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-18T07:09:40.595Z"
+      "fetchedAt": "2026-04-18T13:04:23.602Z"
     }
   },
   "standings": {
@@ -91,14 +91,14 @@
       {
         "position": 7,
         "team": "Brentford FC",
-        "played": 32,
+        "played": 33,
         "won": 13,
-        "draw": 8,
+        "draw": 9,
         "lost": 11,
         "goals": 48,
         "goalsAgainst": 44,
         "gd": 4,
-        "points": 47,
+        "points": 48,
         "form": null
       },
       {
@@ -156,14 +156,14 @@
       {
         "position": 12,
         "team": "Fulham FC",
-        "played": 32,
+        "played": 33,
         "won": 13,
-        "draw": 5,
+        "draw": 6,
         "lost": 14,
         "goals": 43,
         "goalsAgainst": 46,
         "gd": -3,
-        "points": 44,
+        "points": 45,
         "form": null
       },
       {
@@ -667,14 +667,14 @@
       {
         "position": 11,
         "team": "Udinese Calcio",
-        "played": 32,
+        "played": 33,
         "won": 12,
-        "draw": 7,
+        "draw": 8,
         "lost": 13,
         "goals": 38,
         "goalsAgainst": 42,
         "gd": -4,
-        "points": 43,
+        "points": 44,
         "form": null
       },
       {
@@ -692,6 +692,19 @@
       },
       {
         "position": 13,
+        "team": "Parma Calcio 1913",
+        "played": 33,
+        "won": 8,
+        "draw": 13,
+        "lost": 12,
+        "goals": 23,
+        "goalsAgainst": 40,
+        "gd": -17,
+        "points": 37,
+        "form": null
+      },
+      {
+        "position": 14,
         "team": "Genoa CFC",
         "played": 32,
         "won": 9,
@@ -700,19 +713,6 @@
         "goals": 38,
         "goalsAgainst": 45,
         "gd": -7,
-        "points": 36,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Parma Calcio 1913",
-        "played": 32,
-        "won": 8,
-        "draw": 12,
-        "lost": 12,
-        "goals": 23,
-        "goalsAgainst": 40,
-        "gd": -17,
         "points": 36,
         "form": null
       },
