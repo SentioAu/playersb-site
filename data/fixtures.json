@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-17T19:02:40.560Z",
-  "generatedAt": "2026-04-17T19:02:40.560Z",
+  "updatedAt": "2026-04-18T02:27:05.454Z",
+  "generatedAt": "2026-04-18T02:27:05.454Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-17T19:02:40.560Z"
+      "fetchedAt": "2026-04-18T02:27:05.454Z"
     }
   },
   "fixtures": [
@@ -11894,10 +11894,10 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-17T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "FC Internazionale Milano",
       "away": "Cagliari Calcio",
-      "homeScore": 0,
+      "homeScore": 3,
       "awayScore": 0
     },
     {
@@ -12099,6 +12099,39 @@
       "awayScore": null
     },
     {
+      "id": 537161,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-01T18:45:00Z",
+      "status": "TIMED",
+      "home": "AC Pisa 1909",
+      "away": "US Lecce",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537163,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-02T13:00:00Z",
+      "status": "TIMED",
+      "home": "Udinese Calcio",
+      "away": "Torino FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537157,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-02T16:00:00Z",
+      "status": "TIMED",
+      "home": "Como 1907",
+      "away": "SSC Napoli",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
       "id": 537155,
       "competitionCode": "SA",
       "competition": "Serie A",
@@ -12117,17 +12150,6 @@
       "status": "SCHEDULED",
       "home": "Atalanta BC",
       "away": "Genoa CFC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 537157,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Como 1907",
-      "away": "SSC Napoli",
       "homeScore": null,
       "awayScore": null
     },
@@ -12165,17 +12187,6 @@
       "awayScore": null
     },
     {
-      "id": 537161,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "AC Pisa 1909",
-      "away": "US Lecce",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 537162,
       "competitionCode": "SA",
       "competition": "Serie A",
@@ -12183,17 +12194,6 @@
       "status": "SCHEDULED",
       "home": "US Sassuolo Calcio",
       "away": "AC Milan",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 537163,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "home": "Udinese Calcio",
-      "away": "Torino FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -15414,11 +15414,11 @@
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-17T18:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "FC St. Pauli 1910",
       "away": "1. FC Köln",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 540674,
@@ -18718,7 +18718,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 5
+      "awayScore": 4
     },
     {
       "id": 542661,
@@ -18747,11 +18747,11 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-17T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Racing Club de Lens",
       "away": "Toulouse FC",
-      "homeScore": 0,
-      "awayScore": 1
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "id": 542668,

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-17T19:02:40.564Z",
-  "generatedAt": "2026-04-17T19:02:40.564Z",
+  "updatedAt": "2026-04-18T02:27:05.459Z",
+  "generatedAt": "2026-04-18T02:27:05.459Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-17T19:02:40.564Z"
+      "fetchedAt": "2026-04-18T02:27:05.459Z"
     }
   },
   "scorers": [
@@ -488,7 +488,7 @@
       "competition": "Serie A",
       "nationality": "France",
       "position": "",
-      "goals": 10,
+      "goals": 11,
       "assists": 5,
       "penalties": 0,
       "playedMatches": 27

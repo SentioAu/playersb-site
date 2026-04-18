@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-17T19:02:40.564Z",
-  "generatedAt": "2026-04-17T19:02:40.564Z",
+  "updatedAt": "2026-04-18T02:27:05.458Z",
+  "generatedAt": "2026-04-18T02:27:05.458Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-17T19:02:40.564Z"
+      "fetchedAt": "2026-04-18T02:27:05.458Z"
     }
   },
   "standings": {
@@ -538,13 +538,13 @@
         "position": 1,
         "team": "FC Internazionale Milano",
         "played": 33,
-        "won": 24,
-        "draw": 4,
+        "won": 25,
+        "draw": 3,
         "lost": 5,
-        "goals": 75,
+        "goals": 78,
         "goalsAgainst": 29,
-        "gd": 46,
-        "points": 76,
+        "gd": 49,
+        "points": 78,
         "form": null
       },
       {
@@ -734,12 +734,12 @@
         "team": "Cagliari Calcio",
         "played": 33,
         "won": 8,
-        "draw": 10,
-        "lost": 15,
+        "draw": 9,
+        "lost": 16,
         "goals": 33,
-        "goalsAgainst": 44,
-        "gd": -11,
-        "points": 34,
+        "goalsAgainst": 47,
+        "gd": -14,
+        "points": 33,
         "form": null
       },
       {
@@ -946,8 +946,8 @@
         "won": 7,
         "draw": 10,
         "lost": 13,
-        "goals": 43,
-        "goalsAgainst": 50,
+        "goals": 44,
+        "goalsAgainst": 51,
         "gd": -7,
         "points": 31,
         "form": null
@@ -998,8 +998,8 @@
         "won": 6,
         "draw": 8,
         "lost": 16,
-        "goals": 25,
-        "goalsAgainst": 50,
+        "goals": 26,
+        "goalsAgainst": 51,
         "gd": -25,
         "points": 26,
         "form": null
@@ -1049,13 +1049,13 @@
         "position": 2,
         "team": "Racing Club de Lens",
         "played": 29,
-        "won": 19,
+        "won": 20,
         "draw": 2,
-        "lost": 8,
-        "goals": 54,
+        "lost": 7,
+        "goals": 57,
         "goalsAgainst": 29,
-        "gd": 25,
-        "points": 59,
+        "gd": 28,
+        "points": 62,
         "form": null
       },
       {
@@ -1138,19 +1138,6 @@
       },
       {
         "position": 9,
-        "team": "Toulouse FC",
-        "played": 30,
-        "won": 11,
-        "draw": 7,
-        "lost": 12,
-        "goals": 41,
-        "goalsAgainst": 39,
-        "gd": 2,
-        "points": 40,
-        "form": null
-      },
-      {
-        "position": 10,
         "team": "FC Lorient",
         "played": 29,
         "won": 9,
@@ -1160,6 +1147,19 @@
         "goalsAgainst": 44,
         "gd": -6,
         "points": 38,
+        "form": null
+      },
+      {
+        "position": 10,
+        "team": "Toulouse FC",
+        "played": 30,
+        "won": 10,
+        "draw": 7,
+        "lost": 13,
+        "goals": 41,
+        "goalsAgainst": 42,
+        "gd": -1,
+        "points": 37,
         "form": null
       },
       {
