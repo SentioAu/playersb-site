@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T13:04:23.683Z",
+  "generated_at": "2026-04-18T18:53:35.966Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -190,9 +190,9 @@
       "assists": 1,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 22,
-      "goalsPer90": 36.82,
-      "assistsPer90": 4.09
+      "playedMatches": 23,
+      "goalsPer90": 35.22,
+      "assistsPer90": 3.91
     },
     {
       "id": "enzo-fernandez",
@@ -204,9 +204,9 @@
       "assists": 3,
       "shots": 61,
       "shotsOnTarget": 31,
-      "playedMatches": 30,
-      "goalsPer90": 24,
-      "assistsPer90": 9
+      "playedMatches": 31,
+      "goalsPer90": 23.23,
+      "assistsPer90": 8.71
     },
     {
       "id": "reece-james",
@@ -254,9 +254,9 @@
       "assists": 3,
       "shots": 52,
       "shotsOnTarget": 27,
-      "playedMatches": 27,
-      "goalsPer90": 33.33,
-      "assistsPer90": 10
+      "playedMatches": 28,
+      "goalsPer90": 32.14,
+      "assistsPer90": 9.64
     },
     {
       "id": "marcus-rashford",
@@ -622,9 +622,9 @@
       "assists": 5,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 29,
-      "goalsPer90": 27.93,
-      "assistsPer90": 15.52
+      "playedMatches": 30,
+      "goalsPer90": 27,
+      "assistsPer90": 15
     },
     {
       "id": "amine-harit",
