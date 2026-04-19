@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-18T18:53:35.884Z",
-  "generatedAt": "2026-04-18T18:53:35.884Z",
+  "updatedAt": "2026-04-19T02:41:20.270Z",
+  "generatedAt": "2026-04-19T02:41:20.270Z",
   "source": "football-data.org",
   "players": [
     {
@@ -521,6 +521,17 @@
       "playedMatches": 28
     },
     {
+      "name": "Nikola Krstović",
+      "team": "Atalanta BC",
+      "competition": "Serie A",
+      "nationality": "Montenegro",
+      "position": "",
+      "goals": 10,
+      "assists": 4,
+      "penalties": 0,
+      "playedMatches": 33
+    },
+    {
       "name": "Donyell Malen",
       "team": "AS Roma",
       "competition": "Serie A",
@@ -552,17 +563,6 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 28
-    },
-    {
-      "name": "Nikola Krstović",
-      "team": "Atalanta BC",
-      "competition": "Serie A",
-      "nationality": "Montenegro",
-      "position": "",
-      "goals": 9,
-      "assists": 4,
-      "penalties": 0,
-      "playedMatches": 33
     },
     {
       "name": "Rafael Leão",

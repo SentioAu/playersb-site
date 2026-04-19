@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-18T18:53:35.883Z",
-  "generatedAt": "2026-04-18T18:53:35.883Z",
+  "updatedAt": "2026-04-19T02:41:20.269Z",
+  "generatedAt": "2026-04-19T02:41:20.269Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-18T18:53:35.883Z"
+      "fetchedAt": "2026-04-19T02:41:20.269Z"
     }
   },
   "standings": {
@@ -39,14 +39,14 @@
       {
         "position": 3,
         "team": "Manchester United FC",
-        "played": 32,
-        "won": 15,
+        "played": 33,
+        "won": 16,
         "draw": 10,
         "lost": 7,
-        "goals": 57,
+        "goals": 58,
         "goalsAgainst": 45,
-        "gd": 12,
-        "points": 55,
+        "gd": 13,
+        "points": 58,
         "form": null
       },
       {
@@ -78,13 +78,13 @@
       {
         "position": 6,
         "team": "Chelsea FC",
-        "played": 32,
+        "played": 33,
         "won": 13,
         "draw": 9,
-        "lost": 10,
+        "lost": 11,
         "goals": 53,
-        "goalsAgainst": 41,
-        "gd": 12,
+        "goalsAgainst": 42,
+        "gd": 11,
         "points": 48,
         "form": null
       },
@@ -602,27 +602,27 @@
       {
         "position": 6,
         "team": "AS Roma",
-        "played": 32,
+        "played": 33,
         "won": 18,
-        "draw": 3,
+        "draw": 4,
         "lost": 11,
-        "goals": 45,
-        "goalsAgainst": 28,
+        "goals": 46,
+        "goalsAgainst": 29,
         "gd": 17,
-        "points": 57,
+        "points": 58,
         "form": null
       },
       {
         "position": 7,
         "team": "Atalanta BC",
-        "played": 32,
+        "played": 33,
         "won": 14,
-        "draw": 11,
+        "draw": 12,
         "lost": 7,
-        "goals": 44,
-        "goalsAgainst": 28,
+        "goals": 45,
+        "goalsAgainst": 29,
         "gd": 16,
-        "points": 53,
+        "points": 54,
         "form": null
       },
       {
@@ -1061,14 +1061,14 @@
       {
         "position": 3,
         "team": "Lille OSC",
-        "played": 29,
+        "played": 30,
         "won": 16,
-        "draw": 5,
+        "draw": 6,
         "lost": 8,
         "goals": 49,
         "goalsAgainst": 34,
         "gd": 15,
-        "points": 53,
+        "points": 54,
         "form": null
       },
       {
@@ -1217,14 +1217,14 @@
       {
         "position": 15,
         "team": "OGC Nice",
-        "played": 29,
+        "played": 30,
         "won": 7,
-        "draw": 7,
+        "draw": 8,
         "lost": 15,
         "goals": 34,
         "goalsAgainst": 56,
         "gd": -22,
-        "points": 28,
+        "points": 29,
         "form": null
       },
       {
