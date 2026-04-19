@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T13:03:41.569Z",
+  "generated_at": "2026-04-19T18:53:45.969Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -583,9 +583,9 @@
       "assists": 5,
       "shots": 44,
       "shotsOnTarget": 22,
-      "playedMatches": 17,
-      "goalsPer90": 52.94,
-      "assistsPer90": 26.47
+      "playedMatches": 18,
+      "goalsPer90": 50,
+      "assistsPer90": 25
     },
     {
       "id": "achraf-hakimi",
@@ -716,12 +716,12 @@
       "team": "AC Milan",
       "minutes": 1100,
       "goals": 9,
-      "assists": 2,
+      "assists": 3,
       "shots": 39,
       "shotsOnTarget": 20,
       "playedMatches": 26,
       "goalsPer90": 31.15,
-      "assistsPer90": 6.92
+      "assistsPer90": 10.38
     },
     {
       "id": "theo-hernandez",

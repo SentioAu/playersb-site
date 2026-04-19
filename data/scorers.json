@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-19T13:03:41.491Z",
-  "generatedAt": "2026-04-19T13:03:41.491Z",
+  "updatedAt": "2026-04-19T18:53:45.889Z",
+  "generatedAt": "2026-04-19T18:53:45.889Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-19T13:03:41.491Z"
+      "fetchedAt": "2026-04-19T18:53:45.889Z"
     }
   },
   "scorers": [
@@ -15,10 +15,10 @@
       "competition": "Premier League",
       "nationality": "Norway",
       "position": "",
-      "goals": 22,
+      "goals": 23,
       "assists": 7,
       "penalties": 3,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Thiago Rodrigues",
@@ -40,7 +40,7 @@
       "goals": 15,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "João Pedro",
@@ -62,7 +62,7 @@
       "goals": 12,
       "assists": 0,
       "penalties": 3,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Danny Welbeck",
@@ -74,6 +74,17 @@
       "assists": 0,
       "penalties": 1,
       "playedMatches": 32
+    },
+    {
+      "name": "Morgan Gibbs-White",
+      "team": "Nottingham Forest FC",
+      "competition": "Premier League",
+      "nationality": "England",
+      "position": "",
+      "goals": 12,
+      "assists": 3,
+      "penalties": 1,
+      "playedMatches": 33
     },
     {
       "name": "Hugo Ekitike",
@@ -96,6 +107,17 @@
       "assists": 1,
       "penalties": 3,
       "playedMatches": 30
+    },
+    {
+      "name": "Ollie Watkins",
+      "team": "Aston Villa FC",
+      "competition": "Premier League",
+      "nationality": "England",
+      "position": "",
+      "goals": 11,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 32
     },
     {
       "name": "Jean-Philippe Mateta",
@@ -197,37 +219,15 @@
       "playedMatches": 32
     },
     {
-      "name": "Ollie Watkins",
+      "name": "Morgan Rogers",
       "team": "Aston Villa FC",
       "competition": "Premier League",
       "nationality": "England",
       "position": "",
       "goals": 9,
-      "assists": 1,
+      "assists": 6,
       "penalties": 0,
-      "playedMatches": 32
-    },
-    {
-      "name": "Morgan Gibbs-White",
-      "team": "Nottingham Forest FC",
-      "competition": "Premier League",
-      "nationality": "England",
-      "position": "",
-      "goals": 9,
-      "assists": 3,
-      "penalties": 1,
       "playedMatches": 33
-    },
-    {
-      "name": "Enzo Fernández",
-      "team": "Chelsea FC",
-      "competition": "Premier League",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 2,
-      "playedMatches": 31
     },
     {
       "name": "Kylian Mbappé",
@@ -513,7 +513,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Rasmus Højlund",
@@ -577,7 +577,7 @@
       "nationality": "Portugal",
       "position": "",
       "goals": 9,
-      "assists": 2,
+      "assists": 3,
       "penalties": 2,
       "playedMatches": 26
     },
@@ -634,7 +634,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Mateo Pellegrino",
@@ -675,10 +675,10 @@
       "competition": "Bundesliga",
       "nationality": "England",
       "position": "",
-      "goals": 31,
+      "goals": 32,
       "assists": 4,
       "penalties": 10,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Deniz Undav",
@@ -698,9 +698,9 @@
       "nationality": "Colombia",
       "position": "",
       "goals": 15,
-      "assists": 9,
+      "assists": 11,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Sehrou Guirassy",
@@ -722,7 +722,7 @@
       "goals": 12,
       "assists": 18,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Christoph Baumgartner",
@@ -788,7 +788,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Nadiem Amiri",
@@ -799,7 +799,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 7,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Jonathan Burkardt",
@@ -832,7 +832,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 20
+      "playedMatches": 21
     },
     {
       "name": "Jens Stage",
@@ -890,6 +890,17 @@
       "playedMatches": 26
     },
     {
+      "name": "Esteban Lepaul",
+      "team": "Stade Rennais FC 1901",
+      "competition": "Ligue 1",
+      "nationality": "France",
+      "position": "",
+      "goals": 17,
+      "assists": 4,
+      "penalties": 2,
+      "playedMatches": 30
+    },
+    {
       "name": "Joaquín Panichelli",
       "team": "RC Strasbourg Alsace",
       "competition": "Ligue 1",
@@ -899,17 +910,6 @@
       "assists": 1,
       "penalties": 5,
       "playedMatches": 27
-    },
-    {
-      "name": "Esteban Lepaul",
-      "team": "Stade Rennais FC 1901",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 16,
-      "assists": 3,
-      "penalties": 2,
-      "playedMatches": 29
     },
     {
       "name": "Mason Greenwood",
@@ -923,6 +923,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Folarin Balogun",
+      "team": "AS Monaco FC",
+      "competition": "Ligue 1",
+      "nationality": "USA",
+      "position": "",
+      "goals": 12,
+      "assists": 3,
+      "penalties": 3,
+      "playedMatches": 27
+    },
+    {
       "name": "Odsonne Edouard",
       "team": "Racing Club de Lens",
       "competition": "Ligue 1",
@@ -932,17 +943,6 @@
       "assists": 3,
       "penalties": 1,
       "playedMatches": 25
-    },
-    {
-      "name": "Folarin Balogun",
-      "team": "AS Monaco FC",
-      "competition": "Ligue 1",
-      "nationality": "USA",
-      "position": "",
-      "goals": 11,
-      "assists": 3,
-      "penalties": 2,
-      "playedMatches": 27
     },
     {
       "name": "Wesley Saïd",
@@ -964,7 +964,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Ousmane Dembélé",
@@ -975,7 +975,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 2,
-      "playedMatches": 17
+      "playedMatches": 18
     },
     {
       "name": "Pavel Šulc",
@@ -989,6 +989,17 @@
       "playedMatches": 24
     },
     {
+      "name": "Lassine Sinayoko",
+      "team": "AJ Auxerre",
+      "competition": "Ligue 1",
+      "nationality": "Mali",
+      "position": "",
+      "goals": 9,
+      "assists": 3,
+      "penalties": 3,
+      "playedMatches": 28
+    },
+    {
       "name": "Pierre-Emerick Aubameyang",
       "team": "Olympique de Marseille",
       "competition": "Ligue 1",
@@ -998,6 +1009,17 @@
       "assists": 5,
       "penalties": 0,
       "playedMatches": 30
+    },
+    {
+      "name": "Ilan Kebbal",
+      "team": "Paris FC",
+      "competition": "Ligue 1",
+      "nationality": "Algeria",
+      "position": "",
+      "goals": 9,
+      "assists": 4,
+      "penalties": 3,
+      "playedMatches": 26
     },
     {
       "name": "Florian Thauvin",
@@ -1011,6 +1033,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Ansu Fati",
+      "team": "AS Monaco FC",
+      "competition": "Ligue 1",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 9,
+      "assists": 0,
+      "penalties": 3,
+      "playedMatches": 22
+    },
+    {
       "name": "Ahmadou Bamba Dieng",
       "team": "FC Lorient",
       "competition": "Ligue 1",
@@ -1020,28 +1053,6 @@
       "assists": 2,
       "penalties": 1,
       "playedMatches": 23
-    },
-    {
-      "name": "Lassine Sinayoko",
-      "team": "AJ Auxerre",
-      "competition": "Ligue 1",
-      "nationality": "Mali",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 3,
-      "playedMatches": 28
-    },
-    {
-      "name": "Ilan Kebbal",
-      "team": "Paris FC",
-      "competition": "Ligue 1",
-      "nationality": "Algeria",
-      "position": "",
-      "goals": 8,
-      "assists": 4,
-      "penalties": 3,
-      "playedMatches": 25
     },
     {
       "name": "Corentin Tolisso",
@@ -1083,20 +1094,9 @@
       "nationality": "France",
       "position": "",
       "goals": 8,
-      "assists": 2,
+      "assists": 3,
       "penalties": 6,
-      "playedMatches": 26
-    },
-    {
-      "name": "Ansu Fati",
-      "team": "AS Monaco FC",
-      "competition": "Ligue 1",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 8,
-      "assists": 0,
-      "penalties": 3,
-      "playedMatches": 22
+      "playedMatches": 27
     },
     {
       "name": "Martial Godo",
@@ -1107,7 +1107,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Kylian Mbappé",
