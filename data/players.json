@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T07:21:32.836Z",
+  "generated_at": "2026-04-19T13:03:41.569Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -719,9 +719,9 @@
       "assists": 2,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 25,
-      "goalsPer90": 32.4,
-      "assistsPer90": 7.2
+      "playedMatches": 26,
+      "goalsPer90": 31.15,
+      "assistsPer90": 6.92
     },
     {
       "id": "theo-hernandez",
@@ -744,9 +744,9 @@
       "assists": 3,
       "shots": 48,
       "shotsOnTarget": 24,
-      "playedMatches": 26,
-      "goalsPer90": 27.69,
-      "assistsPer90": 10.38
+      "playedMatches": 27,
+      "goalsPer90": 26.67,
+      "assistsPer90": 10
     },
     {
       "id": "mike-maignan",

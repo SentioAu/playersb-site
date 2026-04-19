@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-19T07:21:32.755Z",
-  "generatedAt": "2026-04-19T07:21:32.755Z",
+  "updatedAt": "2026-04-19T13:03:41.491Z",
+  "generatedAt": "2026-04-19T13:03:41.491Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-19T07:21:32.755Z"
+      "fetchedAt": "2026-04-19T13:03:41.491Z"
     }
   },
   "scorers": [
@@ -205,7 +205,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Morgan Gibbs-White",
@@ -216,7 +216,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Enzo Fernández",
@@ -568,7 +568,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Rafael Leão",
@@ -579,7 +579,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Scott McTominay",
@@ -623,7 +623,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Riccardo Orsolini",
@@ -667,7 +667,7 @@
       "goals": 7,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Harry Kane",
@@ -942,7 +942,7 @@
       "goals": 11,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Wesley Saïd",
@@ -1030,7 +1030,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Ilan Kebbal",
@@ -1096,7 +1096,7 @@
       "goals": 8,
       "assists": 0,
       "penalties": 3,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Martial Godo",
