@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-20T13:31:23.312Z",
-  "generatedAt": "2026-04-20T13:31:23.312Z",
+  "updatedAt": "2026-04-20T19:07:23.477Z",
+  "generatedAt": "2026-04-20T19:07:23.477Z",
   "source": "football-data.org",
   "players": [
     {
@@ -122,7 +122,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 4,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Harry Wilson",

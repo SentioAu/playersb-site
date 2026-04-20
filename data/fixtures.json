@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-20T13:31:23.307Z",
-  "generatedAt": "2026-04-20T13:31:23.307Z",
+  "updatedAt": "2026-04-20T19:07:23.472Z",
+  "generatedAt": "2026-04-20T19:07:23.472Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-20T13:31:23.307Z"
+      "fetchedAt": "2026-04-20T19:07:23.472Z"
     }
   },
   "fixtures": [
@@ -11663,11 +11663,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-20T18:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "US Lecce",
       "away": "ACF Fiorentina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537154,
