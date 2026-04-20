@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-19T18:53:45.888Z",
-  "generatedAt": "2026-04-19T18:53:45.888Z",
+  "updatedAt": "2026-04-20T02:41:50.083Z",
+  "generatedAt": "2026-04-20T02:41:50.083Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-19T18:53:45.888Z"
+      "fetchedAt": "2026-04-20T02:41:50.083Z"
     }
   },
   "standings": {
@@ -576,14 +576,14 @@
       {
         "position": 4,
         "team": "Juventus FC",
-        "played": 32,
-        "won": 17,
+        "played": 33,
+        "won": 18,
         "draw": 9,
         "lost": 6,
-        "goals": 55,
+        "goals": 57,
         "goalsAgainst": 29,
-        "gd": 26,
-        "points": 60,
+        "gd": 28,
+        "points": 63,
         "form": null
       },
       {
@@ -628,13 +628,13 @@
       {
         "position": 8,
         "team": "Bologna FC 1909",
-        "played": 32,
+        "played": 33,
         "won": 14,
         "draw": 6,
-        "lost": 12,
+        "lost": 13,
         "goals": 42,
-        "goalsAgainst": 37,
-        "gd": 5,
+        "goalsAgainst": 39,
+        "gd": 3,
         "points": 48,
         "form": null
       },
@@ -918,29 +918,16 @@
         "team": "1. FSV Mainz 05",
         "played": 30,
         "won": 8,
-        "draw": 9,
-        "lost": 13,
-        "goals": 35,
+        "draw": 10,
+        "lost": 12,
+        "goals": 36,
         "goalsAgainst": 45,
-        "gd": -10,
-        "points": 33,
+        "gd": -9,
+        "points": 34,
         "form": null
       },
       {
         "position": 11,
-        "team": "Borussia Mönchengladbach",
-        "played": 30,
-        "won": 8,
-        "draw": 9,
-        "lost": 13,
-        "goals": 36,
-        "goalsAgainst": 49,
-        "gd": -13,
-        "points": 33,
-        "form": null
-      },
-      {
-        "position": 12,
         "team": "1. FC Union Berlin",
         "played": 30,
         "won": 8,
@@ -953,7 +940,7 @@
         "form": null
       },
       {
-        "position": 13,
+        "position": 12,
         "team": "1. FC Köln",
         "played": 30,
         "won": 7,
@@ -962,6 +949,19 @@
         "goals": 44,
         "goalsAgainst": 51,
         "gd": -7,
+        "points": 31,
+        "form": null
+      },
+      {
+        "position": 13,
+        "team": "Borussia Mönchengladbach",
+        "played": 30,
+        "won": 7,
+        "draw": 10,
+        "lost": 13,
+        "goals": 36,
+        "goalsAgainst": 50,
+        "gd": -14,
         "points": 31,
         "form": null
       },
@@ -1035,13 +1035,13 @@
       {
         "position": 1,
         "team": "Paris Saint-Germain FC",
-        "played": 27,
+        "played": 28,
         "won": 20,
         "draw": 3,
-        "lost": 4,
-        "goals": 61,
-        "goalsAgainst": 23,
-        "gd": 38,
+        "lost": 5,
+        "goals": 62,
+        "goalsAgainst": 25,
+        "gd": 37,
         "points": 63,
         "form": null
       },
@@ -1073,6 +1073,19 @@
       },
       {
         "position": 4,
+        "team": "Olympique Lyonnais",
+        "played": 30,
+        "won": 16,
+        "draw": 6,
+        "lost": 8,
+        "goals": 45,
+        "goalsAgainst": 30,
+        "gd": 15,
+        "points": 54,
+        "form": null
+      },
+      {
+        "position": 5,
         "team": "Stade Rennais FC 1901",
         "played": 30,
         "won": 15,
@@ -1085,7 +1098,7 @@
         "form": null
       },
       {
-        "position": 5,
+        "position": 6,
         "team": "Olympique de Marseille",
         "played": 30,
         "won": 16,
@@ -1095,19 +1108,6 @@
         "goalsAgainst": 40,
         "gd": 18,
         "points": 52,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "Olympique Lyonnais",
-        "played": 29,
-        "won": 15,
-        "draw": 6,
-        "lost": 8,
-        "goals": 43,
-        "goalsAgainst": 29,
-        "gd": 14,
-        "points": 51,
         "form": null
       },
       {

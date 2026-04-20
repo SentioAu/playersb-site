@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-19T18:53:45.889Z",
-  "generatedAt": "2026-04-19T18:53:45.889Z",
+  "updatedAt": "2026-04-20T02:41:50.083Z",
+  "generatedAt": "2026-04-20T02:41:50.083Z",
   "source": "football-data.org",
   "players": [
     {
@@ -763,6 +763,17 @@
       "playedMatches": 24
     },
     {
+      "name": "Nadiem Amiri",
+      "team": "1. FSV Mainz 05",
+      "competition": "Bundesliga",
+      "nationality": "Germany",
+      "position": "",
+      "goals": 11,
+      "assists": 2,
+      "penalties": 8,
+      "playedMatches": 22
+    },
+    {
       "name": "Said El Mala",
       "team": "1. FC Köln",
       "competition": "Bundesliga",
@@ -783,17 +794,6 @@
       "assists": 1,
       "penalties": 0,
       "playedMatches": 29
-    },
-    {
-      "name": "Nadiem Amiri",
-      "team": "1. FSV Mainz 05",
-      "competition": "Bundesliga",
-      "nationality": "Germany",
-      "position": "",
-      "goals": 10,
-      "assists": 2,
-      "penalties": 7,
-      "playedMatches": 22
     },
     {
       "name": "Jonathan Burkardt",
