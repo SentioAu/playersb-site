@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-21T13:28:58.032Z",
-  "generatedAt": "2026-04-21T13:28:58.032Z",
+  "updatedAt": "2026-04-21T19:13:56.564Z",
+  "generatedAt": "2026-04-21T19:13:56.564Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-21T13:28:58.032Z"
+      "fetchedAt": "2026-04-21T19:13:56.564Z"
     }
   },
   "standings": {
@@ -78,18 +78,31 @@
       {
         "position": 6,
         "team": "Chelsea FC",
-        "played": 33,
+        "played": 34,
         "won": 13,
-        "draw": 9,
+        "draw": 10,
         "lost": 11,
         "goals": 53,
         "goalsAgainst": 42,
         "gd": 11,
-        "points": 48,
+        "points": 49,
         "form": null
       },
       {
         "position": 7,
+        "team": "Brighton & Hove Albion FC",
+        "played": 34,
+        "won": 12,
+        "draw": 12,
+        "lost": 10,
+        "goals": 45,
+        "goalsAgainst": 39,
+        "gd": 6,
+        "points": 48,
+        "form": null
+      },
+      {
+        "position": 8,
         "team": "Brentford FC",
         "played": 33,
         "won": 13,
@@ -102,7 +115,7 @@
         "form": null
       },
       {
-        "position": 8,
+        "position": 9,
         "team": "AFC Bournemouth",
         "played": 33,
         "won": 11,
@@ -112,19 +125,6 @@
         "goalsAgainst": 50,
         "gd": 0,
         "points": 48,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Brighton & Hove Albion FC",
-        "played": 33,
-        "won": 12,
-        "draw": 11,
-        "lost": 10,
-        "goals": 45,
-        "goalsAgainst": 39,
-        "gd": 6,
-        "points": 47,
         "form": null
       },
       {
@@ -378,19 +378,32 @@
       },
       {
         "position": 9,
-        "team": "CA Osasuna",
-        "played": 31,
-        "won": 10,
-        "draw": 9,
-        "lost": 12,
-        "goals": 37,
-        "goalsAgainst": 38,
-        "gd": -1,
-        "points": 39,
+        "team": "Athletic Club",
+        "played": 32,
+        "won": 12,
+        "draw": 5,
+        "lost": 15,
+        "goals": 34,
+        "goalsAgainst": 45,
+        "gd": -11,
+        "points": 41,
         "form": null
       },
       {
         "position": 10,
+        "team": "CA Osasuna",
+        "played": 32,
+        "won": 10,
+        "draw": 9,
+        "lost": 13,
+        "goals": 37,
+        "goalsAgainst": 39,
+        "gd": -2,
+        "points": 39,
+        "form": null
+      },
+      {
+        "position": 11,
         "team": "RCD Espanyol de Barcelona",
         "played": 31,
         "won": 10,
@@ -403,7 +416,7 @@
         "form": null
       },
       {
-        "position": 11,
+        "position": 12,
         "team": "Girona FC",
         "played": 31,
         "won": 9,
@@ -416,20 +429,33 @@
         "form": null
       },
       {
-        "position": 12,
-        "team": "Athletic Club",
-        "played": 31,
-        "won": 11,
-        "draw": 5,
-        "lost": 15,
-        "goals": 33,
-        "goalsAgainst": 45,
+        "position": 13,
+        "team": "Valencia CF",
+        "played": 32,
+        "won": 9,
+        "draw": 9,
+        "lost": 14,
+        "goals": 35,
+        "goalsAgainst": 47,
         "gd": -12,
-        "points": 38,
+        "points": 36,
         "form": null
       },
       {
-        "position": 13,
+        "position": 14,
+        "team": "RCD Mallorca",
+        "played": 32,
+        "won": 9,
+        "draw": 8,
+        "lost": 15,
+        "goals": 40,
+        "goalsAgainst": 49,
+        "gd": -9,
+        "points": 35,
+        "form": null
+      },
+      {
+        "position": 15,
         "team": "Rayo Vallecano de Madrid",
         "played": 31,
         "won": 8,
@@ -439,32 +465,6 @@
         "goalsAgainst": 38,
         "gd": -9,
         "points": 35,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Valencia CF",
-        "played": 31,
-        "won": 9,
-        "draw": 8,
-        "lost": 14,
-        "goals": 34,
-        "goalsAgainst": 46,
-        "gd": -12,
-        "points": 35,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "RCD Mallorca",
-        "played": 31,
-        "won": 9,
-        "draw": 7,
-        "lost": 15,
-        "goals": 39,
-        "goalsAgainst": 48,
-        "gd": -9,
-        "points": 34,
         "form": null
       },
       {

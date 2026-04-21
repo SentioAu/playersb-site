@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-21T13:28:58.033Z",
-  "generatedAt": "2026-04-21T13:28:58.033Z",
+  "updatedAt": "2026-04-21T19:13:56.566Z",
+  "generatedAt": "2026-04-21T19:13:56.566Z",
   "source": "football-data.org",
   "players": [
     {
@@ -67,7 +67,7 @@
       "goals": 12,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Morgan Gibbs-White",
@@ -232,7 +232,7 @@
       "goals": 23,
       "assists": 4,
       "penalties": 8,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Vedat Muriqi",
@@ -243,7 +243,7 @@
       "goals": 21,
       "assists": 1,
       "penalties": 5,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Ante Budimir",
@@ -254,7 +254,7 @@
       "goals": 16,
       "assists": 0,
       "penalties": 6,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Lamine Yamal",
@@ -331,7 +331,7 @@
       "goals": 11,
       "assists": 5,
       "penalties": 4,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Lucas Boyé",
@@ -342,7 +342,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Jorge de Frutos",
@@ -375,7 +375,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Vladyslav Vanat",
@@ -430,7 +430,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Julián Álvarez",
