@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-20T19:07:23.476Z",
-  "generatedAt": "2026-04-20T19:07:23.476Z",
+  "updatedAt": "2026-04-21T02:36:53.661Z",
+  "generatedAt": "2026-04-21T02:36:53.661Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-20T19:07:23.476Z"
+      "fetchedAt": "2026-04-21T02:36:53.661Z"
     }
   },
   "standings": {
@@ -723,8 +723,8 @@
         "won": 8,
         "draw": 12,
         "lost": 13,
-        "goals": 37,
-        "goalsAgainst": 44,
+        "goals": 38,
+        "goalsAgainst": 45,
         "gd": -7,
         "points": 36,
         "form": null
@@ -762,8 +762,8 @@
         "won": 7,
         "draw": 7,
         "lost": 19,
-        "goals": 21,
-        "goalsAgainst": 45,
+        "goals": 22,
+        "goalsAgainst": 46,
         "gd": -24,
         "points": 28,
         "form": null
