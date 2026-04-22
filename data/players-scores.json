@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-22T13:28:55.127Z",
-  "generatedAt": "2026-04-22T13:28:55.127Z",
+  "updatedAt": "2026-04-22T19:15:22.950Z",
+  "generatedAt": "2026-04-22T19:15:22.950Z",
   "source": "football-data.org",
   "players": [
     {
@@ -9,10 +9,10 @@
       "competition": "Premier League",
       "nationality": "Norway",
       "position": "",
-      "goals": 23,
+      "goals": 24,
       "assists": 7,
       "penalties": 3,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Thiago Rodrigues",
@@ -34,7 +34,7 @@
       "goals": 15,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "João Pedro",
@@ -100,7 +100,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Ollie Watkins",
@@ -144,7 +144,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Richarlison",
@@ -265,7 +265,7 @@
       "goals": 15,
       "assists": 11,
       "penalties": 2,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Ferrán Torres",
@@ -276,7 +276,7 @@
       "goals": 14,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Vinicius Junior",
@@ -298,7 +298,7 @@
       "goals": 12,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Mikel Oyarzabal",
@@ -309,7 +309,7 @@
       "goals": 12,
       "assists": 3,
       "penalties": 5,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Robert Lewandowski",
@@ -320,7 +320,7 @@
       "goals": 12,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Raphinha",
@@ -389,6 +389,17 @@
       "playedMatches": 31
     },
     {
+      "name": "André Silva",
+      "team": "Elche CF",
+      "competition": "La Liga",
+      "nationality": "Portugal",
+      "position": "",
+      "goals": 9,
+      "assists": 0,
+      "penalties": 2,
+      "playedMatches": 27
+    },
+    {
       "name": "Vladyslav Vanat",
       "team": "Girona FC",
       "competition": "La Liga",
@@ -431,17 +442,6 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 27
-    },
-    {
-      "name": "Julián Álvarez",
-      "team": "Club Atlético de Madrid",
-      "competition": "La Liga",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 8,
-      "assists": 4,
-      "penalties": 2,
-      "playedMatches": 31
     },
     {
       "name": "Lautaro Martínez",
@@ -958,7 +958,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Ousmane Dembélé",
@@ -967,9 +967,9 @@
       "nationality": "France",
       "position": "",
       "goals": 10,
-      "assists": 5,
+      "assists": 6,
       "penalties": 2,
-      "playedMatches": 18
+      "playedMatches": 19
     },
     {
       "name": "Pavel Šulc",

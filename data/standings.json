@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-22T13:28:55.126Z",
-  "generatedAt": "2026-04-22T13:28:55.126Z",
+  "updatedAt": "2026-04-22T19:15:22.949Z",
+  "generatedAt": "2026-04-22T19:15:22.949Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-22T13:28:55.126Z"
+      "fetchedAt": "2026-04-22T19:15:22.949Z"
     }
   },
   "standings": {
@@ -26,14 +26,14 @@
       {
         "position": 2,
         "team": "Manchester City FC",
-        "played": 32,
+        "played": 33,
         "won": 20,
-        "draw": 7,
+        "draw": 8,
         "lost": 5,
         "goals": 65,
         "goalsAgainst": 29,
         "gd": 36,
-        "points": 67,
+        "points": 68,
         "form": null
       },
       {
@@ -90,6 +90,19 @@
       },
       {
         "position": 7,
+        "team": "AFC Bournemouth",
+        "played": 34,
+        "won": 11,
+        "draw": 16,
+        "lost": 7,
+        "goals": 50,
+        "goalsAgainst": 50,
+        "gd": 0,
+        "points": 49,
+        "form": null
+      },
+      {
+        "position": 8,
         "team": "Chelsea FC",
         "played": 34,
         "won": 13,
@@ -102,7 +115,7 @@
         "form": null
       },
       {
-        "position": 8,
+        "position": 9,
         "team": "Brentford FC",
         "played": 33,
         "won": 13,
@@ -111,19 +124,6 @@
         "goals": 48,
         "goalsAgainst": 44,
         "gd": 4,
-        "points": 48,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "AFC Bournemouth",
-        "played": 33,
-        "won": 11,
-        "draw": 15,
-        "lost": 7,
-        "goals": 50,
-        "goalsAgainst": 50,
-        "gd": 0,
         "points": 48,
         "form": null
       },
@@ -195,14 +195,14 @@
       {
         "position": 15,
         "team": "Leeds United FC",
-        "played": 33,
+        "played": 34,
         "won": 9,
-        "draw": 12,
+        "draw": 13,
         "lost": 12,
         "goals": 42,
         "goalsAgainst": 49,
         "gd": -7,
-        "points": 39,
+        "points": 40,
         "form": null
       },
       {
@@ -247,14 +247,14 @@
       {
         "position": 19,
         "team": "Burnley FC",
-        "played": 33,
+        "played": 34,
         "won": 4,
-        "draw": 8,
+        "draw": 9,
         "lost": 21,
         "goals": 34,
         "goalsAgainst": 67,
         "gd": -33,
-        "points": 20,
+        "points": 21,
         "form": null
       },
       {
@@ -314,13 +314,13 @@
       {
         "position": 4,
         "team": "Club Atlético de Madrid",
-        "played": 31,
+        "played": 32,
         "won": 17,
         "draw": 6,
-        "lost": 8,
-        "goals": 51,
-        "goalsAgainst": 32,
-        "gd": 19,
+        "lost": 9,
+        "goals": 53,
+        "goalsAgainst": 35,
+        "gd": 18,
         "points": 57,
         "form": null
       },
@@ -352,28 +352,28 @@
       },
       {
         "position": 7,
-        "team": "Real Sociedad de Fútbol",
-        "played": 31,
-        "won": 11,
-        "draw": 9,
-        "lost": 11,
-        "goals": 49,
-        "goalsAgainst": 48,
-        "gd": 1,
-        "points": 42,
+        "team": "Getafe CF",
+        "played": 32,
+        "won": 13,
+        "draw": 5,
+        "lost": 14,
+        "goals": 28,
+        "goalsAgainst": 32,
+        "gd": -4,
+        "points": 44,
         "form": null
       },
       {
         "position": 8,
-        "team": "Getafe CF",
-        "played": 31,
-        "won": 12,
-        "draw": 5,
-        "lost": 14,
-        "goals": 27,
-        "goalsAgainst": 32,
-        "gd": -5,
-        "points": 41,
+        "team": "Real Sociedad de Fútbol",
+        "played": 32,
+        "won": 11,
+        "draw": 9,
+        "lost": 12,
+        "goals": 49,
+        "goalsAgainst": 49,
+        "gd": 0,
+        "points": 42,
         "form": null
       },
       {
@@ -443,6 +443,19 @@
       },
       {
         "position": 14,
+        "team": "Elche CF",
+        "played": 32,
+        "won": 8,
+        "draw": 11,
+        "lost": 13,
+        "goals": 42,
+        "goalsAgainst": 49,
+        "gd": -7,
+        "points": 35,
+        "form": null
+      },
+      {
+        "position": 15,
         "team": "RCD Mallorca",
         "played": 32,
         "won": 9,
@@ -455,7 +468,7 @@
         "form": null
       },
       {
-        "position": 15,
+        "position": 16,
         "team": "Rayo Vallecano de Madrid",
         "played": 31,
         "won": 8,
@@ -468,7 +481,7 @@
         "form": null
       },
       {
-        "position": 16,
+        "position": 17,
         "team": "Sevilla FC",
         "played": 31,
         "won": 9,
@@ -481,7 +494,7 @@
         "form": null
       },
       {
-        "position": 17,
+        "position": 18,
         "team": "Deportivo Alavés",
         "played": 32,
         "won": 8,
@@ -491,19 +504,6 @@
         "goalsAgainst": 48,
         "gd": -12,
         "points": 33,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "Elche CF",
-        "played": 31,
-        "won": 7,
-        "draw": 11,
-        "lost": 13,
-        "goals": 39,
-        "goalsAgainst": 47,
-        "gd": -8,
-        "points": 32,
         "form": null
       },
       {
@@ -1035,14 +1035,14 @@
       {
         "position": 1,
         "team": "Paris Saint-Germain FC",
-        "played": 28,
-        "won": 20,
+        "played": 29,
+        "won": 21,
         "draw": 3,
         "lost": 5,
-        "goals": 62,
+        "goals": 65,
         "goalsAgainst": 25,
-        "gd": 37,
-        "points": 63,
+        "gd": 40,
+        "points": 66,
         "form": null
       },
       {
@@ -1243,13 +1243,13 @@
       {
         "position": 17,
         "team": "FC Nantes",
-        "played": 29,
+        "played": 30,
         "won": 4,
         "draw": 8,
-        "lost": 17,
+        "lost": 18,
         "goals": 25,
-        "goalsAgainst": 46,
-        "gd": -21,
+        "goalsAgainst": 49,
+        "gd": -24,
         "points": 20,
         "form": null
       },
