@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-22T02:35:21.123Z",
-  "generatedAt": "2026-04-22T02:35:21.123Z",
+  "updatedAt": "2026-04-22T07:49:09.297Z",
+  "generatedAt": "2026-04-22T07:49:09.297Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-22T02:35:21.124Z"
+      "fetchedAt": "2026-04-22T07:49:09.297Z"
     }
   },
   "fixtures": [
@@ -7575,7 +7575,7 @@
       "home": "Athletic Club",
       "away": "Villarreal CF",
       "homeScore": 1,
-      "awayScore": 2
+      "awayScore": 3
     },
     {
       "id": 544519,
@@ -7809,204 +7809,6 @@
       "awayScore": null
     },
     {
-      "id": 544546,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-01T19:00:00Z",
-      "status": "TIMED",
-      "home": "Girona FC",
-      "away": "RCD Mallorca",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544549,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-02T12:00:00Z",
-      "status": "TIMED",
-      "home": "Villarreal CF",
-      "away": "Levante UD",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544547,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-02T14:15:00Z",
-      "status": "TIMED",
-      "home": "Valencia CF",
-      "away": "Club Atlético de Madrid",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544541,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-02T16:30:00Z",
-      "status": "TIMED",
-      "home": "Deportivo Alavés",
-      "away": "Athletic Club",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544548,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-02T19:00:00Z",
-      "status": "TIMED",
-      "home": "CA Osasuna",
-      "away": "FC Barcelona",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544543,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T12:00:00Z",
-      "status": "TIMED",
-      "home": "RC Celta de Vigo",
-      "away": "Elche CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544545,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T14:15:00Z",
-      "status": "TIMED",
-      "home": "Getafe CF",
-      "away": "Rayo Vallecano de Madrid",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544542,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T16:30:00Z",
-      "status": "TIMED",
-      "home": "Real Betis Balompié",
-      "away": "Real Oviedo",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544544,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-03T19:00:00Z",
-      "status": "TIMED",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Real Madrid CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544550,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-04T19:00:00Z",
-      "status": "TIMED",
-      "home": "Sevilla FC",
-      "away": "Real Sociedad de Fútbol",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544554,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-08T19:00:00Z",
-      "status": "TIMED",
-      "home": "Levante UD",
-      "away": "CA Osasuna",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544556,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-09T12:00:00Z",
-      "status": "TIMED",
-      "home": "Elche CF",
-      "away": "Deportivo Alavés",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544558,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-09T14:15:00Z",
-      "status": "TIMED",
-      "home": "Sevilla FC",
-      "away": "RCD Espanyol de Barcelona",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544552,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-09T16:30:00Z",
-      "status": "TIMED",
-      "home": "Club Atlético de Madrid",
-      "away": "RC Celta de Vigo",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544557,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-09T19:00:00Z",
-      "status": "TIMED",
-      "home": "Real Sociedad de Fútbol",
-      "away": "Real Betis Balompié",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544555,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-10T12:00:00Z",
-      "status": "TIMED",
-      "home": "RCD Mallorca",
-      "away": "Villarreal CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544551,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-10T14:15:00Z",
-      "status": "TIMED",
-      "home": "Athletic Club",
-      "away": "Valencia CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544559,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-10T16:30:00Z",
-      "status": "TIMED",
-      "home": "Real Oviedo",
-      "away": "Getafe CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 544553,
       "competitionCode": "PD",
       "competition": "La Liga",
@@ -8014,127 +7816,6 @@
       "status": "TIMED",
       "home": "FC Barcelona",
       "away": "Real Madrid CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544560,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-11T19:00:00Z",
-      "status": "TIMED",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Girona FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544563,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-12T17:00:00Z",
-      "status": "TIMED",
-      "home": "RC Celta de Vigo",
-      "away": "Levante UD",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544562,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-12T18:00:00Z",
-      "status": "TIMED",
-      "home": "Real Betis Balompié",
-      "away": "Elche CF",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544567,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-12T19:30:00Z",
-      "status": "TIMED",
-      "home": "CA Osasuna",
-      "away": "Club Atlético de Madrid",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544566,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-13T17:00:00Z",
-      "status": "TIMED",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Athletic Club",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544569,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-13T17:00:00Z",
-      "status": "TIMED",
-      "home": "Villarreal CF",
-      "away": "Sevilla FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544561,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-13T19:30:00Z",
-      "status": "TIMED",
-      "home": "Deportivo Alavés",
-      "away": "FC Barcelona",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544564,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-13T19:30:00Z",
-      "status": "TIMED",
-      "home": "Getafe CF",
-      "away": "RCD Mallorca",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544568,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-14T17:00:00Z",
-      "status": "TIMED",
-      "home": "Valencia CF",
-      "away": "Rayo Vallecano de Madrid",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544565,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-14T18:00:00Z",
-      "status": "TIMED",
-      "home": "Girona FC",
-      "away": "Real Sociedad de Fútbol",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 544570,
-      "competitionCode": "PD",
-      "competition": "La Liga",
-      "date": "2026-05-14T19:30:00Z",
-      "status": "TIMED",
-      "home": "Real Madrid CF",
-      "away": "Real Oviedo",
       "homeScore": null,
       "awayScore": null
     },
@@ -18718,7 +18399,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 4
+      "awayScore": 5
     },
     {
       "id": 542661,
@@ -19146,28 +18827,6 @@
       "status": "TIMED",
       "home": "Stade Rennais FC 1901",
       "away": "Paris FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 542665,
-      "competitionCode": "FL1",
-      "competition": "Ligue 1",
-      "date": "2026-05-13T17:00:00Z",
-      "status": "TIMED",
-      "home": "Stade Brestois 29",
-      "away": "RC Strasbourg Alsace",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 542664,
-      "competitionCode": "FL1",
-      "competition": "Ligue 1",
-      "date": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "home": "Racing Club de Lens",
-      "away": "Paris Saint-Germain FC",
       "homeScore": null,
       "awayScore": null
     },
