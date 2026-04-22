@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T19:13:56.655Z",
+  "generated_at": "2026-04-22T02:35:21.203Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -300,12 +300,12 @@
       "position": "RW",
       "team": "Real Madrid CF",
       "minutes": 1220,
-      "goals": 11,
+      "goals": 12,
       "assists": 5,
       "shots": 44,
       "shotsOnTarget": 22,
       "playedMatches": 30,
-      "goalsPer90": 33,
+      "goalsPer90": 36,
       "assistsPer90": 15
     },
     {

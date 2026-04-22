@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-21T19:13:56.565Z",
-  "generatedAt": "2026-04-21T19:13:56.565Z",
+  "updatedAt": "2026-04-22T02:35:21.128Z",
+  "generatedAt": "2026-04-22T02:35:21.128Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-21T19:13:56.565Z"
+      "fetchedAt": "2026-04-22T02:35:21.128Z"
     }
   },
   "scorers": [
@@ -54,6 +54,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Danny Welbeck",
+      "team": "Brighton & Hove Albion FC",
+      "competition": "Premier League",
+      "nationality": "England",
+      "position": "",
+      "goals": 13,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 33
+    },
+    {
       "name": "Viktor Gyökeres",
       "team": "Arsenal FC",
       "competition": "Premier League",
@@ -63,17 +74,6 @@
       "assists": 0,
       "penalties": 3,
       "playedMatches": 31
-    },
-    {
-      "name": "Danny Welbeck",
-      "team": "Brighton & Hove Albion FC",
-      "competition": "Premier League",
-      "nationality": "England",
-      "position": "",
-      "goals": 12,
-      "assists": 0,
-      "penalties": 1,
-      "playedMatches": 33
     },
     {
       "name": "Morgan Gibbs-White",
@@ -235,7 +235,7 @@
       "competition": "La Liga",
       "nationality": "France",
       "position": "",
-      "goals": 23,
+      "goals": 24,
       "assists": 4,
       "penalties": 8,
       "playedMatches": 27
@@ -285,6 +285,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Vinicius Junior",
+      "team": "Real Madrid CF",
+      "competition": "La Liga",
+      "nationality": "Brazil",
+      "position": "",
+      "goals": 12,
+      "assists": 5,
+      "penalties": 4,
+      "playedMatches": 30
+    },
+    {
       "name": "Borja Iglesias",
       "team": "RC Celta de Vigo",
       "competition": "La Liga",
@@ -329,17 +340,6 @@
       "playedMatches": 21
     },
     {
-      "name": "Vinicius Junior",
-      "team": "Real Madrid CF",
-      "competition": "La Liga",
-      "nationality": "Brazil",
-      "position": "",
-      "goals": 11,
-      "assists": 5,
-      "penalties": 4,
-      "playedMatches": 30
-    },
-    {
       "name": "Lucas Boyé",
       "team": "Deportivo Alavés",
       "competition": "La Liga",
@@ -371,6 +371,17 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 30
+    },
+    {
+      "name": "Toni Martínez",
+      "team": "Deportivo Alavés",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 9,
+      "assists": 3,
+      "penalties": 0,
+      "playedMatches": 32
     },
     {
       "name": "Hugo Duro",
@@ -426,17 +437,6 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 27
-    },
-    {
-      "name": "Toni Martínez",
-      "team": "Deportivo Alavés",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 0,
-      "playedMatches": 32
     },
     {
       "name": "Julián Álvarez",
