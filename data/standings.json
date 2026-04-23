@@ -1,17 +1,30 @@
 {
-  "updatedAt": "2026-04-22T19:15:22.949Z",
-  "generatedAt": "2026-04-22T19:15:22.949Z",
+  "updatedAt": "2026-04-23T02:39:09.222Z",
+  "generatedAt": "2026-04-23T02:39:09.222Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-22T19:15:22.949Z"
+      "fetchedAt": "2026-04-23T02:39:09.222Z"
     }
   },
   "standings": {
     "Premier League": [
       {
         "position": 1,
+        "team": "Manchester City FC",
+        "played": 33,
+        "won": 21,
+        "draw": 7,
+        "lost": 5,
+        "goals": 66,
+        "goalsAgainst": 29,
+        "gd": 37,
+        "points": 70,
+        "form": null
+      },
+      {
+        "position": 2,
         "team": "Arsenal FC",
         "played": 33,
         "won": 21,
@@ -21,19 +34,6 @@
         "goalsAgainst": 26,
         "gd": 37,
         "points": 70,
-        "form": null
-      },
-      {
-        "position": 2,
-        "team": "Manchester City FC",
-        "played": 33,
-        "won": 20,
-        "draw": 8,
-        "lost": 5,
-        "goals": 65,
-        "goalsAgainst": 29,
-        "gd": 36,
-        "points": 68,
         "form": null
       },
       {
@@ -95,8 +95,8 @@
         "won": 11,
         "draw": 16,
         "lost": 7,
-        "goals": 50,
-        "goalsAgainst": 50,
+        "goals": 52,
+        "goalsAgainst": 52,
         "gd": 0,
         "points": 49,
         "form": null
@@ -199,8 +199,8 @@
         "won": 9,
         "draw": 13,
         "lost": 12,
-        "goals": 42,
-        "goalsAgainst": 49,
+        "goals": 44,
+        "goalsAgainst": 51,
         "gd": -7,
         "points": 40,
         "form": null
@@ -249,12 +249,12 @@
         "team": "Burnley FC",
         "played": 34,
         "won": 4,
-        "draw": 9,
-        "lost": 21,
+        "draw": 8,
+        "lost": 22,
         "goals": 34,
-        "goalsAgainst": 67,
-        "gd": -33,
-        "points": 21,
+        "goalsAgainst": 68,
+        "gd": -34,
+        "points": 20,
         "form": null
       },
       {
@@ -275,14 +275,14 @@
       {
         "position": 1,
         "team": "FC Barcelona",
-        "played": 31,
-        "won": 26,
+        "played": 32,
+        "won": 27,
         "draw": 1,
         "lost": 4,
-        "goals": 84,
+        "goals": 85,
         "goalsAgainst": 30,
-        "gd": 54,
-        "points": 79,
+        "gd": 55,
+        "points": 82,
         "form": null
       },
       {
@@ -339,19 +339,6 @@
       },
       {
         "position": 6,
-        "team": "RC Celta de Vigo",
-        "played": 31,
-        "won": 11,
-        "draw": 11,
-        "lost": 9,
-        "goals": 44,
-        "goalsAgainst": 40,
-        "gd": 4,
-        "points": 44,
-        "form": null
-      },
-      {
-        "position": 7,
         "team": "Getafe CF",
         "played": 32,
         "won": 13,
@@ -360,6 +347,19 @@
         "goals": 28,
         "goalsAgainst": 32,
         "gd": -4,
+        "points": 44,
+        "form": null
+      },
+      {
+        "position": 7,
+        "team": "RC Celta de Vigo",
+        "played": 32,
+        "won": 11,
+        "draw": 11,
+        "lost": 10,
+        "goals": 44,
+        "goalsAgainst": 41,
+        "gd": 3,
         "points": 44,
         "form": null
       },
@@ -443,19 +443,6 @@
       },
       {
         "position": 14,
-        "team": "Elche CF",
-        "played": 32,
-        "won": 8,
-        "draw": 11,
-        "lost": 13,
-        "goals": 42,
-        "goalsAgainst": 49,
-        "gd": -7,
-        "points": 35,
-        "form": null
-      },
-      {
-        "position": 15,
         "team": "RCD Mallorca",
         "played": 32,
         "won": 9,
@@ -464,6 +451,19 @@
         "goals": 40,
         "goalsAgainst": 49,
         "gd": -9,
+        "points": 35,
+        "form": null
+      },
+      {
+        "position": 15,
+        "team": "Elche CF",
+        "played": 32,
+        "won": 8,
+        "draw": 11,
+        "lost": 13,
+        "goals": 42,
+        "goalsAgainst": 49,
+        "gd": -7,
         "points": 35,
         "form": null
       },

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-22T19:15:22.950Z",
-  "generatedAt": "2026-04-22T19:15:22.950Z",
+  "updatedAt": "2026-04-23T02:39:09.223Z",
+  "generatedAt": "2026-04-23T02:39:09.223Z",
   "source": "football-data.org",
   "players": [
     {
@@ -103,6 +103,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Eli Kroupi",
+      "team": "AFC Bournemouth",
+      "competition": "Premier League",
+      "nationality": "France",
+      "position": "",
+      "goals": 11,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 34
+    },
+    {
       "name": "Ollie Watkins",
       "team": "Aston Villa FC",
       "competition": "Premier League",
@@ -134,17 +145,6 @@
       "assists": 6,
       "penalties": 0,
       "playedMatches": 31
-    },
-    {
-      "name": "Eli Kroupi",
-      "team": "AFC Bournemouth",
-      "competition": "Premier League",
-      "nationality": "France",
-      "position": "",
-      "goals": 10,
-      "assists": 0,
-      "penalties": 1,
-      "playedMatches": 34
     },
     {
       "name": "Richarlison",
@@ -246,6 +246,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Lamine Yamal",
+      "team": "FC Barcelona",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 16,
+      "assists": 11,
+      "penalties": 3,
+      "playedMatches": 28
+    },
+    {
       "name": "Ante Budimir",
       "team": "CA Osasuna",
       "competition": "La Liga",
@@ -255,17 +266,6 @@
       "assists": 0,
       "penalties": 6,
       "playedMatches": 31
-    },
-    {
-      "name": "Lamine Yamal",
-      "team": "FC Barcelona",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 15,
-      "assists": 11,
-      "penalties": 2,
-      "playedMatches": 28
     },
     {
       "name": "Ferrán Torres",
