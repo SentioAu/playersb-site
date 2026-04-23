@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-23T07:54:56.235Z",
-  "generatedAt": "2026-04-23T07:54:56.235Z",
+  "updatedAt": "2026-04-23T19:09:35.277Z",
+  "generatedAt": "2026-04-23T19:09:35.277Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-23T07:54:56.235Z"
+      "fetchedAt": "2026-04-23T19:09:35.277Z"
     }
   },
   "scorers": [
@@ -359,7 +359,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Alexander Sørloth",
@@ -425,7 +425,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Alberto Moleiro",
@@ -436,7 +436,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Federico Viñas",
@@ -447,7 +447,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Lautaro Martínez",

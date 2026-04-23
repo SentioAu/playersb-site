@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-23T07:54:56.234Z",
-  "generatedAt": "2026-04-23T07:54:56.234Z",
+  "updatedAt": "2026-04-23T19:09:35.277Z",
+  "generatedAt": "2026-04-23T19:09:35.277Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-23T07:54:56.234Z"
+      "fetchedAt": "2026-04-23T19:09:35.277Z"
     }
   },
   "standings": {
@@ -404,6 +404,19 @@
       },
       {
         "position": 11,
+        "team": "RCD Espanyol de Barcelona",
+        "played": 32,
+        "won": 10,
+        "draw": 9,
+        "lost": 13,
+        "goals": 37,
+        "goalsAgainst": 48,
+        "gd": -11,
+        "points": 39,
+        "form": null
+      },
+      {
+        "position": 12,
         "team": "Girona FC",
         "played": 32,
         "won": 9,
@@ -412,19 +425,6 @@
         "goals": 35,
         "goalsAgainst": 48,
         "gd": -13,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 12,
-        "team": "RCD Espanyol de Barcelona",
-        "played": 31,
-        "won": 10,
-        "draw": 8,
-        "lost": 13,
-        "goals": 37,
-        "goalsAgainst": 48,
-        "gd": -11,
         "points": 38,
         "form": null
       },
@@ -443,6 +443,19 @@
       },
       {
         "position": 14,
+        "team": "Rayo Vallecano de Madrid",
+        "played": 32,
+        "won": 8,
+        "draw": 12,
+        "lost": 12,
+        "goals": 29,
+        "goalsAgainst": 38,
+        "gd": -9,
+        "points": 36,
+        "form": null
+      },
+      {
+        "position": 15,
         "team": "RCD Mallorca",
         "played": 32,
         "won": 9,
@@ -455,7 +468,7 @@
         "form": null
       },
       {
-        "position": 15,
+        "position": 16,
         "team": "Elche CF",
         "played": 32,
         "won": 8,
@@ -468,28 +481,15 @@
         "form": null
       },
       {
-        "position": 16,
-        "team": "Rayo Vallecano de Madrid",
-        "played": 31,
-        "won": 8,
-        "draw": 11,
-        "lost": 12,
-        "goals": 29,
-        "goalsAgainst": 38,
-        "gd": -9,
-        "points": 35,
-        "form": null
-      },
-      {
         "position": 17,
         "team": "Sevilla FC",
-        "played": 31,
+        "played": 32,
         "won": 9,
         "draw": 7,
-        "lost": 15,
+        "lost": 16,
         "goals": 39,
-        "goalsAgainst": 51,
-        "gd": -12,
+        "goalsAgainst": 52,
+        "gd": -13,
         "points": 34,
         "form": null
       },
@@ -509,14 +509,14 @@
       {
         "position": 19,
         "team": "Levante UD",
-        "played": 31,
-        "won": 7,
+        "played": 32,
+        "won": 8,
         "draw": 8,
         "lost": 16,
-        "goals": 35,
+        "goals": 36,
         "goalsAgainst": 50,
-        "gd": -15,
-        "points": 29,
+        "gd": -14,
+        "points": 32,
         "form": null
       },
       {
