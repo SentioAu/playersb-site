@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-23T19:09:35.277Z",
-  "generatedAt": "2026-04-23T19:09:35.277Z",
+  "updatedAt": "2026-04-24T02:39:24.151Z",
+  "generatedAt": "2026-04-24T02:39:24.151Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-23T19:09:35.277Z"
+      "fetchedAt": "2026-04-24T02:39:24.151Z"
     }
   },
   "standings": {
@@ -301,14 +301,14 @@
       {
         "position": 3,
         "team": "Villarreal CF",
-        "played": 31,
+        "played": 32,
         "won": 19,
-        "draw": 4,
+        "draw": 5,
         "lost": 8,
-        "goals": 56,
-        "goalsAgainst": 36,
+        "goals": 57,
+        "goalsAgainst": 37,
         "gd": 20,
-        "points": 61,
+        "points": 62,
         "form": null
       },
       {
@@ -404,19 +404,6 @@
       },
       {
         "position": 11,
-        "team": "RCD Espanyol de Barcelona",
-        "played": 32,
-        "won": 10,
-        "draw": 9,
-        "lost": 13,
-        "goals": 37,
-        "goalsAgainst": 48,
-        "gd": -11,
-        "points": 39,
-        "form": null
-      },
-      {
-        "position": 12,
         "team": "Girona FC",
         "played": 32,
         "won": 9,
@@ -429,7 +416,33 @@
         "form": null
       },
       {
+        "position": 12,
+        "team": "RCD Espanyol de Barcelona",
+        "played": 32,
+        "won": 10,
+        "draw": 8,
+        "lost": 14,
+        "goals": 37,
+        "goalsAgainst": 49,
+        "gd": -12,
+        "points": 38,
+        "form": null
+      },
+      {
         "position": 13,
+        "team": "Rayo Vallecano de Madrid",
+        "played": 32,
+        "won": 9,
+        "draw": 11,
+        "lost": 12,
+        "goals": 30,
+        "goalsAgainst": 38,
+        "gd": -8,
+        "points": 38,
+        "form": null
+      },
+      {
+        "position": 14,
         "team": "Valencia CF",
         "played": 32,
         "won": 9,
@@ -438,19 +451,6 @@
         "goals": 35,
         "goalsAgainst": 47,
         "gd": -12,
-        "points": 36,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "Rayo Vallecano de Madrid",
-        "played": 32,
-        "won": 8,
-        "draw": 12,
-        "lost": 12,
-        "goals": 29,
-        "goalsAgainst": 38,
-        "gd": -9,
         "points": 36,
         "form": null
       },
@@ -488,8 +488,8 @@
         "draw": 7,
         "lost": 16,
         "goals": 39,
-        "goalsAgainst": 52,
-        "gd": -13,
+        "goalsAgainst": 53,
+        "gd": -14,
         "points": 34,
         "form": null
       },
@@ -513,23 +513,23 @@
         "won": 8,
         "draw": 8,
         "lost": 16,
-        "goals": 36,
+        "goals": 37,
         "goalsAgainst": 50,
-        "gd": -14,
+        "gd": -13,
         "points": 32,
         "form": null
       },
       {
         "position": 20,
         "team": "Real Oviedo",
-        "played": 31,
+        "played": 32,
         "won": 6,
-        "draw": 9,
+        "draw": 10,
         "lost": 16,
-        "goals": 24,
-        "goalsAgainst": 48,
+        "goals": 25,
+        "goalsAgainst": 49,
         "gd": -24,
-        "points": 27,
+        "points": 28,
         "form": null
       }
     ],
