@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-24T13:25:49.473Z",
-  "generatedAt": "2026-04-24T13:25:49.473Z",
+  "updatedAt": "2026-04-24T18:54:26.907Z",
+  "generatedAt": "2026-04-24T18:54:26.907Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-24T13:25:49.473Z"
+      "fetchedAt": "2026-04-24T18:54:26.907Z"
     }
   },
   "standings": {
@@ -825,14 +825,14 @@
       {
         "position": 3,
         "team": "RB Leipzig",
-        "played": 30,
+        "played": 31,
         "won": 18,
-        "draw": 5,
+        "draw": 6,
         "lost": 7,
         "goals": 59,
         "goalsAgainst": 37,
         "gd": 22,
-        "points": 59,
+        "points": 60,
         "form": null
       },
       {
@@ -929,14 +929,14 @@
       {
         "position": 11,
         "team": "1. FC Union Berlin",
-        "played": 30,
+        "played": 31,
         "won": 8,
-        "draw": 8,
+        "draw": 9,
         "lost": 14,
         "goals": 34,
         "goalsAgainst": 52,
         "gd": -18,
-        "points": 32,
+        "points": 33,
         "form": null
       },
       {

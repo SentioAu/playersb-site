@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-24T13:25:49.474Z",
-  "generatedAt": "2026-04-24T13:25:49.474Z",
+  "updatedAt": "2026-04-24T18:54:26.908Z",
+  "generatedAt": "2026-04-24T18:54:26.908Z",
   "source": "football-data.org",
   "players": [
     {
@@ -78,7 +78,7 @@
       "goals": 12,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Hugo Ekitike",
@@ -232,7 +232,7 @@
       "goals": 24,
       "assists": 4,
       "penalties": 8,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Vedat Muriqi",
@@ -287,7 +287,7 @@
       "goals": 12,
       "assists": 5,
       "penalties": 4,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Borja Iglesias",
@@ -518,7 +518,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Nikola Krstović",
@@ -541,6 +541,17 @@
       "assists": 0,
       "penalties": 2,
       "playedMatches": 13
+    },
+    {
+      "name": "Scott McTominay",
+      "team": "SSC Napoli",
+      "competition": "Serie A",
+      "nationality": "Scotland",
+      "position": "",
+      "goals": 9,
+      "assists": 3,
+      "penalties": 0,
+      "playedMatches": 29
     },
     {
       "name": "Hakan Çalhanoğlu",
@@ -574,17 +585,6 @@
       "assists": 3,
       "penalties": 2,
       "playedMatches": 26
-    },
-    {
-      "name": "Scott McTominay",
-      "team": "SSC Napoli",
-      "competition": "Serie A",
-      "nationality": "Scotland",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 0,
-      "playedMatches": 28
     },
     {
       "name": "Gianluca Scamacca",
@@ -661,7 +661,7 @@
       "goals": 7,
       "assists": 2,
       "penalties": 2,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Harry Kane",
@@ -727,7 +727,7 @@
       "goals": 12,
       "assists": 7,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Andrej Kramarić",
@@ -749,7 +749,7 @@
       "goals": 12,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Patrik Schick",
@@ -859,7 +859,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Serge Gnabry",
@@ -936,7 +936,7 @@
       "goals": 12,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Wesley Saïd",
@@ -947,7 +947,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Bradley Barcola",
@@ -1024,7 +1024,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 2,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Ansu Fati",
@@ -1090,7 +1090,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 6,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Martial Godo",

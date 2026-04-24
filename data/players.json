@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T13:25:49.563Z",
+  "generated_at": "2026-04-24T18:54:26.986Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -254,9 +254,9 @@
       "assists": 3,
       "shots": 52,
       "shotsOnTarget": 27,
-      "playedMatches": 28,
-      "goalsPer90": 32.14,
-      "assistsPer90": 9.64
+      "playedMatches": 29,
+      "goalsPer90": 31.03,
+      "assistsPer90": 9.31
     },
     {
       "id": "marcus-rashford",
@@ -304,9 +304,9 @@
       "assists": 5,
       "shots": 44,
       "shotsOnTarget": 22,
-      "playedMatches": 30,
-      "goalsPer90": 36,
-      "assistsPer90": 15
+      "playedMatches": 31,
+      "goalsPer90": 34.84,
+      "assistsPer90": 14.52
     },
     {
       "id": "federico-valverde",
