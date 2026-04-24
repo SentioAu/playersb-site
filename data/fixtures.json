@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-24T08:05:36.865Z",
-  "generatedAt": "2026-04-24T08:05:36.865Z",
+  "updatedAt": "2026-04-24T13:25:49.467Z",
+  "generatedAt": "2026-04-24T13:25:49.467Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-24T08:05:36.865Z"
+      "fetchedAt": "2026-04-24T13:25:49.467Z"
     }
   },
   "fixtures": [
@@ -12205,50 +12205,6 @@
       "status": "TIMED",
       "home": "AS Roma",
       "away": "ACF Fiorentina",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 537168,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-08T18:45:00Z",
-      "status": "TIMED",
-      "home": "Torino FC",
-      "away": "US Sassuolo Calcio",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 537167,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-09T13:00:00Z",
-      "status": "TIMED",
-      "home": "Cagliari Calcio",
-      "away": "Udinese Calcio",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 537170,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-09T16:00:00Z",
-      "status": "TIMED",
-      "home": "SS Lazio",
-      "away": "FC Internazionale Milano",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 537174,
-      "competitionCode": "SA",
-      "competition": "Serie A",
-      "date": "2026-05-09T18:45:00Z",
-      "status": "TIMED",
-      "home": "US Lecce",
-      "away": "Juventus FC",
       "homeScore": null,
       "awayScore": null
     },
