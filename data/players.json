@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T13:05:58.129Z",
+  "generated_at": "2026-04-25T18:55:07.302Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -337,12 +337,12 @@
       "team": "FC Barcelona",
       "minutes": 1580,
       "goals": 12,
-      "assists": 1,
+      "assists": 2,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 29,
-      "goalsPer90": 37.24,
-      "assistsPer90": 3.1
+      "playedMatches": 30,
+      "goalsPer90": 36,
+      "assistsPer90": 6
     },
     {
       "id": "pedri",
@@ -583,9 +583,9 @@
       "assists": 6,
       "shots": 44,
       "shotsOnTarget": 22,
-      "playedMatches": 19,
-      "goalsPer90": 47.37,
-      "assistsPer90": 28.42
+      "playedMatches": 20,
+      "goalsPer90": 45,
+      "assistsPer90": 27
     },
     {
       "id": "achraf-hakimi",
