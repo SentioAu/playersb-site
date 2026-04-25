@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-24T18:54:26.902Z",
-  "generatedAt": "2026-04-24T18:54:26.902Z",
+  "updatedAt": "2026-04-25T02:29:02.933Z",
+  "generatedAt": "2026-04-25T02:29:02.933Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-24T18:54:26.902Z"
+      "fetchedAt": "2026-04-25T02:29:02.933Z"
     }
   },
   "fixtures": [
@@ -3666,11 +3666,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-04-24T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Sunderland AFC",
       "away": "Nottingham Forest FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 5
     },
     {
       "id": 538120,
@@ -7703,11 +7703,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-24T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Real Betis Balompié",
       "away": "Real Madrid CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 544521,
@@ -11993,10 +11993,10 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-24T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "SSC Napoli",
       "away": "US Cremonese",
-      "homeScore": 0,
+      "homeScore": 4,
       "awayScore": 0
     },
     {
@@ -12249,6 +12249,72 @@
       "status": "TIMED",
       "home": "US Lecce",
       "away": "Juventus FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537169,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T10:30:00Z",
+      "status": "TIMED",
+      "home": "Hellas Verona FC",
+      "away": "Como 1907",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537165,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T13:00:00Z",
+      "status": "TIMED",
+      "home": "ACF Fiorentina",
+      "away": "Genoa CFC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537173,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T13:00:00Z",
+      "status": "TIMED",
+      "home": "US Cremonese",
+      "away": "AC Pisa 1909",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537171,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T16:00:00Z",
+      "status": "TIMED",
+      "home": "Parma Calcio 1913",
+      "away": "AS Roma",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537166,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T18:45:00Z",
+      "status": "TIMED",
+      "home": "AC Milan",
+      "away": "Atalanta BC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537172,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-11T18:45:00Z",
+      "status": "TIMED",
+      "home": "SSC Napoli",
+      "away": "Bologna FC 1909",
       "homeScore": null,
       "awayScore": null
     },
@@ -15447,11 +15513,11 @@
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-24T18:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "RB Leipzig",
       "away": "1. FC Union Berlin",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 540676,
@@ -18652,7 +18718,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 5
+      "awayScore": 4
     },
     {
       "id": 542661,
@@ -18791,11 +18857,11 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-24T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Stade Brestois 29",
       "away": "Racing Club de Lens",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 3,
+      "awayScore": 3
     },
     {
       "id": 542680,
@@ -19080,6 +19146,28 @@
       "status": "TIMED",
       "home": "Stade Rennais FC 1901",
       "away": "Paris FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542665,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-13T17:00:00Z",
+      "status": "TIMED",
+      "home": "Stade Brestois 29",
+      "away": "RC Strasbourg Alsace",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 542664,
+      "competitionCode": "FL1",
+      "competition": "Ligue 1",
+      "date": "2026-05-13T19:00:00Z",
+      "status": "TIMED",
+      "home": "Racing Club de Lens",
+      "away": "Paris Saint-Germain FC",
       "homeScore": null,
       "awayScore": null
     },

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-24T18:54:26.908Z",
-  "generatedAt": "2026-04-24T18:54:26.908Z",
+  "updatedAt": "2026-04-25T02:29:02.938Z",
+  "generatedAt": "2026-04-25T02:29:02.938Z",
   "source": "football-data.org",
   "players": [
     {
@@ -59,6 +59,17 @@
       "playedMatches": 33
     },
     {
+      "name": "Morgan Gibbs-White",
+      "team": "Nottingham Forest FC",
+      "competition": "Premier League",
+      "nationality": "England",
+      "position": "",
+      "goals": 13,
+      "assists": 4,
+      "penalties": 1,
+      "playedMatches": 34
+    },
+    {
       "name": "Viktor Gyökeres",
       "team": "Arsenal FC",
       "competition": "Premier League",
@@ -68,17 +79,6 @@
       "assists": 0,
       "penalties": 3,
       "playedMatches": 31
-    },
-    {
-      "name": "Morgan Gibbs-White",
-      "team": "Nottingham Forest FC",
-      "competition": "Premier League",
-      "nationality": "England",
-      "position": "",
-      "goals": 12,
-      "assists": 3,
-      "penalties": 1,
-      "playedMatches": 34
     },
     {
       "name": "Hugo Ekitike",
@@ -284,7 +284,7 @@
       "competition": "La Liga",
       "nationality": "Brazil",
       "position": "",
-      "goals": 12,
+      "goals": 13,
       "assists": 5,
       "penalties": 4,
       "playedMatches": 31
@@ -488,6 +488,17 @@
       "playedMatches": 27
     },
     {
+      "name": "Rasmus Højlund",
+      "team": "SSC Napoli",
+      "competition": "Serie A",
+      "nationality": "Denmark",
+      "position": "",
+      "goals": 11,
+      "assists": 3,
+      "penalties": 1,
+      "playedMatches": 29
+    },
+    {
       "name": "Keinan Davis",
       "team": "Udinese Calcio",
       "competition": "Serie A",
@@ -508,17 +519,6 @@
       "assists": 6,
       "penalties": 1,
       "playedMatches": 32
-    },
-    {
-      "name": "Rasmus Højlund",
-      "team": "SSC Napoli",
-      "competition": "Serie A",
-      "nationality": "Denmark",
-      "position": "",
-      "goals": 10,
-      "assists": 3,
-      "penalties": 1,
-      "playedMatches": 29
     },
     {
       "name": "Nikola Krstović",
@@ -747,7 +747,7 @@
       "nationality": "Ivory Coast",
       "position": "",
       "goals": 12,
-      "assists": 6,
+      "assists": 7,
       "penalties": 0,
       "playedMatches": 30
     },
@@ -818,6 +818,17 @@
       "playedMatches": 30
     },
     {
+      "name": "Romulo Cruz",
+      "team": "RB Leipzig",
+      "competition": "Bundesliga",
+      "nationality": "Brazil",
+      "position": "",
+      "goals": 9,
+      "assists": 3,
+      "penalties": 0,
+      "playedMatches": 27
+    },
+    {
       "name": "Ermedin Demirovic",
       "team": "VfB Stuttgart",
       "competition": "Bundesliga",
@@ -848,17 +859,6 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 27
-    },
-    {
-      "name": "Romulo Cruz",
-      "team": "RB Leipzig",
-      "competition": "Bundesliga",
-      "nationality": "Brazil",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 0,
       "playedMatches": 27
     },
     {
@@ -950,6 +950,17 @@
       "playedMatches": 26
     },
     {
+      "name": "Florian Thauvin",
+      "team": "Racing Club de Lens",
+      "competition": "Ligue 1",
+      "nationality": "France",
+      "position": "",
+      "goals": 10,
+      "assists": 5,
+      "penalties": 2,
+      "playedMatches": 30
+    },
+    {
       "name": "Bradley Barcola",
       "team": "Paris Saint-Germain FC",
       "competition": "Ligue 1",
@@ -1014,17 +1025,6 @@
       "assists": 4,
       "penalties": 3,
       "playedMatches": 26
-    },
-    {
-      "name": "Florian Thauvin",
-      "team": "Racing Club de Lens",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 9,
-      "assists": 5,
-      "penalties": 2,
-      "playedMatches": 30
     },
     {
       "name": "Ansu Fati",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T18:54:26.986Z",
+  "generated_at": "2026-04-25T02:29:03.022Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -250,12 +250,12 @@
       "position": "AM",
       "team": "SSC Napoli",
       "minutes": 1460,
-      "goals": 10,
+      "goals": 11,
       "assists": 3,
       "shots": 52,
       "shotsOnTarget": 27,
       "playedMatches": 29,
-      "goalsPer90": 31.03,
+      "goalsPer90": 34.14,
       "assistsPer90": 9.31
     },
     {
@@ -300,12 +300,12 @@
       "position": "RW",
       "team": "Real Madrid CF",
       "minutes": 1220,
-      "goals": 12,
+      "goals": 13,
       "assists": 5,
       "shots": 44,
       "shotsOnTarget": 22,
       "playedMatches": 31,
-      "goalsPer90": 34.84,
+      "goalsPer90": 37.74,
       "assistsPer90": 14.52
     },
     {
