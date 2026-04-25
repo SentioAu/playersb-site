@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-25T07:18:09.383Z",
-  "generatedAt": "2026-04-25T07:18:09.383Z",
+  "updatedAt": "2026-04-25T13:05:58.048Z",
+  "generatedAt": "2026-04-25T13:05:58.048Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-25T07:18:09.383Z"
+      "fetchedAt": "2026-04-25T13:05:58.048Z"
     }
   },
   "scorers": [
@@ -128,7 +128,7 @@
       "goals": 11,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Jean-Philippe Mateta",
@@ -139,7 +139,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 4,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Harry Wilson",
@@ -150,7 +150,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Richarlison",
@@ -161,7 +161,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Bruno Guimarães",
@@ -216,7 +216,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 4,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Morgan Rogers",
@@ -227,7 +227,7 @@
       "goals": 9,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Kylian Mbappé",
@@ -249,7 +249,7 @@
       "goals": 21,
       "assists": 1,
       "penalties": 5,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Lamine Yamal",
@@ -348,7 +348,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Jorge de Frutos",
@@ -381,7 +381,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Hugo Duro",
@@ -645,7 +645,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Moise Kean",
@@ -678,7 +678,7 @@
       "goals": 32,
       "assists": 4,
       "penalties": 10,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Deniz Undav",
@@ -700,7 +700,7 @@
       "goals": 15,
       "assists": 11,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Sehrou Guirassy",
@@ -722,7 +722,7 @@
       "goals": 12,
       "assists": 18,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Christoph Baumgartner",
@@ -766,7 +766,7 @@
       "goals": 11,
       "assists": 2,
       "penalties": 3,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Nadiem Amiri",
@@ -777,7 +777,7 @@
       "goals": 11,
       "assists": 2,
       "penalties": 8,
-      "playedMatches": 22
+      "playedMatches": 23
     },
     {
       "name": "Said El Mala",
@@ -788,7 +788,7 @@
       "goals": 11,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Haris Tabaković",
@@ -799,7 +799,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Jonathan Burkardt",
@@ -810,7 +810,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 2,
-      "playedMatches": 18
+      "playedMatches": 19
     },
     {
       "name": "Fisnik Asllani",
@@ -865,7 +865,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Serge Gnabry",
@@ -887,7 +887,7 @@
       "goals": 8,
       "assists": 7,
       "penalties": 3,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Esteban Lepaul",
@@ -997,7 +997,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Lassine Sinayoko",
@@ -1008,7 +1008,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Pierre-Emerick Aubameyang",
@@ -1063,7 +1063,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Pablo Pagis",
