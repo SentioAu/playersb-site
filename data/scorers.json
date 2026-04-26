@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-25T18:55:07.234Z",
-  "generatedAt": "2026-04-25T18:55:07.234Z",
+  "updatedAt": "2026-04-26T02:44:49.863Z",
+  "generatedAt": "2026-04-26T02:44:49.863Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-25T18:55:07.234Z"
+      "fetchedAt": "2026-04-26T02:44:49.863Z"
     }
   },
   "scorers": [
@@ -296,6 +296,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Alexander Sørloth",
+      "team": "Club Atlético de Madrid",
+      "competition": "La Liga",
+      "nationality": "Norway",
+      "position": "",
+      "goals": 12,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 31
+    },
+    {
       "name": "Borja Iglesias",
       "team": "RC Celta de Vigo",
       "competition": "La Liga",
@@ -371,17 +382,6 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 30
-    },
-    {
-      "name": "Alexander Sørloth",
-      "team": "Club Atlético de Madrid",
-      "competition": "La Liga",
-      "nationality": "Norway",
-      "position": "",
-      "goals": 10,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 31
     },
     {
       "name": "Hugo Duro",
