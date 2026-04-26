@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-26T13:08:10.030Z",
-  "generatedAt": "2026-04-26T13:08:10.030Z",
+  "updatedAt": "2026-04-26T18:56:44.080Z",
+  "generatedAt": "2026-04-26T18:56:44.080Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-26T13:08:10.030Z"
+      "fetchedAt": "2026-04-26T18:56:44.080Z"
     }
   },
   "scorers": [
@@ -271,7 +271,7 @@
       "goals": 16,
       "assists": 0,
       "penalties": 6,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Ferrán Torres",
@@ -285,6 +285,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Mikel Oyarzabal",
+      "team": "Real Sociedad de Fútbol",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 14,
+      "assists": 3,
+      "penalties": 6,
+      "playedMatches": 30
+    },
+    {
       "name": "Vinicius Junior",
       "team": "Real Madrid CF",
       "competition": "La Liga",
@@ -294,17 +305,6 @@
       "assists": 5,
       "penalties": 4,
       "playedMatches": 31
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "team": "Real Sociedad de Fútbol",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 13,
-      "assists": 3,
-      "penalties": 5,
-      "playedMatches": 30
     },
     {
       "name": "Alexander Sørloth",
@@ -326,7 +326,7 @@
       "goals": 12,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Robert Lewandowski",
@@ -403,7 +403,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 2,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Vladyslav Vanat",
@@ -425,7 +425,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Alberto Moleiro",
@@ -436,7 +436,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Federico Viñas",
@@ -447,7 +447,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Lautaro Martínez",
@@ -458,7 +458,18 @@
       "goals": 16,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
+    },
+    {
+      "name": "Anastasios Douvikas",
+      "team": "Como 1907",
+      "competition": "Serie A",
+      "nationality": "Greece",
+      "position": "",
+      "goals": 12,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 34
     },
     {
       "name": "Nico Paz",
@@ -472,26 +483,15 @@
       "playedMatches": 33
     },
     {
-      "name": "Anastasios Douvikas",
-      "team": "Como 1907",
-      "competition": "Serie A",
-      "nationality": "Greece",
-      "position": "",
-      "goals": 11,
-      "assists": 1,
-      "penalties": 1,
-      "playedMatches": 34
-    },
-    {
       "name": "Marcus Thuram-Ulien",
       "team": "FC Internazionale Milano",
       "competition": "Serie A",
       "nationality": "France",
       "position": "",
-      "goals": 11,
+      "goals": 12,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Rasmus Højlund",
@@ -535,7 +535,18 @@
       "goals": 10,
       "assists": 6,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
+    },
+    {
+      "name": "Giovanni Simeone",
+      "team": "Torino FC",
+      "competition": "Serie A",
+      "nationality": "Argentina",
+      "position": "",
+      "goals": 10,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 30
     },
     {
       "name": "Nikola Krstović",
@@ -568,18 +579,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 4,
-      "playedMatches": 24
-    },
-    {
-      "name": "Giovanni Simeone",
-      "team": "Torino FC",
-      "competition": "Serie A",
-      "nationality": "Argentina",
-      "position": "",
-      "goals": 9,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 25
     },
     {
       "name": "Rafael Leão",
@@ -590,7 +590,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Gianluca Scamacca",
@@ -623,7 +623,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Riccardo Orsolini",
@@ -659,14 +659,14 @@
       "playedMatches": 27
     },
     {
-      "name": "Federico Bonazzoli",
-      "team": "US Cremonese",
+      "name": "Nikola Vlašić",
+      "team": "Torino FC",
       "competition": "Serie A",
-      "nationality": "Italy",
+      "nationality": "Croatia",
       "position": "",
-      "goals": 7,
-      "assists": 2,
-      "penalties": 2,
+      "goals": 8,
+      "assists": 3,
+      "penalties": 5,
       "playedMatches": 33
     },
     {
@@ -708,10 +708,10 @@
       "competition": "Bundesliga",
       "nationality": "Guinea",
       "position": "",
-      "goals": 14,
+      "goals": 15,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Michael Olise",
@@ -813,6 +813,28 @@
       "playedMatches": 31
     },
     {
+      "name": "Ermedin Demirovic",
+      "team": "VfB Stuttgart",
+      "competition": "Bundesliga",
+      "nationality": "Bosnia-Herzegovina",
+      "position": "",
+      "goals": 10,
+      "assists": 3,
+      "penalties": 1,
+      "playedMatches": 22
+    },
+    {
+      "name": "Jens Stage",
+      "team": "SV Werder Bremen",
+      "competition": "Bundesliga",
+      "nationality": "Denmark",
+      "position": "",
+      "goals": 10,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 26
+    },
+    {
       "name": "Jonathan Burkardt",
       "team": "Eintracht Frankfurt",
       "competition": "Bundesliga",
@@ -835,26 +857,15 @@
       "playedMatches": 27
     },
     {
-      "name": "Ermedin Demirovic",
-      "team": "VfB Stuttgart",
+      "name": "Maximilian Beier",
+      "team": "Borussia Dortmund",
       "competition": "Bundesliga",
-      "nationality": "Bosnia-Herzegovina",
+      "nationality": "Germany",
       "position": "",
       "goals": 9,
       "assists": 3,
-      "penalties": 1,
-      "playedMatches": 22
-    },
-    {
-      "name": "Jens Stage",
-      "team": "SV Werder Bremen",
-      "competition": "Bundesliga",
-      "nationality": "Denmark",
-      "position": "",
-      "goals": 9,
-      "assists": 2,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 30
     },
     {
       "name": "Tim Lemperle",
@@ -879,26 +890,15 @@
       "playedMatches": 28
     },
     {
-      "name": "Serge Gnabry",
-      "team": "FC Bayern München",
-      "competition": "Bundesliga",
-      "nationality": "Germany",
-      "position": "",
-      "goals": 8,
-      "assists": 6,
-      "penalties": 0,
-      "playedMatches": 25
-    },
-    {
       "name": "Esteban Lepaul",
       "team": "Stade Rennais FC 1901",
       "competition": "Ligue 1",
       "nationality": "France",
       "position": "",
-      "goals": 17,
+      "goals": 18,
       "assists": 4,
-      "penalties": 2,
-      "playedMatches": 30
+      "penalties": 3,
+      "playedMatches": 31
     },
     {
       "name": "Joaquín Panichelli",
@@ -920,7 +920,7 @@
       "goals": 15,
       "assists": 7,
       "penalties": 5,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Folarin Balogun",
@@ -1019,7 +1019,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Ilan Kebbal",
@@ -1030,7 +1030,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 3,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Corentin Tolisso",
@@ -1042,6 +1042,17 @@
       "assists": 2,
       "penalties": 1,
       "playedMatches": 27
+    },
+    {
+      "name": "Pablo Pagis",
+      "team": "FC Lorient",
+      "competition": "Ligue 1",
+      "nationality": "France",
+      "position": "",
+      "goals": 9,
+      "assists": 3,
+      "penalties": 2,
+      "playedMatches": 26
     },
     {
       "name": "Ansu Fati",
@@ -1066,15 +1077,15 @@
       "playedMatches": 24
     },
     {
-      "name": "Pablo Pagis",
-      "team": "FC Lorient",
+      "name": "Matias Fernandez-Pardo",
+      "team": "Lille OSC",
       "competition": "Ligue 1",
-      "nationality": "France",
+      "nationality": "Belgium",
       "position": "",
       "goals": 8,
-      "assists": 3,
-      "penalties": 1,
-      "playedMatches": 26
+      "assists": 5,
+      "penalties": 2,
+      "playedMatches": 28
     },
     {
       "name": "Yann Gboho",
@@ -1097,17 +1108,6 @@
       "assists": 3,
       "penalties": 6,
       "playedMatches": 28
-    },
-    {
-      "name": "Martial Godo",
-      "team": "RC Strasbourg Alsace",
-      "competition": "Ligue 1",
-      "nationality": "England",
-      "position": "",
-      "goals": 8,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 27
     },
     {
       "name": "Kylian Mbappé",

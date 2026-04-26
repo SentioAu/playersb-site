@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T13:08:10.110Z",
+  "generated_at": "2026-04-26T18:56:44.163Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -622,9 +622,9 @@
       "assists": 5,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 30,
-      "goalsPer90": 27,
-      "assistsPer90": 15
+      "playedMatches": 31,
+      "goalsPer90": 26.13,
+      "assistsPer90": 14.52
     },
     {
       "id": "amine-harit",
@@ -669,9 +669,9 @@
       "assists": 4,
       "shots": 48,
       "shotsOnTarget": 24,
-      "playedMatches": 28,
-      "goalsPer90": 51.43,
-      "assistsPer90": 12.86
+      "playedMatches": 29,
+      "goalsPer90": 49.66,
+      "assistsPer90": 12.41
     },
     {
       "id": "nicolo-barella",
@@ -694,9 +694,9 @@
       "assists": 4,
       "shots": 56,
       "shotsOnTarget": 29,
-      "playedMatches": 24,
-      "goalsPer90": 33.75,
-      "assistsPer90": 15
+      "playedMatches": 25,
+      "goalsPer90": 32.4,
+      "assistsPer90": 14.4
     },
     {
       "id": "alessandro-bastoni",
@@ -719,9 +719,9 @@
       "assists": 3,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 26,
-      "goalsPer90": 31.15,
-      "assistsPer90": 10.38
+      "playedMatches": 27,
+      "goalsPer90": 30,
+      "assistsPer90": 10
     },
     {
       "id": "theo-hernandez",
@@ -744,9 +744,9 @@
       "assists": 3,
       "shots": 48,
       "shotsOnTarget": 24,
-      "playedMatches": 27,
-      "goalsPer90": 26.67,
-      "assistsPer90": 10
+      "playedMatches": 28,
+      "goalsPer90": 25.71,
+      "assistsPer90": 9.64
     },
     {
       "id": "mike-maignan",

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-26T13:08:10.024Z",
-  "generatedAt": "2026-04-26T13:08:10.024Z",
+  "updatedAt": "2026-04-26T18:56:44.075Z",
+  "generatedAt": "2026-04-26T18:56:44.075Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-26T13:08:10.024Z"
+      "fetchedAt": "2026-04-26T18:56:44.075Z"
     }
   },
   "fixtures": [
@@ -7758,33 +7758,33 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-26T12:00:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "home": "Rayo Vallecano de Madrid",
       "away": "Real Sociedad de Fútbol",
-      "homeScore": 1,
-      "awayScore": 1
+      "homeScore": 3,
+      "awayScore": 3
     },
     {
       "id": 544529,
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-26T14:15:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Real Oviedo",
       "away": "Elche CF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 544524,
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-26T16:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "CA Osasuna",
       "away": "Sevilla FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 544528,
@@ -12048,33 +12048,33 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-26T13:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Genoa CFC",
       "away": "Como 1907",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 2
     },
     {
       "id": 537150,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-26T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Torino FC",
       "away": "FC Internazionale Milano",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": 537146,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-26T18:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "AC Milan",
       "away": "Juventus FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537147,
@@ -15590,22 +15590,22 @@
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-26T13:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "VfB Stuttgart",
       "away": "SV Werder Bremen",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 540679,
       "competitionCode": "BL1",
       "competition": "Bundesliga",
       "date": "2026-04-26T15:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Borussia Dortmund",
       "away": "SC Freiburg",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 0
     },
     {
       "id": 540688,
@@ -18901,55 +18901,55 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-26T13:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "FC Lorient",
       "away": "RC Strasbourg Alsace",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": 542676,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-26T15:15:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Le Havre AC",
       "away": "FC Metz",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 4
     },
     {
       "id": 542678,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-26T15:15:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Paris FC",
       "away": "Lille OSC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 542684,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-26T15:15:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Stade Rennais FC 1901",
       "away": "FC Nantes",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 542681,
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-04-26T18:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Olympique de Marseille",
       "away": "OGC Nice",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 542687,

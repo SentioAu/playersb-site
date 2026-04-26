@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-26T13:08:10.029Z",
-  "generatedAt": "2026-04-26T13:08:10.029Z",
+  "updatedAt": "2026-04-26T18:56:44.079Z",
+  "generatedAt": "2026-04-26T18:56:44.079Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-26T13:08:10.029Z"
+      "fetchedAt": "2026-04-26T18:56:44.079Z"
     }
   },
   "standings": {
@@ -370,14 +370,27 @@
         "won": 11,
         "draw": 10,
         "lost": 12,
-        "goals": 50,
-        "goalsAgainst": 50,
+        "goals": 52,
+        "goalsAgainst": 52,
         "gd": 0,
         "points": 43,
         "form": null
       },
       {
         "position": 9,
+        "team": "CA Osasuna",
+        "played": 33,
+        "won": 11,
+        "draw": 9,
+        "lost": 13,
+        "goals": 39,
+        "goalsAgainst": 40,
+        "gd": -1,
+        "points": 42,
+        "form": null
+      },
+      {
+        "position": 10,
         "team": "Athletic Club",
         "played": 33,
         "won": 12,
@@ -387,19 +400,6 @@
         "goalsAgainst": 48,
         "gd": -12,
         "points": 41,
-        "form": null
-      },
-      {
-        "position": 10,
-        "team": "CA Osasuna",
-        "played": 32,
-        "won": 10,
-        "draw": 9,
-        "lost": 13,
-        "goals": 37,
-        "goalsAgainst": 39,
-        "gd": -2,
-        "points": 39,
         "form": null
       },
       {
@@ -422,8 +422,8 @@
         "won": 9,
         "draw": 12,
         "lost": 12,
-        "goals": 31,
-        "goalsAgainst": 39,
+        "goals": 33,
+        "goalsAgainst": 41,
         "gd": -8,
         "points": 39,
         "form": null
@@ -456,6 +456,19 @@
       },
       {
         "position": 15,
+        "team": "Elche CF",
+        "played": 33,
+        "won": 9,
+        "draw": 11,
+        "lost": 13,
+        "goals": 44,
+        "goalsAgainst": 50,
+        "gd": -6,
+        "points": 38,
+        "form": null
+      },
+      {
+        "position": 16,
         "team": "Deportivo Alavés",
         "played": 33,
         "won": 9,
@@ -468,7 +481,7 @@
         "form": null
       },
       {
-        "position": 16,
+        "position": 17,
         "team": "RCD Mallorca",
         "played": 33,
         "won": 9,
@@ -481,28 +494,15 @@
         "form": null
       },
       {
-        "position": 17,
-        "team": "Elche CF",
-        "played": 32,
-        "won": 8,
-        "draw": 11,
-        "lost": 13,
-        "goals": 42,
-        "goalsAgainst": 49,
-        "gd": -7,
-        "points": 35,
-        "form": null
-      },
-      {
         "position": 18,
         "team": "Sevilla FC",
-        "played": 32,
+        "played": 33,
         "won": 9,
         "draw": 7,
-        "lost": 16,
-        "goals": 39,
-        "goalsAgainst": 53,
-        "gd": -14,
+        "lost": 17,
+        "goals": 40,
+        "goalsAgainst": 55,
+        "gd": -15,
         "points": 34,
         "form": null
       },
@@ -522,13 +522,13 @@
       {
         "position": 20,
         "team": "Real Oviedo",
-        "played": 32,
+        "played": 33,
         "won": 6,
         "draw": 10,
-        "lost": 16,
-        "goals": 25,
-        "goalsAgainst": 49,
-        "gd": -24,
+        "lost": 17,
+        "goals": 26,
+        "goalsAgainst": 51,
+        "gd": -25,
         "points": 28,
         "form": null
       }
@@ -537,14 +537,14 @@
       {
         "position": 1,
         "team": "FC Internazionale Milano",
-        "played": 33,
+        "played": 34,
         "won": 25,
-        "draw": 3,
+        "draw": 4,
         "lost": 5,
-        "goals": 78,
-        "goalsAgainst": 29,
+        "goals": 80,
+        "goalsAgainst": 31,
         "gd": 49,
-        "points": 78,
+        "points": 79,
         "form": null
       },
       {
@@ -588,6 +588,19 @@
       },
       {
         "position": 5,
+        "team": "Como 1907",
+        "played": 34,
+        "won": 17,
+        "draw": 10,
+        "lost": 7,
+        "goals": 59,
+        "goalsAgainst": 28,
+        "gd": 31,
+        "points": 61,
+        "form": null
+      },
+      {
+        "position": 6,
         "team": "AS Roma",
         "played": 34,
         "won": 19,
@@ -597,19 +610,6 @@
         "goalsAgainst": 29,
         "gd": 19,
         "points": 61,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "Como 1907",
-        "played": 34,
-        "won": 16,
-        "draw": 11,
-        "lost": 7,
-        "goals": 57,
-        "goalsAgainst": 28,
-        "gd": 29,
-        "points": 59,
         "form": null
       },
       {
@@ -692,28 +692,28 @@
       },
       {
         "position": 13,
-        "team": "Genoa CFC",
+        "team": "Torino FC",
         "played": 34,
-        "won": 10,
-        "draw": 10,
-        "lost": 14,
-        "goals": 40,
-        "goalsAgainst": 46,
-        "gd": -6,
-        "points": 40,
+        "won": 11,
+        "draw": 8,
+        "lost": 15,
+        "goals": 39,
+        "goalsAgainst": 56,
+        "gd": -17,
+        "points": 41,
         "form": null
       },
       {
         "position": 14,
-        "team": "Torino FC",
-        "played": 33,
-        "won": 11,
-        "draw": 7,
+        "team": "Genoa CFC",
+        "played": 34,
+        "won": 10,
+        "draw": 9,
         "lost": 15,
-        "goals": 37,
-        "goalsAgainst": 54,
-        "gd": -17,
-        "points": 40,
+        "goals": 40,
+        "goalsAgainst": 48,
+        "gd": -8,
+        "points": 39,
         "form": null
       },
       {
@@ -812,14 +812,14 @@
       {
         "position": 2,
         "team": "Borussia Dortmund",
-        "played": 30,
-        "won": 19,
+        "played": 31,
+        "won": 20,
         "draw": 7,
         "lost": 4,
-        "goals": 61,
+        "goals": 65,
         "goalsAgainst": 31,
-        "gd": 30,
-        "points": 64,
+        "gd": 34,
+        "points": 67,
         "form": null
       },
       {
@@ -837,6 +837,19 @@
       },
       {
         "position": 4,
+        "team": "VfB Stuttgart",
+        "played": 31,
+        "won": 17,
+        "draw": 6,
+        "lost": 8,
+        "goals": 63,
+        "goalsAgainst": 43,
+        "gd": 20,
+        "points": 57,
+        "form": null
+      },
+      {
+        "position": 5,
         "team": "TSG 1899 Hoffenheim",
         "played": 31,
         "won": 17,
@@ -846,19 +859,6 @@
         "goalsAgainst": 45,
         "gd": 16,
         "points": 57,
-        "form": null
-      },
-      {
-        "position": 5,
-        "team": "VfB Stuttgart",
-        "played": 30,
-        "won": 17,
-        "draw": 5,
-        "lost": 8,
-        "goals": 62,
-        "goalsAgainst": 42,
-        "gd": 20,
-        "points": 56,
         "form": null
       },
       {
@@ -890,13 +890,13 @@
       {
         "position": 8,
         "team": "SC Freiburg",
-        "played": 30,
+        "played": 31,
         "won": 12,
         "draw": 7,
-        "lost": 11,
+        "lost": 12,
         "goals": 44,
-        "goalsAgainst": 48,
-        "gd": -4,
+        "goalsAgainst": 52,
+        "gd": -8,
         "points": 43,
         "form": null
       },
@@ -941,6 +941,19 @@
       },
       {
         "position": 12,
+        "team": "SV Werder Bremen",
+        "played": 31,
+        "won": 8,
+        "draw": 8,
+        "lost": 15,
+        "goals": 36,
+        "goalsAgainst": 54,
+        "gd": -18,
+        "points": 32,
+        "form": null
+      },
+      {
+        "position": 13,
         "team": "1. FC Union Berlin",
         "played": 31,
         "won": 8,
@@ -953,7 +966,7 @@
         "form": null
       },
       {
-        "position": 13,
+        "position": 14,
         "team": "1. FC Köln",
         "played": 31,
         "won": 7,
@@ -966,7 +979,7 @@
         "form": null
       },
       {
-        "position": 14,
+        "position": 15,
         "team": "Hamburger SV",
         "played": 31,
         "won": 7,
@@ -975,19 +988,6 @@
         "goals": 34,
         "goalsAgainst": 50,
         "gd": -16,
-        "points": 31,
-        "form": null
-      },
-      {
-        "position": 15,
-        "team": "SV Werder Bremen",
-        "played": 30,
-        "won": 8,
-        "draw": 7,
-        "lost": 15,
-        "goals": 35,
-        "goalsAgainst": 53,
-        "gd": -18,
         "points": 31,
         "form": null
       },
@@ -1060,6 +1060,19 @@
       },
       {
         "position": 3,
+        "team": "Lille OSC",
+        "played": 31,
+        "won": 17,
+        "draw": 6,
+        "lost": 8,
+        "goals": 50,
+        "goalsAgainst": 34,
+        "gd": 16,
+        "points": 57,
+        "form": null
+      },
+      {
+        "position": 4,
         "team": "Olympique Lyonnais",
         "played": 31,
         "won": 17,
@@ -1072,29 +1085,16 @@
         "form": null
       },
       {
-        "position": 4,
-        "team": "Lille OSC",
-        "played": 30,
-        "won": 16,
-        "draw": 6,
-        "lost": 8,
-        "goals": 49,
-        "goalsAgainst": 34,
-        "gd": 15,
-        "points": 54,
-        "form": null
-      },
-      {
         "position": 5,
         "team": "Stade Rennais FC 1901",
-        "played": 30,
-        "won": 15,
+        "played": 31,
+        "won": 16,
         "draw": 8,
         "lost": 7,
-        "goals": 52,
-        "goalsAgainst": 41,
-        "gd": 11,
-        "points": 53,
+        "goals": 54,
+        "goalsAgainst": 42,
+        "gd": 12,
+        "points": 56,
         "form": null
       },
       {
@@ -1127,13 +1127,13 @@
         "position": 8,
         "team": "RC Strasbourg Alsace",
         "played": 30,
-        "won": 12,
-        "draw": 8,
+        "won": 13,
+        "draw": 7,
         "lost": 10,
-        "goals": 46,
-        "goalsAgainst": 37,
-        "gd": 9,
-        "points": 44,
+        "goals": 49,
+        "goalsAgainst": 39,
+        "gd": 10,
+        "points": 46,
         "form": null
       },
       {
@@ -1141,12 +1141,12 @@
         "team": "FC Lorient",
         "played": 31,
         "won": 10,
-        "draw": 12,
-        "lost": 9,
-        "goals": 40,
-        "goalsAgainst": 44,
-        "gd": -4,
-        "points": 42,
+        "draw": 11,
+        "lost": 10,
+        "goals": 42,
+        "goalsAgainst": 47,
+        "gd": -5,
+        "points": 41,
         "form": null
       },
       {
@@ -1178,13 +1178,13 @@
       {
         "position": 12,
         "team": "Paris FC",
-        "played": 30,
+        "played": 31,
         "won": 9,
         "draw": 11,
-        "lost": 10,
+        "lost": 11,
         "goals": 40,
-        "goalsAgainst": 46,
-        "gd": -6,
+        "goalsAgainst": 47,
+        "gd": -7,
         "points": 38,
         "form": null
       },
@@ -1204,14 +1204,14 @@
       {
         "position": 14,
         "team": "Le Havre AC",
-        "played": 30,
+        "played": 31,
         "won": 6,
-        "draw": 12,
+        "draw": 13,
         "lost": 12,
-        "goals": 25,
-        "goalsAgainst": 38,
+        "goals": 29,
+        "goalsAgainst": 42,
         "gd": -13,
-        "points": 30,
+        "points": 31,
         "form": null
       },
       {
@@ -1243,27 +1243,27 @@
       {
         "position": 17,
         "team": "FC Nantes",
-        "played": 30,
+        "played": 31,
         "won": 4,
         "draw": 8,
-        "lost": 18,
-        "goals": 25,
-        "goalsAgainst": 49,
-        "gd": -24,
+        "lost": 19,
+        "goals": 26,
+        "goalsAgainst": 51,
+        "gd": -25,
         "points": 20,
         "form": null
       },
       {
         "position": 18,
         "team": "FC Metz",
-        "played": 30,
+        "played": 31,
         "won": 3,
-        "draw": 6,
+        "draw": 7,
         "lost": 21,
-        "goals": 27,
-        "goalsAgainst": 66,
+        "goals": 31,
+        "goalsAgainst": 70,
         "gd": -39,
-        "points": 15,
+        "points": 16,
         "form": null
       }
     ],
