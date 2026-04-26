@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-26T07:30:44.428Z",
-  "generatedAt": "2026-04-26T07:30:44.428Z",
+  "updatedAt": "2026-04-26T13:08:10.030Z",
+  "generatedAt": "2026-04-26T13:08:10.030Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-26T07:30:44.428Z"
+      "fetchedAt": "2026-04-26T13:08:10.030Z"
     }
   },
   "scorers": [
@@ -296,6 +296,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Mikel Oyarzabal",
+      "team": "Real Sociedad de Fútbol",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 13,
+      "assists": 3,
+      "penalties": 5,
+      "playedMatches": 30
+    },
+    {
       "name": "Alexander Sørloth",
       "team": "Club Atlético de Madrid",
       "competition": "La Liga",
@@ -316,17 +327,6 @@
       "assists": 1,
       "penalties": 3,
       "playedMatches": 31
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "team": "Real Sociedad de Fútbol",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 12,
-      "assists": 3,
-      "penalties": 5,
-      "playedMatches": 29
     },
     {
       "name": "Robert Lewandowski",
@@ -381,7 +381,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Hugo Duro",
@@ -469,7 +469,7 @@
       "goals": 12,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Anastasios Douvikas",
@@ -480,7 +480,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Marcus Thuram-Ulien",
@@ -612,7 +612,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Christian Pulisic",
@@ -689,7 +689,7 @@
       "goals": 18,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Luis Díaz",
@@ -843,7 +843,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Jens Stage",
@@ -854,7 +854,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Tim Lemperle",
@@ -1063,7 +1063,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Pablo Pagis",
@@ -1074,7 +1074,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Yann Gboho",
@@ -1107,7 +1107,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Kylian Mbappé",

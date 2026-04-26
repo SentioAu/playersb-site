@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-26T07:30:44.428Z",
-  "generatedAt": "2026-04-26T07:30:44.428Z",
+  "updatedAt": "2026-04-26T13:08:10.029Z",
+  "generatedAt": "2026-04-26T13:08:10.029Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-26T07:30:44.428Z"
+      "fetchedAt": "2026-04-26T13:08:10.029Z"
     }
   },
   "standings": {
@@ -366,14 +366,14 @@
       {
         "position": 8,
         "team": "Real Sociedad de Fútbol",
-        "played": 32,
+        "played": 33,
         "won": 11,
-        "draw": 9,
+        "draw": 10,
         "lost": 12,
-        "goals": 49,
-        "goalsAgainst": 49,
+        "goals": 50,
+        "goalsAgainst": 50,
         "gd": 0,
-        "points": 42,
+        "points": 43,
         "form": null
       },
       {
@@ -418,14 +418,14 @@
       {
         "position": 12,
         "team": "Rayo Vallecano de Madrid",
-        "played": 32,
+        "played": 33,
         "won": 9,
-        "draw": 11,
+        "draw": 12,
         "lost": 12,
-        "goals": 30,
-        "goalsAgainst": 38,
+        "goals": 31,
+        "goalsAgainst": 39,
         "gd": -8,
-        "points": 38,
+        "points": 39,
         "form": null
       },
       {
@@ -602,14 +602,14 @@
       {
         "position": 6,
         "team": "Como 1907",
-        "played": 33,
+        "played": 34,
         "won": 16,
-        "draw": 10,
+        "draw": 11,
         "lost": 7,
         "goals": 57,
         "goalsAgainst": 28,
         "gd": 29,
-        "points": 58,
+        "points": 59,
         "form": null
       },
       {
@@ -654,14 +654,14 @@
       {
         "position": 10,
         "team": "US Sassuolo Calcio",
-        "played": 33,
+        "played": 34,
         "won": 13,
-        "draw": 6,
+        "draw": 7,
         "lost": 14,
         "goals": 41,
         "goalsAgainst": 44,
         "gd": -3,
-        "points": 45,
+        "points": 46,
         "form": null
       },
       {
@@ -692,6 +692,19 @@
       },
       {
         "position": 13,
+        "team": "Genoa CFC",
+        "played": 34,
+        "won": 10,
+        "draw": 10,
+        "lost": 14,
+        "goals": 40,
+        "goalsAgainst": 46,
+        "gd": -6,
+        "points": 40,
+        "form": null
+      },
+      {
+        "position": 14,
         "team": "Torino FC",
         "played": 33,
         "won": 11,
@@ -704,29 +717,16 @@
         "form": null
       },
       {
-        "position": 14,
-        "team": "Genoa CFC",
-        "played": 33,
-        "won": 10,
-        "draw": 9,
-        "lost": 14,
-        "goals": 40,
-        "goalsAgainst": 46,
-        "gd": -6,
-        "points": 39,
-        "form": null
-      },
-      {
         "position": 15,
         "team": "ACF Fiorentina",
-        "played": 33,
+        "played": 34,
         "won": 8,
-        "draw": 12,
+        "draw": 13,
         "lost": 13,
         "goals": 38,
         "goalsAgainst": 45,
         "gd": -7,
-        "points": 36,
+        "points": 37,
         "form": null
       },
       {
@@ -1126,27 +1126,27 @@
       {
         "position": 8,
         "team": "RC Strasbourg Alsace",
-        "played": 29,
+        "played": 30,
         "won": 12,
-        "draw": 7,
+        "draw": 8,
         "lost": 10,
         "goals": 46,
         "goalsAgainst": 37,
         "gd": 9,
-        "points": 43,
+        "points": 44,
         "form": null
       },
       {
         "position": 9,
         "team": "FC Lorient",
-        "played": 30,
+        "played": 31,
         "won": 10,
-        "draw": 11,
+        "draw": 12,
         "lost": 9,
         "goals": 40,
         "goalsAgainst": 44,
         "gd": -4,
-        "points": 41,
+        "points": 42,
         "form": null
       },
       {
