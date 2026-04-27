@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-27T13:54:49.772Z",
-  "generatedAt": "2026-04-27T13:54:49.772Z",
+  "updatedAt": "2026-04-27T19:23:26.356Z",
+  "generatedAt": "2026-04-27T19:23:26.356Z",
   "source": "football-data.org",
   "players": [
     {
@@ -23,7 +23,7 @@
       "goals": 21,
       "assists": 1,
       "penalties": 7,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Antoine Semenyo",
@@ -177,7 +177,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Cole Palmer",
@@ -191,6 +191,17 @@
       "playedMatches": 23
     },
     {
+      "name": "Casemiro",
+      "team": "Manchester United FC",
+      "competition": "Premier League",
+      "nationality": "Brazil",
+      "position": "",
+      "goals": 9,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 32
+    },
+    {
       "name": "Benjamin Šeško",
       "team": "Manchester United FC",
       "competition": "Premier League",
@@ -199,7 +210,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Raúl Jiménez",
@@ -211,17 +222,6 @@
       "assists": 3,
       "penalties": 4,
       "playedMatches": 33
-    },
-    {
-      "name": "Morgan Rogers",
-      "team": "Aston Villa FC",
-      "competition": "Premier League",
-      "nationality": "England",
-      "position": "",
-      "goals": 9,
-      "assists": 6,
-      "penalties": 0,
-      "playedMatches": 34
     },
     {
       "name": "Kylian Mbappé",
@@ -510,6 +510,17 @@
       "playedMatches": 14
     },
     {
+      "name": "Gianluca Scamacca",
+      "team": "Atalanta BC",
+      "competition": "Serie A",
+      "nationality": "Italy",
+      "position": "",
+      "goals": 10,
+      "assists": 1,
+      "penalties": 2,
+      "playedMatches": 27
+    },
+    {
       "name": "Keinan Davis",
       "team": "Udinese Calcio",
       "competition": "Serie A",
@@ -551,7 +562,7 @@
       "goals": 10,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Scott McTominay",
@@ -585,17 +596,6 @@
       "assists": 3,
       "penalties": 2,
       "playedMatches": 27
-    },
-    {
-      "name": "Gianluca Scamacca",
-      "team": "Atalanta BC",
-      "competition": "Serie A",
-      "nationality": "Italy",
-      "position": "",
-      "goals": 8,
-      "assists": 1,
-      "penalties": 2,
-      "playedMatches": 26
     },
     {
       "name": "Andrea Pinamonti",

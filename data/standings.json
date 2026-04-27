@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-27T13:54:49.771Z",
-  "generatedAt": "2026-04-27T13:54:49.771Z",
+  "updatedAt": "2026-04-27T19:23:26.355Z",
+  "generatedAt": "2026-04-27T19:23:26.355Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-27T13:54:49.771Z"
+      "fetchedAt": "2026-04-27T19:23:26.355Z"
     }
   },
   "standings": {
@@ -39,14 +39,14 @@
       {
         "position": 3,
         "team": "Manchester United FC",
-        "played": 33,
+        "played": 34,
         "won": 16,
-        "draw": 10,
+        "draw": 11,
         "lost": 7,
         "goals": 58,
         "goalsAgainst": 45,
         "gd": 13,
-        "points": 58,
+        "points": 59,
         "form": null
       },
       {
@@ -90,6 +90,19 @@
       },
       {
         "position": 7,
+        "team": "Brentford FC",
+        "played": 34,
+        "won": 13,
+        "draw": 10,
+        "lost": 11,
+        "goals": 48,
+        "goalsAgainst": 44,
+        "gd": 4,
+        "points": 49,
+        "form": null
+      },
+      {
+        "position": 8,
         "team": "AFC Bournemouth",
         "played": 34,
         "won": 11,
@@ -102,7 +115,7 @@
         "form": null
       },
       {
-        "position": 8,
+        "position": 9,
         "team": "Chelsea FC",
         "played": 34,
         "won": 13,
@@ -111,19 +124,6 @@
         "goals": 53,
         "goalsAgainst": 45,
         "gd": 8,
-        "points": 48,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Brentford FC",
-        "played": 33,
-        "won": 13,
-        "draw": 9,
-        "lost": 11,
-        "goals": 48,
-        "goalsAgainst": 44,
-        "gd": 4,
         "points": 48,
         "form": null
       },
@@ -430,6 +430,19 @@
       },
       {
         "position": 13,
+        "team": "RCD Espanyol de Barcelona",
+        "played": 33,
+        "won": 10,
+        "draw": 9,
+        "lost": 14,
+        "goals": 37,
+        "goalsAgainst": 49,
+        "gd": -12,
+        "points": 39,
+        "form": null
+      },
+      {
+        "position": 14,
         "team": "Elche CF",
         "played": 33,
         "won": 9,
@@ -438,19 +451,6 @@
         "goals": 44,
         "goalsAgainst": 50,
         "gd": -6,
-        "points": 38,
-        "form": null
-      },
-      {
-        "position": 14,
-        "team": "RCD Espanyol de Barcelona",
-        "played": 32,
-        "won": 10,
-        "draw": 8,
-        "lost": 14,
-        "goals": 37,
-        "goalsAgainst": 49,
-        "gd": -12,
         "points": 38,
         "form": null
       },
@@ -509,14 +509,14 @@
       {
         "position": 19,
         "team": "Levante UD",
-        "played": 32,
+        "played": 33,
         "won": 8,
-        "draw": 8,
+        "draw": 9,
         "lost": 16,
         "goals": 37,
         "goalsAgainst": 50,
         "gd": -13,
-        "points": 32,
+        "points": 33,
         "form": null
       },
       {
@@ -615,18 +615,31 @@
       {
         "position": 7,
         "team": "Atalanta BC",
-        "played": 33,
+        "played": 34,
         "won": 14,
         "draw": 12,
-        "lost": 7,
-        "goals": 45,
-        "goalsAgainst": 29,
-        "gd": 16,
+        "lost": 8,
+        "goals": 47,
+        "goalsAgainst": 32,
+        "gd": 15,
         "points": 54,
         "form": null
       },
       {
         "position": 8,
+        "team": "SS Lazio",
+        "played": 34,
+        "won": 12,
+        "draw": 12,
+        "lost": 10,
+        "goals": 34,
+        "goalsAgainst": 30,
+        "gd": 4,
+        "points": 48,
+        "form": null
+      },
+      {
+        "position": 9,
         "team": "Bologna FC 1909",
         "played": 34,
         "won": 14,
@@ -636,19 +649,6 @@
         "goalsAgainst": 41,
         "gd": 1,
         "points": 48,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "SS Lazio",
-        "played": 33,
-        "won": 12,
-        "draw": 11,
-        "lost": 10,
-        "goals": 34,
-        "goalsAgainst": 30,
-        "gd": 4,
-        "points": 47,
         "form": null
       },
       {
@@ -667,14 +667,14 @@
       {
         "position": 11,
         "team": "Udinese Calcio",
-        "played": 33,
+        "played": 34,
         "won": 12,
-        "draw": 7,
+        "draw": 8,
         "lost": 14,
         "goals": 38,
         "goalsAgainst": 43,
         "gd": -5,
-        "points": 43,
+        "points": 44,
         "form": null
       },
       {
@@ -732,14 +732,14 @@
       {
         "position": 16,
         "team": "Cagliari Calcio",
-        "played": 33,
-        "won": 8,
+        "played": 34,
+        "won": 9,
         "draw": 9,
         "lost": 16,
-        "goals": 33,
-        "goalsAgainst": 47,
-        "gd": -14,
-        "points": 33,
+        "goals": 36,
+        "goalsAgainst": 49,
+        "gd": -13,
+        "points": 36,
         "form": null
       },
       {
