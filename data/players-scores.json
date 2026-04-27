@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-26T18:56:44.081Z",
-  "generatedAt": "2026-04-26T18:56:44.081Z",
+  "updatedAt": "2026-04-27T02:47:05.182Z",
+  "generatedAt": "2026-04-27T02:47:05.182Z",
   "source": "football-data.org",
   "players": [
     {
@@ -301,6 +301,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Borja Iglesias",
+      "team": "RC Celta de Vigo",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 13,
+      "assists": 1,
+      "penalties": 4,
+      "playedMatches": 32
+    },
+    {
       "name": "Alexander Sørloth",
       "team": "Club Atlético de Madrid",
       "competition": "La Liga",
@@ -310,17 +321,6 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 31
-    },
-    {
-      "name": "Borja Iglesias",
-      "team": "RC Celta de Vigo",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 12,
-      "assists": 1,
-      "penalties": 3,
-      "playedMatches": 32
     },
     {
       "name": "Robert Lewandowski",
