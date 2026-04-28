@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-27T19:23:26.350Z",
-  "generatedAt": "2026-04-27T19:23:26.350Z",
+  "updatedAt": "2026-04-28T02:54:38.438Z",
+  "generatedAt": "2026-04-28T02:54:38.438Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-27T19:23:26.350Z"
+      "fetchedAt": "2026-04-28T02:54:38.438Z"
     }
   },
   "fixtures": [
@@ -3732,11 +3732,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-04-27T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Manchester United FC",
       "away": "Brentford FC",
-      "homeScore": 1,
-      "awayScore": 0
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 538131,
@@ -7780,7 +7780,7 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-04-27T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "RCD Espanyol de Barcelona",
       "away": "Levante UD",
       "homeScore": 0,
@@ -12070,11 +12070,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-04-27T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "SS Lazio",
       "away": "Udinese Calcio",
-      "homeScore": 0,
-      "awayScore": 1
+      "homeScore": 3,
+      "awayScore": 3
     },
     {
       "id": 537161,

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-27T19:23:26.355Z",
-  "generatedAt": "2026-04-27T19:23:26.355Z",
+  "updatedAt": "2026-04-28T02:54:38.443Z",
+  "generatedAt": "2026-04-28T02:54:38.443Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-27T19:23:26.355Z"
+      "fetchedAt": "2026-04-28T02:54:38.443Z"
     }
   },
   "standings": {
@@ -40,13 +40,13 @@
         "position": 3,
         "team": "Manchester United FC",
         "played": 34,
-        "won": 16,
-        "draw": 11,
+        "won": 17,
+        "draw": 10,
         "lost": 7,
-        "goals": 58,
-        "goalsAgainst": 45,
-        "gd": 13,
-        "points": 59,
+        "goals": 60,
+        "goalsAgainst": 46,
+        "gd": 14,
+        "points": 61,
         "form": null
       },
       {
@@ -90,19 +90,6 @@
       },
       {
         "position": 7,
-        "team": "Brentford FC",
-        "played": 34,
-        "won": 13,
-        "draw": 10,
-        "lost": 11,
-        "goals": 48,
-        "goalsAgainst": 44,
-        "gd": 4,
-        "points": 49,
-        "form": null
-      },
-      {
-        "position": 8,
         "team": "AFC Bournemouth",
         "played": 34,
         "won": 11,
@@ -115,7 +102,7 @@
         "form": null
       },
       {
-        "position": 9,
+        "position": 8,
         "team": "Chelsea FC",
         "played": 34,
         "won": 13,
@@ -124,6 +111,19 @@
         "goals": 53,
         "goalsAgainst": 45,
         "gd": 8,
+        "points": 48,
+        "form": null
+      },
+      {
+        "position": 9,
+        "team": "Brentford FC",
+        "played": 34,
+        "won": 13,
+        "draw": 9,
+        "lost": 12,
+        "goals": 49,
+        "goalsAgainst": 46,
+        "gd": 3,
         "points": 48,
         "form": null
       },
@@ -632,8 +632,8 @@
         "won": 12,
         "draw": 12,
         "lost": 10,
-        "goals": 34,
-        "goalsAgainst": 30,
+        "goals": 37,
+        "goalsAgainst": 33,
         "gd": 4,
         "points": 48,
         "form": null
@@ -671,8 +671,8 @@
         "won": 12,
         "draw": 8,
         "lost": 14,
-        "goals": 38,
-        "goalsAgainst": 43,
+        "goals": 41,
+        "goalsAgainst": 46,
         "gd": -5,
         "points": 44,
         "form": null

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-27T19:23:26.355Z",
-  "generatedAt": "2026-04-27T19:23:26.355Z",
+  "updatedAt": "2026-04-28T02:54:38.443Z",
+  "generatedAt": "2026-04-28T02:54:38.443Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-27T19:23:26.355Z"
+      "fetchedAt": "2026-04-28T02:54:38.443Z"
     }
   },
   "scorers": [
@@ -153,6 +153,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Benjamin Šeško",
+      "team": "Manchester United FC",
+      "competition": "Premier League",
+      "nationality": "Slovenia",
+      "position": "",
+      "goals": 10,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 31
+    },
+    {
       "name": "Richarlison",
       "team": "Tottenham Hotspur FC",
       "competition": "Premier League",
@@ -206,17 +217,6 @@
       "assists": 2,
       "penalties": 0,
       "playedMatches": 32
-    },
-    {
-      "name": "Benjamin Šeško",
-      "team": "Manchester United FC",
-      "competition": "Premier League",
-      "nationality": "Slovenia",
-      "position": "",
-      "goals": 9,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 31
     },
     {
       "name": "Raúl Jiménez",
