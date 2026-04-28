@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-28T08:27:12.883Z",
-  "generatedAt": "2026-04-28T08:27:12.883Z",
+  "updatedAt": "2026-04-28T19:43:24.330Z",
+  "generatedAt": "2026-04-28T19:43:24.330Z",
   "source": "football-data.org",
   "players": [
     {
@@ -1120,10 +1120,10 @@
       "competition": "Champions League",
       "nationality": "England",
       "position": "",
-      "goals": 12,
+      "goals": 13,
       "assists": 1,
-      "penalties": 3,
-      "playedMatches": 12
+      "penalties": 4,
+      "playedMatches": 13
     },
     {
       "name": "Anthony Gordon",
@@ -1137,6 +1137,17 @@
       "playedMatches": 12
     },
     {
+      "name": "Khvicha Kvaratskhelia",
+      "team": "Paris Saint-Germain FC",
+      "competition": "Champions League",
+      "nationality": "Georgia",
+      "position": "",
+      "goals": 9,
+      "assists": 5,
+      "penalties": 0,
+      "playedMatches": 14
+    },
+    {
       "name": "Julián Álvarez",
       "team": "Club Atlético de Madrid",
       "competition": "Champions League",
@@ -1145,17 +1156,6 @@
       "goals": 9,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 13
-    },
-    {
-      "name": "Khvicha Kvaratskhelia",
-      "team": "Paris Saint-Germain FC",
-      "competition": "Champions League",
-      "nationality": "Georgia",
-      "position": "",
-      "goals": 8,
-      "assists": 5,
-      "penalties": 0,
       "playedMatches": 13
     },
     {
@@ -1244,7 +1244,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 14
+      "playedMatches": 15
     },
     {
       "name": "Luis Díaz",
@@ -1255,7 +1255,7 @@
       "goals": 6,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 10
+      "playedMatches": 11
     },
     {
       "name": "Alexander Sørloth",
@@ -1291,6 +1291,17 @@
       "playedMatches": 12
     },
     {
+      "name": "Michael Olise",
+      "team": "FC Bayern München",
+      "competition": "Champions League",
+      "nationality": "France",
+      "position": "",
+      "goals": 5,
+      "assists": 6,
+      "penalties": 0,
+      "playedMatches": 12
+    },
+    {
       "name": "Gorka Guruzeta",
       "team": "Athletic Club",
       "competition": "Champions League",
@@ -1311,17 +1322,6 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 12
-    },
-    {
-      "name": "Desire Doue",
-      "team": "Paris Saint-Germain FC",
-      "competition": "Champions League",
-      "nationality": "France",
-      "position": "",
-      "goals": 5,
-      "assists": 2,
-      "penalties": 0,
-      "playedMatches": 10
     }
   ]
 }

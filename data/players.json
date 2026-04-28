@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T08:27:12.960Z",
+  "generated_at": "2026-04-28T19:43:24.421Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -430,13 +430,13 @@
       "position": "LW",
       "team": "FC Bayern München",
       "minutes": 1100,
-      "goals": 12,
+      "goals": 13,
       "assists": 1,
       "shots": 39,
       "shotsOnTarget": 20,
-      "playedMatches": 12,
+      "playedMatches": 13,
       "goalsPer90": 90,
-      "assistsPer90": 7.5
+      "assistsPer90": 6.92
     },
     {
       "id": "jamal-musiala",
@@ -608,9 +608,9 @@
       "assists": 1,
       "shots": 52,
       "shotsOnTarget": 27,
-      "playedMatches": 14,
-      "goalsPer90": 38.57,
-      "assistsPer90": 6.43
+      "playedMatches": 15,
+      "goalsPer90": 36,
+      "assistsPer90": 6
     },
     {
       "id": "pierre-emerick-aubameyang",
@@ -779,13 +779,13 @@
       "position": "RW",
       "team": "Paris Saint-Germain FC",
       "minutes": 1700,
-      "goals": 8,
+      "goals": 9,
       "assists": 5,
       "shots": 61,
       "shotsOnTarget": 31,
-      "playedMatches": 13,
-      "goalsPer90": 55.38,
-      "assistsPer90": 34.62
+      "playedMatches": 14,
+      "goalsPer90": 57.86,
+      "assistsPer90": 32.14
     },
     {
       "id": "stanislav-lobotka",
