@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-28T19:43:24.329Z",
-  "generatedAt": "2026-04-28T19:43:24.329Z",
+  "updatedAt": "2026-04-29T02:53:13.811Z",
+  "generatedAt": "2026-04-29T02:53:13.811Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-28T19:43:24.329Z"
+      "fetchedAt": "2026-04-29T02:53:13.811Z"
     }
   },
   "scorers": [
@@ -1127,9 +1127,20 @@
       "nationality": "England",
       "position": "",
       "goals": 13,
-      "assists": 1,
+      "assists": 2,
       "penalties": 4,
       "playedMatches": 13
+    },
+    {
+      "name": "Khvicha Kvaratskhelia",
+      "team": "Paris Saint-Germain FC",
+      "competition": "Champions League",
+      "nationality": "Georgia",
+      "position": "",
+      "goals": 10,
+      "assists": 5,
+      "penalties": 0,
+      "playedMatches": 14
     },
     {
       "name": "Anthony Gordon",
@@ -1141,17 +1152,6 @@
       "assists": 2,
       "penalties": 5,
       "playedMatches": 12
-    },
-    {
-      "name": "Khvicha Kvaratskhelia",
-      "team": "Paris Saint-Germain FC",
-      "competition": "Champions League",
-      "nationality": "Georgia",
-      "position": "",
-      "goals": 9,
-      "assists": 5,
-      "penalties": 0,
-      "playedMatches": 14
     },
     {
       "name": "Julián Álvarez",
@@ -1185,6 +1185,17 @@
       "assists": 2,
       "penalties": 3,
       "playedMatches": 10
+    },
+    {
+      "name": "Luis Díaz",
+      "team": "FC Bayern München",
+      "competition": "Champions League",
+      "nationality": "Colombia",
+      "position": "",
+      "goals": 7,
+      "assists": 3,
+      "penalties": 0,
+      "playedMatches": 11
     },
     {
       "name": "Martinelli",
@@ -1242,6 +1253,17 @@
       "playedMatches": 10
     },
     {
+      "name": "Ousmane Dembélé",
+      "team": "Paris Saint-Germain FC",
+      "competition": "Champions League",
+      "nationality": "France",
+      "position": "",
+      "goals": 6,
+      "assists": 2,
+      "penalties": 1,
+      "playedMatches": 11
+    },
+    {
       "name": "Vitinha",
       "team": "Paris Saint-Germain FC",
       "competition": "Champions League",
@@ -1251,17 +1273,6 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 15
-    },
-    {
-      "name": "Luis Díaz",
-      "team": "FC Bayern München",
-      "competition": "Champions League",
-      "nationality": "Colombia",
-      "position": "",
-      "goals": 6,
-      "assists": 3,
-      "penalties": 0,
-      "playedMatches": 11
     },
     {
       "name": "Alexander Sørloth",
@@ -1317,17 +1328,6 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 7
-    },
-    {
-      "name": "Luis Suárez",
-      "team": "Sporting Clube de Portugal",
-      "competition": "Champions League",
-      "nationality": "Colombia",
-      "position": "",
-      "goals": 5,
-      "assists": 1,
-      "penalties": 2,
-      "playedMatches": 12
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T19:43:24.421Z",
+  "generated_at": "2026-04-29T02:53:13.894Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -431,12 +431,12 @@
       "team": "FC Bayern München",
       "minutes": 1100,
       "goals": 13,
-      "assists": 1,
+      "assists": 2,
       "shots": 39,
       "shotsOnTarget": 20,
       "playedMatches": 13,
       "goalsPer90": 90,
-      "assistsPer90": 6.92
+      "assistsPer90": 13.85
     },
     {
       "id": "jamal-musiala",
@@ -579,13 +579,13 @@
       "position": "RW",
       "team": "Paris Saint-Germain FC",
       "minutes": 1220,
-      "goals": 10,
-      "assists": 6,
+      "goals": 6,
+      "assists": 2,
       "shots": 44,
       "shotsOnTarget": 22,
-      "playedMatches": 20,
-      "goalsPer90": 45,
-      "assistsPer90": 27
+      "playedMatches": 11,
+      "goalsPer90": 49.09,
+      "assistsPer90": 16.36
     },
     {
       "id": "achraf-hakimi",
@@ -779,12 +779,12 @@
       "position": "RW",
       "team": "Paris Saint-Germain FC",
       "minutes": 1700,
-      "goals": 9,
+      "goals": 10,
       "assists": 5,
       "shots": 61,
       "shotsOnTarget": 31,
       "playedMatches": 14,
-      "goalsPer90": 57.86,
+      "goalsPer90": 64.29,
       "assistsPer90": 32.14
     },
     {

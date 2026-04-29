@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-28T19:43:24.325Z",
-  "generatedAt": "2026-04-28T19:43:24.325Z",
+  "updatedAt": "2026-04-29T02:53:13.805Z",
+  "generatedAt": "2026-04-29T02:53:13.805Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-28T19:43:24.325Z"
+      "fetchedAt": "2026-04-29T02:53:13.805Z"
     }
   },
   "fixtures": [
@@ -3955,6 +3955,17 @@
       "status": "TIMED",
       "home": "Tottenham Hotspur FC",
       "away": "Leeds United FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 538091,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-05-13T19:00:00Z",
+      "status": "TIMED",
+      "home": "Manchester City FC",
+      "away": "Crystal Palace FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -12007,7 +12018,7 @@
       "status": "FINISHED",
       "home": "Hellas Verona FC",
       "away": "US Lecce",
-      "homeScore": 1,
+      "homeScore": 0,
       "awayScore": 0
     },
     {
@@ -12183,6 +12194,116 @@
       "status": "TIMED",
       "home": "AS Roma",
       "away": "ACF Fiorentina",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537168,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-08T18:45:00Z",
+      "status": "TIMED",
+      "home": "Torino FC",
+      "away": "US Sassuolo Calcio",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537167,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-09T13:00:00Z",
+      "status": "TIMED",
+      "home": "Cagliari Calcio",
+      "away": "Udinese Calcio",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537170,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-09T16:00:00Z",
+      "status": "TIMED",
+      "home": "SS Lazio",
+      "away": "FC Internazionale Milano",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537174,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-09T18:45:00Z",
+      "status": "TIMED",
+      "home": "US Lecce",
+      "away": "Juventus FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537169,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T10:30:00Z",
+      "status": "TIMED",
+      "home": "Hellas Verona FC",
+      "away": "Como 1907",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537165,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T13:00:00Z",
+      "status": "TIMED",
+      "home": "ACF Fiorentina",
+      "away": "Genoa CFC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537173,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T13:00:00Z",
+      "status": "TIMED",
+      "home": "US Cremonese",
+      "away": "AC Pisa 1909",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537171,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T16:00:00Z",
+      "status": "TIMED",
+      "home": "Parma Calcio 1913",
+      "away": "AS Roma",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537166,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-10T18:45:00Z",
+      "status": "TIMED",
+      "home": "AC Milan",
+      "away": "Atalanta BC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537172,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-11T18:45:00Z",
+      "status": "TIMED",
+      "home": "SSC Napoli",
+      "away": "Bologna FC 1909",
       "homeScore": null,
       "awayScore": null
     },
@@ -21167,11 +21288,11 @@
       "competitionCode": "CL",
       "competition": "Champions League",
       "date": "2026-04-28T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Paris Saint-Germain FC",
       "away": "FC Bayern München",
-      "homeScore": 2,
-      "awayScore": 1
+      "homeScore": 5,
+      "awayScore": 4
     },
     {
       "id": 552093,
