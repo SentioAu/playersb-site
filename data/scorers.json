@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-29T13:57:57.383Z",
-  "generatedAt": "2026-04-29T13:57:57.383Z",
+  "updatedAt": "2026-04-29T19:27:24.337Z",
+  "generatedAt": "2026-04-29T19:27:24.337Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-29T13:57:57.383Z"
+      "fetchedAt": "2026-04-29T19:27:24.337Z"
     }
   },
   "scorers": [
@@ -1162,7 +1162,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 13
+      "playedMatches": 14
     },
     {
       "name": "Erling Haaland",
@@ -1206,7 +1206,7 @@
       "goals": 6,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 11
+      "playedMatches": 12
     },
     {
       "name": "Jens Hauge",
@@ -1283,7 +1283,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 13
+      "playedMatches": 14
     },
     {
       "name": "Camilo Durán",
