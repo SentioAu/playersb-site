@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-29T19:27:24.337Z",
-  "generatedAt": "2026-04-29T19:27:24.337Z",
+  "updatedAt": "2026-04-30T02:54:50.895Z",
+  "generatedAt": "2026-04-30T02:54:50.895Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-04-29T19:27:24.337Z"
+      "fetchedAt": "2026-04-30T02:54:50.895Z"
     }
   },
   "scorers": [
@@ -1159,9 +1159,9 @@
       "competition": "Champions League",
       "nationality": "Argentina",
       "position": "",
-      "goals": 9,
+      "goals": 10,
       "assists": 3,
-      "penalties": 2,
+      "penalties": 3,
       "playedMatches": 14
     },
     {
