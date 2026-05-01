@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-01T08:13:22.395Z",
-  "generatedAt": "2026-05-01T08:13:22.395Z",
+  "updatedAt": "2026-05-01T13:20:07.465Z",
+  "generatedAt": "2026-05-01T13:20:07.465Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-01T08:13:22.395Z"
+      "fetchedAt": "2026-05-01T13:20:07.465Z"
     }
   },
   "fixtures": [
@@ -11919,7 +11919,7 @@
       "status": "FINISHED",
       "home": "US Cremonese",
       "away": "Torino FC",
-      "homeScore": 1,
+      "homeScore": 0,
       "awayScore": 0
     },
     {
@@ -12075,6 +12075,116 @@
       "away": "Udinese Calcio",
       "homeScore": 3,
       "awayScore": 3
+    },
+    {
+      "id": 537161,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-01T18:45:00Z",
+      "status": "TIMED",
+      "home": "AC Pisa 1909",
+      "away": "US Lecce",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537163,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-02T13:00:00Z",
+      "status": "TIMED",
+      "home": "Udinese Calcio",
+      "away": "Torino FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537157,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-02T16:00:00Z",
+      "status": "TIMED",
+      "home": "Como 1907",
+      "away": "SSC Napoli",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537156,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-02T18:45:00Z",
+      "status": "TIMED",
+      "home": "Atalanta BC",
+      "away": "Genoa CFC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537158,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-03T10:30:00Z",
+      "status": "TIMED",
+      "home": "Bologna FC 1909",
+      "away": "Cagliari Calcio",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537162,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-03T13:00:00Z",
+      "status": "TIMED",
+      "home": "US Sassuolo Calcio",
+      "away": "AC Milan",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537160,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-03T16:00:00Z",
+      "status": "TIMED",
+      "home": "Juventus FC",
+      "away": "Hellas Verona FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537159,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-03T18:45:00Z",
+      "status": "TIMED",
+      "home": "FC Internazionale Milano",
+      "away": "Parma Calcio 1913",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537164,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-04T16:30:00Z",
+      "status": "TIMED",
+      "home": "US Cremonese",
+      "away": "SS Lazio",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 537155,
+      "competitionCode": "SA",
+      "competition": "Serie A",
+      "date": "2026-05-04T18:45:00Z",
+      "status": "TIMED",
+      "home": "AS Roma",
+      "away": "ACF Fiorentina",
+      "homeScore": null,
+      "awayScore": null
     },
     {
       "id": 537175,
