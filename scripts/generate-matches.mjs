@@ -89,7 +89,7 @@ async function main() {
 
   const sections = Array.from(grouped.entries()).map(([name, rows]) => {
     const finished = rows.filter((m) => m.status === 'FINISHED').slice(0, 10);
-    const upcoming = rows.filter((m) => ['SCHEDULED', 'TIMED'].includes(String(m.status))).slice(0, 10);
+    const upcoming = rows.filter((m) => m.status === 'SCHEDULED').slice(0, 10);
     return `
       <div class="card" id="${slug(name)}">
         <h3>${esc(name)}</h3>
@@ -120,7 +120,7 @@ async function main() {
       ${tabs ? `<div class="button-row">${tabs}</div>` : ''}
     </section>
     <section class="section">
-      ${fixtures.length ? sections : '<div class="card"><p class="meta-text">Fixtures loading — check back soon.</p></div>'}
+      ${fixtures.length ? sections : '<div class="card"><p class="meta-text">Fixtures loading — next update soon</p></div>'}
     </section>
   `;
 

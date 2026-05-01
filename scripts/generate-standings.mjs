@@ -112,7 +112,7 @@ async function main() {
       ${tabs ? `<div class="button-row">${tabs}</div>` : ''}
     </section>
     <section class="section">
-      ${competitions.length ? sections : '<div class="card"><p class="meta-text">Standings loading...</p></div>'}
+      ${competitions.length ? sections : '<div class="card"><p class="meta-text">Standings loading — next update soon</p></div>'}
     </section>
   `;
 
