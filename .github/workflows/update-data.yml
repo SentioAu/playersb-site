@@ -51,6 +51,17 @@ jobs:
       - name: Fetch football data
         run: node scripts/fetch-football-data.mjs
 
+      - name: Verify data files exist
+        run: |
+          echo "=== data/fixtures.json ==="
+          wc -l data/fixtures.json
+          echo "=== data/standings.json ==="
+          wc -l data/standings.json
+          echo "=== First standing entry ==="
+          node -e "const d=JSON.parse(require('fs').readFileSync('data/standings.json')); console.log(JSON.stringify(Object.keys(d.standings)))"
+          echo "=== Haaland in players.json ==="
+          node -e "const d=JSON.parse(require('fs').readFileSync('data/players.json')); const p=Object.values(d).find(x=>x.name&&x.name.includes('Haaland')); console.log(JSON.stringify(p))"
+
       - name: Sync scorers to players
         run: node scripts/sync-scorers.mjs
 

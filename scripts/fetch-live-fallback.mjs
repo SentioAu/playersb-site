@@ -542,71 +542,6 @@ async function fetchWikidataAdapter(fetchedAt, teamsHint = []) {
   }
 }
 
-async function buildSyntheticFallback(teamStrengthMap, fetchedAt) {
-  const players = await readJson(PLAYERS_PATH, { players: [] });
-  const teams = Array.from(new Set((players?.players || []).map((p) => safeStr(p?.team)).filter(Boolean))).slice(0, 12);
-  const list = teams.length >= 6 ? teams : ["Manchester City", "Real Madrid", "Inter", "Bayern Munich", "Liverpool", "Arsenal"];
-
-  const matches = [];
-  const now = Date.now();
-  for (let i = 0; i < list.length; i += 1) {
-    for (let j = i + 1; j < list.length; j += 1) {
-      const offsetDays = (i * list.length + j) % 60 - 30;
-      const date = new Date(now + offsetDays * 24 * 60 * 60 * 1000).toISOString();
-      const homeGoals = (i + j) % 4;
-      const awayGoals = (i * 2 + j) % 3;
-      const finished = offsetDays < 0;
-      const homeName = list[i];
-      const awayName = list[j];
-      matches.push({
-        id: `synthetic-${i}-${j}`,
-        utcDate: date,
-        status: finished ? "FINISHED" : "SCHEDULED",
-        matchday: null,
-        stage: "Synthetic",
-        group: "",
-        homeTeam: { id: null, name: homeName, shortName: "", tla: "" },
-        awayTeam: { id: null, name: awayName, shortName: "", tla: "" },
-        score: {
-          winner: homeGoals === awayGoals ? "DRAW" : homeGoals > awayGoals ? "HOME_TEAM" : "AWAY_TEAM",
-          duration: "REGULAR",
-          fullTime: finished ? { home: homeGoals, away: awayGoals } : null,
-          halfTime: null,
-          scorers: { home: [], away: [] },
-        },
-        lastUpdated: fetchedAt,
-        fieldMeta: {
-          utcDate: field(date, "synthetic", fetchedAt, "low"),
-          homeTeamName: field(homeName, "synthetic", fetchedAt, "low"),
-          awayTeamName: field(awayName, "synthetic", fetchedAt, "low"),
-          score: field(finished ? `${homeGoals}-${awayGoals}` : null, "synthetic", fetchedAt, "low"),
-          status: field(finished ? "FINISHED" : "SCHEDULED", "synthetic", fetchedAt, "low"),
-        },
-        provenanceSummary: "synthetic",
-      });
-    }
-  }
-
-  const competition = {
-    id: null,
-    code: "SYNTH",
-    name: "PlayersB Synthetic League",
-    area: { name: "Global", code: "GLB" },
-    plan: "fallback",
-    currentSeason: { id: null, startDate: null, endDate: null, currentMatchday: null },
-    slug: "playersb-synthetic-league",
-  };
-
-  return {
-    fixtures: [{ competition, matchCount: matches.length, matches }],
-    standings: [{
-      competition,
-      season: { id: null, startDate: null, endDate: null, currentMatchday: null },
-      standings: [{ stage: "Synthetic", type: "TOTAL", group: "", table: buildTableRows(matches, teamStrengthMap, fetchedAt) }],
-    }],
-  };
-}
-
 async function main() {
   const fetchedAt = new Date().toISOString();
   const config = await readJson(SOURCES_PATH, {});
@@ -749,26 +684,13 @@ async function main() {
   }
 
   if (!fixtureCompetitions.length) {
-    const allowSynthetic = process.env.ALLOW_SYNTHETIC_FALLBACK === "1";
-    if (allowSynthetic) {
-      console.warn("live-fallback: openfootball sources unavailable, generating synthetic fallback fixtures/standings");
-      const synthetic = await buildSyntheticFallback(ratingMap, fetchedAt);
-      fixtureCompetitions.push(...synthetic.fixtures);
-      standingsCompetitions.push(...synthetic.standings);
-    } else {
-      const existingFixtures = await readJson(FIXTURES_PATH, { competitions: [] });
-      const existingStandings = await readJson(STANDINGS_PATH, { competitions: [] });
-      const hasExisting = Array.isArray(existingFixtures?.competitions) && existingFixtures.competitions.length > 0 && Array.isArray(existingStandings?.competitions) && existingStandings.competitions.length > 0;
-      if (hasExisting) {
-        console.warn("live-fallback: keeping last known live snapshot (synthetic disabled)");
-        fixtureCompetitions.push(...existingFixtures.competitions);
-        standingsCompetitions.push(...existingStandings.competitions);
-      } else {
-        console.warn("live-fallback: no previous live snapshot found; forcing synthetic fallback");
-        const synthetic = await buildSyntheticFallback(ratingMap, fetchedAt);
-        fixtureCompetitions.push(...synthetic.fixtures);
-        standingsCompetitions.push(...synthetic.standings);
-      }
+    const existingFixtures = await readJson(FIXTURES_PATH, { competitions: [] });
+    const existingStandings = await readJson(STANDINGS_PATH, { competitions: [] });
+    const hasExisting = Array.isArray(existingFixtures?.competitions) && existingFixtures.competitions.length > 0 && Array.isArray(existingStandings?.competitions) && existingStandings.competitions.length > 0;
+    if (hasExisting) {
+      console.warn("live-fallback: keeping last known live snapshot");
+      fixtureCompetitions.push(...existingFixtures.competitions);
+      standingsCompetitions.push(...existingStandings.competitions);
     }
   }
 
