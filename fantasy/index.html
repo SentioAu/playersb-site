@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/site.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
   <meta name="theme-color" content="#2563eb" />
 
@@ -44,6 +45,17 @@
   }
   </script>
 
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
   <script>
@@ -64,9 +76,13 @@
       send_page_view: true
     });
   </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
 <div class="page">
   <header class="site-header">
     <div class="container header-inner">
@@ -74,15 +90,24 @@
         <span class="brand-title">PlayersB</span>
         <span class="brand-subtitle">The Players Book</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
         <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
         <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
         <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
         <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
-        <a class="nav-link" href="/about/" data-track-event="nav_click">About</a>
-        <a class="nav-link" href="/contact/" data-track-event="nav_click">Contact</a>
       </nav>
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
       <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
         Dark mode
       </button>
@@ -90,7 +115,7 @@
     </div>
   </header>
 
-  <main class="container main-content">
+  <main id="mainContent" class="container main-content" tabindex="-1">
     <section class="hero">
       <span class="pill">Fantasy Picker</span>
       <h1>Shortlist fantasy options by role and form.</h1>
@@ -157,7 +182,7 @@
           <td>0.48</td>
           <td>0.32</td>
           <td>0.00</td>
-          <td>2.43</td>
+          <td>2.86</td>
           <td>71.47</td>
         </tr>
 <tr data-search="julian brandt st borussia dortmund playersb synthetic league" data-position="ST">
@@ -168,7 +193,7 @@
           <td>0.51</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>2.61</td>
+          <td>3.08</td>
           <td>76.90</td>
         </tr>
 <tr data-search="khvicha kvaratskhelia rw napoli " data-position="RW">
@@ -190,7 +215,7 @@
           <td>0.51</td>
           <td>0.23</td>
           <td>0.00</td>
-          <td>2.32</td>
+          <td>2.73</td>
           <td>66.65</td>
         </tr>
 <tr data-search="jan oblak cb atlético madrid playersb synthetic league" data-position="CB">
@@ -201,7 +226,7 @@
           <td>0.48</td>
           <td>0.21</td>
           <td>0.00</td>
-          <td>2.16</td>
+          <td>2.54</td>
           <td>61.94</td>
         </tr>
 <tr data-search="adrien rabiot dm juventus " data-position="DM">
@@ -223,7 +248,7 @@
           <td>0.46</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>2.42</td>
+          <td>2.85</td>
           <td>71.77</td>
         </tr>
 <tr data-search="niclas füllkrug rw borussia dortmund playersb synthetic league" data-position="RW">
@@ -234,7 +259,7 @@
           <td>0.42</td>
           <td>0.32</td>
           <td>0.00</td>
-          <td>2.25</td>
+          <td>2.65</td>
           <td>66.71</td>
         </tr>
 <tr data-search="brian brobbey lw ajax " data-position="LW">
@@ -256,7 +281,7 @@
           <td>0.49</td>
           <td>0.31</td>
           <td>0.00</td>
-          <td>2.46</td>
+          <td>2.90</td>
           <td>72.12</td>
         </tr>
 <tr data-search="kai havertz cb arsenal playersb synthetic league" data-position="CB">
@@ -267,7 +292,7 @@
           <td>0.42</td>
           <td>0.21</td>
           <td>0.00</td>
-          <td>1.98</td>
+          <td>2.33</td>
           <td>57.18</td>
         </tr>
 <tr data-search="granit xhaka dm bayer leverkusen playersb synthetic league" data-position="DM">
@@ -278,7 +303,7 @@
           <td>0.46</td>
           <td>0.23</td>
           <td>0.00</td>
-          <td>2.13</td>
+          <td>2.51</td>
           <td>61.52</td>
         </tr>
 <tr data-search="bremer rb juventus " data-position="RB">
@@ -300,7 +325,7 @@
           <td>0.49</td>
           <td>0.18</td>
           <td>0.00</td>
-          <td>2.15</td>
+          <td>2.53</td>
           <td>61.03</td>
         </tr>
 <tr data-search="antónio silva cb benfica " data-position="CB">
@@ -322,7 +347,7 @@
           <td>0.37</td>
           <td>0.32</td>
           <td>0.00</td>
-          <td>2.07</td>
+          <td>2.44</td>
           <td>61.94</td>
         </tr>
 <tr data-search="pierre-emerick aubameyang lw marseille " data-position="LW">
@@ -355,7 +380,7 @@
           <td>0.47</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>2.45</td>
+          <td>2.89</td>
           <td>72.54</td>
         </tr>
 <tr data-search="rasmus højlund am manchester united playersb synthetic league" data-position="AM">
@@ -366,7 +391,7 @@
           <td>0.43</td>
           <td>0.31</td>
           <td>0.00</td>
-          <td>2.25</td>
+          <td>2.65</td>
           <td>66.58</td>
         </tr>
 <tr data-search="marcus rashford dm manchester united playersb synthetic league" data-position="DM">
@@ -377,7 +402,7 @@
           <td>0.40</td>
           <td>0.23</td>
           <td>0.00</td>
-          <td>1.94</td>
+          <td>2.28</td>
           <td>56.39</td>
         </tr>
 <tr data-search="vinícius júnior rw real madrid playersb synthetic league" data-position="RW">
@@ -388,7 +413,7 @@
           <td>0.52</td>
           <td>0.30</td>
           <td>0.00</td>
-          <td>2.51</td>
+          <td>2.95</td>
           <td>73.03</td>
         </tr>
 <tr data-search="jeremie frimpong rb bayer leverkusen playersb synthetic league" data-position="RB">
@@ -399,7 +424,7 @@
           <td>0.37</td>
           <td>0.21</td>
           <td>0.00</td>
-          <td>1.80</td>
+          <td>2.12</td>
           <td>52.41</td>
         </tr>
 <tr data-search="achraf hakimi cm paris saint-germain " data-position="CM">
@@ -443,7 +468,7 @@
           <td>0.34</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>2.03</td>
+          <td>2.39</td>
           <td>61.52</td>
         </tr>
 <tr data-search="amine harit am marseille " data-position="AM">
@@ -487,7 +512,7 @@
           <td>0.49</td>
           <td>0.33</td>
           <td>0.00</td>
-          <td>2.50</td>
+          <td>2.95</td>
           <td>73.64</td>
         </tr>
 <tr data-search="phil foden rw manchester city playersb synthetic league" data-position="RW">
@@ -498,7 +523,7 @@
           <td>0.44</td>
           <td>0.30</td>
           <td>0.00</td>
-          <td>2.26</td>
+          <td>2.66</td>
           <td>66.39</td>
         </tr>
 <tr data-search="lisandro martínez rb manchester united playersb synthetic league" data-position="RB">
@@ -509,7 +534,7 @@
           <td>0.32</td>
           <td>0.21</td>
           <td>0.00</td>
-          <td>1.62</td>
+          <td>1.91</td>
           <td>47.65</td>
         </tr>
 <tr data-search="hakan çalhanoğlu cm inter " data-position="CM">
@@ -553,7 +578,7 @@
           <td>0.40</td>
           <td>0.20</td>
           <td>0.00</td>
-          <td>1.88</td>
+          <td>2.22</td>
           <td>54.40</td>
         </tr>
 <tr data-search="antonio rüdiger cb real madrid playersb synthetic league" data-position="CB">
@@ -564,7 +589,7 @@
           <td>0.37</td>
           <td>0.18</td>
           <td>0.00</td>
-          <td>1.73</td>
+          <td>2.03</td>
           <td>49.93</td>
         </tr>
 <tr data-search="lamine yamal dm barcelona playersb synthetic league" data-position="DM">
@@ -575,7 +600,7 @@
           <td>0.49</td>
           <td>0.16</td>
           <td>0.00</td>
-          <td>2.09</td>
+          <td>2.45</td>
           <td>58.91</td>
         </tr>
 <tr data-search="ronald araújo rb barcelona playersb synthetic league" data-position="RB">
@@ -586,7 +611,7 @@
           <td>0.44</td>
           <td>0.15</td>
           <td>0.00</td>
-          <td>1.88</td>
+          <td>2.21</td>
           <td>53.11</td>
         </tr>
 <tr data-search="mohamed salah lw liverpool playersb synthetic league" data-position="LW">
@@ -597,7 +622,7 @@
           <td>0.28</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>1.84</td>
+          <td>2.16</td>
           <td>56.39</td>
         </tr>
 <tr data-search="pedri am barcelona playersb synthetic league" data-position="AM">
@@ -608,7 +633,7 @@
           <td>0.26</td>
           <td>0.32</td>
           <td>0.00</td>
-          <td>1.71</td>
+          <td>2.01</td>
           <td>52.41</td>
         </tr>
 <tr data-search="victor osimhen st napoli " data-position="ST">
@@ -630,7 +655,7 @@
           <td>0.34</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>2.00</td>
+          <td>2.35</td>
           <td>60.45</td>
         </tr>
 <tr data-search="álvaro morata rw atlético madrid playersb synthetic league" data-position="RW">
@@ -641,7 +666,7 @@
           <td>0.31</td>
           <td>0.31</td>
           <td>0.00</td>
-          <td>1.83</td>
+          <td>2.16</td>
           <td>55.48</td>
         </tr>
 <tr data-search="rodrigo de paul cm atlético madrid playersb synthetic league" data-position="CM">
@@ -652,7 +677,7 @@
           <td>0.28</td>
           <td>0.23</td>
           <td>0.00</td>
-          <td>1.55</td>
+          <td>1.82</td>
           <td>46.14</td>
         </tr>
 <tr data-search="harry kane lw bayern munich playersb synthetic league" data-position="LW">
@@ -663,7 +688,7 @@
           <td>0.41</td>
           <td>0.33</td>
           <td>0.00</td>
-          <td>2.23</td>
+          <td>2.62</td>
           <td>66.27</td>
         </tr>
 <tr data-search="jamal musiala am bayern munich playersb synthetic league" data-position="AM">
@@ -674,7 +699,7 @@
           <td>0.37</td>
           <td>0.30</td>
           <td>0.00</td>
-          <td>2.01</td>
+          <td>2.36</td>
           <td>59.75</td>
         </tr>
 <tr data-search="alessandro bastoni cb inter " data-position="CB">
@@ -696,7 +721,7 @@
           <td>0.34</td>
           <td>0.20</td>
           <td>0.00</td>
-          <td>1.66</td>
+          <td>1.95</td>
           <td>48.36</td>
         </tr>
 <tr data-search="kevin de bruyne cb manchester city playersb synthetic league" data-position="CB">
@@ -707,7 +732,7 @@
           <td>0.31</td>
           <td>0.18</td>
           <td>0.00</td>
-          <td>1.52</td>
+          <td>1.79</td>
           <td>44.38</td>
         </tr>
 <tr data-search="christian pulisic dm ac milan " data-position="DM">
@@ -740,7 +765,7 @@
           <td>0.41</td>
           <td>0.16</td>
           <td>0.00</td>
-          <td>1.81</td>
+          <td>2.13</td>
           <td>51.55</td>
         </tr>
 <tr data-search="virgil van dijk rb liverpool playersb synthetic league" data-position="RB">
@@ -751,7 +776,7 @@
           <td>0.37</td>
           <td>0.15</td>
           <td>0.00</td>
-          <td>1.63</td>
+          <td>1.92</td>
           <td>46.48</td>
         </tr>
 <tr data-search="stanislav lobotka cm napoli " data-position="CM">
@@ -784,7 +809,7 @@
           <td>0.27</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>1.77</td>
+          <td>2.08</td>
           <td>54.40</td>
         </tr>
 <tr data-search="martin ødegaard rw arsenal playersb synthetic league" data-position="RW">
@@ -795,7 +820,7 @@
           <td>0.25</td>
           <td>0.31</td>
           <td>0.00</td>
-          <td>1.62</td>
+          <td>1.91</td>
           <td>49.93</td>
         </tr>
 <tr data-search="dušan vlahović lw juventus " data-position="LW">
@@ -828,7 +853,7 @@
           <td>0.33</td>
           <td>0.33</td>
           <td>0.00</td>
-          <td>1.95</td>
+          <td>2.29</td>
           <td>58.91</td>
         </tr>
 <tr data-search="james maddison am tottenham playersb synthetic league" data-position="AM">
@@ -839,7 +864,7 @@
           <td>0.30</td>
           <td>0.30</td>
           <td>0.00</td>
-          <td>1.76</td>
+          <td>2.07</td>
           <td>53.11</td>
         </tr>
 <tr data-search="ángel di maría st benfica " data-position="ST">
@@ -872,7 +897,7 @@
           <td>0.27</td>
           <td>0.20</td>
           <td>0.00</td>
-          <td>1.43</td>
+          <td>1.68</td>
           <td>42.31</td>
         </tr>
 <tr data-search="joshua kimmich rb bayern munich playersb synthetic league" data-position="RB">
@@ -883,7 +908,7 @@
           <td>0.25</td>
           <td>0.18</td>
           <td>0.00</td>
-          <td>1.31</td>
+          <td>1.54</td>
           <td>38.84</td>
         </tr>
 <tr data-search="karim adeyemi cm borussia dortmund playersb synthetic league" data-position="CM">
@@ -894,7 +919,7 @@
           <td>0.33</td>
           <td>0.16</td>
           <td>0.00</td>
-          <td>1.53</td>
+          <td>1.80</td>
           <td>44.18</td>
         </tr>
 <tr data-search="mats hummels cb borussia dortmund playersb synthetic league" data-position="CB">
@@ -905,7 +930,7 @@
           <td>0.30</td>
           <td>0.15</td>
           <td>0.00</td>
-          <td>1.38</td>
+          <td>1.62</td>
           <td>39.84</td>
         </tr>
 <tr data-search="florian wirtz lw bayer leverkusen playersb synthetic league" data-position="LW">
@@ -916,7 +941,7 @@
           <td>0.20</td>
           <td>0.34</td>
           <td>0.00</td>
-          <td>1.54</td>
+          <td>1.81</td>
           <td>48.36</td>
         </tr>
 <tr data-search="kylian mbappé st paris saint-germain " data-position="ST">
@@ -949,7 +974,7 @@
           <td>0.20</td>
           <td>0.20</td>
           <td>0.00</td>
-          <td>1.20</td>
+          <td>1.41</td>
           <td>36.27</td>
         </tr>
 <tr data-search="rafa silva cm benfica " data-position="CM">
@@ -971,7 +996,7 @@
           <td>0.25</td>
           <td>0.16</td>
           <td>0.00</td>
-          <td>1.25</td>
+          <td>1.47</td>
           <td>36.82</td>
         </tr>
 <tr data-search="christopher nkunku cb chelsea playersb synthetic league" data-position="CB">
@@ -982,7 +1007,7 @@
           <td>0.22</td>
           <td>0.15</td>
           <td>0.00</td>
-          <td>1.13</td>
+          <td>1.33</td>
           <td>33.20</td>
         </tr>
 <tr data-search="kenneth taylor dm ajax " data-position="DM">
@@ -1015,7 +1040,7 @@
           <td>0.16</td>
           <td>0.33</td>
           <td>0.00</td>
-          <td>1.39</td>
+          <td>1.64</td>
           <td>44.18</td>
         </tr>
 <tr data-search="jordan veretout dm marseille " data-position="DM">
@@ -1091,77 +1116,5 @@
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    const storageKey = "playersb-theme";
-    const root = document.documentElement;
-    const stored = localStorage.getItem(storageKey);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-    if (initialTheme === "dark") {
-      root.setAttribute("data-theme", "dark");
-    }
-
-    function track(eventName, params) {
-      if (typeof window.playersbTrack === "function") {
-        window.playersbTrack(eventName, params);
-      }
-    }
-
-    function updateButton(button) {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      button.textContent = isDark ? "Light mode" : "Dark mode";
-      button.setAttribute("aria-pressed", String(isDark));
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        updateButton(button);
-        button.addEventListener("click", () => {
-          const isDark = root.getAttribute("data-theme") === "dark";
-          const nextTheme = isDark ? "light" : "dark";
-          if (isDark) {
-            root.removeAttribute("data-theme");
-          } else {
-            root.setAttribute("data-theme", "dark");
-          }
-          localStorage.setItem(storageKey, nextTheme);
-          updateButton(button);
-          track("theme_toggle", { theme: nextTheme });
-        });
-      }
-
-      document.querySelectorAll("a[href]").forEach((anchor) => {
-        anchor.addEventListener("click", () => {
-          const href = anchor.getAttribute("href") || "";
-          const text = (anchor.textContent || "").trim().slice(0, 80);
-          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
-          const isNav = anchor.classList.contains("nav-link");
-          const isCta = anchor.classList.contains("button");
-
-          if (isOutbound) {
-            track("outbound_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isNav) {
-            track("nav_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isCta) {
-            track("cta_click", { destination: href, link_text: text });
-          }
-        });
-      });
-
-      setTimeout(() => {
-        track("engaged_read", { engaged_seconds: 30 });
-      }, 30000);
-    });
-  })();
-</script>
 </body>
 </html>

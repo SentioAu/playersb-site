@@ -18,9 +18,16 @@ env:
 permissions:
   contents: write
 
+# Prevent overlapping runs from racing on `git push` to main.
+# Keep the in-flight run; cancel any newer pending one.
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
 jobs:
   regenerate:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     env:
       FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
 
@@ -32,6 +39,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
         run: |
@@ -68,12 +76,67 @@ jobs:
       - name: Generate site
         run: node scripts/generate-all.mjs
 
-      - name: Commit updated data
+      - name: Refresh data health snapshot
+        run: node scripts/check-data-health.mjs --write-health
+        continue-on-error: true
+
+      - name: Commit updated data and pages
         run: |
           git config user.name "playersb-bot"
           git config user.email "bot@playersb.com"
-          git add data/fixtures.json data/standings.json data/scorers.json data/players.json data/players-scores.json matches/index.html standings/index.html
-          git diff --staged --quiet || git commit -m "chore: auto-update data [skip ci]"
-          git push
+          # Stage the full set of regenerated data + HTML so feed.xml,
+          # sitemap.xml, players/, teams/, etc. don't drift behind data/.
+          git add \
+            data/ \
+            sitemap.xml \
+            feed.xml \
+            robots.txt \
+            llms.txt \
+            llms-full.txt \
+            index.html \
+            matches/ \
+            standings/ \
+            players/ \
+            teams/ \
+            positions/ \
+            competitions/ \
+            legacy/ \
+            fantasy/ \
+            archive/ \
+            learn/ \
+            glossary/ \
+            embed/ \
+            sports/ \
+            tools/ \
+            about/ \
+            privacy/ \
+            terms/ \
+            contact/ \
+            compare/ \
+            2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-update data [skip ci]"
+            for attempt in 1 2 3 4; do
+              if git push; then
+                echo "push ok on attempt $attempt"
+                break
+              fi
+              echo "push failed on attempt $attempt; refetching and retrying"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep $((2 ** attempt))
+            done
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify on failure
+        if: failure() && env.ALERT_WEBHOOK_URL != ''
+        env:
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: |
+          curl -fsS -X POST -H 'Content-Type: application/json' \
+            -d "{\"text\":\"PlayersB update-data workflow failed: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
+            "$ALERT_WEBHOOK_URL" || true

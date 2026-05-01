@@ -21,9 +21,15 @@ env:
 permissions:
   contents: write
 
+# Serialize against update-data so we never race on `git push`.
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,6 +38,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install
+          fi
 
       - name: Generate sitemap.xml
         run: node scripts/generate-sitemap.mjs
@@ -42,4 +57,8 @@ jobs:
           git config user.email "playersb-bot@users.noreply.github.com"
           git add sitemap.xml
           git diff --cached --quiet || git commit -m "chore: update sitemap.xml"
-          git push
+          for attempt in 1 2 3 4; do
+            if git push; then break; fi
+            git fetch origin main && git rebase origin/main || { git rebase --abort; exit 1; }
+            sleep $((2 ** attempt))
+          done

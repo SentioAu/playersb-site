@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /templates/
+Disallow: /data/
+Disallow: /docs/
 
 Sitemap: https://playersb.com/sitemap.xml

@@ -1,0 +1,60 @@
+name: Lighthouse CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # Once a day at 04:30 UTC, run against the deployed prod site.
+    - cron: "30 4 * * *"
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install
+          fi
+          npm install --no-save @lhci/cli@0.14.x
+
+      - name: Serve site
+        run: npx --yes http-server -p 4173 -s . &
+        env:
+          NODE_ENV: production
+
+      - name: Wait for server
+        run: |
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            if curl -fsS http://127.0.0.1:4173/ > /dev/null; then
+              echo "server up"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "server failed to start"
+          exit 1
+
+      - name: Run Lighthouse CI
+        run: npx lhci autorun --config=.lighthouserc.json
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

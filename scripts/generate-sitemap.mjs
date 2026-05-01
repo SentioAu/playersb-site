@@ -12,6 +12,20 @@ const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
 const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
 const OUT_PATH = path.join(ROOT, "sitemap.xml");
 
+// Directories to enumerate from the filesystem (every subdir containing
+// index.html becomes a sitemap URL). Filesystem is the source of truth for
+// what's actually crawlable; data files only supply lastmod hints.
+const FS_SECTIONS = [
+  { dir: "players", maxDepth: 1 },
+  { dir: "teams", maxDepth: 1 },
+  { dir: "positions", maxDepth: 1 },
+  { dir: "competitions", maxDepth: 1 },
+  { dir: "legacy", maxDepth: 1 },
+  { dir: "learn", maxDepth: 1 },
+  { dir: "archive", maxDepth: 2 },
+  { dir: "embed", maxDepth: 1 },
+];
+
 const CORE = [
   "/",
   "/compare/",
@@ -64,6 +78,45 @@ function normalizePath(p) {
 function urlTag(loc, lastmod = null) {
   const lm = lastmod ? `\n    <lastmod>${esc(lastmod)}</lastmod>` : "";
   return `  <url>\n    <loc>${esc(loc)}</loc>${lm}\n  </url>`;
+}
+
+async function walkDir(rootRel, maxDepth) {
+  const absRoot = path.join(ROOT, rootRel);
+  const out = [];
+  async function recurse(rel, depth) {
+    if (depth > maxDepth) return;
+    let entries;
+    try {
+      entries = await fs.readdir(path.join(ROOT, rel), { withFileTypes: true });
+    } catch {
+      return;
+    }
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      if (entry.name.startsWith(".") || entry.name === "node_modules") continue;
+      const childRel = path.join(rel, entry.name);
+      const indexPath = path.join(ROOT, childRel, "index.html");
+      try {
+        const stat = await fs.stat(indexPath);
+        if (stat.isFile()) {
+          out.push({
+            urlPath: "/" + childRel.split(path.sep).join("/") + "/",
+            mtime: stat.mtime.toISOString().slice(0, 10),
+          });
+        }
+      } catch {
+        // no index.html — fine
+      }
+      await recurse(childRel, depth + 1);
+    }
+  }
+  try {
+    await fs.access(absRoot);
+  } catch {
+    return out;
+  }
+  await recurse(rootRel, 1);
+  return out;
 }
 
 function pickLastMod(obj) {
@@ -131,89 +184,24 @@ async function main() {
     }
   }
 
-  const playerSlugs = Array.from(slugToPlayer.keys()).sort((a, b) => a.localeCompare(b));
-  for (const slug of playerSlugs) {
-    const loc = `${SITE_ORIGIN}/players/${slug}/`;
-    if (seen.has(loc)) continue;
-    seen.add(loc);
-    items.push({ loc, lastmod: pickLastMod(slugToPlayer.get(slug)) });
-  }
-
-  const positions = new Set();
-  const teams = new Set();
-
-  for (const p of players) {
-    const position = String(p?.position || "").trim();
-    if (position) {
-      for (const part of position.split("/").map((x) => x.trim()).filter(Boolean)) {
-        const slug = sanitizeId(part);
-        if (slug) positions.add(slug);
-      }
-    }
-
-    const teamSlug = sanitizeId(String(p?.team || "").trim());
-    if (teamSlug) teams.add(teamSlug);
-  }
-
-  for (const slug of Array.from(positions).sort()) {
-    const loc = `${SITE_ORIGIN}/positions/${slug}/`;
-    if (seen.has(loc)) continue;
-    seen.add(loc);
-    items.push({ loc, lastmod: pickLastMod(parsed) || null });
-  }
-
-  for (const slug of Array.from(teams).sort()) {
-    const loc = `${SITE_ORIGIN}/teams/${slug}/`;
-    if (seen.has(loc)) continue;
-    seen.add(loc);
-    items.push({ loc, lastmod: pickLastMod(parsed) || null });
-  }
-
-  const competitionKeys = Object.keys(parsed.competitions || {}).sort();
-  for (const key of competitionKeys) {
-    const slug = sanitizeId(key);
-    if (!slug) continue;
-    const loc = `${SITE_ORIGIN}/competitions/${slug}/`;
-    if (seen.has(loc)) continue;
-    seen.add(loc);
-    items.push({ loc, lastmod: pickLastMod(parsed?.competitions?.[key]) || pickLastMod(parsed) || null });
-  }
-
-  for (const topic of learnTopics) {
-    const slug = sanitizeId(topic?.slug || topic?.title);
-    if (!slug) continue;
-    const loc = `${SITE_ORIGIN}/learn/${slug}/`;
-    if (seen.has(loc)) continue;
-    seen.add(loc);
-    items.push({ loc, lastmod: pickLastMod(topic) || pickLastMod(topicParsed) || null });
-  }
-
-  for (const entry of archiveEntries) {
-    const competitionSlug = sanitizeId(entry?.competition?.slug || entry?.competition?.name);
-    const seasonSlug = sanitizeId(entry?.season?.slug || entry?.season?.name);
-    if (!competitionSlug || !seasonSlug) continue;
-    const loc = `${SITE_ORIGIN}/archive/${competitionSlug}/${seasonSlug}/`;
-    if (seen.has(loc)) continue;
-    seen.add(loc);
-    items.push({ loc, lastmod: pickLastMod(entry) || pickLastMod(archiveParsed) || null });
-  }
-
-  const legacyPath = path.join(ROOT, "data", "legacy-players.json");
-  try {
-    const rawLegacy = await fs.readFile(legacyPath, "utf-8");
-    const legacyParsed = JSON.parse(rawLegacy);
-    const legacyPlayers = Array.isArray(legacyParsed.players) ? legacyParsed.players : [];
-
-    for (const legacy of legacyPlayers) {
-      const slug = sanitizeId(legacy?.id || legacy?.name);
-      if (!slug) continue;
-      const loc = `${SITE_ORIGIN}/legacy/${slug}/`;
+  // Enumerate every subdirectory containing an index.html across known
+  // dynamic sections — this catches generator output that isn't tracked in
+  // any single data file (e.g. teams sourced from rosters + scorers feed).
+  const fsResults = await Promise.all(
+    FS_SECTIONS.map((s) => walkDir(s.dir, s.maxDepth)),
+  );
+  for (const list of fsResults) {
+    for (const { urlPath, mtime } of list) {
+      const loc = `${SITE_ORIGIN}${urlPath}`;
       if (seen.has(loc)) continue;
       seen.add(loc);
-      items.push({ loc, lastmod: pickLastMod(legacy) || pickLastMod(legacyParsed) || null });
+      const slug = urlPath.split("/").filter(Boolean).pop();
+      let lastmod = mtime;
+      if (urlPath.startsWith("/players/") && slugToPlayer.has(slug)) {
+        lastmod = pickLastMod(slugToPlayer.get(slug)) || mtime;
+      }
+      items.push({ loc, lastmod });
     }
-  } catch (err) {
-    console.warn("generate-sitemap: legacy-players.json not found, skipping legacy URLs");
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
