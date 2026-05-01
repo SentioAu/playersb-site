@@ -18,7 +18,7 @@
     {
       "id": "phil-foden",
       "name": "Phil Foden",
-      "position": "RW",
+      "position": "CAM",
       "team": "Manchester City",
       "minutes": 1220,
       "goals": 6,
@@ -29,7 +29,7 @@
     {
       "id": "rodri",
       "name": "Rodri",
-      "position": "CM",
+      "position": "DM",
       "team": "Manchester City",
       "minutes": 1340,
       "goals": 5,
@@ -40,7 +40,7 @@
     {
       "id": "kevin-de-bruyne",
       "name": "Kevin De Bruyne",
-      "position": "CB",
+      "position": "CM",
       "team": "Manchester City",
       "minutes": 1460,
       "goals": 5,
@@ -51,7 +51,7 @@
     {
       "id": "mohamed-salah",
       "name": "Mohamed Salah",
-      "position": "LW",
+      "position": "RW",
       "team": "Liverpool",
       "minutes": 1580,
       "goals": 5,
@@ -62,7 +62,7 @@
     {
       "id": "darwin-nunez",
       "name": "Darwin Núñez",
-      "position": "AM",
+      "position": "ST",
       "team": "Liverpool",
       "minutes": 1700,
       "goals": 9,
@@ -73,7 +73,7 @@
     {
       "id": "alexis-mac-allister",
       "name": "Alexis Mac Allister",
-      "position": "DM",
+      "position": "CM",
       "team": "Liverpool",
       "minutes": 1100,
       "goals": 5,
@@ -84,7 +84,7 @@
     {
       "id": "virgil-van-dijk",
       "name": "Virgil van Dijk",
-      "position": "RB",
+      "position": "CB",
       "team": "Liverpool",
       "minutes": 1220,
       "goals": 5,
@@ -95,7 +95,7 @@
     {
       "id": "bukayo-saka",
       "name": "Bukayo Saka",
-      "position": "ST",
+      "position": "RW",
       "team": "Arsenal",
       "minutes": 1340,
       "goals": 4,
@@ -106,7 +106,7 @@
     {
       "id": "martin-degaard",
       "name": "Martin Ødegaard",
-      "position": "RW",
+      "position": "CAM",
       "team": "Arsenal",
       "minutes": 1460,
       "goals": 4,
@@ -117,7 +117,7 @@
     {
       "id": "declan-rice",
       "name": "Declan Rice",
-      "position": "CM",
+      "position": "DM",
       "team": "Arsenal",
       "minutes": 1580,
       "goals": 9,
@@ -128,7 +128,7 @@
     {
       "id": "kai-havertz",
       "name": "Kai Havertz",
-      "position": "CB",
+      "position": "AM",
       "team": "Arsenal",
       "minutes": 1700,
       "goals": 8,
@@ -150,7 +150,7 @@
     {
       "id": "james-maddison",
       "name": "James Maddison",
-      "position": "AM",
+      "position": "CAM",
       "team": "Tottenham",
       "minutes": 1220,
       "goals": 4,
@@ -161,7 +161,7 @@
     {
       "id": "dejan-kulusevski",
       "name": "Dejan Kulusevski",
-      "position": "DM",
+      "position": "RW",
       "team": "Tottenham",
       "minutes": 1340,
       "goals": 3,
@@ -172,7 +172,7 @@
     {
       "id": "cristian-romero",
       "name": "Cristian Romero",
-      "position": "RB",
+      "position": "CB",
       "team": "Tottenham",
       "minutes": 1460,
       "goals": 8,
@@ -197,7 +197,7 @@
     {
       "id": "enzo-fernandez",
       "name": "Enzo Fernández",
-      "position": "RW",
+      "position": "CM",
       "team": "Chelsea FC",
       "minutes": 1700,
       "goals": 8,
@@ -211,7 +211,7 @@
     {
       "id": "reece-james",
       "name": "Reece James",
-      "position": "CM",
+      "position": "RB",
       "team": "Chelsea",
       "minutes": 1100,
       "goals": 3,
@@ -222,7 +222,7 @@
     {
       "id": "christopher-nkunku",
       "name": "Christopher Nkunku",
-      "position": "CB",
+      "position": "CAM",
       "team": "Chelsea",
       "minutes": 1220,
       "goals": 3,
@@ -233,7 +233,7 @@
     {
       "id": "bruno-fernandes",
       "name": "Bruno Fernandes",
-      "position": "LW",
+      "position": "CAM",
       "team": "Manchester United FC",
       "minutes": 1340,
       "goals": 8,
@@ -247,7 +247,7 @@
     {
       "id": "rasmus-h-jlund",
       "name": "Rasmus Højlund",
-      "position": "AM",
+      "position": "ST",
       "team": "SSC Napoli",
       "minutes": 1460,
       "goals": 11,
@@ -261,7 +261,7 @@
     {
       "id": "marcus-rashford",
       "name": "Marcus Rashford",
-      "position": "DM",
+      "position": "LW",
       "team": "FC Barcelona",
       "minutes": 1580,
       "goals": 5,
@@ -275,7 +275,7 @@
     {
       "id": "lisandro-martinez",
       "name": "Lisandro Martínez",
-      "position": "RB",
+      "position": "CB",
       "team": "Manchester United",
       "minutes": 1700,
       "goals": 6,
@@ -286,7 +286,7 @@
     {
       "id": "jude-bellingham",
       "name": "Jude Bellingham",
-      "position": "ST",
+      "position": "CAM",
       "team": "Real Madrid",
       "minutes": 1100,
       "goals": 2,
@@ -297,7 +297,7 @@
     {
       "id": "vinicius-junior",
       "name": "Vinícius Júnior",
-      "position": "RW",
+      "position": "LW",
       "team": "Real Madrid CF",
       "minutes": 1220,
       "goals": 13,
@@ -333,7 +333,7 @@
     {
       "id": "robert-lewandowski",
       "name": "Robert Lewandowski",
-      "position": "LW",
+      "position": "ST",
       "team": "FC Barcelona",
       "minutes": 1580,
       "goals": 12,
@@ -347,7 +347,7 @@
     {
       "id": "pedri",
       "name": "Pedri",
-      "position": "AM",
+      "position": "CM",
       "team": "Barcelona",
       "minutes": 1700,
       "goals": 5,
@@ -358,7 +358,7 @@
     {
       "id": "lamine-yamal",
       "name": "Lamine Yamal",
-      "position": "DM",
+      "position": "RW",
       "team": "FC Barcelona",
       "minutes": 1100,
       "goals": 6,
@@ -372,7 +372,7 @@
     {
       "id": "ronald-araujo",
       "name": "Ronald Araújo",
-      "position": "RB",
+      "position": "CB",
       "team": "Barcelona",
       "minutes": 1220,
       "goals": 6,
@@ -394,8 +394,8 @@
     {
       "id": "alvaro-morata",
       "name": "Álvaro Morata",
-      "position": "RW",
-      "team": "Atlético Madrid",
+      "position": "ST",
+      "team": "AC Milan",
       "minutes": 1460,
       "goals": 5,
       "assists": 5,
@@ -416,7 +416,7 @@
     {
       "id": "jan-oblak",
       "name": "Jan Oblak",
-      "position": "CB",
+      "position": "GK",
       "team": "Atlético Madrid",
       "minutes": 1700,
       "goals": 9,
@@ -427,7 +427,7 @@
     {
       "id": "harry-kane",
       "name": "Harry Kane",
-      "position": "LW",
+      "position": "ST",
       "team": "FC Bayern München",
       "minutes": 1100,
       "goals": 13,
@@ -441,7 +441,7 @@
     {
       "id": "jamal-musiala",
       "name": "Jamal Musiala",
-      "position": "AM",
+      "position": "CAM",
       "team": "Bayern Munich",
       "minutes": 1220,
       "goals": 5,
@@ -452,7 +452,7 @@
     {
       "id": "leroy-sane",
       "name": "Leroy Sané",
-      "position": "DM",
+      "position": "LW",
       "team": "Bayern Munich",
       "minutes": 1340,
       "goals": 4,
@@ -463,7 +463,7 @@
     {
       "id": "joshua-kimmich",
       "name": "Joshua Kimmich",
-      "position": "RB",
+      "position": "CM",
       "team": "Bayern Munich",
       "minutes": 1460,
       "goals": 4,
@@ -474,7 +474,7 @@
     {
       "id": "julian-brandt",
       "name": "Julian Brandt",
-      "position": "ST",
+      "position": "CAM",
       "team": "Borussia Dortmund",
       "minutes": 1580,
       "goals": 9,
@@ -485,7 +485,7 @@
     {
       "id": "niclas-fullkrug",
       "name": "Niclas Füllkrug",
-      "position": "RW",
+      "position": "ST",
       "team": "Borussia Dortmund",
       "minutes": 1700,
       "goals": 8,
@@ -496,7 +496,7 @@
     {
       "id": "karim-adeyemi",
       "name": "Karim Adeyemi",
-      "position": "CM",
+      "position": "LW",
       "team": "Borussia Dortmund",
       "minutes": 1100,
       "goals": 4,
@@ -518,7 +518,7 @@
     {
       "id": "florian-wirtz",
       "name": "Florian Wirtz",
-      "position": "LW",
+      "position": "CAM",
       "team": "Bayer Leverkusen",
       "minutes": 1340,
       "goals": 3,
@@ -529,7 +529,7 @@
     {
       "id": "victor-boniface",
       "name": "Victor Boniface",
-      "position": "AM",
+      "position": "ST",
       "team": "Bayer Leverkusen",
       "minutes": 1460,
       "goals": 8,
@@ -540,7 +540,7 @@
     {
       "id": "granit-xhaka",
       "name": "Granit Xhaka",
-      "position": "DM",
+      "position": "CM",
       "team": "Bayer Leverkusen",
       "minutes": 1580,
       "goals": 8,
@@ -563,7 +563,7 @@
       "id": "kylian-mbappe",
       "name": "Kylian Mbappé",
       "position": "ST",
-      "team": "Real Madrid CF",
+      "team": "Real Madrid",
       "minutes": 1100,
       "goals": 15,
       "assists": 1,
@@ -590,7 +590,7 @@
     {
       "id": "achraf-hakimi",
       "name": "Achraf Hakimi",
-      "position": "CM",
+      "position": "RB",
       "team": "Paris Saint-Germain",
       "minutes": 1340,
       "goals": 7,
@@ -601,7 +601,7 @@
     {
       "id": "vitinha",
       "name": "Vitinha",
-      "position": "CB",
+      "position": "CM",
       "team": "Paris Saint-Germain FC",
       "minutes": 1460,
       "goals": 6,
@@ -615,8 +615,8 @@
     {
       "id": "pierre-emerick-aubameyang",
       "name": "Pierre-Emerick Aubameyang",
-      "position": "LW",
-      "team": "Olympique de Marseille",
+      "position": "ST",
+      "team": "Marseille",
       "minutes": 1580,
       "goals": 9,
       "assists": 5,
@@ -629,7 +629,7 @@
     {
       "id": "amine-harit",
       "name": "Amine Harit",
-      "position": "AM",
+      "position": "CAM",
       "team": "Marseille",
       "minutes": 1700,
       "goals": 6,
@@ -640,7 +640,7 @@
     {
       "id": "jordan-veretout",
       "name": "Jordan Veretout",
-      "position": "DM",
+      "position": "CM",
       "team": "Marseille",
       "minutes": 1100,
       "goals": 2,
@@ -651,7 +651,7 @@
     {
       "id": "chancel-mbemba",
       "name": "Chancel Mbemba",
-      "position": "RB",
+      "position": "CB",
       "team": "Marseille",
       "minutes": 1220,
       "goals": 7,
@@ -676,7 +676,7 @@
     {
       "id": "nicolo-barella",
       "name": "Nicolò Barella",
-      "position": "RW",
+      "position": "CM",
       "team": "Inter",
       "minutes": 1460,
       "goals": 6,
@@ -687,7 +687,7 @@
     {
       "id": "hakan-calhanoglu",
       "name": "Hakan Çalhanoğlu",
-      "position": "CM",
+      "position": "DM",
       "team": "FC Internazionale Milano",
       "minutes": 1580,
       "goals": 9,
@@ -726,7 +726,7 @@
     {
       "id": "theo-hernandez",
       "name": "Theo Hernández",
-      "position": "AM",
+      "position": "LB",
       "team": "AC Milan",
       "minutes": 1220,
       "goals": 6,
@@ -737,7 +737,7 @@
     {
       "id": "christian-pulisic",
       "name": "Christian Pulisic",
-      "position": "DM",
+      "position": "RW",
       "team": "AC Milan",
       "minutes": 1340,
       "goals": 8,
@@ -751,7 +751,7 @@
     {
       "id": "mike-maignan",
       "name": "Mike Maignan",
-      "position": "RB",
+      "position": "GK",
       "team": "AC Milan",
       "minutes": 1460,
       "goals": 5,
@@ -777,7 +777,7 @@
       "id": "khvicha-kvaratskhelia",
       "name": "Khvicha Kvaratskhelia",
       "position": "RW",
-      "team": "Paris Saint-Germain FC",
+      "team": "Paris Saint-Germain",
       "minutes": 1700,
       "goals": 10,
       "assists": 5,
@@ -790,7 +790,7 @@
     {
       "id": "stanislav-lobotka",
       "name": "Stanislav Lobotka",
-      "position": "CM",
+      "position": "DM",
       "team": "Napoli",
       "minutes": 1100,
       "goals": 5,
@@ -801,7 +801,7 @@
     {
       "id": "giovanni-di-lorenzo",
       "name": "Giovanni Di Lorenzo",
-      "position": "CB",
+      "position": "RB",
       "team": "Napoli",
       "minutes": 1220,
       "goals": 5,
@@ -812,7 +812,7 @@
     {
       "id": "dusan-vlahovic",
       "name": "Dušan Vlahović",
-      "position": "LW",
+      "position": "ST",
       "team": "Juventus",
       "minutes": 1340,
       "goals": 4,
@@ -824,7 +824,7 @@
       "id": "federico-chiesa",
       "name": "Federico Chiesa",
       "position": "AM",
-      "team": "Juventus",
+      "team": "Liverpool",
       "minutes": 1460,
       "goals": 4,
       "assists": 5,
@@ -834,8 +834,8 @@
     {
       "id": "adrien-rabiot",
       "name": "Adrien Rabiot",
-      "position": "DM",
-      "team": "Juventus",
+      "position": "CM",
+      "team": "Marseille",
       "minutes": 1580,
       "goals": 9,
       "assists": 4,
@@ -878,7 +878,7 @@
     {
       "id": "rafa-silva",
       "name": "Rafa Silva",
-      "position": "CM",
+      "position": "RW",
       "team": "Benfica",
       "minutes": 1340,
       "goals": 3,
@@ -900,7 +900,7 @@
     {
       "id": "brian-brobbey",
       "name": "Brian Brobbey",
-      "position": "LW",
+      "position": "ST",
       "team": "Ajax",
       "minutes": 1580,
       "goals": 8,
@@ -911,7 +911,7 @@
     {
       "id": "steven-bergwijn",
       "name": "Steven Bergwijn",
-      "position": "AM",
+      "position": "RW",
       "team": "Ajax",
       "minutes": 1700,
       "goals": 7,
@@ -922,7 +922,7 @@
     {
       "id": "kenneth-taylor",
       "name": "Kenneth Taylor",
-      "position": "DM",
+      "position": "CM",
       "team": "Ajax",
       "minutes": 1100,
       "goals": 3,
@@ -933,7 +933,7 @@
     {
       "id": "jorrel-hato",
       "name": "Jorrel Hato",
-      "position": "RB",
+      "position": "LB",
       "team": "Ajax",
       "minutes": 1220,
       "goals": 3,
