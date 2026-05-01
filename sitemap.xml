@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://playersb.com/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/compare/</loc>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://playersb.com/players/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/</loc>
@@ -59,11 +59,11 @@
   </url>
   <url>
     <loc>https://playersb.com/matches/</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/standings/</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/archive/</loc>
@@ -310,127 +310,179 @@
   </url>
   <url>
     <loc>https://playersb.com/positions/am/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/cam/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/cb/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/cm/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/dm/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/gk/</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/positions/lb/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/lw/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/rb/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/rw/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/positions/st/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/ac-milan/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/ajax/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/arsenal/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/atl-tico-madrid/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/barcelona/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/bayer-leverkusen/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/bayern-munich/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/benfica/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/borussia-dortmund/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/chelsea/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/chelsea-fc/</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/fc-barcelona/</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/fc-bayern-m-nchen/</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/fc-internazionale-milano/</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/galatasaray-sk/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/inter/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/juventus/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/liverpool/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/manchester-city/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/manchester-city-fc/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/manchester-united/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/manchester-united-fc/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/marseille/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/napoli/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/paris-saint-germain/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/paris-saint-germain-fc/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/real-madrid/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/real-madrid-cf/</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://playersb.com/teams/ssc-napoli/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/teams/tottenham/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/competitions/cl/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/competitions/pd/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/competitions/pl/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
     <loc>https://playersb.com/learn/per-90-normalization/</loc>
