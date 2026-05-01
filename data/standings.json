@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-01T13:20:07.469Z",
-  "generatedAt": "2026-05-01T13:20:07.469Z",
+  "updatedAt": "2026-05-01T19:13:49.571Z",
+  "generatedAt": "2026-05-01T19:13:49.571Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-01T13:20:07.469Z"
+      "fetchedAt": "2026-05-01T19:13:49.571Z"
     }
   },
   "standings": {
@@ -195,14 +195,14 @@
       {
         "position": 15,
         "team": "Leeds United FC",
-        "played": 34,
+        "played": 35,
         "won": 9,
-        "draw": 13,
+        "draw": 14,
         "lost": 12,
         "goals": 44,
         "goalsAgainst": 51,
         "gd": -7,
-        "points": 40,
+        "points": 41,
         "form": null
       },
       {
@@ -247,14 +247,14 @@
       {
         "position": 19,
         "team": "Burnley FC",
-        "played": 34,
+        "played": 35,
         "won": 4,
-        "draw": 8,
+        "draw": 9,
         "lost": 22,
         "goals": 34,
         "goalsAgainst": 68,
         "gd": -34,
-        "points": 20,
+        "points": 21,
         "form": null
       },
       {
@@ -443,6 +443,19 @@
       },
       {
         "position": 14,
+        "team": "Girona FC",
+        "played": 34,
+        "won": 9,
+        "draw": 12,
+        "lost": 13,
+        "goals": 36,
+        "goalsAgainst": 50,
+        "gd": -14,
+        "points": 39,
+        "form": null
+      },
+      {
+        "position": 15,
         "team": "Elche CF",
         "played": 33,
         "won": 9,
@@ -455,20 +468,20 @@
         "form": null
       },
       {
-        "position": 15,
-        "team": "Girona FC",
-        "played": 33,
+        "position": 16,
+        "team": "RCD Mallorca",
+        "played": 34,
         "won": 9,
-        "draw": 11,
-        "lost": 13,
-        "goals": 36,
-        "goalsAgainst": 50,
-        "gd": -14,
-        "points": 38,
+        "draw": 9,
+        "lost": 16,
+        "goals": 41,
+        "goalsAgainst": 51,
+        "gd": -10,
+        "points": 36,
         "form": null
       },
       {
-        "position": 16,
+        "position": 17,
         "team": "Deportivo Alavés",
         "played": 33,
         "won": 9,
@@ -478,19 +491,6 @@
         "goalsAgainst": 49,
         "gd": -11,
         "points": 36,
-        "form": null
-      },
-      {
-        "position": 17,
-        "team": "RCD Mallorca",
-        "played": 33,
-        "won": 9,
-        "draw": 8,
-        "lost": 16,
-        "goals": 41,
-        "goalsAgainst": 51,
-        "gd": -10,
-        "points": 35,
         "form": null
       },
       {
@@ -745,14 +745,14 @@
       {
         "position": 17,
         "team": "US Lecce",
-        "played": 34,
+        "played": 35,
         "won": 7,
-        "draw": 8,
+        "draw": 9,
         "lost": 19,
         "goals": 22,
         "goalsAgainst": 46,
         "gd": -24,
-        "points": 29,
+        "points": 30,
         "form": null
       },
       {
@@ -784,14 +784,14 @@
       {
         "position": 20,
         "team": "AC Pisa 1909",
-        "played": 34,
+        "played": 35,
         "won": 2,
-        "draw": 12,
+        "draw": 13,
         "lost": 20,
         "goals": 24,
         "goalsAgainst": 61,
         "gd": -37,
-        "points": 18,
+        "points": 19,
         "form": null
       }
     ],

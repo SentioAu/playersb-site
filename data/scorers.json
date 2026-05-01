@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-01T13:20:07.470Z",
-  "generatedAt": "2026-05-01T13:20:07.470Z",
+  "updatedAt": "2026-05-01T19:13:49.571Z",
+  "generatedAt": "2026-05-01T19:13:49.571Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-01T13:20:07.470Z"
+      "fetchedAt": "2026-05-01T19:13:49.571Z"
     }
   },
   "scorers": [
@@ -106,7 +106,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Eli Kroupi",
@@ -249,7 +249,7 @@
       "goals": 21,
       "assists": 1,
       "penalties": 5,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Lamine Yamal",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T13:20:07.641Z",
+  "generated_at": "2026-05-01T19:13:49.727Z",
   "players": [
     {
       "id": "erling-haaland",
@@ -563,7 +563,7 @@
       "id": "kylian-mbappe",
       "name": "Kylian Mbappé",
       "position": "ST",
-      "team": "Real Madrid",
+      "team": "Real Madrid CF",
       "minutes": 1100,
       "goals": 15,
       "assists": 1,
@@ -616,7 +616,7 @@
       "id": "pierre-emerick-aubameyang",
       "name": "Pierre-Emerick Aubameyang",
       "position": "ST",
-      "team": "Marseille",
+      "team": "Olympique de Marseille",
       "minutes": 1580,
       "goals": 9,
       "assists": 5,
@@ -777,7 +777,7 @@
       "id": "khvicha-kvaratskhelia",
       "name": "Khvicha Kvaratskhelia",
       "position": "RW",
-      "team": "Paris Saint-Germain",
+      "team": "Paris Saint-Germain FC",
       "minutes": 1700,
       "goals": 10,
       "assists": 5,
