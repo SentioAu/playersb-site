@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-01T03:24:34.082Z",
-  "generatedAt": "2026-05-01T03:24:34.083Z",
+  "updatedAt": "2026-05-01T08:13:22.395Z",
+  "generatedAt": "2026-05-01T08:13:22.395Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-01T03:24:34.083Z"
+      "fetchedAt": "2026-05-01T08:13:22.395Z"
     }
   },
   "fixtures": [
@@ -3959,17 +3959,6 @@
       "awayScore": null
     },
     {
-      "id": 538091,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "home": "Manchester City FC",
-      "away": "Crystal Palace FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 538146,
       "competitionCode": "PL",
       "competition": "Premier League",
@@ -4054,28 +4043,6 @@
       "status": "TIMED",
       "home": "Arsenal FC",
       "away": "Burnley FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538145,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-19T18:30:00Z",
-      "status": "TIMED",
-      "home": "AFC Bournemouth",
-      "away": "Manchester City FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538149,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-19T19:15:00Z",
-      "status": "TIMED",
-      "home": "Chelsea FC",
-      "away": "Tottenham Hotspur FC",
       "homeScore": null,
       "awayScore": null
     },
