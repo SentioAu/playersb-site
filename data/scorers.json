@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-02T13:12:46.761Z",
-  "generatedAt": "2026-05-02T13:12:46.761Z",
+  "updatedAt": "2026-05-02T13:25:43.815Z",
+  "generatedAt": "2026-05-02T13:25:43.815Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T13:12:46.761Z"
+      "fetchedAt": "2026-05-02T13:25:43.815Z"
     }
   },
   "scorers": [
@@ -403,7 +403,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "André Silva",
