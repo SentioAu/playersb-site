@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-02T13:00:41.426Z",
-  "generatedAt": "2026-05-02T13:00:41.426Z",
+  "updatedAt": "2026-05-02T13:12:46.761Z",
+  "generatedAt": "2026-05-02T13:12:46.761Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T13:00:41.426Z"
+      "fetchedAt": "2026-05-02T13:12:46.761Z"
     }
   },
   "standings": {
@@ -302,13 +302,13 @@
         "position": 3,
         "team": "Villarreal CF",
         "played": 34,
-        "won": 20,
-        "draw": 6,
+        "won": 21,
+        "draw": 5,
         "lost": 8,
-        "goals": 59,
+        "goals": 60,
         "goalsAgainst": 38,
-        "gd": 21,
-        "points": 66,
+        "gd": 22,
+        "points": 68,
         "form": null
       },
       {
@@ -495,19 +495,6 @@
       },
       {
         "position": 18,
-        "team": "Levante UD",
-        "played": 34,
-        "won": 8,
-        "draw": 10,
-        "lost": 16,
-        "goals": 37,
-        "goalsAgainst": 50,
-        "gd": -13,
-        "points": 34,
-        "form": null
-      },
-      {
-        "position": 19,
         "team": "Sevilla FC",
         "played": 33,
         "won": 9,
@@ -517,6 +504,19 @@
         "goalsAgainst": 55,
         "gd": -15,
         "points": 34,
+        "form": null
+      },
+      {
+        "position": 19,
+        "team": "Levante UD",
+        "played": 34,
+        "won": 8,
+        "draw": 9,
+        "lost": 17,
+        "goals": 37,
+        "goalsAgainst": 51,
+        "gd": -14,
+        "points": 33,
         "form": null
       },
       {
@@ -667,14 +667,14 @@
       {
         "position": 11,
         "team": "Udinese Calcio",
-        "played": 34,
+        "played": 35,
         "won": 12,
-        "draw": 8,
+        "draw": 9,
         "lost": 14,
         "goals": 41,
         "goalsAgainst": 46,
         "gd": -5,
-        "points": 44,
+        "points": 45,
         "form": null
       },
       {
@@ -693,14 +693,14 @@
       {
         "position": 13,
         "team": "Torino FC",
-        "played": 34,
+        "played": 35,
         "won": 11,
-        "draw": 8,
+        "draw": 9,
         "lost": 15,
         "goals": 39,
         "goalsAgainst": 56,
         "gd": -17,
-        "points": 41,
+        "points": 42,
         "form": null
       },
       {

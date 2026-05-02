@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-02T13:00:48.737Z",
+  "generatedAt": "2026-05-02T13:12:51.830Z",
   "sourceStatus": {
     "seed": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "wikipedia": {
       "status": "partial",
-      "fetchedAt": "2026-05-02T13:00:48.737Z",
-      "message": "Wikipedia summaries success=31, failed=49"
+      "fetchedAt": "2026-05-02T13:12:51.830Z",
+      "message": "Wikipedia summaries success=61, failed=19"
     }
   },
   "players": {
@@ -35,7 +35,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "adrien-rabiot": {
       "id": "adrien-rabiot",
@@ -55,7 +55,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "alessandro-bastoni": {
       "id": "alessandro-bastoni",
@@ -75,7 +75,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "alexis-mac-allister": {
       "id": "alexis-mac-allister",
@@ -95,7 +95,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "alvaro-morata": {
       "id": "alvaro-morata",
@@ -115,7 +115,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "amine-harit": {
       "id": "amine-harit",
@@ -135,7 +135,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "angel-di-maria": {
       "id": "angel-di-maria",
@@ -155,7 +155,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "antoine-griezmann": {
       "id": "antoine-griezmann",
@@ -179,7 +179,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "antonio-rudiger": {
       "id": "antonio-rudiger",
@@ -199,7 +199,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "antonio-silva": {
       "id": "antonio-silva",
@@ -219,7 +219,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "bremer": {
       "id": "bremer",
@@ -239,7 +239,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "brian-brobbey": {
       "id": "brian-brobbey",
@@ -253,13 +253,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Brian Ebenezer Adjei Brobbey is a Dutch professional footballer who plays as a striker for Premier League club Sunderland and the Netherlands national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Brian_Brobbey",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "bruno-fernandes": {
       "id": "bruno-fernandes",
@@ -283,9 +283,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "bukayo-saka": {
       "id": "bukayo-saka",
@@ -307,7 +307,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "chancel-mbemba": {
       "id": "chancel-mbemba",
@@ -321,13 +321,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Chancel Mangulu Mbemba is a Congolese professional footballer who plays as a centre-back for Ligue 1 club Lille and the DR Congo national team, of which he is the captain.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Chancel_Mbemba",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "christian-pulisic": {
       "id": "christian-pulisic",
@@ -345,13 +345,13 @@
       "careerGoals": 95,
       "careerAssists": 70,
       "careerAppearances": 430,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Christian Mate Pulisic is an American professional soccer player who plays as a winger, attacking midfielder and forward for Serie A club AC Milan and the United States national team. Regarded as one of the best North American players of all time, he is nicknamed \"Captain America\" and known for his dribbling, directness, and playmaking.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Christian_Pulisic",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "christopher-nkunku": {
       "id": "christopher-nkunku",
@@ -365,13 +365,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Christopher Alan Nkunku is a French professional footballer who plays as a forward, attacking midfielder and winger for Serie A club AC Milan and the France national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Christopher_Nkunku",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "cole-palmer": {
       "id": "cole-palmer",
@@ -389,9 +389,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Cole_Palmer",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "cristian-romero": {
       "id": "cristian-romero",
@@ -411,7 +411,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "darwin-nunez": {
       "id": "darwin-nunez",
@@ -431,7 +431,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "declan-rice": {
       "id": "declan-rice",
@@ -451,7 +451,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "dejan-kulusevski": {
       "id": "dejan-kulusevski",
@@ -471,7 +471,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "dusan-vlahovic": {
       "id": "dusan-vlahovic",
@@ -489,13 +489,13 @@
       "careerGoals": 140,
       "careerAssists": 25,
       "careerAppearances": 320,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Dušan Vlahović is a Serbian professional footballer who plays as a striker for Serie A club Juventus and the Serbia national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Du%C5%A1an_Vlahovi%C4%87",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "enzo-fernandez": {
       "id": "enzo-fernandez",
@@ -509,13 +509,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Enzo Jeremías Fernández is an Argentine professional footballer who plays as a midfielder for Premier League club Chelsea and the Argentina national team. Primarily a central midfielder, he is also capable of playing as a defensive or attacking midfielder.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "erling-haaland": {
       "id": "erling-haaland",
@@ -540,7 +540,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "federico-chiesa": {
       "id": "federico-chiesa",
@@ -554,13 +554,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Federico Chiesa is an Italian professional footballer who plays as a forward and winger for Premier League club Liverpool and the Italy national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Federico_Chiesa",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "federico-valverde": {
       "id": "federico-valverde",
@@ -579,13 +579,13 @@
       "careerGoals": 45,
       "careerAssists": 45,
       "careerAppearances": 350,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Federico Santiago Valverde Dipetta is a Uruguayan professional footballer who plays as a central midfielder for La Liga club Real Madrid and the Uruguay national team. Known for his versatility, work rate, pace and shooting, he is considered as one of the best midfielders in the world. Valverde mainly plays as a central midfielder but is also able to play as a right-back.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Federico_Valverde",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "florian-wirtz": {
       "id": "florian-wirtz",
@@ -607,7 +607,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "giovanni-di-lorenzo": {
       "id": "giovanni-di-lorenzo",
@@ -621,13 +621,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Giovanni Di Lorenzo is an Italian professional footballer who plays as a right-back for Serie A club Napoli, which he captains, and the Italy national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Giovanni_Di_Lorenzo",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "granit-xhaka": {
       "id": "granit-xhaka",
@@ -641,13 +641,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Granit Xhaka is a Swiss professional footballer who plays as a defensive midfielder for and captains both Premier League club Sunderland and the Switzerland national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Granit_Xhaka",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "hakan-calhanoglu": {
       "id": "hakan-calhanoglu",
@@ -665,9 +665,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "harry-kane": {
       "id": "harry-kane",
@@ -690,7 +690,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "heung-min-son": {
       "id": "heung-min-son",
@@ -712,9 +712,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Son_Heung-min",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "jamal-musiala": {
       "id": "jamal-musiala",
@@ -736,7 +736,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "james-maddison": {
       "id": "james-maddison",
@@ -750,13 +750,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "James Daniel Maddison is an English professional footballer who plays as an attacking midfielder for Premier League club Tottenham Hotspur and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/James_Maddison",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "jan-oblak": {
       "id": "jan-oblak",
@@ -770,13 +770,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Jan Oblak is a Slovenian professional footballer who plays as a goalkeeper for La Liga club Atlético Madrid and captains the Slovenia national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jan_Oblak",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "jeremie-frimpong": {
       "id": "jeremie-frimpong",
@@ -796,7 +796,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "joao-mario": {
       "id": "joao-mario",
@@ -816,7 +816,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "jordan-veretout": {
       "id": "jordan-veretout",
@@ -836,7 +836,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "jorrel-hato": {
       "id": "jorrel-hato",
@@ -856,7 +856,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "joshua-kimmich": {
       "id": "joshua-kimmich",
@@ -876,7 +876,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "jude-bellingham": {
       "id": "jude-bellingham",
@@ -900,7 +900,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "julian-brandt": {
       "id": "julian-brandt",
@@ -920,7 +920,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "kai-havertz": {
       "id": "kai-havertz",
@@ -938,9 +938,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Kai_Havertz",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "karim-adeyemi": {
       "id": "karim-adeyemi",
@@ -960,7 +960,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "kenneth-taylor": {
       "id": "kenneth-taylor",
@@ -980,7 +980,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "kevin-de-bruyne": {
       "id": "kevin-de-bruyne",
@@ -1006,7 +1006,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "khvicha-kvaratskhelia": {
       "id": "khvicha-kvaratskhelia",
@@ -1025,13 +1025,13 @@
       "careerGoals": 70,
       "careerAssists": 65,
       "careerAppearances": 270,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Khvicha Kvaratskhelia is a Georgian professional footballer who plays as a left winger for Ligue 1 club Paris Saint-Germain and captains the Georgia national team. Regarded as one of the best wingers in the world and as one of the greatest Georgian players of all time, he is known for his dribbling, agility, and playmaking.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "kylian-mbappe": {
       "id": "kylian-mbappe",
@@ -1054,7 +1054,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "lamine-yamal": {
       "id": "lamine-yamal",
@@ -1074,7 +1074,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "lautaro-martinez": {
       "id": "lautaro-martinez",
@@ -1091,13 +1091,13 @@
       "careerGoals": 180,
       "careerAssists": 45,
       "careerAppearances": 410,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Lautaro Javier Martínez is an Argentine professional footballer who plays as a centre-forward for and captains Serie A club Inter Milan, and the Argentina national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "leroy-sane": {
       "id": "leroy-sane",
@@ -1115,13 +1115,13 @@
       "careerGoals": 145,
       "careerAssists": 130,
       "careerAppearances": 500,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Leroy Aziz Sané is a German professional footballer who plays as a winger for Süper Lig club Galatasaray and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Leroy_San%C3%A9",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "lisandro-martinez": {
       "id": "lisandro-martinez",
@@ -1141,7 +1141,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "marcus-rashford": {
       "id": "marcus-rashford",
@@ -1157,13 +1157,13 @@
       "careerGoals": 150,
       "careerAssists": 80,
       "careerAppearances": 450,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Marcus Rashford is an English professional footballer who plays as a forward for La Liga club Barcelona, on loan from Premier League club Manchester United, and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Marcus_Rashford",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "martin-degaard": {
       "id": "martin-degaard",
@@ -1190,7 +1190,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "mats-hummels": {
       "id": "mats-hummels",
@@ -1210,7 +1210,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "mike-maignan": {
       "id": "mike-maignan",
@@ -1224,13 +1224,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Mike Peterson Maignan is a French professional footballer who plays as a goalkeeper for Serie A club AC Milan, which he captains, and the France national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mike_Maignan",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "mohamed-salah": {
       "id": "mohamed-salah",
@@ -1256,7 +1256,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "niclas-fullkrug": {
       "id": "niclas-fullkrug",
@@ -1276,7 +1276,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "nicolo-barella": {
       "id": "nicolo-barella",
@@ -1299,7 +1299,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "ousmane-dembele": {
       "id": "ousmane-dembele",
@@ -1313,13 +1313,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Masour Ousmane Dembélé is a French professional footballer who plays as a forward or right winger forLigue 1 club Paris Saint-Germain and the France national team. Considered one of the best players in the world, he is one of ten players to have won the FIFA World Cup, UEFA Champions League, and Ballon d'Or in their career.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "pedri": {
       "id": "pedri",
@@ -1340,9 +1340,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Pedri",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "phil-foden": {
       "id": "phil-foden",
@@ -1360,9 +1360,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Phil_Foden",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "pierre-emerick-aubameyang": {
       "id": "pierre-emerick-aubameyang",
@@ -1382,7 +1382,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "rafa-silva": {
       "id": "rafa-silva",
@@ -1396,13 +1396,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Rafael Alexandre Fernandes Ferreira da Silva, known as Rafa Silva or simply Rafa, is a Portuguese footballer who plays as a winger or second striker for Primeira Liga club Benfica.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Rafa_Silva",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "rafael-leao": {
       "id": "rafael-leao",
@@ -1426,7 +1426,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "rasmus-h-jlund": {
       "id": "rasmus-h-jlund",
@@ -1446,7 +1446,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "reece-james": {
       "id": "reece-james",
@@ -1464,9 +1464,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Reece_James",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "robert-lewandowski": {
       "id": "robert-lewandowski",
@@ -1485,13 +1485,13 @@
       "careerGoals": 650,
       "careerAssists": 140,
       "careerAppearances": 910,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Robert Lewandowski is a Polish professional footballer who plays as a striker for La Liga club Barcelona and captains the Poland national team. Widely regarded as one of the greatest strikers of all time, he is one of only five players to have scored 100 goals with three different clubs, ranks third for the all-time top goalscorers in the UEFA Champions League with 107 goals, and ranks third for the all-time European men's top goal scorers in international football (89). He has scored over 700 senior career goals for club and country.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Robert_Lewandowski",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "rodri": {
       "id": "rodri",
@@ -1515,7 +1515,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "rodrigo-de-paul": {
       "id": "rodrigo-de-paul",
@@ -1529,13 +1529,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Rodrigo Javier De Paul is an Argentine professional football player who plays as a midfielder for Major League Soccer club Inter Miami and the Argentina national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Rodrigo_De_Paul",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "ronald-araujo": {
       "id": "ronald-araujo",
@@ -1549,13 +1549,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Ronald Federico Araújo da Silva is an Uruguayan professional footballer who plays as a centre-back for La Liga club Barcelona, whom he captains, and the Uruguay national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Ronald_Ara%C3%BAjo",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "stanislav-lobotka": {
       "id": "stanislav-lobotka",
@@ -1575,7 +1575,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "steven-bergwijn": {
       "id": "steven-bergwijn",
@@ -1595,7 +1595,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "theo-hernandez": {
       "id": "theo-hernandez",
@@ -1621,7 +1621,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "victor-boniface": {
       "id": "victor-boniface",
@@ -1641,7 +1641,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "victor-osimhen": {
       "id": "victor-osimhen",
@@ -1666,7 +1666,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "vinicius-junior": {
       "id": "vinicius-junior",
@@ -1683,13 +1683,13 @@
       "careerGoals": 120,
       "careerAssists": 95,
       "careerAppearances": 380,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Vinícius José Paixão de Oliveira Júnior, commonly known as Vinícius Júnior or Vini Jr., is a Brazilian professional footballer who plays as a forward for La Liga club Real Madrid and the Brazil national team. Considered one of the best players in the world, he is known for his pace, technique and dribbling ability.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "virgil-van-dijk": {
       "id": "virgil-van-dijk",
@@ -1712,9 +1712,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     },
     "vitinha": {
       "id": "vitinha",
@@ -1734,7 +1734,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T13:00:48.737Z"
+      "fetchedAt": "2026-05-02T13:12:51.830Z"
     }
   }
 }
