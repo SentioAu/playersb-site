@@ -26,16 +26,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          elif [ -f package.json ]; then
-            npm install
-          fi
-          npm install --no-save @lhci/cli@0.14.x
 
       - name: Serve site
         run: npx --yes http-server -p 4173 -s . &
@@ -55,6 +45,6 @@ jobs:
           exit 1
 
       - name: Run Lighthouse CI
-        run: npx lhci autorun --config=.lighthouserc.json
+        run: npx --yes @lhci/cli@0.14.x autorun --config=.lighthouserc.json
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

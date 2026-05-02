@@ -349,6 +349,8 @@
             ${barRow("Goals per shot", A.goalPerShot, B.goalPerShot, fmt2, "Goals / shots")}
           </div>
 
+          <div id="h2hSlot" class="section"></div>
+
           <div class="callout">
             <strong>How to read this:</strong>
             <ul class="info-list">
@@ -359,6 +361,78 @@
           </div>
         </section>
       `;
+    }
+
+    // Lazy-load archive once for head-to-head lookups.
+    let archivePromise = null;
+    function loadArchive() {
+      if (!archivePromise) {
+        archivePromise = fetch("/data/archive.json", { cache: "force-cache" })
+          .then((r) => (r.ok ? r.json() : { entries: [] }))
+          .catch(() => ({ entries: [] }));
+      }
+      return archivePromise;
+    }
+
+    function escHtml(s) {
+      return String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
+      })[c]);
+    }
+    function teamMatch(name, target) {
+      if (!name || !target) return false;
+      const n = String(name).toLowerCase();
+      const t = String(target).toLowerCase();
+      return n.includes(t) || t.includes(n);
+    }
+    async function renderH2H(a, b) {
+      const teamA = String(a?.team || "").trim();
+      const teamB = String(b?.team || "").trim();
+      const slot = document.getElementById("h2hSlot");
+      if (!slot) return;
+      if (!teamA || !teamB || teamA === teamB) {
+        slot.innerHTML = "";
+        return;
+      }
+      slot.innerHTML = '<p class="meta-text">Loading head-to-head…</p>';
+      const archive = await loadArchive();
+      const found = [];
+      for (const entry of archive.entries || []) {
+        const matches = (entry.matches?.statsbomb || []).concat(entry.matches?.openfootball || []);
+        for (const m of matches) {
+          const home = m.homeTeam || m.home || "";
+          const away = m.awayTeam || m.away || "";
+          const isMatch =
+            (teamMatch(home, teamA) && teamMatch(away, teamB)) ||
+            (teamMatch(home, teamB) && teamMatch(away, teamA));
+          if (!isMatch) continue;
+          let scoreLabel = m.score || "";
+          if (typeof m.homeScore === "number" && typeof m.awayScore === "number") {
+            scoreLabel = `${m.homeScore}-${m.awayScore}`;
+          }
+          found.push({
+            date: m.date || "",
+            home,
+            away,
+            score: scoreLabel,
+            stage: m.stage || m.group || "",
+            competition: entry.competition?.name || "",
+            season: entry.season?.name || "",
+          });
+        }
+      }
+      found.sort((x, y) => String(y.date).localeCompare(String(x.date)));
+      const top = found.slice(0, 10);
+      if (!top.length) {
+        slot.innerHTML = `<p class="meta-text">No archived ${escHtml(teamA)} vs ${escHtml(teamB)} fixtures yet.</p>`;
+        return;
+      }
+      const rows = top.map((m) =>
+        `<tr><td>${escHtml(m.date.slice(0, 10))}</td><td>${escHtml(m.home)} <strong>${escHtml(m.score || "")}</strong> ${escHtml(m.away)}</td><td class="meta-text">${escHtml(m.competition)} ${escHtml(m.season)}</td></tr>`,
+      ).join("");
+      slot.innerHTML = `<h3>Head-to-head: ${escHtml(teamA)} vs ${escHtml(teamB)}</h3>
+        <p class="meta-text">Most recent ${top.length} archived results (of ${found.length}).</p>
+        <table class="h2h-table"><thead><tr><th>Date</th><th>Result</th><th>Comp</th></tr></thead><tbody>${rows}</tbody></table>`;
     }
 
     async function main() {
@@ -382,18 +456,25 @@
 
       $share.textContent = shareUrlFor($A.value, $B.value);
 
-      $A.addEventListener("change", () => render(players));
-      $B.addEventListener("change", () => render(players));
+      function rerender() {
+        render(players);
+        const a = getById(players, $A.value);
+        const b = getById(players, $B.value);
+        renderH2H(a, b);
+      }
+
+      $A.addEventListener("change", rerender);
+      $B.addEventListener("change", rerender);
       if ($copy) $copy.addEventListener("click", copyShare);
 
       $swap.addEventListener("click", () => {
         const tmp = $A.value;
         $A.value = $B.value;
         $B.value = tmp;
-        render(players);
+        rerender();
       });
 
-      render(players);
+      rerender();
     }
 
     main().catch(err => {

@@ -41,6 +41,10 @@ async function parallel(scripts) {
 async function main() {
   const total = performance.now();
 
+  // Stage 0: validate input data shape before generating anything. Fails the
+  // build with a useful error rather than crashing inside a template.
+  await node("scripts/validate-data.mjs");
+
   // Stage 1: core pages (no deps; serial just because it's a single script).
   await node("scripts/generate-core.mjs");
 

@@ -175,6 +175,96 @@
     }
   }
 
+  // Watch-list: localStorage-backed favorites with shareable URL via the
+  // ?watch= query param. Decoupled from the static-generation pipeline so it
+  // works across every player page without re-deploys.
+  var WATCH_KEY = "playersb-watch-v1";
+  function readWatch() {
+    try {
+      var raw = localStorage.getItem(WATCH_KEY);
+      if (!raw) return [];
+      var parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (_) { return []; }
+  }
+  function writeWatch(list) {
+    try { localStorage.setItem(WATCH_KEY, JSON.stringify(list)); } catch (_) {}
+  }
+  function isWatched(list, id) {
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return true;
+    return false;
+  }
+  function paintWatchToggle(btn, watched) {
+    btn.setAttribute("aria-pressed", String(watched));
+    btn.textContent = watched ? "★ Saved" : "☆ Save to watch-list";
+  }
+  function initWatchToggles() {
+    var list = readWatch();
+    var buttons = document.querySelectorAll(".watch-toggle");
+    buttons.forEach(function (btn) {
+      var id = btn.getAttribute("data-watch-id");
+      if (!id) return;
+      paintWatchToggle(btn, isWatched(list, id));
+      btn.addEventListener("click", function () {
+        list = readWatch();
+        var name = btn.getAttribute("data-watch-name") || id;
+        if (isWatched(list, id)) {
+          list = list.filter(function (x) { return x.id !== id; });
+          track("watch_remove", { id: id });
+        } else {
+          list.push({ id: id, name: name, addedAt: Date.now() });
+          track("watch_add", { id: id });
+        }
+        writeWatch(list);
+        document.querySelectorAll('.watch-toggle[data-watch-id="' + id + '"]')
+          .forEach(function (b) { paintWatchToggle(b, isWatched(list, id)); });
+        renderWatchList();
+      });
+    });
+
+    // Hydrate from ?watch=id1,id2 (shareable URL): merge into local list.
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var shared = params.get("watch");
+      if (shared) {
+        var ids = shared.split(",").map(function (s) { return s.trim(); }).filter(Boolean);
+        var current = readWatch();
+        var changed = false;
+        for (var i = 0; i < ids.length; i++) {
+          if (!isWatched(current, ids[i])) {
+            current.push({ id: ids[i], name: ids[i], addedAt: Date.now() });
+            changed = true;
+          }
+        }
+        if (changed) {
+          writeWatch(current);
+          track("watch_import", { count: ids.length });
+        }
+      }
+    } catch (_) {}
+    renderWatchList();
+  }
+  function renderWatchList() {
+    var box = document.getElementById("watchList");
+    if (!box) return;
+    var list = readWatch();
+    if (!list.length) {
+      box.innerHTML = '<p class="watch-list-empty">No saved players yet. Click ☆ on any profile to save.</p>';
+      return;
+    }
+    var shareUrl = window.location.origin + "/players/?watch=" +
+      list.map(function (x) { return encodeURIComponent(x.id); }).join(",");
+    var html = '<div class="watch-list">';
+    for (var i = 0; i < list.length; i++) {
+      var x = list[i];
+      html += '<a class="watch-list-item" href="/players/' + encodeURIComponent(x.id) + '/">★ ' +
+        escapeHtml(x.name || x.id) + '</a>';
+    }
+    html += "</div>";
+    html += '<p class="meta-text"><a href="' + escapeAttr(shareUrl) + '" data-track-event="watch_share">Share this watch-list</a></p>';
+    box.innerHTML = html;
+  }
+
   function initServiceWorker() {
     if (!("serviceWorker" in navigator)) return;
     if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") return;
@@ -201,6 +291,7 @@
     initLinkTracking();
     initMobileNav();
     initSearch();
+    initWatchToggles();
     initEngagedRead();
   });
   initServiceWorker();
