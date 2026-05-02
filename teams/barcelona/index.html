@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Barcelona players | PlayersB — The Players Book</title>
+  <title>Barcelona squad & stats | PlayersB — The Players Book</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Browse PlayersB player profiles for Barcelona." />
+  <meta name="description" content="Squad totals, sortable roster, league position, and fixtures for Barcelona on PlayersB." />
   <link rel="canonical" href="https://playersb.com/teams/barcelona/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,16 +18,16 @@
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
-  <meta property="og:title" content="Barcelona players | PlayersB" />
-  <meta property="og:description" content="Browse PlayersB player profiles for Barcelona." />
+  <meta property="og:title" content="Barcelona squad & stats | PlayersB" />
+  <meta property="og:description" content="Squad totals, sortable roster, league position, and fixtures for Barcelona on PlayersB." />
   <meta property="og:url" content="https://playersb.com/teams/barcelona/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Barcelona players | PlayersB" />
-  <meta name="twitter:description" content="Browse PlayersB player profiles for Barcelona." />
+  <meta name="twitter:title" content="Barcelona squad & stats | PlayersB" />
+  <meta name="twitter:description" content="Squad totals, sortable roster, league position, and fixtures for Barcelona on PlayersB." />
   <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
@@ -119,36 +119,116 @@
     <section class="hero">
         <span class="pill">Team</span>
         <h1>Barcelona</h1>
-        <p class="lead">Players and comparisons for Barcelona.</p>
+        <p class="lead">Squad totals, roster, fixtures, and league position for Barcelona.</p>
         <div class="button-row">
           <a class="button" href="/players/">Browse all players</a>
           <a class="button secondary" href="/teams/">All teams</a>
+          <a class="button secondary" href="/compare/">Open Compare</a>
         </div>
       </section>
 
       <section class="section">
-        <div class="card">
-          <ul class="player-list">
-            <li class="player-item">
-            <a class="player-name" href="/players/lamine-yamal/">Lamine Yamal</a>
-            <div class="player-meta">DM · Barcelona</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/pedri/">Pedri</a>
-            <div class="player-meta">AM · Barcelona</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/robert-lewandowski/">Robert Lewandowski</a>
-            <div class="player-meta">LW · Barcelona</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/ronald-araujo/">Ronald Araújo</a>
-            <div class="player-meta">RB · Barcelona</div>
-          </li>
-          </ul>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>League position</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-label">Competition</div><div class="stat-value">La Liga</div></div>
+        <div class="stat"><div class="stat-label">Position</div><div class="stat-value">#1</div></div>
+        <div class="stat"><div class="stat-label">Points</div><div class="stat-value">85</div></div>
+        <div class="stat"><div class="stat-label">GD</div><div class="stat-value">57</div></div>
+        <div class="stat"><div class="stat-label">W-D-L</div><div class="stat-value">28-1-4</div></div>
+        <div class="stat"><div class="stat-label">Form</div><div class="stat-value">—</div></div>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Squad totals</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-label">Players tracked</div><div class="stat-value">4</div></div>
+        <div class="stat"><div class="stat-label">Total minutes</div><div class="stat-value">5,600</div></div>
+        <div class="stat"><div class="stat-label">Total goals</div><div class="stat-value">29</div></div>
+        <div class="stat"><div class="stat-label">Total assists</div><div class="stat-value">17</div></div>
+      </div>
+      <p class="meta-text">Aggregates across 4 player profiles currently on PlayersB. Numbers reflect the latest season available in the dataset.</p>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Roster <span class="meta-text">(click any column to sort)</span></h3>
+      <div class="table-scroll">
+        <table class="data-table sortable" data-sortable>
+          <caption class="visually-hidden">Barcelona roster</caption>
+          <thead>
+            <tr>
+              <th class="sortable-h" data-sort="text">Player</th>
+              <th class="sortable-h" data-sort="text">Pos</th>
+              <th class="sortable-h" data-sort="num">Min</th>
+              <th class="sortable-h" data-sort="num">G</th>
+              <th class="sortable-h" data-sort="num">A</th>
+              <th class="sortable-h" data-sort="num">Sh</th>
+              <th class="sortable-h" data-sort="num">G/90</th>
+              <th class="sortable-h" data-sort="num">A/90</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td class="team"><a href="/players/pedri/">Pedri</a></td>
+          <td>AM</td>
+          <td data-sort-value="1700">1700</td>
+          <td data-sort-value="5">5</td>
+          <td data-sort-value="6">6</td>
+          <td data-sort-value="61">61</td>
+          <td data-sort-value="0.2647">0.26</td>
+          <td data-sort-value="0.3176">0.32</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/robert-lewandowski/">Robert Lewandowski</a></td>
+          <td>LW</td>
+          <td data-sort-value="1580">1580</td>
+          <td data-sort-value="12">12</td>
+          <td data-sort-value="6">6</td>
+          <td data-sort-value="56">56</td>
+          <td data-sort-value="0.6835">0.68</td>
+          <td data-sort-value="0.3418">0.34</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/ronald-araujo/">Ronald Araújo</a></td>
+          <td>RB</td>
+          <td data-sort-value="1220">1220</td>
+          <td data-sort-value="6">6</td>
+          <td data-sort-value="2">2</td>
+          <td data-sort-value="44">44</td>
+          <td data-sort-value="0.4426">0.44</td>
+          <td data-sort-value="0.1475">0.15</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/lamine-yamal/">Lamine Yamal</a></td>
+          <td>DM</td>
+          <td data-sort-value="1100">1100</td>
+          <td data-sort-value="6">6</td>
+          <td data-sort-value="3">3</td>
+          <td data-sort-value="39">39</td>
+          <td data-sort-value="0.4909">0.49</td>
+          <td data-sort-value="0.2455">0.25</td>
+        </tr></tbody>
+        </table>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-04-14 (A)</td><td>Club Atlético de Madrid</td><td><strong>1-2</strong></td><td class="meta-text">Champions League</td></tr><tr><td>2026-04-22 (H)</td><td>RC Celta de Vigo</td><td><strong>1-0</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-04-23 (A)</td><td>Rayo Vallecano de Madrid</td><td><strong>1-0</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-04-25 (A)</td><td>Getafe CF</td><td><strong>0-2</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-04-27 (H)</td><td>Levante UD</td><td><strong>0-0</strong></td><td class="meta-text">La Liga</td></tr></tbody></table></div>
         </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-02 (A)</td><td>CA Osasuna</td><td><strong>vs</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-05-03 (H)</td><td>Real Madrid CF</td><td><strong>vs</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-05-09 (A)</td><td>Sevilla FC</td><td><strong>vs</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-05-10 (H)</td><td>Real Madrid CF</td><td><strong>vs</strong></td><td class="meta-text">La Liga</td></tr><tr><td>2026-05-13 (H)</td><td>Athletic Club</td><td><strong>vs</strong></td><td class="meta-text">La Liga</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
       </section>
-      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Barcelona","url":"https://playersb.com/teams/barcelona/","member":[{"@type":"Person","name":"Lamine Yamal","url":"https://playersb.com/players/lamine-yamal/","jobTitle":"DM"},{"@type":"Person","name":"Pedri","url":"https://playersb.com/players/pedri/","jobTitle":"AM"},{"@type":"Person","name":"Robert Lewandowski","url":"https://playersb.com/players/robert-lewandowski/","jobTitle":"LW"},{"@type":"Person","name":"Ronald Araújo","url":"https://playersb.com/players/ronald-araujo/","jobTitle":"RB"}]}</script>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Barcelona","url":"https://playersb.com/teams/barcelona/","member":[{"@type":"Person","name":"Pedri","url":"https://playersb.com/players/pedri/","jobTitle":"AM"},{"@type":"Person","name":"Robert Lewandowski","url":"https://playersb.com/players/robert-lewandowski/","jobTitle":"LW"},{"@type":"Person","name":"Ronald Araújo","url":"https://playersb.com/players/ronald-araujo/","jobTitle":"RB"},{"@type":"Person","name":"Lamine Yamal","url":"https://playersb.com/players/lamine-yamal/","jobTitle":"DM"}]}</script>
   </main>
 
   <footer class="site-footer">

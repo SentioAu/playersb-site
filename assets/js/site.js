@@ -308,6 +308,55 @@
     box.innerHTML = html;
   }
 
+  // Generic, dependency-free sortable tables. Any <table data-sortable> opts
+  // in; <th> with data-sort="num"|"text" defines the column type and gets a
+  // click handler. Re-clicking the same header toggles asc/desc.
+  function initSortableTables() {
+    var tables = document.querySelectorAll("table[data-sortable]");
+    tables.forEach(function (table) {
+      var headers = table.querySelectorAll("thead th[data-sort]");
+      headers.forEach(function (th, idx) {
+        th.tabIndex = 0;
+        th.setAttribute("role", "button");
+        th.setAttribute("aria-sort", "none");
+        function activate() {
+          var type = th.getAttribute("data-sort") || "text";
+          var current = th.getAttribute("aria-sort");
+          var nextDir = current === "ascending" ? "descending" : "ascending";
+          headers.forEach(function (h) { h.setAttribute("aria-sort", "none"); });
+          th.setAttribute("aria-sort", nextDir);
+
+          var tbody = table.querySelector("tbody");
+          if (!tbody) return;
+          var rows = Array.prototype.slice.call(tbody.querySelectorAll("tr"));
+          rows.sort(function (a, b) {
+            var av = cellSortValue(a.children[idx], type);
+            var bv = cellSortValue(b.children[idx], type);
+            if (av < bv) return nextDir === "ascending" ? -1 : 1;
+            if (av > bv) return nextDir === "ascending" ? 1 : -1;
+            return 0;
+          });
+          rows.forEach(function (r) { tbody.appendChild(r); });
+          track("table_sort", { col: idx, dir: nextDir, type: type });
+        }
+        th.addEventListener("click", activate);
+        th.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
+        });
+      });
+    });
+  }
+  function cellSortValue(td, type) {
+    if (!td) return type === "num" ? 0 : "";
+    var raw = td.getAttribute("data-sort-value");
+    if (raw == null) raw = td.textContent;
+    if (type === "num") {
+      var n = parseFloat(raw);
+      return isFinite(n) ? n : 0;
+    }
+    return String(raw).trim().toLowerCase();
+  }
+
   function initServiceWorker() {
     if (!("serviceWorker" in navigator)) return;
     if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") return;
@@ -335,6 +384,7 @@
     initMobileNav();
     initSearch();
     initWatchToggles();
+    initSortableTables();
     recordCurrentPlayer();
     renderRecent();
     initEngagedRead();
