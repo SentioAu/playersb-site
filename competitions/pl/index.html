@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/site.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
   <meta name="theme-color" content="#2563eb" />
 
@@ -44,6 +45,17 @@
   }
   </script>
 
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
   <script>
@@ -64,9 +76,13 @@
       send_page_view: true
     });
   </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
 <div class="page">
   <header class="site-header">
     <div class="container header-inner">
@@ -74,112 +90,481 @@
         <span class="brand-title">PlayersB</span>
         <span class="brand-subtitle">The Players Book</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/players/">Players</a>
-        <a class="nav-link" href="/compare/">Compare</a>
-        <a class="nav-link" href="/tools/">Tools</a>
-        <a class="nav-link" href="/learn/">Learn</a>
-        <a class="nav-link" href="/about/">About</a>
-        <a class="nav-link" href="/contact/">Contact</a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
+        <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
+        <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
+        <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
+        <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
       </nav>
-      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
         Dark mode
       </button>
-      <a class="button small" href="/compare/">Start comparing</a>
+      <a class="button small" href="/compare/" data-track-event="cta_click">Start comparing</a>
     </div>
   </header>
 
-  <main class="container main-content">
+  <main id="mainContent" class="container main-content" tabindex="-1">
     <section class="hero">
         <span class="pill">Competition</span>
         <h1>Premier League</h1>
-        <p class="lead">Current standings and top scorers for Premier League.</p>
+        <p class="lead">Live standings, top scorers, and fixtures for Premier League.</p>
         <div class="button-row">
           <a class="button" href="/competitions/">All competitions</a>
           <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/matches/">Live matches</a>
         </div>
       </section>
 
       <section class="section">
         
-      <div class="card" style="margin-top:16px;">
-        <h3>REGULAR_SEASON</h3>
-        <ul class="player-list">
-          <li class="player-item">
-            <span class="player-name">Arsenal FC</span>
-            <div class="player-meta">#1 · 42 pts · GD 22</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Manchester City FC</span>
-            <div class="player-meta">#2 · 40 pts · GD 26</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Aston Villa FC</span>
-            <div class="player-meta">#3 · 39 pts · GD 10</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Liverpool FC</span>
-            <div class="player-meta">#4 · 32 pts · GD 4</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Chelsea FC</span>
-            <div class="player-meta">#5 · 29 pts · GD 11</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Manchester United FC</span>
-            <div class="player-meta">#6 · 29 pts · GD 4</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Sunderland AFC</span>
-            <div class="player-meta">#7 · 28 pts · GD 2</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Brentford FC</span>
-            <div class="player-meta">#8 · 26 pts · GD 2</div>
-          </li>
-        </ul>
+    <div class="card" style="margin-top:16px;">
+      <h3>Full table</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">League standings</caption>
+          <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>F:A</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Arsenal FC</td>
+      <td>34</td>
+      <td>22</td>
+      <td>7</td>
+      <td>5</td>
+      <td>64:26</td>
+      <td>38</td>
+      <td class="pts">73</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Manchester City FC</td>
+      <td>33</td>
+      <td>21</td>
+      <td>7</td>
+      <td>5</td>
+      <td>66:29</td>
+      <td>37</td>
+      <td class="pts">70</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Manchester United FC</td>
+      <td>34</td>
+      <td>17</td>
+      <td>10</td>
+      <td>7</td>
+      <td>60:46</td>
+      <td>14</td>
+      <td class="pts">61</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Liverpool FC</td>
+      <td>34</td>
+      <td>17</td>
+      <td>7</td>
+      <td>10</td>
+      <td>57:44</td>
+      <td>13</td>
+      <td class="pts">58</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Aston Villa FC</td>
+      <td>34</td>
+      <td>17</td>
+      <td>7</td>
+      <td>10</td>
+      <td>47:42</td>
+      <td>5</td>
+      <td class="pts">58</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Brighton &amp; Hove Albion FC</td>
+      <td>34</td>
+      <td>13</td>
+      <td>11</td>
+      <td>10</td>
+      <td>48:39</td>
+      <td>9</td>
+      <td class="pts">50</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">AFC Bournemouth</td>
+      <td>34</td>
+      <td>11</td>
+      <td>16</td>
+      <td>7</td>
+      <td>52:52</td>
+      <td>0</td>
+      <td class="pts">49</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Chelsea FC</td>
+      <td>34</td>
+      <td>13</td>
+      <td>9</td>
+      <td>12</td>
+      <td>53:45</td>
+      <td>8</td>
+      <td class="pts">48</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Brentford FC</td>
+      <td>34</td>
+      <td>13</td>
+      <td>9</td>
+      <td>12</td>
+      <td>49:46</td>
+      <td>3</td>
+      <td class="pts">48</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Fulham FC</td>
+      <td>34</td>
+      <td>14</td>
+      <td>6</td>
+      <td>14</td>
+      <td>44:46</td>
+      <td>-2</td>
+      <td class="pts">48</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Everton FC</td>
+      <td>34</td>
+      <td>13</td>
+      <td>8</td>
+      <td>13</td>
+      <td>41:41</td>
+      <td>0</td>
+      <td class="pts">47</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Sunderland AFC</td>
+      <td>34</td>
+      <td>12</td>
+      <td>10</td>
+      <td>12</td>
+      <td>36:45</td>
+      <td>-9</td>
+      <td class="pts">46</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Crystal Palace FC</td>
+      <td>33</td>
+      <td>11</td>
+      <td>10</td>
+      <td>12</td>
+      <td>36:39</td>
+      <td>-3</td>
+      <td class="pts">43</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Newcastle United FC</td>
+      <td>34</td>
+      <td>12</td>
+      <td>6</td>
+      <td>16</td>
+      <td>46:50</td>
+      <td>-4</td>
+      <td class="pts">42</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Leeds United FC</td>
+      <td>35</td>
+      <td>9</td>
+      <td>14</td>
+      <td>12</td>
+      <td>44:51</td>
+      <td>-7</td>
+      <td class="pts">41</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Nottingham Forest FC</td>
+      <td>34</td>
+      <td>10</td>
+      <td>9</td>
+      <td>15</td>
+      <td>41:45</td>
+      <td>-4</td>
+      <td class="pts">39</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">West Ham United FC</td>
+      <td>34</td>
+      <td>9</td>
+      <td>9</td>
+      <td>16</td>
+      <td>42:58</td>
+      <td>-16</td>
+      <td class="pts">36</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Tottenham Hotspur FC</td>
+      <td>34</td>
+      <td>8</td>
+      <td>10</td>
+      <td>16</td>
+      <td>43:53</td>
+      <td>-10</td>
+      <td class="pts">34</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Burnley FC</td>
+      <td>35</td>
+      <td>4</td>
+      <td>9</td>
+      <td>22</td>
+      <td>34:68</td>
+      <td>-34</td>
+      <td class="pts">21</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Wolverhampton Wanderers FC</td>
+      <td>34</td>
+      <td>3</td>
+      <td>8</td>
+      <td>23</td>
+      <td>24:62</td>
+      <td>-38</td>
+      <td class="pts">17</td>
+      <td class="form">—</td>
+    </tr></tbody>
+        </table>
       </div>
-    
+    </div>
         
     <div class="card" style="margin-top:16px;">
       <h3>Top scorers</h3>
-      <ul class="player-list">
-        <li class="player-item">
-          <span class="player-name">Erling Haaland</span>
-          <div class="player-meta">Manchester City FC · 19 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Thiago Rodrigues</span>
-          <div class="player-meta">Brentford FC · 11 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Antoine Semenyo</span>
-          <div class="player-meta">AFC Bournemouth · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Hugo Ekitike</span>
-          <div class="player-meta">Liverpool FC · 8 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Dominic Calvert-Lewin</span>
-          <div class="player-meta">Leeds United FC · 8 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Richarlison</span>
-          <div class="player-meta">Tottenham Hotspur FC · 7 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Jean-Philippe Mateta</span>
-          <div class="player-meta">Crystal Palace FC · 7 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Nick Woltemade</span>
-          <div class="player-meta">Newcastle United FC · 7 goals</div>
-        </li>
-      </ul>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">Top scorers</caption>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>G</th><th>A</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Erling Haaland</td>
+      <td>Manchester City FC</td>
+      <td></td>
+      <td class="pts">24</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Thiago Rodrigues</td>
+      <td>Brentford FC</td>
+      <td></td>
+      <td class="pts">21</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Antoine Semenyo</td>
+      <td>Manchester City FC</td>
+      <td></td>
+      <td class="pts">15</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">João Pedro</td>
+      <td>Chelsea FC</td>
+      <td></td>
+      <td class="pts">14</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Danny Welbeck</td>
+      <td>Brighton &amp; Hove Albion FC</td>
+      <td></td>
+      <td class="pts">13</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Morgan Gibbs-White</td>
+      <td>Nottingham Forest FC</td>
+      <td></td>
+      <td class="pts">13</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Viktor Gyökeres</td>
+      <td>Arsenal FC</td>
+      <td></td>
+      <td class="pts">12</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Dominic Calvert-Lewin</td>
+      <td>Leeds United FC</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Eli Kroupi</td>
+      <td>AFC Bournemouth</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Hugo Ekitike</td>
+      <td>Liverpool FC</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Ollie Watkins</td>
+      <td>Aston Villa FC</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Benjamin Šeško</td>
+      <td>Manchester United FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Harry Wilson</td>
+      <td>Fulham FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Jean-Philippe Mateta</td>
+      <td>Crystal Palace FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Bruno Guimarães</td>
+      <td>Newcastle United FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Bryan Mbeumo</td>
+      <td>Manchester United FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Casemiro</td>
+      <td>Manchester United FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Cole Palmer</td>
+      <td>Chelsea FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Raúl Jiménez</td>
+      <td>Fulham FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Richarlison</td>
+      <td>Tottenham Hotspur FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>4</td>
+    </tr></tbody>
+        </table>
+      </div>
     </div>
-  
+        
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-04-25</td><td>West Ham United FC <strong>2-1</strong> Everton FC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-25</td><td>Wolverhampton Wanderers FC <strong>0-1</strong> Tottenham Hotspur FC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-25</td><td>Arsenal FC <strong>1-0</strong> Newcastle United FC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-27</td><td>Manchester United FC <strong>2-1</strong> Brentford FC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-05-01</td><td>Leeds United FC <strong>0-0</strong> Burnley FC</td><td class="meta-text">IN_PLAY</td></tr></tbody></table></div>
+        </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-02</td><td>Brentford FC <strong>vs</strong> West Ham United FC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Newcastle United FC <strong>vs</strong> Brighton &amp; Hove Albion FC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Wolverhampton Wanderers FC <strong>vs</strong> Sunderland AFC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Arsenal FC <strong>vs</strong> Fulham FC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-03</td><td>AFC Bournemouth <strong>vs</strong> Crystal Palace FC</td><td class="meta-text">TIMED</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
       </section>
       <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"Premier League","sport":"Association Football","url":"https://playersb.com/competitions/pl/"}</script>
   </main>
@@ -198,77 +583,5 @@
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    const storageKey = "playersb-theme";
-    const root = document.documentElement;
-    const stored = localStorage.getItem(storageKey);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-    if (initialTheme === "dark") {
-      root.setAttribute("data-theme", "dark");
-    }
-
-    function track(eventName, params) {
-      if (typeof window.playersbTrack === "function") {
-        window.playersbTrack(eventName, params);
-      }
-    }
-
-    function updateButton(button) {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      button.textContent = isDark ? "Light mode" : "Dark mode";
-      button.setAttribute("aria-pressed", String(isDark));
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        updateButton(button);
-        button.addEventListener("click", () => {
-          const isDark = root.getAttribute("data-theme") === "dark";
-          const nextTheme = isDark ? "light" : "dark";
-          if (isDark) {
-            root.removeAttribute("data-theme");
-          } else {
-            root.setAttribute("data-theme", "dark");
-          }
-          localStorage.setItem(storageKey, nextTheme);
-          updateButton(button);
-          track("theme_toggle", { theme: nextTheme });
-        });
-      }
-
-      document.querySelectorAll("a[href]").forEach((anchor) => {
-        anchor.addEventListener("click", () => {
-          const href = anchor.getAttribute("href") || "";
-          const text = (anchor.textContent || "").trim().slice(0, 80);
-          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
-          const isNav = anchor.classList.contains("nav-link");
-          const isCta = anchor.classList.contains("button");
-
-          if (isOutbound) {
-            track("outbound_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isNav) {
-            track("nav_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isCta) {
-            track("cta_click", { destination: href, link_text: text });
-          }
-        });
-      });
-
-      setTimeout(() => {
-        track("engaged_read", { engaged_seconds: 30 });
-      }, 30000);
-    });
-  })();
-</script>
 </body>
 </html>

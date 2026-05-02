@@ -150,6 +150,20 @@ function buildPages(learnTopicsMarkup) {
         </div>
       </section>
 
+      <section class="section" id="recentlyViewedSection" hidden>
+        <h2 class="section-title">Recently viewed</h2>
+        <div class="card">
+          <div id="recentlyViewed" class="watch-list"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Your watch-list</h2>
+        <div class="card">
+          <div id="watchList"></div>
+        </div>
+      </section>
+
       <section class="section">
         <h2 class="section-title">What you can do today</h2>
         <div class="card-grid">

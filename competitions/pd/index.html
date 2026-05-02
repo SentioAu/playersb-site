@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/site.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
   <meta name="theme-color" content="#2563eb" />
 
@@ -44,6 +45,17 @@
   }
   </script>
 
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
   <script>
@@ -64,9 +76,13 @@
       send_page_view: true
     });
   </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
 <div class="page">
   <header class="site-header">
     <div class="container header-inner">
@@ -74,112 +90,481 @@
         <span class="brand-title">PlayersB</span>
         <span class="brand-subtitle">The Players Book</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/players/">Players</a>
-        <a class="nav-link" href="/compare/">Compare</a>
-        <a class="nav-link" href="/tools/">Tools</a>
-        <a class="nav-link" href="/learn/">Learn</a>
-        <a class="nav-link" href="/about/">About</a>
-        <a class="nav-link" href="/contact/">Contact</a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
+        <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
+        <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
+        <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
+        <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
       </nav>
-      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
         Dark mode
       </button>
-      <a class="button small" href="/compare/">Start comparing</a>
+      <a class="button small" href="/compare/" data-track-event="cta_click">Start comparing</a>
     </div>
   </header>
 
-  <main class="container main-content">
+  <main id="mainContent" class="container main-content" tabindex="-1">
     <section class="hero">
         <span class="pill">Competition</span>
         <h1>La Liga</h1>
-        <p class="lead">Current standings and top scorers for La Liga.</p>
+        <p class="lead">Live standings, top scorers, and fixtures for La Liga.</p>
         <div class="button-row">
           <a class="button" href="/competitions/">All competitions</a>
           <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/matches/">Live matches</a>
         </div>
       </section>
 
       <section class="section">
         
-      <div class="card" style="margin-top:16px;">
-        <h3>REGULAR_SEASON</h3>
-        <ul class="player-list">
-          <li class="player-item">
-            <span class="player-name">FC Barcelona</span>
-            <div class="player-meta">#1 · 46 pts · GD 31</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Real Madrid CF</span>
-            <div class="player-meta">#2 · 42 pts · GD 20</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Club Atlético de Madrid</span>
-            <div class="player-meta">#3 · 37 pts · GD 17</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Villarreal CF</span>
-            <div class="player-meta">#4 · 35 pts · GD 16</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">RCD Espanyol de Barcelona</span>
-            <div class="player-meta">#5 · 33 pts · GD 5</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Real Betis Balompié</span>
-            <div class="player-meta">#6 · 28 pts · GD 10</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">RC Celta de Vigo</span>
-            <div class="player-meta">#7 · 23 pts · GD 1</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Athletic Club</span>
-            <div class="player-meta">#8 · 23 pts · GD -8</div>
-          </li>
-        </ul>
+    <div class="card" style="margin-top:16px;">
+      <h3>Full table</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">League standings</caption>
+          <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>F:A</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">FC Barcelona</td>
+      <td>33</td>
+      <td>28</td>
+      <td>1</td>
+      <td>4</td>
+      <td>87:30</td>
+      <td>57</td>
+      <td class="pts">85</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Real Madrid CF</td>
+      <td>33</td>
+      <td>23</td>
+      <td>5</td>
+      <td>5</td>
+      <td>68:31</td>
+      <td>37</td>
+      <td class="pts">74</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Villarreal CF</td>
+      <td>33</td>
+      <td>20</td>
+      <td>5</td>
+      <td>8</td>
+      <td>59:38</td>
+      <td>21</td>
+      <td class="pts">65</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Club Atlético de Madrid</td>
+      <td>33</td>
+      <td>18</td>
+      <td>6</td>
+      <td>9</td>
+      <td>56:37</td>
+      <td>19</td>
+      <td class="pts">60</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Real Betis Balompié</td>
+      <td>33</td>
+      <td>12</td>
+      <td>14</td>
+      <td>7</td>
+      <td>49:41</td>
+      <td>8</td>
+      <td class="pts">50</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Getafe CF</td>
+      <td>33</td>
+      <td>13</td>
+      <td>5</td>
+      <td>15</td>
+      <td>28:34</td>
+      <td>-6</td>
+      <td class="pts">44</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">RC Celta de Vigo</td>
+      <td>33</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>45:43</td>
+      <td>2</td>
+      <td class="pts">44</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Real Sociedad de Fútbol</td>
+      <td>33</td>
+      <td>11</td>
+      <td>10</td>
+      <td>12</td>
+      <td>52:52</td>
+      <td>0</td>
+      <td class="pts">43</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">CA Osasuna</td>
+      <td>33</td>
+      <td>11</td>
+      <td>9</td>
+      <td>13</td>
+      <td>39:40</td>
+      <td>-1</td>
+      <td class="pts">42</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Athletic Club</td>
+      <td>33</td>
+      <td>12</td>
+      <td>5</td>
+      <td>16</td>
+      <td>36:48</td>
+      <td>-12</td>
+      <td class="pts">41</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Rayo Vallecano de Madrid</td>
+      <td>33</td>
+      <td>9</td>
+      <td>12</td>
+      <td>12</td>
+      <td>33:41</td>
+      <td>-8</td>
+      <td class="pts">39</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Valencia CF</td>
+      <td>33</td>
+      <td>10</td>
+      <td>9</td>
+      <td>14</td>
+      <td>37:48</td>
+      <td>-11</td>
+      <td class="pts">39</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">RCD Espanyol de Barcelona</td>
+      <td>33</td>
+      <td>10</td>
+      <td>9</td>
+      <td>14</td>
+      <td>37:49</td>
+      <td>-12</td>
+      <td class="pts">39</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Girona FC</td>
+      <td>34</td>
+      <td>9</td>
+      <td>12</td>
+      <td>13</td>
+      <td>36:50</td>
+      <td>-14</td>
+      <td class="pts">39</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Elche CF</td>
+      <td>33</td>
+      <td>9</td>
+      <td>11</td>
+      <td>13</td>
+      <td>44:50</td>
+      <td>-6</td>
+      <td class="pts">38</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">RCD Mallorca</td>
+      <td>34</td>
+      <td>9</td>
+      <td>9</td>
+      <td>16</td>
+      <td>41:51</td>
+      <td>-10</td>
+      <td class="pts">36</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Deportivo Alavés</td>
+      <td>33</td>
+      <td>9</td>
+      <td>9</td>
+      <td>15</td>
+      <td>38:49</td>
+      <td>-11</td>
+      <td class="pts">36</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Sevilla FC</td>
+      <td>33</td>
+      <td>9</td>
+      <td>7</td>
+      <td>17</td>
+      <td>40:55</td>
+      <td>-15</td>
+      <td class="pts">34</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Levante UD</td>
+      <td>33</td>
+      <td>8</td>
+      <td>9</td>
+      <td>16</td>
+      <td>37:50</td>
+      <td>-13</td>
+      <td class="pts">33</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Real Oviedo</td>
+      <td>33</td>
+      <td>6</td>
+      <td>10</td>
+      <td>17</td>
+      <td>26:51</td>
+      <td>-25</td>
+      <td class="pts">28</td>
+      <td class="form">—</td>
+    </tr></tbody>
+        </table>
       </div>
-    
+    </div>
         
     <div class="card" style="margin-top:16px;">
       <h3>Top scorers</h3>
-      <ul class="player-list">
-        <li class="player-item">
-          <span class="player-name">Kylian Mbappé</span>
-          <div class="player-meta">Real Madrid CF · 18 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Ferrán Torres</span>
-          <div class="player-meta">FC Barcelona · 11 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Vedat Muriqi</span>
-          <div class="player-meta">RCD Mallorca · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Robert Lewandowski</span>
-          <div class="player-meta">FC Barcelona · 8 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Raphinha</span>
-          <div class="player-meta">FC Barcelona · 7 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Lamine Yamal</span>
-          <div class="player-meta">FC Barcelona · 7 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Julián Álvarez</span>
-          <div class="player-meta">Club Atlético de Madrid · 7 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Cucho Hernández</span>
-          <div class="player-meta">Real Betis Balompié · 7 goals</div>
-        </li>
-      </ul>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">Top scorers</caption>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>G</th><th>A</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Kylian Mbappé</td>
+      <td>Real Madrid CF</td>
+      <td></td>
+      <td class="pts">24</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Vedat Muriqi</td>
+      <td>RCD Mallorca</td>
+      <td></td>
+      <td class="pts">21</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Ante Budimir</td>
+      <td>CA Osasuna</td>
+      <td></td>
+      <td class="pts">16</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Lamine Yamal</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">16</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Ferrán Torres</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">14</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Mikel Oyarzabal</td>
+      <td>Real Sociedad de Fútbol</td>
+      <td></td>
+      <td class="pts">14</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Borja Iglesias</td>
+      <td>RC Celta de Vigo</td>
+      <td></td>
+      <td class="pts">13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Vinicius Junior</td>
+      <td>Real Madrid CF</td>
+      <td></td>
+      <td class="pts">13</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Alexander Sørloth</td>
+      <td>Club Atlético de Madrid</td>
+      <td></td>
+      <td class="pts">12</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Robert Lewandowski</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Lucas Boyé</td>
+      <td>Deportivo Alavés</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Raphinha</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Toni Martínez</td>
+      <td>Deportivo Alavés</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Jorge de Frutos</td>
+      <td>Rayo Vallecano de Madrid</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Alberto Moleiro</td>
+      <td>Villarreal CF</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">André Silva</td>
+      <td>Elche CF</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Federico Viñas</td>
+      <td>Real Oviedo</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Georges Mikautadze</td>
+      <td>Villarreal CF</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Hugo Duro</td>
+      <td>Valencia CF</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Vladyslav Vanat</td>
+      <td>Girona FC</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>1</td>
+    </tr></tbody>
+        </table>
+      </div>
     </div>
-  
+        
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-04-26</td><td>Real Oviedo <strong>1-2</strong> Elche CF</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-26</td><td>CA Osasuna <strong>2-1</strong> Sevilla FC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-26</td><td>Villarreal CF <strong>2-1</strong> RC Celta de Vigo</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-27</td><td>RCD Espanyol de Barcelona <strong>0-0</strong> Levante UD</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-05-01</td><td>Girona FC <strong>0-0</strong> RCD Mallorca</td><td class="meta-text">IN_PLAY</td></tr></tbody></table></div>
+        </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-02</td><td>Villarreal CF <strong>vs</strong> Levante UD</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Valencia CF <strong>vs</strong> Club Atlético de Madrid</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Deportivo Alavés <strong>vs</strong> Athletic Club</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>CA Osasuna <strong>vs</strong> FC Barcelona</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-03</td><td>RC Celta de Vigo <strong>vs</strong> Elche CF</td><td class="meta-text">TIMED</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
       </section>
       <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"La Liga","sport":"Association Football","url":"https://playersb.com/competitions/pd/"}</script>
   </main>
@@ -198,77 +583,5 @@
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    const storageKey = "playersb-theme";
-    const root = document.documentElement;
-    const stored = localStorage.getItem(storageKey);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-    if (initialTheme === "dark") {
-      root.setAttribute("data-theme", "dark");
-    }
-
-    function track(eventName, params) {
-      if (typeof window.playersbTrack === "function") {
-        window.playersbTrack(eventName, params);
-      }
-    }
-
-    function updateButton(button) {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      button.textContent = isDark ? "Light mode" : "Dark mode";
-      button.setAttribute("aria-pressed", String(isDark));
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        updateButton(button);
-        button.addEventListener("click", () => {
-          const isDark = root.getAttribute("data-theme") === "dark";
-          const nextTheme = isDark ? "light" : "dark";
-          if (isDark) {
-            root.removeAttribute("data-theme");
-          } else {
-            root.setAttribute("data-theme", "dark");
-          }
-          localStorage.setItem(storageKey, nextTheme);
-          updateButton(button);
-          track("theme_toggle", { theme: nextTheme });
-        });
-      }
-
-      document.querySelectorAll("a[href]").forEach((anchor) => {
-        anchor.addEventListener("click", () => {
-          const href = anchor.getAttribute("href") || "";
-          const text = (anchor.textContent || "").trim().slice(0, 80);
-          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
-          const isNav = anchor.classList.contains("nav-link");
-          const isCta = anchor.classList.contains("button");
-
-          if (isOutbound) {
-            track("outbound_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isNav) {
-            track("nav_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isCta) {
-            track("cta_click", { destination: href, link_text: text });
-          }
-        });
-      });
-
-      setTimeout(() => {
-        track("engaged_read", { engaged_seconds: 30 });
-      }, 30000);
-    });
-  })();
-</script>
 </body>
 </html>

@@ -6,10 +6,20 @@ const SITE_ORIGIN = "https://playersb.com";
 
 const DATA_PATH = path.join(ROOT, "data", "players.json");
 const STANDINGS_PATH = path.join(ROOT, "data", "standings.json");
+const FIXTURES_PATH = path.join(ROOT, "data", "fixtures.json");
 const FANTASY_PATH = path.join(ROOT, "data", "fantasy.json");
 const SCORERS_PATH = path.join(ROOT, "data", "scorers.json");
 const LAYOUT_PATH = path.join(ROOT, "templates", "layout.html");
 const OUT_DIR = path.join(ROOT, "competitions");
+
+const NAME_TO_CODE = {
+  "Premier League": "PL",
+  "La Liga": "PD",
+  "Serie A": "SA",
+  "Bundesliga": "BL1",
+  "Ligue 1": "FL1",
+  "Champions League": "CL",
+};
 
 function safeStr(value) {
   return String(value ?? "").trim();
@@ -84,129 +94,212 @@ function renderStandings(standings) {
   if (!Array.isArray(standings) || standings.length === 0) {
     return "<p class=\"meta-text\">Standings data is not available yet.</p>";
   }
-
-  const sections = standings.map((block) => {
-    const label = safeStr(block.group || block.stage || "Standings");
-    const rows = Array.isArray(block.table) ? block.table : [];
-    const list = rows
-      .slice(0, 8)
-      .map((row) => {
-        const team = escHtml(row.team);
-        return `
-          <li class="player-item">
-            <span class="player-name">${team}</span>
-            <div class="player-meta">#${row.position} · ${row.points} pts · GD ${row.goalDifference}</div>
-          </li>
-        `.trim();
-      })
-      .join("\n");
-
-    return `
-      <div class="card" style="margin-top:16px;">
-        <h3>${escHtml(label)}</h3>
-        <ul class="player-list">
-          ${list || `<li class="player-item">No standings available.</li>`}
-        </ul>
+  const rows = standings.map((row) => `
+    <tr>
+      <td class="rank">${escHtml(String(row.position ?? ""))}</td>
+      <td class="team">${escHtml(row.team || "")}</td>
+      <td>${escHtml(String(row.played ?? "—"))}</td>
+      <td>${escHtml(String(row.won ?? "—"))}</td>
+      <td>${escHtml(String(row.draw ?? "—"))}</td>
+      <td>${escHtml(String(row.lost ?? "—"))}</td>
+      <td>${escHtml(String(row.goals ?? "—"))}:${escHtml(String(row.goalsAgainst ?? "—"))}</td>
+      <td>${escHtml(String(row.gd ?? row.goalDifference ?? "—"))}</td>
+      <td class="pts">${escHtml(String(row.points ?? "—"))}</td>
+      <td class="form">${row.form ? escHtml(String(row.form).slice(0, 14)) : "—"}</td>
+    </tr>`).join("");
+  return `
+    <div class="card" style="margin-top:16px;">
+      <h3>Full table</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">League standings</caption>
+          <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>F:A</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
       </div>
-    `;
-  });
-
-  return sections.join("\n");
+    </div>`;
 }
 
 function renderScorers(scorers) {
   if (!Array.isArray(scorers) || scorers.length === 0) {
     return "<p class=\"meta-text\">Scorer data is not available yet.</p>";
   }
-
-  const list = scorers
-    .slice(0, 8)
-    .map((row) => {
-      const player = escHtml(row.player);
-      const team = escHtml(row.team);
-      return `
-        <li class="player-item">
-          <span class="player-name">${player}</span>
-          <div class="player-meta">${team} · ${row.goals} goals</div>
-        </li>
-      `.trim();
-    })
-    .join("\n");
-
+  const rows = scorers.slice(0, 20).map((row, i) => `
+    <tr>
+      <td class="rank">${i + 1}</td>
+      <td class="team">${escHtml(row.player || row.name || "")}</td>
+      <td>${escHtml(row.team || "")}</td>
+      <td>${escHtml(row.position || "")}</td>
+      <td class="pts">${escHtml(String(row.goals ?? 0))}</td>
+      <td>${escHtml(String(row.assists ?? "—"))}</td>
+    </tr>`).join("");
   return `
     <div class="card" style="margin-top:16px;">
       <h3>Top scorers</h3>
-      <ul class="player-list">
-        ${list}
-      </ul>
-    </div>
-  `;
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">Top scorers</caption>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>G</th><th>A</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+function renderFixtures(fixtures) {
+  if (!Array.isArray(fixtures) || fixtures.length === 0) return "";
+  const now = Date.now();
+  const sorted = fixtures.slice().sort((a, b) => String(a.date).localeCompare(String(b.date)));
+  const recent = sorted.filter((f) => Date.parse(f.date) <= now).slice(-5);
+  const upcoming = sorted.filter((f) => Date.parse(f.date) > now).slice(0, 5);
+  function row(f) {
+    const date = (f.date || "").slice(0, 10);
+    const score = (typeof f.homeScore === "number" && typeof f.awayScore === "number")
+      ? `${f.homeScore}-${f.awayScore}` : "vs";
+    return `<tr><td>${escHtml(date)}</td><td>${escHtml(f.home || "")} <strong>${escHtml(score)}</strong> ${escHtml(f.away || "")}</td><td class="meta-text">${escHtml(f.status || "")}</td></tr>`;
+  }
+  if (!recent.length && !upcoming.length) return "";
+  return `
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          ${recent.length ? `<div class="table-scroll"><table class="data-table"><tbody>${recent.map(row).join("")}</tbody></table></div>` : `<p class="meta-text">No recent results.</p>`}
+        </div>
+        <div>
+          <h4>Upcoming</h4>
+          ${upcoming.length ? `<div class="table-scroll"><table class="data-table"><tbody>${upcoming.map(row).join("")}</tbody></table></div>` : `<p class="meta-text">No upcoming fixtures.</p>`}
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderRoleLeaders(competitionLabel, players) {
+  if (!Array.isArray(players) || players.length === 0) return "";
+  const competitionPlayers = players.filter((p) => {
+    const compLabel = safeStr(p?.competition?.name || p?.competition);
+    return compLabel.toLowerCase() === competitionLabel.toLowerCase();
+  });
+  if (!competitionPlayers.length) return "";
+  const minMinutes = 270;
+  const eligible = competitionPlayers.filter((p) => Number(p?.minutes ?? p?.minutesEstimate ?? 0) >= minMinutes);
+  if (!eligible.length) return "";
+  const per90 = (v, m) => (m > 0 ? (Number(v) || 0) / (m / 90) : 0);
+  const withRates = eligible.map((p) => {
+    const m = Number(p?.minutes ?? p?.minutesEstimate ?? 0);
+    return {
+      id: sanitizeId(p.id),
+      name: safeStr(p.name),
+      team: safeStr(p.team),
+      g90: per90(p.goals, m),
+      a90: per90(p.assists, m),
+      s90: per90(p.shots, m),
+    };
+  });
+  function topBy(field, label) {
+    const sorted = withRates.filter((p) => p[field] > 0).sort((a, b) => b[field] - a[field]).slice(0, 5);
+    if (!sorted.length) return "";
+    const items = sorted.map((p) => `
+      <li class="player-item">
+        <a class="player-name" href="/players/${encodeURIComponent(p.id)}/">${escHtml(p.name)}</a>
+        <div class="player-meta">${escHtml(p.team)} · ${p[field].toFixed(2)} ${escHtml(label)}</div>
+      </li>`).join("");
+    return `<div class="card"><h4>Top ${escHtml(label)}</h4><ul class="player-list">${items}</ul></div>`;
+  }
+  const blocks = [
+    topBy("g90", "G/90"),
+    topBy("a90", "A/90"),
+    topBy("s90", "Shots/90"),
+  ].filter(Boolean);
+  if (!blocks.length) return "";
+  return `
+    <div class="card" style="margin-top:16px;">
+      <h3>Per-90 leaders (≥${minMinutes} min)</h3>
+      <div class="card-grid" style="grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));">
+        ${blocks.join("")}
+      </div>
+    </div>`;
 }
 
 
-function buildCompetitionsFromLive(standingsParsed, fantasyParsed, scorersParsed, playersParsed) {
+function buildCompetitionsFromLive(standingsParsed, fixturesParsed, fantasyParsed, scorersParsed, playersParsed) {
   const map = new Map();
-
-  const standingEntries = Array.isArray(standingsParsed?.competitions) ? standingsParsed.competitions : [];
-  for (const entry of standingEntries) {
-    const comp = entry?.competition || {};
-    const code = safeStr(comp.code || comp.slug || comp.name || "unknown").toUpperCase();
-    if (!code) continue;
-    if (!map.has(code)) map.set(code, { label: safeStr(comp.name || code), standings: [], scorers: [] });
-    const target = map.get(code);
-    const blocks = Array.isArray(entry?.standings) ? entry.standings : [];
-    target.standings = blocks.map((block) => ({
-      group: safeStr(block?.group || block?.stage || block?.type || "Table"),
-      stage: safeStr(block?.stage || ""),
-      table: (Array.isArray(block?.table) ? block.table : []).map((row) => ({
-        position: row?.position ?? null,
-        team: safeStr(row?.team?.name || row?.team),
-        points: row?.points ?? null,
-        goalDifference: row?.goalDifference ?? null,
-      })),
-    }));
-  }
-
-  const scorerEntries = Array.isArray(scorersParsed?.competitions) ? scorersParsed.competitions : [];
-  for (const entry of scorerEntries) {
-    const code = safeStr(entry?.competitionCode || "").toUpperCase();
-    if (!code) continue;
-    if (!map.has(code)) map.set(code, { label: code, standings: [], scorers: [] });
-    const target = map.get(code);
-    const rows = Array.isArray(entry?.scorers) ? entry.scorers : [];
-    for (const row of rows) {
-      target.scorers.push({
-        player: safeStr(row?.player),
-        team: safeStr(row?.team),
-        goals: Number(row?.goals ?? 0) || 0,
-      });
+  function ensure(code, label) {
+    const upper = code.toUpperCase();
+    if (!map.has(upper)) {
+      map.set(upper, { label: label || upper, standings: [], scorers: [], fixtures: [] });
     }
+    return map.get(upper);
   }
 
+  // Standings: data/standings.json shape is { standings: { "Premier League": [rows] } }.
+  const standingsByName = standingsParsed?.standings && typeof standingsParsed.standings === "object"
+    ? standingsParsed.standings : {};
+  for (const [name, rows] of Object.entries(standingsByName)) {
+    if (!Array.isArray(rows) || !rows.length) continue;
+    const code = NAME_TO_CODE[name] || sanitizeId(name).toUpperCase();
+    const target = ensure(code, name);
+    target.label = name;
+    target.standings = rows;
+  }
+
+  // Top scorers: data/scorers.json shape is { scorers: [{name, team, competition, goals, ...}] }.
+  const scorerRows = Array.isArray(scorersParsed?.scorers) ? scorersParsed.scorers : [];
+  for (const row of scorerRows) {
+    const compName = safeStr(row?.competition);
+    if (!compName) continue;
+    const code = NAME_TO_CODE[compName] || sanitizeId(compName).toUpperCase();
+    const target = ensure(code, compName);
+    target.scorers.push({
+      player: safeStr(row.name),
+      team: safeStr(row.team),
+      goals: Number(row.goals) || 0,
+      assists: row.assists,
+      position: safeStr(row.position),
+    });
+  }
+
+  // Fixtures.
+  const fixtureRows = Array.isArray(fixturesParsed?.fixtures) ? fixturesParsed.fixtures : [];
+  for (const f of fixtureRows) {
+    const compName = safeStr(f?.competition);
+    const code = (f?.competitionCode ? String(f.competitionCode).toUpperCase() : NAME_TO_CODE[compName] || sanitizeId(compName).toUpperCase());
+    if (!code) continue;
+    ensure(code, compName).fixtures.push(f);
+  }
+
+  // Fantasy fallback (covers the synthetic and any code missing from the
+  // live feed).
   const fantasyRows = Array.isArray(fantasyParsed?.players) ? fantasyParsed.players : [];
   for (const row of fantasyRows) {
     const compObj = row?.competition || {};
     const code = safeStr(compObj.code || compObj.slug || compObj.name || "").toUpperCase();
     if (!code) continue;
-    if (!map.has(code)) map.set(code, { label: safeStr(compObj.name || code), standings: [], scorers: [] });
-    map.get(code).scorers.push({
+    const target = ensure(code, safeStr(compObj.name || code));
+    target.scorers.push({
       player: safeStr(row?.name),
       team: safeStr(row?.team),
       goals: Number(row?.goals ?? 0) || 0,
+      assists: row?.assists,
+      position: safeStr(row?.position),
     });
   }
 
   for (const comp of map.values()) {
     const dedupe = new Map();
     for (const row of comp.scorers) {
-      const key = `${row.player}::${row.team}`;
+      const key = `${row.player}::${row.team}`.toLowerCase();
       if (!dedupe.has(key)) dedupe.set(key, { ...row });
-      else dedupe.get(key).goals += row.goals;
+      else {
+        const existing = dedupe.get(key);
+        if ((row.goals || 0) > (existing.goals || 0)) Object.assign(existing, row);
+      }
     }
-    comp.scorers = Array.from(dedupe.values()).sort((a, b) => b.goals - a.goals || String(a.player).localeCompare(String(b.player)));
+    comp.scorers = Array.from(dedupe.values())
+      .sort((a, b) => (b.goals || 0) - (a.goals || 0) || String(a.player).localeCompare(String(b.player)));
   }
 
-  // fallback: derive pseudo scorers from player goals if needed
   if (!map.size) {
     const players = Array.isArray(playersParsed?.players) ? playersParsed.players : [];
     map.set("GLOBAL", {
@@ -215,6 +308,7 @@ function buildCompetitionsFromLive(standingsParsed, fantasyParsed, scorersParsed
       scorers: players
         .map((p) => ({ player: safeStr(p.name), team: safeStr(p.team), goals: Number(p.goals ?? 0) || 0 }))
         .sort((a, b) => b.goals - a.goals),
+      fixtures: [],
     });
   }
 
@@ -225,9 +319,10 @@ async function main() {
   await fs.access(DATA_PATH);
   await fs.access(LAYOUT_PATH);
 
-  const [rawPlayers, rawStandings, rawFantasy, rawScorers, layout] = await Promise.all([
+  const [rawPlayers, rawStandings, rawFixtures, rawFantasy, rawScorers, layout] = await Promise.all([
     fs.readFile(DATA_PATH, "utf-8"),
     fs.readFile(STANDINGS_PATH, "utf-8").catch(() => "{}"),
+    fs.readFile(FIXTURES_PATH, "utf-8").catch(() => "{}"),
     fs.readFile(FANTASY_PATH, "utf-8").catch(() => "{}"),
     fs.readFile(SCORERS_PATH, "utf-8").catch(() => "{}"),
     fs.readFile(LAYOUT_PATH, "utf-8"),
@@ -235,9 +330,10 @@ async function main() {
 
   const playersParsed = JSON.parse(rawPlayers || "{}");
   const standingsParsed = JSON.parse(rawStandings || "{}");
+  const fixturesParsed = JSON.parse(rawFixtures || "{}");
   const fantasyParsed = JSON.parse(rawFantasy || "{}");
   const scorersParsed = JSON.parse(rawScorers || "{}");
-  const competitions = buildCompetitionsFromLive(standingsParsed, fantasyParsed, scorersParsed, playersParsed);
+  const competitions = buildCompetitionsFromLive(standingsParsed, fixturesParsed, fantasyParsed, scorersParsed, playersParsed);
   const entries = Object.entries(competitions);
 
   const indexItems = entries
@@ -289,11 +385,15 @@ async function main() {
   await fs.mkdir(OUT_DIR, { recursive: true });
   await fs.writeFile(path.join(OUT_DIR, "index.html"), indexHtml, "utf-8");
 
+  const fantasyPlayers = Array.isArray(fantasyParsed?.players) ? fantasyParsed.players : [];
+
   for (const [code, comp] of entries) {
     const slug = sanitizeId(code);
     const label = safeStr(comp?.label || code);
     const standings = renderStandings(comp?.standings || []);
     const scorers = renderScorers(comp?.scorers || []);
+    const fixtures = renderFixtures(comp?.fixtures || []);
+    const leaders = renderRoleLeaders(label, fantasyPlayers);
 
     const entitySchema = competitionEntitySchema(code, comp);
 
@@ -301,16 +401,19 @@ async function main() {
       <section class="hero">
         <span class="pill">Competition</span>
         <h1>${escHtml(label)}</h1>
-        <p class="lead">Current standings and top scorers for ${escHtml(label)}.</p>
+        <p class="lead">Live standings, top scorers, and fixtures for ${escHtml(label)}.</p>
         <div class="button-row">
           <a class="button" href="/competitions/">All competitions</a>
           <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/matches/">Live matches</a>
         </div>
       </section>
 
       <section class="section">
         ${standings}
         ${scorers}
+        ${leaders}
+        ${fixtures}
       </section>
       ${entitySchema}
     `;
