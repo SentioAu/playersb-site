@@ -31,12 +31,6 @@
       "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json"
     },
     {
-      "id": "cl-2023-24",
-      "competition": "UEFA Champions League",
-      "season": "2023-24",
-      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json"
-    },
-    {
       "id": "pl-2022-23",
       "competition": "Premier League",
       "season": "2022-23",

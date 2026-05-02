@@ -18,19 +18,27 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-async function sleep(ms) {
-  return new Promise((r) => setTimeout(r, ms));
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Free tier is 10 req/min. We dispatch through a single FIFO so all callers
+// share the budget — competitions run concurrently from the caller's view but
+// requests still leave at one every MIN_GAP_MS.
+const MIN_GAP_MS = Number(process.env.FOOTBALL_DATA_GAP_MS || 6500);
+let nextSlot = 0;
+async function rateLimit() {
+  const now = Date.now();
+  const wait = Math.max(0, nextSlot - now);
+  nextSlot = Math.max(now, nextSlot) + MIN_GAP_MS;
+  if (wait > 0) await sleep(wait);
 }
 
-// Football-Data.org rate limits aggressively (10 req/min on the free tier and
-// per-resource throttling). Retry on 429 / 5xx with exponential backoff and
-// honour the Retry-After header when present.
 const MAX_ATTEMPTS = 5;
 const BASE_BACKOFF_MS = 2000;
 
 async function apiFetch(url) {
   let lastErr = null;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    await rateLimit();
     console.log(`Fetching (attempt ${attempt}/${MAX_ATTEMPTS}):`, url);
     let res;
     try {
@@ -38,14 +46,12 @@ async function apiFetch(url) {
     } catch (err) {
       lastErr = err;
       console.error(`Network error: ${err.message}`);
-      const wait = BASE_BACKOFF_MS * 2 ** (attempt - 1);
-      await sleep(wait);
+      await sleep(BASE_BACKOFF_MS * 2 ** (attempt - 1));
       continue;
     }
     console.log('Status:', res.status, url);
     if (res.ok) return res.json();
 
-    // 4xx other than 429 are not retryable.
     if (res.status >= 400 && res.status < 500 && res.status !== 429) {
       const text = await res.text();
       console.error('Non-retryable error body:', text.slice(0, 500));
@@ -65,37 +71,33 @@ async function apiFetch(url) {
   return null;
 }
 
-const allFixtures = [];
-const allStandings = {};
-const allScorers = [];
+async function fetchCompetition(comp) {
+  console.log(`\n--- ${comp.name} (${comp.code}) queued ---`);
+  // Three independent reads run "in parallel" from this scope, but the rate
+  // limiter ensures only one leaves the wire at a time.
+  const [matchData, standData, scorerData] = await Promise.all([
+    apiFetch(`${BASE}/competitions/${comp.code}/matches?status=SCHEDULED,LIVE,IN_PLAY,PAUSED,FINISHED&limit=50`),
+    apiFetch(`${BASE}/competitions/${comp.code}/standings`),
+    apiFetch(`${BASE}/competitions/${comp.code}/scorers?limit=20`),
+  ]);
 
-for (const comp of COMPETITIONS) {
-  console.log(`\n--- ${comp.name} (${comp.code}) ---`);
+  const fixtures = (matchData?.matches || []).map((m) => ({
+    id: m.id,
+    competitionCode: comp.code,
+    competition: comp.name,
+    date: m.utcDate,
+    status: m.status,
+    home: m.homeTeam?.name || '',
+    away: m.awayTeam?.name || '',
+    homeScore: m.score?.fullTime?.home ?? null,
+    awayScore: m.score?.fullTime?.away ?? null,
+  }));
 
-  const matchData = await apiFetch(`${BASE}/competitions/${comp.code}/matches?status=SCHEDULED,LIVE,IN_PLAY,PAUSED,FINISHED&limit=50`);
-  if (matchData?.matches) {
-    for (const m of matchData.matches) {
-      allFixtures.push({
-        id: m.id,
-        competitionCode: comp.code,
-        competition: comp.name,
-        date: m.utcDate,
-        status: m.status,
-        home: m.homeTeam?.name || '',
-        away: m.awayTeam?.name || '',
-        homeScore: m.score?.fullTime?.home ?? null,
-        awayScore: m.score?.fullTime?.away ?? null,
-      });
-    }
-    console.log(`  Fixtures: ${matchData.matches.length}`);
-  }
-  await sleep(6000);
-
-  const standData = await apiFetch(`${BASE}/competitions/${comp.code}/standings`);
+  let standings = null;
   if (standData?.standings) {
     const table = standData.standings.find((s) => s.type === 'TOTAL') || standData.standings[0];
     if (table) {
-      allStandings[comp.name] = table.table.map((row) => ({
+      standings = table.table.map((row) => ({
         position: row.position,
         team: row.team?.name || '',
         played: row.playedGames,
@@ -108,65 +110,63 @@ for (const comp of COMPETITIONS) {
         points: row.points,
         form: row.form,
       }));
-      console.log(`  Standings: ${table.table.length} teams`);
     }
   }
-  await sleep(6000);
 
-  const scorerData = await apiFetch(`${BASE}/competitions/${comp.code}/scorers?limit=20`);
-  if (scorerData?.scorers) {
-    for (const s of scorerData.scorers) {
-      allScorers.push({
-        name: s.player?.name || '',
-        team: s.team?.name || '',
-        competition: comp.name,
-        nationality: s.player?.nationality || '',
-        position: s.player?.position || '',
-        goals: s.goals ?? 0,
-        assists: s.assists ?? 0,
-        penalties: s.penalties ?? 0,
-        playedMatches: s.playedMatches ?? 0,
-      });
-    }
-    console.log(`  Scorers: ${scorerData.scorers.length}`);
-  }
-  await sleep(6000);
+  const scorers = (scorerData?.scorers || []).map((s) => ({
+    name: s.player?.name || '',
+    team: s.team?.name || '',
+    competition: comp.name,
+    nationality: s.player?.nationality || '',
+    position: s.player?.position || '',
+    goals: s.goals ?? 0,
+    assists: s.assists ?? 0,
+    penalties: s.penalties ?? 0,
+    playedMatches: s.playedMatches ?? 0,
+  }));
+
+  console.log(`  ${comp.name}: fixtures=${fixtures.length}, standings=${standings?.length ?? 0}, scorers=${scorers.length}`);
+  return { comp, fixtures, standings, scorers };
 }
 
-fs.mkdirSync('data', { recursive: true });
+async function main() {
+  const start = Date.now();
+  const results = await Promise.all(COMPETITIONS.map(fetchCompetition));
 
-fs.writeFileSync('data/fixtures.json', JSON.stringify({
-  updatedAt: new Date().toISOString(),
-  generatedAt: new Date().toISOString(),
-  source: 'football-data.org',
-  sources: { footballData: { status: 'ok', fetchedAt: new Date().toISOString() } },
-  fixtures: allFixtures,
-}, null, 2));
-console.log(`\nWrote ${allFixtures.length} fixtures to data/fixtures.json`);
+  const allFixtures = [];
+  const allStandings = {};
+  const allScorers = [];
+  for (const r of results) {
+    allFixtures.push(...r.fixtures);
+    if (r.standings) allStandings[r.comp.name] = r.standings;
+    allScorers.push(...r.scorers);
+  }
 
-fs.writeFileSync('data/standings.json', JSON.stringify({
-  updatedAt: new Date().toISOString(),
-  generatedAt: new Date().toISOString(),
-  source: 'football-data.org',
-  sources: { footballData: { status: 'ok', fetchedAt: new Date().toISOString() } },
-  standings: allStandings,
-}, null, 2));
-console.log(`Wrote standings for ${Object.keys(allStandings).length} competitions`);
+  fs.mkdirSync('data', { recursive: true });
 
-fs.writeFileSync('data/scorers.json', JSON.stringify({
-  updatedAt: new Date().toISOString(),
-  generatedAt: new Date().toISOString(),
-  source: 'football-data.org',
-  sources: { footballData: { status: 'ok', fetchedAt: new Date().toISOString() } },
-  scorers: allScorers,
-}, null, 2));
-console.log(`Wrote ${allScorers.length} scorers to data/scorers.json`);
+  const stamp = {
+    updatedAt: new Date().toISOString(),
+    generatedAt: new Date().toISOString(),
+    source: 'football-data.org',
+    sources: { footballData: { status: 'ok', fetchedAt: new Date().toISOString() } },
+  };
 
-fs.writeFileSync('data/players-scores.json', JSON.stringify({
-  updatedAt: new Date().toISOString(),
-  generatedAt: new Date().toISOString(),
-  source: 'football-data.org',
-  players: allScorers,
-}, null, 2));
+  fs.writeFileSync('data/fixtures.json', JSON.stringify({ ...stamp, fixtures: allFixtures }, null, 2));
+  console.log(`\nWrote ${allFixtures.length} fixtures to data/fixtures.json`);
 
-console.log('\nDone. All data written successfully.');
+  fs.writeFileSync('data/standings.json', JSON.stringify({ ...stamp, standings: allStandings }, null, 2));
+  console.log(`Wrote standings for ${Object.keys(allStandings).length} competitions`);
+
+  fs.writeFileSync('data/scorers.json', JSON.stringify({ ...stamp, scorers: allScorers }, null, 2));
+  console.log(`Wrote ${allScorers.length} scorers to data/scorers.json`);
+
+  fs.writeFileSync('data/players-scores.json', JSON.stringify({ ...stamp, players: allScorers }, null, 2));
+
+  const dur = ((Date.now() - start) / 1000).toFixed(1);
+  console.log(`\nDone in ${dur}s. All data written successfully.`);
+}
+
+main().catch((err) => {
+  console.error('fetch-football-data: fatal', err);
+  process.exit(1);
+});

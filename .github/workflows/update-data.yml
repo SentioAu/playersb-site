@@ -58,6 +58,14 @@ jobs:
       - name: Fetch football data
         run: node scripts/fetch-football-data.mjs
 
+      - name: Fetch archive (StatsBomb + OpenFootball)
+        run: node scripts/fetch-archive.mjs
+        continue-on-error: true
+
+      - name: Fetch player enrichment
+        run: node scripts/fetch-player-enrichment.mjs
+        continue-on-error: true
+
       - name: Verify data files exist
         run: |
           echo "=== data/fixtures.json ==="
@@ -71,6 +79,10 @@ jobs:
 
       - name: Sync scorers to players
         run: node scripts/sync-scorers.mjs
+
+      - name: Sync players from fantasy
+        run: node scripts/sync-players-from-fantasy.mjs
+        continue-on-error: true
 
       - name: Generate site
         run: node scripts/generate-all.mjs
