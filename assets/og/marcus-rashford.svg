@@ -10,17 +10,17 @@
   <g font-family="Inter, system-ui, sans-serif" fill="#f8fafc">
     <text x="60" y="100" font-size="22" font-weight="500" fill="#93c5fd" letter-spacing="2">PLAYERSB · THE PLAYERS BOOK</text>
     <text x="60" y="200" font-size="78" font-weight="700">Marcus Rashford</text>
-    <text x="60" y="252" font-size="28" fill="#cbd5e1">LW · FC Barcelona</text>
+    <text x="60" y="252" font-size="28" fill="#cbd5e1">DM · Manchester United</text>
     
     <g transform="translate(60, 360)">
       <rect width="240" height="180" rx="16" fill="#0f172a" fill-opacity="0.5" stroke="#1e3a8a" stroke-width="2"/>
       <text x="20" y="50" font-size="18" fill="#93c5fd" letter-spacing="1.5">G/90</text>
-      <text x="20" y="130" font-size="64" font-weight="700">0.28</text>
+      <text x="20" y="130" font-size="64" font-weight="700">0.40</text>
     </g>
     <g transform="translate(330, 360)">
       <rect width="240" height="180" rx="16" fill="#0f172a" fill-opacity="0.5" stroke="#1e3a8a" stroke-width="2"/>
       <text x="20" y="50" font-size="18" fill="#93c5fd" letter-spacing="1.5">A/90</text>
-      <text x="20" y="130" font-size="64" font-weight="700">0.17</text>
+      <text x="20" y="130" font-size="64" font-weight="700">0.23</text>
     </g>
     <g transform="translate(600, 360)">
       <rect width="240" height="180" rx="16" fill="#0f172a" fill-opacity="0.5" stroke="#1e3a8a" stroke-width="2"/>

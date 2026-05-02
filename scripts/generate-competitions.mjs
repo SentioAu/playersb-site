@@ -175,30 +175,68 @@ function renderFixtures(fixtures) {
     </div>`;
 }
 
-function renderRoleLeaders(competitionLabel, players) {
-  if (!Array.isArray(players) || players.length === 0) return "";
-  const competitionPlayers = players.filter((p) => {
-    const compLabel = safeStr(p?.competition?.name || p?.competition);
-    return compLabel.toLowerCase() === competitionLabel.toLowerCase();
-  });
-  if (!competitionPlayers.length) return "";
+function normalizeName(s) {
+  return String(s || "")
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Per-90 leaders for a competition: derived from real scorer rows
+// (data/scorers.json, which carries name + team + competition + goals +
+// assists + playedMatches) cross-referenced against players.json for true
+// minutes. Falls back to fantasy data when the live feed is empty so the
+// synthetic competition still gets leaders.
+function renderRoleLeaders(competitionLabel, scorers, playersIndex, fantasyPlayers) {
   const minMinutes = 270;
-  const eligible = competitionPlayers.filter((p) => Number(p?.minutes ?? p?.minutesEstimate ?? 0) >= minMinutes);
-  if (!eligible.length) return "";
-  const per90 = (v, m) => (m > 0 ? (Number(v) || 0) / (m / 90) : 0);
-  const withRates = eligible.map((p) => {
-    const m = Number(p?.minutes ?? p?.minutesEstimate ?? 0);
-    return {
-      id: sanitizeId(p.id),
+  const matchesComp = (label) => safeStr(label).toLowerCase() === competitionLabel.toLowerCase();
+
+  const liveRows = (Array.isArray(scorers) ? scorers : [])
+    .map((row) => {
+      const name = safeStr(row.player || row.name);
+      const team = safeStr(row.team);
+      const goals = Number(row.goals) || 0;
+      const assists = Number(row.assists) || 0;
+      const lookup = playersIndex.get(normalizeName(name));
+      const minutes = Number(lookup?.minutes) || (Number(row.playedMatches) || 0) * 80;
+      return { name, team, goals, assists, minutes, fromPlayers: !!lookup };
+    })
+    .filter((r) => r.name && r.minutes >= minMinutes);
+
+  let rows = liveRows;
+  let source = "live data";
+
+  if (!rows.length) {
+    const fantasyRows = (Array.isArray(fantasyPlayers) ? fantasyPlayers : [])
+      .filter((p) => matchesComp(p?.competition?.name || p?.competition));
+    rows = fantasyRows.map((p) => ({
       name: safeStr(p.name),
       team: safeStr(p.team),
-      g90: per90(p.goals, m),
-      a90: per90(p.assists, m),
-      s90: per90(p.shots, m),
-    };
-  });
+      goals: Number(p.goals) || 0,
+      assists: Number(p.assists) || 0,
+      minutes: Number(p.minutes ?? p.minutesEstimate) || 0,
+      fromPlayers: false,
+    })).filter((r) => r.minutes >= minMinutes);
+    if (rows.length) source = "fantasy aggregates";
+  }
+
+  if (!rows.length) return "";
+
+  const per90 = (v, m) => (m > 0 ? v / (m / 90) : 0);
+  const enriched = rows.map((r) => ({
+    ...r,
+    id: sanitizeId(r.name),
+    g90: per90(r.goals, r.minutes),
+    a90: per90(r.assists, r.minutes),
+  }));
+
   function topBy(field, label) {
-    const sorted = withRates.filter((p) => p[field] > 0).sort((a, b) => b[field] - a[field]).slice(0, 5);
+    const sorted = enriched.filter((p) => p[field] > 0)
+      .sort((a, b) => b[field] - a[field])
+      .slice(0, 5);
     if (!sorted.length) return "";
     const items = sorted.map((p) => `
       <li class="player-item">
@@ -207,15 +245,12 @@ function renderRoleLeaders(competitionLabel, players) {
       </li>`).join("");
     return `<div class="card"><h4>Top ${escHtml(label)}</h4><ul class="player-list">${items}</ul></div>`;
   }
-  const blocks = [
-    topBy("g90", "G/90"),
-    topBy("a90", "A/90"),
-    topBy("s90", "Shots/90"),
-  ].filter(Boolean);
+  const blocks = [topBy("g90", "G/90"), topBy("a90", "A/90")].filter(Boolean);
   if (!blocks.length) return "";
   return `
     <div class="card" style="margin-top:16px;">
       <h3>Per-90 leaders (≥${minMinutes} min)</h3>
+      <p class="meta-text">Source: ${escHtml(source)}. Minutes inferred from playedMatches when not available in players.json.</p>
       <div class="card-grid" style="grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));">
         ${blocks.join("")}
       </div>
@@ -387,13 +422,23 @@ async function main() {
 
   const fantasyPlayers = Array.isArray(fantasyParsed?.players) ? fantasyParsed.players : [];
 
+  // Build a normalized name → minutes index from players.json so the
+  // per-90 leaders block can resolve real minutes for live scorers.
+  const playersIndex = new Map();
+  const playersList = Array.isArray(playersParsed?.players) ? playersParsed.players : [];
+  for (const p of playersList) {
+    const key = normalizeName(p?.name);
+    if (!key) continue;
+    playersIndex.set(key, { minutes: Number(p?.minutes) || 0, team: safeStr(p?.team) });
+  }
+
   for (const [code, comp] of entries) {
     const slug = sanitizeId(code);
     const label = safeStr(comp?.label || code);
     const standings = renderStandings(comp?.standings || []);
     const scorers = renderScorers(comp?.scorers || []);
     const fixtures = renderFixtures(comp?.fixtures || []);
-    const leaders = renderRoleLeaders(label, fantasyPlayers);
+    const leaders = renderRoleLeaders(label, comp?.scorers || [], playersIndex, fantasyPlayers);
 
     const entitySchema = competitionEntitySchema(code, comp);
 

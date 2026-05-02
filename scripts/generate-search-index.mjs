@@ -160,10 +160,25 @@ async function main() {
     });
   }
 
-  // 7. Learn topics + glossary.
+  // 7. Learn topics + glossary. Use the rich title from data/learn-topics.json
+  // (preserves "(xG)" / case so search queries like "xg" match) and merge in
+  // the topic description as extra haystack tokens.
+  const learnTopics = await readJson("data/learn-topics.json", { topics: [] });
+  const learnByslug = new Map();
+  for (const t of (learnTopics?.topics || [])) {
+    if (t?.slug) learnByslug.set(sanitizeId(t.slug), t);
+  }
   const learnDirs = await listIndexedDirs("learn", 1);
   for (const d of learnDirs) {
-    push({ url: d.url, name: titleCaseSlug(d.slug), section: "learn" });
+    const topic = learnByslug.get(d.slug);
+    push({
+      url: d.url,
+      name: topic?.title || titleCaseSlug(d.slug),
+      section: "learn",
+      // Stash searchable description in `competition` field — it's already
+      // indexed by site.js scoreEntry().
+      competition: topic?.description || "",
+    });
   }
 
   // 8. Core sections (quick-jump).
