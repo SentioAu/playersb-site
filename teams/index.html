@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/site.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
   <meta name="theme-color" content="#2563eb" />
 
@@ -44,6 +45,17 @@
   }
   </script>
 
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
   <script>
@@ -64,9 +76,13 @@
       send_page_view: true
     });
   </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
 <div class="page">
   <header class="site-header">
     <div class="container header-inner">
@@ -74,15 +90,24 @@
         <span class="brand-title">PlayersB</span>
         <span class="brand-subtitle">The Players Book</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
         <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
         <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
         <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
         <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
-        <a class="nav-link" href="/about/" data-track-event="nav_click">About</a>
-        <a class="nav-link" href="/contact/" data-track-event="nav_click">Contact</a>
       </nav>
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
       <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
         Dark mode
       </button>
@@ -90,7 +115,7 @@
     </div>
   </header>
 
-  <main class="container main-content">
+  <main id="mainContent" class="container main-content" tabindex="-1">
     <section class="hero">
       <span class="pill">Teams</span>
       <h1>Browse players by team.</h1>
@@ -107,7 +132,7 @@
         <ul class="player-list">
           <li class="player-item">
           <a class="player-name" href="/teams/ac-milan/">AC Milan</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">5 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/ajax/">Ajax</a>
@@ -119,11 +144,11 @@
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/atl-tico-madrid/">Atlético Madrid</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">3 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/barcelona/">Barcelona</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">2 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/bayer-leverkusen/">Bayer Leverkusen</a>
@@ -131,7 +156,7 @@
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/bayern-munich/">Bayern Munich</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">3 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/benfica/">Benfica</a>
@@ -143,27 +168,55 @@
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/chelsea/">Chelsea</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">2 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/chelsea-fc/">Chelsea FC</a>
+          <div class="player-meta">2 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/fc-barcelona/">FC Barcelona</a>
+          <div class="player-meta">3 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/fc-bayern-m-nchen/">FC Bayern München</a>
+          <div class="player-meta">1 player</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/fc-internazionale-milano/">FC Internazionale Milano</a>
+          <div class="player-meta">2 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/galatasaray-sk/">Galatasaray SK</a>
+          <div class="player-meta">1 player</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/inter/">Inter</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">2 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/juventus/">Juventus</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">2 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/liverpool/">Liverpool</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">5 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/manchester-city/">Manchester City</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">3 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/manchester-city-fc/">Manchester City FC</a>
+          <div class="player-meta">1 player</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/manchester-united/">Manchester United</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">1 player</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/manchester-united-fc/">Manchester United FC</a>
+          <div class="player-meta">1 player</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/marseille/">Marseille</a>
@@ -171,15 +224,31 @@
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/napoli/">Napoli</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">2 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/olympique-de-marseille/">Olympique de Marseille</a>
+          <div class="player-meta">1 player</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/paris-saint-germain/">Paris Saint-Germain</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">1 player</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/paris-saint-germain-fc/">Paris Saint-Germain FC</a>
+          <div class="player-meta">3 players</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/real-madrid/">Real Madrid</a>
-          <div class="player-meta">4 players</div>
+          <div class="player-meta">3 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/real-madrid-cf/">Real Madrid CF</a>
+          <div class="player-meta">2 players</div>
+        </li>
+<li class="player-item">
+          <a class="player-name" href="/teams/ssc-napoli/">SSC Napoli</a>
+          <div class="player-meta">1 player</div>
         </li>
 <li class="player-item">
           <a class="player-name" href="/teams/tottenham/">Tottenham</a>
@@ -188,7 +257,7 @@
         </ul>
       </div>
     </section>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Teams","url":"https://playersb.com/teams/","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://playersb.com/teams/ac-milan/","name":"AC Milan"},{"@type":"ListItem","position":2,"url":"https://playersb.com/teams/ajax/","name":"Ajax"},{"@type":"ListItem","position":3,"url":"https://playersb.com/teams/arsenal/","name":"Arsenal"},{"@type":"ListItem","position":4,"url":"https://playersb.com/teams/atl-tico-madrid/","name":"Atlético Madrid"},{"@type":"ListItem","position":5,"url":"https://playersb.com/teams/barcelona/","name":"Barcelona"},{"@type":"ListItem","position":6,"url":"https://playersb.com/teams/bayer-leverkusen/","name":"Bayer Leverkusen"},{"@type":"ListItem","position":7,"url":"https://playersb.com/teams/bayern-munich/","name":"Bayern Munich"},{"@type":"ListItem","position":8,"url":"https://playersb.com/teams/benfica/","name":"Benfica"},{"@type":"ListItem","position":9,"url":"https://playersb.com/teams/borussia-dortmund/","name":"Borussia Dortmund"},{"@type":"ListItem","position":10,"url":"https://playersb.com/teams/chelsea/","name":"Chelsea"},{"@type":"ListItem","position":11,"url":"https://playersb.com/teams/inter/","name":"Inter"},{"@type":"ListItem","position":12,"url":"https://playersb.com/teams/juventus/","name":"Juventus"},{"@type":"ListItem","position":13,"url":"https://playersb.com/teams/liverpool/","name":"Liverpool"},{"@type":"ListItem","position":14,"url":"https://playersb.com/teams/manchester-city/","name":"Manchester City"},{"@type":"ListItem","position":15,"url":"https://playersb.com/teams/manchester-united/","name":"Manchester United"},{"@type":"ListItem","position":16,"url":"https://playersb.com/teams/marseille/","name":"Marseille"},{"@type":"ListItem","position":17,"url":"https://playersb.com/teams/napoli/","name":"Napoli"},{"@type":"ListItem","position":18,"url":"https://playersb.com/teams/paris-saint-germain/","name":"Paris Saint-Germain"},{"@type":"ListItem","position":19,"url":"https://playersb.com/teams/real-madrid/","name":"Real Madrid"},{"@type":"ListItem","position":20,"url":"https://playersb.com/teams/tottenham/","name":"Tottenham"}]}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Teams","url":"https://playersb.com/teams/","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://playersb.com/teams/ac-milan/","name":"AC Milan"},{"@type":"ListItem","position":2,"url":"https://playersb.com/teams/ajax/","name":"Ajax"},{"@type":"ListItem","position":3,"url":"https://playersb.com/teams/arsenal/","name":"Arsenal"},{"@type":"ListItem","position":4,"url":"https://playersb.com/teams/atl-tico-madrid/","name":"Atlético Madrid"},{"@type":"ListItem","position":5,"url":"https://playersb.com/teams/barcelona/","name":"Barcelona"},{"@type":"ListItem","position":6,"url":"https://playersb.com/teams/bayer-leverkusen/","name":"Bayer Leverkusen"},{"@type":"ListItem","position":7,"url":"https://playersb.com/teams/bayern-munich/","name":"Bayern Munich"},{"@type":"ListItem","position":8,"url":"https://playersb.com/teams/benfica/","name":"Benfica"},{"@type":"ListItem","position":9,"url":"https://playersb.com/teams/borussia-dortmund/","name":"Borussia Dortmund"},{"@type":"ListItem","position":10,"url":"https://playersb.com/teams/chelsea/","name":"Chelsea"},{"@type":"ListItem","position":11,"url":"https://playersb.com/teams/chelsea-fc/","name":"Chelsea FC"},{"@type":"ListItem","position":12,"url":"https://playersb.com/teams/fc-barcelona/","name":"FC Barcelona"},{"@type":"ListItem","position":13,"url":"https://playersb.com/teams/fc-bayern-m-nchen/","name":"FC Bayern München"},{"@type":"ListItem","position":14,"url":"https://playersb.com/teams/fc-internazionale-milano/","name":"FC Internazionale Milano"},{"@type":"ListItem","position":15,"url":"https://playersb.com/teams/galatasaray-sk/","name":"Galatasaray SK"},{"@type":"ListItem","position":16,"url":"https://playersb.com/teams/inter/","name":"Inter"},{"@type":"ListItem","position":17,"url":"https://playersb.com/teams/juventus/","name":"Juventus"},{"@type":"ListItem","position":18,"url":"https://playersb.com/teams/liverpool/","name":"Liverpool"},{"@type":"ListItem","position":19,"url":"https://playersb.com/teams/manchester-city/","name":"Manchester City"},{"@type":"ListItem","position":20,"url":"https://playersb.com/teams/manchester-city-fc/","name":"Manchester City FC"},{"@type":"ListItem","position":21,"url":"https://playersb.com/teams/manchester-united/","name":"Manchester United"},{"@type":"ListItem","position":22,"url":"https://playersb.com/teams/manchester-united-fc/","name":"Manchester United FC"},{"@type":"ListItem","position":23,"url":"https://playersb.com/teams/marseille/","name":"Marseille"},{"@type":"ListItem","position":24,"url":"https://playersb.com/teams/napoli/","name":"Napoli"},{"@type":"ListItem","position":25,"url":"https://playersb.com/teams/olympique-de-marseille/","name":"Olympique de Marseille"},{"@type":"ListItem","position":26,"url":"https://playersb.com/teams/paris-saint-germain/","name":"Paris Saint-Germain"},{"@type":"ListItem","position":27,"url":"https://playersb.com/teams/paris-saint-germain-fc/","name":"Paris Saint-Germain FC"},{"@type":"ListItem","position":28,"url":"https://playersb.com/teams/real-madrid/","name":"Real Madrid"},{"@type":"ListItem","position":29,"url":"https://playersb.com/teams/real-madrid-cf/","name":"Real Madrid CF"},{"@type":"ListItem","position":30,"url":"https://playersb.com/teams/ssc-napoli/","name":"SSC Napoli"},{"@type":"ListItem","position":31,"url":"https://playersb.com/teams/tottenham/","name":"Tottenham"}]}}</script>
   </main>
 
   <footer class="site-footer">
@@ -205,77 +274,5 @@
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    const storageKey = "playersb-theme";
-    const root = document.documentElement;
-    const stored = localStorage.getItem(storageKey);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-    if (initialTheme === "dark") {
-      root.setAttribute("data-theme", "dark");
-    }
-
-    function track(eventName, params) {
-      if (typeof window.playersbTrack === "function") {
-        window.playersbTrack(eventName, params);
-      }
-    }
-
-    function updateButton(button) {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      button.textContent = isDark ? "Light mode" : "Dark mode";
-      button.setAttribute("aria-pressed", String(isDark));
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        updateButton(button);
-        button.addEventListener("click", () => {
-          const isDark = root.getAttribute("data-theme") === "dark";
-          const nextTheme = isDark ? "light" : "dark";
-          if (isDark) {
-            root.removeAttribute("data-theme");
-          } else {
-            root.setAttribute("data-theme", "dark");
-          }
-          localStorage.setItem(storageKey, nextTheme);
-          updateButton(button);
-          track("theme_toggle", { theme: nextTheme });
-        });
-      }
-
-      document.querySelectorAll("a[href]").forEach((anchor) => {
-        anchor.addEventListener("click", () => {
-          const href = anchor.getAttribute("href") || "";
-          const text = (anchor.textContent || "").trim().slice(0, 80);
-          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
-          const isNav = anchor.classList.contains("nav-link");
-          const isCta = anchor.classList.contains("button");
-
-          if (isOutbound) {
-            track("outbound_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isNav) {
-            track("nav_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isCta) {
-            track("cta_click", { destination: href, link_text: text });
-          }
-        });
-      });
-
-      setTimeout(() => {
-        track("engaged_read", { engaged_seconds: 30 });
-      }, 30000);
-    });
-  })();
-</script>
 </body>
 </html>

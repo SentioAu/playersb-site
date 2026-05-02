@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/site.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
   <meta name="theme-color" content="#2563eb" />
 
@@ -44,6 +45,17 @@
   }
   </script>
 
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
   <script>
@@ -64,9 +76,13 @@
       send_page_view: true
     });
   </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
 <div class="page">
   <header class="site-header">
     <div class="container header-inner">
@@ -74,15 +90,24 @@
         <span class="brand-title">PlayersB</span>
         <span class="brand-subtitle">The Players Book</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
         <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
         <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
         <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
         <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
-        <a class="nav-link" href="/about/" data-track-event="nav_click">About</a>
-        <a class="nav-link" href="/contact/" data-track-event="nav_click">Contact</a>
       </nav>
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
       <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
         Dark mode
       </button>
@@ -90,12 +115,12 @@
     </div>
   </header>
 
-  <main class="container main-content">
+  <main id="mainContent" class="container main-content" tabindex="-1">
     <section class="hero">
   <div>
     <span class="pill">Player profile</span>
     <h1>Khvicha Kvaratskhelia</h1>
-    <p class="lead">RW · Paris Saint-Germain</p>
+    <p class="lead">RW · Paris Saint-Germain FC</p>
     <div class="button-row">
       <a class="button" href="/compare/?a=khvicha-kvaratskhelia&b=lamine-yamal">Compare vs Lamine Yamal</a>
       <a class="button secondary" href="/players/">Back to players</a>
@@ -105,7 +130,7 @@
 
 
     <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a class="crumb" href="https://playersb.com/">Home</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/players/">Players</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/positions/rw/">RW</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/teams/paris-saint-germain/">Paris Saint-Germain</a><span class="crumb-sep">/</span><span class="crumb current" aria-current="page">Khvicha Kvaratskhelia</span>
+      <a class="crumb" href="https://playersb.com/">Home</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/players/">Players</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/positions/rw/">RW</a><span class="crumb-sep">/</span><a class="crumb" href="https://playersb.com/teams/paris-saint-germain-fc/">Paris Saint-Germain FC</a><span class="crumb-sep">/</span><span class="crumb current" aria-current="page">Khvicha Kvaratskhelia</span>
     </nav>
   
 
@@ -205,7 +230,7 @@
     <div class="button-row">
       <a class="button secondary" href="/compare/?a=khvicha-kvaratskhelia&b=lamine-yamal">Compare vs Lamine Yamal</a>
       <a class="button secondary" href="/compare/?a=khvicha-kvaratskhelia&b=christian-pulisic">Compare vs Christian Pulisic</a>
-      <a class="button secondary" href="/compare/?a=khvicha-kvaratskhelia&b=ousmane-dembele">Compare vs Ousmane Dembélé</a>
+      <a class="button secondary" href="/compare/?a=khvicha-kvaratskhelia&b=steven-bergwijn">Compare vs Steven Bergwijn</a>
     </div>
   </div>
 </section>
@@ -232,19 +257,19 @@
           </div>
         </div>
 <div class="card">
-          <h3>Ousmane Dembélé</h3>
-          <p class="meta-text">RW · Paris Saint-Germain FC</p>
+          <h3>Steven Bergwijn</h3>
+          <p class="meta-text">RW · Ajax</p>
           <div class="button-row">
-            <a class="button small secondary" href="/players/ousmane-dembele/">View profile</a>
-            <a class="button small secondary" href="/compare/?a=khvicha-kvaratskhelia&b=ousmane-dembele">Compare</a>
+            <a class="button small secondary" href="/players/steven-bergwijn/">View profile</a>
+            <a class="button small secondary" href="/compare/?a=khvicha-kvaratskhelia&b=steven-bergwijn">Compare</a>
           </div>
         </div>
     </div>
   </div>
 </section>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Khvicha Kvaratskhelia","jobTitle":"RW","affiliation":{"@type":"SportsTeam","name":"Paris Saint-Germain"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://playersb.com/"},{"@type":"ListItem","position":2,"name":"Players","item":"https://playersb.com/players/"},{"@type":"ListItem","position":3,"name":"RW","item":"https://playersb.com/positions/rw/"},{"@type":"ListItem","position":4,"name":"Paris Saint-Germain","item":"https://playersb.com/teams/paris-saint-germain/"},{"@type":"ListItem","position":5,"name":"Khvicha Kvaratskhelia","item":"https://playersb.com/players/khvicha-kvaratskhelia/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Khvicha Kvaratskhelia","jobTitle":"RW","affiliation":{"@type":"SportsTeam","name":"Paris Saint-Germain FC"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://playersb.com/"},{"@type":"ListItem","position":2,"name":"Players","item":"https://playersb.com/players/"},{"@type":"ListItem","position":3,"name":"RW","item":"https://playersb.com/positions/rw/"},{"@type":"ListItem","position":4,"name":"Paris Saint-Germain FC","item":"https://playersb.com/teams/paris-saint-germain-fc/"},{"@type":"ListItem","position":5,"name":"Khvicha Kvaratskhelia","item":"https://playersb.com/players/khvicha-kvaratskhelia/"}]}</script>
 
   </main>
 
@@ -262,77 +287,5 @@
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    const storageKey = "playersb-theme";
-    const root = document.documentElement;
-    const stored = localStorage.getItem(storageKey);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-    if (initialTheme === "dark") {
-      root.setAttribute("data-theme", "dark");
-    }
-
-    function track(eventName, params) {
-      if (typeof window.playersbTrack === "function") {
-        window.playersbTrack(eventName, params);
-      }
-    }
-
-    function updateButton(button) {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      button.textContent = isDark ? "Light mode" : "Dark mode";
-      button.setAttribute("aria-pressed", String(isDark));
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        updateButton(button);
-        button.addEventListener("click", () => {
-          const isDark = root.getAttribute("data-theme") === "dark";
-          const nextTheme = isDark ? "light" : "dark";
-          if (isDark) {
-            root.removeAttribute("data-theme");
-          } else {
-            root.setAttribute("data-theme", "dark");
-          }
-          localStorage.setItem(storageKey, nextTheme);
-          updateButton(button);
-          track("theme_toggle", { theme: nextTheme });
-        });
-      }
-
-      document.querySelectorAll("a[href]").forEach((anchor) => {
-        anchor.addEventListener("click", () => {
-          const href = anchor.getAttribute("href") || "";
-          const text = (anchor.textContent || "").trim().slice(0, 80);
-          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
-          const isNav = anchor.classList.contains("nav-link");
-          const isCta = anchor.classList.contains("button");
-
-          if (isOutbound) {
-            track("outbound_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isNav) {
-            track("nav_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isCta) {
-            track("cta_click", { destination: href, link_text: text });
-          }
-        });
-      });
-
-      setTimeout(() => {
-        track("engaged_read", { engaged_seconds: 30 });
-      }, 30000);
-    });
-  })();
-</script>
 </body>
 </html>

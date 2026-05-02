@@ -18,20 +18,51 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-async function apiFetch(url) {
-  console.log('Fetching:', url);
-  const res = await fetch(url, { headers: HEADERS });
-  console.log('Status:', res.status, url);
-  if (!res.ok) {
-    const text = await res.text();
-    console.error('Error body:', text.slice(0, 500));
-    return null;
-  }
-  return res.json();
-}
-
 async function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
+}
+
+// Football-Data.org rate limits aggressively (10 req/min on the free tier and
+// per-resource throttling). Retry on 429 / 5xx with exponential backoff and
+// honour the Retry-After header when present.
+const MAX_ATTEMPTS = 5;
+const BASE_BACKOFF_MS = 2000;
+
+async function apiFetch(url) {
+  let lastErr = null;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    console.log(`Fetching (attempt ${attempt}/${MAX_ATTEMPTS}):`, url);
+    let res;
+    try {
+      res = await fetch(url, { headers: HEADERS });
+    } catch (err) {
+      lastErr = err;
+      console.error(`Network error: ${err.message}`);
+      const wait = BASE_BACKOFF_MS * 2 ** (attempt - 1);
+      await sleep(wait);
+      continue;
+    }
+    console.log('Status:', res.status, url);
+    if (res.ok) return res.json();
+
+    // 4xx other than 429 are not retryable.
+    if (res.status >= 400 && res.status < 500 && res.status !== 429) {
+      const text = await res.text();
+      console.error('Non-retryable error body:', text.slice(0, 500));
+      return null;
+    }
+
+    const retryAfter = Number(res.headers.get('retry-after'));
+    const backoff = Number.isFinite(retryAfter) && retryAfter > 0
+      ? retryAfter * 1000
+      : BASE_BACKOFF_MS * 2 ** (attempt - 1);
+    const text = await res.text().catch(() => '');
+    console.error(`Retryable ${res.status}; waiting ${backoff}ms. Body: ${text.slice(0, 200)}`);
+    lastErr = new Error(`HTTP ${res.status}`);
+    if (attempt < MAX_ATTEMPTS) await sleep(backoff);
+  }
+  console.error(`Giving up after ${MAX_ATTEMPTS} attempts: ${lastErr?.message}`);
+  return null;
 }
 
 const allFixtures = [];

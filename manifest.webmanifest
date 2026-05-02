@@ -1,0 +1,26 @@
+{
+  "name": "PlayersB — The Players Book",
+  "short_name": "PlayersB",
+  "description": "Player profiles, comparisons, and fantasy-safe tools built on verified historical data.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#2563eb",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Compare players", "url": "/compare/" },
+    { "name": "Browse players", "url": "/players/" },
+    { "name": "Live matches", "url": "/matches/" },
+    { "name": "Standings", "url": "/standings/" },
+    { "name": "Fantasy", "url": "/fantasy/" }
+  ]
+}

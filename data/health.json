@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-07T07:13:08.354Z",
+  "generatedAt": "2026-05-01T23:25:30.739Z",
   "status": "warning",
   "thresholds": {
     "minPlayers": 24,
@@ -10,7 +10,7 @@
   },
   "metrics": {
     "players": 80,
-    "teams": 20,
+    "teams": 30,
     "legacy": 16,
     "teamStrength": 0,
     "entityTeams": 0,
@@ -18,100 +18,34 @@
   },
   "datasets": {
     "fixtures": {
-      "count": 1,
-      "generatedAt": "2026-03-07T07:13:03.301Z",
-      "staleHours": 0,
+      "count": 0,
+      "generatedAt": "2026-05-01T13:20:07.465Z",
+      "staleHours": 10.09,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
-          "status": "fallback",
-          "message": "Football-Data unavailable or disabled; using free-source fallback ingest.",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "confidence": 0.7
-        },
-        "openfootball": {
-          "status": "partial",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "competitionCount": 1,
-          "errors": [
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/it.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/es.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/it.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/de.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/fr.1.json: fetch failed"
-          ],
-          "confidence": 0.7
-        },
-        "clubelo": {
-          "status": "error",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "message": "fetch failed",
-          "confidence": 0.5
-        },
-        "wikidata": {
-          "status": "error",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "message": "fetch failed",
-          "confidence": 0.5
+          "status": "ok",
+          "fetchedAt": "2026-05-01T13:20:07.465Z"
         }
       }
     },
     "standings": {
-      "count": 1,
-      "generatedAt": "2026-03-07T07:13:03.301Z",
-      "staleHours": 0,
+      "count": 0,
+      "generatedAt": "2026-05-01T13:20:07.469Z",
+      "staleHours": 10.09,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
-          "status": "fallback",
-          "message": "Football-Data unavailable or disabled; using free-source fallback ingest.",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "confidence": 0.7
-        },
-        "openfootball": {
-          "status": "partial",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "competitionCount": 1,
-          "errors": [
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/it.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/cl.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/es.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/it.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/de.1.json: fetch failed",
-            "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/fr.1.json: fetch failed"
-          ],
-          "confidence": 0.7
-        },
-        "clubelo": {
-          "status": "error",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "message": "fetch failed",
-          "confidence": 0.5
-        },
-        "wikidata": {
-          "status": "error",
-          "fetchedAt": "2026-03-07T07:13:03.301Z",
-          "message": "fetch failed",
-          "confidence": 0.5
+          "status": "ok",
+          "fetchedAt": "2026-05-01T13:20:07.469Z"
         }
       }
     },
     "fantasy": {
       "count": 80,
       "generatedAt": "2026-03-07T07:13:03.301Z",
-      "staleHours": 0,
-      "freshness": "ok",
+      "staleHours": 1336.21,
+      "freshness": "warn",
       "sourceStatus": {
         "footballData": {
           "status": "fallback",
@@ -143,6 +77,9 @@
   },
   "criticalIssues": [],
   "warnings": [
+    "fixtures appears empty (count=0)",
+    "standings appears empty (count=0)",
+    "fantasy data is stale (1336h old)",
     "archive appears empty (count=0)",
     "archive data has no valid timestamp",
     "team-strength dataset is empty",
