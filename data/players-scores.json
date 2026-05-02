@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-02T13:25:43.815Z",
-  "generatedAt": "2026-05-02T13:25:43.815Z",
+  "updatedAt": "2026-05-02T19:00:54.611Z",
+  "generatedAt": "2026-05-02T19:00:54.611Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T13:25:43.815Z"
+      "fetchedAt": "2026-05-02T19:00:54.611Z"
     }
   },
   "players": [
@@ -26,9 +26,9 @@
       "competition": "Premier League",
       "nationality": "Brazil",
       "position": "",
-      "goals": 21,
+      "goals": 22,
       "assists": 1,
-      "penalties": 7,
+      "penalties": 8,
       "playedMatches": 35
     },
     {
@@ -54,13 +54,24 @@
       "playedMatches": 32
     },
     {
+      "name": "Viktor Gyökeres",
+      "team": "Arsenal FC",
+      "competition": "Premier League",
+      "nationality": "Sweden",
+      "position": "",
+      "goals": 14,
+      "assists": 1,
+      "penalties": 3,
+      "playedMatches": 33
+    },
+    {
       "name": "Danny Welbeck",
       "team": "Brighton & Hove Albion FC",
       "competition": "Premier League",
       "nationality": "England",
       "position": "",
       "goals": 13,
-      "assists": 0,
+      "assists": 1,
       "penalties": 1,
       "playedMatches": 34
     },
@@ -74,17 +85,6 @@
       "assists": 4,
       "penalties": 1,
       "playedMatches": 34
-    },
-    {
-      "name": "Viktor Gyökeres",
-      "team": "Arsenal FC",
-      "competition": "Premier League",
-      "nationality": "Sweden",
-      "position": "",
-      "goals": 12,
-      "assists": 0,
-      "penalties": 3,
-      "playedMatches": 32
     },
     {
       "name": "Dominic Calvert-Lewin",
@@ -150,7 +150,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Benjamin Šeško",
@@ -181,7 +181,7 @@
       "nationality": "Brazil",
       "position": "",
       "goals": 9,
-      "assists": 4,
+      "assists": 5,
       "penalties": 2,
       "playedMatches": 27
     },
@@ -227,7 +227,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 4,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Kylian Mbappé",
@@ -271,7 +271,7 @@
       "goals": 16,
       "assists": 0,
       "penalties": 6,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Ferrán Torres",
@@ -282,7 +282,7 @@
       "goals": 14,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Mikel Oyarzabal",
@@ -337,7 +337,7 @@
       "goals": 12,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Raphinha",
@@ -348,7 +348,7 @@
       "goals": 11,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 21
+      "playedMatches": 22
     },
     {
       "name": "Toni Martínez",
@@ -359,7 +359,18 @@
       "goals": 11,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 33
+      "playedMatches": 34
+    },
+    {
+      "name": "Georges Mikautadze",
+      "team": "Villarreal CF",
+      "competition": "La Liga",
+      "nationality": "Georgia",
+      "position": "",
+      "goals": 11,
+      "assists": 5,
+      "penalties": 0,
+      "playedMatches": 30
     },
     {
       "name": "Lucas Boyé",
@@ -384,15 +395,15 @@
       "playedMatches": 31
     },
     {
-      "name": "Georges Mikautadze",
+      "name": "Alberto Moleiro",
       "team": "Villarreal CF",
       "competition": "La Liga",
-      "nationality": "Georgia",
+      "nationality": "Spain",
       "position": "",
       "goals": 10,
-      "assists": 5,
+      "assists": 4,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 34
     },
     {
       "name": "Hugo Duro",
@@ -428,17 +439,6 @@
       "playedMatches": 27
     },
     {
-      "name": "Alberto Moleiro",
-      "team": "Villarreal CF",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 9,
-      "assists": 4,
-      "penalties": 0,
-      "playedMatches": 34
-    },
-    {
       "name": "Federico Viñas",
       "team": "Real Oviedo",
       "competition": "La Liga",
@@ -469,7 +469,7 @@
       "goals": 12,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 34
+      "playedMatches": 35
     },
     {
       "name": "Nico Paz",
@@ -480,7 +480,7 @@
       "goals": 12,
       "assists": 6,
       "penalties": 0,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Marcus Thuram-Ulien",
@@ -502,7 +502,7 @@
       "goals": 11,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Donyell Malen",
@@ -524,7 +524,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Keinan Davis",
@@ -568,7 +568,7 @@
       "goals": 10,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 34
+      "playedMatches": 35
     },
     {
       "name": "Scott McTominay",
@@ -579,7 +579,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Hakan Çalhanoğlu",
@@ -692,6 +692,17 @@
       "playedMatches": 27
     },
     {
+      "name": "Patrik Schick",
+      "team": "Bayer 04 Leverkusen",
+      "competition": "Bundesliga",
+      "nationality": "Czech Republic",
+      "position": "",
+      "goals": 16,
+      "assists": 2,
+      "penalties": 4,
+      "playedMatches": 26
+    },
+    {
       "name": "Luis Díaz",
       "team": "FC Bayern München",
       "competition": "Bundesliga",
@@ -719,32 +730,10 @@
       "competition": "Bundesliga",
       "nationality": "France",
       "position": "",
-      "goals": 13,
-      "assists": 18,
+      "goals": 14,
+      "assists": 19,
       "penalties": 0,
       "playedMatches": 31
-    },
-    {
-      "name": "Patrik Schick",
-      "team": "Bayer 04 Leverkusen",
-      "competition": "Bundesliga",
-      "nationality": "Czech Republic",
-      "position": "",
-      "goals": 13,
-      "assists": 2,
-      "penalties": 4,
-      "playedMatches": 25
-    },
-    {
-      "name": "Christoph Baumgartner",
-      "team": "RB Leipzig",
-      "competition": "Bundesliga",
-      "nationality": "Austria",
-      "position": "",
-      "goals": 12,
-      "assists": 7,
-      "penalties": 0,
-      "playedMatches": 30
     },
     {
       "name": "Andrej Kramarić",
@@ -752,9 +741,31 @@
       "competition": "Bundesliga",
       "nationality": "Croatia",
       "position": "",
-      "goals": 12,
+      "goals": 14,
       "assists": 5,
       "penalties": 5,
+      "playedMatches": 32
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "team": "RB Leipzig",
+      "competition": "Bundesliga",
+      "nationality": "Austria",
+      "position": "",
+      "goals": 13,
+      "assists": 7,
+      "penalties": 0,
+      "playedMatches": 31
+    },
+    {
+      "name": "Said El Mala",
+      "team": "1. FC Köln",
+      "competition": "Bundesliga",
+      "nationality": "Germany",
+      "position": "",
+      "goals": 12,
+      "assists": 4,
+      "penalties": 1,
       "playedMatches": 32
     },
     {
@@ -766,7 +777,7 @@
       "goals": 12,
       "assists": 7,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Nadiem Amiri",
@@ -780,15 +791,15 @@
       "playedMatches": 23
     },
     {
-      "name": "Said El Mala",
-      "team": "1. FC Köln",
+      "name": "Ermedin Demirovic",
+      "team": "VfB Stuttgart",
       "competition": "Bundesliga",
-      "nationality": "Germany",
+      "nationality": "Bosnia-Herzegovina",
       "position": "",
       "goals": 11,
-      "assists": 4,
+      "assists": 3,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 23
     },
     {
       "name": "Haris Tabaković",
@@ -808,20 +819,9 @@
       "nationality": "Kosovo",
       "position": "",
       "goals": 10,
-      "assists": 5,
+      "assists": 6,
       "penalties": 0,
       "playedMatches": 32
-    },
-    {
-      "name": "Ermedin Demirovic",
-      "team": "VfB Stuttgart",
-      "competition": "Bundesliga",
-      "nationality": "Bosnia-Herzegovina",
-      "position": "",
-      "goals": 10,
-      "assists": 3,
-      "penalties": 1,
-      "playedMatches": 23
     },
     {
       "name": "Jens Stage",
@@ -841,7 +841,7 @@
       "nationality": "Germany",
       "position": "",
       "goals": 10,
-      "assists": 0,
+      "assists": 1,
       "penalties": 2,
       "playedMatches": 20
     },
@@ -854,7 +854,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Maximilian Beier",
@@ -928,10 +928,10 @@
       "competition": "Ligue 1",
       "nationality": "USA",
       "position": "",
-      "goals": 12,
+      "goals": 13,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Odsonne Edouard",
@@ -942,7 +942,18 @@
       "goals": 12,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 26
+      "playedMatches": 27
+    },
+    {
+      "name": "Pablo Pagis",
+      "team": "FC Lorient",
+      "competition": "Ligue 1",
+      "nationality": "France",
+      "position": "",
+      "goals": 10,
+      "assists": 3,
+      "penalties": 2,
+      "playedMatches": 27
     },
     {
       "name": "Wesley Saïd",
@@ -953,7 +964,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Florian Thauvin",
@@ -964,7 +975,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 2,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Bradley Barcola",
@@ -975,7 +986,7 @@
       "goals": 10,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Ousmane Dembélé",
@@ -986,7 +997,18 @@
       "goals": 10,
       "assists": 6,
       "penalties": 2,
-      "playedMatches": 20
+      "playedMatches": 21
+    },
+    {
+      "name": "Ansu Fati",
+      "team": "AS Monaco FC",
+      "competition": "Ligue 1",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 10,
+      "assists": 0,
+      "penalties": 3,
+      "playedMatches": 24
     },
     {
       "name": "Pavel Šulc",
@@ -1044,28 +1066,6 @@
       "playedMatches": 27
     },
     {
-      "name": "Pablo Pagis",
-      "team": "FC Lorient",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 9,
-      "assists": 3,
-      "penalties": 2,
-      "playedMatches": 26
-    },
-    {
-      "name": "Ansu Fati",
-      "team": "AS Monaco FC",
-      "competition": "Ligue 1",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 9,
-      "assists": 0,
-      "penalties": 3,
-      "playedMatches": 23
-    },
-    {
       "name": "Ahmadou Bamba Dieng",
       "team": "FC Lorient",
       "competition": "Ligue 1",
@@ -1074,7 +1074,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 24
+      "playedMatches": 25
     },
     {
       "name": "Matias Fernandez-Pardo",
