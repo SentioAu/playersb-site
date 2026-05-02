@@ -124,6 +124,13 @@ async function main() {
 
     <section class="section">
       <div class="card">
+        <h2>Your watch-list</h2>
+        <div id="watchList"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
         <div class="search-row">
           <label style="flex:1;min-width:240px;">
             <span class="meta-text">Search players</span>

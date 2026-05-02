@@ -288,6 +288,100 @@ async function writeFileEnsuringDir(filePath, content) {
   await fs.writeFile(filePath, content, "utf-8");
 }
 
+// Compute position-peer benchmark caps so each player's per-90 rates can
+// render as a visual bar relative to the best-in-position. Falls back to a
+// global max when a position has fewer than 3 peers.
+function buildBenchmarks(players) {
+  const byPos = new Map();
+  let globalCap = { g90: 0, a90: 0, s90: 0, sot90: 0 };
+  for (const p of players) {
+    const minutes = num(p?.minutes);
+    if (minutes < 90) continue;
+    const stats = {
+      g90: per90(num(p?.goals), minutes),
+      a90: per90(num(p?.assists), minutes),
+      s90: per90(num(p?.shots), minutes),
+      sot90: per90(num(p?.shotsOnTarget), minutes),
+    };
+    for (const k of Object.keys(stats)) {
+      if (stats[k] > globalCap[k]) globalCap[k] = stats[k];
+    }
+    const positions = String(p?.position || "")
+      .split("/")
+      .map((x) => x.trim())
+      .filter(Boolean);
+    for (const pos of positions) {
+      const slot = byPos.get(pos) || { g90: 0, a90: 0, s90: 0, sot90: 0, count: 0 };
+      slot.count += 1;
+      for (const k of ["g90", "a90", "s90", "sot90"]) {
+        if (stats[k] > slot[k]) slot[k] = stats[k];
+      }
+      byPos.set(pos, slot);
+    }
+  }
+  return { byPos, globalCap };
+}
+
+function pickPeerCap(player, benchmarks) {
+  const positions = String(player?.position || "")
+    .split("/")
+    .map((x) => x.trim())
+    .filter(Boolean);
+  for (const pos of positions) {
+    const slot = benchmarks.byPos.get(pos);
+    if (slot && slot.count >= 3) return { source: `${pos} peers`, cap: slot };
+  }
+  return { source: "all players", cap: benchmarks.globalCap };
+}
+
+function renderStatBars(player, benchmarks) {
+  const minutes = num(player?.minutes);
+  if (minutes <= 0) return "";
+
+  const rates = {
+    "Goals / 90": per90(num(player?.goals), minutes),
+    "Assists / 90": per90(num(player?.assists), minutes),
+    "Shots / 90": per90(num(player?.shots), minutes),
+    "Shots on tgt / 90": per90(num(player?.shotsOnTarget), minutes),
+  };
+  const { source, cap } = pickPeerCap(player, benchmarks);
+  const capMap = {
+    "Goals / 90": cap.g90,
+    "Assists / 90": cap.a90,
+    "Shots / 90": cap.s90,
+    "Shots on tgt / 90": cap.sot90,
+  };
+
+  const rows = Object.entries(rates).map(([label, value]) => {
+    const ceiling = capMap[label] || 0;
+    const pct = ceiling > 0 ? Math.min(100, (value / ceiling) * 100) : 0;
+    const valueLabel = `${value.toFixed(2)} / ${ceiling.toFixed(2)}`;
+    return `<div class="bar-row">
+      <div class="bar-label">${escHtml(label)}</div>
+      <div class="bar-track" role="meter" aria-valuemin="0" aria-valuemax="${ceiling.toFixed(2)}" aria-valuenow="${value.toFixed(2)}" aria-label="${escHtml(label)} ${value.toFixed(2)} of ${ceiling.toFixed(2)}">
+        <div class="bar-fill" style="width:${pct.toFixed(1)}%"></div>
+      </div>
+      <div class="bar-value">${escHtml(valueLabel)}</div>
+    </div>`;
+  });
+
+  return `<section class="section">
+    <div class="card">
+      <h2>Per-90 vs ${escHtml(source)}</h2>
+      <p class="meta-text">Bars compare this player's per-90 output to the best in their position cohort.</p>
+      <div class="bar-list">${rows.join("\n")}</div>
+    </div>
+  </section>`;
+}
+
+// Persistent watch-list trigger. Behaviour wired in /assets/js/site.js.
+function renderWatchButton(player) {
+  const id = sanitizeId(player?.id);
+  const name = escHtml(safeStr(player?.name) || "Player");
+  if (!id) return "";
+  return `<button type="button" class="button small secondary watch-toggle" data-watch-id="${id}" data-watch-name="${name}" aria-pressed="false">☆ Save to watch-list</button>`;
+}
+
 async function main() {
   // Ensure required files exist
   await fs.access(DATA_PATH);
@@ -308,6 +402,8 @@ async function main() {
   if (!players.length) throw new Error("data/players.json has no players[] array.");
 
   await fs.mkdir(OUT_DIR, { recursive: true });
+
+  const benchmarks = buildBenchmarks(players);
 
   let count = 0;
 
@@ -368,6 +464,8 @@ async function main() {
       "{{R3_ID}}": r3[0],
       "{{R3_NAME}}": r3[1],
       "{{SIMILAR_PLAYERS}}": similarMarkup,
+      "{{STAT_BARS}}": renderStatBars(p, benchmarks),
+      "{{WATCH_BUTTON}}": renderWatchButton(p),
       "{{PLAYER_JSON_LD}}": playerJsonLd,
       "{{BREADCRUMBS}}": breadcrumbHtml,
       "{{BREADCRUMB_JSON_LD}}": breadcrumbJsonLd,
