@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T12:51:07.600Z",
+  "generatedAt": "2026-05-02T13:00:51.989Z",
   "status": "warning",
   "thresholds": {
     "minPlayers": 24,
@@ -19,32 +19,32 @@
   "datasets": {
     "fixtures": {
       "count": 0,
-      "generatedAt": "2026-05-02T07:47:39.610Z",
-      "staleHours": 5.06,
+      "generatedAt": "2026-05-02T13:00:41.426Z",
+      "staleHours": 0,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
           "status": "ok",
-          "fetchedAt": "2026-05-02T07:47:39.610Z"
+          "fetchedAt": "2026-05-02T13:00:41.426Z"
         }
       }
     },
     "standings": {
       "count": 0,
-      "generatedAt": "2026-05-02T07:47:39.610Z",
-      "staleHours": 5.06,
+      "generatedAt": "2026-05-02T13:00:41.426Z",
+      "staleHours": 0,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
           "status": "ok",
-          "fetchedAt": "2026-05-02T07:47:39.610Z"
+          "fetchedAt": "2026-05-02T13:00:41.426Z"
         }
       }
     },
     "fantasy": {
       "count": 80,
       "generatedAt": "2026-03-07T07:13:03.301Z",
-      "staleHours": 1349.63,
+      "staleHours": 1349.8,
       "freshness": "warn",
       "sourceStatus": {
         "footballData": {
@@ -60,18 +60,18 @@
     },
     "archive": {
       "count": 85,
-      "generatedAt": "2026-05-02T07:47:51.500Z",
-      "staleHours": 5.05,
+      "generatedAt": "2026-05-02T13:00:48.679Z",
+      "staleHours": 0,
       "freshness": "ok",
       "sourceStatus": {
         "statsbomb": {
           "status": "ok",
-          "fetchedAt": "2026-05-02T07:47:50.424Z",
+          "fetchedAt": "2026-05-02T13:00:48.168Z",
           "competitionCount": 75
         },
         "openfootball": {
           "status": "ok",
-          "fetchedAt": "2026-05-02T07:47:51.469Z",
+          "fetchedAt": "2026-05-02T13:00:48.670Z",
           "sourceCount": 10
         }
       }

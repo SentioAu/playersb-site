@@ -1,17 +1,522 @@
 {
-  "generatedAt": "2026-05-02T07:47:51.549Z",
+  "generatedAt": "2026-05-02T13:00:48.737Z",
   "sourceStatus": {
     "seed": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "wikipedia": {
       "status": "partial",
-      "fetchedAt": "2026-05-02T07:47:51.549Z",
-      "message": "Wikipedia summaries success=30, failed=50"
+      "fetchedAt": "2026-05-02T13:00:48.737Z",
+      "message": "Wikipedia summaries success=31, failed=49"
     }
   },
   "players": {
+    "achraf-hakimi": {
+      "id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "dateOfBirth": "1998-11-04",
+      "age": 27,
+      "nationality": "Morocco",
+      "heightCm": 181,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Real Madrid",
+        "Borussia Dortmund",
+        "Inter",
+        "Paris Saint-Germain"
+      ],
+      "careerGoals": 50,
+      "careerAssists": 75,
+      "careerAppearances": 430,
+      "summary": "Achraf Hakimi Mouh is a professional footballer who plays as a right-back forLigue 1 club Paris Saint-Germain and captains the Morocco national team. He is widely regarded as one of the best right-backs in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Achraf_Hakimi",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "adrien-rabiot": {
+      "id": "adrien-rabiot",
+      "name": "Adrien Rabiot",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Adrien Thibault Marie Rabiot is a French professional footballer who plays as a midfielder for Serie A club AC Milan and the France national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Adrien_Rabiot",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "alessandro-bastoni": {
+      "id": "alessandro-bastoni",
+      "name": "Alessandro Bastoni",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Alessandro Bastoni is an Italian professional footballer who plays primarily as a centre-back for Serie A club Inter Milan and the Italy national team. Regarded as one of the best centre-backs in the world, he is best known for his passing, speed and versatility.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alessandro_Bastoni",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "alexis-mac-allister": {
+      "id": "alexis-mac-allister",
+      "name": "Alexis Mac Allister",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Alexis Mac Allister is an Argentine professional footballer who plays as a midfielder for Premier League club Liverpool and the Argentina national team. Considered as one of the best midfielders in the world, he is known for his passing, shooting ability, and versatility.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alexis_Mac_Allister",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "alvaro-morata": {
+      "id": "alvaro-morata",
+      "name": "Álvaro Morata",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Álvaro Borja Morata Martín is a Spanish professional footballer who plays as a forward for Serie A club Como, on loan from AC Milan. He also captains the Spain national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/%C3%81lvaro_Morata",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "amine-harit": {
+      "id": "amine-harit",
+      "name": "Amine Harit",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Amine Harit is a professional footballer who plays as an attacking midfielder for Süper Lig club İstanbul Başakşehir, on loan from Marseille. Born in France, he plays for the Morocco national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Amine_Harit",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "angel-di-maria": {
+      "id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Ángel Fabián Di María is an Argentine professional footballer who plays as a right winger for Argentine Primera División club Rosario Central. Widely regarded as one of the greatest Argentine players of all time and one of the greatest wingers of his generation, Di María is known for his dribbling ability, playmaking, rapid pace and agility. He is the all-time Argentine top assist provider in the UEFA Champions League (41) and ranks second overall.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "antoine-griezmann": {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "dateOfBirth": "1991-03-21",
+      "age": 35,
+      "nationality": "France",
+      "heightCm": 176,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Real Sociedad",
+        "Atlético Madrid",
+        "Barcelona"
+      ],
+      "careerGoals": 270,
+      "careerAssists": 110,
+      "careerAppearances": 760,
+      "summary": "Antoine Griezmann is a French professional footballer who plays as a forward or attacking midfielder for La Liga club Atlético Madrid. Considered one of the best players of his generation, he is primarily known for his versatility, game intelligence, attacking output, and off-ball attributes. He will formally join Major League Soccer club Orlando City in July 2026.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Antoine_Griezmann",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "antonio-rudiger": {
+      "id": "antonio-rudiger",
+      "name": "Antonio Rüdiger",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Antonio Rüdiger is a German professional footballer who plays as a centre-back for La Liga club Real Madrid and the Germany national team. He is known for his aggressive playing style, speed, tackling ability and strong aerial presence.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Antonio_R%C3%BCdiger",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "antonio-silva": {
+      "id": "antonio-silva",
+      "name": "António Silva",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Antonio Silva, António Silva or Antônio Silva can refer to:António Costa Silva, Portuguese businessman and politician\nAntónio Silva (actor) (1886–1971), Portuguese actor\nAntônio Silva, Brazilian football manager\nAntônio Silva (fighter), Brazilian mixed martial artist\nAntónio Silva (footballer), Portuguese football defender\nAntônio Tenório Silva, Brazilian judoka\nToñito Silva, Puerto Rican politician\nTony Silva, American aviculturist",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Antonio_Silva",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "bremer": {
+      "id": "bremer",
+      "name": "Bremer",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Bremer may refer to:",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bremer",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "brian-brobbey": {
+      "id": "brian-brobbey",
+      "name": "Brian Brobbey",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "bruno-fernandes": {
+      "id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "dateOfBirth": "1994-09-08",
+      "age": 31,
+      "nationality": "Portugal",
+      "heightCm": 179,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Novara",
+        "Udinese",
+        "Sampdoria",
+        "Sporting CP",
+        "Manchester United"
+      ],
+      "careerGoals": 190,
+      "careerAssists": 140,
+      "careerAppearances": 620,
+      "summary": "Bruno Miguel Borges Fernandes is a Portuguese professional footballer who plays as an attacking midfielder for Premier League club Manchester United, which he captains, and the Portugal national team. Known for his creative output, vision, goal scoring ability, and passing, he is widely regarded as one of the best attacking midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "bukayo-saka": {
+      "id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "dateOfBirth": "2001-09-05",
+      "age": 24,
+      "nationality": "England",
+      "heightCm": 178,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Arsenal"
+      ],
+      "careerGoals": 95,
+      "careerAssists": 85,
+      "careerAppearances": 340,
+      "summary": "Bukayo Ayoyinka Temidayo Moses Saka is an English professional footballer who plays as a right winger for Premier League club Arsenal and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bukayo_Saka",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "chancel-mbemba": {
+      "id": "chancel-mbemba",
+      "name": "Chancel Mbemba",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "christian-pulisic": {
+      "id": "christian-pulisic",
+      "name": "Christian Pulisic",
+      "dateOfBirth": "1998-09-18",
+      "age": 27,
+      "nationality": "United States",
+      "heightCm": 178,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Borussia Dortmund",
+        "Chelsea",
+        "AC Milan"
+      ],
+      "careerGoals": 95,
+      "careerAssists": 70,
+      "careerAppearances": 430,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "christopher-nkunku": {
+      "id": "christopher-nkunku",
+      "name": "Christopher Nkunku",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "cole-palmer": {
+      "id": "cole-palmer",
+      "name": "Cole Palmer",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Cole Jermaine Palmer is an English professional footballer who plays as an attacking midfielder or winger for Premier League club Chelsea and the England national team. Known for his dribbling and passing ability, he is widely regarded as one of the best attacking midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cole_Palmer",
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "cristian-romero": {
+      "id": "cristian-romero",
+      "name": "Cristian Romero",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Cristian Gabriel Romero is an Argentine professional footballer who plays as a centre-back for Premier League club Tottenham Hotspur, which he captains, and the Argentina national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cristian_Romero",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "darwin-nunez": {
+      "id": "darwin-nunez",
+      "name": "Darwin Núñez",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Darwin Gabriel Núñez Ribeiro is a Uruguayan professional footballer who plays as a forward for Saudi Pro League club Al-Hilal and the Uruguay national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Darwin_N%C3%BA%C3%B1ez",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "declan-rice": {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Declan Rice is an English professional footballer who plays as a defensive midfielder for Premier League club Arsenal and the England national team. Known for his versatility, stamina, ball-carrying and tackling, he is considered one of the best midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Declan_Rice",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "dejan-kulusevski": {
+      "id": "dejan-kulusevski",
+      "name": "Dejan Kulusevski",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Dejan Kuluševski is a Swedish professional footballer who plays as an attacking midfielder or winger for Premier League club Tottenham Hotspur and the Sweden national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Dejan_Kulusevski",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "dusan-vlahovic": {
+      "id": "dusan-vlahovic",
+      "name": "Dušan Vlahović",
+      "dateOfBirth": "2000-01-28",
+      "age": 26,
+      "nationality": "Serbia",
+      "heightCm": 190,
+      "preferredFoot": "Left",
+      "previousTeams": [
+        "Partizan",
+        "Fiorentina",
+        "Juventus"
+      ],
+      "careerGoals": 140,
+      "careerAssists": 25,
+      "careerAppearances": 320,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "enzo-fernandez": {
+      "id": "enzo-fernandez",
+      "name": "Enzo Fernández",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
     "erling-haaland": {
       "id": "erling-haaland",
       "name": "Erling Haaland",
@@ -35,11 +540,11 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "phil-foden": {
-      "id": "phil-foden",
-      "name": "Phil Foden",
+    "federico-chiesa": {
+      "id": "federico-chiesa",
+      "name": "Federico Chiesa",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -49,37 +554,433 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": "Philip Walter Foden is an English professional footballer who plays as a midfielder for Premier League club Manchester City and the England national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Phil_Foden",
+      "summary": null,
+      "wikiUrl": null,
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "rodri": {
-      "id": "rodri",
-      "name": "Rodri",
-      "dateOfBirth": "1996-06-22",
-      "age": 29,
-      "nationality": "Spain",
-      "heightCm": 191,
+    "federico-valverde": {
+      "id": "federico-valverde",
+      "name": "Federico Valverde",
+      "dateOfBirth": "1998-07-22",
+      "age": 27,
+      "nationality": "Uruguay",
+      "heightCm": 182,
       "preferredFoot": "Right",
       "previousTeams": [
-        "Villarreal",
-        "Atlético Madrid",
-        "Manchester City"
+        "Peñarol",
+        "Real Madrid Castilla",
+        "Deportivo La Coruña",
+        "Real Madrid"
       ],
       "careerGoals": 45,
-      "careerAssists": 35,
-      "careerAppearances": 430,
-      "summary": "Rodri may refer to:Rodri (1934–2022), full name Francisco Rodríguez García, Spanish football defender for Barcelona\nRodri, full name Antonio Rodríguez Saravia, Spanish football forward and manager for Gimnàstic etc\nRodri, full name Rodrigo Gimeno Molina, Spanish football midfielder for Castellón\nRodri, full name Sergio Rodríguez García, Spanish football defender for Spartak Moscow, Eupen etc\nRodri, full name Rodrigo Ángel Gil Torres, Spanish football midfielder for Elche, Orihuela etc\nRodri, full name Rodrigo Suárez Peña, Spanish football midfielder for Betis\nRodri, full name Rodrigo Ríos Lozano, Spanish football forward for Córdoba, Oviedo etc\nRodri, full name Rodrigo Hernández Cascante, Spanish football midfielder for Villarreal, Manchester City, 2024 Ballon d'Or winner\nRodri, full name Rodrigo Sánchez Rodríguez, Spanish football midfielder for Betis\nRodri, full name Rodrigo Suárez Marcos, Spanish football defender for Cultural Leonesa\nRodri, full name Rodrigo Alonso Martín, Spanish football midfielder for Villarreal",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Rodri",
+      "careerAssists": 45,
+      "careerAppearances": 350,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "florian-wirtz": {
+      "id": "florian-wirtz",
+      "name": "Florian Wirtz",
+      "dateOfBirth": "2003-05-03",
+      "age": 22,
+      "nationality": "Germany",
+      "heightCm": 176,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Bayer Leverkusen"
+      ],
+      "careerGoals": 55,
+      "careerAssists": 65,
+      "careerAppearances": 220,
+      "summary": "Florian Richard Wirtz is a German professional footballer who plays as an attacking midfielder or left midfielder for Premier League club Liverpool and the Germany national team. He is widely regarded as one of the best attacking midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Florian_Wirtz",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "giovanni-di-lorenzo": {
+      "id": "giovanni-di-lorenzo",
+      "name": "Giovanni Di Lorenzo",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "granit-xhaka": {
+      "id": "granit-xhaka",
+      "name": "Granit Xhaka",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "hakan-calhanoglu": {
+      "id": "hakan-calhanoglu",
+      "name": "Hakan Çalhanoğlu",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Hakan Çalhanoğlu is a professional footballer who plays as a midfielder for Serie A club Inter Milan. Born in Germany, he plays for and captains the Turkey national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu",
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "harry-kane": {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "dateOfBirth": "1993-07-28",
+      "age": 32,
+      "nationality": "England",
+      "heightCm": 188,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Tottenham",
+        "Bayern Munich"
+      ],
+      "careerGoals": 380,
+      "careerAssists": 90,
+      "careerAppearances": 600,
+      "summary": "Harry Edward Kane is an English professional footballer who plays as a striker for Bundesliga club Bayern Munich and captains the England national team. Regarded as one of the best strikers of his generation, he is Tottenham Hotspur's all-time top goalscorer (280), England's all-time top goalscorer (78), and the highest-scoring English player in the UEFA Champions League (53). He is also the Premier League's second-highest all-time goalscorer (213) and the 10th highest goalscorer for Bayern Munich (139). He has scored over 500 career goals for club and country.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Harry_Kane",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "heung-min-son": {
+      "id": "heung-min-son",
+      "name": "Heung-Min Son",
+      "dateOfBirth": "1992-07-08",
+      "age": 33,
+      "nationality": "South Korea",
+      "heightCm": 183,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Hamburg",
+        "Bayer Leverkusen",
+        "Tottenham"
+      ],
+      "careerGoals": 230,
+      "careerAssists": 120,
+      "careerAppearances": 620,
+      "summary": "Son Heung-min is a South Korean professional footballer who plays as a left winger for Major League Soccer club Los Angeles FC and captains the South Korea national team. Known for his speed, finishing, two-footedness, and ability to link play, he is the top Asian goalscorer in both Premier League and UEFA Champions League history, and is widely regarded as the greatest Asian player of all time.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Son_Heung-min",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "jamal-musiala": {
+      "id": "jamal-musiala",
+      "name": "Jamal Musiala",
+      "dateOfBirth": "2003-02-26",
+      "age": 23,
+      "nationality": "Germany",
+      "heightCm": 184,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Bayern Munich"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 45,
+      "careerAppearances": 250,
+      "summary": "Jamal Musiala is a German professional footballer who plays as an attacking midfielder for Bundesliga club Bayern Munich and the Germany national team. Widely regarded as one of the best attacking midfielders in the world, Musiala is known for his dribbling, passing, goal threat, and technical skills, and is nicknamed \"Bambi\" for his close-control dribbling.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jamal_Musiala",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "james-maddison": {
+      "id": "james-maddison",
+      "name": "James Maddison",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "jan-oblak": {
+      "id": "jan-oblak",
+      "name": "Jan Oblak",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "jeremie-frimpong": {
+      "id": "jeremie-frimpong",
+      "name": "Jeremie Frimpong",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "joao-mario": {
+      "id": "joao-mario",
+      "name": "João Mário",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "jordan-veretout": {
+      "id": "jordan-veretout",
+      "name": "Jordan Veretout",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "jorrel-hato": {
+      "id": "jorrel-hato",
+      "name": "Jorrel Hato",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "joshua-kimmich": {
+      "id": "joshua-kimmich",
+      "name": "Joshua Kimmich",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "jude-bellingham": {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "dateOfBirth": "2003-06-29",
+      "age": 22,
+      "nationality": "England",
+      "heightCm": 186,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Birmingham City",
+        "Borussia Dortmund",
+        "Real Madrid"
+      ],
+      "careerGoals": 70,
+      "careerAssists": 45,
+      "careerAppearances": 260,
+      "summary": "Jude Victor William Bellingham is an English professional footballer who plays as a midfielder for La Liga club Real Madrid and the England national team. Known for his exceptional work rate, playmaking ability, interceptions and fast dribbling, he is widely regarded as one of the best players in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "julian-brandt": {
+      "id": "julian-brandt",
+      "name": "Julian Brandt",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Julian Brandt is a German professional footballer who plays as a left winger or attacking midfielder for Bundesliga club Borussia Dortmund and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Julian_Brandt",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "kai-havertz": {
+      "id": "kai-havertz",
+      "name": "Kai Havertz",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Kai Lukas Havertz is a German professional footballer who plays as a forward or attacking midfielder for Premier League club Arsenal and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kai_Havertz",
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "karim-adeyemi": {
+      "id": "karim-adeyemi",
+      "name": "Karim Adeyemi",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Karim David Adeyemi is a German professional footballer who plays as a winger or forward for Bundesliga club Borussia Dortmund and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Karim_Adeyemi",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "kenneth-taylor": {
+      "id": "kenneth-taylor",
+      "name": "Kenneth Taylor",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": null,
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "kevin-de-bruyne": {
       "id": "kevin-de-bruyne",
@@ -103,122 +1004,166 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Kevin_De_Bruyne",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "mohamed-salah": {
-      "id": "mohamed-salah",
-      "name": "Mohamed Salah",
-      "dateOfBirth": "1992-06-15",
-      "age": 33,
-      "nationality": "Egypt",
-      "heightCm": 175,
-      "preferredFoot": "Left",
-      "previousTeams": [
-        "Basel",
-        "Chelsea",
-        "Fiorentina",
-        "Roma",
-        "Liverpool"
-      ],
-      "careerGoals": 290,
-      "careerAssists": 130,
-      "careerAppearances": 560,
-      "summary": "Mohamed Salah Hamed Mahrous Ghaly is an Egyptian professional footballer who plays as a right winger or right midfielder for Premier League club Liverpool and captains the Egypt national team. He is widely regarded as one of the best players of his generation and one of the greatest wingers of all time. Dubbed the \"Egyptian King\", he is the all-time top foreign goalscorer in the Premier League and the all-time top African goalscorer in the UEFA Champions League.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Mohamed_Salah",
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "darwin-nunez": {
-      "id": "darwin-nunez",
-      "name": "Darwin Núñez",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Darwin Gabriel Núñez Ribeiro is a Uruguayan professional footballer who plays as a forward for Saudi Pro League club Al-Hilal and the Uruguay national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Darwin_N%C3%BA%C3%B1ez",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "alexis-mac-allister": {
-      "id": "alexis-mac-allister",
-      "name": "Alexis Mac Allister",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Alexis Mac Allister is an Argentine professional footballer who plays as a midfielder for Premier League club Liverpool and the Argentina national team. Considered as one of the best midfielders in the world, he is known for his passing, shooting ability, and versatility.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Alexis_Mac_Allister",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "virgil-van-dijk": {
-      "id": "virgil-van-dijk",
-      "name": "Virgil van Dijk",
-      "dateOfBirth": "1991-07-08",
-      "age": 34,
-      "nationality": "Netherlands",
-      "heightCm": 193,
+    "khvicha-kvaratskhelia": {
+      "id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "dateOfBirth": "2001-02-12",
+      "age": 25,
+      "nationality": "Georgia",
+      "heightCm": 183,
       "preferredFoot": "Right",
       "previousTeams": [
-        "Groningen",
-        "Celtic",
-        "Southampton",
-        "Liverpool"
+        "Dinamo Tbilisi",
+        "Rubin Kazan",
+        "Dinamo Batumi",
+        "Napoli"
       ],
-      "careerGoals": 60,
-      "careerAssists": 20,
-      "careerAppearances": 520,
-      "summary": "Virgil van Dijk is a Dutch professional footballer who plays as a centre-back for and captains both Premier League club Liverpool and the Netherlands national team. Widely regarded as one of the best defenders of his generation, and one of the greatest defenders in Premier League history, he is known for his strength, leadership, speed and aerial ability.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "careerGoals": 70,
+      "careerAssists": 65,
+      "careerAppearances": 270,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "kylian-mbappe": {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "dateOfBirth": "1998-12-20",
+      "age": 27,
+      "nationality": "France",
+      "heightCm": 178,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Monaco",
+        "Paris Saint-Germain"
+      ],
+      "careerGoals": 330,
+      "careerAssists": 120,
+      "careerAppearances": 430,
+      "summary": "Kylian Mbappé Lottin is a French professional footballer who plays as a forward for La Liga club Real Madrid and captains the France national team. He is known for his pace, dribbling, and clinical finishing, and is widely regarded as one of the best players in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "bukayo-saka": {
-      "id": "bukayo-saka",
-      "name": "Bukayo Saka",
-      "dateOfBirth": "2001-09-05",
-      "age": 24,
-      "nationality": "England",
-      "heightCm": 178,
+    "lamine-yamal": {
+      "id": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Lamine Yamal Nasraoui Ebana is a Spanish professional footballer who plays as a right winger or right midfielder for La Liga club Barcelona and the Spain national team. Known for his flair, chance creation, and long-distance curling goals, he is widely regarded as one of the best players in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Lamine_Yamal",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "lautaro-martinez": {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "dateOfBirth": "1997-08-22",
+      "age": 28,
+      "nationality": "Argentina",
+      "heightCm": 174,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Racing Club",
+        "Inter"
+      ],
+      "careerGoals": 180,
+      "careerAssists": 45,
+      "careerAppearances": 410,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "leroy-sane": {
+      "id": "leroy-sane",
+      "name": "Leroy Sané",
+      "dateOfBirth": "1996-01-11",
+      "age": 30,
+      "nationality": "Germany",
+      "heightCm": 183,
       "preferredFoot": "Left",
       "previousTeams": [
-        "Arsenal"
+        "Schalke 04",
+        "Manchester City",
+        "Bayern Munich"
       ],
-      "careerGoals": 95,
-      "careerAssists": 85,
-      "careerAppearances": 340,
-      "summary": "Bukayo Ayoyinka Temidayo Moses Saka is an English professional footballer who plays as a right winger for Premier League club Arsenal and the England national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Bukayo_Saka",
+      "careerGoals": 145,
+      "careerAssists": 130,
+      "careerAppearances": 500,
+      "summary": null,
+      "wikiUrl": null,
       "sources": {
         "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "lisandro-martinez": {
+      "id": "lisandro-martinez",
+      "name": "Lisandro Martínez",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Lisandro Martínez is an Argentine professional footballer who plays primarily as a centre-back for Premier League club Manchester United and the Argentina national team. Nicknamed \"The Butcher\", he is known for his aggressive style of play and accurate long passes from the back.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Lisandro_Mart%C3%ADnez",
+      "sources": {
+        "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "marcus-rashford": {
+      "id": "marcus-rashford",
+      "name": "Marcus Rashford",
+      "dateOfBirth": "1997-10-31",
+      "age": 28,
+      "nationality": "England",
+      "heightCm": 185,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Manchester United"
+      ],
+      "careerGoals": 150,
+      "careerAssists": 80,
+      "careerAppearances": 450,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "martin-degaard": {
       "id": "martin-degaard",
@@ -245,11 +1190,11 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "declan-rice": {
-      "id": "declan-rice",
-      "name": "Declan Rice",
+    "mats-hummels": {
+      "id": "mats-hummels",
+      "name": "Mats Hummels",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -259,17 +1204,17 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": "Declan Rice is an English professional footballer who plays as a defensive midfielder for Premier League club Arsenal and the England national team. Known for his versatility, stamina, ball-carrying and tackling, he is considered one of the best midfielders in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Declan_Rice",
+      "summary": null,
+      "wikiUrl": null,
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "kai-havertz": {
-      "id": "kai-havertz",
-      "name": "Kai Havertz",
+    "mike-maignan": {
+      "id": "mike-maignan",
+      "name": "Mike Maignan",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -279,41 +1224,86 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": "Kai Lukas Havertz is a German professional footballer who plays as a forward or attacking midfielder for Premier League club Arsenal and the Germany national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Kai_Havertz",
+      "summary": null,
+      "wikiUrl": null,
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "heung-min-son": {
-      "id": "heung-min-son",
-      "name": "Heung-Min Son",
-      "dateOfBirth": "1992-07-08",
+    "mohamed-salah": {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "dateOfBirth": "1992-06-15",
       "age": 33,
-      "nationality": "South Korea",
-      "heightCm": 183,
-      "preferredFoot": "Right",
+      "nationality": "Egypt",
+      "heightCm": 175,
+      "preferredFoot": "Left",
       "previousTeams": [
-        "Hamburg",
-        "Bayer Leverkusen",
-        "Tottenham"
+        "Basel",
+        "Chelsea",
+        "Fiorentina",
+        "Roma",
+        "Liverpool"
       ],
-      "careerGoals": 230,
-      "careerAssists": 120,
-      "careerAppearances": 620,
-      "summary": "Son Heung-min is a South Korean professional footballer who plays as a left winger for Major League Soccer club Los Angeles FC and captains the South Korea national team. Known for his speed, finishing, two-footedness, and ability to link play, he is the top Asian goalscorer in both Premier League and UEFA Champions League history, and is widely regarded as the greatest Asian player of all time.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Son_Heung-min",
+      "careerGoals": 290,
+      "careerAssists": 130,
+      "careerAppearances": 560,
+      "summary": "Mohamed Salah Hamed Mahrous Ghaly is an Egyptian professional footballer who plays as a right winger or right midfielder for Premier League club Liverpool and captains the Egypt national team. He is widely regarded as one of the best players of his generation and one of the greatest wingers of all time. Dubbed the \"Egyptian King\", he is the all-time top foreign goalscorer in the Premier League and the all-time top African goalscorer in the UEFA Champions League.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mohamed_Salah",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "james-maddison": {
-      "id": "james-maddison",
-      "name": "James Maddison",
+    "niclas-fullkrug": {
+      "id": "niclas-fullkrug",
+      "name": "Niclas Füllkrug",
+      "dateOfBirth": null,
+      "age": null,
+      "nationality": null,
+      "heightCm": null,
+      "preferredFoot": null,
+      "previousTeams": [],
+      "careerGoals": null,
+      "careerAssists": null,
+      "careerAppearances": null,
+      "summary": "Niclas Füllkrug is a German professional footballer who plays as a forward for Serie A club AC Milan, on loan from Premier League club West Ham United. He also plays for the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Niclas_F%C3%BCllkrug",
+      "sources": {
+        "seed": null,
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "nicolo-barella": {
+      "id": "nicolo-barella",
+      "name": "Nicolò Barella",
+      "dateOfBirth": "1997-02-07",
+      "age": 29,
+      "nationality": "Italy",
+      "heightCm": 172,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Cagliari",
+        "Inter"
+      ],
+      "careerGoals": 45,
+      "careerAssists": 65,
+      "careerAppearances": 470,
+      "summary": null,
+      "wikiUrl": null,
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": null
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "ousmane-dembele": {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -329,11 +1319,34 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "dejan-kulusevski": {
-      "id": "dejan-kulusevski",
-      "name": "Dejan Kulusevski",
+    "pedri": {
+      "id": "pedri",
+      "name": "Pedri",
+      "dateOfBirth": "2002-11-25",
+      "age": 23,
+      "nationality": "Spain",
+      "heightCm": 174,
+      "preferredFoot": "Right",
+      "previousTeams": [
+        "Las Palmas",
+        "Barcelona"
+      ],
+      "careerGoals": 30,
+      "careerAssists": 25,
+      "careerAppearances": 220,
+      "summary": "Pedro González López, more commonly known as Pedri, is a Spanish professional footballer who plays as a midfielder for La Liga club Barcelona and the Spain national team. Considered as one of the best midfielders in the world, he is known for his ball control, dribbling, passing and playmaking.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Pedri",
+      "sources": {
+        "seed": "player-enrichment-seed",
+        "wikipedia": "wikipedia"
+      },
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
+    },
+    "phil-foden": {
+      "id": "phil-foden",
+      "name": "Phil Foden",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -343,57 +1356,17 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": "Dejan Kuluševski is a Swedish professional footballer who plays as an attacking midfielder or winger for Premier League club Tottenham Hotspur and the Sweden national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Dejan_Kulusevski",
+      "summary": "Philip Walter Foden is an English professional footballer who plays as a midfielder for Premier League club Manchester City and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Phil_Foden",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "cristian-romero": {
-      "id": "cristian-romero",
-      "name": "Cristian Romero",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Cristian Gabriel Romero is an Argentine professional footballer who plays as a centre-back for Premier League club Tottenham Hotspur, which he captains, and the Argentina national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Cristian_Romero",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "cole-palmer": {
-      "id": "cole-palmer",
-      "name": "Cole Palmer",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Cole Jermaine Palmer is an English professional footballer who plays as an attacking midfielder or winger for Premier League club Chelsea and the England national team. Known for his dribbling and passing ability, he is widely regarded as one of the best attacking midfielders in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Cole_Palmer",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "enzo-fernandez": {
-      "id": "enzo-fernandez",
-      "name": "Enzo Fernández",
+    "pierre-emerick-aubameyang": {
+      "id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -409,31 +1382,11 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "reece-james": {
-      "id": "reece-james",
-      "name": "Reece James",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Reece Lewis James is an English professional footballer who plays as a right-back for Premier League club Chelsea, which he captains, and the England national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Reece_James",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "christopher-nkunku": {
-      "id": "christopher-nkunku",
-      "name": "Christopher Nkunku",
+    "rafa-silva": {
+      "id": "rafa-silva",
+      "name": "Rafa Silva",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -449,33 +1402,31 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "bruno-fernandes": {
-      "id": "bruno-fernandes",
-      "name": "Bruno Fernandes",
-      "dateOfBirth": "1994-09-08",
-      "age": 31,
+    "rafael-leao": {
+      "id": "rafael-leao",
+      "name": "Rafael Leão",
+      "dateOfBirth": "1999-06-10",
+      "age": 26,
       "nationality": "Portugal",
-      "heightCm": 179,
+      "heightCm": 188,
       "preferredFoot": "Right",
       "previousTeams": [
-        "Novara",
-        "Udinese",
-        "Sampdoria",
         "Sporting CP",
-        "Manchester United"
+        "Lille",
+        "AC Milan"
       ],
-      "careerGoals": 190,
-      "careerAssists": 140,
-      "careerAppearances": 620,
-      "summary": "Bruno Miguel Borges Fernandes is a Portuguese professional footballer who plays as an attacking midfielder for Premier League club Manchester United, which he captains, and the Portugal national team. Known for his creative output, vision, goal scoring ability, and passing, he is widely regarded as one of the best attacking midfielders in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
+      "careerGoals": 110,
+      "careerAssists": 75,
+      "careerAppearances": 390,
+      "summary": null,
+      "wikiUrl": null,
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "rasmus-h-jlund": {
       "id": "rasmus-h-jlund",
@@ -495,33 +1446,11 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "marcus-rashford": {
-      "id": "marcus-rashford",
-      "name": "Marcus Rashford",
-      "dateOfBirth": "1997-10-31",
-      "age": 28,
-      "nationality": "England",
-      "heightCm": 185,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Manchester United"
-      ],
-      "careerGoals": 150,
-      "careerAssists": 80,
-      "careerAppearances": 450,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "lisandro-martinez": {
-      "id": "lisandro-martinez",
-      "name": "Lisandro Martínez",
+    "reece-james": {
+      "id": "reece-james",
+      "name": "Reece James",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -531,105 +1460,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Reece Lewis James is an English professional footballer who plays as a right-back for Premier League club Chelsea, which he captains, and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Reece_James",
       "sources": {
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "jude-bellingham": {
-      "id": "jude-bellingham",
-      "name": "Jude Bellingham",
-      "dateOfBirth": "2003-06-29",
-      "age": 22,
-      "nationality": "England",
-      "heightCm": 186,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Birmingham City",
-        "Borussia Dortmund",
-        "Real Madrid"
-      ],
-      "careerGoals": 70,
-      "careerAssists": 45,
-      "careerAppearances": 260,
-      "summary": "Jude Victor William Bellingham is an English professional footballer who plays as a midfielder for La Liga club Real Madrid and the England national team. Known for his exceptional work rate, playmaking ability, interceptions and fast dribbling, he is widely regarded as one of the best players in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Jude_Bellingham",
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "vinicius-junior": {
-      "id": "vinicius-junior",
-      "name": "Vinícius Júnior",
-      "dateOfBirth": "2000-07-12",
-      "age": 25,
-      "nationality": "Brazil",
-      "heightCm": 176,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Flamengo",
-        "Real Madrid"
-      ],
-      "careerGoals": 120,
-      "careerAssists": 95,
-      "careerAppearances": 380,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "federico-valverde": {
-      "id": "federico-valverde",
-      "name": "Federico Valverde",
-      "dateOfBirth": "1998-07-22",
-      "age": 27,
-      "nationality": "Uruguay",
-      "heightCm": 182,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Peñarol",
-        "Real Madrid Castilla",
-        "Deportivo La Coruña",
-        "Real Madrid"
-      ],
-      "careerGoals": 45,
-      "careerAssists": 45,
-      "careerAppearances": 350,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "antonio-rudiger": {
-      "id": "antonio-rudiger",
-      "name": "Antonio Rüdiger",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "robert-lewandowski": {
       "id": "robert-lewandowski",
@@ -654,114 +1491,31 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "pedri": {
-      "id": "pedri",
-      "name": "Pedri",
-      "dateOfBirth": "2002-11-25",
-      "age": 23,
+    "rodri": {
+      "id": "rodri",
+      "name": "Rodri",
+      "dateOfBirth": "1996-06-22",
+      "age": 29,
       "nationality": "Spain",
-      "heightCm": 174,
+      "heightCm": 191,
       "preferredFoot": "Right",
       "previousTeams": [
-        "Las Palmas",
-        "Barcelona"
+        "Villarreal",
+        "Atlético Madrid",
+        "Manchester City"
       ],
-      "careerGoals": 30,
-      "careerAssists": 25,
-      "careerAppearances": 220,
-      "summary": null,
-      "wikiUrl": null,
+      "careerGoals": 45,
+      "careerAssists": 35,
+      "careerAppearances": 430,
+      "summary": "Rodri may refer to:Rodri (1934–2022), full name Francisco Rodríguez García, Spanish football defender for Barcelona\nRodri, full name Antonio Rodríguez Saravia, Spanish football forward and manager for Gimnàstic etc\nRodri, full name Rodrigo Gimeno Molina, Spanish football midfielder for Castellón\nRodri, full name Sergio Rodríguez García, Spanish football defender for Spartak Moscow, Eupen etc\nRodri, full name Rodrigo Ángel Gil Torres, Spanish football midfielder for Elche, Orihuela etc\nRodri, full name Rodrigo Suárez Peña, Spanish football midfielder for Betis\nRodri, full name Rodrigo Ríos Lozano, Spanish football forward for Córdoba, Oviedo etc\nRodri, full name Rodrigo Hernández Cascante, Spanish football midfielder for Villarreal, Manchester City, 2024 Ballon d'Or winner\nRodri, full name Rodrigo Sánchez Rodríguez, Spanish football midfielder for Betis\nRodri, full name Rodrigo Suárez Marcos, Spanish football defender for Cultural Leonesa\nRodri, full name Rodrigo Alonso Martín, Spanish football midfielder for Villarreal",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Rodri",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "lamine-yamal": {
-      "id": "lamine-yamal",
-      "name": "Lamine Yamal",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Lamine Yamal Nasraoui Ebana is a Spanish professional footballer who plays as a right winger or right midfielder for La Liga club Barcelona and the Spain national team. Known for his flair, chance creation, and long-distance curling goals, he is widely regarded as one of the best players in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Lamine_Yamal",
-      "sources": {
-        "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "ronald-araujo": {
-      "id": "ronald-araujo",
-      "name": "Ronald Araújo",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "antoine-griezmann": {
-      "id": "antoine-griezmann",
-      "name": "Antoine Griezmann",
-      "dateOfBirth": "1991-03-21",
-      "age": 35,
-      "nationality": "France",
-      "heightCm": 176,
-      "preferredFoot": "Left",
-      "previousTeams": [
-        "Real Sociedad",
-        "Atlético Madrid",
-        "Barcelona"
-      ],
-      "careerGoals": 270,
-      "careerAssists": 110,
-      "careerAppearances": 760,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "alvaro-morata": {
-      "id": "alvaro-morata",
-      "name": "Álvaro Morata",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "rodrigo-de-paul": {
       "id": "rodrigo-de-paul",
@@ -781,11 +1535,11 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "jan-oblak": {
-      "id": "jan-oblak",
-      "name": "Jan Oblak",
+    "ronald-araujo": {
+      "id": "ronald-araujo",
+      "name": "Ronald Araújo",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -801,80 +1555,11 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "harry-kane": {
-      "id": "harry-kane",
-      "name": "Harry Kane",
-      "dateOfBirth": "1993-07-28",
-      "age": 32,
-      "nationality": "England",
-      "heightCm": 188,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Tottenham",
-        "Bayern Munich"
-      ],
-      "careerGoals": 380,
-      "careerAssists": 90,
-      "careerAppearances": 600,
-      "summary": "Harry Edward Kane is an English professional footballer who plays as a striker for Bundesliga club Bayern Munich and captains the England national team. Regarded as one of the best strikers of his generation, he is Tottenham Hotspur's all-time top goalscorer (280), England's all-time top goalscorer (78), and the highest-scoring English player in the UEFA Champions League (53). He is also the Premier League's second-highest all-time goalscorer (213) and the 10th highest goalscorer for Bayern Munich (139). He has scored over 500 career goals for club and country.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Harry_Kane",
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "jamal-musiala": {
-      "id": "jamal-musiala",
-      "name": "Jamal Musiala",
-      "dateOfBirth": "2003-02-26",
-      "age": 23,
-      "nationality": "Germany",
-      "heightCm": 184,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Bayern Munich"
-      ],
-      "careerGoals": 70,
-      "careerAssists": 45,
-      "careerAppearances": 250,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "leroy-sane": {
-      "id": "leroy-sane",
-      "name": "Leroy Sané",
-      "dateOfBirth": "1996-01-11",
-      "age": 30,
-      "nationality": "Germany",
-      "heightCm": 183,
-      "preferredFoot": "Left",
-      "previousTeams": [
-        "Schalke 04",
-        "Manchester City",
-        "Bayern Munich"
-      ],
-      "careerGoals": 145,
-      "careerAssists": 130,
-      "careerAppearances": 500,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "joshua-kimmich": {
-      "id": "joshua-kimmich",
-      "name": "Joshua Kimmich",
+    "stanislav-lobotka": {
+      "id": "stanislav-lobotka",
+      "name": "Stanislav Lobotka",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -890,71 +1575,11 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "julian-brandt": {
-      "id": "julian-brandt",
-      "name": "Julian Brandt",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Julian Brandt is a German professional footballer who plays as a left winger or attacking midfielder for Bundesliga club Borussia Dortmund and the Germany national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Julian_Brandt",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "niclas-fullkrug": {
-      "id": "niclas-fullkrug",
-      "name": "Niclas Füllkrug",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Niclas Füllkrug is a German professional footballer who plays as a forward for Serie A club AC Milan, on loan from Premier League club West Ham United. He also plays for the Germany national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Niclas_F%C3%BCllkrug",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "karim-adeyemi": {
-      "id": "karim-adeyemi",
-      "name": "Karim Adeyemi",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Karim David Adeyemi is a German professional footballer who plays as a winger or forward for Bundesliga club Borussia Dortmund and the Germany national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Karim_Adeyemi",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "mats-hummels": {
-      "id": "mats-hummels",
-      "name": "Mats Hummels",
+    "steven-bergwijn": {
+      "id": "steven-bergwijn",
+      "name": "Steven Bergwijn",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -970,367 +1595,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "florian-wirtz": {
-      "id": "florian-wirtz",
-      "name": "Florian Wirtz",
-      "dateOfBirth": "2003-05-03",
-      "age": 22,
-      "nationality": "Germany",
-      "heightCm": 176,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Bayer Leverkusen"
-      ],
-      "careerGoals": 55,
-      "careerAssists": 65,
-      "careerAppearances": 220,
-      "summary": "Florian Richard Wirtz is a German professional footballer who plays as an attacking midfielder or left midfielder for Premier League club Liverpool and the Germany national team. He is widely regarded as one of the best attacking midfielders in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Florian_Wirtz",
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "victor-boniface": {
-      "id": "victor-boniface",
-      "name": "Victor Boniface",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "granit-xhaka": {
-      "id": "granit-xhaka",
-      "name": "Granit Xhaka",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "jeremie-frimpong": {
-      "id": "jeremie-frimpong",
-      "name": "Jeremie Frimpong",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "kylian-mbappe": {
-      "id": "kylian-mbappe",
-      "name": "Kylian Mbappé",
-      "dateOfBirth": "1998-12-20",
-      "age": 27,
-      "nationality": "France",
-      "heightCm": 178,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Monaco",
-        "Paris Saint-Germain"
-      ],
-      "careerGoals": 330,
-      "careerAssists": 120,
-      "careerAppearances": 430,
-      "summary": "Kylian Mbappé Lottin is a French professional footballer who plays as a forward for La Liga club Real Madrid and captains the France national team. He is known for his pace, dribbling, and clinical finishing, and is widely regarded as one of the best players in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "ousmane-dembele": {
-      "id": "ousmane-dembele",
-      "name": "Ousmane Dembélé",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "achraf-hakimi": {
-      "id": "achraf-hakimi",
-      "name": "Achraf Hakimi",
-      "dateOfBirth": "1998-11-04",
-      "age": 27,
-      "nationality": "Morocco",
-      "heightCm": 181,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Real Madrid",
-        "Borussia Dortmund",
-        "Inter",
-        "Paris Saint-Germain"
-      ],
-      "careerGoals": 50,
-      "careerAssists": 75,
-      "careerAppearances": 430,
-      "summary": "Achraf Hakimi Mouh is a professional footballer who plays as a right-back forLigue 1 club Paris Saint-Germain and captains the Morocco national team. He is widely regarded as one of the best right-backs in the world.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Achraf_Hakimi",
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "vitinha": {
-      "id": "vitinha",
-      "name": "Vitinha",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "pierre-emerick-aubameyang": {
-      "id": "pierre-emerick-aubameyang",
-      "name": "Pierre-Emerick Aubameyang",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "amine-harit": {
-      "id": "amine-harit",
-      "name": "Amine Harit",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "jordan-veretout": {
-      "id": "jordan-veretout",
-      "name": "Jordan Veretout",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "chancel-mbemba": {
-      "id": "chancel-mbemba",
-      "name": "Chancel Mbemba",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "lautaro-martinez": {
-      "id": "lautaro-martinez",
-      "name": "Lautaro Martínez",
-      "dateOfBirth": "1997-08-22",
-      "age": 28,
-      "nationality": "Argentina",
-      "heightCm": 174,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Racing Club",
-        "Inter"
-      ],
-      "careerGoals": 180,
-      "careerAssists": 45,
-      "careerAppearances": 410,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "nicolo-barella": {
-      "id": "nicolo-barella",
-      "name": "Nicolò Barella",
-      "dateOfBirth": "1997-02-07",
-      "age": 29,
-      "nationality": "Italy",
-      "heightCm": 172,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Cagliari",
-        "Inter"
-      ],
-      "careerGoals": 45,
-      "careerAssists": 65,
-      "careerAppearances": 470,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "hakan-calhanoglu": {
-      "id": "hakan-calhanoglu",
-      "name": "Hakan Çalhanoğlu",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Hakan Çalhanoğlu is a professional footballer who plays as a midfielder for Serie A club Inter Milan. Born in Germany, he plays for and captains the Turkey national team.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "alessandro-bastoni": {
-      "id": "alessandro-bastoni",
-      "name": "Alessandro Bastoni",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "rafael-leao": {
-      "id": "rafael-leao",
-      "name": "Rafael Leão",
-      "dateOfBirth": "1999-06-10",
-      "age": 26,
-      "nationality": "Portugal",
-      "heightCm": 188,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Sporting CP",
-        "Lille",
-        "AC Milan"
-      ],
-      "careerGoals": 110,
-      "careerAssists": 75,
-      "careerAppearances": 390,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "theo-hernandez": {
       "id": "theo-hernandez",
@@ -1356,35 +1621,11 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "christian-pulisic": {
-      "id": "christian-pulisic",
-      "name": "Christian Pulisic",
-      "dateOfBirth": "1998-09-18",
-      "age": 27,
-      "nationality": "United States",
-      "heightCm": 178,
-      "preferredFoot": "Right",
-      "previousTeams": [
-        "Borussia Dortmund",
-        "Chelsea",
-        "AC Milan"
-      ],
-      "careerGoals": 95,
-      "careerAssists": 70,
-      "careerAppearances": 430,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": "player-enrichment-seed",
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "mike-maignan": {
-      "id": "mike-maignan",
-      "name": "Mike Maignan",
+    "victor-boniface": {
+      "id": "victor-boniface",
+      "name": "Victor Boniface",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -1400,7 +1641,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
     "victor-osimhen": {
       "id": "victor-osimhen",
@@ -1425,100 +1666,59 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "khvicha-kvaratskhelia": {
-      "id": "khvicha-kvaratskhelia",
-      "name": "Khvicha Kvaratskhelia",
-      "dateOfBirth": "2001-02-12",
+    "vinicius-junior": {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "dateOfBirth": "2000-07-12",
       "age": 25,
-      "nationality": "Georgia",
-      "heightCm": 183,
+      "nationality": "Brazil",
+      "heightCm": 176,
       "preferredFoot": "Right",
       "previousTeams": [
-        "Dinamo Tbilisi",
-        "Rubin Kazan",
-        "Dinamo Batumi",
-        "Napoli"
+        "Flamengo",
+        "Real Madrid"
       ],
-      "careerGoals": 70,
-      "careerAssists": 65,
-      "careerAppearances": 270,
+      "careerGoals": 120,
+      "careerAssists": 95,
+      "careerAppearances": 380,
       "summary": null,
       "wikiUrl": null,
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "stanislav-lobotka": {
-      "id": "stanislav-lobotka",
-      "name": "Stanislav Lobotka",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "giovanni-di-lorenzo": {
-      "id": "giovanni-di-lorenzo",
-      "name": "Giovanni Di Lorenzo",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "dusan-vlahovic": {
-      "id": "dusan-vlahovic",
-      "name": "Dušan Vlahović",
-      "dateOfBirth": "2000-01-28",
-      "age": 26,
-      "nationality": "Serbia",
-      "heightCm": 190,
-      "preferredFoot": "Left",
+    "virgil-van-dijk": {
+      "id": "virgil-van-dijk",
+      "name": "Virgil van Dijk",
+      "dateOfBirth": "1991-07-08",
+      "age": 34,
+      "nationality": "Netherlands",
+      "heightCm": 193,
+      "preferredFoot": "Right",
       "previousTeams": [
-        "Partizan",
-        "Fiorentina",
-        "Juventus"
+        "Groningen",
+        "Celtic",
+        "Southampton",
+        "Liverpool"
       ],
-      "careerGoals": 140,
-      "careerAssists": 25,
-      "careerAppearances": 320,
-      "summary": null,
-      "wikiUrl": null,
+      "careerGoals": 60,
+      "careerAssists": 20,
+      "careerAppearances": 520,
+      "summary": "Virgil van Dijk is a Dutch professional footballer who plays as a centre-back for and captains both Premier League club Liverpool and the Netherlands national team. Widely regarded as one of the best defenders of his generation, and one of the greatest defenders in Premier League history, he is known for his strength, leadership, speed and aerial ability.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     },
-    "federico-chiesa": {
-      "id": "federico-chiesa",
-      "name": "Federico Chiesa",
+    "vitinha": {
+      "id": "vitinha",
+      "name": "Vitinha",
       "dateOfBirth": null,
       "age": null,
       "nationality": null,
@@ -1534,207 +1734,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "adrien-rabiot": {
-      "id": "adrien-rabiot",
-      "name": "Adrien Rabiot",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "bremer": {
-      "id": "bremer",
-      "name": "Bremer",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "angel-di-maria": {
-      "id": "angel-di-maria",
-      "name": "Ángel Di María",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": "Ángel Fabián Di María is an Argentine professional footballer who plays as a right winger for Argentine Primera División club Rosario Central. Widely regarded as one of the greatest Argentine players of all time and one of the greatest wingers of his generation, Di María is known for his dribbling ability, playmaking, rapid pace and agility. He is the all-time Argentine top assist provider in the UEFA Champions League (41) and ranks second overall.",
-      "wikiUrl": "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa",
-      "sources": {
-        "seed": null,
-        "wikipedia": "wikipedia"
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "joao-mario": {
-      "id": "joao-mario",
-      "name": "João Mário",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "rafa-silva": {
-      "id": "rafa-silva",
-      "name": "Rafa Silva",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "antonio-silva": {
-      "id": "antonio-silva",
-      "name": "António Silva",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "brian-brobbey": {
-      "id": "brian-brobbey",
-      "name": "Brian Brobbey",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "steven-bergwijn": {
-      "id": "steven-bergwijn",
-      "name": "Steven Bergwijn",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "kenneth-taylor": {
-      "id": "kenneth-taylor",
-      "name": "Kenneth Taylor",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
-    },
-    "jorrel-hato": {
-      "id": "jorrel-hato",
-      "name": "Jorrel Hato",
-      "dateOfBirth": null,
-      "age": null,
-      "nationality": null,
-      "heightCm": null,
-      "preferredFoot": null,
-      "previousTeams": [],
-      "careerGoals": null,
-      "careerAssists": null,
-      "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
-      "sources": {
-        "seed": null,
-        "wikipedia": null
-      },
-      "fetchedAt": "2026-05-02T07:47:51.549Z"
+      "fetchedAt": "2026-05-02T13:00:48.737Z"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-02T07:47:39.609Z",
-  "generatedAt": "2026-05-02T07:47:39.610Z",
+  "updatedAt": "2026-05-02T13:00:41.426Z",
+  "generatedAt": "2026-05-02T13:00:41.426Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T07:47:39.610Z"
+      "fetchedAt": "2026-05-02T13:00:41.426Z"
     }
   },
   "players": [
@@ -29,7 +29,7 @@
       "goals": 21,
       "assists": 1,
       "penalties": 7,
-      "playedMatches": 34
+      "playedMatches": 35
     },
     {
       "name": "Antoine Semenyo",
@@ -62,7 +62,7 @@
       "goals": 13,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Morgan Gibbs-White",
@@ -183,7 +183,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 2,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Bryan Mbeumo",
@@ -384,6 +384,17 @@
       "playedMatches": 31
     },
     {
+      "name": "Georges Mikautadze",
+      "team": "Villarreal CF",
+      "competition": "La Liga",
+      "nationality": "Georgia",
+      "position": "",
+      "goals": 10,
+      "assists": 5,
+      "penalties": 0,
+      "playedMatches": 30
+    },
+    {
       "name": "Hugo Duro",
       "team": "Valencia CF",
       "competition": "La Liga",
@@ -417,17 +428,6 @@
       "playedMatches": 27
     },
     {
-      "name": "Georges Mikautadze",
-      "team": "Villarreal CF",
-      "competition": "La Liga",
-      "nationality": "Georgia",
-      "position": "",
-      "goals": 9,
-      "assists": 5,
-      "penalties": 0,
-      "playedMatches": 29
-    },
-    {
       "name": "Alberto Moleiro",
       "team": "Villarreal CF",
       "competition": "La Liga",
@@ -436,7 +436,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Federico Viñas",
@@ -557,7 +557,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Nikola Krstović",
@@ -667,7 +667,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 5,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Harry Kane",
@@ -678,7 +678,7 @@
       "goals": 33,
       "assists": 4,
       "penalties": 10,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Deniz Undav",
@@ -689,7 +689,7 @@
       "goals": 18,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Luis Díaz",
@@ -700,7 +700,7 @@
       "goals": 15,
       "assists": 11,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Sehrou Guirassy",
@@ -722,7 +722,7 @@
       "goals": 13,
       "assists": 18,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Patrik Schick",
@@ -755,7 +755,7 @@
       "goals": 12,
       "assists": 5,
       "penalties": 5,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Yan Diomandé",
@@ -788,7 +788,7 @@
       "goals": 11,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Haris Tabaković",
@@ -810,7 +810,7 @@
       "goals": 10,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Ermedin Demirovic",
@@ -821,7 +821,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 22
+      "playedMatches": 23
     },
     {
       "name": "Jens Stage",
@@ -832,7 +832,7 @@
       "goals": 10,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Jonathan Burkardt",
@@ -843,7 +843,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 2,
-      "playedMatches": 19
+      "playedMatches": 20
     },
     {
       "name": "Romulo Cruz",
@@ -876,7 +876,7 @@
       "goals": 8,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 26
+      "playedMatches": 27
     },
     {
       "name": "Mohammed Amoura",
@@ -920,7 +920,7 @@
       "goals": 15,
       "assists": 7,
       "penalties": 5,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Folarin Balogun",
@@ -1019,7 +1019,7 @@
       "goals": 9,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Ilan Kebbal",
