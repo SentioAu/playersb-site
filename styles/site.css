@@ -845,3 +845,62 @@ table caption {
   font-size: 12px;
   color: var(--muted);
 }
+
+/* === Sortable table headers ============================================== */
+.data-table.sortable thead th.sortable-h {
+  cursor: pointer;
+  user-select: none;
+}
+.data-table.sortable thead th.sortable-h:hover,
+.data-table.sortable thead th.sortable-h:focus-visible {
+  color: var(--text);
+}
+.data-table.sortable thead th.sortable-h::after {
+  content: " ↕";
+  opacity: 0.4;
+  font-size: 11px;
+}
+.data-table.sortable thead th[aria-sort="ascending"]::after  { content: " ↑"; opacity: 1; color: var(--accent); }
+.data-table.sortable thead th[aria-sort="descending"]::after { content: " ↓"; opacity: 1; color: var(--accent); }
+
+/* === Live fixture flash =================================================== */
+@keyframes fixtureFlashAnim {
+  0%   { background: var(--accent-soft); }
+  100% { background: transparent; }
+}
+.fixture-flash {
+  animation: fixtureFlashAnim 2.4s ease-out;
+}
+
+/* === Glossary cross-links + permalinks ==================================== */
+.glossary-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+.glossary-link:hover,
+.glossary-link:focus-visible {
+  text-decoration-style: solid;
+}
+.glossary-permalink {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.7em;
+  margin-left: 4px;
+  opacity: 0.5;
+}
+.glossary-item:hover .glossary-permalink,
+.glossary-permalink:focus-visible {
+  opacity: 1;
+}
+.glossary-item:target {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Manchester City players | PlayersB — The Players Book</title>
+  <title>Manchester City squad & stats | PlayersB — The Players Book</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Browse PlayersB player profiles for Manchester City." />
+  <meta name="description" content="Squad totals, sortable roster, league position, and fixtures for Manchester City on PlayersB." />
   <link rel="canonical" href="https://playersb.com/teams/manchester-city/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,16 +18,16 @@
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
-  <meta property="og:title" content="Manchester City players | PlayersB" />
-  <meta property="og:description" content="Browse PlayersB player profiles for Manchester City." />
+  <meta property="og:title" content="Manchester City squad & stats | PlayersB" />
+  <meta property="og:description" content="Squad totals, sortable roster, league position, and fixtures for Manchester City on PlayersB." />
   <meta property="og:url" content="https://playersb.com/teams/manchester-city/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Manchester City players | PlayersB" />
-  <meta name="twitter:description" content="Browse PlayersB player profiles for Manchester City." />
+  <meta name="twitter:title" content="Manchester City squad & stats | PlayersB" />
+  <meta name="twitter:description" content="Squad totals, sortable roster, league position, and fixtures for Manchester City on PlayersB." />
   <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
@@ -119,36 +119,116 @@
     <section class="hero">
         <span class="pill">Team</span>
         <h1>Manchester City</h1>
-        <p class="lead">Players and comparisons for Manchester City.</p>
+        <p class="lead">Squad totals, roster, fixtures, and league position for Manchester City.</p>
         <div class="button-row">
           <a class="button" href="/players/">Browse all players</a>
           <a class="button secondary" href="/teams/">All teams</a>
+          <a class="button secondary" href="/compare/">Open Compare</a>
         </div>
       </section>
 
       <section class="section">
-        <div class="card">
-          <ul class="player-list">
-            <li class="player-item">
-            <a class="player-name" href="/players/erling-haaland/">Erling Haaland</a>
-            <div class="player-meta">ST · Manchester City</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/kevin-de-bruyne/">Kevin De Bruyne</a>
-            <div class="player-meta">CB · Manchester City</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/phil-foden/">Phil Foden</a>
-            <div class="player-meta">RW · Manchester City</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/rodri/">Rodri</a>
-            <div class="player-meta">CM · Manchester City</div>
-          </li>
-          </ul>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>League position</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-label">Competition</div><div class="stat-value">Premier League</div></div>
+        <div class="stat"><div class="stat-label">Position</div><div class="stat-value">#2</div></div>
+        <div class="stat"><div class="stat-label">Points</div><div class="stat-value">70</div></div>
+        <div class="stat"><div class="stat-label">GD</div><div class="stat-value">37</div></div>
+        <div class="stat"><div class="stat-label">W-D-L</div><div class="stat-value">21-7-5</div></div>
+        <div class="stat"><div class="stat-label">Form</div><div class="stat-value">—</div></div>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Squad totals</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-label">Players tracked</div><div class="stat-value">4</div></div>
+        <div class="stat"><div class="stat-label">Total minutes</div><div class="stat-value">5,120</div></div>
+        <div class="stat"><div class="stat-label">Total goals</div><div class="stat-value">24</div></div>
+        <div class="stat"><div class="stat-label">Total assists</div><div class="stat-value">14</div></div>
+      </div>
+      <p class="meta-text">Aggregates across 4 player profiles currently on PlayersB. Numbers reflect the latest season available in the dataset.</p>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Roster <span class="meta-text">(click any column to sort)</span></h3>
+      <div class="table-scroll">
+        <table class="data-table sortable" data-sortable>
+          <caption class="visually-hidden">Manchester City roster</caption>
+          <thead>
+            <tr>
+              <th class="sortable-h" data-sort="text">Player</th>
+              <th class="sortable-h" data-sort="text">Pos</th>
+              <th class="sortable-h" data-sort="num">Min</th>
+              <th class="sortable-h" data-sort="num">G</th>
+              <th class="sortable-h" data-sort="num">A</th>
+              <th class="sortable-h" data-sort="num">Sh</th>
+              <th class="sortable-h" data-sort="num">G/90</th>
+              <th class="sortable-h" data-sort="num">A/90</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td class="team"><a href="/players/kevin-de-bruyne/">Kevin De Bruyne</a></td>
+          <td>CB</td>
+          <td data-sort-value="1460">1460</td>
+          <td data-sort-value="5">5</td>
+          <td data-sort-value="3">3</td>
+          <td data-sort-value="52">52</td>
+          <td data-sort-value="0.3082">0.31</td>
+          <td data-sort-value="0.1849">0.18</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/rodri/">Rodri</a></td>
+          <td>CM</td>
+          <td data-sort-value="1340">1340</td>
+          <td data-sort-value="5">5</td>
+          <td data-sort-value="3">3</td>
+          <td data-sort-value="48">48</td>
+          <td data-sort-value="0.3358">0.34</td>
+          <td data-sort-value="0.2015">0.20</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/phil-foden/">Phil Foden</a></td>
+          <td>RW</td>
+          <td data-sort-value="1220">1220</td>
+          <td data-sort-value="6">6</td>
+          <td data-sort-value="4">4</td>
+          <td data-sort-value="44">44</td>
+          <td data-sort-value="0.4426">0.44</td>
+          <td data-sort-value="0.2951">0.30</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/erling-haaland/">Erling Haaland</a></td>
+          <td>ST</td>
+          <td data-sort-value="1100">1100</td>
+          <td data-sort-value="8">8</td>
+          <td data-sort-value="4">4</td>
+          <td data-sort-value="39">39</td>
+          <td data-sort-value="0.6545">0.65</td>
+          <td data-sort-value="0.3273">0.33</td>
+        </tr></tbody>
+        </table>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-03-14 (A)</td><td>West Ham United FC</td><td><strong>1-1</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-03-17 (H)</td><td>Real Madrid CF</td><td><strong>1-2</strong></td><td class="meta-text">Champions League</td></tr><tr><td>2026-04-12 (A)</td><td>Chelsea FC</td><td><strong>0-3</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-04-19 (H)</td><td>Arsenal FC</td><td><strong>2-1</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-04-22 (A)</td><td>Burnley FC</td><td><strong>0-1</strong></td><td class="meta-text">Premier League</td></tr></tbody></table></div>
         </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-04 (A)</td><td>Everton FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-09 (H)</td><td>Brentford FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-13 (H)</td><td>Crystal Palace FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-19 (A)</td><td>AFC Bournemouth</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-24 (H)</td><td>Aston Villa FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
       </section>
-      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Manchester City","url":"https://playersb.com/teams/manchester-city/","member":[{"@type":"Person","name":"Erling Haaland","url":"https://playersb.com/players/erling-haaland/","jobTitle":"ST"},{"@type":"Person","name":"Kevin De Bruyne","url":"https://playersb.com/players/kevin-de-bruyne/","jobTitle":"CB"},{"@type":"Person","name":"Phil Foden","url":"https://playersb.com/players/phil-foden/","jobTitle":"RW"},{"@type":"Person","name":"Rodri","url":"https://playersb.com/players/rodri/","jobTitle":"CM"}]}</script>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Manchester City","url":"https://playersb.com/teams/manchester-city/","member":[{"@type":"Person","name":"Kevin De Bruyne","url":"https://playersb.com/players/kevin-de-bruyne/","jobTitle":"CB"},{"@type":"Person","name":"Rodri","url":"https://playersb.com/players/rodri/","jobTitle":"CM"},{"@type":"Person","name":"Phil Foden","url":"https://playersb.com/players/phil-foden/","jobTitle":"RW"},{"@type":"Person","name":"Erling Haaland","url":"https://playersb.com/players/erling-haaland/","jobTitle":"ST"}]}</script>
   </main>
 
   <footer class="site-footer">

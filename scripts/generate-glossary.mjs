@@ -55,15 +55,17 @@ async function main() {
 
   terms.sort((a, b) => a.term.localeCompare(b.term));
 
+  const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const listMarkup = terms
     .map((item) => {
+      const slug = slugify(item.term);
       const related = item.related
-        .map((term) => `<span class="pill">${escHtml(term)}</span>`)
+        .map((term) => `<a class="pill" href="#${slugify(term)}">${escHtml(term)}</a>`)
         .join(" ");
       const searchBlob = `${item.term} ${item.definition} ${(item.related || []).join(" ")}`.toLowerCase();
       return `
-        <div class="card glossary-item" data-search="${escHtml(searchBlob)}">
-          <h3>${escHtml(item.term)}</h3>
+        <div class="card glossary-item" id="${slug}" data-search="${escHtml(searchBlob)}">
+          <h3>${escHtml(item.term)} <a class="glossary-permalink" href="#${slug}" aria-label="Permalink for ${escHtml(item.term)}">#</a></h3>
           <p class="meta-text">${escHtml(item.definition)}</p>
           ${related ? `<div class="pill-row">${related}</div>` : ""}
         </div>
