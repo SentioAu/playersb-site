@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>UEFA Champions League standings | PlayersB — The Players Book</title>
+  <title>Champions League standings | PlayersB — The Players Book</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Latest standings and scorers for UEFA Champions League on PlayersB." />
+  <meta name="description" content="Latest standings and scorers for Champions League on PlayersB." />
   <link rel="canonical" href="https://playersb.com/competitions/cl/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,21 +12,22 @@
   <link rel="stylesheet" href="/styles/site.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
   <meta name="theme-color" content="#2563eb" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
-  <meta property="og:title" content="UEFA Champions League standings | PlayersB" />
-  <meta property="og:description" content="Latest standings and scorers for UEFA Champions League on PlayersB." />
+  <meta property="og:title" content="Champions League standings | PlayersB" />
+  <meta property="og:description" content="Latest standings and scorers for Champions League on PlayersB." />
   <meta property="og:url" content="https://playersb.com/competitions/cl/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="UEFA Champions League standings | PlayersB" />
-  <meta name="twitter:description" content="Latest standings and scorers for UEFA Champions League on PlayersB." />
+  <meta name="twitter:title" content="Champions League standings | PlayersB" />
+  <meta name="twitter:description" content="Latest standings and scorers for Champions League on PlayersB." />
   <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
@@ -42,6 +43,17 @@
       "query-input": "required name=search_term_string"
     }
   }
+  </script>
+
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
   </script>
 
   <!-- Google tag (gtag.js) -->
@@ -64,9 +76,13 @@
       send_page_view: true
     });
   </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
 <div class="page">
   <header class="site-header">
     <div class="container header-inner">
@@ -74,114 +90,675 @@
         <span class="brand-title">PlayersB</span>
         <span class="brand-subtitle">The Players Book</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/players/">Players</a>
-        <a class="nav-link" href="/compare/">Compare</a>
-        <a class="nav-link" href="/tools/">Tools</a>
-        <a class="nav-link" href="/learn/">Learn</a>
-        <a class="nav-link" href="/about/">About</a>
-        <a class="nav-link" href="/contact/">Contact</a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
+        <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
+        <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
+        <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
+        <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
       </nav>
-      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false">
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
         Dark mode
       </button>
-      <a class="button small" href="/compare/">Start comparing</a>
+      <a class="button small" href="/compare/" data-track-event="cta_click">Start comparing</a>
     </div>
   </header>
 
-  <main class="container main-content">
+  <main id="mainContent" class="container main-content" tabindex="-1">
     <section class="hero">
         <span class="pill">Competition</span>
-        <h1>UEFA Champions League</h1>
-        <p class="lead">Current standings and top scorers for UEFA Champions League.</p>
+        <h1>Champions League</h1>
+        <p class="lead">Live standings, top scorers, and fixtures for Champions League.</p>
         <div class="button-row">
           <a class="button" href="/competitions/">All competitions</a>
           <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/matches/">Live matches</a>
         </div>
       </section>
 
       <section class="section">
         
-      <div class="card" style="margin-top:16px;">
-        <h3>League phase</h3>
-        <ul class="player-list">
-          <li class="player-item">
-            <span class="player-name">Arsenal FC</span>
-            <div class="player-meta">#1 · 18 pts · GD 16</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">FC Bayern München</span>
-            <div class="player-meta">#2 · 15 pts · GD 11</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Paris Saint-Germain FC</span>
-            <div class="player-meta">#3 · 13 pts · GD 11</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Manchester City FC</span>
-            <div class="player-meta">#4 · 13 pts · GD 6</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Atalanta BC</span>
-            <div class="player-meta">#5 · 13 pts · GD 2</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">FC Internazionale Milano</span>
-            <div class="player-meta">#6 · 12 pts · GD 8</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Real Madrid CF</span>
-            <div class="player-meta">#7 · 12 pts · GD 6</div>
-          </li>
-<li class="player-item">
-            <span class="player-name">Club Atlético de Madrid</span>
-            <div class="player-meta">#8 · 12 pts · GD 3</div>
-          </li>
-        </ul>
+    <div class="card" style="margin-top:16px;">
+      <h3>Full table</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">League standings</caption>
+          <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>F:A</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Arsenal FC</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23:4</td>
+      <td>19</td>
+      <td class="pts">24</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">FC Bayern München</td>
+      <td>8</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>22:8</td>
+      <td>14</td>
+      <td class="pts">21</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Liverpool FC</td>
+      <td>8</td>
+      <td>6</td>
+      <td>0</td>
+      <td>2</td>
+      <td>20:8</td>
+      <td>12</td>
+      <td class="pts">18</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Tottenham Hotspur FC</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>17:7</td>
+      <td>10</td>
+      <td class="pts">17</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">FC Barcelona</td>
+      <td>8</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>22:14</td>
+      <td>8</td>
+      <td class="pts">16</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Chelsea FC</td>
+      <td>8</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>17:10</td>
+      <td>7</td>
+      <td class="pts">16</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Sporting Clube de Portugal</td>
+      <td>8</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>17:11</td>
+      <td>6</td>
+      <td class="pts">16</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Manchester City FC</td>
+      <td>8</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>15:9</td>
+      <td>6</td>
+      <td class="pts">16</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Real Madrid CF</td>
+      <td>8</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>21:12</td>
+      <td>9</td>
+      <td class="pts">15</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">FC Internazionale Milano</td>
+      <td>8</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>15:7</td>
+      <td>8</td>
+      <td class="pts">15</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Paris Saint-Germain FC</td>
+      <td>8</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>21:11</td>
+      <td>10</td>
+      <td class="pts">14</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Newcastle United FC</td>
+      <td>8</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>17:7</td>
+      <td>10</td>
+      <td class="pts">14</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Juventus FC</td>
+      <td>8</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>14:10</td>
+      <td>4</td>
+      <td class="pts">13</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Club Atlético de Madrid</td>
+      <td>8</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>17:15</td>
+      <td>2</td>
+      <td class="pts">13</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Atalanta BC</td>
+      <td>8</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>10:10</td>
+      <td>0</td>
+      <td class="pts">13</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Bayer 04 Leverkusen</td>
+      <td>8</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>13:14</td>
+      <td>-1</td>
+      <td class="pts">12</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Borussia Dortmund</td>
+      <td>8</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>19:17</td>
+      <td>2</td>
+      <td class="pts">11</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">PAE Olympiakos SFP</td>
+      <td>8</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>10:14</td>
+      <td>-4</td>
+      <td class="pts">11</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Club Brugge KV</td>
+      <td>8</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>15:17</td>
+      <td>-2</td>
+      <td class="pts">10</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Galatasaray SK</td>
+      <td>8</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>9:11</td>
+      <td>-2</td>
+      <td class="pts">10</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">21</td>
+      <td class="team">AS Monaco FC</td>
+      <td>8</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td>8:14</td>
+      <td>-6</td>
+      <td class="pts">10</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">22</td>
+      <td class="team">Qarabağ Ağdam FK</td>
+      <td>8</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>13:21</td>
+      <td>-8</td>
+      <td class="pts">10</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">23</td>
+      <td class="team">FK Bodø/Glimt</td>
+      <td>8</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>14:15</td>
+      <td>-1</td>
+      <td class="pts">9</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">24</td>
+      <td class="team">Sport Lisboa e Benfica</td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5</td>
+      <td>10:12</td>
+      <td>-2</td>
+      <td class="pts">9</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">25</td>
+      <td class="team">Olympique de Marseille</td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5</td>
+      <td>11:14</td>
+      <td>-3</td>
+      <td class="pts">9</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">26</td>
+      <td class="team">Paphos FC</td>
+      <td>8</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>8:11</td>
+      <td>-3</td>
+      <td class="pts">9</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">27</td>
+      <td class="team">Royale Union Saint-Gilloise</td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5</td>
+      <td>8:17</td>
+      <td>-9</td>
+      <td class="pts">9</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">28</td>
+      <td class="team">PSV</td>
+      <td>8</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>16:16</td>
+      <td>0</td>
+      <td class="pts">8</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">29</td>
+      <td class="team">Athletic Club</td>
+      <td>8</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>9:14</td>
+      <td>-5</td>
+      <td class="pts">8</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">30</td>
+      <td class="team">SSC Napoli</td>
+      <td>8</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>9:15</td>
+      <td>-6</td>
+      <td class="pts">8</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">31</td>
+      <td class="team">FC København</td>
+      <td>8</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>12:21</td>
+      <td>-9</td>
+      <td class="pts">8</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">32</td>
+      <td class="team">AFC Ajax</td>
+      <td>8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>6</td>
+      <td>8:21</td>
+      <td>-13</td>
+      <td class="pts">6</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">33</td>
+      <td class="team">Eintracht Frankfurt</td>
+      <td>8</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6</td>
+      <td>10:21</td>
+      <td>-11</td>
+      <td class="pts">4</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">34</td>
+      <td class="team">SK Slavia Praha</td>
+      <td>8</td>
+      <td>0</td>
+      <td>3</td>
+      <td>5</td>
+      <td>5:19</td>
+      <td>-14</td>
+      <td class="pts">3</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">35</td>
+      <td class="team">Villarreal CF</td>
+      <td>8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>7</td>
+      <td>5:18</td>
+      <td>-13</td>
+      <td class="pts">1</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">36</td>
+      <td class="team">FK Kairat</td>
+      <td>8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>7</td>
+      <td>7:22</td>
+      <td>-15</td>
+      <td class="pts">1</td>
+      <td class="form">—</td>
+    </tr></tbody>
+        </table>
       </div>
-    
+    </div>
         
     <div class="card" style="margin-top:16px;">
       <h3>Top scorers</h3>
-      <ul class="player-list">
-        <li class="player-item">
-          <span class="player-name">Kylian Mbappé</span>
-          <div class="player-meta">Real Madrid CF · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Erling Haaland</span>
-          <div class="player-meta">Manchester City FC · 6 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Victor Osimhen</span>
-          <div class="player-meta">Galatasaray SK · 6 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Martinelli</span>
-          <div class="player-meta">Arsenal FC · 5 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Harry Kane</span>
-          <div class="player-meta">FC Bayern München · 5 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Anthony Gordon</span>
-          <div class="player-meta">Newcastle United FC · 5 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Marcus Rashford</span>
-          <div class="player-meta">FC Barcelona · 4 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Julián Álvarez</span>
-          <div class="player-meta">Club Atlético de Madrid · 4 goals</div>
-        </li>
-      </ul>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">Top scorers</caption>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>G</th><th>A</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Kylian Mbappé</td>
+      <td>Real Madrid CF</td>
+      <td></td>
+      <td class="pts">15</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Harry Kane</td>
+      <td>FC Bayern München</td>
+      <td></td>
+      <td class="pts">13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Anthony Gordon</td>
+      <td>Newcastle United FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Julián Álvarez</td>
+      <td>Club Atlético de Madrid</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Khvicha Kvaratskhelia</td>
+      <td>Paris Saint-Germain FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Erling Haaland</td>
+      <td>Manchester City FC</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Luis Díaz</td>
+      <td>FC Bayern München</td>
+      <td></td>
+      <td class="pts">7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Victor Osimhen</td>
+      <td>Galatasaray SK</td>
+      <td></td>
+      <td class="pts">7</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Alexander Sørloth</td>
+      <td>Club Atlético de Madrid</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Fermín López</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Harvey Barnes</td>
+      <td>Newcastle United FC</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Jens Hauge</td>
+      <td>FK Bodø/Glimt</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Lamine Yamal</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Martinelli</td>
+      <td>Arsenal FC</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Ousmane Dembélé</td>
+      <td>Paris Saint-Germain FC</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Vitinha</td>
+      <td>Paris Saint-Germain FC</td>
+      <td></td>
+      <td class="pts">6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Camilo Durán</td>
+      <td>Qarabağ Ağdam FK</td>
+      <td></td>
+      <td class="pts">5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Gorka Guruzeta</td>
+      <td>Athletic Club</td>
+      <td></td>
+      <td class="pts">5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Marcus Rashford</td>
+      <td>FC Barcelona</td>
+      <td></td>
+      <td class="pts">5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Michael Olise</td>
+      <td>FC Bayern München</td>
+      <td></td>
+      <td class="pts">5</td>
+      <td>6</td>
+    </tr></tbody>
+        </table>
+      </div>
     </div>
-  
+        
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-04-14</td><td>Club Atlético de Madrid <strong>1-2</strong> FC Barcelona</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-15</td><td>FC Bayern München <strong>4-3</strong> Real Madrid CF</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-15</td><td>Arsenal FC <strong>0-0</strong> Sporting Clube de Portugal</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-28</td><td>Paris Saint-Germain FC <strong>5-4</strong> FC Bayern München</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-29</td><td>Club Atlético de Madrid <strong>1-1</strong> Arsenal FC</td><td class="meta-text">FINISHED</td></tr></tbody></table></div>
+        </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-05</td><td>Arsenal FC <strong>vs</strong> Club Atlético de Madrid</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-06</td><td>FC Bayern München <strong>vs</strong> Paris Saint-Germain FC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-30</td><td> <strong>vs</strong> </td><td class="meta-text">TIMED</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
       </section>
-      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"UEFA Champions League","sport":"Association Football","url":"https://playersb.com/competitions/cl/"}</script>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"Champions League","sport":"Association Football","url":"https://playersb.com/competitions/cl/"}</script>
   </main>
 
   <footer class="site-footer">
@@ -198,77 +775,5 @@
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    const storageKey = "playersb-theme";
-    const root = document.documentElement;
-    const stored = localStorage.getItem(storageKey);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = stored || (prefersDark ? "dark" : "light");
-
-    if (initialTheme === "dark") {
-      root.setAttribute("data-theme", "dark");
-    }
-
-    function track(eventName, params) {
-      if (typeof window.playersbTrack === "function") {
-        window.playersbTrack(eventName, params);
-      }
-    }
-
-    function updateButton(button) {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      button.textContent = isDark ? "Light mode" : "Dark mode";
-      button.setAttribute("aria-pressed", String(isDark));
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        updateButton(button);
-        button.addEventListener("click", () => {
-          const isDark = root.getAttribute("data-theme") === "dark";
-          const nextTheme = isDark ? "light" : "dark";
-          if (isDark) {
-            root.removeAttribute("data-theme");
-          } else {
-            root.setAttribute("data-theme", "dark");
-          }
-          localStorage.setItem(storageKey, nextTheme);
-          updateButton(button);
-          track("theme_toggle", { theme: nextTheme });
-        });
-      }
-
-      document.querySelectorAll("a[href]").forEach((anchor) => {
-        anchor.addEventListener("click", () => {
-          const href = anchor.getAttribute("href") || "";
-          const text = (anchor.textContent || "").trim().slice(0, 80);
-          const isOutbound = /^https?:\/\//i.test(href) && !href.includes(window.location.host);
-          const isNav = anchor.classList.contains("nav-link");
-          const isCta = anchor.classList.contains("button");
-
-          if (isOutbound) {
-            track("outbound_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isNav) {
-            track("nav_click", { destination: href, link_text: text });
-            return;
-          }
-
-          if (isCta) {
-            track("cta_click", { destination: href, link_text: text });
-          }
-        });
-      });
-
-      setTimeout(() => {
-        track("engaged_read", { engaged_seconds: 30 });
-      }, 30000);
-    });
-  })();
-</script>
 </body>
 </html>

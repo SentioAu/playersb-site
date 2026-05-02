@@ -119,10 +119,11 @@
     <section class="hero">
         <span class="pill">Competition</span>
         <h1>PlayersB Synthetic League</h1>
-        <p class="lead">Current standings and top scorers for PlayersB Synthetic League.</p>
+        <p class="lead">Live standings, top scorers, and fixtures for PlayersB Synthetic League.</p>
         <div class="button-row">
           <a class="button" href="/competitions/">All competitions</a>
           <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/matches/">Live matches</a>
         </div>
       </section>
 
@@ -131,42 +132,222 @@
         
     <div class="card" style="margin-top:16px;">
       <h3>Top scorers</h3>
-      <ul class="player-list">
-        <li class="player-item">
-          <span class="player-name">Darwin Núñez</span>
-          <div class="player-meta">Liverpool · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Declan Rice</span>
-          <div class="player-meta">Arsenal · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Jan Oblak</span>
-          <div class="player-meta">Atlético Madrid · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Julian Brandt</span>
-          <div class="player-meta">Borussia Dortmund · 9 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Cole Palmer</span>
-          <div class="player-meta">Chelsea · 8 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Cristian Romero</span>
-          <div class="player-meta">Tottenham · 8 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Granit Xhaka</span>
-          <div class="player-meta">Bayer Leverkusen · 8 goals</div>
-        </li>
-<li class="player-item">
-          <span class="player-name">Kai Havertz</span>
-          <div class="player-meta">Arsenal · 8 goals</div>
-        </li>
-      </ul>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">Top scorers</caption>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>G</th><th>A</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Darwin Núñez</td>
+      <td>Liverpool</td>
+      <td>AM</td>
+      <td class="pts">9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Declan Rice</td>
+      <td>Arsenal</td>
+      <td>CM</td>
+      <td class="pts">9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Jan Oblak</td>
+      <td>Atlético Madrid</td>
+      <td>CB</td>
+      <td class="pts">9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Julian Brandt</td>
+      <td>Borussia Dortmund</td>
+      <td>ST</td>
+      <td class="pts">9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Cole Palmer</td>
+      <td>Chelsea</td>
+      <td>ST</td>
+      <td class="pts">8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Cristian Romero</td>
+      <td>Tottenham</td>
+      <td>RB</td>
+      <td class="pts">8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Granit Xhaka</td>
+      <td>Bayer Leverkusen</td>
+      <td>DM</td>
+      <td class="pts">8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Kai Havertz</td>
+      <td>Arsenal</td>
+      <td>CB</td>
+      <td class="pts">8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Niclas Füllkrug</td>
+      <td>Borussia Dortmund</td>
+      <td>RW</td>
+      <td class="pts">8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Victor Boniface</td>
+      <td>Bayer Leverkusen</td>
+      <td>AM</td>
+      <td class="pts">8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Bruno Fernandes</td>
+      <td>Manchester United</td>
+      <td>LW</td>
+      <td class="pts">7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Enzo Fernández</td>
+      <td>Chelsea</td>
+      <td>RW</td>
+      <td class="pts">7</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Jeremie Frimpong</td>
+      <td>Bayer Leverkusen</td>
+      <td>RB</td>
+      <td class="pts">7</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Marcus Rashford</td>
+      <td>Manchester United</td>
+      <td>DM</td>
+      <td class="pts">7</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Rasmus Højlund</td>
+      <td>Manchester United</td>
+      <td>AM</td>
+      <td class="pts">7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Vinícius Júnior</td>
+      <td>Real Madrid</td>
+      <td>RW</td>
+      <td class="pts">7</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Antonio Rüdiger</td>
+      <td>Real Madrid</td>
+      <td>CB</td>
+      <td class="pts">6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Erling Haaland</td>
+      <td>Manchester City</td>
+      <td>ST</td>
+      <td class="pts">6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Federico Valverde</td>
+      <td>Real Madrid</td>
+      <td>CM</td>
+      <td class="pts">6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Lamine Yamal</td>
+      <td>Barcelona</td>
+      <td>DM</td>
+      <td class="pts">6</td>
+      <td>2</td>
+    </tr></tbody>
+        </table>
+      </div>
     </div>
-  
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Per-90 leaders (≥270 min)</h3>
+      <div class="card-grid" style="grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="card"><h4>Top G/90</h4><ul class="player-list">
+      <li class="player-item">
+        <a class="player-name" href="/players/vinicius-junior/">Vinícius Júnior</a>
+        <div class="player-meta">Real Madrid · 0.52 G/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/julian-brandt/">Julian Brandt</a>
+        <div class="player-meta">Borussia Dortmund · 0.51 G/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/declan-rice/">Declan Rice</a>
+        <div class="player-meta">Arsenal · 0.51 G/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/victor-boniface/">Victor Boniface</a>
+        <div class="player-meta">Bayer Leverkusen · 0.49 G/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/cristian-romero/">Cristian Romero</a>
+        <div class="player-meta">Tottenham · 0.49 G/90</div>
+      </li></ul></div><div class="card"><h4>Top A/90</h4><ul class="player-list">
+      <li class="player-item">
+        <a class="player-name" href="/players/julian-brandt/">Julian Brandt</a>
+        <div class="player-meta">Borussia Dortmund · 0.34 A/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/cole-palmer/">Cole Palmer</a>
+        <div class="player-meta">Chelsea · 0.34 A/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/robert-lewandowski/">Robert Lewandowski</a>
+        <div class="player-meta">Barcelona · 0.34 A/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/mohamed-salah/">Mohamed Salah</a>
+        <div class="player-meta">Liverpool · 0.34 A/90</div>
+      </li>
+      <li class="player-item">
+        <a class="player-name" href="/players/bruno-fernandes/">Bruno Fernandes</a>
+        <div class="player-meta">Manchester United · 0.34 A/90</div>
+      </li></ul></div>
+      </div>
+    </div>
+        
       </section>
       <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"PlayersB Synthetic League","sport":"Association Football","url":"https://playersb.com/competitions/synth/"}</script>
   </main>

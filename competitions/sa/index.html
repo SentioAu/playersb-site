@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Serie A standings | PlayersB — The Players Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Latest standings and scorers for Serie A on PlayersB." />
+  <link rel="canonical" href="https://playersb.com/competitions/sa/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles/site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="PlayersB Updates" href="/feed.xml" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PlayersB — The Players Book" />
+  <meta property="og:title" content="Serie A standings | PlayersB" />
+  <meta property="og:description" content="Latest standings and scorers for Serie A on PlayersB." />
+  <meta property="og:url" content="https://playersb.com/competitions/sa/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Serie A standings | PlayersB" />
+  <meta name="twitter:description" content="Latest standings and scorers for Serie A on PlayersB." />
+  <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
+
+  <!-- Structured Data (WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayersB — The Players Book",
+    "url": "https://playersb.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playersb.com/players/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Theme: applied synchronously to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem("playersb-theme");
+        var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (s === "dark" || (!s && d)) document.documentElement.setAttribute("data-theme", "dark");
+      } catch (_) {}
+    })();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5798TYENM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.playersbTrack = function (eventName, params) {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", eventName, Object.assign({
+        page_path: window.location.pathname,
+        page_title: document.title,
+      }, params || {}));
+    };
+
+    gtag('js', new Date());
+    gtag('config', 'G-D5798TYENM', {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      send_page_view: true
+    });
+  </script>
+
+  <!-- Shared client behaviour: theme toggle, link tracking, mobile nav, search, SW -->
+  <script src="/assets/js/site.js" defer></script>
+</head>
+
+<body>
+<a class="skip-link" href="#mainContent">Skip to main content</a>
+<div class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PlayersB homepage">
+        <span class="brand-title">PlayersB</span>
+        <span class="brand-subtitle">The Players Book</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primaryNav" class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/" data-track-event="nav_click">Home</a>
+        <a class="nav-link" href="/players/" data-track-event="nav_click">Players</a>
+        <a class="nav-link" href="/compare/" data-track-event="nav_click">Compare</a>
+        <a class="nav-link" href="/matches/" data-track-event="nav_click">Matches</a>
+        <a class="nav-link" href="/standings/" data-track-event="nav_click">Standings</a>
+        <a class="nav-link" href="/fantasy/" data-track-event="nav_click">Fantasy</a>
+        <a class="nav-link" href="/tools/" data-track-event="nav_click">Tools</a>
+        <a class="nav-link" href="/learn/" data-track-event="nav_click">Learn</a>
+      </nav>
+      <form class="site-search" role="search" onsubmit="return false;" aria-label="Site search">
+        <label for="siteSearch" class="visually-hidden">Search players, teams, competitions</label>
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search players, teams…" aria-controls="siteSearchResults" />
+        <div id="siteSearchResults" class="site-search-results" aria-live="polite"></div>
+      </form>
+      <button id="themeToggle" class="button small secondary theme-toggle" type="button" aria-pressed="false" data-track-event="theme_toggle">
+        Dark mode
+      </button>
+      <a class="button small" href="/compare/" data-track-event="cta_click">Start comparing</a>
+    </div>
+  </header>
+
+  <main id="mainContent" class="container main-content" tabindex="-1">
+    <section class="hero">
+        <span class="pill">Competition</span>
+        <h1>Serie A</h1>
+        <p class="lead">Live standings, top scorers, and fixtures for Serie A.</p>
+        <div class="button-row">
+          <a class="button" href="/competitions/">All competitions</a>
+          <a class="button secondary" href="/players/">Browse players</a>
+          <a class="button secondary" href="/matches/">Live matches</a>
+        </div>
+      </section>
+
+      <section class="section">
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Full table</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">League standings</caption>
+          <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>F:A</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">FC Internazionale Milano</td>
+      <td>34</td>
+      <td>25</td>
+      <td>4</td>
+      <td>5</td>
+      <td>80:31</td>
+      <td>49</td>
+      <td class="pts">79</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">SSC Napoli</td>
+      <td>34</td>
+      <td>21</td>
+      <td>6</td>
+      <td>7</td>
+      <td>52:33</td>
+      <td>19</td>
+      <td class="pts">69</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">AC Milan</td>
+      <td>34</td>
+      <td>19</td>
+      <td>10</td>
+      <td>5</td>
+      <td>48:27</td>
+      <td>21</td>
+      <td class="pts">67</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Juventus FC</td>
+      <td>34</td>
+      <td>18</td>
+      <td>10</td>
+      <td>6</td>
+      <td>57:29</td>
+      <td>28</td>
+      <td class="pts">64</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Como 1907</td>
+      <td>34</td>
+      <td>17</td>
+      <td>10</td>
+      <td>7</td>
+      <td>59:28</td>
+      <td>31</td>
+      <td class="pts">61</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">AS Roma</td>
+      <td>34</td>
+      <td>19</td>
+      <td>4</td>
+      <td>11</td>
+      <td>48:29</td>
+      <td>19</td>
+      <td class="pts">61</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Atalanta BC</td>
+      <td>34</td>
+      <td>14</td>
+      <td>12</td>
+      <td>8</td>
+      <td>47:32</td>
+      <td>15</td>
+      <td class="pts">54</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">SS Lazio</td>
+      <td>34</td>
+      <td>12</td>
+      <td>12</td>
+      <td>10</td>
+      <td>37:33</td>
+      <td>4</td>
+      <td class="pts">48</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Bologna FC 1909</td>
+      <td>34</td>
+      <td>14</td>
+      <td>6</td>
+      <td>14</td>
+      <td>42:41</td>
+      <td>1</td>
+      <td class="pts">48</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">US Sassuolo Calcio</td>
+      <td>34</td>
+      <td>13</td>
+      <td>7</td>
+      <td>14</td>
+      <td>41:44</td>
+      <td>-3</td>
+      <td class="pts">46</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Udinese Calcio</td>
+      <td>34</td>
+      <td>12</td>
+      <td>8</td>
+      <td>14</td>
+      <td>41:46</td>
+      <td>-5</td>
+      <td class="pts">44</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Parma Calcio 1913</td>
+      <td>34</td>
+      <td>10</td>
+      <td>12</td>
+      <td>12</td>
+      <td>25:40</td>
+      <td>-15</td>
+      <td class="pts">42</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Torino FC</td>
+      <td>34</td>
+      <td>11</td>
+      <td>8</td>
+      <td>15</td>
+      <td>39:56</td>
+      <td>-17</td>
+      <td class="pts">41</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Genoa CFC</td>
+      <td>34</td>
+      <td>10</td>
+      <td>9</td>
+      <td>15</td>
+      <td>40:48</td>
+      <td>-8</td>
+      <td class="pts">39</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">ACF Fiorentina</td>
+      <td>34</td>
+      <td>8</td>
+      <td>13</td>
+      <td>13</td>
+      <td>38:45</td>
+      <td>-7</td>
+      <td class="pts">37</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Cagliari Calcio</td>
+      <td>34</td>
+      <td>9</td>
+      <td>9</td>
+      <td>16</td>
+      <td>36:49</td>
+      <td>-13</td>
+      <td class="pts">36</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">US Lecce</td>
+      <td>35</td>
+      <td>7</td>
+      <td>9</td>
+      <td>19</td>
+      <td>22:46</td>
+      <td>-24</td>
+      <td class="pts">30</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">US Cremonese</td>
+      <td>34</td>
+      <td>6</td>
+      <td>10</td>
+      <td>18</td>
+      <td>26:51</td>
+      <td>-25</td>
+      <td class="pts">28</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Hellas Verona FC</td>
+      <td>34</td>
+      <td>3</td>
+      <td>10</td>
+      <td>21</td>
+      <td>23:56</td>
+      <td>-33</td>
+      <td class="pts">19</td>
+      <td class="form">—</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">AC Pisa 1909</td>
+      <td>35</td>
+      <td>2</td>
+      <td>13</td>
+      <td>20</td>
+      <td>24:61</td>
+      <td>-37</td>
+      <td class="pts">19</td>
+      <td class="form">—</td>
+    </tr></tbody>
+        </table>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Top scorers</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <caption class="visually-hidden">Top scorers</caption>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Pos</th><th>G</th><th>A</th></tr></thead>
+          <tbody>
+    <tr>
+      <td class="rank">1</td>
+      <td class="team">Lautaro Martínez</td>
+      <td>FC Internazionale Milano</td>
+      <td></td>
+      <td class="pts">16</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td class="team">Anastasios Douvikas</td>
+      <td>Como 1907</td>
+      <td></td>
+      <td class="pts">12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td class="team">Marcus Thuram-Ulien</td>
+      <td>FC Internazionale Milano</td>
+      <td></td>
+      <td class="pts">12</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td class="team">Nico Paz</td>
+      <td>Como 1907</td>
+      <td></td>
+      <td class="pts">12</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td class="team">Donyell Malen</td>
+      <td>AS Roma</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td class="team">Rasmus Højlund</td>
+      <td>SSC Napoli</td>
+      <td></td>
+      <td class="pts">11</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">7</td>
+      <td class="team">Gianluca Scamacca</td>
+      <td>Atalanta BC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">8</td>
+      <td class="team">Giovanni Simeone</td>
+      <td>Torino FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="rank">9</td>
+      <td class="team">Keinan Davis</td>
+      <td>Udinese Calcio</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">10</td>
+      <td class="team">Kenan Yıldız</td>
+      <td>Juventus FC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td class="rank">11</td>
+      <td class="team">Nikola Krstović</td>
+      <td>Atalanta BC</td>
+      <td></td>
+      <td class="pts">10</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">12</td>
+      <td class="team">Hakan Çalhanoğlu</td>
+      <td>FC Internazionale Milano</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td class="rank">13</td>
+      <td class="team">Rafael Leão</td>
+      <td>AC Milan</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">14</td>
+      <td class="team">Scott McTominay</td>
+      <td>SSC Napoli</td>
+      <td></td>
+      <td class="pts">9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">15</td>
+      <td class="team">Andrea Pinamonti</td>
+      <td>US Sassuolo Calcio</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">16</td>
+      <td class="team">Christian Pulisic</td>
+      <td>AC Milan</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">17</td>
+      <td class="team">Mateo Pellegrino</td>
+      <td>Parma Calcio 1913</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">18</td>
+      <td class="team">Moise Kean</td>
+      <td>ACF Fiorentina</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td class="rank">19</td>
+      <td class="team">Nikola Vlašić</td>
+      <td>Torino FC</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="rank">20</td>
+      <td class="team">Riccardo Orsolini</td>
+      <td>Bologna FC 1909</td>
+      <td></td>
+      <td class="pts">8</td>
+      <td>1</td>
+    </tr></tbody>
+        </table>
+      </div>
+    </div>
+        
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-04-26</td><td>Torino FC <strong>2-2</strong> FC Internazionale Milano</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-26</td><td>AC Milan <strong>0-0</strong> Juventus FC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-27</td><td>Cagliari Calcio <strong>3-2</strong> Atalanta BC</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-04-27</td><td>SS Lazio <strong>3-3</strong> Udinese Calcio</td><td class="meta-text">FINISHED</td></tr><tr><td>2026-05-01</td><td>AC Pisa 1909 <strong>0-0</strong> US Lecce</td><td class="meta-text">IN_PLAY</td></tr></tbody></table></div>
+        </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-02</td><td>Udinese Calcio <strong>vs</strong> Torino FC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Como 1907 <strong>vs</strong> SSC Napoli</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-02</td><td>Atalanta BC <strong>vs</strong> Genoa CFC</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-03</td><td>Bologna FC 1909 <strong>vs</strong> Cagliari Calcio</td><td class="meta-text">TIMED</td></tr><tr><td>2026-05-03</td><td>US Sassuolo Calcio <strong>vs</strong> AC Milan</td><td class="meta-text">TIMED</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
+      </section>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"Serie A","sport":"Association Football","url":"https://playersb.com/competitions/sa/"}</script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <p><strong>Disclaimer:</strong> Educational content only. No betting or sportsbook activity. Tools use historical/verified data and may include scenario-based projections for learning purposes.</p>
+        <p class="footer-credit">Project by <a href="https://sentioaurum.com/" target="_blank" rel="noopener">SentioAurum</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

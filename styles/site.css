@@ -804,3 +804,44 @@ table caption {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
+/* === Data tables (standings, scorers, fixtures) =========================== */
+.table-scroll {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.data-table th,
+.data-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  white-space: nowrap;
+}
+.data-table thead th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.data-table .rank {
+  width: 32px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.data-table .team {
+  font-weight: 600;
+}
+.data-table .pts {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.data-table .form {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+}

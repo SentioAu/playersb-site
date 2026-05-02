@@ -265,6 +265,49 @@
     box.innerHTML = html;
   }
 
+  // Track current player profile in a small recent-views ring buffer.
+  var RECENT_KEY = "playersb-recent-v1";
+  var RECENT_MAX = 8;
+  function readRecent() {
+    try {
+      var raw = localStorage.getItem(RECENT_KEY);
+      var parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (_) { return []; }
+  }
+  function writeRecent(list) {
+    try { localStorage.setItem(RECENT_KEY, JSON.stringify(list.slice(0, RECENT_MAX))); } catch (_) {}
+  }
+  function recordCurrentPlayer() {
+    var match = window.location.pathname.match(/^\/players\/([^/]+)\/$/);
+    if (!match) return;
+    var id = decodeURIComponent(match[1]);
+    var nameEl = document.querySelector("h1");
+    var name = nameEl ? nameEl.textContent.trim() : id;
+    var list = readRecent().filter(function (x) { return x.id !== id; });
+    list.unshift({ id: id, name: name, at: Date.now() });
+    writeRecent(list);
+  }
+  function renderRecent() {
+    var box = document.getElementById("recentlyViewed");
+    var section = document.getElementById("recentlyViewedSection");
+    if (!box) return;
+    var list = readRecent();
+    if (!list.length) {
+      if (section) section.hidden = true;
+      box.innerHTML = "";
+      return;
+    }
+    if (section) section.hidden = false;
+    var html = "";
+    for (var i = 0; i < list.length; i++) {
+      var x = list[i];
+      html += '<a class="watch-list-item" href="/players/' + encodeURIComponent(x.id) + '/">' +
+        escapeHtml(x.name || x.id) + '</a>';
+    }
+    box.innerHTML = html;
+  }
+
   function initServiceWorker() {
     if (!("serviceWorker" in navigator)) return;
     if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") return;
@@ -292,6 +335,8 @@
     initMobileNav();
     initSearch();
     initWatchToggles();
+    recordCurrentPlayer();
+    renderRecent();
     initEngagedRead();
   });
   initServiceWorker();

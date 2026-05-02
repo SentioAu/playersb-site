@@ -168,6 +168,196 @@
           "a": "Use internal channels or discussions with scouts, analysts, or fans. Avoid presenting it as a prediction or betting advice."
         }
       ]
+    },
+    {
+      "slug": "expected-goals-explained",
+      "title": "Expected goals (xG), explained",
+      "description": "What xG measures, why it differs from raw goals, and how to use it safely.",
+      "summary": "xG is a probability score for each shot. Treat it as chance quality, not a prediction.",
+      "takeaways": [
+        "xG quantifies the chance quality of each shot from 0 to 1.",
+        "Goals – xG (over/underperformance) is noisier than xG itself; demand a long sample.",
+        "Compare xG/90 within similar roles before declaring a striker hot or cold."
+      ],
+      "sections": [
+        {
+          "title": "What xG actually measures",
+          "body": [
+            "Each shot is scored by location, body part, defender pressure, and similar features against a historical baseline.",
+            "Summed across a season, xG estimates how many goals an average finisher would have scored from those chances."
+          ]
+        },
+        {
+          "title": "How to read over/underperformance",
+          "body": [
+            "Players who score above their xG are either elite finishers, lucky, or some mix — single seasons rarely separate the three.",
+            "Watch for repeated outperformance across multiple seasons before treating it as skill rather than noise."
+          ]
+        },
+        {
+          "title": "Common pitfalls",
+          "body": [
+            "Penalties skew xG: separate them when comparing strikers across teams.",
+            "Some xG models penalise long-range shots heavily; specialists like deep set-piece takers can look worse than they play."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can xG predict next season's goals?",
+          "a": "It is one of the better predictors but still leaves a wide error band. Use it alongside minutes, role, team xG creation, and age curves."
+        },
+        {
+          "q": "Why do public xG numbers differ between sites?",
+          "a": "Different models, training samples, and shot-context features. Always check the methodology before comparing across sources."
+        }
+      ]
+    },
+    {
+      "slug": "position-taxonomy",
+      "title": "Decoding position labels",
+      "description": "How ST, CF, RW, CAM, CDM, FB, and other codes translate into real roles.",
+      "summary": "Position codes are coarse — the actual role depends on the team’s shape, the manager, and the player’s tendencies.",
+      "takeaways": [
+        "Two players with the same code can play very different roles.",
+        "Team shape (4-3-3, 3-5-2, etc.) shifts what each code means.",
+        "Cross-reference touch maps and minutes by zone before assuming role similarity."
+      ],
+      "sections": [
+        {
+          "title": "Forwards: ST, CF, SS",
+          "body": [
+            "ST/CF are interchangeable on most data feeds but managers separate them: a target CF holds the line; an ST presses and runs in behind.",
+            "SS (second striker) typically drops between lines and is closer to a CAM than a pure forward."
+          ]
+        },
+        {
+          "title": "Wide players: LW, RW, LM, RM, LWB, RWB",
+          "body": [
+            "LW/RW imply a front-three role; LM/RM imply a mid-block flank; LWB/RWB are wing-backs in a back-five.",
+            "Inverted wingers (left-footed RW, right-footed LW) post very different shot maps to traditional wide forwards."
+          ]
+        },
+        {
+          "title": "Midfield: CAM, CM, DM, BBM",
+          "body": [
+            "CAM is the highest-attacking; DM is the deepest. CM splits attacking and defensive duties.",
+            "Box-to-box (BBM) describes coverage rather than depth — expect high distance covered and varied stat lines."
+          ]
+        },
+        {
+          "title": "Defense and goalkeeper: CB, FB, SW, GK",
+          "body": [
+            "CB profiles split into ball-playing vs aerial dominators; both labelled the same.",
+            "FBs vary by overlap frequency: overlapping FBs look more like wingers in attacking stats."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does the site sometimes list two positions?",
+          "a": "Source feeds report multiple roles when a player rotates between them. We keep both so peer comparisons span the player’s real footprint."
+        }
+      ]
+    },
+    {
+      "slug": "defensive-metrics",
+      "title": "Reading defensive metrics",
+      "description": "Tackles, interceptions, blocks, recoveries — what they signal and where they mislead.",
+      "summary": "Defensive counts are noisy because they depend on opportunity. Always normalise by opponent possession and team shape.",
+      "takeaways": [
+        "High tackles can mean elite duelling or simply many duels offered — check tackle success rate.",
+        "Possession-adjusted defensive metrics are more comparable across teams.",
+        "Defensive output for forwards is often about pressures, not interceptions."
+      ],
+      "sections": [
+        {
+          "title": "Counts vs rates",
+          "body": [
+            "A team that defends deep concedes more chances and tackles per 90; a press-heavy team racks up interceptions higher up the pitch.",
+            "Always pair counts with success rate (tackles won / tackles attempted) and team possession share."
+          ]
+        },
+        {
+          "title": "When low numbers are good",
+          "body": [
+            "Elite reading of the game can lower tackle counts because the player intercepts before a duel is needed.",
+            "Look at blocked passes and interceptions, not just tackles."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Should I compare tackles per 90 across leagues?",
+          "a": "Only with caution. Pace and possession styles differ; possession-adjusted defensive metrics are far more transferable."
+        }
+      ]
+    },
+    {
+      "slug": "set-piece-contribution",
+      "title": "Set-piece contribution",
+      "description": "Why corners, free kicks, and penalties deserve a separate column.",
+      "summary": "Set pieces are a stable share of goals and assists — isolating them sharpens every comparison.",
+      "takeaways": [
+        "Penalties skew goals/90; strip them when comparing finishers.",
+        "Set-piece assists reward routine architects, not creators in open play.",
+        "Defensive set-piece duties show up in aerial duels and clearances."
+      ],
+      "sections": [
+        {
+          "title": "Strip penalties from finishing comparisons",
+          "body": [
+            "A striker with high penalty volume looks more efficient than they are at open-play finishing.",
+            "Where data is available, use non-penalty xG and non-penalty goals/90."
+          ]
+        },
+        {
+          "title": "Open-play vs set-piece creation",
+          "body": [
+            "An assist on a corner is a different skill from an assist after a through-ball. Splitting the two reveals which players truly create chances in flow.",
+            "Some teams concentrate set-piece duties on a single specialist — expect a tail in their stat line."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How can I tell if a player is the team’s set-piece taker?",
+          "a": "Check share of corners and free kicks taken. Anything above ~50% suggests they are the primary architect."
+        }
+      ]
+    },
+    {
+      "slug": "form-vs-trend",
+      "title": "Form vs trend",
+      "description": "Tell short-term variance apart from durable signals.",
+      "summary": "Five-match form is mostly noise. Trends across 20–30 matches reveal real change.",
+      "takeaways": [
+        "Short-term form windows have wide error bars — expect regression toward season-long rates.",
+        "A trend needs at least a half-season of consistent change to be credible.",
+        "Pair form with role and team-context changes before reading too much in."
+      ],
+      "sections": [
+        {
+          "title": "Why short windows mislead",
+          "body": [
+            "A 3-match scoring run can flip a striker’s xG-overperformance by 0.5 goals per game without any change in process.",
+            "Variance is highest for low-volume metrics like goals and assists; rate stats stabilise sooner."
+          ]
+        },
+        {
+          "title": "What a real trend looks like",
+          "body": [
+            "Sustained shifts in shots/90, touches in box, or pressures are stronger signals than single-match spikes.",
+            "Tactical or positional changes (new manager, role change, injury return) are the most common true causes of trends."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many matches before I should adjust expectations?",
+          "a": "Rates: ~10–15 matches. Goals/assists: closer to 25–30. Always combine with context, not just sample size."
+        }
+      ]
     }
   ]
 }
