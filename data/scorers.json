@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-01T19:13:49.571Z",
-  "generatedAt": "2026-05-01T19:13:49.571Z",
+  "updatedAt": "2026-05-02T07:47:39.609Z",
+  "generatedAt": "2026-05-02T07:47:39.610Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-01T19:13:49.571Z"
+      "fetchedAt": "2026-05-02T07:47:39.610Z"
     }
   },
   "scorers": [
@@ -87,6 +87,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Dominic Calvert-Lewin",
+      "team": "Leeds United FC",
+      "competition": "Premier League",
+      "nationality": "England",
+      "position": "",
+      "goals": 12,
+      "assists": 1,
+      "penalties": 3,
+      "playedMatches": 32
+    },
+    {
       "name": "Hugo Ekitike",
       "team": "Liverpool FC",
       "competition": "Premier League",
@@ -96,17 +107,6 @@
       "assists": 4,
       "penalties": 0,
       "playedMatches": 29
-    },
-    {
-      "name": "Dominic Calvert-Lewin",
-      "team": "Leeds United FC",
-      "competition": "Premier League",
-      "nationality": "England",
-      "position": "",
-      "goals": 11,
-      "assists": 1,
-      "penalties": 3,
-      "playedMatches": 32
     },
     {
       "name": "Eli Kroupi",

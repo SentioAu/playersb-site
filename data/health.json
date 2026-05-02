@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T23:25:30.739Z",
+  "generatedAt": "2026-05-02T07:47:59.222Z",
   "status": "warning",
   "thresholds": {
     "minPlayers": 24,
@@ -10,7 +10,7 @@
   },
   "metrics": {
     "players": 80,
-    "teams": 30,
+    "teams": 20,
     "legacy": 16,
     "teamStrength": 0,
     "entityTeams": 0,
@@ -19,32 +19,32 @@
   "datasets": {
     "fixtures": {
       "count": 0,
-      "generatedAt": "2026-05-01T13:20:07.465Z",
-      "staleHours": 10.09,
+      "generatedAt": "2026-05-02T07:47:39.610Z",
+      "staleHours": 0.01,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
           "status": "ok",
-          "fetchedAt": "2026-05-01T13:20:07.465Z"
+          "fetchedAt": "2026-05-02T07:47:39.610Z"
         }
       }
     },
     "standings": {
       "count": 0,
-      "generatedAt": "2026-05-01T13:20:07.469Z",
-      "staleHours": 10.09,
+      "generatedAt": "2026-05-02T07:47:39.610Z",
+      "staleHours": 0.01,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
           "status": "ok",
-          "fetchedAt": "2026-05-01T13:20:07.469Z"
+          "fetchedAt": "2026-05-02T07:47:39.610Z"
         }
       }
     },
     "fantasy": {
       "count": 80,
       "generatedAt": "2026-03-07T07:13:03.301Z",
-      "staleHours": 1336.21,
+      "staleHours": 1344.58,
       "freshness": "warn",
       "sourceStatus": {
         "footballData": {
@@ -59,18 +59,20 @@
       }
     },
     "archive": {
-      "count": 0,
-      "generatedAt": null,
-      "staleHours": null,
-      "freshness": "critical",
+      "count": 85,
+      "generatedAt": "2026-05-02T07:47:51.500Z",
+      "staleHours": 0,
+      "freshness": "ok",
       "sourceStatus": {
         "statsbomb": {
-          "status": "pending",
-          "message": "Run scripts/fetch-archive.mjs to populate StatsBomb open data archives."
+          "status": "ok",
+          "fetchedAt": "2026-05-02T07:47:50.424Z",
+          "competitionCount": 75
         },
         "openfootball": {
-          "status": "pending",
-          "message": "Run scripts/fetch-archive.mjs to populate OpenFootball archives."
+          "status": "ok",
+          "fetchedAt": "2026-05-02T07:47:51.469Z",
+          "sourceCount": 10
         }
       }
     }
@@ -79,9 +81,7 @@
   "warnings": [
     "fixtures appears empty (count=0)",
     "standings appears empty (count=0)",
-    "fantasy data is stale (1336h old)",
-    "archive appears empty (count=0)",
-    "archive data has no valid timestamp",
+    "fantasy data is stale (1345h old)",
     "team-strength dataset is empty",
     "entity-metadata dataset is empty"
   ]

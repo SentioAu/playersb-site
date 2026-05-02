@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-01T19:13:49.565Z",
-  "generatedAt": "2026-05-01T19:13:49.566Z",
+  "updatedAt": "2026-05-02T07:47:39.609Z",
+  "generatedAt": "2026-05-02T07:47:39.610Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-01T19:13:49.566Z"
+      "fetchedAt": "2026-05-02T07:47:39.610Z"
     }
   },
   "fixtures": [
@@ -3743,11 +3743,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-05-01T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Leeds United FC",
       "away": "Burnley FC",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 538128,
@@ -3959,6 +3959,17 @@
       "awayScore": null
     },
     {
+      "id": 538091,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-05-13T19:00:00Z",
+      "status": "TIMED",
+      "home": "Manchester City FC",
+      "away": "Crystal Palace FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
       "id": 538146,
       "competitionCode": "PL",
       "competition": "Premier League",
@@ -4043,6 +4054,28 @@
       "status": "TIMED",
       "home": "Arsenal FC",
       "away": "Burnley FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 538145,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-05-19T18:30:00Z",
+      "status": "TIMED",
+      "home": "AFC Bournemouth",
+      "away": "Manchester City FC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 538149,
+      "competitionCode": "PL",
+      "competition": "Premier League",
+      "date": "2026-05-19T19:15:00Z",
+      "status": "TIMED",
+      "home": "Chelsea FC",
+      "away": "Tottenham Hotspur FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -7791,11 +7824,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-05-01T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Girona FC",
       "away": "RCD Mallorca",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "id": 544549,
@@ -12081,11 +12114,11 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-05-01T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "AC Pisa 1909",
       "away": "US Lecce",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 537163,

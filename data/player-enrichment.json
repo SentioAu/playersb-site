@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-07T07:08:32.467Z",
+  "generatedAt": "2026-05-02T07:47:51.549Z",
   "sourceStatus": {
     "seed": {
       "status": "ok",
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "wikipedia": {
-      "status": "error",
-      "fetchedAt": "2026-03-07T07:08:32.467Z",
-      "message": "Wikipedia summaries success=0, failed=80"
+      "status": "partial",
+      "fetchedAt": "2026-05-02T07:47:51.549Z",
+      "message": "Wikipedia summaries success=30, failed=50"
     }
   },
   "players": {
@@ -29,13 +29,13 @@
       "careerGoals": 250,
       "careerAssists": 55,
       "careerAppearances": 320,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Erling Braut Haaland is a Norwegian professional footballer who plays as a striker for Premier League club Manchester City and the Norway national team. Considered one of the best players in the world, and the greatest Norwegian player ever, he is known for his speed, strength, positioning, and finishing inside the box.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Erling_Haaland",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "phil-foden": {
       "id": "phil-foden",
@@ -49,13 +49,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Philip Walter Foden is an English professional footballer who plays as a midfielder for Premier League club Manchester City and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Phil_Foden",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "rodri": {
       "id": "rodri",
@@ -73,13 +73,13 @@
       "careerGoals": 45,
       "careerAssists": 35,
       "careerAppearances": 430,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Rodri may refer to:Rodri (1934–2022), full name Francisco Rodríguez García, Spanish football defender for Barcelona\nRodri, full name Antonio Rodríguez Saravia, Spanish football forward and manager for Gimnàstic etc\nRodri, full name Rodrigo Gimeno Molina, Spanish football midfielder for Castellón\nRodri, full name Sergio Rodríguez García, Spanish football defender for Spartak Moscow, Eupen etc\nRodri, full name Rodrigo Ángel Gil Torres, Spanish football midfielder for Elche, Orihuela etc\nRodri, full name Rodrigo Suárez Peña, Spanish football midfielder for Betis\nRodri, full name Rodrigo Ríos Lozano, Spanish football forward for Córdoba, Oviedo etc\nRodri, full name Rodrigo Hernández Cascante, Spanish football midfielder for Villarreal, Manchester City, 2024 Ballon d'Or winner\nRodri, full name Rodrigo Sánchez Rodríguez, Spanish football midfielder for Betis\nRodri, full name Rodrigo Suárez Marcos, Spanish football defender for Cultural Leonesa\nRodri, full name Rodrigo Alonso Martín, Spanish football midfielder for Villarreal",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Rodri",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "kevin-de-bruyne": {
       "id": "kevin-de-bruyne",
@@ -99,13 +99,13 @@
       "careerGoals": 150,
       "careerAssists": 250,
       "careerAppearances": 640,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Kevin De Bruyne is a Belgian professional footballer who plays as a midfielder for Serie A club Napoli and the Belgium national team. Widely regarded as one of the best players of his generation and one of the best players in Premier League history, De Bruyne has been described as a \"complete\" footballer. He is tied with Ferenc Puskás as the all-time leading European assist provider in international football (53).",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kevin_De_Bruyne",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "mohamed-salah": {
       "id": "mohamed-salah",
@@ -125,13 +125,13 @@
       "careerGoals": 290,
       "careerAssists": 130,
       "careerAppearances": 560,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Mohamed Salah Hamed Mahrous Ghaly is an Egyptian professional footballer who plays as a right winger or right midfielder for Premier League club Liverpool and captains the Egypt national team. He is widely regarded as one of the best players of his generation and one of the greatest wingers of all time. Dubbed the \"Egyptian King\", he is the all-time top foreign goalscorer in the Premier League and the all-time top African goalscorer in the UEFA Champions League.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mohamed_Salah",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "darwin-nunez": {
       "id": "darwin-nunez",
@@ -145,13 +145,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Darwin Gabriel Núñez Ribeiro is a Uruguayan professional footballer who plays as a forward for Saudi Pro League club Al-Hilal and the Uruguay national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Darwin_N%C3%BA%C3%B1ez",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "alexis-mac-allister": {
       "id": "alexis-mac-allister",
@@ -165,13 +165,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Alexis Mac Allister is an Argentine professional footballer who plays as a midfielder for Premier League club Liverpool and the Argentina national team. Considered as one of the best midfielders in the world, he is known for his passing, shooting ability, and versatility.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alexis_Mac_Allister",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "virgil-van-dijk": {
       "id": "virgil-van-dijk",
@@ -190,13 +190,13 @@
       "careerGoals": 60,
       "careerAssists": 20,
       "careerAppearances": 520,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Virgil van Dijk is a Dutch professional footballer who plays as a centre-back for and captains both Premier League club Liverpool and the Netherlands national team. Widely regarded as one of the best defenders of his generation, and one of the greatest defenders in Premier League history, he is known for his strength, leadership, speed and aerial ability.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "bukayo-saka": {
       "id": "bukayo-saka",
@@ -212,13 +212,13 @@
       "careerGoals": 95,
       "careerAssists": 85,
       "careerAppearances": 340,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Bukayo Ayoyinka Temidayo Moses Saka is an English professional footballer who plays as a right winger for Premier League club Arsenal and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bukayo_Saka",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "martin-degaard": {
       "id": "martin-degaard",
@@ -239,13 +239,13 @@
       "careerGoals": 80,
       "careerAssists": 95,
       "careerAppearances": 430,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Martin Ødegaard is a Norwegian professional footballer who plays as a midfielder for and captains both Premier League club Arsenal and the Norway national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Martin_%C3%98degaard",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "declan-rice": {
       "id": "declan-rice",
@@ -259,13 +259,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Declan Rice is an English professional footballer who plays as a defensive midfielder for Premier League club Arsenal and the England national team. Known for his versatility, stamina, ball-carrying and tackling, he is considered one of the best midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Declan_Rice",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "kai-havertz": {
       "id": "kai-havertz",
@@ -279,13 +279,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Kai Lukas Havertz is a German professional footballer who plays as a forward or attacking midfielder for Premier League club Arsenal and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kai_Havertz",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "heung-min-son": {
       "id": "heung-min-son",
@@ -303,13 +303,13 @@
       "careerGoals": 230,
       "careerAssists": 120,
       "careerAppearances": 620,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Son Heung-min is a South Korean professional footballer who plays as a left winger for Major League Soccer club Los Angeles FC and captains the South Korea national team. Known for his speed, finishing, two-footedness, and ability to link play, he is the top Asian goalscorer in both Premier League and UEFA Champions League history, and is widely regarded as the greatest Asian player of all time.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Son_Heung-min",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "james-maddison": {
       "id": "james-maddison",
@@ -329,7 +329,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "dejan-kulusevski": {
       "id": "dejan-kulusevski",
@@ -343,13 +343,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Dejan Kuluševski is a Swedish professional footballer who plays as an attacking midfielder or winger for Premier League club Tottenham Hotspur and the Sweden national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Dejan_Kulusevski",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "cristian-romero": {
       "id": "cristian-romero",
@@ -363,13 +363,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Cristian Gabriel Romero is an Argentine professional footballer who plays as a centre-back for Premier League club Tottenham Hotspur, which he captains, and the Argentina national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cristian_Romero",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "cole-palmer": {
       "id": "cole-palmer",
@@ -383,13 +383,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Cole Jermaine Palmer is an English professional footballer who plays as an attacking midfielder or winger for Premier League club Chelsea and the England national team. Known for his dribbling and passing ability, he is widely regarded as one of the best attacking midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cole_Palmer",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "enzo-fernandez": {
       "id": "enzo-fernandez",
@@ -409,7 +409,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "reece-james": {
       "id": "reece-james",
@@ -423,13 +423,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Reece Lewis James is an English professional footballer who plays as a right-back for Premier League club Chelsea, which he captains, and the England national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Reece_James",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "christopher-nkunku": {
       "id": "christopher-nkunku",
@@ -449,7 +449,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "bruno-fernandes": {
       "id": "bruno-fernandes",
@@ -469,13 +469,13 @@
       "careerGoals": 190,
       "careerAssists": 140,
       "careerAppearances": 620,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Bruno Miguel Borges Fernandes is a Portuguese professional footballer who plays as an attacking midfielder for Premier League club Manchester United, which he captains, and the Portugal national team. Known for his creative output, vision, goal scoring ability, and passing, he is widely regarded as one of the best attacking midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "rasmus-h-jlund": {
       "id": "rasmus-h-jlund",
@@ -495,7 +495,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "marcus-rashford": {
       "id": "marcus-rashford",
@@ -517,7 +517,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "lisandro-martinez": {
       "id": "lisandro-martinez",
@@ -537,7 +537,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "jude-bellingham": {
       "id": "jude-bellingham",
@@ -555,13 +555,13 @@
       "careerGoals": 70,
       "careerAssists": 45,
       "careerAppearances": 260,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Jude Victor William Bellingham is an English professional footballer who plays as a midfielder for La Liga club Real Madrid and the England national team. Known for his exceptional work rate, playmaking ability, interceptions and fast dribbling, he is widely regarded as one of the best players in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jude_Bellingham",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "vinicius-junior": {
       "id": "vinicius-junior",
@@ -584,7 +584,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "federico-valverde": {
       "id": "federico-valverde",
@@ -609,7 +609,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "antonio-rudiger": {
       "id": "antonio-rudiger",
@@ -629,7 +629,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "robert-lewandowski": {
       "id": "robert-lewandowski",
@@ -654,7 +654,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "pedri": {
       "id": "pedri",
@@ -677,7 +677,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "lamine-yamal": {
       "id": "lamine-yamal",
@@ -691,13 +691,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Lamine Yamal Nasraoui Ebana is a Spanish professional footballer who plays as a right winger or right midfielder for La Liga club Barcelona and the Spain national team. Known for his flair, chance creation, and long-distance curling goals, he is widely regarded as one of the best players in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Lamine_Yamal",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "ronald-araujo": {
       "id": "ronald-araujo",
@@ -717,13 +717,13 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "antoine-griezmann": {
       "id": "antoine-griezmann",
       "name": "Antoine Griezmann",
       "dateOfBirth": "1991-03-21",
-      "age": 34,
+      "age": 35,
       "nationality": "France",
       "heightCm": 176,
       "preferredFoot": "Left",
@@ -741,7 +741,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "alvaro-morata": {
       "id": "alvaro-morata",
@@ -761,7 +761,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "rodrigo-de-paul": {
       "id": "rodrigo-de-paul",
@@ -781,7 +781,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "jan-oblak": {
       "id": "jan-oblak",
@@ -801,7 +801,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "harry-kane": {
       "id": "harry-kane",
@@ -818,13 +818,13 @@
       "careerGoals": 380,
       "careerAssists": 90,
       "careerAppearances": 600,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Harry Edward Kane is an English professional footballer who plays as a striker for Bundesliga club Bayern Munich and captains the England national team. Regarded as one of the best strikers of his generation, he is Tottenham Hotspur's all-time top goalscorer (280), England's all-time top goalscorer (78), and the highest-scoring English player in the UEFA Champions League (53). He is also the Premier League's second-highest all-time goalscorer (213) and the 10th highest goalscorer for Bayern Munich (139). He has scored over 500 career goals for club and country.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Harry_Kane",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "jamal-musiala": {
       "id": "jamal-musiala",
@@ -846,7 +846,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "leroy-sane": {
       "id": "leroy-sane",
@@ -870,7 +870,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "joshua-kimmich": {
       "id": "joshua-kimmich",
@@ -890,7 +890,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "julian-brandt": {
       "id": "julian-brandt",
@@ -904,13 +904,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Julian Brandt is a German professional footballer who plays as a left winger or attacking midfielder for Bundesliga club Borussia Dortmund and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Julian_Brandt",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "niclas-fullkrug": {
       "id": "niclas-fullkrug",
@@ -924,13 +924,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Niclas Füllkrug is a German professional footballer who plays as a forward for Serie A club AC Milan, on loan from Premier League club West Ham United. He also plays for the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Niclas_F%C3%BCllkrug",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "karim-adeyemi": {
       "id": "karim-adeyemi",
@@ -944,13 +944,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Karim David Adeyemi is a German professional footballer who plays as a winger or forward for Bundesliga club Borussia Dortmund and the Germany national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Karim_Adeyemi",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "mats-hummels": {
       "id": "mats-hummels",
@@ -970,7 +970,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "florian-wirtz": {
       "id": "florian-wirtz",
@@ -986,13 +986,13 @@
       "careerGoals": 55,
       "careerAssists": 65,
       "careerAppearances": 220,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Florian Richard Wirtz is a German professional footballer who plays as an attacking midfielder or left midfielder for Premier League club Liverpool and the Germany national team. He is widely regarded as one of the best attacking midfielders in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Florian_Wirtz",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "victor-boniface": {
       "id": "victor-boniface",
@@ -1012,7 +1012,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "granit-xhaka": {
       "id": "granit-xhaka",
@@ -1032,7 +1032,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "jeremie-frimpong": {
       "id": "jeremie-frimpong",
@@ -1052,7 +1052,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "kylian-mbappe": {
       "id": "kylian-mbappe",
@@ -1069,13 +1069,13 @@
       "careerGoals": 330,
       "careerAssists": 120,
       "careerAppearances": 430,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Kylian Mbappé Lottin is a French professional footballer who plays as a forward for La Liga club Real Madrid and captains the France national team. He is known for his pace, dribbling, and clinical finishing, and is widely regarded as one of the best players in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "ousmane-dembele": {
       "id": "ousmane-dembele",
@@ -1095,7 +1095,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "achraf-hakimi": {
       "id": "achraf-hakimi",
@@ -1114,13 +1114,13 @@
       "careerGoals": 50,
       "careerAssists": 75,
       "careerAppearances": 430,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Achraf Hakimi Mouh is a professional footballer who plays as a right-back forLigue 1 club Paris Saint-Germain and captains the Morocco national team. He is widely regarded as one of the best right-backs in the world.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Achraf_Hakimi",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "vitinha": {
       "id": "vitinha",
@@ -1140,7 +1140,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "pierre-emerick-aubameyang": {
       "id": "pierre-emerick-aubameyang",
@@ -1160,7 +1160,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "amine-harit": {
       "id": "amine-harit",
@@ -1180,7 +1180,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "jordan-veretout": {
       "id": "jordan-veretout",
@@ -1200,7 +1200,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "chancel-mbemba": {
       "id": "chancel-mbemba",
@@ -1220,7 +1220,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "lautaro-martinez": {
       "id": "lautaro-martinez",
@@ -1243,7 +1243,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "nicolo-barella": {
       "id": "nicolo-barella",
@@ -1266,7 +1266,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "hakan-calhanoglu": {
       "id": "hakan-calhanoglu",
@@ -1280,13 +1280,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Hakan Çalhanoğlu is a professional footballer who plays as a midfielder for Serie A club Inter Milan. Born in Germany, he plays for and captains the Turkey national team.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "alessandro-bastoni": {
       "id": "alessandro-bastoni",
@@ -1306,7 +1306,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "rafael-leao": {
       "id": "rafael-leao",
@@ -1330,7 +1330,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "theo-hernandez": {
       "id": "theo-hernandez",
@@ -1356,7 +1356,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "christian-pulisic": {
       "id": "christian-pulisic",
@@ -1380,7 +1380,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "mike-maignan": {
       "id": "mike-maignan",
@@ -1400,7 +1400,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "victor-osimhen": {
       "id": "victor-osimhen",
@@ -1419,13 +1419,13 @@
       "careerGoals": 135,
       "careerAssists": 30,
       "careerAppearances": 280,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Victor James Osimhen is a Nigerian professional footballer who plays as a striker for Süper Lig club Galatasaray and is the vice-captain of the Nigeria national team. He is widely regarded as one of the best strikers in the world. Osimhen is known for his explosive pace, physical strength, aerial ability, and clinical finishing.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Victor_Osimhen",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "khvicha-kvaratskhelia": {
       "id": "khvicha-kvaratskhelia",
@@ -1450,7 +1450,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "stanislav-lobotka": {
       "id": "stanislav-lobotka",
@@ -1470,7 +1470,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "giovanni-di-lorenzo": {
       "id": "giovanni-di-lorenzo",
@@ -1490,7 +1490,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "dusan-vlahovic": {
       "id": "dusan-vlahovic",
@@ -1514,7 +1514,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "federico-chiesa": {
       "id": "federico-chiesa",
@@ -1534,7 +1534,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "adrien-rabiot": {
       "id": "adrien-rabiot",
@@ -1554,7 +1554,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "bremer": {
       "id": "bremer",
@@ -1574,7 +1574,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "angel-di-maria": {
       "id": "angel-di-maria",
@@ -1588,13 +1588,13 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Ángel Fabián Di María is an Argentine professional footballer who plays as a right winger for Argentine Primera División club Rosario Central. Widely regarded as one of the greatest Argentine players of all time and one of the greatest wingers of his generation, Di María is known for his dribbling ability, playmaking, rapid pace and agility. He is the all-time Argentine top assist provider in the UEFA Champions League (41) and ranks second overall.",
+      "wikiUrl": "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "joao-mario": {
       "id": "joao-mario",
@@ -1614,7 +1614,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "rafa-silva": {
       "id": "rafa-silva",
@@ -1634,7 +1634,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "antonio-silva": {
       "id": "antonio-silva",
@@ -1654,7 +1654,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "brian-brobbey": {
       "id": "brian-brobbey",
@@ -1674,7 +1674,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "steven-bergwijn": {
       "id": "steven-bergwijn",
@@ -1694,7 +1694,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "kenneth-taylor": {
       "id": "kenneth-taylor",
@@ -1714,7 +1714,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     },
     "jorrel-hato": {
       "id": "jorrel-hato",
@@ -1734,7 +1734,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-03-07T07:08:32.467Z"
+      "fetchedAt": "2026-05-02T07:47:51.549Z"
     }
   }
 }
