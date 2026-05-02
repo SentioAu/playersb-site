@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Arsenal players | PlayersB — The Players Book</title>
+  <title>Arsenal squad & stats | PlayersB — The Players Book</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Browse PlayersB player profiles for Arsenal." />
+  <meta name="description" content="Squad totals, sortable roster, league position, and fixtures for Arsenal on PlayersB." />
   <link rel="canonical" href="https://playersb.com/teams/arsenal/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,16 +18,16 @@
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PlayersB — The Players Book" />
-  <meta property="og:title" content="Arsenal players | PlayersB" />
-  <meta property="og:description" content="Browse PlayersB player profiles for Arsenal." />
+  <meta property="og:title" content="Arsenal squad & stats | PlayersB" />
+  <meta property="og:description" content="Squad totals, sortable roster, league position, and fixtures for Arsenal on PlayersB." />
   <meta property="og:url" content="https://playersb.com/teams/arsenal/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Arsenal players | PlayersB" />
-  <meta name="twitter:description" content="Browse PlayersB player profiles for Arsenal." />
+  <meta name="twitter:title" content="Arsenal squad & stats | PlayersB" />
+  <meta name="twitter:description" content="Squad totals, sortable roster, league position, and fixtures for Arsenal on PlayersB." />
   <meta name="twitter:image" content="https://playersb.com/og-image.svg" />
 
   <!-- Structured Data (WebSite) -->
@@ -119,36 +119,116 @@
     <section class="hero">
         <span class="pill">Team</span>
         <h1>Arsenal</h1>
-        <p class="lead">Players and comparisons for Arsenal.</p>
+        <p class="lead">Squad totals, roster, fixtures, and league position for Arsenal.</p>
         <div class="button-row">
           <a class="button" href="/players/">Browse all players</a>
           <a class="button secondary" href="/teams/">All teams</a>
+          <a class="button secondary" href="/compare/">Open Compare</a>
         </div>
       </section>
 
       <section class="section">
-        <div class="card">
-          <ul class="player-list">
-            <li class="player-item">
-            <a class="player-name" href="/players/bukayo-saka/">Bukayo Saka</a>
-            <div class="player-meta">ST · Arsenal</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/declan-rice/">Declan Rice</a>
-            <div class="player-meta">CM · Arsenal</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/kai-havertz/">Kai Havertz</a>
-            <div class="player-meta">CB · Arsenal</div>
-          </li>
-<li class="player-item">
-            <a class="player-name" href="/players/martin-degaard/">Martin Ødegaard</a>
-            <div class="player-meta">RW · Arsenal</div>
-          </li>
-          </ul>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>League position</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-label">Competition</div><div class="stat-value">Premier League</div></div>
+        <div class="stat"><div class="stat-label">Position</div><div class="stat-value">#1</div></div>
+        <div class="stat"><div class="stat-label">Points</div><div class="stat-value">73</div></div>
+        <div class="stat"><div class="stat-label">GD</div><div class="stat-value">38</div></div>
+        <div class="stat"><div class="stat-label">W-D-L</div><div class="stat-value">22-7-5</div></div>
+        <div class="stat"><div class="stat-label">Form</div><div class="stat-value">—</div></div>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Squad totals</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-label">Players tracked</div><div class="stat-value">4</div></div>
+        <div class="stat"><div class="stat-label">Total minutes</div><div class="stat-value">6,080</div></div>
+        <div class="stat"><div class="stat-label">Total goals</div><div class="stat-value">25</div></div>
+        <div class="stat"><div class="stat-label">Total assists</div><div class="stat-value">18</div></div>
+      </div>
+      <p class="meta-text">Aggregates across 4 player profiles currently on PlayersB. Numbers reflect the latest season available in the dataset.</p>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Roster <span class="meta-text">(click any column to sort)</span></h3>
+      <div class="table-scroll">
+        <table class="data-table sortable" data-sortable>
+          <caption class="visually-hidden">Arsenal roster</caption>
+          <thead>
+            <tr>
+              <th class="sortable-h" data-sort="text">Player</th>
+              <th class="sortable-h" data-sort="text">Pos</th>
+              <th class="sortable-h" data-sort="num">Min</th>
+              <th class="sortable-h" data-sort="num">G</th>
+              <th class="sortable-h" data-sort="num">A</th>
+              <th class="sortable-h" data-sort="num">Sh</th>
+              <th class="sortable-h" data-sort="num">G/90</th>
+              <th class="sortable-h" data-sort="num">A/90</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td class="team"><a href="/players/kai-havertz/">Kai Havertz</a></td>
+          <td>CB</td>
+          <td data-sort-value="1700">1700</td>
+          <td data-sort-value="8">8</td>
+          <td data-sort-value="4">4</td>
+          <td data-sort-value="61">61</td>
+          <td data-sort-value="0.4235">0.42</td>
+          <td data-sort-value="0.2118">0.21</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/declan-rice/">Declan Rice</a></td>
+          <td>CM</td>
+          <td data-sort-value="1580">1580</td>
+          <td data-sort-value="9">9</td>
+          <td data-sort-value="4">4</td>
+          <td data-sort-value="56">56</td>
+          <td data-sort-value="0.5127">0.51</td>
+          <td data-sort-value="0.2278">0.23</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/martin-degaard/">Martin Ødegaard</a></td>
+          <td>RW</td>
+          <td data-sort-value="1460">1460</td>
+          <td data-sort-value="4">4</td>
+          <td data-sort-value="5">5</td>
+          <td data-sort-value="52">52</td>
+          <td data-sort-value="0.2466">0.25</td>
+          <td data-sort-value="0.3082">0.31</td>
+        </tr>
+        <tr>
+          <td class="team"><a href="/players/bukayo-saka/">Bukayo Saka</a></td>
+          <td>ST</td>
+          <td data-sort-value="1340">1340</td>
+          <td data-sort-value="4">4</td>
+          <td data-sort-value="5">5</td>
+          <td data-sort-value="48">48</td>
+          <td data-sort-value="0.2687">0.27</td>
+          <td data-sort-value="0.3358">0.34</td>
+        </tr></tbody>
+        </table>
+      </div>
+    </div>
+        
+    <div class="card" style="margin-top:16px;">
+      <h3>Fixtures</h3>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <h4>Last results</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-04-11 (H)</td><td>AFC Bournemouth</td><td><strong>1-2</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-04-15 (H)</td><td>Sporting Clube de Portugal</td><td><strong>0-0</strong></td><td class="meta-text">Champions League</td></tr><tr><td>2026-04-19 (A)</td><td>Manchester City FC</td><td><strong>2-1</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-04-25 (H)</td><td>Newcastle United FC</td><td><strong>1-0</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-04-29 (A)</td><td>Club Atlético de Madrid</td><td><strong>1-1</strong></td><td class="meta-text">Champions League</td></tr></tbody></table></div>
         </div>
+        <div>
+          <h4>Upcoming</h4>
+          <div class="table-scroll"><table class="data-table"><tbody><tr><td>2026-05-02 (H)</td><td>Fulham FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-05 (H)</td><td>Club Atlético de Madrid</td><td><strong>vs</strong></td><td class="meta-text">Champions League</td></tr><tr><td>2026-05-10 (A)</td><td>West Ham United FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-18 (H)</td><td>Burnley FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr><tr><td>2026-05-24 (A)</td><td>Crystal Palace FC</td><td><strong>vs</strong></td><td class="meta-text">Premier League</td></tr></tbody></table></div>
+        </div>
+      </div>
+    </div>
       </section>
-      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Arsenal","url":"https://playersb.com/teams/arsenal/","member":[{"@type":"Person","name":"Bukayo Saka","url":"https://playersb.com/players/bukayo-saka/","jobTitle":"ST"},{"@type":"Person","name":"Declan Rice","url":"https://playersb.com/players/declan-rice/","jobTitle":"CM"},{"@type":"Person","name":"Kai Havertz","url":"https://playersb.com/players/kai-havertz/","jobTitle":"CB"},{"@type":"Person","name":"Martin Ødegaard","url":"https://playersb.com/players/martin-degaard/","jobTitle":"RW"}]}</script>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Arsenal","url":"https://playersb.com/teams/arsenal/","member":[{"@type":"Person","name":"Kai Havertz","url":"https://playersb.com/players/kai-havertz/","jobTitle":"CB"},{"@type":"Person","name":"Declan Rice","url":"https://playersb.com/players/declan-rice/","jobTitle":"CM"},{"@type":"Person","name":"Martin Ødegaard","url":"https://playersb.com/players/martin-degaard/","jobTitle":"RW"},{"@type":"Person","name":"Bukayo Saka","url":"https://playersb.com/players/bukayo-saka/","jobTitle":"ST"}]}</script>
   </main>
 
   <footer class="site-footer">

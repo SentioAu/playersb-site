@@ -68,12 +68,13 @@ ${allShown.map((f, i) => {
   const score = f.status === 'FINISHED' || f.status === 'LIVE' || f.status === 'IN_PLAY'
     ? `<strong>${f.homeScore ?? '?'} – ${f.awayScore ?? '?'}</strong>`
     : `<span style="color:#888;">vs</span>`;
-  return `<tr style="border-bottom:1px solid var(--border,#1a1a1a);${i%2===0?'':'background:rgba(255,255,255,0.02)'}">
+  const sortKey = `${f.status}|${f.homeScore ?? ''}|${f.awayScore ?? ''}`;
+  return `<tr data-fixture-id="${f.id}" data-fixture-state="${sortKey}" style="border-bottom:1px solid var(--border,#1a1a1a);${i%2===0?'':'background:rgba(255,255,255,0.02)'}">
 <td style="padding:6px 8px;color:var(--muted,#888);font-size:0.8rem;">${formatDate(f.date)}</td>
 <td style="text-align:right;padding:6px 8px;">${f.home}</td>
-<td style="text-align:center;padding:6px 12px;">${score}</td>
+<td class="js-fixture-score" style="text-align:center;padding:6px 12px;">${score}</td>
 <td style="text-align:left;padding:6px 8px;">${f.away}</td>
-<td style="text-align:center;padding:6px 8px;">${statusBadge(f.status)}</td>
+<td class="js-fixture-status" style="text-align:center;padding:6px 8px;">${statusBadge(f.status)}</td>
 </tr>`;
 }).join('')}
 </tbody>
@@ -100,7 +101,8 @@ const sections = compNames.map((name, i) =>
 
 const matchesBlock = `
 <p style="font-size:0.8rem;color:var(--muted,#888);margin-bottom:16px;">
-  Last updated: ${updatedAt} · Source: football-data.org · ${allFixtures.length} fixtures loaded
+  Last updated: <span id="matchesLastUpdated">${updatedAt}</span> · Source: football-data.org · ${allFixtures.length} fixtures loaded ·
+  <span id="matchesLiveStatus" class="meta-text">auto-refresh paused (tab background)</span>
 </p>
 <div style="margin-bottom:16px;">${tabs}</div>
 ${sections}
@@ -116,6 +118,96 @@ function showMatches(name) {
   if (sec) sec.style.display = 'block';
   if (tab) { tab.style.background = 'var(--accent,#22c55e)'; tab.style.color = '#000'; }
 }
+
+// Live refresh: poll /data/fixtures.json every 30s while the tab is visible.
+// Diff against rendered rows by data-fixture-id; flash any row whose status
+// or score changed. Falls back to a full DOM swap when ids drift.
+(function () {
+  if (!('fetch' in window)) return;
+  var POLL_MS = 30000;
+  var statusEl = document.getElementById('matchesLiveStatus');
+  var lastUpdatedEl = document.getElementById('matchesLastUpdated');
+  var timer = null;
+  var inFlight = false;
+
+  function setStatus(text) { if (statusEl) statusEl.textContent = text; }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function statusBadgeFor(status) {
+    if (status === 'FINISHED') return '<span style="color:#888;font-size:0.75rem;">FT</span>';
+    if (status === 'LIVE' || status === 'IN_PLAY' || status === 'PAUSED')
+      return '<span style="color:#22c55e;font-size:0.75rem;font-weight:bold;">● LIVE</span>';
+    return '<span style="color:#eab308;font-size:0.75rem;">Upcoming</span>';
+  }
+
+  function applyFixture(fixture) {
+    var row = document.querySelector('tr[data-fixture-id="' + fixture.id + '"]');
+    if (!row) return false;
+    var prevState = row.getAttribute('data-fixture-state') || '';
+    var nextState = fixture.status + '|' + (fixture.homeScore == null ? '' : fixture.homeScore) +
+      '|' + (fixture.awayScore == null ? '' : fixture.awayScore);
+    if (prevState === nextState) return false;
+    var scoreCell = row.querySelector('.js-fixture-score');
+    var statusCell = row.querySelector('.js-fixture-status');
+    if (scoreCell) {
+      var hasScore = (fixture.status === 'FINISHED' || fixture.status === 'LIVE' || fixture.status === 'IN_PLAY');
+      scoreCell.innerHTML = hasScore
+        ? '<strong>' + escapeHtml(fixture.homeScore == null ? '?' : fixture.homeScore) + ' – ' +
+            escapeHtml(fixture.awayScore == null ? '?' : fixture.awayScore) + '</strong>'
+        : '<span style="color:#888;">vs</span>';
+    }
+    if (statusCell) statusCell.innerHTML = statusBadgeFor(fixture.status);
+    row.setAttribute('data-fixture-state', nextState);
+    row.classList.add('fixture-flash');
+    setTimeout(function () { row.classList.remove('fixture-flash'); }, 2400);
+    return true;
+  }
+
+  function tick() {
+    if (inFlight) return;
+    inFlight = true;
+    fetch('/data/fixtures.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (payload) {
+        inFlight = false;
+        if (!payload || !Array.isArray(payload.fixtures)) return;
+        var changed = 0;
+        for (var i = 0; i < payload.fixtures.length; i++) {
+          if (applyFixture(payload.fixtures[i])) changed += 1;
+        }
+        if (lastUpdatedEl && payload.updatedAt) {
+          try {
+            lastUpdatedEl.textContent = new Date(payload.updatedAt).toLocaleString('en-GB', {
+              day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC',
+            }) + ' UTC';
+          } catch (_) {}
+        }
+        var stamp = new Date().toLocaleTimeString();
+        setStatus('auto-refresh on (last check ' + stamp + ', ' + changed + ' changed)');
+        if (typeof window.playersbTrack === 'function') {
+          window.playersbTrack('matches_poll', { changed: changed });
+        }
+      })
+      .catch(function () {
+        inFlight = false;
+        setStatus('auto-refresh failed; will retry');
+      });
+  }
+
+  function start() { if (timer) return; setStatus('auto-refresh on'); tick(); timer = setInterval(tick, POLL_MS); }
+  function stop() { if (!timer) return; clearInterval(timer); timer = null; setStatus('auto-refresh paused (tab background)'); }
+
+  function visibilityHandler() {
+    if (document.visibilityState === 'visible') start(); else stop();
+  }
+  document.addEventListener('visibilitychange', visibilityHandler);
+  if (document.visibilityState === 'visible') start();
+})();
 </script>`;
 
 // Read the existing matches HTML template and inject content

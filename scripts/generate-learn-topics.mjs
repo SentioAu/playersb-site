@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadGlossaryLinker } from "./lib/glossary-linker.mjs";
 
 const ROOT = process.cwd();
 const SITE_ORIGIN = "https://playersb.com";
@@ -43,7 +44,7 @@ function renderList(items) {
   `;
 }
 
-function renderSections(sections) {
+function renderSections(sections, linkify) {
   if (!sections?.length) return "";
   return sections
     .map((section) => {
@@ -53,7 +54,7 @@ function renderSections(sections) {
         <section class="section">
           <div class="card">
             <h2>${title}</h2>
-            ${body.map((line) => `<p>${escHtml(line)}</p>`).join("\n")}
+            ${body.map((line) => `<p>${linkify(escHtml(line))}</p>`).join("\n")}
           </div>
         </section>
       `;
@@ -61,7 +62,7 @@ function renderSections(sections) {
     .join("\n");
 }
 
-function renderFaq(faq) {
+function renderFaq(faq, linkify) {
   if (!faq?.length) return "";
   return `
     <section class="section">
@@ -71,7 +72,7 @@ function renderFaq(faq) {
           ${faq
             .map((item) => {
               const q = escHtml(item?.q ?? "");
-              const a = escHtml(item?.a ?? "");
+              const a = linkify(escHtml(item?.a ?? ""));
               return `
                 <div class="card">
                   <h3>${q}</h3>
@@ -113,9 +114,10 @@ function assertNoPlaceholders(finalHtml, fileLabel) {
 }
 
 async function main() {
-  const [layout, raw] = await Promise.all([
+  const [layout, raw, linkify] = await Promise.all([
     fs.readFile(LAYOUT_PATH, "utf-8"),
     fs.readFile(DATA_PATH, "utf-8"),
+    loadGlossaryLinker(),
   ]);
 
   const parsed = JSON.parse(raw);
@@ -156,9 +158,9 @@ async function main() {
         </div>
       </section>
 
-      ${renderSections(sections)}
+      ${renderSections(sections, linkify)}
 
-      ${renderFaq(faq)}
+      ${renderFaq(faq, linkify)}
 
       ${faqJsonLd}
     `;
