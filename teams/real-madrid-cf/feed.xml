@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/real-madrid-cf/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Real Madrid CF on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Real Madrid CF vs Athletic Club</title>
       <link>https://playersb.com/teams/real-madrid-cf/</link>
@@ -24,11 +24,27 @@
       <category>La Liga</category>
     </item>
     <item>
+      <title>2026-05-14 (H) Real Madrid CF vs Real Oviedo</title>
+      <link>https://playersb.com/teams/real-madrid-cf/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-madrid-cf/#fixture-544570</guid>
+      <pubDate>Thu, 14 May 2026 19:30:00 GMT</pubDate>
+      <description>Real Madrid CF play Real Oviedo (H) on 2026-05-14. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
       <title>2026-05-10 (A) Real Madrid CF vs FC Barcelona</title>
       <link>https://playersb.com/teams/real-madrid-cf/</link>
       <guid isPermaLink="false">https://playersb.com/teams/real-madrid-cf/#fixture-544553</guid>
       <pubDate>Sun, 10 May 2026 19:00:00 GMT</pubDate>
       <description>Real Madrid CF play FC Barcelona (A) on 2026-05-10. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-03 (A) Real Madrid CF vs RCD Espanyol de Barcelona</title>
+      <link>https://playersb.com/teams/real-madrid-cf/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-madrid-cf/#fixture-544544</guid>
+      <pubDate>Sun, 03 May 2026 19:00:00 GMT</pubDate>
+      <description>Real Madrid CF play RCD Espanyol de Barcelona (A) on 2026-05-03. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -150,22 +166,6 @@
       <pubDate>Tue, 17 Feb 2026 20:00:00 GMT</pubDate>
       <description>Real Madrid CF played Sport Lisboa e Benfica (A) on 2026-02-17. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
-    </item>
-    <item>
-      <title>2026-02-14 (H) Real Madrid CF 4-1 Real Sociedad de Fútbol</title>
-      <link>https://playersb.com/teams/real-madrid-cf/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-madrid-cf/#fixture-544444</guid>
-      <pubDate>Sat, 14 Feb 2026 20:00:00 GMT</pubDate>
-      <description>Real Madrid CF played Real Sociedad de Fútbol (H) on 2026-02-14. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-02-08 (A) Real Madrid CF 0-2 Valencia CF</title>
-      <link>https://playersb.com/teams/real-madrid-cf/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-madrid-cf/#fixture-544439</guid>
-      <pubDate>Sun, 08 Feb 2026 20:00:00 GMT</pubDate>
-      <description>Real Madrid CF played Valencia CF (A) on 2026-02-08. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
     </item>
   </channel>
 </rss>

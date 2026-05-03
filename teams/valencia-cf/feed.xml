@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/valencia-cf/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Valencia CF on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Valencia CF vs FC Barcelona</title>
       <link>https://playersb.com/teams/valencia-cf/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/valencia-cf/#fixture-544577</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Valencia CF play Real Sociedad de Fútbol (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-14 (H) Valencia CF vs Rayo Vallecano de Madrid</title>
+      <link>https://playersb.com/teams/valencia-cf/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/valencia-cf/#fixture-544568</guid>
+      <pubDate>Thu, 14 May 2026 17:00:00 GMT</pubDate>
+      <description>Valencia CF play Rayo Vallecano de Madrid (H) on 2026-05-14. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-10 (A) Valencia CF vs Athletic Club</title>
+      <link>https://playersb.com/teams/valencia-cf/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/valencia-cf/#fixture-544551</guid>
+      <pubDate>Sun, 10 May 2026 14:15:00 GMT</pubDate>
+      <description>Valencia CF play Athletic Club (A) on 2026-05-10. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/valencia-cf/#fixture-544398</guid>
       <pubDate>Sat, 10 Jan 2026 20:00:00 GMT</pubDate>
       <description>Valencia CF played Elche CF (H) on 2026-01-10. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-03 (A) Valencia CF 4-1 RC Celta de Vigo</title>
-      <link>https://playersb.com/teams/valencia-cf/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/valencia-cf/#fixture-544382</guid>
-      <pubDate>Sat, 03 Jan 2026 13:00:00 GMT</pubDate>
-      <description>Valencia CF played RC Celta de Vigo (A) on 2026-01-03. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-19 (H) Valencia CF 1-1 RCD Mallorca</title>
-      <link>https://playersb.com/teams/valencia-cf/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/valencia-cf/#fixture-544380</guid>
-      <pubDate>Fri, 19 Dec 2025 20:00:00 GMT</pubDate>
-      <description>Valencia CF played RCD Mallorca (H) on 2025-12-19. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

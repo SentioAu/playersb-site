@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/udinese-calcio/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Udinese Calcio on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Udinese Calcio vs SSC Napoli</title>
       <link>https://playersb.com/teams/udinese-calcio/</link>
@@ -21,14 +21,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/udinese-calcio/#fixture-537184</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Udinese Calcio play US Cremonese (H) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-09 (A) Udinese Calcio vs Cagliari Calcio</title>
-      <link>https://playersb.com/teams/udinese-calcio/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/udinese-calcio/#fixture-537167</guid>
-      <pubDate>Sat, 09 May 2026 13:00:00 GMT</pubDate>
-      <description>Udinese Calcio play Cagliari Calcio (A) on 2026-05-09. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/udinese-calcio/#fixture-536997</guid>
       <pubDate>Wed, 07 Jan 2026 19:45:00 GMT</pubDate>
       <description>Udinese Calcio played Torino FC (A) on 2026-01-07. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-03 (A) Udinese Calcio 1-0 Como 1907</title>
+      <link>https://playersb.com/teams/udinese-calcio/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/udinese-calcio/#fixture-536989</guid>
+      <pubDate>Sat, 03 Jan 2026 11:30:00 GMT</pubDate>
+      <description>Udinese Calcio played Como 1907 (A) on 2026-01-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

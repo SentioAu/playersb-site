@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/us-lecce/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for US Lecce on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) US Lecce vs Genoa CFC</title>
       <link>https://playersb.com/teams/us-lecce/</link>
@@ -24,14 +24,6 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-09 (H) US Lecce vs Juventus FC</title>
-      <link>https://playersb.com/teams/us-lecce/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/us-lecce/#fixture-537174</guid>
-      <pubDate>Sat, 09 May 2026 18:45:00 GMT</pubDate>
-      <description>US Lecce play Juventus FC (H) on 2026-05-09. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
       <title>2026-05-01 (A) US Lecce 1-2 AC Pisa 1909</title>
       <link>https://playersb.com/teams/us-lecce/</link>
       <guid isPermaLink="false">https://playersb.com/teams/us-lecce/#fixture-537161</guid>
@@ -40,7 +32,7 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-04-25 (A) US Lecce 0-0 Hellas Verona FC</title>
+      <title>2026-04-25 (A) US Lecce 1-0 Hellas Verona FC</title>
       <link>https://playersb.com/teams/us-lecce/</link>
       <guid isPermaLink="false">https://playersb.com/teams/us-lecce/#fixture-537151</guid>
       <pubDate>Sat, 25 Apr 2026 18:45:00 GMT</pubDate>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/us-lecce/#fixture-537014</guid>
       <pubDate>Sun, 11 Jan 2026 11:30:00 GMT</pubDate>
       <description>US Lecce played Parma Calcio 1913 (H) on 2026-01-11. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-06 (H) US Lecce 0-2 AS Roma</title>
+      <link>https://playersb.com/teams/us-lecce/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/us-lecce/#fixture-537004</guid>
+      <pubDate>Tue, 06 Jan 2026 17:00:00 GMT</pubDate>
+      <description>US Lecce played AS Roma (H) on 2026-01-06. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/ca-osasuna/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for CA Osasuna on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) CA Osasuna vs Getafe CF</title>
       <link>https://playersb.com/teams/ca-osasuna/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544579</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>CA Osasuna play RCD Espanyol de Barcelona (H) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-12 (H) CA Osasuna vs Club Atlético de Madrid</title>
+      <link>https://playersb.com/teams/ca-osasuna/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544567</guid>
+      <pubDate>Tue, 12 May 2026 19:30:00 GMT</pubDate>
+      <description>CA Osasuna play Club Atlético de Madrid (H) on 2026-05-12. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-08 (A) CA Osasuna vs Levante UD</title>
+      <link>https://playersb.com/teams/ca-osasuna/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544554</guid>
+      <pubDate>Fri, 08 May 2026 19:00:00 GMT</pubDate>
+      <description>CA Osasuna play Levante UD (A) on 2026-05-08. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-02 (H) CA Osasuna 1-2 FC Barcelona</title>
+      <link>https://playersb.com/teams/ca-osasuna/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544548</guid>
+      <pubDate>Sat, 02 May 2026 19:00:00 GMT</pubDate>
+      <description>CA Osasuna played FC Barcelona (H) on 2026-05-02. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544393</guid>
       <pubDate>Sat, 10 Jan 2026 17:30:00 GMT</pubDate>
       <description>CA Osasuna played Girona FC (A) on 2026-01-10. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-03 (H) CA Osasuna 1-1 Athletic Club</title>
-      <link>https://playersb.com/teams/ca-osasuna/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544384</guid>
-      <pubDate>Sat, 03 Jan 2026 15:15:00 GMT</pubDate>
-      <description>CA Osasuna played Athletic Club (H) on 2026-01-03. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-20 (H) CA Osasuna 3-0 Deportivo Alavés</title>
-      <link>https://playersb.com/teams/ca-osasuna/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544376</guid>
-      <pubDate>Sat, 20 Dec 2025 17:30:00 GMT</pubDate>
-      <description>CA Osasuna played Deportivo Alavés (H) on 2025-12-20. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-13 (A) CA Osasuna 2-0 FC Barcelona</title>
-      <link>https://playersb.com/teams/ca-osasuna/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/ca-osasuna/#fixture-544363</guid>
-      <pubDate>Sat, 13 Dec 2025 17:30:00 GMT</pubDate>
-      <description>CA Osasuna played FC Barcelona (A) on 2025-12-13. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

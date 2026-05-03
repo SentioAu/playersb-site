@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/us-cremonese/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for US Cremonese on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) US Cremonese vs Como 1907</title>
       <link>https://playersb.com/teams/us-cremonese/</link>
@@ -24,22 +24,6 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-10 (H) US Cremonese vs AC Pisa 1909</title>
-      <link>https://playersb.com/teams/us-cremonese/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-537173</guid>
-      <pubDate>Sun, 10 May 2026 13:00:00 GMT</pubDate>
-      <description>US Cremonese play AC Pisa 1909 (H) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-04 (H) US Cremonese vs SS Lazio</title>
-      <link>https://playersb.com/teams/us-cremonese/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-537164</guid>
-      <pubDate>Mon, 04 May 2026 16:30:00 GMT</pubDate>
-      <description>US Cremonese play SS Lazio (H) on 2026-05-04. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
       <title>2026-04-24 (A) US Cremonese 4-0 SSC Napoli</title>
       <link>https://playersb.com/teams/us-cremonese/</link>
       <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-537154</guid>
@@ -48,7 +32,7 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-04-19 (H) US Cremonese 0-0 Torino FC</title>
+      <title>2026-04-19 (H) US Cremonese 1-0 Torino FC</title>
       <link>https://playersb.com/teams/us-cremonese/</link>
       <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-537143</guid>
       <pubDate>Sun, 19 Apr 2026 10:30:00 GMT</pubDate>
@@ -165,6 +149,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-537003</guid>
       <pubDate>Thu, 08 Jan 2026 17:30:00 GMT</pubDate>
       <description>US Cremonese played Cagliari Calcio (H) on 2026-01-08. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-04 (A) US Cremonese 1-0 ACF Fiorentina</title>
+      <link>https://playersb.com/teams/us-cremonese/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-536985</guid>
+      <pubDate>Sun, 04 Jan 2026 14:00:00 GMT</pubDate>
+      <description>US Cremonese played ACF Fiorentina (A) on 2026-01-04. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2025-12-28 (H) US Cremonese 0-2 SSC Napoli</title>
+      <link>https://playersb.com/teams/us-cremonese/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/us-cremonese/#fixture-536983</guid>
+      <pubDate>Sun, 28 Dec 2025 14:00:00 GMT</pubDate>
+      <description>US Cremonese played SSC Napoli (H) on 2025-12-28. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

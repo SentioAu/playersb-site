@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/rc-celta-de-vigo/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for RC Celta de Vigo on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) RC Celta de Vigo vs Sevilla FC</title>
       <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544571</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>RC Celta de Vigo play Athletic Club (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-12 (H) RC Celta de Vigo vs Levante UD</title>
+      <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544563</guid>
+      <pubDate>Tue, 12 May 2026 17:00:00 GMT</pubDate>
+      <description>RC Celta de Vigo play Levante UD (H) on 2026-05-12. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-09 (A) RC Celta de Vigo vs Club Atlético de Madrid</title>
+      <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544552</guid>
+      <pubDate>Sat, 09 May 2026 16:30:00 GMT</pubDate>
+      <description>RC Celta de Vigo play Club Atlético de Madrid (A) on 2026-05-09. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-03 (H) RC Celta de Vigo 3-1 Elche CF</title>
+      <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544543</guid>
+      <pubDate>Sun, 03 May 2026 12:00:00 GMT</pubDate>
+      <description>RC Celta de Vigo played Elche CF (H) on 2026-05-03. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544397</guid>
       <pubDate>Mon, 12 Jan 2026 20:00:00 GMT</pubDate>
       <description>RC Celta de Vigo played Sevilla FC (A) on 2026-01-12. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-03 (H) RC Celta de Vigo 4-1 Valencia CF</title>
-      <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544382</guid>
-      <pubDate>Sat, 03 Jan 2026 13:00:00 GMT</pubDate>
-      <description>RC Celta de Vigo played Valencia CF (H) on 2026-01-03. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-20 (A) RC Celta de Vigo 0-0 Real Oviedo</title>
-      <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544379</guid>
-      <pubDate>Sat, 20 Dec 2025 13:00:00 GMT</pubDate>
-      <description>RC Celta de Vigo played Real Oviedo (A) on 2025-12-20. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-14 (H) RC Celta de Vigo 2-0 Athletic Club</title>
-      <link>https://playersb.com/teams/rc-celta-de-vigo/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rc-celta-de-vigo/#fixture-544365</guid>
-      <pubDate>Sun, 14 Dec 2025 15:15:00 GMT</pubDate>
-      <description>RC Celta de Vigo played Athletic Club (H) on 2025-12-14. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

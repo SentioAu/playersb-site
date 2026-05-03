@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/cagliari-calcio/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Cagliari Calcio on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Cagliari Calcio vs AC Milan</title>
       <link>https://playersb.com/teams/cagliari-calcio/</link>
@@ -24,19 +24,11 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-09 (H) Cagliari Calcio vs Udinese Calcio</title>
-      <link>https://playersb.com/teams/cagliari-calcio/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/cagliari-calcio/#fixture-537167</guid>
-      <pubDate>Sat, 09 May 2026 13:00:00 GMT</pubDate>
-      <description>Cagliari Calcio play Udinese Calcio (H) on 2026-05-09. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-03 (A) Cagliari Calcio vs Bologna FC 1909</title>
+      <title>2026-05-03 (A) Cagliari Calcio 0-0 Bologna FC 1909</title>
       <link>https://playersb.com/teams/cagliari-calcio/</link>
       <guid isPermaLink="false">https://playersb.com/teams/cagliari-calcio/#fixture-537158</guid>
       <pubDate>Sun, 03 May 2026 10:30:00 GMT</pubDate>
-      <description>Cagliari Calcio play Bologna FC 1909 (A) on 2026-05-03. Competition: Serie A. Status: TIMED.</description>
+      <description>Cagliari Calcio played Bologna FC 1909 (A) on 2026-05-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/cagliari-calcio/#fixture-537003</guid>
       <pubDate>Thu, 08 Jan 2026 17:30:00 GMT</pubDate>
       <description>Cagliari Calcio played US Cremonese (A) on 2026-01-08. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-02 (H) Cagliari Calcio 0-1 AC Milan</title>
+      <link>https://playersb.com/teams/cagliari-calcio/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/cagliari-calcio/#fixture-536987</guid>
+      <pubDate>Fri, 02 Jan 2026 19:45:00 GMT</pubDate>
+      <description>Cagliari Calcio played AC Milan (H) on 2026-01-02. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

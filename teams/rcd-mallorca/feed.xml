@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/rcd-mallorca/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for RCD Mallorca on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) RCD Mallorca vs Real Oviedo</title>
       <link>https://playersb.com/teams/rcd-mallorca/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/rcd-mallorca/#fixture-544575</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>RCD Mallorca play Levante UD (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-13 (A) RCD Mallorca vs Getafe CF</title>
+      <link>https://playersb.com/teams/rcd-mallorca/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rcd-mallorca/#fixture-544564</guid>
+      <pubDate>Wed, 13 May 2026 19:30:00 GMT</pubDate>
+      <description>RCD Mallorca play Getafe CF (A) on 2026-05-13. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-10 (H) RCD Mallorca vs Villarreal CF</title>
+      <link>https://playersb.com/teams/rcd-mallorca/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rcd-mallorca/#fixture-544555</guid>
+      <pubDate>Sun, 10 May 2026 12:00:00 GMT</pubDate>
+      <description>RCD Mallorca play Villarreal CF (H) on 2026-05-10. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/rcd-mallorca/#fixture-544400</guid>
       <pubDate>Sun, 11 Jan 2026 13:00:00 GMT</pubDate>
       <description>RCD Mallorca played Rayo Vallecano de Madrid (A) on 2026-01-11. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (H) RCD Mallorca 1-2 Girona FC</title>
-      <link>https://playersb.com/teams/rcd-mallorca/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rcd-mallorca/#fixture-544389</guid>
-      <pubDate>Sun, 04 Jan 2026 17:30:00 GMT</pubDate>
-      <description>RCD Mallorca played Girona FC (H) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-19 (A) RCD Mallorca 1-1 Valencia CF</title>
-      <link>https://playersb.com/teams/rcd-mallorca/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rcd-mallorca/#fixture-544380</guid>
-      <pubDate>Fri, 19 Dec 2025 20:00:00 GMT</pubDate>
-      <description>RCD Mallorca played Valencia CF (A) on 2025-12-19. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

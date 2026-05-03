@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/hellas-verona-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Hellas Verona FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Hellas Verona FC vs AS Roma</title>
       <link>https://playersb.com/teams/hellas-verona-fc/</link>
@@ -24,23 +24,7 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-10 (H) Hellas Verona FC vs Como 1907</title>
-      <link>https://playersb.com/teams/hellas-verona-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/hellas-verona-fc/#fixture-537169</guid>
-      <pubDate>Sun, 10 May 2026 10:30:00 GMT</pubDate>
-      <description>Hellas Verona FC play Como 1907 (H) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-03 (A) Hellas Verona FC vs Juventus FC</title>
-      <link>https://playersb.com/teams/hellas-verona-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/hellas-verona-fc/#fixture-537160</guid>
-      <pubDate>Sun, 03 May 2026 16:00:00 GMT</pubDate>
-      <description>Hellas Verona FC play Juventus FC (A) on 2026-05-03. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-04-25 (H) Hellas Verona FC 0-0 US Lecce</title>
+      <title>2026-04-25 (H) Hellas Verona FC 1-0 US Lecce</title>
       <link>https://playersb.com/teams/hellas-verona-fc/</link>
       <guid isPermaLink="false">https://playersb.com/teams/hellas-verona-fc/#fixture-537151</guid>
       <pubDate>Sat, 25 Apr 2026 18:45:00 GMT</pubDate>
@@ -165,6 +149,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/hellas-verona-fc/#fixture-537010</guid>
       <pubDate>Sun, 11 Jan 2026 17:00:00 GMT</pubDate>
       <description>Hellas Verona FC played SS Lazio (H) on 2026-01-11. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-07 (A) Hellas Verona FC 2-2 SSC Napoli</title>
+      <link>https://playersb.com/teams/hellas-verona-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/hellas-verona-fc/#fixture-537002</guid>
+      <pubDate>Wed, 07 Jan 2026 17:30:00 GMT</pubDate>
+      <description>Hellas Verona FC played SSC Napoli (A) on 2026-01-07. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-04 (H) Hellas Verona FC 0-3 Torino FC</title>
+      <link>https://playersb.com/teams/hellas-verona-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/hellas-verona-fc/#fixture-536990</guid>
+      <pubDate>Sun, 04 Jan 2026 17:00:00 GMT</pubDate>
+      <description>Hellas Verona FC played Torino FC (H) on 2026-01-04. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

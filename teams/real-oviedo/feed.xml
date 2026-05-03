@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/real-oviedo/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Real Oviedo on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Real Oviedo vs RCD Mallorca</title>
       <link>https://playersb.com/teams/real-oviedo/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544578</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Real Oviedo play Deportivo Alavés (H) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-14 (A) Real Oviedo vs Real Madrid CF</title>
+      <link>https://playersb.com/teams/real-oviedo/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544570</guid>
+      <pubDate>Thu, 14 May 2026 19:30:00 GMT</pubDate>
+      <description>Real Oviedo play Real Madrid CF (A) on 2026-05-14. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-10 (H) Real Oviedo vs Getafe CF</title>
+      <link>https://playersb.com/teams/real-oviedo/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544559</guid>
+      <pubDate>Sun, 10 May 2026 16:30:00 GMT</pubDate>
+      <description>Real Oviedo play Getafe CF (H) on 2026-05-10. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-03 (A) Real Oviedo vs Real Betis Balompié</title>
+      <link>https://playersb.com/teams/real-oviedo/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544542</guid>
+      <pubDate>Sun, 03 May 2026 16:30:00 GMT</pubDate>
+      <description>Real Oviedo play Real Betis Balompié (A) on 2026-05-03. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544396</guid>
       <pubDate>Sat, 10 Jan 2026 13:00:00 GMT</pubDate>
       <description>Real Oviedo played Real Betis Balompié (H) on 2026-01-10. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (A) Real Oviedo 1-1 Deportivo Alavés</title>
-      <link>https://playersb.com/teams/real-oviedo/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544381</guid>
-      <pubDate>Sun, 04 Jan 2026 17:30:00 GMT</pubDate>
-      <description>Real Oviedo played Deportivo Alavés (A) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-20 (H) Real Oviedo 0-0 RC Celta de Vigo</title>
-      <link>https://playersb.com/teams/real-oviedo/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544379</guid>
-      <pubDate>Sat, 20 Dec 2025 13:00:00 GMT</pubDate>
-      <description>Real Oviedo played RC Celta de Vigo (H) on 2025-12-20. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-14 (A) Real Oviedo 4-0 Sevilla FC</title>
-      <link>https://playersb.com/teams/real-oviedo/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-oviedo/#fixture-544370</guid>
-      <pubDate>Sun, 14 Dec 2025 13:00:00 GMT</pubDate>
-      <description>Real Oviedo played Sevilla FC (A) on 2025-12-14. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

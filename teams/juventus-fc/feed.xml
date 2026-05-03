@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/juventus-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Juventus FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Juventus FC vs Torino FC</title>
       <link>https://playersb.com/teams/juventus-fc/</link>
@@ -21,22 +21,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/juventus-fc/#fixture-537181</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Juventus FC play ACF Fiorentina (H) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-09 (A) Juventus FC vs US Lecce</title>
-      <link>https://playersb.com/teams/juventus-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/juventus-fc/#fixture-537174</guid>
-      <pubDate>Sat, 09 May 2026 18:45:00 GMT</pubDate>
-      <description>Juventus FC play US Lecce (A) on 2026-05-09. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-03 (H) Juventus FC vs Hellas Verona FC</title>
-      <link>https://playersb.com/teams/juventus-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/juventus-fc/#fixture-537160</guid>
-      <pubDate>Sun, 03 May 2026 16:00:00 GMT</pubDate>
-      <description>Juventus FC play Hellas Verona FC (H) on 2026-05-03. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +149,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/juventus-fc/#fixture-537032</guid>
       <pubDate>Sun, 25 Jan 2026 17:00:00 GMT</pubDate>
       <description>Juventus FC played SSC Napoli (H) on 2026-01-25. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-21 (H) Juventus FC 2-0 Sport Lisboa e Benfica</title>
+      <link>https://playersb.com/teams/juventus-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/juventus-fc/#fixture-551988</guid>
+      <pubDate>Wed, 21 Jan 2026 20:00:00 GMT</pubDate>
+      <description>Juventus FC played Sport Lisboa e Benfica (H) on 2026-01-21. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-01-17 (A) Juventus FC 1-0 Cagliari Calcio</title>
+      <link>https://playersb.com/teams/juventus-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/juventus-fc/#fixture-537016</guid>
+      <pubDate>Sat, 17 Jan 2026 19:45:00 GMT</pubDate>
+      <description>Juventus FC played Cagliari Calcio (A) on 2026-01-17. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

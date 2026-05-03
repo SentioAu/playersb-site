@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/levante-ud/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Levante UD on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Levante UD vs Real Betis Balompié</title>
       <link>https://playersb.com/teams/levante-ud/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/levante-ud/#fixture-544575</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Levante UD play RCD Mallorca (H) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-12 (A) Levante UD vs RC Celta de Vigo</title>
+      <link>https://playersb.com/teams/levante-ud/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/levante-ud/#fixture-544563</guid>
+      <pubDate>Tue, 12 May 2026 17:00:00 GMT</pubDate>
+      <description>Levante UD play RC Celta de Vigo (A) on 2026-05-12. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-08 (H) Levante UD vs CA Osasuna</title>
+      <link>https://playersb.com/teams/levante-ud/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/levante-ud/#fixture-544554</guid>
+      <pubDate>Fri, 08 May 2026 19:00:00 GMT</pubDate>
+      <description>Levante UD play CA Osasuna (H) on 2026-05-08. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/levante-ud/#fixture-544410</guid>
       <pubDate>Sat, 17 Jan 2026 13:00:00 GMT</pubDate>
       <description>Levante UD played Real Madrid CF (A) on 2026-01-17. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-11 (H) Levante UD 1-1 RCD Espanyol de Barcelona</title>
-      <link>https://playersb.com/teams/levante-ud/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/levante-ud/#fixture-544399</guid>
-      <pubDate>Sun, 11 Jan 2026 15:15:00 GMT</pubDate>
-      <description>Levante UD played RCD Espanyol de Barcelona (H) on 2026-01-11. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (A) Levante UD 0-3 Sevilla FC</title>
-      <link>https://playersb.com/teams/levante-ud/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/levante-ud/#fixture-544390</guid>
-      <pubDate>Sun, 04 Jan 2026 13:00:00 GMT</pubDate>
-      <description>Levante UD played Sevilla FC (A) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-03T13:11:39.751Z",
+  "generatedAt": "2026-05-03T15:10:29.559Z",
   "sourceStatus": {
     "seed": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "wikipedia": {
-      "status": "partial",
-      "fetchedAt": "2026-05-03T13:11:39.751Z",
-      "message": "Wikipedia summaries success=24, failed=56"
+      "status": "ok",
+      "fetchedAt": "2026-05-03T15:10:29.559Z",
+      "message": "Wikipedia summaries success=80, failed=0"
     }
   },
   "players": {
@@ -30,12 +30,17 @@
       "careerAssists": 75,
       "careerAppearances": 430,
       "summary": "Achraf Hakimi Mouh is a professional footballer who plays as a right-back forLigue 1 club Paris Saint-Germain and captains the Morocco national team. He is widely regarded as one of the best right-backs in the world.",
+      "description": "Morocco international footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Achraf_Hakimi",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Achraf_Hakimi_%28cropped%29.jpg/330px-Achraf_Hakimi_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 605,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Achraf_Hakimi_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "adrien-rabiot": {
       "id": "adrien-rabiot",
@@ -50,12 +55,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Adrien Thibault Marie Rabiot is a French professional footballer who plays as a midfielder for Serie A club AC Milan and the France national team.",
+      "description": "French footballer (born 1995)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Adrien_Rabiot",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Rabiot_asse_om_2425.png/330px-Rabiot_asse_om_2425.png",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 434,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rabiot_asse_om_2425.png",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "alessandro-bastoni": {
       "id": "alessandro-bastoni",
@@ -70,12 +80,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Alessandro Bastoni is an Italian professional footballer who plays primarily as a centre-back for Serie A club Inter Milan and the Italy national team. Regarded as one of the best centre-backs in the world, he is best known for his passing, speed and versatility.",
+      "description": "Italian footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Alessandro_Bastoni",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Norway_Italy_-_June_2025_A_36_%28cropped%29.jpg/330px-Norway_Italy_-_June_2025_A_36_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 413,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Norway_Italy_-_June_2025_A_36_%28cropped%29.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "alexis-mac-allister": {
       "id": "alexis-mac-allister",
@@ -90,12 +105,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Alexis Mac Allister is an Argentine professional footballer who plays as a midfielder for Premier League club Liverpool and the Argentina national team. Considered as one of the best midfielders in the world, he is known for his passing, shooting ability, and versatility.",
+      "description": "Argentine footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Alexis_Mac_Allister",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Alexis_Mac_Allister_04012026_%281%29.jpg/330px-Alexis_Mac_Allister_04012026_%281%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 448,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Alexis_Mac_Allister_04012026_%281%29.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "alvaro-morata": {
       "id": "alvaro-morata",
@@ -110,12 +130,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Álvaro Borja Morata Martín is a Spanish professional footballer who plays as a forward for Serie A club Como, on loan from AC Milan. He also captains the Spain national team.",
+      "description": "Spanish footballer (born 1992)",
       "wikiUrl": "https://en.wikipedia.org/wiki/%C3%81lvaro_Morata",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/%C3%81lvaro_Morata_in_2025.jpg/330px-%C3%81lvaro_Morata_in_2025.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 505,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/%C3%81lvaro_Morata_in_2025.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "amine-harit": {
       "id": "amine-harit",
@@ -130,12 +155,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Amine Harit is a professional footballer who plays as an attacking midfielder for Süper Lig club İstanbul Başakşehir, on loan from Marseille. Born in France, he plays for the Morocco national team.",
+      "description": "Moroccan footballer (born 1997)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Amine_Harit",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Harit.jpg/330px-Harit.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 526,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Harit.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "angel-di-maria": {
       "id": "angel-di-maria",
@@ -150,12 +180,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Ángel Fabián Di María is an Argentine professional footballer who plays as a right winger for Argentine Primera División club Rosario Central. Widely regarded as one of the greatest Argentine players of all time and one of the greatest wingers of his generation, Di María is known for his dribbling ability, playmaking, rapid pace and agility. He is the all-time Argentine top assist provider in the UEFA Champions League (41) and ranks second overall.",
+      "description": "Argentine footballer (born 1988)",
       "wikiUrl": "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 473,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/NIG-ARG_%285%29.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "antoine-griezmann": {
       "id": "antoine-griezmann",
@@ -174,12 +209,17 @@
       "careerAssists": 110,
       "careerAppearances": 760,
       "summary": "Antoine Griezmann is a French professional footballer who plays as a forward or attacking midfielder for La Liga club Atlético Madrid. Considered one of the best players of his generation, he is primarily known for his versatility, game intelligence, attacking output, and off-ball attributes. He will formally join Major League Soccer club Orlando City in July 2026.",
+      "description": "French footballer (born 1991)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Antoine_Griezmann",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/FRA-ARG_%2810%29_%28cropped%29.jpg/330px-FRA-ARG_%2810%29_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 398,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/FRA-ARG_%2810%29_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "antonio-rudiger": {
       "id": "antonio-rudiger",
@@ -194,12 +234,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Antonio Rüdiger is a German professional footballer who plays as a centre-back for La Liga club Real Madrid and the Germany national team. He is known for his aggressive playing style, speed, tackling ability and strong aerial presence.",
+      "description": "German footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Antonio_R%C3%BCdiger",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Antonio_R%C3%BCdiger_850_0711.jpg/330px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Antonio_R%C3%BCdiger_850_0711.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 495,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Antonio_R%C3%BCdiger_850_0711.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "antonio-silva": {
       "id": "antonio-silva",
@@ -214,12 +259,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Antonio Silva, António Silva or Antônio Silva can refer to:António Costa Silva, Portuguese businessman and politician\nAntónio Silva (actor) (1886–1971), Portuguese actor\nAntônio Silva, Brazilian football manager\nAntônio Silva (fighter), Brazilian mixed martial artist\nAntónio Silva (footballer), Portuguese football defender\nAntônio Tenório Silva, Brazilian judoka\nToñito Silva, Puerto Rican politician\nTony Silva, American aviculturist",
+      "description": "Topics referred to by the same term",
       "wikiUrl": "https://en.wikipedia.org/wiki/Antonio_Silva",
+      "thumbnailUrl": null,
+      "thumbnailWidth": null,
+      "thumbnailHeight": null,
+      "originalImageUrl": null,
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "bremer": {
       "id": "bremer",
@@ -234,12 +284,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Bremer may refer to:",
+      "description": "Topics referred to by the same term",
       "wikiUrl": "https://en.wikipedia.org/wiki/Bremer",
+      "thumbnailUrl": null,
+      "thumbnailWidth": null,
+      "thumbnailHeight": null,
+      "originalImageUrl": null,
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "brian-brobbey": {
       "id": "brian-brobbey",
@@ -254,12 +309,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Brian Ebenezer Adjei Brobbey is a Dutch professional footballer who plays as a striker for Premier League club Sunderland and the Netherlands national team.",
+      "description": "Dutch footballer (born 2002)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Brian_Brobbey",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/GAE_-_Ajax_-_52788469380_%28Brobbey%29.jpg/330px-GAE_-_Ajax_-_52788469380_%28Brobbey%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 441,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/GAE_-_Ajax_-_52788469380_%28Brobbey%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "bruno-fernandes": {
       "id": "bruno-fernandes",
@@ -280,12 +340,17 @@
       "careerAssists": 140,
       "careerAppearances": 620,
       "summary": "Bruno Miguel Borges Fernandes is a Portuguese professional footballer who plays as an attacking midfielder for Premier League club Manchester United, which he captains, and the Portugal national team. Known for his creative output, vision, goal scoring ability, and passing, he is widely regarded as one of the best attacking midfielders in the world.",
+      "description": "Portuguese footballer (born 1994)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg/330px-Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 495,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "bukayo-saka": {
       "id": "bukayo-saka",
@@ -302,12 +367,17 @@
       "careerAssists": 85,
       "careerAppearances": 340,
       "summary": "Bukayo Ayoyinka Temidayo Moses Saka is an English professional footballer who plays as a right winger for Premier League club Arsenal and the England national team.",
+      "description": "English footballer (born 2001)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Bukayo_Saka",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/1_bukayo_saka_arsenal_2025_%28cropped%29.jpg/330px-1_bukayo_saka_arsenal_2025_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 390,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/1_bukayo_saka_arsenal_2025_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "chancel-mbemba": {
       "id": "chancel-mbemba",
@@ -322,12 +392,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Chancel Mangulu Mbemba is a Congolese professional footballer who plays as a centre-back for Ligue 1 club Lille and the DR Congo national team, of which he is the captain.",
+      "description": "Congolese footballer (born 1994)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Chancel_Mbemba",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/24BBRW_-_53535940590_%28cropped%29.jpg/330px-24BBRW_-_53535940590_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 471,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/24BBRW_-_53535940590_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "christian-pulisic": {
       "id": "christian-pulisic",
@@ -346,12 +421,17 @@
       "careerAssists": 70,
       "careerAppearances": 430,
       "summary": "Christian Mate Pulisic is an American professional soccer player who plays as a winger, attacking midfielder and forward for Serie A club AC Milan and the United States national team. Regarded as one of the best North American players of all time, he is nicknamed \"Captain America\" and known for his dribbling, directness, and playmaking.",
+      "description": "American soccer player (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Christian_Pulisic",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg/330px-Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 440,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "christopher-nkunku": {
       "id": "christopher-nkunku",
@@ -366,12 +446,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Christopher Alan Nkunku is a French professional footballer who plays as a forward, attacking midfielder and winger for Serie A club AC Milan and the France national team.",
+      "description": "French footballer (born 1997)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Christopher_Nkunku",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_1DX_3321_by_Stepro_%28cropped%29.jpg/330px-2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_1DX_3321_by_Stepro_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 352,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_1DX_3321_by_Stepro_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "cole-palmer": {
       "id": "cole-palmer",
@@ -386,12 +471,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Cole Jermaine Palmer is an English professional footballer who plays as an attacking midfielder or winger for Premier League club Chelsea and the England national team. Known for his dribbling and passing ability, he is widely regarded as one of the best attacking midfielders in the world.",
+      "description": "English footballer (born 2002)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Cole_Palmer",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cole_Palmer_2025_FIFA_Club_World_Cup_Final.jpg",
+      "thumbnailWidth": 286,
+      "thumbnailHeight": 513,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cole_Palmer_2025_FIFA_Club_World_Cup_Final.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "cristian-romero": {
       "id": "cristian-romero",
@@ -406,12 +496,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Cristian Gabriel Romero is an Argentine professional footballer who plays as a centre-back for Premier League club Tottenham Hotspur, which he captains, and the Argentina national team.",
+      "description": "Argentine footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Cristian_Romero",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cristian_Romero_WC2022.jpg/330px-Cristian_Romero_WC2022.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 523,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cristian_Romero_WC2022.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "darwin-nunez": {
       "id": "darwin-nunez",
@@ -426,12 +521,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Darwin Gabriel Núñez Ribeiro is a Uruguayan professional footballer who plays as a forward for Saudi Pro League club Al-Hilal and the Uruguay national team.",
+      "description": "Uruguayan footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Darwin_N%C3%BA%C3%B1ez",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Darwin_N%C3%BA%C3%B1ez_%28cropped%29.jpg/330px-Darwin_N%C3%BA%C3%B1ez_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 459,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Darwin_N%C3%BA%C3%B1ez_%28cropped%29.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "declan-rice": {
       "id": "declan-rice",
@@ -446,12 +546,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Declan Rice is an English professional footballer who plays as a defensive midfielder for Premier League club Arsenal and the England national team. Known for his versatility, stamina, ball-carrying and tackling, he is considered one of the best midfielders in the world.",
+      "description": "English footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Declan_Rice",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/1_declan_rice_arsenal_2025_%28cropped%29.jpg/330px-1_declan_rice_arsenal_2025_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 406,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/1_declan_rice_arsenal_2025_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "dejan-kulusevski": {
       "id": "dejan-kulusevski",
@@ -466,12 +571,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Dejan Kuluševski is a Swedish professional footballer who plays as an attacking midfielder or winger for Premier League club Tottenham Hotspur and the Sweden national team.",
+      "description": "Swedish footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Dejan_Kulusevski",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sweden-Slovenia_Nations_League_2022-09-27_17_Kulusevski_%28cropped%29.jpg/330px-Sweden-Slovenia_Nations_League_2022-09-27_17_Kulusevski_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 400,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sweden-Slovenia_Nations_League_2022-09-27_17_Kulusevski_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "dusan-vlahovic": {
       "id": "dusan-vlahovic",
@@ -490,12 +600,17 @@
       "careerAssists": 25,
       "careerAppearances": 320,
       "summary": "Dušan Vlahović is a Serbian professional footballer who plays as a striker for Serie A club Juventus and the Serbia national team.",
+      "description": "Serbian footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Du%C5%A1an_Vlahovi%C4%87",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Incontro_con_le_squadre_finaliste_della_Coppa_Italia_di_calcio_Frecciarossa_Atalanta_-_Juventus_05_%28Du%C5%A1an_Vlahovi%C4%87%29.jpg",
+      "thumbnailWidth": 187,
+      "thumbnailHeight": 432,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Incontro_con_le_squadre_finaliste_della_Coppa_Italia_di_calcio_Frecciarossa_Atalanta_-_Juventus_05_%28Du%C5%A1an_Vlahovi%C4%87%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "enzo-fernandez": {
       "id": "enzo-fernandez",
@@ -510,12 +625,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Enzo Jeremías Fernández is an Argentine professional footballer who plays as a midfielder for Premier League club Chelsea and the Argentina national team. Primarily a central midfielder, he is also capable of playing as a defensive or attacking midfielder.",
+      "description": "Argentine footballer (born 2001)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Enzo_Fern%C3%A1ndez_2025_FIFA_Club_World_Cup_Final.jpg/330px-Enzo_Fern%C3%A1ndez_2025_FIFA_Club_World_Cup_Final.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 482,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Enzo_Fern%C3%A1ndez_2025_FIFA_Club_World_Cup_Final.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "erling-haaland": {
       "id": "erling-haaland",
@@ -535,12 +655,17 @@
       "careerAssists": 55,
       "careerAppearances": 320,
       "summary": "Erling Braut Haaland is a Norwegian professional footballer who plays as a striker for Premier League club Manchester City and the Norway national team. Considered one of the best players in the world, and the greatest Norwegian player ever, he is known for his speed, strength, positioning, and finishing inside the box.",
+      "description": "Norwegian footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Erling_Haaland",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Erling_Haaland_June_2025.jpg/330px-Erling_Haaland_June_2025.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 446,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Erling_Haaland_June_2025.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "federico-chiesa": {
       "id": "federico-chiesa",
@@ -555,12 +680,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Federico Chiesa is an Italian professional footballer who plays as a forward and winger for Premier League club Liverpool and the Italy national team.",
+      "description": "Italian footballer (born 1997)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Federico_Chiesa",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Federico_Chiesa_vs_Zenit_2021-10-20_%28cropped2%29.jpg/330px-Federico_Chiesa_vs_Zenit_2021-10-20_%28cropped2%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 447,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Federico_Chiesa_vs_Zenit_2021-10-20_%28cropped2%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "federico-valverde": {
       "id": "federico-valverde",
@@ -580,12 +710,17 @@
       "careerAssists": 45,
       "careerAppearances": 350,
       "summary": "Federico Santiago Valverde Dipetta is a Uruguayan professional footballer who plays as a central midfielder for La Liga club Real Madrid and the Uruguay national team. Known for his versatility, work rate, pace and shooting, he is considered as one of the best midfielders in the world. Valverde mainly plays as a central midfielder but is also able to play as a right-back.",
+      "description": "Uruguayan footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Federico_Valverde",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Federico_Valverde_2021_%28cropped%29.jpg/330px-Federico_Valverde_2021_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 251,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Federico_Valverde_2021_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "florian-wirtz": {
       "id": "florian-wirtz",
@@ -602,12 +737,17 @@
       "careerAssists": 65,
       "careerAppearances": 220,
       "summary": "Florian Richard Wirtz is a German professional footballer who plays as an attacking midfielder or left midfielder for Premier League club Liverpool and the Germany national team. He is widely regarded as one of the best attacking midfielders in the world.",
+      "description": "German footballer (born 2003)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Florian_Wirtz%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29_%28cropped%29.jpg/330px-Florian_Wirtz%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 475,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Florian_Wirtz%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "giovanni-di-lorenzo": {
       "id": "giovanni-di-lorenzo",
@@ -622,12 +762,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Giovanni Di Lorenzo is an Italian professional footballer who plays as a right-back for Serie A club Napoli, which he captains, and the Italy national team.",
+      "description": "Italian footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Giovanni_Di_Lorenzo",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Norway_Italy_-_June_2025_A_20_-_Giovanni_Di_Lorenzo.jpg/330px-Norway_Italy_-_June_2025_A_20_-_Giovanni_Di_Lorenzo.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 445,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Norway_Italy_-_June_2025_A_20_-_Giovanni_Di_Lorenzo.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "granit-xhaka": {
       "id": "granit-xhaka",
@@ -642,12 +787,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Granit Xhaka is a Swiss professional footballer who plays as a defensive midfielder for and captains both Premier League club Sunderland and the Switzerland national team.",
+      "description": "Swiss footballer (born 1992)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Granit_Xhaka",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Granit_Xhaka_%28cropped%29.jpg/330px-Granit_Xhaka_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 529,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Granit_Xhaka_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "hakan-calhanoglu": {
       "id": "hakan-calhanoglu",
@@ -662,12 +812,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Hakan Çalhanoğlu is a professional footballer who plays as a midfielder for Serie A club Inter Milan. Born in Germany, he plays for and captains the Turkey national team.",
+      "description": "Turkish footballer (born 1994)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/AUT_vs._TUR_2016-03-29_%28342%29.jpg/330px-AUT_vs._TUR_2016-03-29_%28342%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 454,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/AUT_vs._TUR_2016-03-29_%28342%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "harry-kane": {
       "id": "harry-kane",
@@ -685,12 +840,17 @@
       "careerAssists": 90,
       "careerAppearances": 600,
       "summary": "Harry Edward Kane is an English professional footballer who plays as a striker for Bundesliga club Bayern Munich and captains the England national team. Regarded as one of the best strikers of his generation, he is Tottenham Hotspur's all-time top goalscorer (280), England's all-time top goalscorer (78), and the highest-scoring English player in the UEFA Champions League (53). He is also the Premier League's second-highest all-time goalscorer (213) and the 10th highest goalscorer for Bayern Munich (139). He has scored over 500 career goals for club and country.",
+      "description": "English footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Harry_Kane",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Harry_Kane_on_October_10%2C_2023.jpg/330px-Harry_Kane_on_October_10%2C_2023.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 439,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Harry_Kane_on_October_10%2C_2023.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "heung-min-son": {
       "id": "heung-min-son",
@@ -709,12 +869,17 @@
       "careerAssists": 120,
       "careerAppearances": 620,
       "summary": "Son Heung-min is a South Korean professional footballer who plays as a left winger for Major League Soccer club Los Angeles FC and captains the South Korea national team. Known for his speed, finishing, two-footedness, and ability to link play, he is the top Asian goalscorer in both Premier League and UEFA Champions League history, and is widely regarded as the greatest Asian player of all time.",
+      "description": "South Korean footballer (born 1992)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Son_Heung-min",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg/330px-BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 447,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "jamal-musiala": {
       "id": "jamal-musiala",
@@ -731,12 +896,17 @@
       "careerAssists": 45,
       "careerAppearances": 250,
       "summary": "Jamal Musiala is a German professional footballer who plays as an attacking midfielder for Bundesliga club Bayern Munich and the Germany national team. Widely regarded as one of the best attacking midfielders in the world, Musiala is known for his dribbling, passing, goal threat, and technical skills, and is nicknamed \"Bambi\" for his close-control dribbling.",
+      "description": "German footballer (born 2003)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Jamal_Musiala",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Jamal_Musiala_2022_%28cropped%29.jpg/330px-Jamal_Musiala_2022_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 448,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Jamal_Musiala_2022_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "james-maddison": {
       "id": "james-maddison",
@@ -751,12 +921,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "James Daniel Maddison is an English professional footballer who plays as an attacking midfielder for Premier League club Tottenham Hotspur and the England national team.",
+      "description": "English footballer (born 1996)",
       "wikiUrl": "https://en.wikipedia.org/wiki/James_Maddison",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/James_Maddison_pre-match_training_%28cropped%29.jpg/330px-James_Maddison_pre-match_training_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 498,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/James_Maddison_pre-match_training_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "jan-oblak": {
       "id": "jan-oblak",
@@ -771,12 +946,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Jan Oblak is a Slovenian professional footballer who plays as a goalkeeper for La Liga club Atlético Madrid and captains the Slovenia national team.",
+      "description": "Slovenian footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Jan_Oblak",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Jan_Oblak_2019.jpg/330px-Jan_Oblak_2019.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 459,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Jan_Oblak_2019.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "jeremie-frimpong": {
       "id": "jeremie-frimpong",
@@ -791,12 +971,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Jeremie Agyekum Frimpong is a Dutch professional footballer who plays as a right-back or right midfielder for Premier League club Liverpool and the Netherlands national team.",
+      "description": "Nigerian footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Jeremie_Frimpong",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jeremie_Frimpong_04012026_%283%29_%28cropped%29.jpg/330px-Jeremie_Frimpong_04012026_%283%29_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 335,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Jeremie_Frimpong_04012026_%283%29_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "joao-mario": {
       "id": "joao-mario",
@@ -810,13 +995,18 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "João Mário may refer to:",
+      "description": "Topics referred to by the same term",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jo%C3%A3o_M%C3%A1rio",
+      "thumbnailUrl": null,
+      "thumbnailWidth": null,
+      "thumbnailHeight": null,
+      "originalImageUrl": null,
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "jordan-veretout": {
       "id": "jordan-veretout",
@@ -831,12 +1021,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Jordan Marcel Gilbert Veretout is a French professional footballer who plays as a midfielder for Qatar Stars League club Al-Arabi.",
+      "description": "French footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Jordan_Veretout",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Veretout_asse_ol_2425.png/330px-Veretout_asse_ol_2425.png",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 456,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Veretout_asse_ol_2425.png",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "jorrel-hato": {
       "id": "jorrel-hato",
@@ -850,13 +1045,18 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Jorrel Evan Hato is a Dutch professional footballer who plays as a centre-back or left-back for Premier League club Chelsea and the Netherlands national team.",
+      "description": "Dutch footballer (born 2006)",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jorrel_Hato",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jorrel_Hato_Chelsea_AC_Milan_warm_up.jpg/330px-Jorrel_Hato_Chelsea_AC_Milan_warm_up.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 413,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Jorrel_Hato_Chelsea_AC_Milan_warm_up.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "joshua-kimmich": {
       "id": "joshua-kimmich",
@@ -871,12 +1071,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Joshua Walter Kimmich is a German professional footballer who plays as a defensive midfielder or right-back for Bundesliga club Bayern Munich and captains the Germany national team. Known for his versatility, aggression and playmaking ability, Kimmich has been compared with former Bayern Munich and Germany captain Philipp Lahm.",
+      "description": "German footballer (born 1995)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Joshua_Kimmich",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2078_LR10_by_Stepro_%28cropped%29.jpg/330px-2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2078_LR10_by_Stepro_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 431,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2078_LR10_by_Stepro_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "jude-bellingham": {
       "id": "jude-bellingham",
@@ -895,12 +1100,17 @@
       "careerAssists": 45,
       "careerAppearances": 260,
       "summary": "Jude Victor William Bellingham is an English professional footballer who plays as a midfielder for La Liga club Real Madrid and the England national team. Known for his exceptional work rate, playmaking ability, interceptions and fast dribbling, he is widely regarded as one of the best players in the world.",
+      "description": "English footballer (born 2003)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg/330px-25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 491,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "julian-brandt": {
       "id": "julian-brandt",
@@ -915,12 +1125,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Julian Brandt is a German professional footballer who plays as a left winger or attacking midfielder for Bundesliga club Borussia Dortmund and the Germany national team.",
+      "description": "German footballer (born 1996)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Julian_Brandt",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2066_LR10_by_Stepro.jpg/330px-2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2066_LR10_by_Stepro.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 330,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2066_LR10_by_Stepro.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "kai-havertz": {
       "id": "kai-havertz",
@@ -935,12 +1150,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Kai Lukas Havertz is a German professional footballer who plays as a forward or attacking midfielder for Premier League club Arsenal and the Germany national team.",
+      "description": "German footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Kai_Havertz",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2059_LR10_by_Stepro.jpg/330px-2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2059_LR10_by_Stepro.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 330,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/2019-06-11_Fu%C3%9Fball%2C_M%C3%A4nner%2C_L%C3%A4nderspiel%2C_Deutschland-Estland_StP_2059_LR10_by_Stepro.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "karim-adeyemi": {
       "id": "karim-adeyemi",
@@ -955,12 +1175,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Karim David Adeyemi is a German professional footballer who plays as a winger or forward for Bundesliga club Borussia Dortmund and the Germany national team.",
+      "description": "German footballer (born 2002)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Karim_Adeyemi",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/FC_Salzburg_gegen_FC_Bayern_M%C3%BCnchen_%28Championsleague_Achtelfinale_Hinspiel_16._Februar_2022%29_63.jpg/330px-FC_Salzburg_gegen_FC_Bayern_M%C3%BCnchen_%28Championsleague_Achtelfinale_Hinspiel_16._Februar_2022%29_63.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 470,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/FC_Salzburg_gegen_FC_Bayern_M%C3%BCnchen_%28Championsleague_Achtelfinale_Hinspiel_16._Februar_2022%29_63.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "kenneth-taylor": {
       "id": "kenneth-taylor",
@@ -974,13 +1199,18 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Kenneth, Kenny or Ken Taylor may refer to:",
+      "description": "Topics referred to by the same term",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kenneth_Taylor",
+      "thumbnailUrl": null,
+      "thumbnailWidth": null,
+      "thumbnailHeight": null,
+      "originalImageUrl": null,
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "kevin-de-bruyne": {
       "id": "kevin-de-bruyne",
@@ -1001,12 +1231,17 @@
       "careerAssists": 250,
       "careerAppearances": 640,
       "summary": "Kevin De Bruyne is a Belgian professional footballer who plays as a midfielder for Serie A club Napoli and the Belgium national team. Widely regarded as one of the best players of his generation and one of the best players in Premier League history, De Bruyne has been described as a \"complete\" footballer. He is tied with Ferenc Puskás as the all-time leading European assist provider in international football (53).",
+      "description": "Belgian footballer (born 1991)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Kevin_De_Bruyne",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg/330px-Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 440,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "khvicha-kvaratskhelia": {
       "id": "khvicha-kvaratskhelia",
@@ -1026,12 +1261,17 @@
       "careerAssists": 65,
       "careerAppearances": 270,
       "summary": "Khvicha Kvaratskhelia is a Georgian professional footballer who plays as a left winger for Ligue 1 club Paris Saint-Germain and captains the Georgia national team. Regarded as one of the best wingers in the world and as one of the greatest Georgian players of all time, he is known for his dribbling, agility, and playmaking.",
+      "description": "Georgian footballer (born 2001)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Kvaratskhelia_asse_psg_2425.png/330px-Kvaratskhelia_asse_psg_2425.png",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 466,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Kvaratskhelia_asse_psg_2425.png",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "kylian-mbappe": {
       "id": "kylian-mbappe",
@@ -1049,12 +1289,17 @@
       "careerAssists": 120,
       "careerAppearances": 430,
       "summary": "Kylian Mbappé Lottin is a French professional footballer who plays as a forward for La Liga club Real Madrid and captains the France national team. He is known for his pace, dribbling, and clinical finishing, and is widely regarded as one of the best players in the world.",
+      "description": "French footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg/330px-Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 469,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "lamine-yamal": {
       "id": "lamine-yamal",
@@ -1069,12 +1314,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Lamine Yamal Nasraoui Ebana is a Spanish professional footballer who plays as a right winger or right midfielder for La Liga club Barcelona and the Spain national team. Known for his flair, chance creation, and long-distance curling goals, he is widely regarded as one of the best players in the world.",
+      "description": "Spanish footballer (born 2007)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Lamine_Yamal",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Lamine_Yamal_in_2025.jpg/330px-Lamine_Yamal_in_2025.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 504,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Lamine_Yamal_in_2025.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "lautaro-martinez": {
       "id": "lautaro-martinez",
@@ -1092,12 +1342,17 @@
       "careerAssists": 45,
       "careerAppearances": 410,
       "summary": "Lautaro Javier Martínez is an Argentine professional footballer who plays as a centre-forward for and captains Serie A club Inter Milan, and the Argentina national team.",
+      "description": "Argentine footballer (born 1997)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lautaro_Martinez_ARGENTINA_VS_VENEZUELA_2017.jpg/330px-Lautaro_Martinez_ARGENTINA_VS_VENEZUELA_2017.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 474,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Lautaro_Martinez_ARGENTINA_VS_VENEZUELA_2017.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "leroy-sane": {
       "id": "leroy-sane",
@@ -1116,12 +1371,17 @@
       "careerAssists": 130,
       "careerAppearances": 500,
       "summary": "Leroy Aziz Sané is a German professional footballer who plays as a winger for Süper Lig club Galatasaray and the Germany national team.",
+      "description": "German footballer (born 1996)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Leroy_San%C3%A9",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/FC_Red_Bull_Salzburg_gegen_Bayern_M%C3%BCnchen_%282025-01-06_Testspiel%29_22.jpg/330px-FC_Red_Bull_Salzburg_gegen_Bayern_M%C3%BCnchen_%282025-01-06_Testspiel%29_22.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 478,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/FC_Red_Bull_Salzburg_gegen_Bayern_M%C3%BCnchen_%282025-01-06_Testspiel%29_22.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "lisandro-martinez": {
       "id": "lisandro-martinez",
@@ -1136,12 +1396,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Lisandro Martínez is an Argentine professional footballer who plays primarily as a centre-back for Premier League club Manchester United and the Argentina national team. Nicknamed \"The Butcher\", he is known for his aggressive style of play and accurate long passes from the back.",
+      "description": "Argentine footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Lisandro_Mart%C3%ADnez",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Lisandro_Martinez_2022.jpg/330px-Lisandro_Martinez_2022.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 495,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Lisandro_Martinez_2022.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "marcus-rashford": {
       "id": "marcus-rashford",
@@ -1158,12 +1423,17 @@
       "careerAssists": 80,
       "careerAppearances": 450,
       "summary": "Marcus Rashford is an English professional footballer who plays as a forward for La Liga club Barcelona, on loan from Premier League club Manchester United, and the England national team.",
+      "description": "English footballer (born 1997)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Marcus_Rashford",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Marcus_Rashford_in_2023.jpg/330px-Marcus_Rashford_in_2023.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 440,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Marcus_Rashford_in_2023.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "martin-degaard": {
       "id": "martin-degaard",
@@ -1185,12 +1455,17 @@
       "careerAssists": 95,
       "careerAppearances": 430,
       "summary": "Martin Ødegaard is a Norwegian professional footballer who plays as a midfielder for and captains both Premier League club Arsenal and the Norway national team.",
+      "description": "Norwegian footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Martin_%C3%98degaard",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Norway_Italy_-_June_2025_E_04.jpg/330px-Norway_Italy_-_June_2025_E_04.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 495,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Norway_Italy_-_June_2025_E_04.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "mats-hummels": {
       "id": "mats-hummels",
@@ -1204,13 +1479,18 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Mats Julian Hummels is a German former professional footballer who played as a centre-back. Considered one of the best defenders of his generation, he was known for his tackling, anticipation, goal scoring ability and deadly crosses.",
+      "description": "German footballer (born 1988)",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mats_Hummels",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93103.jpg/330px-2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93103.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 555,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93103.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "mike-maignan": {
       "id": "mike-maignan",
@@ -1225,12 +1505,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Mike Peterson Maignan is a French professional footballer who plays as a goalkeeper for Serie A club AC Milan, which he captains, and the France national team.",
+      "description": "French footballer (born 1995)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Mike_Maignan",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mike_Maignan_2022_Salzburg_vs_AC_Milan_2022-09-06.jpg/330px-Mike_Maignan_2022_Salzburg_vs_AC_Milan_2022-09-06.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 402,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Mike_Maignan_2022_Salzburg_vs_AC_Milan_2022-09-06.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "mohamed-salah": {
       "id": "mohamed-salah",
@@ -1251,12 +1536,17 @@
       "careerAssists": 130,
       "careerAppearances": 560,
       "summary": "Mohamed Salah Hamed Mahrous Ghaly is an Egyptian professional footballer who plays as a right winger or right midfielder for Premier League club Liverpool and captains the Egypt national team. He is widely regarded as one of the best players of his generation and one of the greatest wingers of all time. Dubbed the \"Egyptian King\", he is the all-time top foreign goalscorer in the Premier League and the all-time top African goalscorer in the UEFA Champions League.",
+      "description": "Egyptian footballer (born 1992)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Mohamed_Salah",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mohamed_Salah_2018.jpg/330px-Mohamed_Salah_2018.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 495,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "niclas-fullkrug": {
       "id": "niclas-fullkrug",
@@ -1271,12 +1561,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Niclas Füllkrug is a German professional footballer who plays as a forward for Serie A club AC Milan, on loan from Premier League club West Ham United. He also plays for the Germany national team.",
+      "description": "German footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Niclas_F%C3%BCllkrug",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/NiclasF%C3%BCllkrug_%28cropped%29.jpg/330px-NiclasF%C3%BCllkrug_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 493,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/NiclasF%C3%BCllkrug_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "nicolo-barella": {
       "id": "nicolo-barella",
@@ -1293,13 +1588,18 @@
       "careerGoals": 45,
       "careerAssists": 65,
       "careerAppearances": 470,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Nicolò Barella is an Italian professional footballer who plays as a central midfielder for Serie A club Inter Milan and the Italy national team. Known for his technical ability, work rate, and creativity, he is often recognised as one of the best midfielders in the world.",
+      "description": "Italian football player (born 1997)",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Nicol%C3%B2_Barella",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Nicol%C3%B2_Barella_in_2021_%28cropped_2%29.jpg/330px-Nicol%C3%B2_Barella_in_2021_%28cropped_2%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 495,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Nicol%C3%B2_Barella_in_2021_%28cropped_2%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "ousmane-dembele": {
       "id": "ousmane-dembele",
@@ -1314,12 +1614,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Masour Ousmane Dembélé is a French professional footballer who plays as a forward or right winger forLigue 1 club Paris Saint-Germain and the France national team. Considered one of the best players in the world, he is one of ten players to have won the FIFA World Cup, UEFA Champions League, and Ballon d'Or in their career.",
+      "description": "French footballer (born 1997)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ousmane_Demb%C3%A9l%C3%A9_2018_%28cropped%29.jpg/330px-Ousmane_Demb%C3%A9l%C3%A9_2018_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 432,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ousmane_Demb%C3%A9l%C3%A9_2018_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "pedri": {
       "id": "pedri",
@@ -1337,12 +1642,17 @@
       "careerAssists": 25,
       "careerAppearances": 220,
       "summary": "Pedro González López, more commonly known as Pedri, is a Spanish professional footballer who plays as a midfielder for La Liga club Barcelona and the Spain national team. Considered as one of the best midfielders in the world, he is known for his ball control, dribbling, passing and playmaking.",
+      "description": "Spanish footballer (born 2002)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Pedri",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pedri.jpg/330px-Pedri.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 481,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Pedri.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "phil-foden": {
       "id": "phil-foden",
@@ -1357,12 +1667,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Philip Walter Foden is an English professional footballer who plays as a midfielder for Premier League club Manchester City and the England national team.",
+      "description": "English footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Phil_Foden",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg/330px-2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 429,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "pierre-emerick-aubameyang": {
       "id": "pierre-emerick-aubameyang",
@@ -1377,12 +1692,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Pierre-Emerick Emiliano François Aubameyang is a professional footballer who plays as a striker for Ligue 1 club Marseille and the Gabon national team.",
+      "description": "Gabon international footballer (born 1989)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/1_Pierre-Emerick_Aubameyang_%28cropped%29.jpg/330px-1_Pierre-Emerick_Aubameyang_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 414,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/1_Pierre-Emerick_Aubameyang_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "rafa-silva": {
       "id": "rafa-silva",
@@ -1397,12 +1717,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Rafael Alexandre Fernandes Ferreira da Silva, known as Rafa Silva or simply Rafa, is a Portuguese footballer who plays as a winger or second striker for Primeira Liga club Benfica.",
+      "description": "Portuguese footballer (born 1993)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Rafa_Silva",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Rafa_Silva_20240803_%28cropped%29_wide.jpg/330px-Rafa_Silva_20240803_%28cropped%29_wide.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 363,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Rafa_Silva_20240803_%28cropped%29_wide.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "rafael-leao": {
       "id": "rafael-leao",
@@ -1421,12 +1746,17 @@
       "careerAssists": 75,
       "careerAppearances": 390,
       "summary": "Rafael Alexandre da Conceição Leão is a Portuguese professional footballer who plays as a left winger and forward for Serie A club AC Milan and the Portugal national team. He is known for his dribbling and speed.",
+      "description": "Portuguese footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Rafael_Le%C3%A3o",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/RafaelLe%C3%A3oPortugal23.jpg/330px-RafaelLe%C3%A3oPortugal23.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 475,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/RafaelLe%C3%A3oPortugal23.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "rasmus-h-jlund": {
       "id": "rasmus-h-jlund",
@@ -1441,12 +1771,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Rasmus Winther Højlund is a Danish professional footballer who plays as a striker for Serie A club Napoli, on loan from Premier League club Manchester United, and the Denmark national team.",
+      "description": "Danish footballer (born 2003)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Rasmus_H%C3%B8jlund_with_a_fan.jpg",
+      "thumbnailWidth": 310,
+      "thumbnailHeight": 413,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Rasmus_H%C3%B8jlund_with_a_fan.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "reece-james": {
       "id": "reece-james",
@@ -1461,12 +1796,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Reece Lewis James is an English professional footballer who plays as a right-back for Premier League club Chelsea, which he captains, and the England national team.",
+      "description": "English footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Reece_James",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Reece_James_FIFA_Club_World_Cup_final_extraction.jpg/330px-Reece_James_FIFA_Club_World_Cup_final_extraction.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 437,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Reece_James_FIFA_Club_World_Cup_final_extraction.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "robert-lewandowski": {
       "id": "robert-lewandowski",
@@ -1486,12 +1826,17 @@
       "careerAssists": 140,
       "careerAppearances": 910,
       "summary": "Robert Lewandowski is a Polish professional footballer who plays as a striker for La Liga club Barcelona and captains the Poland national team. Widely regarded as one of the greatest strikers of all time, he is one of only five players to have scored 100 goals with three different clubs, ranks third for the all-time top goalscorers in the UEFA Champions League with 109 goals, and ranks third for the all-time European men's top goal scorers in international football (89). He has scored over 700 senior career goals for club and country.",
+      "description": "Polish footballer (born 1988)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/2019147183134_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0228_-_B70I8527_%28cropped%29.jpg/330px-2019147183134_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0228_-_B70I8527_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 458,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/2019147183134_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0228_-_B70I8527_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "rodri": {
       "id": "rodri",
@@ -1510,12 +1855,17 @@
       "careerAssists": 35,
       "careerAppearances": 430,
       "summary": "Rodri may refer to:Rodri (1934–2022), full name Francisco Rodríguez García, Spanish football defender for Barcelona\nRodri, full name Antonio Rodríguez Saravia, Spanish football forward and manager for Gimnàstic etc\nRodri, full name Rodrigo Gimeno Molina, Spanish football midfielder for Castellón\nRodri, full name Sergio Rodríguez García, Spanish football defender for Spartak Moscow, Eupen etc\nRodri, full name Rodrigo Ángel Gil Torres, Spanish football midfielder for Elche, Orihuela etc\nRodri, full name Rodrigo Suárez Peña, Spanish football midfielder for Betis\nRodri, full name Rodrigo Ríos Lozano, Spanish football forward for Córdoba, Oviedo etc\nRodri, full name Rodrigo Hernández Cascante, Spanish football midfielder for Villarreal, Manchester City, 2024 Ballon d'Or winner\nRodri, full name Rodrigo Sánchez Rodríguez, Spanish football midfielder for Betis\nRodri, full name Rodrigo Suárez Marcos, Spanish football defender for Cultural Leonesa\nRodri, full name Rodrigo Alonso Martín, Spanish football midfielder for Villarreal",
+      "description": "List of people with the same nickname",
       "wikiUrl": "https://en.wikipedia.org/wiki/Rodri",
+      "thumbnailUrl": null,
+      "thumbnailWidth": null,
+      "thumbnailHeight": null,
+      "originalImageUrl": null,
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "rodrigo-de-paul": {
       "id": "rodrigo-de-paul",
@@ -1530,12 +1880,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Rodrigo Javier De Paul is an Argentine professional football player who plays as a midfielder for Major League Soccer club Inter Miami and the Argentina national team.",
+      "description": "Argentine footballer (born 1994)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Rodrigo_De_Paul",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Rodrigo_De_Paul_NYCFC_Miami_24_Sep_2025-018_%28cropped%29.jpg/330px-Rodrigo_De_Paul_NYCFC_Miami_24_Sep_2025-018_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 440,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Rodrigo_De_Paul_NYCFC_Miami_24_Sep_2025-018_%28cropped%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "ronald-araujo": {
       "id": "ronald-araujo",
@@ -1550,12 +1905,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Ronald Federico Araújo da Silva is an Uruguayan professional footballer who plays as a centre-back for La Liga club Barcelona, whom he captains, and the Uruguay national team.",
+      "description": "Uruguayan footballer (born 1999)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Ronald_Ara%C3%BAjo",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/FC_Red_Bull_Salzburg_gegen_CF_Barcelona_%28Testspiel_4._August_2021%29_45_%28cropped%29.jpg/330px-FC_Red_Bull_Salzburg_gegen_CF_Barcelona_%28Testspiel_4._August_2021%29_45_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 498,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/FC_Red_Bull_Salzburg_gegen_CF_Barcelona_%28Testspiel_4._August_2021%29_45_%28cropped%29.jpg",
       "sources": {
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "stanislav-lobotka": {
       "id": "stanislav-lobotka",
@@ -1570,12 +1930,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Stanislav Lobotka is a Slovak professional footballer who plays as a defensive midfielder for Serie A club Napoli and the Slovakia national team.",
+      "description": "Slovak footballer (born 1994)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Stanislav_Lobotka",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Stanislav_Lobotka_2021.jpg/330px-Stanislav_Lobotka_2021.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 389,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Stanislav_Lobotka_2021.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "steven-bergwijn": {
       "id": "steven-bergwijn",
@@ -1589,13 +1954,18 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Steven Charles Bergwijn  is a Dutch professional footballer who plays as a left winger or a forward for Saudi Pro League club Al-Ittihad.",
+      "description": "Dutch footballer (born 1997)",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Steven_Bergwijn",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/GAE_-_Ajax_-_52788530788_%28Steven_Bergwijn%29.jpg/330px-GAE_-_Ajax_-_52788530788_%28Steven_Bergwijn%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 440,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/GAE_-_Ajax_-_52788530788_%28Steven_Bergwijn%29.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "theo-hernandez": {
       "id": "theo-hernandez",
@@ -1615,13 +1985,18 @@
       "careerGoals": 55,
       "careerAssists": 70,
       "careerAppearances": 450,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Théo Bernard François Hernandez is a French professional footballer who plays primarily as a left-back for Saudi Pro League club Al Hilal and the France national team. He is known for his speed, dribbling, and goal scoring ability.",
+      "description": "French footballer (born 1997)",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Th%C3%A9o_Hernandez",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/FC_Salzburg_vs._AC_Mailand_%28UEFA_Championsleague_2022-09-06%29_Th%C3%A9o_Hernandez.jpg/330px-FC_Salzburg_vs._AC_Mailand_%28UEFA_Championsleague_2022-09-06%29_Th%C3%A9o_Hernandez.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 444,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/FC_Salzburg_vs._AC_Mailand_%28UEFA_Championsleague_2022-09-06%29_Th%C3%A9o_Hernandez.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "victor-boniface": {
       "id": "victor-boniface",
@@ -1636,12 +2011,17 @@
       "careerAssists": null,
       "careerAppearances": null,
       "summary": "Victor Okoh Boniface is a Nigerian professional footballer who plays as a striker for Bundesliga club Werder Bremen, on loan from Bayer Leverkusen, and the Nigeria national team.",
+      "description": "Nigerian footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Victor_Boniface",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Boniface_Jr.jpg/330px-Boniface_Jr.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 482,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Boniface_Jr.jpg",
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "victor-osimhen": {
       "id": "victor-osimhen",
@@ -1661,12 +2041,17 @@
       "careerAssists": 30,
       "careerAppearances": 280,
       "summary": "Victor James Osimhen is a Nigerian professional footballer who plays as a striker for Süper Lig club Galatasaray and is the vice-captain of the Nigeria national team. He is widely regarded as one of the best strikers in the world. Osimhen is known for his explosive pace, physical strength, aerial ability, and clinical finishing.",
+      "description": "Nigerian footballer (born 1998)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Victor_Osimhen",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Victor-osimhen-nigeria-2024-3-4.jpg/330px-Victor-osimhen-nigeria-2024-3-4.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 441,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Victor-osimhen-nigeria-2024-3-4.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "vinicius-junior": {
       "id": "vinicius-junior",
@@ -1684,12 +2069,17 @@
       "careerAssists": 95,
       "careerAppearances": 380,
       "summary": "Vinícius José Paixão de Oliveira Júnior, commonly known as Vinícius Júnior or Vini Jr., is a Brazilian professional footballer who plays as a forward for La Liga club Real Madrid and the Brazil national team. Considered one of the best players in the world, he is known for his pace, technique and dribbling ability.",
+      "description": "Brazilian footballer (born 2000)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg/330px-2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 423,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "virgil-van-dijk": {
       "id": "virgil-van-dijk",
@@ -1709,12 +2099,17 @@
       "careerAssists": 20,
       "careerAppearances": 520,
       "summary": "Virgil van Dijk is a Dutch professional footballer who plays as a centre-back for and captains both Premier League club Liverpool and the Netherlands national team. Widely regarded as one of the best defenders of his generation, and one of the greatest defenders in Premier League history, he is known for his strength, leadership, speed and aerial ability.",
+      "description": "Dutch footballer (born 1991)",
       "wikiUrl": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20160604_AUT_NED_8876_%28cropped%29.jpg/330px-20160604_AUT_NED_8876_%28cropped%29.jpg",
+      "thumbnailWidth": 330,
+      "thumbnailHeight": 401,
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/20160604_AUT_NED_8876_%28cropped%29.jpg",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     },
     "vitinha": {
       "id": "vitinha",
@@ -1728,13 +2123,18 @@
       "careerGoals": null,
       "careerAssists": null,
       "careerAppearances": null,
-      "summary": null,
-      "wikiUrl": null,
+      "summary": "Vitinha, a hypocorism of Vítor in Portuguese, may refer to:Vitinha, full name Vítor Tiago de Freitas Fernandes, Portuguese football defender\nVitinha, full name Vítor Reis Alves, Portuguese football midfielder\nVitinha, full name Vítor Hugo Silva Azevedo, Portuguese football midfielder\nVitinha, full name Vítor Hugo de Almeida Tavares, Portuguese football defender\nVitinha, full name Vítor Machado Ferreira, Portuguese football midfielder\nVitinha, Vítor Manuel Carvalho Oliveira, Portuguese football forward\nVitinha, full name Vítor Manuel da Silva Marques, Portuguese futsal player",
+      "description": "Topics referred to by the same term",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Vitinha",
+      "thumbnailUrl": null,
+      "thumbnailWidth": null,
+      "thumbnailHeight": null,
+      "originalImageUrl": null,
       "sources": {
         "seed": null,
-        "wikipedia": null
+        "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T13:11:39.751Z"
+      "fetchedAt": "2026-05-03T15:10:29.559Z"
     }
   }
 }

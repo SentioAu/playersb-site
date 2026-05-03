@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-03T13:11:25.034Z",
-  "generatedAt": "2026-05-03T13:11:25.034Z",
+  "updatedAt": "2026-05-03T15:10:15.200Z",
+  "generatedAt": "2026-05-03T15:10:15.200Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T13:11:25.034Z"
+      "fetchedAt": "2026-05-03T15:10:15.200Z"
     }
   },
   "scorers": [
@@ -98,6 +98,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Eli Kroupi",
+      "team": "AFC Bournemouth",
+      "competition": "Premier League",
+      "nationality": "France",
+      "position": "",
+      "goals": 12,
+      "assists": 0,
+      "penalties": 2,
+      "playedMatches": 35
+    },
+    {
       "name": "Hugo Ekitike",
       "team": "Liverpool FC",
       "competition": "Premier League",
@@ -109,15 +120,15 @@
       "playedMatches": 29
     },
     {
-      "name": "Eli Kroupi",
-      "team": "AFC Bournemouth",
+      "name": "Benjamin Šeško",
+      "team": "Manchester United FC",
       "competition": "Premier League",
-      "nationality": "France",
+      "nationality": "Slovenia",
       "position": "",
       "goals": 11,
-      "assists": 0,
-      "penalties": 1,
-      "playedMatches": 35
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 32
     },
     {
       "name": "Ollie Watkins",
@@ -153,17 +164,6 @@
       "playedMatches": 33
     },
     {
-      "name": "Benjamin Šeško",
-      "team": "Manchester United FC",
-      "competition": "Premier League",
-      "nationality": "Slovenia",
-      "position": "",
-      "goals": 10,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 31
-    },
-    {
       "name": "Richarlison",
       "team": "Tottenham Hotspur FC",
       "competition": "Premier League",
@@ -194,7 +194,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Cole Palmer",
@@ -216,7 +216,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Raúl Jiménez",
@@ -285,6 +285,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Borja Iglesias",
+      "team": "RC Celta de Vigo",
+      "competition": "La Liga",
+      "nationality": "Spain",
+      "position": "",
+      "goals": 14,
+      "assists": 1,
+      "penalties": 4,
+      "playedMatches": 33
+    },
+    {
       "name": "Mikel Oyarzabal",
       "team": "Real Sociedad de Fútbol",
       "competition": "La Liga",
@@ -305,17 +316,6 @@
       "assists": 5,
       "penalties": 4,
       "playedMatches": 31
-    },
-    {
-      "name": "Borja Iglesias",
-      "team": "RC Celta de Vigo",
-      "competition": "La Liga",
-      "nationality": "Spain",
-      "position": "",
-      "goals": 13,
-      "assists": 1,
-      "penalties": 4,
-      "playedMatches": 33
     },
     {
       "name": "Robert Lewandowski",
@@ -392,7 +392,18 @@
       "goals": 10,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
+    },
+    {
+      "name": "André Silva",
+      "team": "Elche CF",
+      "competition": "La Liga",
+      "nationality": "Portugal",
+      "position": "",
+      "goals": 10,
+      "assists": 0,
+      "penalties": 3,
+      "playedMatches": 29
     },
     {
       "name": "Alberto Moleiro",
@@ -415,17 +426,6 @@
       "assists": 0,
       "penalties": 1,
       "playedMatches": 33
-    },
-    {
-      "name": "André Silva",
-      "team": "Elche CF",
-      "competition": "La Liga",
-      "nationality": "Portugal",
-      "position": "",
-      "goals": 9,
-      "assists": 0,
-      "penalties": 2,
-      "playedMatches": 29
     },
     {
       "name": "Vladyslav Vanat",
@@ -722,7 +722,7 @@
       "goals": 15,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Michael Olise",
@@ -810,7 +810,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Fisnik Asllani",
@@ -865,7 +865,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Tim Lemperle",
@@ -1030,7 +1030,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 3,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Pierre-Emerick Aubameyang",
@@ -1052,7 +1052,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 3,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Corentin Tolisso",
@@ -1077,6 +1077,17 @@
       "playedMatches": 25
     },
     {
+      "name": "Hákon Haraldsson",
+      "team": "Lille OSC",
+      "competition": "Ligue 1",
+      "nationality": "Iceland",
+      "position": "",
+      "goals": 8,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 30
+    },
+    {
       "name": "Matias Fernandez-Pardo",
       "team": "Lille OSC",
       "competition": "Ligue 1",
@@ -1096,18 +1107,7 @@
       "goals": 8,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 29
-    },
-    {
-      "name": "Romain Del Castillo",
-      "team": "Stade Brestois 29",
-      "competition": "Ligue 1",
-      "nationality": "France",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 6,
-      "playedMatches": 28
+      "playedMatches": 30
     },
     {
       "name": "Kylian Mbappé",

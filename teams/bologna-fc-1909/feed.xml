@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/bologna-fc-1909/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Bologna FC 1909 on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Bologna FC 1909 vs FC Internazionale Milano</title>
       <link>https://playersb.com/teams/bologna-fc-1909/</link>
@@ -24,19 +24,11 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-11 (A) Bologna FC 1909 vs SSC Napoli</title>
-      <link>https://playersb.com/teams/bologna-fc-1909/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/bologna-fc-1909/#fixture-537172</guid>
-      <pubDate>Mon, 11 May 2026 18:45:00 GMT</pubDate>
-      <description>Bologna FC 1909 play SSC Napoli (A) on 2026-05-11. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-03 (H) Bologna FC 1909 vs Cagliari Calcio</title>
+      <title>2026-05-03 (H) Bologna FC 1909 0-0 Cagliari Calcio</title>
       <link>https://playersb.com/teams/bologna-fc-1909/</link>
       <guid isPermaLink="false">https://playersb.com/teams/bologna-fc-1909/#fixture-537158</guid>
       <pubDate>Sun, 03 May 2026 10:30:00 GMT</pubDate>
-      <description>Bologna FC 1909 play Cagliari Calcio (H) on 2026-05-03. Competition: Serie A. Status: TIMED.</description>
+      <description>Bologna FC 1909 played Cagliari Calcio (H) on 2026-05-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/bologna-fc-1909/#fixture-537009</guid>
       <pubDate>Sat, 10 Jan 2026 14:00:00 GMT</pubDate>
       <description>Bologna FC 1909 played Como 1907 (A) on 2026-01-10. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-07 (H) Bologna FC 1909 0-2 Atalanta BC</title>
+      <link>https://playersb.com/teams/bologna-fc-1909/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/bologna-fc-1909/#fixture-536996</guid>
+      <pubDate>Wed, 07 Jan 2026 17:30:00 GMT</pubDate>
+      <description>Bologna FC 1909 played Atalanta BC (H) on 2026-01-07. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

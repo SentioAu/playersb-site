@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/us-sassuolo-calcio/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for US Sassuolo Calcio on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) US Sassuolo Calcio vs Parma Calcio 1913</title>
       <link>https://playersb.com/teams/us-sassuolo-calcio/</link>
@@ -24,19 +24,11 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-08 (A) US Sassuolo Calcio vs Torino FC</title>
-      <link>https://playersb.com/teams/us-sassuolo-calcio/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/us-sassuolo-calcio/#fixture-537168</guid>
-      <pubDate>Fri, 08 May 2026 18:45:00 GMT</pubDate>
-      <description>US Sassuolo Calcio play Torino FC (A) on 2026-05-08. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-03 (H) US Sassuolo Calcio vs AC Milan</title>
+      <title>2026-05-03 (H) US Sassuolo Calcio 2-0 AC Milan</title>
       <link>https://playersb.com/teams/us-sassuolo-calcio/</link>
       <guid isPermaLink="false">https://playersb.com/teams/us-sassuolo-calcio/#fixture-537162</guid>
       <pubDate>Sun, 03 May 2026 13:00:00 GMT</pubDate>
-      <description>US Sassuolo Calcio play AC Milan (H) on 2026-05-03. Competition: Serie A. Status: TIMED.</description>
+      <description>US Sassuolo Calcio played AC Milan (H) on 2026-05-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/us-sassuolo-calcio/#fixture-537001</guid>
       <pubDate>Tue, 06 Jan 2026 19:45:00 GMT</pubDate>
       <description>US Sassuolo Calcio played Juventus FC (H) on 2026-01-06. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-03 (H) US Sassuolo Calcio 1-1 Parma Calcio 1913</title>
+      <link>https://playersb.com/teams/us-sassuolo-calcio/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/us-sassuolo-calcio/#fixture-536994</guid>
+      <pubDate>Sat, 03 Jan 2026 14:00:00 GMT</pubDate>
+      <description>US Sassuolo Calcio played Parma Calcio 1913 (H) on 2026-01-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/villarreal-cf/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Villarreal CF on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Villarreal CF vs Club Atlético de Madrid</title>
       <link>https://playersb.com/teams/villarreal-cf/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-544576</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Villarreal CF play Rayo Vallecano de Madrid (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-13 (H) Villarreal CF vs Sevilla FC</title>
+      <link>https://playersb.com/teams/villarreal-cf/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-544569</guid>
+      <pubDate>Wed, 13 May 2026 17:00:00 GMT</pubDate>
+      <description>Villarreal CF play Sevilla FC (H) on 2026-05-13. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-10 (A) Villarreal CF vs RCD Mallorca</title>
+      <link>https://playersb.com/teams/villarreal-cf/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-544555</guid>
+      <pubDate>Sun, 10 May 2026 12:00:00 GMT</pubDate>
+      <description>Villarreal CF play RCD Mallorca (A) on 2026-05-10. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -48,7 +64,7 @@
       <category>La Liga</category>
     </item>
     <item>
-      <title>2026-04-12 (A) Villarreal CF 1-3 Athletic Club</title>
+      <title>2026-04-12 (A) Villarreal CF 1-2 Athletic Club</title>
       <link>https://playersb.com/teams/villarreal-cf/</link>
       <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-544511</guid>
       <pubDate>Sun, 12 Apr 2026 19:00:00 GMT</pubDate>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-544420</guid>
       <pubDate>Sat, 24 Jan 2026 20:00:00 GMT</pubDate>
       <description>Villarreal CF played Real Madrid CF (H) on 2026-01-24. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-20 (H) Villarreal CF 1-2 AFC Ajax</title>
-      <link>https://playersb.com/teams/villarreal-cf/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-552011</guid>
-      <pubDate>Tue, 20 Jan 2026 20:00:00 GMT</pubDate>
-      <description>Villarreal CF played AFC Ajax (H) on 2026-01-20. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
-    </item>
-    <item>
-      <title>2026-01-17 (A) Villarreal CF 2-0 Real Betis Balompié</title>
-      <link>https://playersb.com/teams/villarreal-cf/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/villarreal-cf/#fixture-544401</guid>
-      <pubDate>Sat, 17 Jan 2026 20:00:00 GMT</pubDate>
-      <description>Villarreal CF played Real Betis Balompié (A) on 2026-01-17. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/real-betis-balompi/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Real Betis Balompié on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Real Betis Balompié vs Levante UD</title>
       <link>https://playersb.com/teams/real-betis-balompi/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544573</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Real Betis Balompié play FC Barcelona (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-12 (H) Real Betis Balompié vs Elche CF</title>
+      <link>https://playersb.com/teams/real-betis-balompi/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544562</guid>
+      <pubDate>Tue, 12 May 2026 18:00:00 GMT</pubDate>
+      <description>Real Betis Balompié play Elche CF (H) on 2026-05-12. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-09 (A) Real Betis Balompié vs Real Sociedad de Fútbol</title>
+      <link>https://playersb.com/teams/real-betis-balompi/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544557</guid>
+      <pubDate>Sat, 09 May 2026 19:00:00 GMT</pubDate>
+      <description>Real Betis Balompié play Real Sociedad de Fútbol (A) on 2026-05-09. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-03 (H) Real Betis Balompié vs Real Oviedo</title>
+      <link>https://playersb.com/teams/real-betis-balompi/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544542</guid>
+      <pubDate>Sun, 03 May 2026 16:30:00 GMT</pubDate>
+      <description>Real Betis Balompié play Real Oviedo (H) on 2026-05-03. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544396</guid>
       <pubDate>Sat, 10 Jan 2026 13:00:00 GMT</pubDate>
       <description>Real Betis Balompié played Real Oviedo (A) on 2026-01-10. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (A) Real Betis Balompié 5-1 Real Madrid CF</title>
-      <link>https://playersb.com/teams/real-betis-balompi/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544387</guid>
-      <pubDate>Sun, 04 Jan 2026 15:15:00 GMT</pubDate>
-      <description>Real Betis Balompié played Real Madrid CF (A) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-21 (H) Real Betis Balompié 4-0 Getafe CF</title>
-      <link>https://playersb.com/teams/real-betis-balompi/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544372</guid>
-      <pubDate>Sun, 21 Dec 2025 20:00:00 GMT</pubDate>
-      <description>Real Betis Balompié played Getafe CF (H) on 2025-12-21. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-15 (A) Real Betis Balompié 0-0 Rayo Vallecano de Madrid</title>
-      <link>https://playersb.com/teams/real-betis-balompi/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-betis-balompi/#fixture-544366</guid>
-      <pubDate>Mon, 15 Dec 2025 20:00:00 GMT</pubDate>
-      <description>Real Betis Balompié played Rayo Vallecano de Madrid (A) on 2025-12-15. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

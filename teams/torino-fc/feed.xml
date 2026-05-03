@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/torino-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Torino FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Torino FC vs Juventus FC</title>
       <link>https://playersb.com/teams/torino-fc/</link>
@@ -21,14 +21,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/torino-fc/#fixture-537177</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Torino FC play Cagliari Calcio (A) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-08 (H) Torino FC vs US Sassuolo Calcio</title>
-      <link>https://playersb.com/teams/torino-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/torino-fc/#fixture-537168</guid>
-      <pubDate>Fri, 08 May 2026 18:45:00 GMT</pubDate>
-      <description>Torino FC play US Sassuolo Calcio (H) on 2026-05-08. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -48,7 +40,7 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-04-19 (A) Torino FC 0-0 US Cremonese</title>
+      <title>2026-04-19 (A) Torino FC 1-0 US Cremonese</title>
       <link>https://playersb.com/teams/torino-fc/</link>
       <guid isPermaLink="false">https://playersb.com/teams/torino-fc/#fixture-537143</guid>
       <pubDate>Sun, 19 Apr 2026 10:30:00 GMT</pubDate>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/torino-fc/#fixture-536997</guid>
       <pubDate>Wed, 07 Jan 2026 19:45:00 GMT</pubDate>
       <description>Torino FC played Udinese Calcio (H) on 2026-01-07. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-04 (A) Torino FC 0-3 Hellas Verona FC</title>
+      <link>https://playersb.com/teams/torino-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/torino-fc/#fixture-536990</guid>
+      <pubDate>Sun, 04 Jan 2026 17:00:00 GMT</pubDate>
+      <description>Torino FC played Hellas Verona FC (A) on 2026-01-04. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

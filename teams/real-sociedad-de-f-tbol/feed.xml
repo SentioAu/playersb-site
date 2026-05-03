@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/real-sociedad-de-f-tbol/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Real Sociedad de Fútbol on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Real Sociedad de Fútbol vs RCD Espanyol de Barcelona</title>
       <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544577</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Real Sociedad de Fútbol play Valencia CF (H) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-14 (A) Real Sociedad de Fútbol vs Girona FC</title>
+      <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544565</guid>
+      <pubDate>Thu, 14 May 2026 18:00:00 GMT</pubDate>
+      <description>Real Sociedad de Fútbol play Girona FC (A) on 2026-05-14. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-09 (H) Real Sociedad de Fútbol vs Real Betis Balompié</title>
+      <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544557</guid>
+      <pubDate>Sat, 09 May 2026 19:00:00 GMT</pubDate>
+      <description>Real Sociedad de Fútbol play Real Betis Balompié (H) on 2026-05-09. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-04 (A) Real Sociedad de Fútbol vs Sevilla FC</title>
+      <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544550</guid>
+      <pubDate>Mon, 04 May 2026 19:00:00 GMT</pubDate>
+      <description>Real Sociedad de Fútbol play Sevilla FC (A) on 2026-05-04. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544392</guid>
       <pubDate>Fri, 09 Jan 2026 20:00:00 GMT</pubDate>
       <description>Real Sociedad de Fútbol played Getafe CF (A) on 2026-01-09. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (H) Real Sociedad de Fútbol 1-1 Club Atlético de Madrid</title>
-      <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544385</guid>
-      <pubDate>Sun, 04 Jan 2026 20:00:00 GMT</pubDate>
-      <description>Real Sociedad de Fútbol played Club Atlético de Madrid (H) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-20 (A) Real Sociedad de Fútbol 1-1 Levante UD</title>
-      <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544374</guid>
-      <pubDate>Sat, 20 Dec 2025 15:15:00 GMT</pubDate>
-      <description>Real Sociedad de Fútbol played Levante UD (A) on 2025-12-20. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-12 (H) Real Sociedad de Fútbol 1-2 Girona FC</title>
-      <link>https://playersb.com/teams/real-sociedad-de-f-tbol/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/real-sociedad-de-f-tbol/#fixture-544369</guid>
-      <pubDate>Fri, 12 Dec 2025 20:00:00 GMT</pubDate>
-      <description>Real Sociedad de Fútbol played Girona FC (H) on 2025-12-12. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

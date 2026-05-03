@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/rcd-espanyol-de-barcelona/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for RCD Espanyol de Barcelona on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) RCD Espanyol de Barcelona vs Real Sociedad de Fútbol</title>
       <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544579</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>RCD Espanyol de Barcelona play CA Osasuna (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-13 (H) RCD Espanyol de Barcelona vs Athletic Club</title>
+      <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544566</guid>
+      <pubDate>Wed, 13 May 2026 17:00:00 GMT</pubDate>
+      <description>RCD Espanyol de Barcelona play Athletic Club (H) on 2026-05-13. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-09 (A) RCD Espanyol de Barcelona vs Sevilla FC</title>
+      <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544558</guid>
+      <pubDate>Sat, 09 May 2026 14:15:00 GMT</pubDate>
+      <description>RCD Espanyol de Barcelona play Sevilla FC (A) on 2026-05-09. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-03 (H) RCD Espanyol de Barcelona vs Real Madrid CF</title>
+      <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544544</guid>
+      <pubDate>Sun, 03 May 2026 19:00:00 GMT</pubDate>
+      <description>RCD Espanyol de Barcelona play Real Madrid CF (H) on 2026-05-03. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544399</guid>
       <pubDate>Sun, 11 Jan 2026 15:15:00 GMT</pubDate>
       <description>RCD Espanyol de Barcelona played Levante UD (A) on 2026-01-11. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-03 (H) RCD Espanyol de Barcelona 0-2 FC Barcelona</title>
-      <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544386</guid>
-      <pubDate>Sat, 03 Jan 2026 20:00:00 GMT</pubDate>
-      <description>RCD Espanyol de Barcelona played FC Barcelona (H) on 2026-01-03. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-22 (A) RCD Espanyol de Barcelona 1-2 Athletic Club</title>
-      <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544371</guid>
-      <pubDate>Mon, 22 Dec 2025 20:00:00 GMT</pubDate>
-      <description>RCD Espanyol de Barcelona played Athletic Club (A) on 2025-12-22. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-13 (A) RCD Espanyol de Barcelona 0-1 Getafe CF</title>
-      <link>https://playersb.com/teams/rcd-espanyol-de-barcelona/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rcd-espanyol-de-barcelona/#fixture-544368</guid>
-      <pubDate>Sat, 13 Dec 2025 20:00:00 GMT</pubDate>
-      <description>RCD Espanyol de Barcelona played Getafe CF (A) on 2025-12-13. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

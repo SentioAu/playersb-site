@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/ssc-napoli/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for SSC Napoli on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) SSC Napoli vs Udinese Calcio</title>
       <link>https://playersb.com/teams/ssc-napoli/</link>
@@ -21,14 +21,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/ssc-napoli/#fixture-537182</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>SSC Napoli play AC Pisa 1909 (A) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-11 (H) SSC Napoli vs Bologna FC 1909</title>
-      <link>https://playersb.com/teams/ssc-napoli/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/ssc-napoli/#fixture-537172</guid>
-      <pubDate>Mon, 11 May 2026 18:45:00 GMT</pubDate>
-      <description>SSC Napoli play Bologna FC 1909 (H) on 2026-05-11. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/ssc-napoli/#fixture-537022</guid>
       <pubDate>Sat, 17 Jan 2026 17:00:00 GMT</pubDate>
       <description>SSC Napoli played US Sassuolo Calcio (H) on 2026-01-17. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-14 (H) SSC Napoli 0-0 Parma Calcio 1913</title>
+      <link>https://playersb.com/teams/ssc-napoli/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/ssc-napoli/#fixture-536974</guid>
+      <pubDate>Wed, 14 Jan 2026 17:30:00 GMT</pubDate>
+      <description>SSC Napoli played Parma Calcio 1913 (H) on 2026-01-14. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/as-roma/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for AS Roma on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) AS Roma vs Hellas Verona FC</title>
       <link>https://playersb.com/teams/as-roma/</link>
@@ -21,22 +21,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/as-roma/#fixture-537175</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>AS Roma play SS Lazio (H) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-10 (A) AS Roma vs Parma Calcio 1913</title>
-      <link>https://playersb.com/teams/as-roma/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/as-roma/#fixture-537171</guid>
-      <pubDate>Sun, 10 May 2026 16:00:00 GMT</pubDate>
-      <description>AS Roma play Parma Calcio 1913 (A) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-05-04 (H) AS Roma vs ACF Fiorentina</title>
-      <link>https://playersb.com/teams/as-roma/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/as-roma/#fixture-537155</guid>
-      <pubDate>Mon, 04 May 2026 18:45:00 GMT</pubDate>
-      <description>AS Roma play ACF Fiorentina (H) on 2026-05-04. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +149,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/as-roma/#fixture-537004</guid>
       <pubDate>Tue, 06 Jan 2026 17:00:00 GMT</pubDate>
       <description>AS Roma played US Lecce (A) on 2026-01-06. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-03 (A) AS Roma 1-0 Atalanta BC</title>
+      <link>https://playersb.com/teams/as-roma/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/as-roma/#fixture-536986</guid>
+      <pubDate>Sat, 03 Jan 2026 19:45:00 GMT</pubDate>
+      <description>AS Roma played Atalanta BC (A) on 2026-01-03. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2025-12-29 (H) AS Roma 3-1 Genoa CFC</title>
+      <link>https://playersb.com/teams/as-roma/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/as-roma/#fixture-536976</guid>
+      <pubDate>Mon, 29 Dec 2025 19:45:00 GMT</pubDate>
+      <description>AS Roma played Genoa CFC (H) on 2025-12-29. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

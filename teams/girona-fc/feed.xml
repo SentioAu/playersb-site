@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/girona-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Girona FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Girona FC vs Elche CF</title>
       <link>https://playersb.com/teams/girona-fc/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/girona-fc/#fixture-544572</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Girona FC play Club Atlético de Madrid (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-14 (H) Girona FC vs Real Sociedad de Fútbol</title>
+      <link>https://playersb.com/teams/girona-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/girona-fc/#fixture-544565</guid>
+      <pubDate>Thu, 14 May 2026 18:00:00 GMT</pubDate>
+      <description>Girona FC play Real Sociedad de Fútbol (H) on 2026-05-14. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-11 (A) Girona FC vs Rayo Vallecano de Madrid</title>
+      <link>https://playersb.com/teams/girona-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/girona-fc/#fixture-544560</guid>
+      <pubDate>Mon, 11 May 2026 19:00:00 GMT</pubDate>
+      <description>Girona FC play Rayo Vallecano de Madrid (A) on 2026-05-11. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/girona-fc/#fixture-544393</guid>
       <pubDate>Sat, 10 Jan 2026 17:30:00 GMT</pubDate>
       <description>Girona FC played CA Osasuna (H) on 2026-01-10. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (A) Girona FC 1-2 RCD Mallorca</title>
-      <link>https://playersb.com/teams/girona-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/girona-fc/#fixture-544389</guid>
-      <pubDate>Sun, 04 Jan 2026 17:30:00 GMT</pubDate>
-      <description>Girona FC played RCD Mallorca (A) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-21 (H) Girona FC 0-3 Club Atlético de Madrid</title>
-      <link>https://playersb.com/teams/girona-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/girona-fc/#fixture-544377</guid>
-      <pubDate>Sun, 21 Dec 2025 13:00:00 GMT</pubDate>
-      <description>Girona FC played Club Atlético de Madrid (H) on 2025-12-21. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

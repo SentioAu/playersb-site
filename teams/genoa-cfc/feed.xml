@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/genoa-cfc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Genoa CFC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Genoa CFC vs US Lecce</title>
       <link>https://playersb.com/teams/genoa-cfc/</link>
@@ -24,19 +24,11 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-10 (A) Genoa CFC vs ACF Fiorentina</title>
-      <link>https://playersb.com/teams/genoa-cfc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/genoa-cfc/#fixture-537165</guid>
-      <pubDate>Sun, 10 May 2026 13:00:00 GMT</pubDate>
-      <description>Genoa CFC play ACF Fiorentina (A) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
       <title>2026-05-02 (A) Genoa CFC 0-0 Atalanta BC</title>
       <link>https://playersb.com/teams/genoa-cfc/</link>
       <guid isPermaLink="false">https://playersb.com/teams/genoa-cfc/#fixture-537156</guid>
       <pubDate>Sat, 02 May 2026 18:45:00 GMT</pubDate>
-      <description>Genoa CFC played Atalanta BC (A) on 2026-05-02. Competition: Serie A. Status: IN_PLAY.</description>
+      <description>Genoa CFC played Atalanta BC (A) on 2026-05-02. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/genoa-cfc/#fixture-536995</guid>
       <pubDate>Thu, 08 Jan 2026 19:45:00 GMT</pubDate>
       <description>Genoa CFC played AC Milan (A) on 2026-01-08. Competition: Serie A. Status: FINISHED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-01-03 (H) Genoa CFC 1-1 AC Pisa 1909</title>
+      <link>https://playersb.com/teams/genoa-cfc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/genoa-cfc/#fixture-536988</guid>
+      <pubDate>Sat, 03 Jan 2026 14:00:00 GMT</pubDate>
+      <description>Genoa CFC played AC Pisa 1909 (H) on 2026-01-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

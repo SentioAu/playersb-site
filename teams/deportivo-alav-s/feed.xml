@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/deportivo-alav-s/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Deportivo Alavés on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Deportivo Alavés vs Rayo Vallecano de Madrid</title>
       <link>https://playersb.com/teams/deportivo-alav-s/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/deportivo-alav-s/#fixture-544578</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Deportivo Alavés play Real Oviedo (A) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-13 (H) Deportivo Alavés vs FC Barcelona</title>
+      <link>https://playersb.com/teams/deportivo-alav-s/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/deportivo-alav-s/#fixture-544561</guid>
+      <pubDate>Wed, 13 May 2026 19:30:00 GMT</pubDate>
+      <description>Deportivo Alavés play FC Barcelona (H) on 2026-05-13. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-09 (A) Deportivo Alavés vs Elche CF</title>
+      <link>https://playersb.com/teams/deportivo-alav-s/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/deportivo-alav-s/#fixture-544556</guid>
+      <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
+      <description>Deportivo Alavés play Elche CF (A) on 2026-05-09. Competition: La Liga. Status: TIMED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/deportivo-alav-s/#fixture-544394</guid>
       <pubDate>Sat, 10 Jan 2026 15:15:00 GMT</pubDate>
       <description>Deportivo Alavés played Villarreal CF (A) on 2026-01-10. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-04 (H) Deportivo Alavés 1-1 Real Oviedo</title>
-      <link>https://playersb.com/teams/deportivo-alav-s/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/deportivo-alav-s/#fixture-544381</guid>
-      <pubDate>Sun, 04 Jan 2026 17:30:00 GMT</pubDate>
-      <description>Deportivo Alavés played Real Oviedo (H) on 2026-01-04. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-20 (A) Deportivo Alavés 3-0 CA Osasuna</title>
-      <link>https://playersb.com/teams/deportivo-alav-s/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/deportivo-alav-s/#fixture-544376</guid>
-      <pubDate>Sat, 20 Dec 2025 17:30:00 GMT</pubDate>
-      <description>Deportivo Alavés played CA Osasuna (A) on 2025-12-20. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>

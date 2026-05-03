@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/rayo-vallecano-de-madrid/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Rayo Vallecano de Madrid on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 14:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Rayo Vallecano de Madrid vs Deportivo Alavés</title>
       <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
@@ -21,6 +21,30 @@
       <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544576</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Rayo Vallecano de Madrid play Villarreal CF (H) on 2026-05-17. Competition: La Liga. Status: SCHEDULED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-14 (A) Rayo Vallecano de Madrid vs Valencia CF</title>
+      <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544568</guid>
+      <pubDate>Thu, 14 May 2026 17:00:00 GMT</pubDate>
+      <description>Rayo Vallecano de Madrid play Valencia CF (A) on 2026-05-14. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-11 (H) Rayo Vallecano de Madrid vs Girona FC</title>
+      <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544560</guid>
+      <pubDate>Mon, 11 May 2026 19:00:00 GMT</pubDate>
+      <description>Rayo Vallecano de Madrid play Girona FC (H) on 2026-05-11. Competition: La Liga. Status: TIMED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-05-03 (A) Rayo Vallecano de Madrid 0-1 Getafe CF</title>
+      <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544545</guid>
+      <pubDate>Sun, 03 May 2026 14:15:00 GMT</pubDate>
+      <description>Rayo Vallecano de Madrid played Getafe CF (A) on 2026-05-03. Competition: La Liga. Status: IN_PLAY.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -141,30 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544400</guid>
       <pubDate>Sun, 11 Jan 2026 13:00:00 GMT</pubDate>
       <description>Rayo Vallecano de Madrid played RCD Mallorca (H) on 2026-01-11. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-01-02 (H) Rayo Vallecano de Madrid 1-1 Getafe CF</title>
-      <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544388</guid>
-      <pubDate>Fri, 02 Jan 2026 20:00:00 GMT</pubDate>
-      <description>Rayo Vallecano de Madrid played Getafe CF (H) on 2026-01-02. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-21 (A) Rayo Vallecano de Madrid 4-0 Elche CF</title>
-      <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544373</guid>
-      <pubDate>Sun, 21 Dec 2025 17:30:00 GMT</pubDate>
-      <description>Rayo Vallecano de Madrid played Elche CF (A) on 2025-12-21. Competition: La Liga. Status: FINISHED.</description>
-      <category>La Liga</category>
-    </item>
-    <item>
-      <title>2025-12-15 (H) Rayo Vallecano de Madrid 0-0 Real Betis Balompié</title>
-      <link>https://playersb.com/teams/rayo-vallecano-de-madrid/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rayo-vallecano-de-madrid/#fixture-544366</guid>
-      <pubDate>Mon, 15 Dec 2025 20:00:00 GMT</pubDate>
-      <description>Rayo Vallecano de Madrid played Real Betis Balompié (H) on 2025-12-15. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
   </channel>
