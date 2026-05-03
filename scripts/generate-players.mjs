@@ -242,34 +242,50 @@ function renderEnrichmentPanel(entry) {
   const links = [];
   if (entry.wikiUrl) links.push(`<a class="button small secondary" href="${entry.wikiUrl}" target="_blank" rel="noopener">Wikipedia profile</a>`);
 
+  // Thumbnail rendered with explicit width/height to keep CLS at 0. lazy
+  // loading + decoding=async because the panel is below the fold.
+  const thumb = entry.thumbnailUrl
+    ? `<img class="player-thumb" src="${escHtml(entry.thumbnailUrl)}" width="${entry.thumbnailWidth || 160}" height="${entry.thumbnailHeight || 200}" alt="${escHtml(entry.name || "Player")} portrait" loading="lazy" decoding="async" />`
+    : "";
+
+  const description = entry.description ? `<p class="lead" style="margin:6px 0 0;">${escHtml(entry.description)}</p>` : "";
+
   return `
     <section class="section">
       <div class="card">
-        <h2>Career context</h2>
-        <p class="meta-text">${chips.length ? escHtml(chips.join(" · ")) : "Additional biographical details are being collected."}</p>
-        <div class="stat-grid" style="margin-top:12px;">
-          <div class="stat"><div class="stat-label">Career appearances</div><div class="stat-value">${entry.careerAppearances ?? "—"}</div></div>
-          <div class="stat"><div class="stat-label">Career goals</div><div class="stat-value">${entry.careerGoals ?? "—"}</div></div>
-          <div class="stat"><div class="stat-label">Career assists</div><div class="stat-value">${entry.careerAssists ?? "—"}</div></div>
-          <div class="stat"><div class="stat-label">DOB</div><div class="stat-value">${escHtml(entry.dateOfBirth || "—")}</div></div>
+        <div class="enrichment-row">
+          ${thumb}
+          <div class="enrichment-body">
+            <h2 style="margin-top:0;">Career context</h2>
+            ${description}
+            <p class="meta-text">${chips.length ? escHtml(chips.join(" · ")) : "Additional biographical details are being collected."}</p>
+            <div class="stat-grid" style="margin-top:12px;">
+              <div class="stat"><div class="stat-label">Career appearances</div><div class="stat-value">${entry.careerAppearances ?? "—"}</div></div>
+              <div class="stat"><div class="stat-label">Career goals</div><div class="stat-value">${entry.careerGoals ?? "—"}</div></div>
+              <div class="stat"><div class="stat-label">Career assists</div><div class="stat-value">${entry.careerAssists ?? "—"}</div></div>
+              <div class="stat"><div class="stat-label">DOB</div><div class="stat-value">${escHtml(entry.dateOfBirth || "—")}</div></div>
+            </div>
+            ${previousTeams.length ? `<p class="meta-text" style="margin-top:12px;">Previous clubs: ${escHtml(previousTeams.join(", "))}</p>` : ""}
+            ${entry.summary ? `<p class="meta-text" style="margin-top:12px;">${escHtml(entry.summary)}</p>` : ""}
+            ${links.length ? `<div class="button-row" style="margin-top:10px;">${links.join(" ")}</div>` : ""}
+          </div>
         </div>
-        ${previousTeams.length ? `<p class="meta-text" style="margin-top:12px;">Previous clubs: ${escHtml(previousTeams.join(", "))}</p>` : ""}
-        ${entry.summary ? `<p class="meta-text" style="margin-top:12px;">${escHtml(entry.summary)}</p>` : ""}
-        ${links.length ? `<div class="button-row" style="margin-top:10px;">${links.join(" ")}</div>` : ""}
       </div>
     </section>
   `;
 }
 
-function buildPlayerJsonLd(player) {
+function buildPlayerJsonLd(player, enrichmentEntry) {
   const name = safeStr(player?.name);
   const position = safeStr(player?.position);
   const team = safeStr(player?.team);
+  const id = sanitizeId(player?.id);
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Person",
     name,
+    url: `${SITE_ORIGIN}/players/${id}/`,
   };
 
   if (position) schema.jobTitle = position;
@@ -277,6 +293,39 @@ function buildPlayerJsonLd(player) {
     schema.affiliation = {
       "@type": "SportsTeam",
       name: team,
+      url: `${SITE_ORIGIN}/teams/${sanitizeId(team)}/`,
+    };
+  }
+
+  if (enrichmentEntry) {
+    if (enrichmentEntry.dateOfBirth) schema.birthDate = enrichmentEntry.dateOfBirth;
+    if (enrichmentEntry.nationality) {
+      schema.nationality = { "@type": "Country", name: enrichmentEntry.nationality };
+    }
+    if (enrichmentEntry.heightCm) {
+      schema.height = { "@type": "QuantitativeValue", value: enrichmentEntry.heightCm, unitCode: "CMT" };
+    }
+    if (enrichmentEntry.summary) schema.description = enrichmentEntry.summary;
+    if (enrichmentEntry.wikiUrl) schema.sameAs = [enrichmentEntry.wikiUrl];
+    const imageUrl = enrichmentEntry.originalImageUrl || enrichmentEntry.thumbnailUrl;
+    if (imageUrl) {
+      schema.image = {
+        "@type": "ImageObject",
+        url: imageUrl,
+        width: enrichmentEntry.thumbnailWidth || undefined,
+        height: enrichmentEntry.thumbnailHeight || undefined,
+      };
+    }
+  }
+
+  // The site also generates a per-player share card. Even when Wikipedia
+  // imagery isn't present, the SVG card gives crawlers a stable image entity.
+  if (!schema.image) {
+    schema.image = {
+      "@type": "ImageObject",
+      url: `${SITE_ORIGIN}/assets/og/${id}.svg`,
+      width: 1200,
+      height: 630,
     };
   }
 
@@ -424,7 +473,7 @@ async function main() {
 
     const similarPlayers = findSimilarPlayers(p, players, 3);
     const similarMarkup = renderSimilarCards(similarPlayers, id);
-    const playerJsonLd = buildPlayerJsonLd(p);
+    const playerJsonLd = buildPlayerJsonLd(p, enrichmentPlayers[id]);
     const { breadcrumbHtml, breadcrumbJsonLd } = buildBreadcrumbs(p, id);
 
     const [r1Raw, r2Raw, r3Raw] = rivalsFor(id, players, similarPlayers);

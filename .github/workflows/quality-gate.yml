@@ -37,7 +37,7 @@ jobs:
           # git status --porcelain=v1 lines look like:
           # " M path" or "M  path" or "?? path"
           # => always TWO status chars, then a space, then the path
-          ALLOWED_REGEX='^.. (index\.html|compare\.html|contact\.html|sitemap\.xml|feed\.xml|llms\.txt|llms-full\.txt)$|^.. (about|archive|compare|contact|learn|privacy|terms|tools|glossary|positions|teams|competitions|legacy|fantasy|embed|sports|matches|standings|players)/index\.html$|^.. (players|learn|positions|teams|competitions|legacy|embed)/[^/]+/index\.html$|^.. archive/[^/]+/[^/]+/index\.html$|^.. players/\.generated\.txt$|^.. data/search-index\.json$|^.. data/health\.json$|^.. assets/og/[^/]+\.svg$'
+          ALLOWED_REGEX='^.. (index\.html|compare\.html|contact\.html|sitemap\.xml|feed\.xml|llms\.txt|llms-full\.txt|ai\.txt)$|^.. (about|archive|compare|contact|learn|privacy|terms|tools|glossary|positions|teams|competitions|legacy|fantasy|embed|sports|matches|standings|players)/index\.html$|^.. (players|learn|positions|teams|competitions|legacy|embed)/[^/]+/index\.html$|^.. archive/[^/]+/[^/]+/index\.html$|^.. teams/[^/]+/feed\.xml$|^.. players/\.generated\.txt$|^.. data/search-index\.json$|^.. data/health\.json$|^.. assets/og/[^/]+\.svg$'
 
           DIRTY="$(git status --porcelain | grep -Ev "$ALLOWED_REGEX" || true)"
 

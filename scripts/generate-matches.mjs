@@ -83,6 +83,68 @@ ${allShown.map((f, i) => {
 
 const compNames = Object.keys(byComp);
 
+// JSON-LD: ItemList of SportsEvent for the ~20 most relevant fixtures, so
+// search/AI crawlers can ingest the schedule directly. Live + upcoming are
+// preferred over already-finished matches.
+function buildSportsEventListJsonLd() {
+  const live = allFixtures.filter((f) => ["LIVE","IN_PLAY","PAUSED"].includes(f.status));
+  const upcoming = allFixtures.filter((f) => ["SCHEDULED","TIMED"].includes(f.status))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+  const finished = allFixtures.filter((f) => f.status === "FINISHED")
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+  const top = [...live, ...upcoming, ...finished].slice(0, 20);
+  if (!top.length) return "";
+
+  // schema.org's eventStatus enum is Scheduled / Cancelled / Postponed /
+  // Rescheduled / MovedOnline — there is no "Completed" value. For finished
+  // matches we omit eventStatus entirely (so consumers don't get the wrong
+  // signal) and emit endDate so the event is unambiguously in the past.
+  function statusFor(s) {
+    if (s === "POSTPONED") return "https://schema.org/EventPostponed";
+    if (s === "CANCELLED" || s === "CANCELED" || s === "ABANDONED") return "https://schema.org/EventCancelled";
+    if (s === "SCHEDULED" || s === "TIMED" || s === "LIVE" || s === "IN_PLAY" || s === "PAUSED") {
+      return "https://schema.org/EventScheduled";
+    }
+    return null;
+  }
+  const items = top.map((f, idx) => {
+    const eventNode = {
+      "@type": "SportsEvent",
+      name: `${f.home} vs ${f.away}`,
+      startDate: f.date,
+      sport: "Association Football",
+      competitor: [
+        { "@type": "SportsTeam", name: f.home },
+        { "@type": "SportsTeam", name: f.away },
+      ],
+      superEvent: {
+        "@type": "SportsEvent",
+        name: f.competition || "PlayersB",
+      },
+    };
+    const status = statusFor(f.status);
+    if (status) eventNode.eventStatus = status;
+    if (f.status === "FINISHED") {
+      // Match end isn't published explicitly; assume same calendar instant
+      // as start so consumers can treat the event as concluded.
+      eventNode.endDate = f.date;
+      if (typeof f.homeScore === "number" && typeof f.awayScore === "number") {
+        eventNode.description = `Final score: ${f.home} ${f.homeScore}-${f.awayScore} ${f.away}`;
+      }
+    }
+    return { "@type": "ListItem", position: idx + 1, item: eventNode };
+  });
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "PlayersB fixtures",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: items.length,
+    itemListElement: items,
+  };
+  return `\n<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
 const tabs = compNames.map((name, i) =>
   `<button class="match-tab${i===0?' active':''}" onclick="showMatches('${name}')"
    id="mtab-${name.replace(/\s+/g,'-')}"
@@ -106,6 +168,7 @@ const matchesBlock = `
 </p>
 <div style="margin-bottom:16px;">${tabs}</div>
 ${sections}
+${buildSportsEventListJsonLd()}
 <script>
 function showMatches(name) {
   document.querySelectorAll('.match-section').forEach(el => el.style.display = 'none');

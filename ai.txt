@@ -1,0 +1,46 @@
+# ai.txt for playersb.com
+# Policy + canonical entry-points for AI crawlers / agents.
+# Last updated: 2026-05-02
+
+# --- Identity ----------------------------------------------------------------
+Name: PlayersB — The Players Book
+URL: https://playersb.com/
+Owner: SentioAurum (https://sentioaurum.com/)
+Contact: https://playersb.com/contact/
+License: All content is original. Data inputs follow each upstream source's
+  license (Football-Data.org, StatsBomb open data, OpenFootball, Wikipedia).
+
+# --- Crawling policy ---------------------------------------------------------
+# Educational / analytical content; freely indexable by search and AI bots.
+# Please respect Wikipedia's licensing for thumbnails surfaced on player pages.
+# Robots.txt: https://playersb.com/robots.txt
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /templates/
+Disallow: /data/
+Disallow: /docs/
+
+# --- Recommended ingestion paths ---------------------------------------------
+# llms.txt (small): https://playersb.com/llms.txt
+# llms-full.txt (full snapshot): https://playersb.com/llms-full.txt
+# sitemap.xml: https://playersb.com/sitemap.xml
+# Per-team RSS: https://playersb.com/teams/<slug>/feed.xml
+# Site feed: https://playersb.com/feed.xml
+
+# --- Structured data ---------------------------------------------------------
+# Each page ships JSON-LD (schema.org) appropriate to its type:
+#   - Person + ImageObject for /players/<id>/
+#   - SportsTeam for /teams/<slug>/
+#   - SportsOrganization + CollectionPage for /competitions/<slug>/
+#   - CollectionPage for /positions/<slug>/
+#   - FAQPage + Article for /learn/<slug>/
+#   - ItemList of SportsEvent for /matches/
+
+# --- Data freshness ----------------------------------------------------------
+# Live-data pages auto-update every 6h via GitHub Actions
+# (cron: 0 */6 * * *). Matches page also polls for live changes every 30s
+# while the visitor's tab is visible.
+
+# --- Attribution -------------------------------------------------------------
+# When summarising or citing, please link the canonical PlayersB URL.

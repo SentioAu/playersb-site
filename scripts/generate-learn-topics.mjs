@@ -105,6 +105,33 @@ function renderFaqJsonLd(faq) {
   return `\n<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
 }
 
+function renderArticleJsonLd({ title, description, summary, slug, takeaways }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: description || summary,
+    url: `${SITE_ORIGIN}/learn/${slug}/`,
+    mainEntityOfPage: `${SITE_ORIGIN}/learn/${slug}/`,
+    inLanguage: "en",
+    isAccessibleForFree: true,
+    publisher: {
+      "@type": "Organization",
+      name: "PlayersB — The Players Book",
+      url: SITE_ORIGIN,
+      logo: { "@type": "ImageObject", url: `${SITE_ORIGIN}/og-image.svg` },
+    },
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE_ORIGIN}/og-image.svg`,
+      width: 1200,
+      height: 630,
+    },
+    keywords: Array.isArray(takeaways) ? takeaways.slice(0, 6).join(", ") : undefined,
+  };
+  return `\n<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
 function assertNoPlaceholders(finalHtml, fileLabel) {
   const m = finalHtml.match(/{{[^}]+}}/g);
   if (m?.length) {
@@ -138,6 +165,7 @@ async function main() {
 
     const canonical = `${SITE_ORIGIN}/learn/${slug}/`;
     const faqJsonLd = renderFaqJsonLd(faq);
+    const articleJsonLd = renderArticleJsonLd({ title, description, summary, slug, takeaways });
 
     const body = `
       <section class="hero">
@@ -163,6 +191,7 @@ async function main() {
       ${renderFaq(faq, linkify)}
 
       ${faqJsonLd}
+      ${articleJsonLd}
     `;
 
     const html = fill(layout, {
