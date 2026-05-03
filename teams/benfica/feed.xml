@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benfica — PlayersB fixtures</title>
+    <link>https://playersb.com/teams/benfica/</link>
+    <atom:link href="https://playersb.com/teams/benfica/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Recent and upcoming fixtures for Benfica on PlayersB.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 May 2026 14:49:14 GMT</lastBuildDate>
+    <item>
+      <title>2026-02-25 (A) Benfica 2-1 Real Madrid CF</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-552060</guid>
+      <pubDate>Wed, 25 Feb 2026 20:00:00 GMT</pubDate>
+      <description>Benfica played Real Madrid CF (A) on 2026-02-25. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-02-17 (H) Benfica 0-1 Real Madrid CF</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-552052</guid>
+      <pubDate>Tue, 17 Feb 2026 20:00:00 GMT</pubDate>
+      <description>Benfica played Real Madrid CF (H) on 2026-02-17. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-01-28 (H) Benfica 4-2 Real Madrid CF</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551926</guid>
+      <pubDate>Wed, 28 Jan 2026 20:00:00 GMT</pubDate>
+      <description>Benfica played Real Madrid CF (H) on 2026-01-28. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-01-21 (A) Benfica 2-0 Juventus FC</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551988</guid>
+      <pubDate>Wed, 21 Jan 2026 20:00:00 GMT</pubDate>
+      <description>Benfica played Juventus FC (A) on 2026-01-21. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-12-10 (H) Benfica 2-0 SSC Napoli</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551989</guid>
+      <pubDate>Wed, 10 Dec 2025 20:00:00 GMT</pubDate>
+      <description>Benfica played SSC Napoli (H) on 2025-12-10. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-11-25 (A) Benfica 0-2 AFC Ajax</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551990</guid>
+      <pubDate>Tue, 25 Nov 2025 17:45:00 GMT</pubDate>
+      <description>Benfica played AFC Ajax (A) on 2025-11-25. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-11-05 (H) Benfica 0-1 Bayer 04 Leverkusen</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551971</guid>
+      <pubDate>Wed, 05 Nov 2025 20:00:00 GMT</pubDate>
+      <description>Benfica played Bayer 04 Leverkusen (H) on 2025-11-05. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-10-21 (A) Benfica 3-0 Newcastle United FC</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551992</guid>
+      <pubDate>Tue, 21 Oct 2025 19:00:00 GMT</pubDate>
+      <description>Benfica played Newcastle United FC (A) on 2025-10-21. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-09-30 (A) Benfica 1-0 Chelsea FC</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551917</guid>
+      <pubDate>Tue, 30 Sep 2025 19:00:00 GMT</pubDate>
+      <description>Benfica played Chelsea FC (A) on 2025-09-30. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-09-16 (H) Benfica 2-3 Qarabağ Ağdam FK</title>
+      <link>https://playersb.com/teams/benfica/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/benfica/#fixture-551991</guid>
+      <pubDate>Tue, 16 Sep 2025 19:00:00 GMT</pubDate>
+      <description>Benfica played Qarabağ Ağdam FK (H) on 2025-09-16. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+  </channel>
+</rss>

@@ -34,15 +34,39 @@ function toAge(dateOfBirth) {
   return Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
 }
 
+// Wikipedia REST is unmetered for low-volume reads but we keep a polite gap
+// between requests (10/s here is well below their limit) and identify our
+// agent so abuse mitigation never trips on us.
+const WIKI_GAP_MS = Number(process.env.WIKI_GAP_MS || 100);
+let nextWikiSlot = 0;
+async function wikiRateLimit() {
+  const now = Date.now();
+  const wait = Math.max(0, nextWikiSlot - now);
+  nextWikiSlot = Math.max(now, nextWikiSlot) + WIKI_GAP_MS;
+  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+}
+
 async function fetchWikipediaSummary(name) {
   const title = encodeURIComponent(name.replaceAll(" ", "_"));
   const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${title}`;
-  const res = await fetch(url, { headers: { "User-Agent": "playersb-site" } });
+  await wikiRateLimit();
+  const res = await fetch(url, {
+    headers: {
+      "User-Agent": "playersb-site/1.0 (https://playersb.com; contact via GitHub)",
+      Accept: "application/json",
+    },
+  });
+  if (res.status === 404) return { missing: true };
   if (!res.ok) throw new Error(`wikipedia summary failed (${res.status})`);
   const data = await res.json();
   return {
     extract: safeStr(data?.extract),
+    description: safeStr(data?.description),
     pageUrl: data?.content_urls?.desktop?.page || null,
+    thumbnailUrl: data?.thumbnail?.source || null,
+    thumbnailWidth: data?.thumbnail?.width || null,
+    thumbnailHeight: data?.thumbnail?.height || null,
+    originalImageUrl: data?.originalimage?.source || null,
   };
 }
 
@@ -95,10 +119,15 @@ async function main() {
       careerAssists: Number(seed.careerAssists ?? prior.careerAssists) || null,
       careerAppearances: Number(seed.careerAppearances ?? prior.careerAppearances) || null,
       summary: safeStr(wiki.extract || prior.summary || "") || null,
+      description: safeStr(wiki.description || prior.description || "") || null,
       wikiUrl: wiki.pageUrl || prior.wikiUrl || null,
+      thumbnailUrl: wiki.thumbnailUrl || prior.thumbnailUrl || null,
+      thumbnailWidth: wiki.thumbnailWidth || prior.thumbnailWidth || null,
+      thumbnailHeight: wiki.thumbnailHeight || prior.thumbnailHeight || null,
+      originalImageUrl: wiki.originalImageUrl || prior.originalImageUrl || null,
       sources: {
         seed: Object.keys(seed).length ? "player-enrichment-seed" : null,
-        wikipedia: wiki.pageUrl ? "wikipedia" : null,
+        wikipedia: wiki.pageUrl ? "wikipedia" : (prior.wikiUrl ? "wikipedia (cached)" : null),
       },
       fetchedAt,
     };

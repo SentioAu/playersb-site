@@ -904,3 +904,23 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* === Enrichment panel: thumbnail + content side-by-side =================== */
+.enrichment-row {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.enrichment-body { flex: 1; min-width: 0; }
+.player-thumb {
+  flex-shrink: 0;
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  background: var(--accent-soft);
+}
+@media (max-width: 640px) {
+  .enrichment-row { flex-direction: column; }
+  .player-thumb { width: 100%; max-width: 240px; }
+}

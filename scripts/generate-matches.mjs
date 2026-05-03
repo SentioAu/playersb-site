@@ -83,6 +83,50 @@ ${allShown.map((f, i) => {
 
 const compNames = Object.keys(byComp);
 
+// JSON-LD: ItemList of SportsEvent for the ~20 most relevant fixtures, so
+// search/AI crawlers can ingest the schedule directly. Live + upcoming are
+// preferred over already-finished matches.
+function buildSportsEventListJsonLd() {
+  const live = allFixtures.filter((f) => ["LIVE","IN_PLAY","PAUSED"].includes(f.status));
+  const upcoming = allFixtures.filter((f) => ["SCHEDULED","TIMED"].includes(f.status))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+  const finished = allFixtures.filter((f) => f.status === "FINISHED")
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+  const top = [...live, ...upcoming, ...finished].slice(0, 20);
+  if (!top.length) return "";
+
+  const items = top.map((f, idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    item: {
+      "@type": "SportsEvent",
+      name: `${f.home} vs ${f.away}`,
+      startDate: f.date,
+      eventStatus: f.status === "FINISHED" ? "https://schema.org/EventScheduled"
+        : f.status === "POSTPONED" ? "https://schema.org/EventPostponed"
+        : "https://schema.org/EventScheduled",
+      sport: "Association Football",
+      competitor: [
+        { "@type": "SportsTeam", name: f.home },
+        { "@type": "SportsTeam", name: f.away },
+      ],
+      superEvent: {
+        "@type": "SportsEvent",
+        name: f.competition || "PlayersB",
+      },
+    },
+  }));
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "PlayersB fixtures",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: items.length,
+    itemListElement: items,
+  };
+  return `\n<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
 const tabs = compNames.map((name, i) =>
   `<button class="match-tab${i===0?' active':''}" onclick="showMatches('${name}')"
    id="mtab-${name.replace(/\s+/g,'-')}"
@@ -106,6 +150,7 @@ const matchesBlock = `
 </p>
 <div style="margin-bottom:16px;">${tabs}</div>
 ${sections}
+${buildSportsEventListJsonLd()}
 <script>
 function showMatches(name) {
   document.querySelectorAll('.match-section').forEach(el => el.style.display = 'none');
