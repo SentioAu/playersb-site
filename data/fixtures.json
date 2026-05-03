@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-03T08:02:40.990Z",
-  "generatedAt": "2026-05-03T08:02:40.991Z",
+  "updatedAt": "2026-05-03T13:11:25.034Z",
+  "generatedAt": "2026-05-03T13:11:25.034Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T08:02:40.991Z"
+      "fetchedAt": "2026-05-03T13:11:25.034Z"
     }
   },
   "fixtures": [
@@ -3798,11 +3798,11 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-05-03T13:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "AFC Bournemouth",
       "away": "Crystal Palace FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 538132,
@@ -7875,6 +7875,17 @@
       "awayScore": 2
     },
     {
+      "id": 544543,
+      "competitionCode": "PD",
+      "competition": "La Liga",
+      "date": "2026-05-03T12:00:00Z",
+      "status": "PAUSED",
+      "home": "RC Celta de Vigo",
+      "away": "Elche CF",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
       "id": 544553,
       "competitionCode": "PD",
       "competition": "La Liga",
@@ -11894,22 +11905,22 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-05-03T10:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Bologna FC 1909",
       "away": "Cagliari Calcio",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537162,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-05-03T13:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "US Sassuolo Calcio",
       "away": "AC Milan",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537160,
@@ -18747,11 +18758,11 @@
       "competitionCode": "FL1",
       "competition": "Ligue 1",
       "date": "2026-05-03T13:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Lille OSC",
       "away": "Le Havre AC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 542685,

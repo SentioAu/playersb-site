@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T08:02:46.722Z",
+  "generatedAt": "2026-05-03T13:11:39.689Z",
   "entries": [
     {
       "competition": {
@@ -64770,12 +64770,12 @@
   "sources": {
     "statsbomb": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T08:02:46.237Z",
+      "fetchedAt": "2026-05-03T13:11:38.243Z",
       "competitionCount": 75
     },
     "openfootball": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T08:02:46.692Z",
+      "fetchedAt": "2026-05-03T13:11:39.680Z",
       "sourceCount": 10
     }
   }

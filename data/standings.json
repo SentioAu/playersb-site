@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-03T08:02:40.990Z",
-  "generatedAt": "2026-05-03T08:02:40.991Z",
+  "updatedAt": "2026-05-03T13:11:25.034Z",
+  "generatedAt": "2026-05-03T13:11:25.034Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T08:02:40.991Z"
+      "fetchedAt": "2026-05-03T13:11:25.034Z"
     }
   },
   "standings": {
@@ -104,14 +104,14 @@
       {
         "position": 8,
         "team": "AFC Bournemouth",
-        "played": 34,
+        "played": 35,
         "won": 11,
-        "draw": 16,
+        "draw": 17,
         "lost": 7,
         "goals": 52,
         "goalsAgainst": 52,
         "gd": 0,
-        "points": 49,
+        "points": 50,
         "form": null
       },
       {
@@ -182,14 +182,14 @@
       {
         "position": 14,
         "team": "Crystal Palace FC",
-        "played": 33,
+        "played": 34,
         "won": 11,
-        "draw": 10,
+        "draw": 11,
         "lost": 12,
         "goals": 36,
         "goalsAgainst": 39,
         "gd": -3,
-        "points": 43,
+        "points": 44,
         "form": null
       },
       {
@@ -340,14 +340,14 @@
       {
         "position": 6,
         "team": "RC Celta de Vigo",
-        "played": 33,
-        "won": 11,
+        "played": 34,
+        "won": 12,
         "draw": 11,
         "lost": 11,
-        "goals": 45,
+        "goals": 47,
         "goalsAgainst": 43,
-        "gd": 2,
-        "points": 44,
+        "gd": 4,
+        "points": 47,
         "form": null
       },
       {
@@ -444,13 +444,13 @@
       {
         "position": 14,
         "team": "Elche CF",
-        "played": 33,
+        "played": 34,
         "won": 9,
         "draw": 11,
-        "lost": 13,
+        "lost": 14,
         "goals": 44,
-        "goalsAgainst": 50,
-        "gd": -6,
+        "goalsAgainst": 52,
+        "gd": -8,
         "points": 38,
         "form": null
       },
@@ -563,14 +563,14 @@
       {
         "position": 3,
         "team": "AC Milan",
-        "played": 34,
+        "played": 35,
         "won": 19,
-        "draw": 10,
+        "draw": 11,
         "lost": 5,
         "goals": 48,
         "goalsAgainst": 27,
         "gd": 21,
-        "points": 67,
+        "points": 68,
         "form": null
       },
       {
@@ -627,6 +627,19 @@
       },
       {
         "position": 8,
+        "team": "Bologna FC 1909",
+        "played": 35,
+        "won": 14,
+        "draw": 7,
+        "lost": 14,
+        "goals": 42,
+        "goalsAgainst": 41,
+        "gd": 1,
+        "points": 49,
+        "form": null
+      },
+      {
+        "position": 9,
         "team": "SS Lazio",
         "played": 34,
         "won": 12,
@@ -635,19 +648,6 @@
         "goals": 37,
         "goalsAgainst": 33,
         "gd": 4,
-        "points": 48,
-        "form": null
-      },
-      {
-        "position": 9,
-        "team": "Bologna FC 1909",
-        "played": 34,
-        "won": 14,
-        "draw": 6,
-        "lost": 14,
-        "goals": 42,
-        "goalsAgainst": 41,
-        "gd": 1,
         "points": 48,
         "form": null
       },
@@ -667,14 +667,14 @@
       {
         "position": 11,
         "team": "US Sassuolo Calcio",
-        "played": 34,
+        "played": 35,
         "won": 13,
-        "draw": 7,
+        "draw": 8,
         "lost": 14,
         "goals": 41,
         "goalsAgainst": 44,
         "gd": -3,
-        "points": 46,
+        "points": 47,
         "form": null
       },
       {
@@ -732,14 +732,14 @@
       {
         "position": 16,
         "team": "Cagliari Calcio",
-        "played": 34,
+        "played": 35,
         "won": 9,
-        "draw": 9,
+        "draw": 10,
         "lost": 16,
         "goals": 36,
         "goalsAgainst": 49,
         "gd": -13,
-        "points": 36,
+        "points": 37,
         "form": null
       },
       {
@@ -1061,14 +1061,14 @@
       {
         "position": 3,
         "team": "Lille OSC",
-        "played": 31,
+        "played": 32,
         "won": 17,
-        "draw": 6,
+        "draw": 7,
         "lost": 8,
         "goals": 50,
         "goalsAgainst": 34,
         "gd": 16,
-        "points": 57,
+        "points": 58,
         "form": null
       },
       {
@@ -1204,14 +1204,14 @@
       {
         "position": 14,
         "team": "Le Havre AC",
-        "played": 31,
+        "played": 32,
         "won": 6,
-        "draw": 13,
+        "draw": 14,
         "lost": 12,
         "goals": 29,
         "goalsAgainst": 42,
         "gd": -13,
-        "points": 31,
+        "points": 32,
         "form": null
       },
       {

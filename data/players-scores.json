@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-03T08:02:40.990Z",
-  "generatedAt": "2026-05-03T08:02:40.991Z",
+  "updatedAt": "2026-05-03T13:11:25.034Z",
+  "generatedAt": "2026-05-03T13:11:25.034Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T08:02:40.991Z"
+      "fetchedAt": "2026-05-03T13:11:25.034Z"
     }
   },
   "players": [
@@ -117,7 +117,7 @@
       "goals": 11,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 34
+      "playedMatches": 35
     },
     {
       "name": "Ollie Watkins",
@@ -139,7 +139,7 @@
       "goals": 10,
       "assists": 0,
       "penalties": 4,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Harry Wilson",
@@ -315,7 +315,7 @@
       "goals": 13,
       "assists": 1,
       "penalties": 4,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Robert Lewandowski",
@@ -425,7 +425,7 @@
       "goals": 9,
       "assists": 0,
       "penalties": 2,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Vladyslav Vanat",
@@ -601,7 +601,7 @@
       "goals": 9,
       "assists": 3,
       "penalties": 2,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Andrea Pinamonti",
@@ -612,7 +612,18 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
+    },
+    {
+      "name": "Domenico Berardi",
+      "team": "US Sassuolo Calcio",
+      "competition": "Serie A",
+      "nationality": "Italy",
+      "position": "",
+      "goals": 8,
+      "assists": 4,
+      "penalties": 2,
+      "playedMatches": 23
     },
     {
       "name": "Christian Pulisic",
@@ -623,7 +634,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Riccardo Orsolini",
@@ -634,7 +645,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 3,
-      "playedMatches": 34
+      "playedMatches": 35
     },
     {
       "name": "Mateo Pellegrino",
@@ -657,17 +668,6 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 27
-    },
-    {
-      "name": "Nikola Vlašić",
-      "team": "Torino FC",
-      "competition": "Serie A",
-      "nationality": "Croatia",
-      "position": "",
-      "goals": 8,
-      "assists": 3,
-      "penalties": 5,
-      "playedMatches": 34
     },
     {
       "name": "Harry Kane",
@@ -788,7 +788,7 @@
       "goals": 11,
       "assists": 2,
       "penalties": 8,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Ermedin Demirovic",
@@ -1085,7 +1085,7 @@
       "goals": 8,
       "assists": 5,
       "penalties": 2,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Yann Gboho",

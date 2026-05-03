@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-03T08:02:46.783Z",
+  "generatedAt": "2026-05-03T13:11:39.751Z",
   "sourceStatus": {
     "seed": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "wikipedia": {
       "status": "partial",
-      "fetchedAt": "2026-05-03T08:02:46.783Z",
-      "message": "Wikipedia summaries success=40, failed=40"
+      "fetchedAt": "2026-05-03T13:11:39.751Z",
+      "message": "Wikipedia summaries success=24, failed=56"
     }
   },
   "players": {
@@ -35,7 +35,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "adrien-rabiot": {
       "id": "adrien-rabiot",
@@ -55,7 +55,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "alessandro-bastoni": {
       "id": "alessandro-bastoni",
@@ -75,7 +75,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "alexis-mac-allister": {
       "id": "alexis-mac-allister",
@@ -95,7 +95,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "alvaro-morata": {
       "id": "alvaro-morata",
@@ -115,7 +115,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "amine-harit": {
       "id": "amine-harit",
@@ -135,7 +135,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "angel-di-maria": {
       "id": "angel-di-maria",
@@ -155,7 +155,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "antoine-griezmann": {
       "id": "antoine-griezmann",
@@ -179,7 +179,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "antonio-rudiger": {
       "id": "antonio-rudiger",
@@ -199,7 +199,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "antonio-silva": {
       "id": "antonio-silva",
@@ -219,7 +219,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "bremer": {
       "id": "bremer",
@@ -239,7 +239,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "brian-brobbey": {
       "id": "brian-brobbey",
@@ -257,9 +257,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Brian_Brobbey",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "bruno-fernandes": {
       "id": "bruno-fernandes",
@@ -283,9 +283,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "bukayo-saka": {
       "id": "bukayo-saka",
@@ -307,7 +307,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "chancel-mbemba": {
       "id": "chancel-mbemba",
@@ -325,9 +325,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Chancel_Mbemba",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "christian-pulisic": {
       "id": "christian-pulisic",
@@ -349,9 +349,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Christian_Pulisic",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "christopher-nkunku": {
       "id": "christopher-nkunku",
@@ -371,7 +371,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "cole-palmer": {
       "id": "cole-palmer",
@@ -391,7 +391,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "cristian-romero": {
       "id": "cristian-romero",
@@ -411,7 +411,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "darwin-nunez": {
       "id": "darwin-nunez",
@@ -431,7 +431,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "declan-rice": {
       "id": "declan-rice",
@@ -449,9 +449,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Declan_Rice",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "dejan-kulusevski": {
       "id": "dejan-kulusevski",
@@ -471,7 +471,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "dusan-vlahovic": {
       "id": "dusan-vlahovic",
@@ -495,7 +495,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "enzo-fernandez": {
       "id": "enzo-fernandez",
@@ -515,7 +515,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "erling-haaland": {
       "id": "erling-haaland",
@@ -540,7 +540,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "federico-chiesa": {
       "id": "federico-chiesa",
@@ -560,7 +560,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "federico-valverde": {
       "id": "federico-valverde",
@@ -583,9 +583,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Federico_Valverde",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "florian-wirtz": {
       "id": "florian-wirtz",
@@ -607,7 +607,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "giovanni-di-lorenzo": {
       "id": "giovanni-di-lorenzo",
@@ -627,7 +627,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "granit-xhaka": {
       "id": "granit-xhaka",
@@ -645,9 +645,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Granit_Xhaka",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "hakan-calhanoglu": {
       "id": "hakan-calhanoglu",
@@ -665,9 +665,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "harry-kane": {
       "id": "harry-kane",
@@ -690,7 +690,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "heung-min-son": {
       "id": "heung-min-son",
@@ -714,7 +714,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "jamal-musiala": {
       "id": "jamal-musiala",
@@ -736,7 +736,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "james-maddison": {
       "id": "james-maddison",
@@ -756,7 +756,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "jan-oblak": {
       "id": "jan-oblak",
@@ -776,7 +776,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "jeremie-frimpong": {
       "id": "jeremie-frimpong",
@@ -796,7 +796,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "joao-mario": {
       "id": "joao-mario",
@@ -816,7 +816,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "jordan-veretout": {
       "id": "jordan-veretout",
@@ -836,7 +836,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "jorrel-hato": {
       "id": "jorrel-hato",
@@ -856,7 +856,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "joshua-kimmich": {
       "id": "joshua-kimmich",
@@ -874,9 +874,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Joshua_Kimmich",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "jude-bellingham": {
       "id": "jude-bellingham",
@@ -900,7 +900,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "julian-brandt": {
       "id": "julian-brandt",
@@ -920,7 +920,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "kai-havertz": {
       "id": "kai-havertz",
@@ -940,7 +940,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "karim-adeyemi": {
       "id": "karim-adeyemi",
@@ -960,7 +960,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "kenneth-taylor": {
       "id": "kenneth-taylor",
@@ -980,7 +980,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "kevin-de-bruyne": {
       "id": "kevin-de-bruyne",
@@ -1006,7 +1006,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "khvicha-kvaratskhelia": {
       "id": "khvicha-kvaratskhelia",
@@ -1031,7 +1031,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "kylian-mbappe": {
       "id": "kylian-mbappe",
@@ -1052,9 +1052,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "lamine-yamal": {
       "id": "lamine-yamal",
@@ -1074,7 +1074,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "lautaro-martinez": {
       "id": "lautaro-martinez",
@@ -1097,7 +1097,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "leroy-sane": {
       "id": "leroy-sane",
@@ -1121,7 +1121,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "lisandro-martinez": {
       "id": "lisandro-martinez",
@@ -1141,7 +1141,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "marcus-rashford": {
       "id": "marcus-rashford",
@@ -1163,7 +1163,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "martin-degaard": {
       "id": "martin-degaard",
@@ -1190,7 +1190,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "mats-hummels": {
       "id": "mats-hummels",
@@ -1210,7 +1210,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "mike-maignan": {
       "id": "mike-maignan",
@@ -1230,7 +1230,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "mohamed-salah": {
       "id": "mohamed-salah",
@@ -1254,9 +1254,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Mohamed_Salah",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "niclas-fullkrug": {
       "id": "niclas-fullkrug",
@@ -1276,7 +1276,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "nicolo-barella": {
       "id": "nicolo-barella",
@@ -1299,7 +1299,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "ousmane-dembele": {
       "id": "ousmane-dembele",
@@ -1319,7 +1319,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "pedri": {
       "id": "pedri",
@@ -1342,7 +1342,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "phil-foden": {
       "id": "phil-foden",
@@ -1362,7 +1362,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "pierre-emerick-aubameyang": {
       "id": "pierre-emerick-aubameyang",
@@ -1380,9 +1380,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "rafa-silva": {
       "id": "rafa-silva",
@@ -1402,7 +1402,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "rafael-leao": {
       "id": "rafael-leao",
@@ -1426,7 +1426,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "rasmus-h-jlund": {
       "id": "rasmus-h-jlund",
@@ -1446,7 +1446,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "reece-james": {
       "id": "reece-james",
@@ -1464,9 +1464,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Reece_James",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "robert-lewandowski": {
       "id": "robert-lewandowski",
@@ -1491,7 +1491,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "rodri": {
       "id": "rodri",
@@ -1515,7 +1515,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "rodrigo-de-paul": {
       "id": "rodrigo-de-paul",
@@ -1535,7 +1535,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "ronald-araujo": {
       "id": "ronald-araujo",
@@ -1555,7 +1555,7 @@
         "seed": null,
         "wikipedia": "wikipedia"
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "stanislav-lobotka": {
       "id": "stanislav-lobotka",
@@ -1575,7 +1575,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "steven-bergwijn": {
       "id": "steven-bergwijn",
@@ -1595,7 +1595,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "theo-hernandez": {
       "id": "theo-hernandez",
@@ -1621,7 +1621,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "victor-boniface": {
       "id": "victor-boniface",
@@ -1639,9 +1639,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Victor_Boniface",
       "sources": {
         "seed": null,
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "victor-osimhen": {
       "id": "victor-osimhen",
@@ -1664,9 +1664,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Victor_Osimhen",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "vinicius-junior": {
       "id": "vinicius-junior",
@@ -1689,7 +1689,7 @@
         "seed": "player-enrichment-seed",
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "virgil-van-dijk": {
       "id": "virgil-van-dijk",
@@ -1712,9 +1712,9 @@
       "wikiUrl": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
       "sources": {
         "seed": "player-enrichment-seed",
-        "wikipedia": "wikipedia"
+        "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     },
     "vitinha": {
       "id": "vitinha",
@@ -1734,7 +1734,7 @@
         "seed": null,
         "wikipedia": null
       },
-      "fetchedAt": "2026-05-03T08:02:46.783Z"
+      "fetchedAt": "2026-05-03T13:11:39.751Z"
     }
   }
 }
