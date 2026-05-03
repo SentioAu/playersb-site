@@ -6,13 +6,21 @@
     <atom:link href="https://playersb.com/teams/paris-saint-germain-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Paris Saint-Germain FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (A) Paris Saint-Germain FC vs Paris FC</title>
       <link>https://playersb.com/teams/paris-saint-germain-fc/</link>
       <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain-fc/#fixture-542705</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>Paris Saint-Germain FC play Paris FC (A) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2026-05-13 (A) Paris Saint-Germain FC vs Racing Club de Lens</title>
+      <link>https://playersb.com/teams/paris-saint-germain-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain-fc/#fixture-542664</guid>
+      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
+      <description>Paris Saint-Germain FC play Racing Club de Lens (A) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 17 Feb 2026 20:00:00 GMT</pubDate>
       <description>Paris Saint-Germain FC played AS Monaco FC (A) on 2026-02-17. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
-    </item>
-    <item>
-      <title>2026-02-13 (A) Paris Saint-Germain FC 3-1 Stade Rennais FC 1901</title>
-      <link>https://playersb.com/teams/paris-saint-germain-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain-fc/#fixture-542603</guid>
-      <pubDate>Fri, 13 Feb 2026 18:00:00 GMT</pubDate>
-      <description>Paris Saint-Germain FC played Stade Rennais FC 1901 (A) on 2026-02-13. Competition: Ligue 1. Status: FINISHED.</description>
-      <category>Ligue 1</category>
     </item>
   </channel>
 </rss>

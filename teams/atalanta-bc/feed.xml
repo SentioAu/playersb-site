@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/atalanta-bc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Atalanta BC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Atalanta BC vs ACF Fiorentina</title>
       <link>https://playersb.com/teams/atalanta-bc/</link>
@@ -21,6 +21,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/atalanta-bc/#fixture-537176</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Atalanta BC play Bologna FC 1909 (H) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-10 (A) Atalanta BC vs AC Milan</title>
+      <link>https://playersb.com/teams/atalanta-bc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/atalanta-bc/#fixture-537166</guid>
+      <pubDate>Sun, 10 May 2026 18:45:00 GMT</pubDate>
+      <description>Atalanta BC play AC Milan (A) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 01 Feb 2026 14:00:00 GMT</pubDate>
       <description>Atalanta BC played Como 1907 (A) on 2026-02-01. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-01-28 (A) Atalanta BC 1-0 Royale Union Saint-Gilloise</title>
-      <link>https://playersb.com/teams/atalanta-bc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/atalanta-bc/#fixture-551987</guid>
-      <pubDate>Wed, 28 Jan 2026 20:00:00 GMT</pubDate>
-      <description>Atalanta BC played Royale Union Saint-Gilloise (A) on 2026-01-28. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
     </item>
   </channel>
 </rss>

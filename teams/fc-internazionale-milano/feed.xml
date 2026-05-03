@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/fc-internazionale-milano/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for FC Internazionale Milano on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) FC Internazionale Milano vs Bologna FC 1909</title>
       <link>https://playersb.com/teams/fc-internazionale-milano/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/fc-internazionale-milano/#fixture-537180</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>FC Internazionale Milano play Hellas Verona FC (H) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-09 (A) FC Internazionale Milano vs SS Lazio</title>
+      <link>https://playersb.com/teams/fc-internazionale-milano/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-internazionale-milano/#fixture-537170</guid>
+      <pubDate>Sat, 09 May 2026 16:00:00 GMT</pubDate>
+      <description>FC Internazionale Milano play SS Lazio (A) on 2026-05-09. Competition: Serie A. Status: TIMED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-03 (H) FC Internazionale Milano 0-0 Parma Calcio 1913</title>
+      <link>https://playersb.com/teams/fc-internazionale-milano/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-internazionale-milano/#fixture-537159</guid>
+      <pubDate>Sun, 03 May 2026 18:45:00 GMT</pubDate>
+      <description>FC Internazionale Milano played Parma Calcio 1913 (H) on 2026-05-03. Competition: Serie A. Status: IN_PLAY.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/fc-internazionale-milano/#fixture-537031</guid>
       <pubDate>Fri, 23 Jan 2026 19:45:00 GMT</pubDate>
       <description>FC Internazionale Milano played AC Pisa 1909 (H) on 2026-01-23. Competition: Serie A. Status: FINISHED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-01-20 (H) FC Internazionale Milano 1-3 Arsenal FC</title>
-      <link>https://playersb.com/teams/fc-internazionale-milano/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/fc-internazionale-milano/#fixture-551933</guid>
-      <pubDate>Tue, 20 Jan 2026 20:00:00 GMT</pubDate>
-      <description>FC Internazionale Milano played Arsenal FC (H) on 2026-01-20. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
-    </item>
-    <item>
-      <title>2026-01-17 (A) FC Internazionale Milano 0-1 Udinese Calcio</title>
-      <link>https://playersb.com/teams/fc-internazionale-milano/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/fc-internazionale-milano/#fixture-537023</guid>
-      <pubDate>Sat, 17 Jan 2026 14:00:00 GMT</pubDate>
-      <description>FC Internazionale Milano played Udinese Calcio (A) on 2026-01-17. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

@@ -6,13 +6,21 @@
     <atom:link href="https://playersb.com/teams/stade-brestois-29/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Stade Brestois 29 on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (H) Stade Brestois 29 vs Angers SCO</title>
       <link>https://playersb.com/teams/stade-brestois-29/</link>
       <guid isPermaLink="false">https://playersb.com/teams/stade-brestois-29/#fixture-542711</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>Stade Brestois 29 play Angers SCO (H) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2026-05-13 (H) Stade Brestois 29 vs RC Strasbourg Alsace</title>
+      <link>https://playersb.com/teams/stade-brestois-29/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/stade-brestois-29/#fixture-542665</guid>
+      <pubDate>Wed, 13 May 2026 17:00:00 GMT</pubDate>
+      <description>Stade Brestois 29 play RC Strasbourg Alsace (H) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -24,11 +32,11 @@
       <category>Ligue 1</category>
     </item>
     <item>
-      <title>2026-05-03 (A) Stade Brestois 29 vs Paris FC</title>
+      <title>2026-05-03 (A) Stade Brestois 29 4-0 Paris FC</title>
       <link>https://playersb.com/teams/stade-brestois-29/</link>
       <guid isPermaLink="false">https://playersb.com/teams/stade-brestois-29/#fixture-542688</guid>
       <pubDate>Sun, 03 May 2026 15:15:00 GMT</pubDate>
-      <description>Stade Brestois 29 play Paris FC (A) on 2026-05-03. Competition: Ligue 1. Status: TIMED.</description>
+      <description>Stade Brestois 29 played Paris FC (A) on 2026-05-03. Competition: Ligue 1. Status: FINISHED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/stade-brestois-29/#fixture-542540</guid>
       <pubDate>Fri, 05 Dec 2025 18:00:00 GMT</pubDate>
       <description>Stade Brestois 29 played AS Monaco FC (H) on 2025-12-05. Competition: Ligue 1. Status: FINISHED.</description>
-      <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2025-11-30 (A) Stade Brestois 29 1-2 RC Strasbourg Alsace</title>
-      <link>https://playersb.com/teams/stade-brestois-29/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/stade-brestois-29/#fixture-542530</guid>
-      <pubDate>Sun, 30 Nov 2025 14:00:00 GMT</pubDate>
-      <description>Stade Brestois 29 played RC Strasbourg Alsace (A) on 2025-11-30. Competition: Ligue 1. Status: FINISHED.</description>
       <category>Ligue 1</category>
     </item>
   </channel>

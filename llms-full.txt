@@ -3,7 +3,7 @@
 > A complete, machine-readable snapshot of PlayersB — The Players Book.
 > Updated each CI run from the same data files that drive the site.
 
-Generated at: 2026-05-03T15:10:39.253Z
+Generated at: 2026-05-03T19:01:28.205Z
 Origin: https://playersb.com/
 Sitemap: https://playersb.com/sitemap.xml
 Per-team feeds: https://playersb.com/teams/<slug>/feed.xml
@@ -103,7 +103,7 @@ Legacy: https://playersb.com/legacy/
 - Thiago Rodrigues · Brentford FC · Premier League · 22g 1a
 - Vedat Muriqi · RCD Mallorca · La Liga · 21g 1a
 - Deniz Undav · VfB Stuttgart · Bundesliga · 18g 5a
-- Esteban Lepaul · Stade Rennais FC 1901 · Ligue 1 · 18g 4a
+- Esteban Lepaul · Stade Rennais FC 1901 · Ligue 1 · 18g 5a
 - Lamine Yamal · FC Barcelona · La Liga · 16g 11a
 - Ante Budimir · CA Osasuna · La Liga · 16g 0a
 - Lautaro Martínez · FC Internazionale Milano · Serie A · 16g 4a
@@ -126,9 +126,9 @@ Legacy: https://playersb.com/legacy/
 ## Standings: Premier League (top 10)
 - #1. Arsenal FC · 76pts · GD 41 · 23-7-5
 - #2. Manchester City FC · 70pts · GD 37 · 21-7-5
-- #3. Manchester United FC · 64pts · GD 16 · 18-10-7
-- #4. Liverpool FC · 58pts · GD 11 · 17-7-11
-- #5. Aston Villa FC · 58pts · GD 5 · 17-7-10
+- #3. Manchester United FC · 64pts · GD 15 · 18-10-7
+- #4. Liverpool FC · 58pts · GD 12 · 17-7-11
+- #5. Aston Villa FC · 58pts · GD 3 · 17-7-11
 - #6. AFC Bournemouth · 52pts · GD 3 · 12-16-7
 - #7. Brentford FC · 51pts · GD 6 · 14-9-12
 - #8. Brighton & Hove Albion FC · 50pts · GD 7 · 13-11-11
@@ -140,18 +140,18 @@ Legacy: https://playersb.com/legacy/
 - #2. Real Madrid CF · 74pts · GD 37 · 23-5-5
 - #3. Villarreal CF · 68pts · GD 25 · 21-5-8
 - #4. Club Atlético de Madrid · 63pts · GD 21 · 19-6-9
-- #5. Real Betis Balompié · 50pts · GD 8 · 12-14-7
+- #5. Real Betis Balompié · 53pts · GD 11 · 13-14-7
 - #6. RC Celta de Vigo · 47pts · GD 4 · 12-11-11
-- #7. Getafe CF · 44pts · GD -7 · 13-5-16
+- #7. Getafe CF · 44pts · GD -8 · 13-5-16
 - #8. Athletic Club · 44pts · GD -10 · 13-5-16
 - #9. Real Sociedad de Fútbol · 43pts · GD 0 · 11-10-12
 - #10. CA Osasuna · 42pts · GD -2 · 11-9-14
 
 ## Standings: Serie A (top 10)
-- #1. FC Internazionale Milano · 79pts · GD 49 · 25-4-5
+- #1. FC Internazionale Milano · 80pts · GD 49 · 25-5-5
 - #2. SSC Napoli · 70pts · GD 19 · 21-7-7
 - #3. AC Milan · 67pts · GD 19 · 19-10-6
-- #4. Juventus FC · 64pts · GD 28 · 18-10-6
+- #4. Juventus FC · 65pts · GD 28 · 18-11-6
 - #5. Como 1907 · 62pts · GD 31 · 17-11-7
 - #6. AS Roma · 61pts · GD 19 · 19-4-11
 - #7. Atalanta BC · 55pts · GD 15 · 14-13-8
@@ -161,27 +161,27 @@ Legacy: https://playersb.com/legacy/
 
 ## Standings: Bundesliga (top 10)
 - #1. FC Bayern München · 83pts · GD 81 · 26-5-1
-- #2. Borussia Dortmund · 67pts · GD 34 · 20-7-4
+- #2. Borussia Dortmund · 67pts · GD 33 · 20-7-5
 - #3. RB Leipzig · 62pts · GD 21 · 19-5-8
 - #4. Bayer 04 Leverkusen · 58pts · GD 23 · 17-7-8
 - #5. VfB Stuttgart · 58pts · GD 20 · 17-7-8
 - #6. TSG 1899 Hoffenheim · 58pts · GD 16 · 17-7-8
 - #7. Eintracht Frankfurt · 43pts · GD -3 · 11-10-11
-- #8. SC Freiburg · 43pts · GD -8 · 12-7-12
+- #8. SC Freiburg · 43pts · GD -9 · 12-7-13
 - #9. FC Augsburg · 40pts · GD -14 · 11-7-14
-- #10. 1. FSV Mainz 05 · 37pts · GD -8 · 9-10-13
+- #10. 1. FSV Mainz 05 · 37pts · GD -9 · 9-10-13
 
 ## Standings: Ligue 1 (top 10)
 - #1. Paris Saint-Germain FC · 70pts · GD 43 · 22-4-5
 - #2. Racing Club de Lens · 64pts · GD 28 · 20-4-7
-- #3. Lille OSC · 58pts · GD 16 · 17-7-8
-- #4. Olympique Lyonnais · 57pts · GD 16 · 17-6-8
-- #5. Stade Rennais FC 1901 · 56pts · GD 12 · 16-8-7
+- #3. Stade Rennais FC 1901 · 59pts · GD 13 · 17-8-7
+- #4. Lille OSC · 58pts · GD 16 · 17-7-8
+- #5. Olympique Lyonnais · 57pts · GD 15 · 17-6-9
 - #6. AS Monaco FC · 54pts · GD 8 · 16-6-10
 - #7. Olympique de Marseille · 53pts · GD 15 · 16-5-11
-- #8. RC Strasbourg Alsace · 46pts · GD 10 · 13-7-10
+- #8. RC Strasbourg Alsace · 46pts · GD 9 · 13-7-11
 - #9. FC Lorient · 42pts · GD -5 · 10-12-10
-- #10. Toulouse FC · 38pts · GD -1 · 10-8-13
+- #10. Toulouse FC · 41pts · GD 0 · 11-8-13
 
 ## Standings: Champions League (top 10)
 - #1. Arsenal FC · 24pts · GD 19 · 8-0-0

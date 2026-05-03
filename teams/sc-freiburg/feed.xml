@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/sc-freiburg/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for SC Freiburg on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-16 (H) SC Freiburg vs RB Leipzig</title>
       <link>https://playersb.com/teams/sc-freiburg/</link>
@@ -24,11 +24,11 @@
       <category>Bundesliga</category>
     </item>
     <item>
-      <title>2026-05-03 (H) SC Freiburg vs VfL Wolfsburg</title>
+      <title>2026-05-03 (H) SC Freiburg 0-1 VfL Wolfsburg</title>
       <link>https://playersb.com/teams/sc-freiburg/</link>
       <guid isPermaLink="false">https://playersb.com/teams/sc-freiburg/#fixture-540689</guid>
       <pubDate>Sun, 03 May 2026 17:30:00 GMT</pubDate>
-      <description>SC Freiburg play VfL Wolfsburg (H) on 2026-05-03. Competition: Bundesliga. Status: TIMED.</description>
+      <description>SC Freiburg played VfL Wolfsburg (H) on 2026-05-03. Competition: Bundesliga. Status: IN_PLAY.</description>
       <category>Bundesliga</category>
     </item>
     <item>

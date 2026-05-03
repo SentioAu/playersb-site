@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/crystal-palace-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Crystal Palace FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Crystal Palace FC vs Arsenal FC</title>
       <link>https://playersb.com/teams/crystal-palace-fc/</link>
@@ -21,6 +21,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/crystal-palace-fc/#fixture-538148</guid>
       <pubDate>Sun, 17 May 2026 14:00:00 GMT</pubDate>
       <description>Crystal Palace FC play Brentford FC (A) on 2026-05-17. Competition: Premier League. Status: TIMED.</description>
+      <category>Premier League</category>
+    </item>
+    <item>
+      <title>2026-05-13 (A) Crystal Palace FC vs Manchester City FC</title>
+      <link>https://playersb.com/teams/crystal-palace-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/crystal-palace-fc/#fixture-538091</guid>
+      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
+      <description>Crystal Palace FC play Manchester City FC (A) on 2026-05-13. Competition: Premier League. Status: TIMED.</description>
       <category>Premier League</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/crystal-palace-fc/#fixture-537966</guid>
       <pubDate>Thu, 01 Jan 2026 17:30:00 GMT</pubDate>
       <description>Crystal Palace FC played Fulham FC (H) on 2026-01-01. Competition: Premier League. Status: FINISHED.</description>
-      <category>Premier League</category>
-    </item>
-    <item>
-      <title>2025-12-28 (H) Crystal Palace FC 0-1 Tottenham Hotspur FC</title>
-      <link>https://playersb.com/teams/crystal-palace-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/crystal-palace-fc/#fixture-537956</guid>
-      <pubDate>Sun, 28 Dec 2025 16:30:00 GMT</pubDate>
-      <description>Crystal Palace FC played Tottenham Hotspur FC (H) on 2025-12-28. Competition: Premier League. Status: FINISHED.</description>
       <category>Premier League</category>
     </item>
   </channel>

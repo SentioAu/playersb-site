@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/liverpool/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Liverpool on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Liverpool vs Brentford FC</title>
       <link>https://playersb.com/teams/liverpool/</link>
@@ -32,11 +32,11 @@
       <category>Premier League</category>
     </item>
     <item>
-      <title>2026-05-03 (A) Liverpool 2-0 Manchester United FC</title>
+      <title>2026-05-03 (A) Liverpool 3-2 Manchester United FC</title>
       <link>https://playersb.com/teams/liverpool/</link>
       <guid isPermaLink="false">https://playersb.com/teams/liverpool/#fixture-538132</guid>
       <pubDate>Sun, 03 May 2026 14:30:00 GMT</pubDate>
-      <description>Liverpool played Manchester United FC (A) on 2026-05-03. Competition: Premier League. Status: IN_PLAY.</description>
+      <description>Liverpool played Manchester United FC (A) on 2026-05-03. Competition: Premier League. Status: FINISHED.</description>
       <category>Premier League</category>
     </item>
     <item>

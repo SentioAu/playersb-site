@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/acf-fiorentina/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for ACF Fiorentina on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) ACF Fiorentina vs Atalanta BC</title>
       <link>https://playersb.com/teams/acf-fiorentina/</link>
@@ -21,6 +21,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/acf-fiorentina/#fixture-537181</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>ACF Fiorentina play Juventus FC (A) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-10 (H) ACF Fiorentina vs Genoa CFC</title>
+      <link>https://playersb.com/teams/acf-fiorentina/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/acf-fiorentina/#fixture-537165</guid>
+      <pubDate>Sun, 10 May 2026 13:00:00 GMT</pubDate>
+      <description>ACF Fiorentina play Genoa CFC (H) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-04 (A) ACF Fiorentina vs AS Roma</title>
+      <link>https://playersb.com/teams/acf-fiorentina/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/acf-fiorentina/#fixture-537155</guid>
+      <pubDate>Mon, 04 May 2026 18:45:00 GMT</pubDate>
+      <description>ACF Fiorentina play AS Roma (A) on 2026-05-04. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/acf-fiorentina/#fixture-536998</guid>
       <pubDate>Wed, 07 Jan 2026 19:45:00 GMT</pubDate>
       <description>ACF Fiorentina played SS Lazio (A) on 2026-01-07. Competition: Serie A. Status: FINISHED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-01-04 (H) ACF Fiorentina 1-0 US Cremonese</title>
-      <link>https://playersb.com/teams/acf-fiorentina/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/acf-fiorentina/#fixture-536985</guid>
-      <pubDate>Sun, 04 Jan 2026 14:00:00 GMT</pubDate>
-      <description>ACF Fiorentina played US Cremonese (H) on 2026-01-04. Competition: Serie A. Status: FINISHED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2025-12-27 (A) ACF Fiorentina 1-0 Parma Calcio 1913</title>
-      <link>https://playersb.com/teams/acf-fiorentina/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/acf-fiorentina/#fixture-536980</guid>
-      <pubDate>Sat, 27 Dec 2025 11:30:00 GMT</pubDate>
-      <description>ACF Fiorentina played Parma Calcio 1913 (A) on 2025-12-27. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

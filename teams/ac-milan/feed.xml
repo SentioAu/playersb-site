@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/ac-milan/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for AC Milan on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) AC Milan vs Cagliari Calcio</title>
       <link>https://playersb.com/teams/ac-milan/</link>
@@ -21,6 +21,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/ac-milan/#fixture-537178</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>AC Milan play Genoa CFC (A) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-10 (H) AC Milan vs Atalanta BC</title>
+      <link>https://playersb.com/teams/ac-milan/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/ac-milan/#fixture-537166</guid>
+      <pubDate>Sun, 10 May 2026 18:45:00 GMT</pubDate>
+      <description>AC Milan play Atalanta BC (H) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/ac-milan/#fixture-537005</guid>
       <pubDate>Sun, 11 Jan 2026 14:00:00 GMT</pubDate>
       <description>AC Milan played ACF Fiorentina (A) on 2026-01-11. Competition: Serie A. Status: FINISHED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-01-08 (H) AC Milan 1-1 Genoa CFC</title>
-      <link>https://playersb.com/teams/ac-milan/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/ac-milan/#fixture-536995</guid>
-      <pubDate>Thu, 08 Jan 2026 19:45:00 GMT</pubDate>
-      <description>AC Milan played Genoa CFC (H) on 2026-01-08. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

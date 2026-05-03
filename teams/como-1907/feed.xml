@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/como-1907/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Como 1907 on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 15:10:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Como 1907 vs US Cremonese</title>
       <link>https://playersb.com/teams/como-1907/</link>
@@ -21,6 +21,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/como-1907/#fixture-537179</guid>
       <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
       <description>Como 1907 play Parma Calcio 1913 (H) on 2026-05-17. Competition: Serie A. Status: SCHEDULED.</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <title>2026-05-10 (A) Como 1907 vs Hellas Verona FC</title>
+      <link>https://playersb.com/teams/como-1907/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/como-1907/#fixture-537169</guid>
+      <pubDate>Sun, 10 May 2026 10:30:00 GMT</pubDate>
+      <description>Como 1907 play Hellas Verona FC (A) on 2026-05-10. Competition: Serie A. Status: TIMED.</description>
       <category>Serie A</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/como-1907/#fixture-537009</guid>
       <pubDate>Sat, 10 Jan 2026 14:00:00 GMT</pubDate>
       <description>Como 1907 played Bologna FC 1909 (H) on 2026-01-10. Competition: Serie A. Status: FINISHED.</description>
-      <category>Serie A</category>
-    </item>
-    <item>
-      <title>2026-01-06 (A) Como 1907 0-3 AC Pisa 1909</title>
-      <link>https://playersb.com/teams/como-1907/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/como-1907/#fixture-537000</guid>
-      <pubDate>Tue, 06 Jan 2026 14:00:00 GMT</pubDate>
-      <description>Como 1907 played AC Pisa 1909 (A) on 2026-01-06. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
   </channel>

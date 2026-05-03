@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-03T15:10:15.200Z",
-  "generatedAt": "2026-05-03T15:10:15.200Z",
+  "updatedAt": "2026-05-03T19:01:14.166Z",
+  "generatedAt": "2026-05-03T19:01:14.167Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T15:10:15.200Z"
+      "fetchedAt": "2026-05-03T19:01:14.167Z"
     }
   },
   "scorers": [
@@ -139,7 +139,18 @@
       "goals": 11,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 33
+      "playedMatches": 34
+    },
+    {
+      "name": "Richarlison",
+      "team": "Tottenham Hotspur FC",
+      "competition": "Premier League",
+      "nationality": "Brazil",
+      "position": "",
+      "goals": 10,
+      "assists": 4,
+      "penalties": 0,
+      "playedMatches": 30
     },
     {
       "name": "Jean-Philippe Mateta",
@@ -162,17 +173,6 @@
       "assists": 6,
       "penalties": 0,
       "playedMatches": 33
-    },
-    {
-      "name": "Richarlison",
-      "team": "Tottenham Hotspur FC",
-      "competition": "Premier League",
-      "nationality": "Brazil",
-      "position": "",
-      "goals": 9,
-      "assists": 4,
-      "penalties": 0,
-      "playedMatches": 29
     },
     {
       "name": "Bruno Guimarães",
@@ -315,7 +315,7 @@
       "goals": 13,
       "assists": 5,
       "penalties": 4,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Robert Lewandowski",
@@ -406,6 +406,17 @@
       "playedMatches": 29
     },
     {
+      "name": "Cucho Hernández",
+      "team": "Real Betis Balompié",
+      "competition": "La Liga",
+      "nationality": "Colombia",
+      "position": "",
+      "goals": 10,
+      "assists": 3,
+      "penalties": 1,
+      "playedMatches": 29
+    },
+    {
       "name": "Alberto Moleiro",
       "team": "Villarreal CF",
       "competition": "La Liga",
@@ -439,17 +450,6 @@
       "playedMatches": 27
     },
     {
-      "name": "Federico Viñas",
-      "team": "Real Oviedo",
-      "competition": "La Liga",
-      "nationality": "Uruguay",
-      "position": "",
-      "goals": 9,
-      "assists": 1,
-      "penalties": 2,
-      "playedMatches": 29
-    },
-    {
       "name": "Lautaro Martínez",
       "team": "FC Internazionale Milano",
       "competition": "Serie A",
@@ -458,7 +458,7 @@
       "goals": 16,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 29
+      "playedMatches": 30
     },
     {
       "name": "Anastasios Douvikas",
@@ -491,7 +491,7 @@
       "goals": 12,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Rasmus Højlund",
@@ -546,7 +546,7 @@
       "goals": 10,
       "assists": 6,
       "penalties": 1,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Giovanni Simeone",
@@ -590,7 +590,7 @@
       "goals": 9,
       "assists": 4,
       "penalties": 4,
-      "playedMatches": 25
+      "playedMatches": 26
     },
     {
       "name": "Rafael Leão",
@@ -656,7 +656,7 @@
       "goals": 8,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 33
+      "playedMatches": 34
     },
     {
       "name": "Moise Kean",
@@ -769,6 +769,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Haris Tabaković",
+      "team": "Borussia Mönchengladbach",
+      "competition": "Bundesliga",
+      "nationality": "Bosnia-Herzegovina",
+      "position": "",
+      "goals": 12,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 31
+    },
+    {
       "name": "Yan Diomandé",
       "team": "RB Leipzig",
       "competition": "Bundesliga",
@@ -800,17 +811,6 @@
       "assists": 3,
       "penalties": 1,
       "playedMatches": 23
-    },
-    {
-      "name": "Haris Tabaković",
-      "team": "Borussia Mönchengladbach",
-      "competition": "Bundesliga",
-      "nationality": "Bosnia-Herzegovina",
-      "position": "",
-      "goals": 11,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 31
     },
     {
       "name": "Fisnik Asllani",
@@ -887,7 +887,7 @@
       "goals": 8,
       "assists": 3,
       "penalties": 1,
-      "playedMatches": 28
+      "playedMatches": 29
     },
     {
       "name": "Esteban Lepaul",
@@ -896,9 +896,9 @@
       "nationality": "France",
       "position": "",
       "goals": 18,
-      "assists": 4,
+      "assists": 5,
       "penalties": 3,
-      "playedMatches": 31
+      "playedMatches": 32
     },
     {
       "name": "Joaquín Panichelli",
@@ -943,6 +943,17 @@
       "assists": 3,
       "penalties": 1,
       "playedMatches": 27
+    },
+    {
+      "name": "Lassine Sinayoko",
+      "team": "AJ Auxerre",
+      "competition": "Ligue 1",
+      "nationality": "Mali",
+      "position": "",
+      "goals": 10,
+      "assists": 4,
+      "penalties": 3,
+      "playedMatches": 30
     },
     {
       "name": "Pablo Pagis",
@@ -1019,18 +1030,7 @@
       "goals": 10,
       "assists": 3,
       "penalties": 0,
-      "playedMatches": 25
-    },
-    {
-      "name": "Lassine Sinayoko",
-      "team": "AJ Auxerre",
-      "competition": "Ligue 1",
-      "nationality": "Mali",
-      "position": "",
-      "goals": 9,
-      "assists": 3,
-      "penalties": 3,
-      "playedMatches": 30
+      "playedMatches": 26
     },
     {
       "name": "Pierre-Emerick Aubameyang",
@@ -1063,7 +1063,7 @@
       "goals": 9,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 27
+      "playedMatches": 28
     },
     {
       "name": "Ahmadou Bamba Dieng",
