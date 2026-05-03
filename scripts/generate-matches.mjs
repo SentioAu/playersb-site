@@ -95,16 +95,23 @@ function buildSportsEventListJsonLd() {
   const top = [...live, ...upcoming, ...finished].slice(0, 20);
   if (!top.length) return "";
 
-  const items = top.map((f, idx) => ({
-    "@type": "ListItem",
-    position: idx + 1,
-    item: {
+  // schema.org's eventStatus enum is Scheduled / Cancelled / Postponed /
+  // Rescheduled / MovedOnline — there is no "Completed" value. For finished
+  // matches we omit eventStatus entirely (so consumers don't get the wrong
+  // signal) and emit endDate so the event is unambiguously in the past.
+  function statusFor(s) {
+    if (s === "POSTPONED") return "https://schema.org/EventPostponed";
+    if (s === "CANCELLED" || s === "CANCELED" || s === "ABANDONED") return "https://schema.org/EventCancelled";
+    if (s === "SCHEDULED" || s === "TIMED" || s === "LIVE" || s === "IN_PLAY" || s === "PAUSED") {
+      return "https://schema.org/EventScheduled";
+    }
+    return null;
+  }
+  const items = top.map((f, idx) => {
+    const eventNode = {
       "@type": "SportsEvent",
       name: `${f.home} vs ${f.away}`,
       startDate: f.date,
-      eventStatus: f.status === "FINISHED" ? "https://schema.org/EventScheduled"
-        : f.status === "POSTPONED" ? "https://schema.org/EventPostponed"
-        : "https://schema.org/EventScheduled",
       sport: "Association Football",
       competitor: [
         { "@type": "SportsTeam", name: f.home },
@@ -114,8 +121,19 @@ function buildSportsEventListJsonLd() {
         "@type": "SportsEvent",
         name: f.competition || "PlayersB",
       },
-    },
-  }));
+    };
+    const status = statusFor(f.status);
+    if (status) eventNode.eventStatus = status;
+    if (f.status === "FINISHED") {
+      // Match end isn't published explicitly; assume same calendar instant
+      // as start so consumers can treat the event as concluded.
+      eventNode.endDate = f.date;
+      if (typeof f.homeScore === "number" && typeof f.awayScore === "number") {
+        eventNode.description = `Final score: ${f.home} ${f.homeScore}-${f.awayScore} ${f.away}`;
+      }
+    }
+    return { "@type": "ListItem", position: idx + 1, item: eventNode };
+  });
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
