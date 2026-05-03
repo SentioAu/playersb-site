@@ -56,11 +56,20 @@ async function main() {
   terms.sort((a, b) => a.term.localeCompare(b.term));
 
   const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  // Real glossary slugs only — `related` may reference concepts that aren't
+  // standalone terms (e.g. "Normalization", "Shots on target"); those render
+  // as plain pills so we don't ship dead in-page anchors.
+  const validTermSlugs = new Set(terms.map((t) => slugify(t.term)));
   const listMarkup = terms
     .map((item) => {
       const slug = slugify(item.term);
       const related = item.related
-        .map((term) => `<a class="pill" href="#${slugify(term)}">${escHtml(term)}</a>`)
+        .map((term) => {
+          const targetSlug = slugify(term);
+          return validTermSlugs.has(targetSlug)
+            ? `<a class="pill" href="#${targetSlug}">${escHtml(term)}</a>`
+            : `<span class="pill">${escHtml(term)}</span>`;
+        })
         .join(" ");
       const searchBlob = `${item.term} ${item.definition} ${(item.related || []).join(" ")}`.toLowerCase();
       return `

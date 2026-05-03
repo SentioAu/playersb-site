@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FC København — PlayersB fixtures</title>
+    <link>https://playersb.com/teams/fc-k-benhavn/</link>
+    <atom:link href="https://playersb.com/teams/fc-k-benhavn/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Recent and upcoming fixtures for FC København on PlayersB.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 May 2026 14:55:35 GMT</lastBuildDate>
+    <item>
+      <title>2026-01-28 (A) FC København 4-1 FC Barcelona</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-551957</guid>
+      <pubDate>Wed, 28 Jan 2026 20:00:00 GMT</pubDate>
+      <description>FC København played FC Barcelona (A) on 2026-01-28. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-01-20 (H) FC København 1-1 SSC Napoli</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-552038</guid>
+      <pubDate>Tue, 20 Jan 2026 20:00:00 GMT</pubDate>
+      <description>FC København played SSC Napoli (H) on 2026-01-20. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-12-10 (A) FC København 2-3 Villarreal CF</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-552013</guid>
+      <pubDate>Wed, 10 Dec 2025 17:45:00 GMT</pubDate>
+      <description>FC København played Villarreal CF (A) on 2025-12-10. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-11-26 (H) FC København 3-2 FK Kairat</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-552046</guid>
+      <pubDate>Wed, 26 Nov 2025 17:45:00 GMT</pubDate>
+      <description>FC København played FK Kairat (H) on 2025-11-26. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-11-04 (A) FC København 4-0 Tottenham Hotspur FC</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-552021</guid>
+      <pubDate>Tue, 04 Nov 2025 20:00:00 GMT</pubDate>
+      <description>FC København played Tottenham Hotspur FC (A) on 2025-11-04. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-10-21 (H) FC København 2-4 Borussia Dortmund</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-551945</guid>
+      <pubDate>Tue, 21 Oct 2025 19:00:00 GMT</pubDate>
+      <description>FC København played Borussia Dortmund (H) on 2025-10-21. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-10-01 (A) FC København 2-0 Qarabağ Ağdam FK</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-552039</guid>
+      <pubDate>Wed, 01 Oct 2025 16:45:00 GMT</pubDate>
+      <description>FC København played Qarabağ Ağdam FK (A) on 2025-10-01. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2025-09-18 (H) FC København 2-2 Bayer 04 Leverkusen</title>
+      <link>https://playersb.com/teams/fc-k-benhavn/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-k-benhavn/#fixture-551975</guid>
+      <pubDate>Thu, 18 Sep 2025 16:45:00 GMT</pubDate>
+      <description>FC København played Bayer 04 Leverkusen (H) on 2025-09-18. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+  </channel>
+</rss>

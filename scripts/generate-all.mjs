@@ -70,6 +70,9 @@ async function main() {
     "scripts/generate-standings.mjs",
     "scripts/generate-archive.mjs",
     "scripts/generate-og-cards.mjs",
+    "scripts/generate-team-og-cards.mjs",
+    "scripts/generate-team-feeds.mjs",
+    "scripts/generate-llms-full.mjs",
   ]);
 
   // Stage 3: players index (depends on a stable players.json; serial after
