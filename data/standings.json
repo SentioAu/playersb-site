@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-02T19:00:54.611Z",
-  "generatedAt": "2026-05-02T19:00:54.611Z",
+  "updatedAt": "2026-05-03T02:54:17.878Z",
+  "generatedAt": "2026-05-03T02:54:17.878Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T19:00:54.611Z"
+      "fetchedAt": "2026-05-03T02:54:17.878Z"
     }
   },
   "standings": {
@@ -275,14 +275,14 @@
       {
         "position": 1,
         "team": "FC Barcelona",
-        "played": 33,
-        "won": 28,
+        "played": 34,
+        "won": 29,
         "draw": 1,
         "lost": 4,
-        "goals": 87,
-        "goalsAgainst": 30,
-        "gd": 57,
-        "points": 85,
+        "goals": 89,
+        "goalsAgainst": 31,
+        "gd": 58,
+        "points": 88,
         "form": null
       },
       {
@@ -339,14 +339,14 @@
       },
       {
         "position": 6,
-        "team": "Athletic Club",
-        "played": 34,
-        "won": 13,
-        "draw": 5,
-        "lost": 16,
-        "goals": 40,
-        "goalsAgainst": 50,
-        "gd": -10,
+        "team": "RC Celta de Vigo",
+        "played": 33,
+        "won": 11,
+        "draw": 11,
+        "lost": 11,
+        "goals": 45,
+        "goalsAgainst": 43,
+        "gd": 2,
         "points": 44,
         "form": null
       },
@@ -365,14 +365,14 @@
       },
       {
         "position": 8,
-        "team": "RC Celta de Vigo",
-        "played": 33,
-        "won": 11,
-        "draw": 11,
-        "lost": 11,
-        "goals": 45,
-        "goalsAgainst": 43,
-        "gd": 2,
+        "team": "Athletic Club",
+        "played": 34,
+        "won": 13,
+        "draw": 5,
+        "lost": 16,
+        "goals": 40,
+        "goalsAgainst": 50,
+        "gd": -10,
         "points": 44,
         "form": null
       },
@@ -392,13 +392,13 @@
       {
         "position": 10,
         "team": "CA Osasuna",
-        "played": 33,
+        "played": 34,
         "won": 11,
         "draw": 9,
-        "lost": 13,
-        "goals": 39,
-        "goalsAgainst": 40,
-        "gd": -1,
+        "lost": 14,
+        "goals": 40,
+        "goalsAgainst": 42,
+        "gd": -2,
         "points": 42,
         "form": null
       },
@@ -417,19 +417,6 @@
       },
       {
         "position": 12,
-        "team": "Valencia CF",
-        "played": 34,
-        "won": 10,
-        "draw": 9,
-        "lost": 15,
-        "goals": 37,
-        "goalsAgainst": 50,
-        "gd": -13,
-        "points": 39,
-        "form": null
-      },
-      {
-        "position": 13,
         "team": "RCD Espanyol de Barcelona",
         "played": 33,
         "won": 10,
@@ -438,6 +425,19 @@
         "goals": 37,
         "goalsAgainst": 49,
         "gd": -12,
+        "points": 39,
+        "form": null
+      },
+      {
+        "position": 13,
+        "team": "Valencia CF",
+        "played": 34,
+        "won": 10,
+        "draw": 9,
+        "lost": 15,
+        "goals": 37,
+        "goalsAgainst": 50,
+        "gd": -13,
         "points": 39,
         "form": null
       },
@@ -615,14 +615,14 @@
       {
         "position": 7,
         "team": "Atalanta BC",
-        "played": 34,
+        "played": 35,
         "won": 14,
-        "draw": 12,
+        "draw": 13,
         "lost": 8,
         "goals": 47,
         "goalsAgainst": 32,
         "gd": 15,
-        "points": 54,
+        "points": 55,
         "form": null
       },
       {
@@ -706,14 +706,14 @@
       {
         "position": 14,
         "team": "Genoa CFC",
-        "played": 34,
+        "played": 35,
         "won": 10,
-        "draw": 9,
+        "draw": 10,
         "lost": 15,
         "goals": 40,
         "goalsAgainst": 48,
         "gd": -8,
-        "points": 39,
+        "points": 40,
         "form": null
       },
       {
@@ -1048,14 +1048,14 @@
       {
         "position": 2,
         "team": "Racing Club de Lens",
-        "played": 30,
+        "played": 31,
         "won": 20,
-        "draw": 3,
+        "draw": 4,
         "lost": 7,
-        "goals": 60,
-        "goalsAgainst": 32,
+        "goals": 61,
+        "goalsAgainst": 33,
         "gd": 28,
-        "points": 63,
+        "points": 64,
         "form": null
       },
       {
@@ -1217,14 +1217,14 @@
       {
         "position": 15,
         "team": "OGC Nice",
-        "played": 31,
+        "played": 32,
         "won": 7,
-        "draw": 9,
+        "draw": 10,
         "lost": 15,
-        "goals": 35,
-        "goalsAgainst": 57,
+        "goals": 36,
+        "goalsAgainst": 58,
         "gd": -22,
-        "points": 30,
+        "points": 31,
         "form": null
       },
       {

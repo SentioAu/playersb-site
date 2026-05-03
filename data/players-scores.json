@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-02T19:00:54.611Z",
-  "generatedAt": "2026-05-02T19:00:54.611Z",
+  "updatedAt": "2026-05-03T02:54:17.878Z",
+  "generatedAt": "2026-05-03T02:54:17.878Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-02T19:00:54.611Z"
+      "fetchedAt": "2026-05-03T02:54:17.878Z"
     }
   },
   "players": [
@@ -279,7 +279,7 @@
       "competition": "La Liga",
       "nationality": "Spain",
       "position": "",
-      "goals": 14,
+      "goals": 15,
       "assists": 2,
       "penalties": 0,
       "playedMatches": 32
@@ -318,6 +318,17 @@
       "playedMatches": 32
     },
     {
+      "name": "Robert Lewandowski",
+      "team": "FC Barcelona",
+      "competition": "La Liga",
+      "nationality": "Poland",
+      "position": "",
+      "goals": 13,
+      "assists": 2,
+      "penalties": 1,
+      "playedMatches": 31
+    },
+    {
       "name": "Alexander Sørloth",
       "team": "Club Atlético de Madrid",
       "competition": "La Liga",
@@ -326,17 +337,6 @@
       "goals": 12,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 31
-    },
-    {
-      "name": "Robert Lewandowski",
-      "team": "FC Barcelona",
-      "competition": "La Liga",
-      "nationality": "Poland",
-      "position": "",
-      "goals": 12,
-      "assists": 2,
-      "penalties": 1,
       "playedMatches": 31
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T19:01:01.509Z",
+  "generated_at": "2026-05-03T02:54:25.833Z",
   "players": [
     {
       "id": "achraf-hakimi",
@@ -755,7 +755,7 @@
       "position": "LW",
       "team": "Barcelona",
       "minutes": 1580,
-      "goals": 12,
+      "goals": 13,
       "assists": 6,
       "shots": 56,
       "shotsOnTarget": 29
