@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/arsenal-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Arsenal FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 08:31:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 14:02:10 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Arsenal FC vs Crystal Palace FC</title>
       <link>https://playersb.com/teams/arsenal-fc/</link>
@@ -32,12 +32,28 @@
       <category>Premier League</category>
     </item>
     <item>
+      <title>2026-05-05 (H) Arsenal FC vs Club Atlético de Madrid</title>
+      <link>https://playersb.com/teams/arsenal-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/arsenal-fc/#fixture-552095</guid>
+      <pubDate>Tue, 05 May 2026 19:00:00 GMT</pubDate>
+      <description>Arsenal FC play Club Atlético de Madrid (H) on 2026-05-05. Competition: Champions League. Status: TIMED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
       <title>2026-05-02 (H) Arsenal FC 3-0 Fulham FC</title>
       <link>https://playersb.com/teams/arsenal-fc/</link>
       <guid isPermaLink="false">https://playersb.com/teams/arsenal-fc/#fixture-538127</guid>
       <pubDate>Sat, 02 May 2026 16:30:00 GMT</pubDate>
       <description>Arsenal FC played Fulham FC (H) on 2026-05-02. Competition: Premier League. Status: FINISHED.</description>
       <category>Premier League</category>
+    </item>
+    <item>
+      <title>2026-04-29 (A) Arsenal FC 1-1 Club Atlético de Madrid</title>
+      <link>https://playersb.com/teams/arsenal-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/arsenal-fc/#fixture-552093</guid>
+      <pubDate>Wed, 29 Apr 2026 19:00:00 GMT</pubDate>
+      <description>Arsenal FC played Club Atlético de Madrid (A) on 2026-04-29. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
     </item>
     <item>
       <title>2026-04-25 (H) Arsenal FC 1-0 Newcastle United FC</title>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 07 Feb 2026 15:00:00 GMT</pubDate>
       <description>Arsenal FC played Sunderland AFC (H) on 2026-02-07. Competition: Premier League. Status: FINISHED.</description>
       <category>Premier League</category>
-    </item>
-    <item>
-      <title>2026-01-31 (A) Arsenal FC 0-4 Leeds United FC</title>
-      <link>https://playersb.com/teams/arsenal-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/arsenal-fc/#fixture-538020</guid>
-      <pubDate>Sat, 31 Jan 2026 15:00:00 GMT</pubDate>
-      <description>Arsenal FC played Leeds United FC (A) on 2026-01-31. Competition: Premier League. Status: FINISHED.</description>
-      <category>Premier League</category>
-    </item>
-    <item>
-      <title>2026-01-28 (H) Arsenal FC 3-2 FK Kairat</title>
-      <link>https://playersb.com/teams/arsenal-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/arsenal-fc/#fixture-551980</guid>
-      <pubDate>Wed, 28 Jan 2026 20:00:00 GMT</pubDate>
-      <description>Arsenal FC played FK Kairat (H) on 2026-01-28. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
     </item>
   </channel>
 </rss>

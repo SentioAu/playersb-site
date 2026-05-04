@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-04T08:31:11.930Z",
-  "generatedAt": "2026-05-04T08:31:11.930Z",
+  "updatedAt": "2026-05-04T14:01:46.653Z",
+  "generatedAt": "2026-05-04T14:01:46.653Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-04T08:31:11.930Z"
+      "fetchedAt": "2026-05-04T14:01:46.653Z"
     }
   },
   "scorers": [
@@ -51,7 +51,7 @@
       "goals": 14,
       "assists": 5,
       "penalties": 0,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Viktor Gyökeres",
@@ -84,7 +84,7 @@
       "goals": 13,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 34
+      "playedMatches": 35
     },
     {
       "name": "Dominic Calvert-Lewin",
@@ -205,7 +205,7 @@
       "goals": 9,
       "assists": 1,
       "penalties": 5,
-      "playedMatches": 23
+      "playedMatches": 24
     },
     {
       "name": "Casemiro",

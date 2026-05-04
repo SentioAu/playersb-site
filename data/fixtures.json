@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-04T08:31:11.930Z",
-  "generatedAt": "2026-05-04T08:31:11.930Z",
+  "updatedAt": "2026-05-04T14:01:46.653Z",
+  "generatedAt": "2026-05-04T14:01:46.653Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-04T08:31:11.930Z"
+      "fetchedAt": "2026-05-04T14:01:46.653Z"
     }
   },
   "fixtures": [
@@ -3959,17 +3959,6 @@
       "awayScore": null
     },
     {
-      "id": 538091,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "home": "Manchester City FC",
-      "away": "Crystal Palace FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 538146,
       "competitionCode": "PL",
       "competition": "Premier League",
@@ -4054,28 +4043,6 @@
       "status": "TIMED",
       "home": "Arsenal FC",
       "away": "Burnley FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538145,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-19T18:30:00Z",
-      "status": "TIMED",
-      "home": "AFC Bournemouth",
-      "away": "Manchester City FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538149,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-19T19:15:00Z",
-      "status": "TIMED",
-      "home": "Chelsea FC",
-      "away": "Tottenham Hotspur FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -21281,7 +21248,7 @@
       "home": "Club Atlético de Madrid",
       "away": "FC Barcelona",
       "homeScore": 1,
-      "awayScore": 3
+      "awayScore": 2
     },
     {
       "id": 556723,
@@ -21311,8 +21278,8 @@
       "competition": "Champions League",
       "date": "2026-04-28T19:00:00Z",
       "status": "FINISHED",
-      "home": "",
-      "away": "",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Bayern München",
       "homeScore": 5,
       "awayScore": 4
     },
@@ -21322,10 +21289,32 @@
       "competition": "Champions League",
       "date": "2026-04-29T19:00:00Z",
       "status": "FINISHED",
-      "home": "",
-      "away": "",
+      "home": "Club Atlético de Madrid",
+      "away": "Arsenal FC",
       "homeScore": 1,
       "awayScore": 1
+    },
+    {
+      "id": 552095,
+      "competitionCode": "CL",
+      "competition": "Champions League",
+      "date": "2026-05-05T19:00:00Z",
+      "status": "TIMED",
+      "home": "Arsenal FC",
+      "away": "Club Atlético de Madrid",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 552094,
+      "competitionCode": "CL",
+      "competition": "Champions League",
+      "date": "2026-05-06T19:00:00Z",
+      "status": "TIMED",
+      "home": "FC Bayern München",
+      "away": "Paris Saint-Germain FC",
+      "homeScore": null,
+      "awayScore": null
     },
     {
       "id": 552096,

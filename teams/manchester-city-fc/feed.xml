@@ -6,29 +6,13 @@
     <atom:link href="https://playersb.com/teams/manchester-city-fc/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Manchester City FC on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 08:31:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 14:02:10 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Manchester City FC vs Aston Villa FC</title>
       <link>https://playersb.com/teams/manchester-city-fc/</link>
       <guid isPermaLink="false">https://playersb.com/teams/manchester-city-fc/#fixture-538161</guid>
       <pubDate>Sun, 24 May 2026 15:00:00 GMT</pubDate>
       <description>Manchester City FC play Aston Villa FC (H) on 2026-05-24. Competition: Premier League. Status: TIMED.</description>
-      <category>Premier League</category>
-    </item>
-    <item>
-      <title>2026-05-19 (A) Manchester City FC vs AFC Bournemouth</title>
-      <link>https://playersb.com/teams/manchester-city-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/manchester-city-fc/#fixture-538145</guid>
-      <pubDate>Tue, 19 May 2026 18:30:00 GMT</pubDate>
-      <description>Manchester City FC play AFC Bournemouth (A) on 2026-05-19. Competition: Premier League. Status: TIMED.</description>
-      <category>Premier League</category>
-    </item>
-    <item>
-      <title>2026-05-13 (H) Manchester City FC vs Crystal Palace FC</title>
-      <link>https://playersb.com/teams/manchester-city-fc/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/manchester-city-fc/#fixture-538091</guid>
-      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
-      <description>Manchester City FC play Crystal Palace FC (H) on 2026-05-13. Competition: Premier League. Status: TIMED.</description>
       <category>Premier League</category>
     </item>
     <item>
@@ -166,6 +150,22 @@
       <pubDate>Tue, 20 Jan 2026 17:45:00 GMT</pubDate>
       <description>Manchester City FC played FK Bodø/Glimt (A) on 2026-01-20. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-01-17 (A) Manchester City FC 2-0 Manchester United FC</title>
+      <link>https://playersb.com/teams/manchester-city-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/manchester-city-fc/#fixture-538001</guid>
+      <pubDate>Sat, 17 Jan 2026 12:30:00 GMT</pubDate>
+      <description>Manchester City FC played Manchester United FC (A) on 2026-01-17. Competition: Premier League. Status: FINISHED.</description>
+      <category>Premier League</category>
+    </item>
+    <item>
+      <title>2026-01-07 (H) Manchester City FC 1-1 Brighton &amp; Hove Albion FC</title>
+      <link>https://playersb.com/teams/manchester-city-fc/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/manchester-city-fc/#fixture-537992</guid>
+      <pubDate>Wed, 07 Jan 2026 19:30:00 GMT</pubDate>
+      <description>Manchester City FC played Brighton &amp; Hove Albion FC (H) on 2026-01-07. Competition: Premier League. Status: FINISHED.</description>
+      <category>Premier League</category>
     </item>
   </channel>
 </rss>
