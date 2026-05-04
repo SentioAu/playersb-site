@@ -6,13 +6,21 @@
     <atom:link href="https://playersb.com/teams/paris-saint-germain/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Paris Saint-Germain on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 02:52:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 08:31:36 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (A) Paris Saint-Germain vs Paris FC</title>
       <link>https://playersb.com/teams/paris-saint-germain/</link>
       <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542705</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>Paris Saint-Germain play Paris FC (A) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2026-05-13 (A) Paris Saint-Germain vs Racing Club de Lens</title>
+      <link>https://playersb.com/teams/paris-saint-germain/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542664</guid>
+      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
+      <description>Paris Saint-Germain play Racing Club de Lens (A) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542591</guid>
       <pubDate>Sun, 08 Feb 2026 19:45:00 GMT</pubDate>
       <description>Paris Saint-Germain played Olympique de Marseille (H) on 2026-02-08. Competition: Ligue 1. Status: FINISHED.</description>
-      <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2026-02-01 (A) Paris Saint-Germain 1-2 RC Strasbourg Alsace</title>
-      <link>https://playersb.com/teams/paris-saint-germain/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542583</guid>
-      <pubDate>Sun, 01 Feb 2026 19:45:00 GMT</pubDate>
-      <description>Paris Saint-Germain played RC Strasbourg Alsace (A) on 2026-02-01. Competition: Ligue 1. Status: FINISHED.</description>
       <category>Ligue 1</category>
     </item>
   </channel>

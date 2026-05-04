@@ -6,13 +6,21 @@
     <atom:link href="https://playersb.com/teams/rc-strasbourg-alsace/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for RC Strasbourg Alsace on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 02:52:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 08:31:36 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (H) RC Strasbourg Alsace vs AS Monaco FC</title>
       <link>https://playersb.com/teams/rc-strasbourg-alsace/</link>
       <guid isPermaLink="false">https://playersb.com/teams/rc-strasbourg-alsace/#fixture-542710</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>RC Strasbourg Alsace play AS Monaco FC (H) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2026-05-13 (A) RC Strasbourg Alsace vs Stade Brestois 29</title>
+      <link>https://playersb.com/teams/rc-strasbourg-alsace/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/rc-strasbourg-alsace/#fixture-542665</guid>
+      <pubDate>Wed, 13 May 2026 17:00:00 GMT</pubDate>
+      <description>RC Strasbourg Alsace play Stade Brestois 29 (A) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid isPermaLink="false">https://playersb.com/teams/rc-strasbourg-alsace/#fixture-542536</guid>
       <pubDate>Sat, 06 Dec 2025 18:00:00 GMT</pubDate>
       <description>RC Strasbourg Alsace played Toulouse FC (A) on 2025-12-06. Competition: Ligue 1. Status: FINISHED.</description>
-      <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2025-11-30 (H) RC Strasbourg Alsace 1-2 Stade Brestois 29</title>
-      <link>https://playersb.com/teams/rc-strasbourg-alsace/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/rc-strasbourg-alsace/#fixture-542530</guid>
-      <pubDate>Sun, 30 Nov 2025 14:00:00 GMT</pubDate>
-      <description>RC Strasbourg Alsace played Stade Brestois 29 (H) on 2025-11-30. Competition: Ligue 1. Status: FINISHED.</description>
       <category>Ligue 1</category>
     </item>
   </channel>
