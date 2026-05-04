@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/inter/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Inter on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 02:52:25 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Inter vs Bologna FC 1909</title>
       <link>https://playersb.com/teams/inter/</link>
@@ -32,11 +32,11 @@
       <category>Serie A</category>
     </item>
     <item>
-      <title>2026-05-03 (H) Inter 0-0 Parma Calcio 1913</title>
+      <title>2026-05-03 (H) Inter 2-0 Parma Calcio 1913</title>
       <link>https://playersb.com/teams/inter/</link>
       <guid isPermaLink="false">https://playersb.com/teams/inter/#fixture-537159</guid>
       <pubDate>Sun, 03 May 2026 18:45:00 GMT</pubDate>
-      <description>Inter played Parma Calcio 1913 (H) on 2026-05-03. Competition: Serie A. Status: IN_PLAY.</description>
+      <description>Inter played Parma Calcio 1913 (H) on 2026-05-03. Competition: Serie A. Status: FINISHED.</description>
       <category>Serie A</category>
     </item>
     <item>

@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/barcelona/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Barcelona on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 02:52:25 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Barcelona vs Real Sociedad de Fútbol</title>
       <link>https://playersb.com/teams/barcelona/</link>
@@ -72,11 +72,11 @@
       <category>La Liga</category>
     </item>
     <item>
-      <title>2026-05-03 (H) Barcelona vs Real Madrid CF</title>
+      <title>2026-05-03 (H) Barcelona 0-2 Real Madrid CF</title>
       <link>https://playersb.com/teams/barcelona/</link>
       <guid isPermaLink="false">https://playersb.com/teams/barcelona/#fixture-544544</guid>
       <pubDate>Sun, 03 May 2026 19:00:00 GMT</pubDate>
-      <description>Barcelona play Real Madrid CF (H) on 2026-05-03. Competition: La Liga. Status: TIMED.</description>
+      <description>Barcelona played Real Madrid CF (H) on 2026-05-03. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
     </item>
     <item>
@@ -120,7 +120,7 @@
       <category>La Liga</category>
     </item>
     <item>
-      <title>2026-04-14 (A) Barcelona 1-2 Club Atlético de Madrid</title>
+      <title>2026-04-14 (A) Barcelona 1-3 Club Atlético de Madrid</title>
       <link>https://playersb.com/teams/barcelona/</link>
       <guid isPermaLink="false">https://playersb.com/teams/barcelona/#fixture-556724</guid>
       <pubDate>Tue, 14 Apr 2026 19:00:00 GMT</pubDate>

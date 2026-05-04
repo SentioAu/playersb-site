@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-03T19:01:14.166Z",
-  "generatedAt": "2026-05-03T19:01:14.167Z",
+  "updatedAt": "2026-05-04T02:52:03.940Z",
+  "generatedAt": "2026-05-04T02:52:03.940Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-03T19:01:14.167Z"
+      "fetchedAt": "2026-05-04T02:52:03.940Z"
     }
   },
   "standings": {
@@ -69,9 +69,9 @@
         "won": 17,
         "draw": 7,
         "lost": 11,
-        "goals": 47,
+        "goals": 48,
         "goalsAgainst": 44,
-        "gd": 3,
+        "gd": 4,
         "points": 58,
         "form": null
       },
@@ -226,8 +226,8 @@
         "draw": 10,
         "lost": 16,
         "goals": 45,
-        "goalsAgainst": 53,
-        "gd": -8,
+        "goalsAgainst": 54,
+        "gd": -9,
         "points": 37,
         "form": null
       },
@@ -288,14 +288,14 @@
       {
         "position": 2,
         "team": "Real Madrid CF",
-        "played": 33,
-        "won": 23,
+        "played": 34,
+        "won": 24,
         "draw": 5,
         "lost": 5,
-        "goals": 68,
+        "goals": 70,
         "goalsAgainst": 31,
-        "gd": 37,
-        "points": 74,
+        "gd": 39,
+        "points": 77,
         "form": null
       },
       {
@@ -417,19 +417,6 @@
       },
       {
         "position": 12,
-        "team": "RCD Espanyol de Barcelona",
-        "played": 33,
-        "won": 10,
-        "draw": 9,
-        "lost": 14,
-        "goals": 37,
-        "goalsAgainst": 49,
-        "gd": -12,
-        "points": 39,
-        "form": null
-      },
-      {
-        "position": 13,
         "team": "Valencia CF",
         "played": 34,
         "won": 10,
@@ -438,6 +425,19 @@
         "goals": 37,
         "goalsAgainst": 50,
         "gd": -13,
+        "points": 39,
+        "form": null
+      },
+      {
+        "position": 13,
+        "team": "RCD Espanyol de Barcelona",
+        "played": 34,
+        "won": 10,
+        "draw": 9,
+        "lost": 15,
+        "goals": 37,
+        "goalsAgainst": 51,
+        "gd": -14,
         "points": 39,
         "form": null
       },
@@ -538,13 +538,13 @@
         "position": 1,
         "team": "FC Internazionale Milano",
         "played": 35,
-        "won": 25,
-        "draw": 5,
+        "won": 26,
+        "draw": 4,
         "lost": 5,
-        "goals": 80,
+        "goals": 82,
         "goalsAgainst": 31,
-        "gd": 49,
-        "points": 80,
+        "gd": 51,
+        "points": 82,
         "form": null
       },
       {
@@ -682,12 +682,12 @@
         "team": "Parma Calcio 1913",
         "played": 35,
         "won": 10,
-        "draw": 13,
-        "lost": 12,
+        "draw": 12,
+        "lost": 13,
         "goals": 25,
-        "goalsAgainst": 40,
-        "gd": -15,
-        "points": 43,
+        "goalsAgainst": 42,
+        "gd": -17,
+        "points": 42,
         "form": null
       },
       {
@@ -876,6 +876,19 @@
       },
       {
         "position": 7,
+        "team": "SC Freiburg",
+        "played": 32,
+        "won": 12,
+        "draw": 8,
+        "lost": 12,
+        "goals": 45,
+        "goalsAgainst": 53,
+        "gd": -8,
+        "points": 44,
+        "form": null
+      },
+      {
+        "position": 8,
         "team": "Eintracht Frankfurt",
         "played": 32,
         "won": 11,
@@ -884,19 +897,6 @@
         "goals": 57,
         "goalsAgainst": 60,
         "gd": -3,
-        "points": 43,
-        "form": null
-      },
-      {
-        "position": 8,
-        "team": "SC Freiburg",
-        "played": 32,
-        "won": 12,
-        "draw": 7,
-        "lost": 13,
-        "goals": 44,
-        "goalsAgainst": 53,
-        "gd": -9,
         "points": 43,
         "form": null
       },
@@ -995,13 +995,13 @@
         "position": 16,
         "team": "VfL Wolfsburg",
         "played": 32,
-        "won": 7,
-        "draw": 7,
+        "won": 6,
+        "draw": 8,
         "lost": 18,
         "goals": 42,
-        "goalsAgainst": 66,
-        "gd": -24,
-        "points": 28,
+        "goalsAgainst": 67,
+        "gd": -25,
+        "points": 26,
         "form": null
       },
       {
@@ -1060,15 +1060,15 @@
       },
       {
         "position": 3,
-        "team": "Stade Rennais FC 1901",
+        "team": "Olympique Lyonnais",
         "played": 32,
-        "won": 17,
-        "draw": 8,
-        "lost": 7,
-        "goals": 55,
-        "goalsAgainst": 42,
-        "gd": 13,
-        "points": 59,
+        "won": 18,
+        "draw": 6,
+        "lost": 8,
+        "goals": 52,
+        "goalsAgainst": 34,
+        "gd": 18,
+        "points": 60,
         "form": null
       },
       {
@@ -1086,15 +1086,15 @@
       },
       {
         "position": 5,
-        "team": "Olympique Lyonnais",
+        "team": "Stade Rennais FC 1901",
         "played": 32,
-        "won": 17,
-        "draw": 6,
-        "lost": 9,
-        "goals": 48,
-        "goalsAgainst": 33,
-        "gd": 15,
-        "points": 57,
+        "won": 16,
+        "draw": 8,
+        "lost": 8,
+        "goals": 56,
+        "goalsAgainst": 46,
+        "gd": 10,
+        "points": 56,
         "form": null
       },
       {

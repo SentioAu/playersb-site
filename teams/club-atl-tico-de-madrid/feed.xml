@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/club-atl-tico-de-madrid/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Club Atlético de Madrid on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 02:52:26 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (A) Club Atlético de Madrid vs Villarreal CF</title>
       <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
@@ -40,28 +40,12 @@
       <category>La Liga</category>
     </item>
     <item>
-      <title>2026-05-05 (A) Club Atlético de Madrid vs Arsenal FC</title>
-      <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-552095</guid>
-      <pubDate>Tue, 05 May 2026 19:00:00 GMT</pubDate>
-      <description>Club Atlético de Madrid play Arsenal FC (A) on 2026-05-05. Competition: Champions League. Status: TIMED.</description>
-      <category>Champions League</category>
-    </item>
-    <item>
       <title>2026-05-02 (A) Club Atlético de Madrid 0-2 Valencia CF</title>
       <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
       <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-544547</guid>
       <pubDate>Sat, 02 May 2026 14:15:00 GMT</pubDate>
       <description>Club Atlético de Madrid played Valencia CF (A) on 2026-05-02. Competition: La Liga. Status: FINISHED.</description>
       <category>La Liga</category>
-    </item>
-    <item>
-      <title>2026-04-29 (H) Club Atlético de Madrid 1-1 Arsenal FC</title>
-      <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-552093</guid>
-      <pubDate>Wed, 29 Apr 2026 19:00:00 GMT</pubDate>
-      <description>Club Atlético de Madrid played Arsenal FC (H) on 2026-04-29. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
     </item>
     <item>
       <title>2026-04-25 (H) Club Atlético de Madrid 3-2 Athletic Club</title>
@@ -80,7 +64,7 @@
       <category>La Liga</category>
     </item>
     <item>
-      <title>2026-04-14 (H) Club Atlético de Madrid 1-2 FC Barcelona</title>
+      <title>2026-04-14 (H) Club Atlético de Madrid 1-3 FC Barcelona</title>
       <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
       <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-556724</guid>
       <pubDate>Tue, 14 Apr 2026 19:00:00 GMT</pubDate>
@@ -165,6 +149,22 @@
       <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-552064</guid>
       <pubDate>Tue, 24 Feb 2026 17:45:00 GMT</pubDate>
       <description>Club Atlético de Madrid played Club Brugge KV (H) on 2026-02-24. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-02-21 (H) Club Atlético de Madrid 4-2 RCD Espanyol de Barcelona</title>
+      <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-544453</guid>
+      <pubDate>Sat, 21 Feb 2026 20:00:00 GMT</pubDate>
+      <description>Club Atlético de Madrid played RCD Espanyol de Barcelona (H) on 2026-02-21. Competition: La Liga. Status: FINISHED.</description>
+      <category>La Liga</category>
+    </item>
+    <item>
+      <title>2026-02-18 (A) Club Atlético de Madrid 3-3 Club Brugge KV</title>
+      <link>https://playersb.com/teams/club-atl-tico-de-madrid/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/club-atl-tico-de-madrid/#fixture-552056</guid>
+      <pubDate>Wed, 18 Feb 2026 20:00:00 GMT</pubDate>
+      <description>Club Atlético de Madrid played Club Brugge KV (A) on 2026-02-18. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
     </item>
   </channel>

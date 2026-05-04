@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T19:01:28.858Z",
+  "generatedAt": "2026-05-04T02:52:26.663Z",
   "status": "warning",
   "thresholds": {
     "minPlayers": 24,
@@ -19,32 +19,32 @@
   "datasets": {
     "fixtures": {
       "count": 0,
-      "generatedAt": "2026-05-03T19:01:14.167Z",
-      "staleHours": 0,
+      "generatedAt": "2026-05-04T02:52:03.940Z",
+      "staleHours": 0.01,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
           "status": "ok",
-          "fetchedAt": "2026-05-03T19:01:14.167Z"
+          "fetchedAt": "2026-05-04T02:52:03.940Z"
         }
       }
     },
     "standings": {
       "count": 0,
-      "generatedAt": "2026-05-03T19:01:14.167Z",
-      "staleHours": 0,
+      "generatedAt": "2026-05-04T02:52:03.940Z",
+      "staleHours": 0.01,
       "freshness": "ok",
       "sourceStatus": {
         "footballData": {
           "status": "ok",
-          "fetchedAt": "2026-05-03T19:01:14.167Z"
+          "fetchedAt": "2026-05-04T02:52:03.940Z"
         }
       }
     },
     "fantasy": {
       "count": 80,
       "generatedAt": "2026-03-07T07:13:03.301Z",
-      "staleHours": 1379.81,
+      "staleHours": 1387.66,
       "freshness": "warn",
       "sourceStatus": {
         "footballData": {
@@ -60,18 +60,18 @@
     },
     "archive": {
       "count": 85,
-      "generatedAt": "2026-05-03T19:01:19.365Z",
+      "generatedAt": "2026-05-04T02:52:16.712Z",
       "staleHours": 0,
       "freshness": "ok",
       "sourceStatus": {
         "statsbomb": {
           "status": "ok",
-          "fetchedAt": "2026-05-03T19:01:18.921Z",
+          "fetchedAt": "2026-05-04T02:52:15.295Z",
           "competitionCount": 75
         },
         "openfootball": {
           "status": "ok",
-          "fetchedAt": "2026-05-03T19:01:19.355Z",
+          "fetchedAt": "2026-05-04T02:52:16.702Z",
           "sourceCount": 10
         }
       }
@@ -81,7 +81,7 @@
   "warnings": [
     "fixtures appears empty (count=0)",
     "standings appears empty (count=0)",
-    "fantasy data is stale (1380h old)",
+    "fantasy data is stale (1388h old)",
     "team-strength dataset is empty",
     "entity-metadata dataset is empty"
   ]

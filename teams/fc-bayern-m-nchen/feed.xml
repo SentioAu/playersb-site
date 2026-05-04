@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/fc-bayern-m-nchen/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for FC Bayern München on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 03 May 2026 19:01:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 02:52:26 GMT</lastBuildDate>
     <item>
       <title>2026-05-16 (H) FC Bayern München vs 1. FC Köln</title>
       <link>https://playersb.com/teams/fc-bayern-m-nchen/</link>
@@ -24,28 +24,12 @@
       <category>Bundesliga</category>
     </item>
     <item>
-      <title>2026-05-06 (H) FC Bayern München vs Paris Saint-Germain FC</title>
-      <link>https://playersb.com/teams/fc-bayern-m-nchen/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/fc-bayern-m-nchen/#fixture-552094</guid>
-      <pubDate>Wed, 06 May 2026 19:00:00 GMT</pubDate>
-      <description>FC Bayern München play Paris Saint-Germain FC (H) on 2026-05-06. Competition: Champions League. Status: TIMED.</description>
-      <category>Champions League</category>
-    </item>
-    <item>
       <title>2026-05-02 (H) FC Bayern München 3-3 1. FC Heidenheim 1846</title>
       <link>https://playersb.com/teams/fc-bayern-m-nchen/</link>
       <guid isPermaLink="false">https://playersb.com/teams/fc-bayern-m-nchen/#fixture-540691</guid>
       <pubDate>Sat, 02 May 2026 13:30:00 GMT</pubDate>
       <description>FC Bayern München played 1. FC Heidenheim 1846 (H) on 2026-05-02. Competition: Bundesliga. Status: FINISHED.</description>
       <category>Bundesliga</category>
-    </item>
-    <item>
-      <title>2026-04-28 (A) FC Bayern München 5-4 Paris Saint-Germain FC</title>
-      <link>https://playersb.com/teams/fc-bayern-m-nchen/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/fc-bayern-m-nchen/#fixture-552092</guid>
-      <pubDate>Tue, 28 Apr 2026 19:00:00 GMT</pubDate>
-      <description>FC Bayern München played Paris Saint-Germain FC (A) on 2026-04-28. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
     </item>
     <item>
       <title>2026-04-25 (A) FC Bayern München 3-4 1. FSV Mainz 05</title>
@@ -166,6 +150,22 @@
       <pubDate>Sun, 08 Feb 2026 16:30:00 GMT</pubDate>
       <description>FC Bayern München played TSG 1899 Hoffenheim (H) on 2026-02-08. Competition: Bundesliga. Status: FINISHED.</description>
       <category>Bundesliga</category>
+    </item>
+    <item>
+      <title>2026-01-31 (A) FC Bayern München 2-2 Hamburger SV</title>
+      <link>https://playersb.com/teams/fc-bayern-m-nchen/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-bayern-m-nchen/#fixture-540577</guid>
+      <pubDate>Sat, 31 Jan 2026 17:30:00 GMT</pubDate>
+      <description>FC Bayern München played Hamburger SV (A) on 2026-01-31. Competition: Bundesliga. Status: FINISHED.</description>
+      <category>Bundesliga</category>
+    </item>
+    <item>
+      <title>2026-01-28 (A) FC Bayern München 1-2 PSV</title>
+      <link>https://playersb.com/teams/fc-bayern-m-nchen/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/fc-bayern-m-nchen/#fixture-551913</guid>
+      <pubDate>Wed, 28 Jan 2026 20:00:00 GMT</pubDate>
+      <description>FC Bayern München played PSV (A) on 2026-01-28. Competition: Champions League. Status: FINISHED.</description>
+      <category>Champions League</category>
     </item>
   </channel>
 </rss>
