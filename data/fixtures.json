@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-04T14:01:46.653Z",
-  "generatedAt": "2026-05-04T14:01:46.653Z",
+  "updatedAt": "2026-05-04T19:30:14.089Z",
+  "generatedAt": "2026-05-04T19:30:14.089Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-04T14:01:46.653Z"
+      "fetchedAt": "2026-05-04T19:30:14.089Z"
     }
   },
   "fixtures": [
@@ -3831,22 +3831,22 @@
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-05-04T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "Chelsea FC",
       "away": "Nottingham Forest FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "id": 538130,
       "competitionCode": "PL",
       "competition": "Premier League",
       "date": "2026-05-04T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Everton FC",
       "away": "Manchester City FC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 538140,
@@ -7890,11 +7890,11 @@
       "competitionCode": "PD",
       "competition": "La Liga",
       "date": "2026-05-04T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Sevilla FC",
       "away": "Real Sociedad de Fútbol",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 544554,
@@ -12169,22 +12169,22 @@
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-05-04T16:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "home": "US Cremonese",
       "away": "SS Lazio",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 537155,
       "competitionCode": "SA",
       "competition": "Serie A",
       "date": "2026-05-04T18:45:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "AS Roma",
       "away": "ACF Fiorentina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": 537168,

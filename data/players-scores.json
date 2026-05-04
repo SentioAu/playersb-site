@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-04T14:01:46.653Z",
-  "generatedAt": "2026-05-04T14:01:46.653Z",
+  "updatedAt": "2026-05-04T19:30:14.089Z",
+  "generatedAt": "2026-05-04T19:30:14.089Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-04T14:01:46.653Z"
+      "fetchedAt": "2026-05-04T19:30:14.089Z"
     }
   },
   "players": [
@@ -18,7 +18,7 @@
       "goals": 24,
       "assists": 7,
       "penalties": 3,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "Thiago Rodrigues",
@@ -40,7 +40,7 @@
       "goals": 15,
       "assists": 4,
       "penalties": 1,
-      "playedMatches": 32
+      "playedMatches": 33
     },
     {
       "name": "João Pedro",
@@ -48,7 +48,7 @@
       "competition": "Premier League",
       "nationality": "Brazil",
       "position": "",
-      "goals": 14,
+      "goals": 15,
       "assists": 5,
       "penalties": 0,
       "playedMatches": 33
@@ -82,7 +82,7 @@
       "nationality": "England",
       "position": "",
       "goals": 13,
-      "assists": 4,
+      "assists": 5,
       "penalties": 1,
       "playedMatches": 35
     },
@@ -315,7 +315,7 @@
       "goals": 14,
       "assists": 3,
       "penalties": 6,
-      "playedMatches": 30
+      "playedMatches": 31
     },
     {
       "name": "Robert Lewandowski",
@@ -513,7 +513,7 @@
       "goals": 11,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 14
+      "playedMatches": 15
     },
     {
       "name": "Gianluca Scamacca",
@@ -604,6 +604,17 @@
       "playedMatches": 28
     },
     {
+      "name": "Federico Bonazzoli",
+      "team": "US Cremonese",
+      "competition": "Serie A",
+      "nationality": "Italy",
+      "position": "",
+      "goals": 8,
+      "assists": 2,
+      "penalties": 2,
+      "playedMatches": 34
+    },
+    {
       "name": "Andrea Pinamonti",
       "team": "US Sassuolo Calcio",
       "competition": "Serie A",
@@ -657,17 +668,6 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 34
-    },
-    {
-      "name": "Moise Kean",
-      "team": "ACF Fiorentina",
-      "competition": "Serie A",
-      "nationality": "Italy",
-      "position": "",
-      "goals": 8,
-      "assists": 1,
-      "penalties": 2,
-      "playedMatches": 27
     },
     {
       "name": "Harry Kane",

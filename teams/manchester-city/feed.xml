@@ -6,7 +6,7 @@
     <atom:link href="https://playersb.com/teams/manchester-city/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Manchester City on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 14:02:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 19:30:33 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Manchester City vs Aston Villa FC</title>
       <link>https://playersb.com/teams/manchester-city/</link>
@@ -24,11 +24,11 @@
       <category>Premier League</category>
     </item>
     <item>
-      <title>2026-05-04 (A) Manchester City vs Everton FC</title>
+      <title>2026-05-04 (A) Manchester City 0-0 Everton FC</title>
       <link>https://playersb.com/teams/manchester-city/</link>
       <guid isPermaLink="false">https://playersb.com/teams/manchester-city/#fixture-538130</guid>
       <pubDate>Mon, 04 May 2026 19:00:00 GMT</pubDate>
-      <description>Manchester City play Everton FC (A) on 2026-05-04. Competition: Premier League. Status: TIMED.</description>
+      <description>Manchester City played Everton FC (A) on 2026-05-04. Competition: Premier League. Status: IN_PLAY.</description>
       <category>Premier League</category>
     </item>
     <item>
