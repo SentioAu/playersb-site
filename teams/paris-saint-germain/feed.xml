@@ -6,21 +6,13 @@
     <atom:link href="https://playersb.com/teams/paris-saint-germain/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Paris Saint-Germain on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 08:11:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 13:56:21 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (A) Paris Saint-Germain vs Paris FC</title>
       <link>https://playersb.com/teams/paris-saint-germain/</link>
       <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542705</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>Paris Saint-Germain play Paris FC (A) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
-      <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2026-05-13 (A) Paris Saint-Germain vs Racing Club de Lens</title>
-      <link>https://playersb.com/teams/paris-saint-germain/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542664</guid>
-      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
-      <description>Paris Saint-Germain play Racing Club de Lens (A) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -32,28 +24,12 @@
       <category>Ligue 1</category>
     </item>
     <item>
-      <title>2026-05-06 (A) Paris Saint-Germain vs FC Bayern München</title>
-      <link>https://playersb.com/teams/paris-saint-germain/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-552094</guid>
-      <pubDate>Wed, 06 May 2026 19:00:00 GMT</pubDate>
-      <description>Paris Saint-Germain play FC Bayern München (A) on 2026-05-06. Competition: Champions League. Status: TIMED.</description>
-      <category>Champions League</category>
-    </item>
-    <item>
       <title>2026-05-02 (H) Paris Saint-Germain 2-2 FC Lorient</title>
       <link>https://playersb.com/teams/paris-saint-germain/</link>
       <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542692</guid>
       <pubDate>Sat, 02 May 2026 15:00:00 GMT</pubDate>
       <description>Paris Saint-Germain played FC Lorient (H) on 2026-05-02. Competition: Ligue 1. Status: FINISHED.</description>
       <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2026-04-28 (H) Paris Saint-Germain 5-4 FC Bayern München</title>
-      <link>https://playersb.com/teams/paris-saint-germain/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-552092</guid>
-      <pubDate>Tue, 28 Apr 2026 19:00:00 GMT</pubDate>
-      <description>Paris Saint-Germain played FC Bayern München (H) on 2026-04-28. Competition: Champions League. Status: FINISHED.</description>
-      <category>Champions League</category>
     </item>
     <item>
       <title>2026-04-25 (A) Paris Saint-Germain 0-3 Angers SCO</title>
@@ -166,6 +142,30 @@
       <pubDate>Tue, 17 Feb 2026 20:00:00 GMT</pubDate>
       <description>Paris Saint-Germain played AS Monaco FC (A) on 2026-02-17. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-02-13 (A) Paris Saint-Germain 3-1 Stade Rennais FC 1901</title>
+      <link>https://playersb.com/teams/paris-saint-germain/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542603</guid>
+      <pubDate>Fri, 13 Feb 2026 18:00:00 GMT</pubDate>
+      <description>Paris Saint-Germain played Stade Rennais FC 1901 (A) on 2026-02-13. Competition: Ligue 1. Status: FINISHED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2026-02-08 (H) Paris Saint-Germain 5-0 Olympique de Marseille</title>
+      <link>https://playersb.com/teams/paris-saint-germain/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542591</guid>
+      <pubDate>Sun, 08 Feb 2026 19:45:00 GMT</pubDate>
+      <description>Paris Saint-Germain played Olympique de Marseille (H) on 2026-02-08. Competition: Ligue 1. Status: FINISHED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2026-02-01 (A) Paris Saint-Germain 1-2 RC Strasbourg Alsace</title>
+      <link>https://playersb.com/teams/paris-saint-germain/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542583</guid>
+      <pubDate>Sun, 01 Feb 2026 19:45:00 GMT</pubDate>
+      <description>Paris Saint-Germain played RC Strasbourg Alsace (A) on 2026-02-01. Competition: Ligue 1. Status: FINISHED.</description>
+      <category>Ligue 1</category>
     </item>
   </channel>
 </rss>

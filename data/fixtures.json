@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-05T08:10:55.724Z",
-  "generatedAt": "2026-05-05T08:10:55.724Z",
+  "updatedAt": "2026-05-05T13:56:05.363Z",
+  "generatedAt": "2026-05-05T13:56:05.363Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-05T08:10:55.724Z"
+      "fetchedAt": "2026-05-05T13:56:05.363Z"
     }
   },
   "fixtures": [
@@ -3959,17 +3959,6 @@
       "awayScore": null
     },
     {
-      "id": 538091,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "home": "Manchester City FC",
-      "away": "Crystal Palace FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "id": 538146,
       "competitionCode": "PL",
       "competition": "Premier League",
@@ -4054,28 +4043,6 @@
       "status": "TIMED",
       "home": "Arsenal FC",
       "away": "Burnley FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538145,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-19T18:30:00Z",
-      "status": "TIMED",
-      "home": "AFC Bournemouth",
-      "away": "Manchester City FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 538149,
-      "competitionCode": "PL",
-      "competition": "Premier League",
-      "date": "2026-05-19T19:15:00Z",
-      "status": "TIMED",
-      "home": "Chelsea FC",
-      "away": "Tottenham Hotspur FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -18729,7 +18696,7 @@
       "home": "Toulouse FC",
       "away": "Lille OSC",
       "homeScore": 0,
-      "awayScore": 4
+      "awayScore": 5
     },
     {
       "id": 542661,
@@ -19157,28 +19124,6 @@
       "status": "TIMED",
       "home": "Stade Rennais FC 1901",
       "away": "Paris FC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 542665,
-      "competitionCode": "FL1",
-      "competition": "Ligue 1",
-      "date": "2026-05-13T17:00:00Z",
-      "status": "TIMED",
-      "home": "Stade Brestois 29",
-      "away": "RC Strasbourg Alsace",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 542664,
-      "competitionCode": "FL1",
-      "competition": "Ligue 1",
-      "date": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "home": "Racing Club de Lens",
-      "away": "Paris Saint-Germain FC",
       "homeScore": null,
       "awayScore": null
     },
@@ -21281,7 +21226,7 @@
       "home": "Club Atlético de Madrid",
       "away": "FC Barcelona",
       "homeScore": 1,
-      "awayScore": 2
+      "awayScore": 3
     },
     {
       "id": 556723,
@@ -21311,8 +21256,8 @@
       "competition": "Champions League",
       "date": "2026-04-28T19:00:00Z",
       "status": "FINISHED",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
+      "home": "",
+      "away": "",
       "homeScore": 5,
       "awayScore": 4
     },
@@ -21322,32 +21267,10 @@
       "competition": "Champions League",
       "date": "2026-04-29T19:00:00Z",
       "status": "FINISHED",
-      "home": "Club Atlético de Madrid",
-      "away": "Arsenal FC",
+      "home": "",
+      "away": "",
       "homeScore": 1,
       "awayScore": 1
-    },
-    {
-      "id": 552095,
-      "competitionCode": "CL",
-      "competition": "Champions League",
-      "date": "2026-05-05T19:00:00Z",
-      "status": "TIMED",
-      "home": "Arsenal FC",
-      "away": "Club Atlético de Madrid",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "id": 552094,
-      "competitionCode": "CL",
-      "competition": "Champions League",
-      "date": "2026-05-06T19:00:00Z",
-      "status": "TIMED",
-      "home": "FC Bayern München",
-      "away": "Paris Saint-Germain FC",
-      "homeScore": null,
-      "awayScore": null
     },
     {
       "id": 552096,

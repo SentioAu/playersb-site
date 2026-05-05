@@ -6,21 +6,13 @@
     <atom:link href="https://playersb.com/teams/racing-club-de-lens/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Racing Club de Lens on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 08:11:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 13:56:21 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (A) Racing Club de Lens vs Olympique Lyonnais</title>
       <link>https://playersb.com/teams/racing-club-de-lens/</link>
       <guid isPermaLink="false">https://playersb.com/teams/racing-club-de-lens/#fixture-542707</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>Racing Club de Lens play Olympique Lyonnais (A) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
-      <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2026-05-13 (H) Racing Club de Lens vs Paris Saint-Germain FC</title>
-      <link>https://playersb.com/teams/racing-club-de-lens/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/racing-club-de-lens/#fixture-542664</guid>
-      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
-      <description>Racing Club de Lens play Paris Saint-Germain FC (H) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -165,6 +157,14 @@
       <guid isPermaLink="false">https://playersb.com/teams/racing-club-de-lens/#fixture-542535</guid>
       <pubDate>Sat, 06 Dec 2025 16:00:00 GMT</pubDate>
       <description>Racing Club de Lens played FC Nantes (A) on 2025-12-06. Competition: Ligue 1. Status: FINISHED.</description>
+      <category>Ligue 1</category>
+    </item>
+    <item>
+      <title>2025-11-30 (A) Racing Club de Lens 1-2 Angers SCO</title>
+      <link>https://playersb.com/teams/racing-club-de-lens/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/racing-club-de-lens/#fixture-542531</guid>
+      <pubDate>Sun, 30 Nov 2025 16:15:00 GMT</pubDate>
+      <description>Racing Club de Lens played Angers SCO (A) on 2025-11-30. Competition: Ligue 1. Status: FINISHED.</description>
       <category>Ligue 1</category>
     </item>
   </channel>
