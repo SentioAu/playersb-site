@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-04T19:30:14.089Z",
-  "generatedAt": "2026-05-04T19:30:14.089Z",
+  "updatedAt": "2026-05-05T02:43:56.841Z",
+  "generatedAt": "2026-05-05T02:43:56.842Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-04T19:30:14.089Z"
+      "fetchedAt": "2026-05-05T02:43:56.842Z"
     }
   },
   "standings": {
@@ -30,8 +30,8 @@
         "won": 21,
         "draw": 8,
         "lost": 5,
-        "goals": 66,
-        "goalsAgainst": 29,
+        "goals": 69,
+        "goalsAgainst": 32,
         "gd": 37,
         "points": 71,
         "form": null
@@ -134,8 +134,8 @@
         "won": 13,
         "draw": 9,
         "lost": 13,
-        "goals": 41,
-        "goalsAgainst": 41,
+        "goals": 44,
+        "goalsAgainst": 44,
         "gd": 0,
         "points": 48,
         "form": null
@@ -352,19 +352,6 @@
       },
       {
         "position": 7,
-        "team": "Real Sociedad de Fútbol",
-        "played": 34,
-        "won": 11,
-        "draw": 11,
-        "lost": 12,
-        "goals": 52,
-        "goalsAgainst": 52,
-        "gd": 0,
-        "points": 44,
-        "form": null
-      },
-      {
-        "position": 8,
         "team": "Getafe CF",
         "played": 34,
         "won": 13,
@@ -377,7 +364,7 @@
         "form": null
       },
       {
-        "position": 9,
+        "position": 8,
         "team": "Athletic Club",
         "played": 34,
         "won": 13,
@@ -387,6 +374,19 @@
         "goalsAgainst": 50,
         "gd": -10,
         "points": 44,
+        "form": null
+      },
+      {
+        "position": 9,
+        "team": "Real Sociedad de Fútbol",
+        "played": 34,
+        "won": 11,
+        "draw": 10,
+        "lost": 13,
+        "goals": 52,
+        "goalsAgainst": 53,
+        "gd": -1,
+        "points": 43,
         "form": null
       },
       {
@@ -482,6 +482,19 @@
       },
       {
         "position": 17,
+        "team": "Sevilla FC",
+        "played": 34,
+        "won": 10,
+        "draw": 7,
+        "lost": 17,
+        "goals": 41,
+        "goalsAgainst": 55,
+        "gd": -14,
+        "points": 37,
+        "form": null
+      },
+      {
+        "position": 18,
         "team": "Deportivo Alavés",
         "played": 34,
         "won": 9,
@@ -491,19 +504,6 @@
         "goalsAgainst": 53,
         "gd": -13,
         "points": 36,
-        "form": null
-      },
-      {
-        "position": 18,
-        "team": "Sevilla FC",
-        "played": 34,
-        "won": 9,
-        "draw": 8,
-        "lost": 17,
-        "goals": 40,
-        "goalsAgainst": 55,
-        "gd": -15,
-        "points": 35,
         "form": null
       },
       {
@@ -588,6 +588,19 @@
       },
       {
         "position": 5,
+        "team": "AS Roma",
+        "played": 35,
+        "won": 20,
+        "draw": 4,
+        "lost": 11,
+        "goals": 52,
+        "goalsAgainst": 29,
+        "gd": 23,
+        "points": 64,
+        "form": null
+      },
+      {
+        "position": 6,
         "team": "Como 1907",
         "played": 35,
         "won": 17,
@@ -596,19 +609,6 @@
         "goals": 59,
         "goalsAgainst": 28,
         "gd": 31,
-        "points": 62,
-        "form": null
-      },
-      {
-        "position": 6,
-        "team": "AS Roma",
-        "played": 35,
-        "won": 19,
-        "draw": 5,
-        "lost": 11,
-        "goals": 48,
-        "goalsAgainst": 29,
-        "gd": 19,
         "points": 62,
         "form": null
       },
@@ -721,12 +721,12 @@
         "team": "ACF Fiorentina",
         "played": 35,
         "won": 8,
-        "draw": 14,
-        "lost": 13,
+        "draw": 13,
+        "lost": 14,
         "goals": 38,
-        "goalsAgainst": 45,
-        "gd": -7,
-        "points": 38,
+        "goalsAgainst": 49,
+        "gd": -11,
+        "points": 37,
         "form": null
       },
       {

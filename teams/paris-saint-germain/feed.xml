@@ -6,21 +6,13 @@
     <atom:link href="https://playersb.com/teams/paris-saint-germain/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Paris Saint-Germain on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 19:30:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 02:44:20 GMT</lastBuildDate>
     <item>
       <title>2026-05-17 (A) Paris Saint-Germain vs Paris FC</title>
       <link>https://playersb.com/teams/paris-saint-germain/</link>
       <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542705</guid>
       <pubDate>Sun, 17 May 2026 19:00:00 GMT</pubDate>
       <description>Paris Saint-Germain play Paris FC (A) on 2026-05-17. Competition: Ligue 1. Status: TIMED.</description>
-      <category>Ligue 1</category>
-    </item>
-    <item>
-      <title>2026-05-13 (A) Paris Saint-Germain vs Racing Club de Lens</title>
-      <link>https://playersb.com/teams/paris-saint-germain/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542664</guid>
-      <pubDate>Wed, 13 May 2026 19:00:00 GMT</pubDate>
-      <description>Paris Saint-Germain play Racing Club de Lens (A) on 2026-05-13. Competition: Ligue 1. Status: TIMED.</description>
       <category>Ligue 1</category>
     </item>
     <item>
@@ -166,6 +158,14 @@
       <pubDate>Tue, 17 Feb 2026 20:00:00 GMT</pubDate>
       <description>Paris Saint-Germain played AS Monaco FC (A) on 2026-02-17. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
+    </item>
+    <item>
+      <title>2026-02-13 (A) Paris Saint-Germain 3-1 Stade Rennais FC 1901</title>
+      <link>https://playersb.com/teams/paris-saint-germain/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/paris-saint-germain/#fixture-542603</guid>
+      <pubDate>Fri, 13 Feb 2026 18:00:00 GMT</pubDate>
+      <description>Paris Saint-Germain played Stade Rennais FC 1901 (A) on 2026-02-13. Competition: Ligue 1. Status: FINISHED.</description>
+      <category>Ligue 1</category>
     </item>
   </channel>
 </rss>

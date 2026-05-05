@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-04T19:30:14.089Z",
-  "generatedAt": "2026-05-04T19:30:14.089Z",
+  "updatedAt": "2026-05-05T02:43:56.841Z",
+  "generatedAt": "2026-05-05T02:43:56.842Z",
   "source": "football-data.org",
   "sources": {
     "footballData": {
       "status": "ok",
-      "fetchedAt": "2026-05-04T19:30:14.089Z"
+      "fetchedAt": "2026-05-05T02:43:56.842Z"
     }
   },
   "scorers": [
@@ -15,7 +15,7 @@
       "competition": "Premier League",
       "nationality": "Norway",
       "position": "",
-      "goals": 24,
+      "goals": 25,
       "assists": 7,
       "penalties": 3,
       "playedMatches": 33
@@ -511,7 +511,7 @@
       "nationality": "Netherlands",
       "position": "",
       "goals": 11,
-      "assists": 1,
+      "assists": 2,
       "penalties": 2,
       "playedMatches": 15
     },

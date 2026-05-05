@@ -3,7 +3,7 @@
 > A complete, machine-readable snapshot of PlayersB — The Players Book.
 > Updated each CI run from the same data files that drive the site.
 
-Generated at: 2026-05-04T19:30:33.696Z
+Generated at: 2026-05-05T02:44:20.283Z
 Origin: https://playersb.com/
 Sitemap: https://playersb.com/sitemap.xml
 Per-team feeds: https://playersb.com/teams/<slug>/feed.xml
@@ -98,7 +98,7 @@ Legacy: https://playersb.com/legacy/
 
 ## Top scorers (live)
 - Harry Kane · FC Bayern München · Bundesliga · 33g 4a
-- Erling Haaland · Manchester City FC · Premier League · 24g 7a
+- Erling Haaland · Manchester City FC · Premier League · 25g 7a
 - Kylian Mbappé · Real Madrid CF · La Liga · 24g 4a
 - Thiago Rodrigues · Brentford FC · Premier League · 22g 1a
 - Vedat Muriqi · RCD Mallorca · La Liga · 21g 1a
@@ -142,9 +142,9 @@ Legacy: https://playersb.com/legacy/
 - #4. Club Atlético de Madrid · 63pts · GD 21 · 19-6-9
 - #5. Real Betis Balompié · 53pts · GD 11 · 13-14-7
 - #6. RC Celta de Vigo · 47pts · GD 4 · 12-11-11
-- #7. Real Sociedad de Fútbol · 44pts · GD 0 · 11-11-12
-- #8. Getafe CF · 44pts · GD -8 · 13-5-16
-- #9. Athletic Club · 44pts · GD -10 · 13-5-16
+- #7. Getafe CF · 44pts · GD -8 · 13-5-16
+- #8. Athletic Club · 44pts · GD -10 · 13-5-16
+- #9. Real Sociedad de Fútbol · 43pts · GD -1 · 11-10-13
 - #10. CA Osasuna · 42pts · GD -2 · 11-9-14
 
 ## Standings: Serie A (top 10)
@@ -152,8 +152,8 @@ Legacy: https://playersb.com/legacy/
 - #2. SSC Napoli · 70pts · GD 19 · 21-7-7
 - #3. AC Milan · 67pts · GD 19 · 19-10-6
 - #4. Juventus FC · 65pts · GD 28 · 18-11-6
-- #5. Como 1907 · 62pts · GD 31 · 17-11-7
-- #6. AS Roma · 62pts · GD 19 · 19-5-11
+- #5. AS Roma · 64pts · GD 23 · 20-4-11
+- #6. Como 1907 · 62pts · GD 31 · 17-11-7
 - #7. Atalanta BC · 55pts · GD 15 · 14-13-8
 - #8. SS Lazio · 51pts · GD 5 · 13-12-10
 - #9. Bologna FC 1909 · 49pts · GD 1 · 14-7-14
