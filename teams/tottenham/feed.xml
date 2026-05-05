@@ -6,13 +6,21 @@
     <atom:link href="https://playersb.com/teams/tottenham/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recent and upcoming fixtures for Tottenham on PlayersB.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 02:44:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 08:11:16 GMT</lastBuildDate>
     <item>
       <title>2026-05-24 (H) Tottenham vs Everton FC</title>
       <link>https://playersb.com/teams/tottenham/</link>
       <guid isPermaLink="false">https://playersb.com/teams/tottenham/#fixture-538163</guid>
       <pubDate>Sun, 24 May 2026 15:00:00 GMT</pubDate>
       <description>Tottenham play Everton FC (H) on 2026-05-24. Competition: Premier League. Status: TIMED.</description>
+      <category>Premier League</category>
+    </item>
+    <item>
+      <title>2026-05-19 (A) Tottenham vs Chelsea FC</title>
+      <link>https://playersb.com/teams/tottenham/</link>
+      <guid isPermaLink="false">https://playersb.com/teams/tottenham/#fixture-538149</guid>
+      <pubDate>Tue, 19 May 2026 19:15:00 GMT</pubDate>
+      <description>Tottenham play Chelsea FC (A) on 2026-05-19. Competition: Premier League. Status: TIMED.</description>
       <category>Premier League</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 20 Jan 2026 20:00:00 GMT</pubDate>
       <description>Tottenham played Borussia Dortmund (H) on 2026-01-20. Competition: Champions League. Status: FINISHED.</description>
       <category>Champions League</category>
-    </item>
-    <item>
-      <title>2026-01-17 (H) Tottenham 1-2 West Ham United FC</title>
-      <link>https://playersb.com/teams/tottenham/</link>
-      <guid isPermaLink="false">https://playersb.com/teams/tottenham/#fixture-538003</guid>
-      <pubDate>Sat, 17 Jan 2026 15:00:00 GMT</pubDate>
-      <description>Tottenham played West Ham United FC (H) on 2026-01-17. Competition: Premier League. Status: FINISHED.</description>
-      <category>Premier League</category>
     </item>
   </channel>
 </rss>

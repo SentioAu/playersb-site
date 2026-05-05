@@ -3,7 +3,7 @@
 > A complete, machine-readable snapshot of PlayersB — The Players Book.
 > Updated each CI run from the same data files that drive the site.
 
-Generated at: 2026-05-05T02:44:20.283Z
+Generated at: 2026-05-05T08:11:16.044Z
 Origin: https://playersb.com/
 Sitemap: https://playersb.com/sitemap.xml
 Per-team feeds: https://playersb.com/teams/<slug>/feed.xml
